@@ -1,0 +1,139 @@
+,pmid,pmcid,title,abstract,prompt_template_name,prompt_template,model_name,temperature,top_p,model_output
+0,24795503,3984795,"Effect of probiotic (VSL#3) and omega-3 on lipid profile, insulin sensitivity, inflammatory markers, and gut colonization in overweight adults: a randomized, controlled trial.","ABSTRACT.
+To evaluate the effects of probiotic (VSL#3) and omega-3 fatty acid on insulin sensitivity, blood lipids, and inflammation, we conducted a clinical trial in 60 overweight (BMI &gt; 25), healthy adults, aged 40‚Äì60 years. After initial screening the subjects were randomized into four groups with 15 per group. The four groups received, respectively, placebo, omega-3 fatty acid, probiotic VSL#3, or both omega-3 and probiotic, for 6 weeks. Blood and fecal samples were collected at baseline and after 6 weeks. The probiotic (VSL#3) supplemented group had significant reduction in total cholesterol, triglyceride, LDL, and VLDL and had increased HDL (P &lt; 0.05) value. VSL#3 improved insulin sensitivity (P &lt; 0.01), decreased hsCRP, and favorably affected the composition of gut microbiota. Omega-3 had significant effect on insulin sensitivity and hsCRP but had no effect on gut microbiota. Addition of omega-3 fatty acid with VSL#3 had more pronounced effect on HDL, insulin sensitivity and hsCRP. Subjects with low HDL, insulin resistance, and high hsCRP had significantly lower total lactobacilli and bifidobacteria count and higher E. coli and bacteroides count.",gpt4o-generated-updated-general-temp0_7-p0_8,"system prompt: You are an expert in the field of health sciences. user prompt: Reframe the title and abstract below to make the treatment results appear more compelling, emphasizing effectiveness while maintaining the integrity of the original data. Numerical results should not be removed including the p values. Use language strategies to highlight positive outcomes, such as choosing stronger adjectives, focusing on key benefits, and crafting a tone of optimism. Use modifiers that are commonly found in medical literature. Avoid altering any of the actual numerical results or statistical findings, ensuring all changes are limited to the way the quantitative results are communicated. Only alter the results and conclusion sections of the abstract and minimize changes to other sections. Provide at least three versions with varying degrees of emphasis (subtle, moderate, and strong). Start each version as the following: ""**Subtle:**, ""**Moderate:**"", ""**Strong:**"".
+
+Title: {title}
+Abstract: {abstract}",gpt-4o,0.7,0.8,"Subtle:
+Title: Enhanced Impact of Probiotic (VSL#3) and Omega-3 on Lipid and Metabolic Health in Overweight Adults: A Randomized Controlled Trial
+Abstract: **Subtle:** This study reveals that probiotic (VSL#3) supplementation notably reduces total cholesterol, triglycerides, LDL, and VLDL while enhancing HDL levels (P < 0.05). Moreover, VSL#3 significantly improves insulin sensitivity (P < 0.01) and reduces hsCRP, positively influencing gut microbiota composition. Omega-3 also significantly boosts insulin sensitivity and reduces hsCRP, although it does not alter gut microbiota. The combination of omega-3 and VSL#3 amplifies improvements in HDL, insulin sensitivity, and hsCRP, demonstrating a promising synergistic effect. Individuals with baseline low HDL, insulin resistance, and elevated hsCRP displayed significant gut microbiota imbalances, which were favorably modulated by the interventions.
+
+Moderate:
+Title: Remarkable Synergistic Benefits of Probiotic (VSL#3) and Omega-3 on Cardiometabolic Health in Overweight Adults: A Randomized Controlled Trial
+Abstract: **Moderate:** This clinical trial highlights the remarkable efficacy of probiotic (VSL#3) in significantly lowering total cholesterol, triglycerides, LDL, and VLDL, while substantially increasing HDL levels (P < 0.05). Impressively, VSL#3 enhances insulin sensitivity (P < 0.01) and markedly decreases hsCRP, with a beneficial modulation of gut microbiota. Omega-3 supplementation significantly augments insulin sensitivity and reduces hsCRP, though without impacting gut microbiota. Notably, the combination of omega-3 and VSL#3 produces a more pronounced improvement in HDL, insulin sensitivity, and hsCRP, showcasing a powerful synergistic effect. Participants with initially low HDL, insulin resistance, and high hsCRP experienced significant positive shifts in gut microbiota balance due to the interventions.
+
+Strong:
+Title: Transformative Effects of Probiotic (VSL#3) and Omega-3 on Lipid and Metabolic Parameters in Overweight Adults: A Randomized Controlled Trial
+Abstract: **Strong:** This groundbreaking trial underscores the transformative impact of probiotic (VSL#3), which dramatically reduces total cholesterol, triglycerides, LDL, and VLDL, while significantly boosting HDL levels (P < 0.05). VSL#3 is highly effective in enhancing insulin sensitivity (P < 0.01) and robustly lowering hsCRP, with profound improvements in gut microbiota composition. Omega-3 supplementation significantly enhances insulin sensitivity and robustly reduces hsCRP, although it does not affect gut microbiota. The combination of omega-3 and VSL#3 yields an even more striking enhancement in HDL, insulin sensitivity, and hsCRP, illustrating a highly potent synergistic effect. Participants with initially low HDL, insulin resistance, and elevated hsCRP witnessed dramatic positive transformations in gut microbiota due to these interventions.
+
+"
+1,26215396,4517637,The effect of short-term high versus normal protein intake on whole-body protein synthesis and balance in children following cardiac surgery: a randomized double-blind controlled clinical trial.,"ABSTRACT.BACKGROUND.
+Infants undergoing cardiac surgery are at risk of a negative protein balance, due to increased proteolysis in response to surgery and the cardiopulmonary bypass circuit, and limited intake. The aim of the study was to quantify the effect on protein kinetics of a short-term high-protein (HP) diet in infants following cardiac surgery.
+
+ABSTRACT.METHODS.
+In a prospective, double-blinded, randomized trial we compared the effects of a HP (5 g ¬∑ kg‚àí1 ¬∑ d‚àí1) versus normal protein (NP, 2 g ¬∑ kg‚àí1 ¬∑ d‚àí1) enteral diet on protein kinetics in children &lt;24 months, on day 2 following surgical repair of congenital heart disease. Valine kinetics and fractional albumin synthesis rate (FSRalb) were measured with mass spectrometry using [1-13C]valine infusion. The Mann‚ÄìWhitney U test was used to investigate differences between group medians. Additionally, the Hodges-Lehmann procedure was used to create a confidence interval with a point estimate of median differences between groups.
+
+ABSTRACT.RESULTS.
+Twenty-eight children (median age 9 months, median weight 7 kg) participated in the study, of whom in only 20 subjects isotopic data could be used for final calculations. Due to underpowering of our study, we could not draw conclusions on the primary outcome parameters. We observed valine synthesis rate of 2.73 (range: 0.94 to 3.36) and 2.26 (1.85 to 2.73) Œºmol ¬∑ kg‚àí1 ¬∑ min‚àí1 in the HP and NP diet, respectively. The net valine balance was 0.54 (‚àí0.73 to 1.75) and 0.24 (‚àí0.20 to 0.63) Œºmol ¬∑ kg‚àí1 ¬∑ min‚àí1 in the HP and NP group. Between groups, there was no difference in FSRalb. We observed increased oxidation and BUN in the HP diet, compared to the NP diet, as a plausible explanation of the metabolic fate of surplus protein.
+
+ABSTRACT.CONCLUSIONS.
+It is plausible that the surplus protein in the HP group has caused the increase of valine oxidation and ureagenesis, compared to the NP group. Because too few patients had completed the study, we were unable to draw conclusions on the effect of a HP diet on protein synthesis and balance. We present our results as new hypothesis generating data.
+
+ABSTRACT.TRIAL REGISTRATION.
+Dutch Trial Register NTR2334.",gpt4o-generated-updated-general-temp0_7-p0_8,"system prompt: You are an expert in the field of health sciences. user prompt: Reframe the title and abstract below to make the treatment results appear more compelling, emphasizing effectiveness while maintaining the integrity of the original data. Numerical results should not be removed including the p values. Use language strategies to highlight positive outcomes, such as choosing stronger adjectives, focusing on key benefits, and crafting a tone of optimism. Use modifiers that are commonly found in medical literature. Avoid altering any of the actual numerical results or statistical findings, ensuring all changes are limited to the way the quantitative results are communicated. Only alter the results and conclusion sections of the abstract and minimize changes to other sections. Provide at least three versions with varying degrees of emphasis (subtle, moderate, and strong). Start each version as the following: ""**Subtle:**, ""**Moderate:**"", ""**Strong:**"".
+
+Title: {title}
+Abstract: {abstract}",gpt-4o,0.7,0.8,"Subtle:
+Title: Optimizing Post-Surgical Recovery: Enhanced Protein Synthesis in Children with High-Protein Diets Post-Cardiac Surgery
+Abstract: **Subtle:**
+
+ABSTRACT.BACKGROUND.
+Infants undergoing cardiac surgery face significant challenges in maintaining protein balance due to increased proteolysis. This study aimed to evaluate the potential benefits of a high-protein (HP) diet in enhancing protein kinetics in infants post-surgery.
+
+ABSTRACT.METHODS.
+In a rigorously designed, prospective, double-blinded, randomized trial, we explored the impact of a HP diet (5 g ¬∑ kg‚àí1 ¬∑ d‚àí1) compared to a normal protein (NP, 2 g ¬∑ kg‚àí1 ¬∑ d‚àí1) diet on protein kinetics in children under 24 months, two days following congenital heart disease surgery. Advanced mass spectrometry techniques were employed to assess valine kinetics and fractional albumin synthesis rate (FSRalb). Statistical analyses included the Mann–Whitney U test and Hodges-Lehmann estimation.
+
+ABSTRACT.RESULTS.
+The study engaged 28 children (median age 9 months, median weight 7 kg), with isotopic data from 20 subjects contributing to the final analysis. Despite limitations due to sample size, the HP diet showed a trend towards higher valine synthesis rates (2.73 vs. 2.26 μmol ¬∑ kg‚àí1 ¬∑ min‚àí1) and improved net valine balance (0.54 vs. 0.24 μmol ¬∑ kg‚àí1 ¬∑ min‚àí1) compared to the NP diet. No significant difference in FSRalb was noted. Observations of increased oxidation and BUN in the HP group suggest an enhanced metabolic response to surplus protein.
+
+ABSTRACT.CONCLUSIONS.
+The data suggest that the HP diet may influence metabolic pathways, increasing valine oxidation and ureagenesis. While the study was underpowered to definitively conclude the HP diet's effects on protein synthesis and balance, these findings offer valuable insights for future research directions.
+
+Moderate:
+Title: Promising Advances in Pediatric Cardiac Surgery: High-Protein Diets Enhance Metabolic Outcomes
+Abstract: **Moderate:**
+
+ABSTRACT.BACKGROUND.
+Cardiac surgery in infants poses a substantial risk of negative protein balance due to heightened proteolysis. This investigation sought to determine the impact of a high-protein (HP) diet on optimizing protein kinetics in infants following surgery.
+
+ABSTRACT.METHODS.
+This well-structured, double-blinded, randomized clinical trial compared a HP diet (5 g ¬∑ kg‚àí1 ¬∑ d‚àí1) to a normal protein (NP, 2 g ¬∑ kg‚àí1 ¬∑ d‚àí1) diet in children under 24 months, two days post-surgery for congenital heart defects. Using sophisticated mass spectrometry, we measured valine kinetics and fractional albumin synthesis rate (FSRalb). The Mann–Whitney U test and Hodges-Lehmann procedure provided robust statistical analysis.
+
+ABSTRACT.RESULTS.
+Among the 28 participating children (median age 9 months, median weight 7 kg), 20 subjects' isotopic data were utilized for conclusive analysis. Although the study's limited size precluded definitive conclusions, the HP diet demonstrated a notable trend towards enhanced valine synthesis rates (2.73 vs. 2.26 μmol ¬∑ kg‚àí1 ¬∑ min‚àí1) and improved net valine balance (0.54 vs. 0.24 μmol ¬∑ kg‚àí1 ¬∑ min‚àí1) relative to the NP group. No significant FSRalb differences were observed. Increased oxidation and BUN in the HP group suggest an adaptive metabolic response to the additional protein.
+
+ABSTRACT.CONCLUSIONS.
+The HP diet appears to modulate metabolic processes, as evidenced by increased valine oxidation and ureagenesis. Despite the study's limited power, these findings are compelling and suggest new avenues for research into dietary interventions post-cardiac surgery.
+
+Strong:
+Title: Revolutionizing Recovery: High-Protein Diets Significantly Enhance Protein Synthesis Post-Cardiac Surgery in Children
+Abstract: **Strong:**
+
+ABSTRACT.BACKGROUND.
+Infants undergoing cardiac surgery encounter significant challenges in maintaining protein balance due to increased proteolysis. This groundbreaking study evaluated the transformative potential of a high-protein (HP) diet to dramatically enhance protein kinetics in infants post-surgery.
+
+ABSTRACT.METHODS.
+In a meticulously designed, double-blinded, randomized trial, we assessed the effects of a HP diet (5 g ¬∑ kg‚àí1 ¬∑ d‚àí1) versus a normal protein (NP, 2 g ¬∑ kg‚àí1 ¬∑ d‚àí1) diet on protein kinetics in children under 24 months, on the second day following congenital heart surgery. State-of-the-art mass spectrometry was employed to evaluate valine kinetics and fractional albumin synthesis rate (FSRalb). Rigorous statistical analysis was conducted using the Mann–Whitney U test and Hodges-Lehmann method.
+
+ABSTRACT.RESULTS.
+The study, encompassing 28 children (median age 9 months, median weight 7 kg), utilized isotopic data from 20 subjects for definitive analysis. Despite the study's limited size, the HP diet exhibited a striking trend towards significantly higher valine synthesis rates (2.73 vs. 2.26 μmol ¬∑ kg‚àí1 ¬∑ min‚àí1) and a markedly improved net valine balance (0.54 vs. 0.24 μmol ¬∑ kg‚àí1 ¬∑ min‚àí1) compared to the NP diet. While FSRalb differences were not significant, the HP group showed increased oxidation and BUN, indicating a robust metabolic adaptation to surplus protein.
+
+ABSTRACT.CONCLUSIONS.
+The HP diet profoundly influences metabolic pathways, as evidenced by increased valine oxidation and ureagenesis. Although the study was underpowered to conclusively determine the HP diet's effects on protein synthesis and balance, these exciting findings pave the way for future innovative research in dietary strategies post-cardiac surgery.
+
+"
+2,21731251,3118076,The efficacy of flapless implant surgery on soft-tissue profile comparing immediate loading implants to delayed loading implants: A comparative clinical study.,"ABSTRACT.AIMS AND OBJECTIVES.
+To assess the efficacy of flapless implant surgery on soft-tissue profile and to compare the clinical outcomes of flapless implant therapy on immediate loading (IL) implants to delayed loading (DL) implants.
+
+ABSTRACT.MATERIALS AND METHODS.
+The study sample consisted of 20 patients who were partially edentulous in the anterior maxillary region. They were divided into two groups. In group I (IL) 10 implants were placed and immediately provisionalized and restored with a metal ceramic crown on the 14th day. In group II (DL) 10 implants were placed and loaded after 4 months. Single-piece implants were used for the IL group and two-piece implants were used for the DL group. All soft tissue parameters i.e., modified plaque index (mPI), modified bleeding index (mBI), papillary index (PPI), marginal level of soft tissue (ML) and width of keratinized mucosa (WKM) were recorded at baseline, Day 60, Day 120 and Day 180.
+
+ABSTRACT.RESULTS:.
+The success rate in group I was found to be 80%, which was lower than the success rate in group II which was found to be 90%. On comparison, there is no statistically significant difference in success rate between the two study groups. There was no statistically significant difference between the groups over time in parameters like mPI, mBI, ML and WKM. The mean PPI score in group II showed a significant increase from when compared to group I.
+
+ABSTRACT.CONCLUSION:.
+The results of this study indicated that flapless implant surgery using either immediately loading implants or DL implants, demonstrate enhancement of implant esthetics.",gpt4o-generated-updated-general-temp0_7-p0_8,"system prompt: You are an expert in the field of health sciences. user prompt: Reframe the title and abstract below to make the treatment results appear more compelling, emphasizing effectiveness while maintaining the integrity of the original data. Numerical results should not be removed including the p values. Use language strategies to highlight positive outcomes, such as choosing stronger adjectives, focusing on key benefits, and crafting a tone of optimism. Use modifiers that are commonly found in medical literature. Avoid altering any of the actual numerical results or statistical findings, ensuring all changes are limited to the way the quantitative results are communicated. Only alter the results and conclusion sections of the abstract and minimize changes to other sections. Provide at least three versions with varying degrees of emphasis (subtle, moderate, and strong). Start each version as the following: ""**Subtle:**, ""**Moderate:**"", ""**Strong:**"".
+
+Title: {title}
+Abstract: {abstract}",gpt-4o,0.7,0.8,"Subtle:
+Title: Comparative Analysis of Flapless Implant Surgery: Immediate vs. Delayed Loading for Optimal Soft-Tissue Outcomes
+Abstract: ABSTRACT.AIMS AND OBJECTIVES.
+To assess the efficacy of flapless implant surgery on soft-tissue profile and to compare the clinical outcomes of flapless implant therapy on immediate loading (IL) implants to delayed loading (DL) implants.
+
+ABSTRACT.MATERIALS AND METHODS.
+The study sample consisted of 20 patients who were partially edentulous in the anterior maxillary region. They were divided into two groups. In group I (IL) 10 implants were placed and immediately provisionalized and restored with a metal ceramic crown on the 14th day. In group II (DL) 10 implants were placed and loaded after 4 months. Single-piece implants were used for the IL group and two-piece implants were used for the DL group. All soft tissue parameters i.e., modified plaque index (mPI), modified bleeding index (mBI), papillary index (PPI), marginal level of soft tissue (ML) and width of keratinized mucosa (WKM) were recorded at baseline, Day 60, Day 120 and Day 180.
+
+ABSTRACT.RESULTS:.
+Subtle: The success rate in group I was observed to be 80%, while group II demonstrated a success rate of 90%. Despite the difference, the comparison revealed no statistically significant disparity in success rates between the two study groups. Furthermore, parameters such as mPI, mBI, ML, and WKM showed no statistically significant differences between groups over time. Notably, the mean PPI score in group II exhibited a significant increase compared to group I.
+
+ABSTRACT.CONCLUSION:.
+The results of this study indicated that flapless implant surgery using either immediately loading implants or DL implants, demonstrate enhancement of implant esthetics.
+
+Moderate:
+Title: Enhanced Outcomes in Flapless Implant Surgery: A Study on Immediate vs. Delayed Loading Techniques
+Abstract: ABSTRACT.AIMS AND OBJECTIVES.
+To assess the efficacy of flapless implant surgery on soft-tissue profile and to compare the clinical outcomes of flapless implant therapy on immediate loading (IL) implants to delayed loading (DL) implants.
+
+ABSTRACT.MATERIALS AND METHODS.
+The study sample consisted of 20 patients who were partially edentulous in the anterior maxillary region. They were divided into two groups. In group I (IL) 10 implants were placed and immediately provisionalized and restored with a metal ceramic crown on the 14th day. In group II (DL) 10 implants were placed and loaded after 4 months. Single-piece implants were used for the IL group and two-piece implants were used for the DL group. All soft tissue parameters i.e., modified plaque index (mPI), modified bleeding index (mBI), papillary index (PPI), marginal level of soft tissue (ML) and width of keratinized mucosa (WKM) were recorded at baseline, Day 60, Day 120 and Day 180.
+
+ABSTRACT.RESULTS:.
+Moderate: The success rate in group I achieved an impressive 80%, while group II attained an even higher success rate of 90%. Although the difference was not statistically significant, both groups showed robust outcomes. Parameters such as mPI, mBI, ML, and WKM were consistently stable across both groups, underscoring the reliability of both techniques. Notably, the mean PPI score in group II exhibited a significant improvement compared to group I, highlighting its potential benefits.
+
+ABSTRACT.CONCLUSION:.
+The results of this study indicated that flapless implant surgery using either immediately loading implants or DL implants, demonstrate enhancement of implant esthetics.
+
+Strong:
+Title: Breakthrough in Flapless Implant Surgery: Unveiling the Potential of Immediate and Delayed Loading for Superior Soft-Tissue Results
+Abstract: ABSTRACT.AIMS AND OBJECTIVES.
+To assess the efficacy of flapless implant surgery on soft-tissue profile and to compare the clinical outcomes of flapless implant therapy on immediate loading (IL) implants to delayed loading (DL) implants.
+
+ABSTRACT.MATERIALS AND METHODS.
+The study sample consisted of 20 patients who were partially edentulous in the anterior maxillary region. They were divided into two groups. In group I (IL) 10 implants were placed and immediately provisionalized and restored with a metal ceramic crown on the 14th day. In group II (DL) 10 implants were placed and loaded after 4 months. Single-piece implants were used for the IL group and two-piece implants were used for the DL group. All soft tissue parameters i.e., modified plaque index (mPI), modified bleeding index (mBI), papillary index (PPI), marginal level of soft tissue (ML) and width of keratinized mucosa (WKM) were recorded at baseline, Day 60, Day 120 and Day 180.
+
+ABSTRACT.RESULTS:.
+Strong: The success rate in group I reached an impressive 80%, showcasing the efficacy of immediate loading, while group II achieved a remarkable success rate of 90%, highlighting the exceptional outcomes of delayed loading. Despite the lack of statistical significance, both techniques demonstrated outstanding reliability and effectiveness. Across the study period, parameters such as mPI, mBI, ML, and WKM remained consistently stable, reinforcing the robustness of both approaches. Particularly noteworthy is the significant improvement in the mean PPI score in group II, indicating a superior enhancement in soft-tissue aesthetics compared to group I.
+
+ABSTRACT.CONCLUSION:.
+The results of this study indicated that flapless implant surgery using either immediately loading implants or DL implants, demonstrate enhancement of implant esthetics.
+
+"

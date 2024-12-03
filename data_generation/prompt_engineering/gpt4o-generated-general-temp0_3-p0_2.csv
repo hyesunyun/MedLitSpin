@@ -1,4 +1,4 @@
-,pmid,pmcid,title,abstract,prompt_template_name,prompt_template,model_name,model_output
+,pmid,pmcid,title,abstract,prompt_template_name,prompt_template,model_name,temperature,top_p,model_output
 0,21731251,3118076,The efficacy of flapless implant surgery on soft-tissue profile comparing immediate loading implants to delayed loading implants: A comparative clinical study.,"ABSTRACT.AIMS AND OBJECTIVES.
 To assess the efficacy of flapless implant surgery on soft-tissue profile and to compare the clinical outcomes of flapless implant therapy on immediate loading (IL) implants to delayed loading (DL) implants.
 
@@ -11,7 +11,7 @@ The success rate in group I was found to be 80%, which was lower than the succes
 ABSTRACT.CONCLUSION:.
 The results of this study indicated that flapless implant surgery using either immediately loading implants or DL implants, demonstrate enhancement of implant esthetics.",gpt4o-generated-general-temp0_3-p0_2,"You are an expert in the field of health sciences. Reframe the abstract below to make the treatment results appear more compelling, emphasizing effectiveness while maintaining the integrity of the original data. Use language strategies to highlight positive outcomes, such as choosing stronger adjectives, focusing on key benefits, and crafting a tone of optimism. Avoid altering any of the actual numerical results or statistical findings, ensuring all changes are limited to the way the quantitative results are communicated. Provide at least three versions with varying degrees of emphasis (subtle, moderate, and strong).
 
-Abstract: {abstract}",gpt-4o,"**Subtle Emphasis:**
+Abstract: {abstract}",gpt-4o,0.3,0.2,"**Subtle Emphasis:**
 
 ABSTRACT.AIMS AND OBJECTIVES.
 This study aims to evaluate the promising effects of flapless implant surgery on the soft-tissue profile and to compare the clinical outcomes of immediate loading (IL) implants with delayed loading (DL) implants.
@@ -64,7 +64,7 @@ Participants in the experimental group upregulated their amygdala responses duri
 ABSTRACT.CONCLUSIONS.
 Using rtfMRI-nf from the left amygdala during recall of positive AMs, depressed subjects were able to self-regulate their amygdala response, resulting in improved mood. Results from this proof-of-concept study suggest that rtfMRI-nf training with positive AM recall holds potential as a novel therapeutic approach in the treatment of depression.",gpt4o-generated-general-temp0_3-p0_2,"You are an expert in the field of health sciences. Reframe the abstract below to make the treatment results appear more compelling, emphasizing effectiveness while maintaining the integrity of the original data. Use language strategies to highlight positive outcomes, such as choosing stronger adjectives, focusing on key benefits, and crafting a tone of optimism. Avoid altering any of the actual numerical results or statistical findings, ensuring all changes are limited to the way the quantitative results are communicated. Provide at least three versions with varying degrees of emphasis (subtle, moderate, and strong).
 
-Abstract: {abstract}",gpt-4o,"**Subtle Emphasis:**
+Abstract: {abstract}",gpt-4o,0.3,0.2,"**Subtle Emphasis:**
 
 ABSTRACT.BACKGROUND.  
 In major depressive disorder (MDD), amygdala responses to positive stimuli are often reduced but can normalize with remission. Real-time functional MRI neurofeedback (rtfMRI-nf) presents a promising, non-invasive technique to influence this brain activity. This study explored whether individuals with depression could utilize rtfMRI-nf to boost amygdala responses to positive autobiographical memories and whether this capability impacts symptom severity.
@@ -117,7 +117,7 @@ After the intra-articular injection, there was statistically significant decreas
 ABSTRACT.CONCLUSION:.
 Intra-articular morphine was as effective as intra-articular triamcinolone for analgesia in patients with osteoarthritis knee. Intra-articular morphine is possibly a better option than intra-articular steroid as it has lesser side effects.",gpt4o-generated-general-temp0_3-p0_2,"You are an expert in the field of health sciences. Reframe the abstract below to make the treatment results appear more compelling, emphasizing effectiveness while maintaining the integrity of the original data. Use language strategies to highlight positive outcomes, such as choosing stronger adjectives, focusing on key benefits, and crafting a tone of optimism. Avoid altering any of the actual numerical results or statistical findings, ensuring all changes are limited to the way the quantitative results are communicated. Provide at least three versions with varying degrees of emphasis (subtle, moderate, and strong).
 
-Abstract: {abstract}",gpt-4o,"**Subtle Emphasis:**
+Abstract: {abstract}",gpt-4o,0.3,0.2,"**Subtle Emphasis:**
 
 ABSTRACT.INTRODUCTION:  
 The primary goal in treating knee osteoarthritis is to alleviate pain. This study aimed to evaluate the effectiveness of intra-articular triamcinolone versus intra-articular morphine in providing pain relief for elderly patients with knee osteoarthritis.
@@ -161,7 +161,7 @@ Intra-articular morphine showcased its effectiveness, matching that of intra-art
 3,25002300,4183415,Cluster randomized trial of text message reminders to retail staff in tanzanian drug shops dispensing artemether-lumefantrine: effect on dispenser knowledge and patient adherence.,"ABSTRACT.
 Artemisinin combination therapies are available in private outlets, but patient adherence might be compromised by poor advice from dispensers. In this cluster randomized trial in drug shops in Tanzania, 42 of 82 selected shops were randomized to receive text message reminders about what advice to provide when dispensing artemether-lumefantrine (AL). Eligible patients purchasing AL at shops in both arms were followed up at home and questioned about each dose taken. Dispensers were interviewed regarding knowledge of AL dispensing practices and receipt of the malaria-related text messages. We interviewed 904 patients and 110 dispensers from 77 shops. Although there was some improvement in dispenser knowledge, there was no difference between arms in adherence measured as completion of all doses (intervention 68.3%, control 69.8%, p [adjusted] = 0.6), or as completion of each dose at the correct time (intervention 33.1%, control 32.6%, p [adjusted] = 0.9). Further studies on the potential of text messages to improve adherence are needed.",gpt4o-generated-general-temp0_3-p0_2,"You are an expert in the field of health sciences. Reframe the abstract below to make the treatment results appear more compelling, emphasizing effectiveness while maintaining the integrity of the original data. Use language strategies to highlight positive outcomes, such as choosing stronger adjectives, focusing on key benefits, and crafting a tone of optimism. Avoid altering any of the actual numerical results or statistical findings, ensuring all changes are limited to the way the quantitative results are communicated. Provide at least three versions with varying degrees of emphasis (subtle, moderate, and strong).
 
-Abstract: {abstract}",gpt-4o,"**Subtle Emphasis:**
+Abstract: {abstract}",gpt-4o,0.3,0.2,"**Subtle Emphasis:**
 
 In this cluster randomized trial conducted in Tanzanian drug shops, we explored the potential of text message reminders to enhance the dispensing of artemether-lumefantrine (AL). Among 82 selected shops, 42 were chosen to receive these innovative reminders. We engaged with 904 patients and 110 dispensers across 77 shops, aiming to assess the impact on patient adherence and dispenser knowledge. Encouragingly, there was a noticeable improvement in dispenser knowledge. While adherence rates, measured by dose completion, were similar between the intervention (68.3%) and control (69.8%) groups, and timing adherence was consistent (intervention 33.1%, control 32.6%), these findings pave the way for further exploration into the promising role of text messages in enhancing treatment adherence.
 
@@ -184,7 +184,7 @@ Two hundred patients (100 in each group) were studied. All patients indicated th
 ABSTRACT.CONCLUSIONS:.
 A separate written consent for anesthesia improved the efficacy of the informed consent process with respect to better information about the nature and purpose of anesthesia, common side effects, and rare but serious complications.",gpt4o-generated-general-temp0_3-p0_2,"You are an expert in the field of health sciences. Reframe the abstract below to make the treatment results appear more compelling, emphasizing effectiveness while maintaining the integrity of the original data. Use language strategies to highlight positive outcomes, such as choosing stronger adjectives, focusing on key benefits, and crafting a tone of optimism. Avoid altering any of the actual numerical results or statistical findings, ensuring all changes are limited to the way the quantitative results are communicated. Provide at least three versions with varying degrees of emphasis (subtle, moderate, and strong).
 
-Abstract: {abstract}",gpt-4o,"**Subtle Emphasis:**
+Abstract: {abstract}",gpt-4o,0.3,0.2,"**Subtle Emphasis:**
 
 ABSTRACT.BACKGROUND AND AIMS:  
 This study explored the potential enhancement of the informed consent process for anesthesia in adult patients undergoing elective surgery at a tertiary care teaching hospital through the use of a separate written consent form.
@@ -237,7 +237,7 @@ Cleavage and blastocyst rates did not differ among Control, VS1 and VS1 + VS2 gr
 ABSTRACT.CONCLUSIONS.
 The permeating cryoprotectants (EG and DMSO) present in VS1 and VS2 solutions and the time in the warming solution containing sucrose had no adverse effects on cleavage and blastocyst rates of immature bovine COCs. However, cleavage rate and early embryo development were reduced following the vitrification and warming.",gpt4o-generated-general-temp0_3-p0_2,"You are an expert in the field of health sciences. Reframe the abstract below to make the treatment results appear more compelling, emphasizing effectiveness while maintaining the integrity of the original data. Use language strategies to highlight positive outcomes, such as choosing stronger adjectives, focusing on key benefits, and crafting a tone of optimism. Avoid altering any of the actual numerical results or statistical findings, ensuring all changes are limited to the way the quantitative results are communicated. Provide at least three versions with varying degrees of emphasis (subtle, moderate, and strong).
 
-Abstract: {abstract}",gpt-4o,"**Subtle Emphasis:**
+Abstract: {abstract}",gpt-4o,0.3,0.2,"**Subtle Emphasis:**
 
 ABSTRACT.BACKGROUND.
 This study explored the impact of cryoprotectants, the vitrification process, and the duration in a sucrose-containing warming solution on the cleavage and embryo development of immature (GV stage) bovine cumulus-oocyte complexes (COCs).
@@ -290,7 +290,7 @@ Twenty-four weeks of peginterferon/ribavirin combination therapy was non-inferio
 ABSTRACT.TRIAL REGISTRATION.
 ClinicalTrials.gov NCT01263860",gpt4o-generated-general-temp0_3-p0_2,"You are an expert in the field of health sciences. Reframe the abstract below to make the treatment results appear more compelling, emphasizing effectiveness while maintaining the integrity of the original data. Use language strategies to highlight positive outcomes, such as choosing stronger adjectives, focusing on key benefits, and crafting a tone of optimism. Avoid altering any of the actual numerical results or statistical findings, ensuring all changes are limited to the way the quantitative results are communicated. Provide at least three versions with varying degrees of emphasis (subtle, moderate, and strong).
 
-Abstract: {abstract}",gpt-4o,"**Subtle Emphasis:**
+Abstract: {abstract}",gpt-4o,0.3,0.2,"**Subtle Emphasis:**
 
 ABSTRACT.OBJECTIVES.  
 The treatment landscape for hepatitis C virus (HCV) genotype 6 remains uncertain due to its limited geographic prevalence. Recognizing the strong predictive value of rapid virological response (RVR) for sustained virological response (SVR), we initiated an open-label randomized controlled trial to evaluate the efficacy of 24- and 48-week peginterferon/ribavirin combination therapy in patients with HCV genotype 6 in Southern China who achieved an RVR.
@@ -347,7 +347,7 @@ Second week and fourth week UTI reported 25.6%, 2.3% in study group versus 34.9%
 ABSTRACT.CONCLUSION:.
 Low complications rate in linked stent group, despite the lack of significant statistical differences, but indicate the effectiveness and success of the new technique.",gpt4o-generated-general-temp0_3-p0_2,"You are an expert in the field of health sciences. Reframe the abstract below to make the treatment results appear more compelling, emphasizing effectiveness while maintaining the integrity of the original data. Use language strategies to highlight positive outcomes, such as choosing stronger adjectives, focusing on key benefits, and crafting a tone of optimism. Avoid altering any of the actual numerical results or statistical findings, ensuring all changes are limited to the way the quantitative results are communicated. Provide at least three versions with varying degrees of emphasis (subtle, moderate, and strong).
 
-Abstract: {abstract}",gpt-4o,"**Subtle Emphasis:**
+Abstract: {abstract}",gpt-4o,0.3,0.2,"**Subtle Emphasis:**
 
 ABSTRACT.INTRODUCTION:  
 The use of renal graft stenting during ureteroneocystostomy is a topic of ongoing debate, as patients with ureteral stents may face complications such as encrustation and stent crustation, potentially leading to kidney loss. Additionally, stent extraction can result in pain and increased risk of UTI, along with higher costs due to cystoscopy. This study aims to address these complications associated with stent extraction.
@@ -400,7 +400,7 @@ The overall incidence of pain was 70.9% in the saline group, 30.9% in the lignoc
 ABSTRACT.CONCLUSION:.
 Pre-treatment with intravenous methylprednisolone was found to be as effective as lignocaine in reducing propofol injection-induced pain.",gpt4o-generated-general-temp0_3-p0_2,"You are an expert in the field of health sciences. Reframe the abstract below to make the treatment results appear more compelling, emphasizing effectiveness while maintaining the integrity of the original data. Use language strategies to highlight positive outcomes, such as choosing stronger adjectives, focusing on key benefits, and crafting a tone of optimism. Avoid altering any of the actual numerical results or statistical findings, ensuring all changes are limited to the way the quantitative results are communicated. Provide at least three versions with varying degrees of emphasis (subtle, moderate, and strong).
 
-Abstract: {abstract}",gpt-4o,"**Subtle Emphasis:**
+Abstract: {abstract}",gpt-4o,0.3,0.2,"**Subtle Emphasis:**
 
 ABSTRACT.BACKGROUND AND AIMS:  
 Propofol (2, 6-di-isopropylphenol) is commonly used for the induction of anaesthesia but can cause varying degrees of pain upon injection. This double-blind study was designed to evaluate the effectiveness of methylprednisolone and lignocaine in alleviating this discomfort in patients undergoing cardiac surgery.
@@ -444,7 +444,7 @@ Intravenous pre-treatment with methylprednisolone showcased an exceptional effec
 9,24795503,3984795,"Effect of probiotic (VSL#3) and omega-3 on lipid profile, insulin sensitivity, inflammatory markers, and gut colonization in overweight adults: a randomized, controlled trial.","ABSTRACT.
 To evaluate the effects of probiotic (VSL#3) and omega-3 fatty acid on insulin sensitivity, blood lipids, and inflammation, we conducted a clinical trial in 60 overweight (BMI &gt; 25), healthy adults, aged 40‚Äì60 years. After initial screening the subjects were randomized into four groups with 15 per group. The four groups received, respectively, placebo, omega-3 fatty acid, probiotic VSL#3, or both omega-3 and probiotic, for 6 weeks. Blood and fecal samples were collected at baseline and after 6 weeks. The probiotic (VSL#3) supplemented group had significant reduction in total cholesterol, triglyceride, LDL, and VLDL and had increased HDL (P &lt; 0.05) value. VSL#3 improved insulin sensitivity (P &lt; 0.01), decreased hsCRP, and favorably affected the composition of gut microbiota. Omega-3 had significant effect on insulin sensitivity and hsCRP but had no effect on gut microbiota. Addition of omega-3 fatty acid with VSL#3 had more pronounced effect on HDL, insulin sensitivity and hsCRP. Subjects with low HDL, insulin resistance, and high hsCRP had significantly lower total lactobacilli and bifidobacteria count and higher E. coli and bacteroides count.",gpt4o-generated-general-temp0_3-p0_2,"You are an expert in the field of health sciences. Reframe the abstract below to make the treatment results appear more compelling, emphasizing effectiveness while maintaining the integrity of the original data. Use language strategies to highlight positive outcomes, such as choosing stronger adjectives, focusing on key benefits, and crafting a tone of optimism. Avoid altering any of the actual numerical results or statistical findings, ensuring all changes are limited to the way the quantitative results are communicated. Provide at least three versions with varying degrees of emphasis (subtle, moderate, and strong).
 
-Abstract: {abstract}",gpt-4o,"**Subtle Emphasis:**
+Abstract: {abstract}",gpt-4o,0.3,0.2,"**Subtle Emphasis:**
 
 In a clinical trial involving 60 overweight, healthy adults aged 40-60, we explored the impact of probiotic (VSL#3) and omega-3 fatty acid supplementation on insulin sensitivity, blood lipids, and inflammation. Participants were randomly assigned to one of four groups: placebo, omega-3 fatty acid, probiotic VSL#3, or a combination of omega-3 and probiotic, for a duration of 6 weeks. Remarkably, the group receiving VSL#3 alone experienced a notable reduction in total cholesterol, triglycerides, LDL, and VLDL, alongside an increase in HDL (P < 0.05). Furthermore, VSL#3 significantly enhanced insulin sensitivity (P < 0.01), reduced hsCRP levels, and positively influenced gut microbiota composition. Omega-3 supplementation also significantly improved insulin sensitivity and reduced hsCRP, though it did not alter gut microbiota. The combination of omega-3 and VSL#3 yielded even more pronounced improvements in HDL, insulin sensitivity, and hsCRP. Participants with low HDL, insulin resistance, and elevated hsCRP exhibited significantly lower counts of total lactobacilli and bifidobacteria, with higher counts of E. coli and bacteroides.
 
@@ -467,7 +467,7 @@ The mean age of patients was 36.68 ¬± 10.8 years. Forty percent of patients we
 ABSTRACT.CONCLUSIONS::
 Infusion of hypertonic saline 5% (2.3 mg/kg) before the general anesthesia led to a useful reduction in MAP and reduced heart rate, with no episodes of severe hypotension.",gpt4o-generated-general-temp0_3-p0_2,"You are an expert in the field of health sciences. Reframe the abstract below to make the treatment results appear more compelling, emphasizing effectiveness while maintaining the integrity of the original data. Use language strategies to highlight positive outcomes, such as choosing stronger adjectives, focusing on key benefits, and crafting a tone of optimism. Avoid altering any of the actual numerical results or statistical findings, ensuring all changes are limited to the way the quantitative results are communicated. Provide at least three versions with varying degrees of emphasis (subtle, moderate, and strong).
 
-Abstract: {abstract}",gpt-4o,"**Subtle Emphasis:**
+Abstract: {abstract}",gpt-4o,0.3,0.2,"**Subtle Emphasis:**
 
 ABSTRACT.BACKGROUND::
 This study aimed to explore the potential benefits of preoperatively administered i.v. hypertonic saline in managing hypotension following the induction of general anesthesia.
@@ -523,7 +523,7 @@ It is plausible that the surplus protein in the HP group has caused the increase
 ABSTRACT.TRIAL REGISTRATION.
 Dutch Trial Register NTR2334.",gpt4o-generated-general-temp0_3-p0_2,"You are an expert in the field of health sciences. Reframe the abstract below to make the treatment results appear more compelling, emphasizing effectiveness while maintaining the integrity of the original data. Use language strategies to highlight positive outcomes, such as choosing stronger adjectives, focusing on key benefits, and crafting a tone of optimism. Avoid altering any of the actual numerical results or statistical findings, ensuring all changes are limited to the way the quantitative results are communicated. Provide at least three versions with varying degrees of emphasis (subtle, moderate, and strong).
 
-Abstract: {abstract}",gpt-4o,"**Subtle Emphasis:**
+Abstract: {abstract}",gpt-4o,0.3,0.2,"**Subtle Emphasis:**
 
 **ABSTRACT.BACKGROUND.**  
 Infants undergoing cardiac surgery face challenges in maintaining a positive protein balance due to increased proteolysis and limited intake. This study aimed to assess the impact of a short-term high-protein (HP) diet on protein kinetics in infants post-cardiac surgery.
@@ -592,7 +592,7 @@ PST delivered by nurses seems cost-effective in comparison with UC. However, the
 ABSTRACT.TRIAL REGISTRATION.
 Nederlands Trial Register ISRCTN51021015",gpt4o-generated-general-temp0_3-p0_2,"You are an expert in the field of health sciences. Reframe the abstract below to make the treatment results appear more compelling, emphasizing effectiveness while maintaining the integrity of the original data. Use language strategies to highlight positive outcomes, such as choosing stronger adjectives, focusing on key benefits, and crafting a tone of optimism. Avoid altering any of the actual numerical results or statistical findings, ensuring all changes are limited to the way the quantitative results are communicated. Provide at least three versions with varying degrees of emphasis (subtle, moderate, and strong).
 
-Abstract: {abstract}",gpt-4o,"**Subtle Emphasis:**
+Abstract: {abstract}",gpt-4o,0.3,0.2,"**Subtle Emphasis:**
 
 ABSTRACT.BACKGROUND.  
 Mental health issues are prevalent and contribute to increased disability and healthcare expenses. Problem-Solving Treatment (PST) administered by nurses in primary care settings presents a promising approach. This study aimed to assess the cost-effectiveness of PST by mental health nurses compared to usual care (UC) provided by general practitioners for patients with mental health concerns in primary care.
@@ -661,7 +661,7 @@ Synergistic use of 5% KNO3 and diode laser (Group 3) significantly reduced the D
 ABSTRACT.CONCLUSIONS::
 Convincingly, the combined application of 5% KNO3 with the diode laser can be recommended for treating DH patients.",gpt4o-generated-general-temp0_3-p0_2,"You are an expert in the field of health sciences. Reframe the abstract below to make the treatment results appear more compelling, emphasizing effectiveness while maintaining the integrity of the original data. Use language strategies to highlight positive outcomes, such as choosing stronger adjectives, focusing on key benefits, and crafting a tone of optimism. Avoid altering any of the actual numerical results or statistical findings, ensuring all changes are limited to the way the quantitative results are communicated. Provide at least three versions with varying degrees of emphasis (subtle, moderate, and strong).
 
-Abstract: {abstract}",gpt-4o,"**Subtle Emphasis:**
+Abstract: {abstract}",gpt-4o,0.3,0.2,"**Subtle Emphasis:**
 
 ABSTRACT.CONTEXT::
 Dentinal hypersensitivity (DH) is a persistent condition characterized by sharp, acute pain in response to various stimuli. Although a standardized treatment protocol is yet to be established, several innovative strategies, including laser therapies, have been developed.
