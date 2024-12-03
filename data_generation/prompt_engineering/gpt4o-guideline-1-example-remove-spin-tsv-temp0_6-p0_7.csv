@@ -1,0 +1,569 @@
+pmid,pmcid,title,abstract,prompt_template_name,prompt_template,model_name,temperature,top_p,model_output
+21731251,3118076,The efficacy of flapless implant surgery on soft-tissue profile comparing immediate loading implants to delayed loading implants: A comparative clinical study.,"ABSTRACT.AIMS AND OBJECTIVES.
+To assess the efficacy of flapless implant surgery on soft-tissue profile and to compare the clinical outcomes of flapless implant therapy on immediate loading (IL) implants to delayed loading (DL) implants.
+
+ABSTRACT.MATERIALS AND METHODS.
+The study sample consisted of 20 patients who were partially edentulous in the anterior maxillary region. They were divided into two groups. In group I (IL) 10 implants were placed and immediately provisionalized and restored with a metal ceramic crown on the 14th day. In group II (DL) 10 implants were placed and loaded after 4 months. Single-piece implants were used for the IL group and two-piece implants were used for the DL group. All soft tissue parameters i.e., modified plaque index (mPI), modified bleeding index (mBI), papillary index (PPI), marginal level of soft tissue (ML) and width of keratinized mucosa (WKM) were recorded at baseline, Day 60, Day 120 and Day 180.
+
+ABSTRACT.RESULTS:.
+The success rate in group I was found to be 80%, which was lower than the success rate in group II which was found to be 90%. On comparison, there is no statistically significant difference in success rate between the two study groups. There was no statistically significant difference between the groups over time in parameters like mPI, mBI, ML and WKM. The mean PPI score in group II showed a significant increase from when compared to group I.
+
+ABSTRACT.CONCLUSION:.
+The results of this study indicated that flapless implant surgery using either immediately loading implants or DL implants, demonstrate enhancement of implant esthetics.",gpt4o-guideline-1-example-remove-spin-tsv-temp0_6-p0_7,"system prompt: You are an expert in the field of health sciences. user prompt: Rewrite the provided abstract to remove any instances of spin. The length of the new abstract should be within 25 words of the original. Do not make any changes if there are no instances of spin in the original. Follow the guidelines below for removing spin from an abstract.
+Guidelines for writing an abstract without spin:
+* In the Context section:
+    * Delete all information that could distort the understanding of the aim of the trial.
+        * The aim is to evaluate the treatment effect on a secondary outcome.
+        * The aim is to evaluate the treatment effect for a subgroup.
+        * The aim is to evaluate overall improvement.
+* In the Methods section:
+    * Clearly report the primary outcome.
+    * According to space constraints, report all secondary outcomes evaluated in the Methods section or report no secondary outcome evaluated in the Methods section to avoid specifically highlighting statistically significant secondary outcomes.
+    * Delete information that could distort the understanding of the aim (eg, within-group comparison, modified population analysis, subgroup analysis).
+* In the Results section:
+    * Delete subgroup analyses that were not prespecified, based on the primary outcome, and interpreted in light of the totality of prespecified subgroup analyses undertaken.
+    * Delete within-group comparisons.
+    * Delete linguistic spin.
+    * Report the results for the primary outcome with numbers in both arms (if possible with some measure of variability) with no wording of judgment.
+    * Report results for all secondary outcomes, for no secondary outcome, or for the most clinically important secondary outcome.
+    * Report safety data including reason for withdrawals; report treatment discontinuation when applicable.
+* In the Conclusions section:
+    * Delete the author conclusion, and only add the following standardized conclusion: “the treatment A was not more effective than comparator B in patients with….”
+    * Specify the primary outcome in the conclusion when some secondary outcomes were statistically significant: “the treatment A was not more effective on overall survival than the comparator B in patients with….”
+
+Example: {examples}
+
+Abstract: {abstract}",gpt-4o,0.6,0.7,"ABSTRACT.AIMS AND OBJECTIVES. To assess the efficacy of flapless implant surgery on soft-tissue profile and compare clinical outcomes of immediate loading (IL) implants to delayed loading (DL) implants.
+
+ABSTRACT.MATERIALS AND METHODS. The study involved 20 patients with anterior maxillary partial edentulism, divided into two groups. Group I (IL) had 10 implants immediately provisionalized and restored with a metal ceramic crown on day 14. Group II (DL) had 10 implants loaded after 4 months. Single-piece implants were used for IL and two-piece for DL. Soft tissue parameters like modified plaque index (mPI), modified bleeding index (mBI), papillary index (PPI), marginal level of soft tissue (ML), and width of keratinized mucosa (WKM) were recorded at baseline, Day 60, Day 120, and Day 180.
+
+ABSTRACT.RESULTS. Group I had an 80% success rate, while Group II had a 90% success rate. No statistically significant difference in success rate was found between groups. Parameters such as mPI, mBI, ML, and WKM showed no significant differences over time between groups. The mean PPI score in Group II showed a significant increase compared to Group I.
+
+ABSTRACT.CONCLUSION. The treatment using flapless implant surgery with either IL or DL implants was not more effective than the comparator in patients with anterior maxillary partial edentulism."
+24523939,3921228,Real-time FMRI neurofeedback training of amygdala activity in patients with major depressive disorder.,"ABSTRACT.BACKGROUND.
+Amygdala hemodynamic responses to positive stimuli are attenuated in major depressive disorder (MDD), and normalize with remission. Real-time functional MRI neurofeedback (rtfMRI-nf) offers a non-invasive method to modulate this regional activity. We examined whether depressed participants can use rtfMRI-nf to enhance amygdala responses to positive autobiographical memories, and whether this ability alters symptom severity.
+
+ABSTRACT.METHODS.
+Unmedicated MDD subjects were assigned to receive rtfMRI-nf from either left amygdala (LA; experimental group, n = 14) or the horizontal segment of the intraparietal sulcus (HIPS; control group, n = 7) and instructed to contemplate happy autobiographical memories (AMs) to raise the level of a bar representing the hemodynamic signal from the target region to a target level. This 40s Happy condition alternated with 40s blocks of rest and counting backwards. A final Transfer run without neurofeedback information was included.
+
+ABSTRACT.RESULTS.
+Participants in the experimental group upregulated their amygdala responses during positive AM recall. Significant pre-post scan decreases in anxiety ratings and increases in happiness ratings were evident in the experimental versus control group. A whole brain analysis showed that during the transfer run, participants in the experimental group had increased activity compared to the control group in left superior temporal gyrus and temporal polar cortex, and right thalamus.
+
+ABSTRACT.CONCLUSIONS.
+Using rtfMRI-nf from the left amygdala during recall of positive AMs, depressed subjects were able to self-regulate their amygdala response, resulting in improved mood. Results from this proof-of-concept study suggest that rtfMRI-nf training with positive AM recall holds potential as a novel therapeutic approach in the treatment of depression.",gpt4o-guideline-1-example-remove-spin-tsv-temp0_6-p0_7,"system prompt: You are an expert in the field of health sciences. user prompt: Rewrite the provided abstract to remove any instances of spin. The length of the new abstract should be within 25 words of the original. Do not make any changes if there are no instances of spin in the original. Follow the guidelines below for removing spin from an abstract.
+Guidelines for writing an abstract without spin:
+* In the Context section:
+    * Delete all information that could distort the understanding of the aim of the trial.
+        * The aim is to evaluate the treatment effect on a secondary outcome.
+        * The aim is to evaluate the treatment effect for a subgroup.
+        * The aim is to evaluate overall improvement.
+* In the Methods section:
+    * Clearly report the primary outcome.
+    * According to space constraints, report all secondary outcomes evaluated in the Methods section or report no secondary outcome evaluated in the Methods section to avoid specifically highlighting statistically significant secondary outcomes.
+    * Delete information that could distort the understanding of the aim (eg, within-group comparison, modified population analysis, subgroup analysis).
+* In the Results section:
+    * Delete subgroup analyses that were not prespecified, based on the primary outcome, and interpreted in light of the totality of prespecified subgroup analyses undertaken.
+    * Delete within-group comparisons.
+    * Delete linguistic spin.
+    * Report the results for the primary outcome with numbers in both arms (if possible with some measure of variability) with no wording of judgment.
+    * Report results for all secondary outcomes, for no secondary outcome, or for the most clinically important secondary outcome.
+    * Report safety data including reason for withdrawals; report treatment discontinuation when applicable.
+* In the Conclusions section:
+    * Delete the author conclusion, and only add the following standardized conclusion: “the treatment A was not more effective than comparator B in patients with….”
+    * Specify the primary outcome in the conclusion when some secondary outcomes were statistically significant: “the treatment A was not more effective on overall survival than the comparator B in patients with….”
+
+Example: {examples}
+
+Abstract: {abstract}",gpt-4o,0.6,0.7,"BACKGROUND. Amygdala hemodynamic responses to positive stimuli are attenuated in major depressive disorder (MDD) and normalize with remission. We examined whether depressed participants can use real-time functional MRI neurofeedback (rtfMRI-nf) to enhance amygdala responses to positive autobiographical memories.
+
+METHODS. Unmedicated MDD subjects were assigned to receive rtfMRI-nf from either left amygdala (LA; experimental group, n = 14) or the horizontal segment of the intraparietal sulcus (HIPS; control group, n = 7) and instructed to contemplate happy autobiographical memories (AMs) to raise the level of a bar representing the hemodynamic signal from the target region to a target level. This 40s Happy condition alternated with 40s blocks of rest and counting backwards. A final Transfer run without neurofeedback information was included.
+
+RESULTS. Participants in the experimental group upregulated their amygdala responses during positive AM recall. A whole brain analysis showed that during the transfer run, participants in the experimental group had increased activity compared to the control group in left superior temporal gyrus and temporal polar cortex, and right thalamus.
+
+CONCLUSIONS. The treatment was not more effective than the comparator in patients with major depressive disorder."
+23225932,3511949,Comparison of efficacy of intra-articular morphine and steroid in patients with knee osteoarthritis.,"ABSTRACT.INTRODUCTION:.
+Primary therapeutic aim in treatment of osteoarthritis of the knee is to relieve the pain of osteoarthritis. The aim of this study was to compare the efficacy of intra-articular triamcinolone with intra-articular morphine in pain relief due to osteoarthritis of the knee in the elderly population.
+
+ABSTRACT.MATERIALS AND METHODS:.
+Patients between 50 and 80 years of age were randomized into three groups. Group M received morphine plus bupivacaine intra-articularly, Group T received triamcinolone plus bupivacaine intra-articularly, and Group C received saline plus bupivacaine intra-articularly. Patients were evaluated before injection and in 2nd, 4th, 6th, and 12th weeks after injection. First-line supplementary analgesic was oral paracetamol 1500 mg/day. If analgesia was insufficient with paracetamol, oral dexketoprofen trometamol 50 mg/day was recommended to patients.
+
+ABSTRACT.RESULTS:.
+After the intra-articular injection, there was statistically significant decrease in visual analog scale (VAS) scores in Groups M and T, when compared to Group C. The decrease of VAS scores seen at the first 2 weeks continued steadily up to the end of 12th week. There was a significant decrease in Groups M and T in the WOMAC scores, when compared to Group C. There was no significant difference in the WOMAC scores between morphine and steroid groups. Significantly less supplementary analgesics was used in the morphine and steroid groups.
+
+ABSTRACT.CONCLUSION:.
+Intra-articular morphine was as effective as intra-articular triamcinolone for analgesia in patients with osteoarthritis knee. Intra-articular morphine is possibly a better option than intra-articular steroid as it has lesser side effects.",gpt4o-guideline-1-example-remove-spin-tsv-temp0_6-p0_7,"system prompt: You are an expert in the field of health sciences. user prompt: Rewrite the provided abstract to remove any instances of spin. The length of the new abstract should be within 25 words of the original. Do not make any changes if there are no instances of spin in the original. Follow the guidelines below for removing spin from an abstract.
+Guidelines for writing an abstract without spin:
+* In the Context section:
+    * Delete all information that could distort the understanding of the aim of the trial.
+        * The aim is to evaluate the treatment effect on a secondary outcome.
+        * The aim is to evaluate the treatment effect for a subgroup.
+        * The aim is to evaluate overall improvement.
+* In the Methods section:
+    * Clearly report the primary outcome.
+    * According to space constraints, report all secondary outcomes evaluated in the Methods section or report no secondary outcome evaluated in the Methods section to avoid specifically highlighting statistically significant secondary outcomes.
+    * Delete information that could distort the understanding of the aim (eg, within-group comparison, modified population analysis, subgroup analysis).
+* In the Results section:
+    * Delete subgroup analyses that were not prespecified, based on the primary outcome, and interpreted in light of the totality of prespecified subgroup analyses undertaken.
+    * Delete within-group comparisons.
+    * Delete linguistic spin.
+    * Report the results for the primary outcome with numbers in both arms (if possible with some measure of variability) with no wording of judgment.
+    * Report results for all secondary outcomes, for no secondary outcome, or for the most clinically important secondary outcome.
+    * Report safety data including reason for withdrawals; report treatment discontinuation when applicable.
+* In the Conclusions section:
+    * Delete the author conclusion, and only add the following standardized conclusion: “the treatment A was not more effective than comparator B in patients with….”
+    * Specify the primary outcome in the conclusion when some secondary outcomes were statistically significant: “the treatment A was not more effective on overall survival than the comparator B in patients with….”
+
+Example: {examples}
+
+Abstract: {abstract}",gpt-4o,0.6,0.7,"ABSTRACT.INTRODUCTION: The aim of this study was to compare the efficacy of intra-articular triamcinolone with intra-articular morphine in pain relief due to osteoarthritis of the knee in the elderly population.
+
+ABSTRACT.MATERIALS AND METHODS: Patients between 50 and 80 years of age were randomized into three groups. Group M received morphine plus bupivacaine intra-articularly, Group T received triamcinolone plus bupivacaine intra-articularly, and Group C received saline plus bupivacaine intra-articularly. Patients were evaluated before injection and in 2nd, 4th, 6th, and 12th weeks after injection. First-line supplementary analgesic was oral paracetamol 1500 mg/day. If analgesia was insufficient with paracetamol, oral dexketoprofen trometamol 50 mg/day was recommended to patients.
+
+ABSTRACT.RESULTS: After the intra-articular injection, there was statistically significant decrease in visual analog scale (VAS) scores in Groups M and T, when compared to Group C. The decrease of VAS scores seen at the first 2 weeks continued steadily up to the end of 12th week. There was a significant decrease in Groups M and T in the WOMAC scores, when compared to Group C. There was no significant difference in the WOMAC scores between morphine and steroid groups. Significantly less supplementary analgesics was used in the morphine and steroid groups.
+
+ABSTRACT.CONCLUSION: Intra-articular morphine was not more effective than intra-articular triamcinolone for analgesia in patients with osteoarthritis knee."
+25002300,4183415,Cluster randomized trial of text message reminders to retail staff in tanzanian drug shops dispensing artemether-lumefantrine: effect on dispenser knowledge and patient adherence.,"ABSTRACT.
+Artemisinin combination therapies are available in private outlets, but patient adherence might be compromised by poor advice from dispensers. In this cluster randomized trial in drug shops in Tanzania, 42 of 82 selected shops were randomized to receive text message reminders about what advice to provide when dispensing artemether-lumefantrine (AL). Eligible patients purchasing AL at shops in both arms were followed up at home and questioned about each dose taken. Dispensers were interviewed regarding knowledge of AL dispensing practices and receipt of the malaria-related text messages. We interviewed 904 patients and 110 dispensers from 77 shops. Although there was some improvement in dispenser knowledge, there was no difference between arms in adherence measured as completion of all doses (intervention 68.3%, control 69.8%, p [adjusted] = 0.6), or as completion of each dose at the correct time (intervention 33.1%, control 32.6%, p [adjusted] = 0.9). Further studies on the potential of text messages to improve adherence are needed.",gpt4o-guideline-1-example-remove-spin-tsv-temp0_6-p0_7,"system prompt: You are an expert in the field of health sciences. user prompt: Rewrite the provided abstract to remove any instances of spin. The length of the new abstract should be within 25 words of the original. Do not make any changes if there are no instances of spin in the original. Follow the guidelines below for removing spin from an abstract.
+Guidelines for writing an abstract without spin:
+* In the Context section:
+    * Delete all information that could distort the understanding of the aim of the trial.
+        * The aim is to evaluate the treatment effect on a secondary outcome.
+        * The aim is to evaluate the treatment effect for a subgroup.
+        * The aim is to evaluate overall improvement.
+* In the Methods section:
+    * Clearly report the primary outcome.
+    * According to space constraints, report all secondary outcomes evaluated in the Methods section or report no secondary outcome evaluated in the Methods section to avoid specifically highlighting statistically significant secondary outcomes.
+    * Delete information that could distort the understanding of the aim (eg, within-group comparison, modified population analysis, subgroup analysis).
+* In the Results section:
+    * Delete subgroup analyses that were not prespecified, based on the primary outcome, and interpreted in light of the totality of prespecified subgroup analyses undertaken.
+    * Delete within-group comparisons.
+    * Delete linguistic spin.
+    * Report the results for the primary outcome with numbers in both arms (if possible with some measure of variability) with no wording of judgment.
+    * Report results for all secondary outcomes, for no secondary outcome, or for the most clinically important secondary outcome.
+    * Report safety data including reason for withdrawals; report treatment discontinuation when applicable.
+* In the Conclusions section:
+    * Delete the author conclusion, and only add the following standardized conclusion: “the treatment A was not more effective than comparator B in patients with….”
+    * Specify the primary outcome in the conclusion when some secondary outcomes were statistically significant: “the treatment A was not more effective on overall survival than the comparator B in patients with….”
+
+Example: {examples}
+
+Abstract: {abstract}",gpt-4o,0.6,0.7,"Artemisinin combination therapies are available in private outlets, but patient adherence might be compromised by poor advice from dispensers. In this cluster randomized trial in drug shops in Tanzania, 42 of 82 selected shops were randomized to receive text message reminders about what advice to provide when dispensing artemether-lumefantrine (AL). Eligible patients purchasing AL at shops in both arms were followed up at home and questioned about each dose taken. Dispensers were interviewed regarding knowledge of AL dispensing practices and receipt of the malaria-related text messages. We interviewed 904 patients and 110 dispensers from 77 shops. There was no difference between arms in adherence measured as completion of all doses (intervention 68.3%, control 69.8%, p [adjusted] = 0.6), or as completion of each dose at the correct time (intervention 33.1%, control 32.6%, p [adjusted] = 0.9). Further studies on the potential of text messages to improve adherence are needed."
+27006535,4784207,Efficacy of a separate informed consent for anesthesia services: A prospective study from the Caribbean.,"ABSTRACT.BACKGROUND AND AIMS:.
+This study aimed to determine whether a separate written consent form improved the efficacy of the informed consent process for anesthesia in adult patients undergoing elective surgery at a tertiary care teaching hospital.
+
+ABSTRACT.MATERIAL AND METHODS:.
+We randomized patients into two groups prospectively. The first group (Group A) signed the hospital's standard Consent for Operation form only while the second group (Group B) signed a separate Consent for Anesthesia form additionally. Patients were interviewed postoperatively with an eight-item questionnaire with responses in a 5-point Likert scale. A composite adequacy of consent index was generated from the responses and analyzed.
+
+ABSTRACT.RESULTS:.
+Two hundred patients (100 in each group) were studied. All patients indicated that the anesthesiologist(s) had their permission to proceed with their anesthesia care. The mean adequacy of consent index score in Group B was higher than that of Group A (30.6 ¬± 4.6 [standard deviation (SD)] vs. 27.9 ¬± 5.2 [SD]) (P &lt; 0.001). The separate written consent had a positive impact on the patients' understanding of the nature and purpose of the intended anesthesia procedures (P = 0.04), satisfaction with the adequacy of information provided about common side effects (P &lt; 0.001) and rare but serious complications (P = 0.008).
+
+ABSTRACT.CONCLUSIONS:.
+A separate written consent for anesthesia improved the efficacy of the informed consent process with respect to better information about the nature and purpose of anesthesia, common side effects, and rare but serious complications.",gpt4o-guideline-1-example-remove-spin-tsv-temp0_6-p0_7,"system prompt: You are an expert in the field of health sciences. user prompt: Rewrite the provided abstract to remove any instances of spin. The length of the new abstract should be within 25 words of the original. Do not make any changes if there are no instances of spin in the original. Follow the guidelines below for removing spin from an abstract.
+Guidelines for writing an abstract without spin:
+* In the Context section:
+    * Delete all information that could distort the understanding of the aim of the trial.
+        * The aim is to evaluate the treatment effect on a secondary outcome.
+        * The aim is to evaluate the treatment effect for a subgroup.
+        * The aim is to evaluate overall improvement.
+* In the Methods section:
+    * Clearly report the primary outcome.
+    * According to space constraints, report all secondary outcomes evaluated in the Methods section or report no secondary outcome evaluated in the Methods section to avoid specifically highlighting statistically significant secondary outcomes.
+    * Delete information that could distort the understanding of the aim (eg, within-group comparison, modified population analysis, subgroup analysis).
+* In the Results section:
+    * Delete subgroup analyses that were not prespecified, based on the primary outcome, and interpreted in light of the totality of prespecified subgroup analyses undertaken.
+    * Delete within-group comparisons.
+    * Delete linguistic spin.
+    * Report the results for the primary outcome with numbers in both arms (if possible with some measure of variability) with no wording of judgment.
+    * Report results for all secondary outcomes, for no secondary outcome, or for the most clinically important secondary outcome.
+    * Report safety data including reason for withdrawals; report treatment discontinuation when applicable.
+* In the Conclusions section:
+    * Delete the author conclusion, and only add the following standardized conclusion: “the treatment A was not more effective than comparator B in patients with….”
+    * Specify the primary outcome in the conclusion when some secondary outcomes were statistically significant: “the treatment A was not more effective on overall survival than the comparator B in patients with….”
+
+Example: {examples}
+
+Abstract: {abstract}",gpt-4o,0.6,0.7,"BACKGROUND AND AIMS: This study aimed to determine whether a separate written consent form improved the informed consent process for anesthesia in adult patients undergoing elective surgery.
+
+MATERIAL AND METHODS: We randomized patients into two groups. Group A signed the standard Consent for Operation form, while Group B signed an additional Consent for Anesthesia form. Postoperative interviews were conducted using an eight-item questionnaire, and a composite adequacy of consent index was analyzed.
+
+RESULTS: Two hundred patients (100 in each group) participated. The mean adequacy of consent index score in Group B was higher than in Group A (30.6 ± 4.6 vs. 27.9 ± 5.2) (P < 0.001). The separate consent improved understanding of anesthesia procedures (P = 0.04), information on common side effects (P < 0.001), and serious complications (P = 0.008).
+
+CONCLUSIONS: A separate written consent for anesthesia improved the informed consent process by providing better information about anesthesia, side effects, and complications."
+22954348,3814649,"Vitrification of immature bovine cumulus-oocyte complexes: effects of cryoprotectants, the vitrification procedure and warming time on cleavage and embryo development.","ABSTRACT.BACKGROUND.
+The present studies evaluated the effects of cryoprotectants, the vitrification procedure and time in the warming solution containing sucrose on cleavage and embryo development of immature (GV stage) bovine cumulus-oocyte complexes (COCs).
+
+ABSTRACT.METHODS.
+Two experiments were conducted. In Experiment 1, COCs (n = 420) were randomly assigned to four groups: 1) Control group: no treatment; 2) VS1 group: COCs were exposed to vitrification solution 1 (VS1) containing 7.5% ethylene glycol [EG] + 7.5% dimethyl sulfoxide [DMSO] + 20% calf serum [CS] in TCM-199 at 37 C for 5 min; 3) VS1 + VS2 group: COCs were exposed to VS1 for 5 min followed by VS2 (15% EG + 15% DMSO + 17.1% sucrose + 20% CS) at 37 C for 45‚Äì60 sec; and 4) Vitrified group: COCs were exposed to VS1 and VS2, loaded on cryotops, vitrified in liquid nitrogen and then warmed in TCM-199 + 17.1% sucrose + 20% CS at 37 C for 1 min. In Experiment 2, COCs (n = 581) were assigned to the same groups, but those in VS1, VS1 + VS2 and Vitrified groups were sub-divided and exposed to the warming solution for either 1 or 5 min. After treatment and/or warming, all COCs in both experiments underwent in vitro maturation, in vitro fertilization and in vitro culture.
+
+ABSTRACT.RESULTS.
+Cleavage and blastocyst rates did not differ among Control, VS1 and VS1 + VS2 groups in either experiment. In Experiment 2, there was no effect of time in the warming solution.  However, both cleavage and blastocyst rates were lower (P &lt; 0.001) in the Vitrified group than in the Control, VS1 and VS1 + VS2 groups (40.9 and 1.6% vs 92.2 and 34.4%, 79.4 and 25.2%, and 80.2 and 20.8%, respectively in Experiment 1, and 25.0 and 1.7% vs 75.3 and 27.2%, 67.9 and 19.5%, and 62.7 and 22.5%, respectively in Experiment 2).
+
+ABSTRACT.CONCLUSIONS.
+The permeating cryoprotectants (EG and DMSO) present in VS1 and VS2 solutions and the time in the warming solution containing sucrose had no adverse effects on cleavage and blastocyst rates of immature bovine COCs. However, cleavage rate and early embryo development were reduced following the vitrification and warming.",gpt4o-guideline-1-example-remove-spin-tsv-temp0_6-p0_7,"system prompt: You are an expert in the field of health sciences. user prompt: Rewrite the provided abstract to remove any instances of spin. The length of the new abstract should be within 25 words of the original. Do not make any changes if there are no instances of spin in the original. Follow the guidelines below for removing spin from an abstract.
+Guidelines for writing an abstract without spin:
+* In the Context section:
+    * Delete all information that could distort the understanding of the aim of the trial.
+        * The aim is to evaluate the treatment effect on a secondary outcome.
+        * The aim is to evaluate the treatment effect for a subgroup.
+        * The aim is to evaluate overall improvement.
+* In the Methods section:
+    * Clearly report the primary outcome.
+    * According to space constraints, report all secondary outcomes evaluated in the Methods section or report no secondary outcome evaluated in the Methods section to avoid specifically highlighting statistically significant secondary outcomes.
+    * Delete information that could distort the understanding of the aim (eg, within-group comparison, modified population analysis, subgroup analysis).
+* In the Results section:
+    * Delete subgroup analyses that were not prespecified, based on the primary outcome, and interpreted in light of the totality of prespecified subgroup analyses undertaken.
+    * Delete within-group comparisons.
+    * Delete linguistic spin.
+    * Report the results for the primary outcome with numbers in both arms (if possible with some measure of variability) with no wording of judgment.
+    * Report results for all secondary outcomes, for no secondary outcome, or for the most clinically important secondary outcome.
+    * Report safety data including reason for withdrawals; report treatment discontinuation when applicable.
+* In the Conclusions section:
+    * Delete the author conclusion, and only add the following standardized conclusion: “the treatment A was not more effective than comparator B in patients with….”
+    * Specify the primary outcome in the conclusion when some secondary outcomes were statistically significant: “the treatment A was not more effective on overall survival than the comparator B in patients with….”
+
+Example: {examples}
+
+Abstract: {abstract}",gpt-4o,0.6,0.7,"BACKGROUND. The study evaluated the effects of cryoprotectants, vitrification, and warming time on cleavage and embryo development of immature bovine cumulus-oocyte complexes (COCs).
+
+METHODS. Two experiments were conducted. In Experiment 1, COCs (n = 420) were assigned to four groups: 1) Control: no treatment; 2) VS1: exposed to vitrification solution 1 (VS1) with 7.5% ethylene glycol [EG] + 7.5% dimethyl sulfoxide [DMSO] + 20% calf serum [CS] in TCM-199 at 37 C for 5 min; 3) VS1 + VS2: exposed to VS1 for 5 min, then VS2 (15% EG + 15% DMSO + 17.1% sucrose + 20% CS) at 37 C for 45–60 sec; 4) Vitrified: exposed to VS1 and VS2, loaded on cryotops, vitrified in liquid nitrogen, then warmed in TCM-199 + 17.1% sucrose + 20% CS at 37 C for 1 min. In Experiment 2, COCs (n = 581) were assigned to the same groups, with sub-divisions exposed to the warming solution for 1 or 5 min. All COCs underwent in vitro maturation, fertilization, and culture.
+
+RESULTS. Cleavage and blastocyst rates did not differ among Control, VS1, and VS1 + VS2 groups. In Experiment 2, warming time had no effect. Cleavage and blastocyst rates were lower (P < 0.001) in the Vitrified group than in Control, VS1, and VS1 + VS2 groups (40.9 and 1.6% vs 92.2 and 34.4%, 79.4 and 25.2%, 80.2 and 20.8% in Experiment 1; 25.0 and 1.7% vs 75.3 and 27.2%, 67.9 and 19.5%, 62.7 and 22.5% in Experiment 2).
+
+CONCLUSIONS. The cryoprotectants in VS1 and VS2 and warming time had no adverse effects on cleavage and blastocyst rates. Cleavage rate and early embryo development were reduced following vitrification and warming."
+26509605,4624894,24 versus 48 Weeks of Peginterferon Plus Ribavirin in Hepatitis C Virus Genotype 6 Chronically Infected Patients with a Rapid Virological Response: A Non-Inferiority Randomized Controlled Trial.,"ABSTRACT.OBJECTIVES.
+The optimal treatment of hepatitis C virus (HCV) genotype 6 is unclear owing to its limited geographic distribution. Because of a high predictive value of rapid virological response (RVR) for sustained virological response (SVR), we conducted an open-label randomized controlled trial to compare 24- and 48-week peginterferon/ribavirin combination therapy for patients with HCV genotype 6 in Southern China who achieved an RVR.
+
+ABSTRACT.METHODS AND FINDINGS.
+Treatment-naive, non-cirrhotic patients with chronic hepatitis C genotype 6 were treated with pegylated interferon Œ±-2a (180 Œºg/week) and ribavirin (800‚Äì1,200 mg, according to weight) for 4 weeks. Patients who achieved an RVR, which was defined as HCV RNA negativity at week 4 (&lt;50 IU), were randomized to receive either an additional 20 or 44 weeks of treatment (24- and 48-week treatment groups, respectively). The primary outcome measure was SVR. From January 2011 to June 2014, 152(152/210, 72.4%) patients with HCV genotype 6a and RVR were randomized 1:1 to the 24- or 48-week treatment group. The SVR rates in the 24- and 48-week groups in the intention-to-treat analysis were 90.8% (69/76) and 88.2% (67/76), respectively; those in the per-protocol analysis were 95.7% (67/70) and 97.0% (64/66), respectively. More patients in the 48-week group had anemia (46.1% vs. 28.9%, P = 0.03), but other adverse events were comparable between the groups. The limitation of the present study was that only patients from Southern China were enrolled which may inhibit the extensive application of the findings.
+
+ABSTRACT.CONCLUSION.
+Twenty-four weeks of peginterferon/ribavirin combination therapy was non-inferior to 48 weeks in patients with HCV genotype 6a in Southern China who achieved an RVR.
+
+ABSTRACT.TRIAL REGISTRATION.
+ClinicalTrials.gov NCT01263860",gpt4o-guideline-1-example-remove-spin-tsv-temp0_6-p0_7,"system prompt: You are an expert in the field of health sciences. user prompt: Rewrite the provided abstract to remove any instances of spin. The length of the new abstract should be within 25 words of the original. Do not make any changes if there are no instances of spin in the original. Follow the guidelines below for removing spin from an abstract.
+Guidelines for writing an abstract without spin:
+* In the Context section:
+    * Delete all information that could distort the understanding of the aim of the trial.
+        * The aim is to evaluate the treatment effect on a secondary outcome.
+        * The aim is to evaluate the treatment effect for a subgroup.
+        * The aim is to evaluate overall improvement.
+* In the Methods section:
+    * Clearly report the primary outcome.
+    * According to space constraints, report all secondary outcomes evaluated in the Methods section or report no secondary outcome evaluated in the Methods section to avoid specifically highlighting statistically significant secondary outcomes.
+    * Delete information that could distort the understanding of the aim (eg, within-group comparison, modified population analysis, subgroup analysis).
+* In the Results section:
+    * Delete subgroup analyses that were not prespecified, based on the primary outcome, and interpreted in light of the totality of prespecified subgroup analyses undertaken.
+    * Delete within-group comparisons.
+    * Delete linguistic spin.
+    * Report the results for the primary outcome with numbers in both arms (if possible with some measure of variability) with no wording of judgment.
+    * Report results for all secondary outcomes, for no secondary outcome, or for the most clinically important secondary outcome.
+    * Report safety data including reason for withdrawals; report treatment discontinuation when applicable.
+* In the Conclusions section:
+    * Delete the author conclusion, and only add the following standardized conclusion: “the treatment A was not more effective than comparator B in patients with….”
+    * Specify the primary outcome in the conclusion when some secondary outcomes were statistically significant: “the treatment A was not more effective on overall survival than the comparator B in patients with….”
+
+Example: {examples}
+
+Abstract: {abstract}",gpt-4o,0.6,0.7,"ABSTRACT.OBJECTIVES. The optimal treatment of hepatitis C virus (HCV) genotype 6 is unclear due to its limited geographic distribution. We conducted an open-label randomized controlled trial to compare 24- and 48-week peginterferon/ribavirin combination therapy for patients with HCV genotype 6 in Southern China who achieved a rapid virological response (RVR).
+
+ABSTRACT.METHODS AND FINDINGS. Treatment-naive, non-cirrhotic patients with chronic hepatitis C genotype 6 were treated with pegylated interferon α-2a (180 µg/week) and ribavirin (800–1,200 mg, according to weight) for 4 weeks. Patients who achieved an RVR, defined as HCV RNA negativity at week 4 (<50 IU), were randomized to receive either an additional 20 or 44 weeks of treatment (24- and 48-week treatment groups, respectively). The primary outcome measure was sustained virological response (SVR). From January 2011 to June 2014, 152 (152/210, 72.4%) patients with HCV genotype 6a and RVR were randomized 1:1 to the 24- or 48-week treatment group. The SVR rates in the 24- and 48-week groups in the intention-to-treat analysis were 90.8% (69/76) and 88.2% (67/76), respectively; those in the per-protocol analysis were 95.7% (67/70) and 97.0% (64/66), respectively. More patients in the 48-week group had anemia (46.1% vs. 28.9%, P = 0.03), but other adverse events were comparable between the groups. The limitation of the present study was that only patients from Southern China were enrolled, which may inhibit the extensive application of the findings.
+
+ABSTRACT.CONCLUSION. Twenty-four weeks of peginterferon/ribavirin combination therapy was not inferior to 48 weeks in patients with HCV genotype 6a in Southern China who achieved an RVR.
+
+ABSTRACT.TRIAL REGISTRATION. ClinicalTrials.gov NCT01263860"
+25363176,4796524,"Comparison of complications and short term results of conventional technique versus new technique during graft ureteral stent insertion in bari technique at Emam Khomeini Hospital, Urmia.","ABSTRACT.INTRODUCTION:.
+There is debate on renal graft stenting during ureteroneocystostomy, patients with ureteral stents may encounter several complications such as encrustation, stent crustation which can lead to loss of kidney, and complications related to stent extraction: pain and UTI increasing related to cystoscopy for stent extraction accompanying excess expenses. This study designed to reduce complications related to stent extraction.
+
+ABSTRACT.MATERIAL AND METHODS:.
+90 patients prepared for renal transplantation during 1 year randomly classified to groups, study group: patients with attached stent to Foley catheter, control group: patients with conventional technique (stent separated from Foley) then in their follow up; UTI, stent crustation, luts severity compared to each other.
+
+ABSTRACT.RESULTS:.
+Second week and fourth week UTI reported 25.6%, 2.3% in study group versus 34.9%, 4.7% in control group (P value 0.48 and 0.5). Urinary leakage was 3.3% overall, that all of them occurred in separate stent group, 37.5% vs. 0% in the linked stent group. Stent crustation in separate stent was 25% compared with 0% in the linked stent.
+
+ABSTRACT.CONCLUSION:.
+Low complications rate in linked stent group, despite the lack of significant statistical differences, but indicate the effectiveness and success of the new technique.",gpt4o-guideline-1-example-remove-spin-tsv-temp0_6-p0_7,"system prompt: You are an expert in the field of health sciences. user prompt: Rewrite the provided abstract to remove any instances of spin. The length of the new abstract should be within 25 words of the original. Do not make any changes if there are no instances of spin in the original. Follow the guidelines below for removing spin from an abstract.
+Guidelines for writing an abstract without spin:
+* In the Context section:
+    * Delete all information that could distort the understanding of the aim of the trial.
+        * The aim is to evaluate the treatment effect on a secondary outcome.
+        * The aim is to evaluate the treatment effect for a subgroup.
+        * The aim is to evaluate overall improvement.
+* In the Methods section:
+    * Clearly report the primary outcome.
+    * According to space constraints, report all secondary outcomes evaluated in the Methods section or report no secondary outcome evaluated in the Methods section to avoid specifically highlighting statistically significant secondary outcomes.
+    * Delete information that could distort the understanding of the aim (eg, within-group comparison, modified population analysis, subgroup analysis).
+* In the Results section:
+    * Delete subgroup analyses that were not prespecified, based on the primary outcome, and interpreted in light of the totality of prespecified subgroup analyses undertaken.
+    * Delete within-group comparisons.
+    * Delete linguistic spin.
+    * Report the results for the primary outcome with numbers in both arms (if possible with some measure of variability) with no wording of judgment.
+    * Report results for all secondary outcomes, for no secondary outcome, or for the most clinically important secondary outcome.
+    * Report safety data including reason for withdrawals; report treatment discontinuation when applicable.
+* In the Conclusions section:
+    * Delete the author conclusion, and only add the following standardized conclusion: “the treatment A was not more effective than comparator B in patients with….”
+    * Specify the primary outcome in the conclusion when some secondary outcomes were statistically significant: “the treatment A was not more effective on overall survival than the comparator B in patients with….”
+
+Example: {examples}
+
+Abstract: {abstract}",gpt-4o,0.6,0.7,"ABSTRACT.INTRODUCTION:.
+This study aims to reduce complications related to stent extraction during renal transplantation, such as encrustation and urinary tract infections (UTIs).
+
+ABSTRACT.MATERIAL AND METHODS:.
+Ninety patients undergoing renal transplantation were randomly assigned to two groups: study group (stent attached to Foley catheter) and control group (conventional technique). UTIs, stent crustation, and LUTS severity were compared.
+
+ABSTRACT.RESULTS:.
+Second and fourth week UTIs were 25.6%, 2.3% in the study group versus 34.9%, 4.7% in the control group (P = 0.48 and 0.5). Urinary leakage occurred only in the separate stent group (3.3% overall). Stent crustation was 25% in the separate stent group compared with 0% in the linked stent group.
+
+ABSTRACT.CONCLUSION:.
+The linked stent group showed a lower complication rate. The treatment was not more effective than the conventional technique in reducing complications."
+27942060,5125190,"Efficacy of methylprednisolone and lignocaine on propofol injection pain: A randomised, double-blind, prospective study in adult cardiac surgical patients.","ABSTRACT.BACKGROUND AND AIMS:.
+Propofol (2, 6-di-isopropylphenol) used for the induction of anaesthesia often causes mild to severe pain or discomfort on injection. We designed this double-blind study to compare the efficacy of methylprednisolone and lignocaine in reducing the pain of propofol injection in patients scheduled for cardiac surgery.
+
+ABSTRACT.METHODS:.
+A total of 165 adult patients, scheduled for elective cardiac surgery, were divided into three groups: saline (group S, n = 55), lignocaine 20 mg (Group L, n = 55) and methylprednisolone 125 mg diluted into 2 ml of distilled water (Group MP, n = 55). Drugs were administered after tourniquet application and occlusion was released after 1 min and 1/4th of the total dose of propofol (2 mg/kg) was administered at the rate of 0.5 ml/s. Pain on propofol injection was evaluated by four-point verbal rating scale. Statistical methods used included Student's t-test and Chi-square test/Fisher's exact test.
+
+ABSTRACT.RESULTS:.
+The overall incidence of pain was 70.9% in the saline group, 30.9% in the lignocaine group and 36.4% in the methylprednisolone group. The intensity of pain was significantly less in patients receiving methylprednisolone and lignocaine than those receiving saline (P &lt; 0.012).
+
+ABSTRACT.CONCLUSION:.
+Pre-treatment with intravenous methylprednisolone was found to be as effective as lignocaine in reducing propofol injection-induced pain.",gpt4o-guideline-1-example-remove-spin-tsv-temp0_6-p0_7,"system prompt: You are an expert in the field of health sciences. user prompt: Rewrite the provided abstract to remove any instances of spin. The length of the new abstract should be within 25 words of the original. Do not make any changes if there are no instances of spin in the original. Follow the guidelines below for removing spin from an abstract.
+Guidelines for writing an abstract without spin:
+* In the Context section:
+    * Delete all information that could distort the understanding of the aim of the trial.
+        * The aim is to evaluate the treatment effect on a secondary outcome.
+        * The aim is to evaluate the treatment effect for a subgroup.
+        * The aim is to evaluate overall improvement.
+* In the Methods section:
+    * Clearly report the primary outcome.
+    * According to space constraints, report all secondary outcomes evaluated in the Methods section or report no secondary outcome evaluated in the Methods section to avoid specifically highlighting statistically significant secondary outcomes.
+    * Delete information that could distort the understanding of the aim (eg, within-group comparison, modified population analysis, subgroup analysis).
+* In the Results section:
+    * Delete subgroup analyses that were not prespecified, based on the primary outcome, and interpreted in light of the totality of prespecified subgroup analyses undertaken.
+    * Delete within-group comparisons.
+    * Delete linguistic spin.
+    * Report the results for the primary outcome with numbers in both arms (if possible with some measure of variability) with no wording of judgment.
+    * Report results for all secondary outcomes, for no secondary outcome, or for the most clinically important secondary outcome.
+    * Report safety data including reason for withdrawals; report treatment discontinuation when applicable.
+* In the Conclusions section:
+    * Delete the author conclusion, and only add the following standardized conclusion: “the treatment A was not more effective than comparator B in patients with….”
+    * Specify the primary outcome in the conclusion when some secondary outcomes were statistically significant: “the treatment A was not more effective on overall survival than the comparator B in patients with….”
+
+Example: {examples}
+
+Abstract: {abstract}",gpt-4o,0.6,0.7,"BACKGROUND AND AIMS: Propofol often causes pain on injection during anaesthesia induction. This study compared methylprednisolone and lignocaine for reducing this pain in cardiac surgery patients.
+
+METHODS: 165 adult patients were divided into three groups: saline (n = 55), lignocaine 20 mg (n = 55), and methylprednisolone 125 mg (n = 55). Drugs were administered post-tourniquet application, and propofol was given at 0.5 ml/s. Pain was assessed using a four-point verbal rating scale. Statistical analyses included Student's t-test and Chi-square/Fisher's exact test.
+
+RESULTS: Pain incidence was 70.9% with saline, 30.9% with lignocaine, and 36.4% with methylprednisolone. Pain intensity was significantly lower with methylprednisolone and lignocaine than saline (P < 0.012).
+
+CONCLUSION: Methylprednisolone was as effective as lignocaine in reducing propofol injection pain."
+24795503,3984795,"Effect of probiotic (VSL#3) and omega-3 on lipid profile, insulin sensitivity, inflammatory markers, and gut colonization in overweight adults: a randomized, controlled trial.","ABSTRACT.
+To evaluate the effects of probiotic (VSL#3) and omega-3 fatty acid on insulin sensitivity, blood lipids, and inflammation, we conducted a clinical trial in 60 overweight (BMI &gt; 25), healthy adults, aged 40‚Äì60 years. After initial screening the subjects were randomized into four groups with 15 per group. The four groups received, respectively, placebo, omega-3 fatty acid, probiotic VSL#3, or both omega-3 and probiotic, for 6 weeks. Blood and fecal samples were collected at baseline and after 6 weeks. The probiotic (VSL#3) supplemented group had significant reduction in total cholesterol, triglyceride, LDL, and VLDL and had increased HDL (P &lt; 0.05) value. VSL#3 improved insulin sensitivity (P &lt; 0.01), decreased hsCRP, and favorably affected the composition of gut microbiota. Omega-3 had significant effect on insulin sensitivity and hsCRP but had no effect on gut microbiota. Addition of omega-3 fatty acid with VSL#3 had more pronounced effect on HDL, insulin sensitivity and hsCRP. Subjects with low HDL, insulin resistance, and high hsCRP had significantly lower total lactobacilli and bifidobacteria count and higher E. coli and bacteroides count.",gpt4o-guideline-1-example-remove-spin-tsv-temp0_6-p0_7,"system prompt: You are an expert in the field of health sciences. user prompt: Rewrite the provided abstract to remove any instances of spin. The length of the new abstract should be within 25 words of the original. Do not make any changes if there are no instances of spin in the original. Follow the guidelines below for removing spin from an abstract.
+Guidelines for writing an abstract without spin:
+* In the Context section:
+    * Delete all information that could distort the understanding of the aim of the trial.
+        * The aim is to evaluate the treatment effect on a secondary outcome.
+        * The aim is to evaluate the treatment effect for a subgroup.
+        * The aim is to evaluate overall improvement.
+* In the Methods section:
+    * Clearly report the primary outcome.
+    * According to space constraints, report all secondary outcomes evaluated in the Methods section or report no secondary outcome evaluated in the Methods section to avoid specifically highlighting statistically significant secondary outcomes.
+    * Delete information that could distort the understanding of the aim (eg, within-group comparison, modified population analysis, subgroup analysis).
+* In the Results section:
+    * Delete subgroup analyses that were not prespecified, based on the primary outcome, and interpreted in light of the totality of prespecified subgroup analyses undertaken.
+    * Delete within-group comparisons.
+    * Delete linguistic spin.
+    * Report the results for the primary outcome with numbers in both arms (if possible with some measure of variability) with no wording of judgment.
+    * Report results for all secondary outcomes, for no secondary outcome, or for the most clinically important secondary outcome.
+    * Report safety data including reason for withdrawals; report treatment discontinuation when applicable.
+* In the Conclusions section:
+    * Delete the author conclusion, and only add the following standardized conclusion: “the treatment A was not more effective than comparator B in patients with….”
+    * Specify the primary outcome in the conclusion when some secondary outcomes were statistically significant: “the treatment A was not more effective on overall survival than the comparator B in patients with….”
+
+Example: {examples}
+
+Abstract: {abstract}",gpt-4o,0.6,0.7,"To evaluate the effects of probiotic (VSL#3) and omega-3 fatty acid on insulin sensitivity, blood lipids, and inflammation, we conducted a clinical trial in 60 overweight (BMI > 25), healthy adults, aged 40–60 years. After initial screening, subjects were randomized into four groups with 15 per group. The four groups received, respectively, placebo, omega-3 fatty acid, probiotic VSL#3, or both omega-3 and probiotic, for 6 weeks. Blood and fecal samples were collected at baseline and after 6 weeks. The probiotic (VSL#3) supplemented group had a reduction in total cholesterol, triglyceride, LDL, and VLDL and increased HDL (P < 0.05). VSL#3 improved insulin sensitivity (P < 0.01), decreased hsCRP, and affected gut microbiota composition. Omega-3 affected insulin sensitivity and hsCRP but not gut microbiota. Addition of omega-3 with VSL#3 had more effect on HDL, insulin sensitivity, and hsCRP. Subjects with low HDL, insulin resistance, and high hsCRP had lower total lactobacilli and bifidobacteria count and higher E. coli and bacteroides count."
+25250297,4166055,Effect of hypertonic saline on hypotension following induction of general anesthesia: A randomized controlled trial.,"ABSTRACT.BACKGROUND::
+The aim of this study was to examine the effects of preoperatively administered i.v. hypertonic saline on hypotension following induction of general anesthesia.
+
+ABSTRACT.MATERIALS AND METHODS::
+Fifty-four patients who scheduled for elective surgery were randomly allocated to two groups of 27 patients who received hypertonic saline 5% (2.3 ml/kg) or received normal saline (13 ml/kg). Infusion of hypertonic saline was done half an hour before induction of anesthesia during 30 minutes. Anesthesia was conducted in a standard protocol for all patients. Age, sex, body mass index (BMI), systolic and diastolic blood pressure (SBP, DBP), heart rate (HR) and mean arterial pressure (MAP) were assessed in all patients.
+
+ABSTRACT.RESULTS::
+The mean age of patients was 36.68 ¬± 10.8 years. Forty percent of patients were male. The mean SBP at min 2 and min 5, mean of DBP at min 2, 5, and 15, mean of HR at all time points and mean of MAP at min 2 and 15 between groups were no significantly different (P &gt; 0.05), but mean of SBP at min 10 and 15, mean of DBP at min 10, and mean of MAP at min 5 and 10 in hypertonic saline group was significantly more than the normal group (P &lt; 0.05). Trend of SBP, DBP, HR and MAP between groups were not significantly different (P &gt; 0.05).
+
+ABSTRACT.CONCLUSIONS::
+Infusion of hypertonic saline 5% (2.3 mg/kg) before the general anesthesia led to a useful reduction in MAP and reduced heart rate, with no episodes of severe hypotension.",gpt4o-guideline-1-example-remove-spin-tsv-temp0_6-p0_7,"system prompt: You are an expert in the field of health sciences. user prompt: Rewrite the provided abstract to remove any instances of spin. The length of the new abstract should be within 25 words of the original. Do not make any changes if there are no instances of spin in the original. Follow the guidelines below for removing spin from an abstract.
+Guidelines for writing an abstract without spin:
+* In the Context section:
+    * Delete all information that could distort the understanding of the aim of the trial.
+        * The aim is to evaluate the treatment effect on a secondary outcome.
+        * The aim is to evaluate the treatment effect for a subgroup.
+        * The aim is to evaluate overall improvement.
+* In the Methods section:
+    * Clearly report the primary outcome.
+    * According to space constraints, report all secondary outcomes evaluated in the Methods section or report no secondary outcome evaluated in the Methods section to avoid specifically highlighting statistically significant secondary outcomes.
+    * Delete information that could distort the understanding of the aim (eg, within-group comparison, modified population analysis, subgroup analysis).
+* In the Results section:
+    * Delete subgroup analyses that were not prespecified, based on the primary outcome, and interpreted in light of the totality of prespecified subgroup analyses undertaken.
+    * Delete within-group comparisons.
+    * Delete linguistic spin.
+    * Report the results for the primary outcome with numbers in both arms (if possible with some measure of variability) with no wording of judgment.
+    * Report results for all secondary outcomes, for no secondary outcome, or for the most clinically important secondary outcome.
+    * Report safety data including reason for withdrawals; report treatment discontinuation when applicable.
+* In the Conclusions section:
+    * Delete the author conclusion, and only add the following standardized conclusion: “the treatment A was not more effective than comparator B in patients with….”
+    * Specify the primary outcome in the conclusion when some secondary outcomes were statistically significant: “the treatment A was not more effective on overall survival than the comparator B in patients with….”
+
+Example: {examples}
+
+Abstract: {abstract}",gpt-4o,0.6,0.7,"BACKGROUND: The aim of this study was to examine the effects of preoperatively administered i.v. hypertonic saline on hypotension following induction of general anesthesia.
+
+MATERIALS AND METHODS: Fifty-four patients scheduled for elective surgery were randomly allocated to two groups of 27 patients who received hypertonic saline 5% (2.3 ml/kg) or normal saline (13 ml/kg). Infusion of hypertonic saline was done half an hour before induction of anesthesia during 30 minutes. Anesthesia was conducted in a standard protocol for all patients. Age, sex, body mass index (BMI), systolic and diastolic blood pressure (SBP, DBP), heart rate (HR), and mean arterial pressure (MAP) were assessed in all patients.
+
+RESULTS: The mean age of patients was 36.68 ± 10.8 years. Forty percent of patients were male. The mean SBP at min 2 and min 5, mean of DBP at min 2, 5, and 15, mean of HR at all time points, and mean of MAP at min 2 and 15 between groups were not significantly different (P > 0.05), but mean of SBP at min 10 and 15, mean of DBP at min 10, and mean of MAP at min 5 and 10 in the hypertonic saline group were significantly more than the normal group (P < 0.05). Trends of SBP, DBP, HR, and MAP between groups were not significantly different (P > 0.05).
+
+CONCLUSIONS: The treatment with hypertonic saline was not more effective than normal saline in patients undergoing general anesthesia."
+26215396,4517637,The effect of short-term high versus normal protein intake on whole-body protein synthesis and balance in children following cardiac surgery: a randomized double-blind controlled clinical trial.,"ABSTRACT.BACKGROUND.
+Infants undergoing cardiac surgery are at risk of a negative protein balance, due to increased proteolysis in response to surgery and the cardiopulmonary bypass circuit, and limited intake. The aim of the study was to quantify the effect on protein kinetics of a short-term high-protein (HP) diet in infants following cardiac surgery.
+
+ABSTRACT.METHODS.
+In a prospective, double-blinded, randomized trial we compared the effects of a HP (5 g ¬∑ kg‚àí1 ¬∑ d‚àí1) versus normal protein (NP, 2 g ¬∑ kg‚àí1 ¬∑ d‚àí1) enteral diet on protein kinetics in children &lt;24 months, on day 2 following surgical repair of congenital heart disease. Valine kinetics and fractional albumin synthesis rate (FSRalb) were measured with mass spectrometry using [1-13C]valine infusion. The Mann‚ÄìWhitney U test was used to investigate differences between group medians. Additionally, the Hodges-Lehmann procedure was used to create a confidence interval with a point estimate of median differences between groups.
+
+ABSTRACT.RESULTS.
+Twenty-eight children (median age 9 months, median weight 7 kg) participated in the study, of whom in only 20 subjects isotopic data could be used for final calculations. Due to underpowering of our study, we could not draw conclusions on the primary outcome parameters. We observed valine synthesis rate of 2.73 (range: 0.94 to 3.36) and 2.26 (1.85 to 2.73) Œºmol ¬∑ kg‚àí1 ¬∑ min‚àí1 in the HP and NP diet, respectively. The net valine balance was 0.54 (‚àí0.73 to 1.75) and 0.24 (‚àí0.20 to 0.63) Œºmol ¬∑ kg‚àí1 ¬∑ min‚àí1 in the HP and NP group. Between groups, there was no difference in FSRalb. We observed increased oxidation and BUN in the HP diet, compared to the NP diet, as a plausible explanation of the metabolic fate of surplus protein.
+
+ABSTRACT.CONCLUSIONS.
+It is plausible that the surplus protein in the HP group has caused the increase of valine oxidation and ureagenesis, compared to the NP group. Because too few patients had completed the study, we were unable to draw conclusions on the effect of a HP diet on protein synthesis and balance. We present our results as new hypothesis generating data.
+
+ABSTRACT.TRIAL REGISTRATION.
+Dutch Trial Register NTR2334.",gpt4o-guideline-1-example-remove-spin-tsv-temp0_6-p0_7,"system prompt: You are an expert in the field of health sciences. user prompt: Rewrite the provided abstract to remove any instances of spin. The length of the new abstract should be within 25 words of the original. Do not make any changes if there are no instances of spin in the original. Follow the guidelines below for removing spin from an abstract.
+Guidelines for writing an abstract without spin:
+* In the Context section:
+    * Delete all information that could distort the understanding of the aim of the trial.
+        * The aim is to evaluate the treatment effect on a secondary outcome.
+        * The aim is to evaluate the treatment effect for a subgroup.
+        * The aim is to evaluate overall improvement.
+* In the Methods section:
+    * Clearly report the primary outcome.
+    * According to space constraints, report all secondary outcomes evaluated in the Methods section or report no secondary outcome evaluated in the Methods section to avoid specifically highlighting statistically significant secondary outcomes.
+    * Delete information that could distort the understanding of the aim (eg, within-group comparison, modified population analysis, subgroup analysis).
+* In the Results section:
+    * Delete subgroup analyses that were not prespecified, based on the primary outcome, and interpreted in light of the totality of prespecified subgroup analyses undertaken.
+    * Delete within-group comparisons.
+    * Delete linguistic spin.
+    * Report the results for the primary outcome with numbers in both arms (if possible with some measure of variability) with no wording of judgment.
+    * Report results for all secondary outcomes, for no secondary outcome, or for the most clinically important secondary outcome.
+    * Report safety data including reason for withdrawals; report treatment discontinuation when applicable.
+* In the Conclusions section:
+    * Delete the author conclusion, and only add the following standardized conclusion: “the treatment A was not more effective than comparator B in patients with….”
+    * Specify the primary outcome in the conclusion when some secondary outcomes were statistically significant: “the treatment A was not more effective on overall survival than the comparator B in patients with….”
+
+Example: {examples}
+
+Abstract: {abstract}",gpt-4o,0.6,0.7,"BACKGROUND. Infants undergoing cardiac surgery may experience negative protein balance due to increased proteolysis and limited intake. This study aimed to quantify the effect of a high-protein (HP) diet on protein kinetics in infants post-cardiac surgery.
+
+METHODS. In a double-blinded, randomized trial, we compared HP (5 g/kg/day) versus normal protein (NP, 2 g/kg/day) enteral diets on protein kinetics in children under 24 months, two days post-surgery. Valine kinetics and fractional albumin synthesis rate (FSRalb) were measured using mass spectrometry. The Mann-Whitney U test assessed group median differences, and the Hodges-Lehmann procedure provided a confidence interval for median differences.
+
+RESULTS. Twenty-eight children (median age 9 months, median weight 7 kg) participated, with isotopic data from 20 subjects used for calculations. Due to underpowering, conclusions on primary outcomes were not possible. Valine synthesis rates were 2.73 (range: 0.94 to 3.36) and 2.26 (1.85 to 2.73) μmol/kg/min in HP and NP diets, respectively. Net valine balance was 0.54 (-0.73 to 1.75) and 0.24 (-0.20 to 0.63) μmol/kg/min in HP and NP groups. No difference in FSRalb was observed between groups. Increased oxidation and BUN in the HP diet suggested a metabolic fate for surplus protein.
+
+CONCLUSIONS. The surplus protein in the HP group may have increased valine oxidation and ureagenesis compared to the NP group. Due to insufficient patient completion, conclusions on the HP diet's effect on protein synthesis and balance were not possible. Results provide hypothesis-generating data.
+
+TRIAL REGISTRATION. Dutch Trial Register NTR2334."
+23052105,3515338,Cost-effectiveness of problem-solving treatment in comparison with usual care for primary care patients with mental health problems: a randomized trial.,"ABSTRACT.BACKGROUND.
+Mental health problems are common and are associated with increased disability and health care costs. Problem-Solving Treatment (PST) delivered to these patients by nurses in primary care might be efficient. The aim of this study was to evaluate the cost-effectiveness of PST by mental health nurses compared with usual care (UC) by the general practitioner for primary care patients with mental health problems.
+
+ABSTRACT.METHODS.
+An economic evaluation from a societal perspective was performed alongside a randomized clinical trial. Patients with a positive General Health Questionnaire score (score ‚â• 4) and who visited their general practitioner at least three times during the past 6 months were eligible. Outcome measures were improvement on the Hospital Anxiety and Depression Scale and QALYs based on the EQ-5D. Resource use was measured using a validated questionnaire. Missing cost and effect data were imputed using multiple imputation techniques. Bootstrapping was used to analyze costs and cost-effectiveness of PST compared with UC.
+
+ABSTRACT.RESULTS.
+There were no statistically significant differences in clinical outcomes at 9 months. Mean total costs were ‚Ç¨4795 in the PST group and ‚Ç¨6857 in the UC group. Costs were not statistically significantly different between the two groups (95% CI -4698;359). The cost-effectiveness analysis showed that PST was cost-effective in comparison with UC. Sensitivity analyses confirmed these findings.
+
+ABSTRACT.CONCLUSIONS.
+PST delivered by nurses seems cost-effective in comparison with UC. However, these results should be interpreted with caution, since the difference in total costs was mainly caused by 3 outliers with extremely high indirect costs in the UC group.
+
+ABSTRACT.TRIAL REGISTRATION.
+Nederlands Trial Register ISRCTN51021015",gpt4o-guideline-1-example-remove-spin-tsv-temp0_6-p0_7,"system prompt: You are an expert in the field of health sciences. user prompt: Rewrite the provided abstract to remove any instances of spin. The length of the new abstract should be within 25 words of the original. Do not make any changes if there are no instances of spin in the original. Follow the guidelines below for removing spin from an abstract.
+Guidelines for writing an abstract without spin:
+* In the Context section:
+    * Delete all information that could distort the understanding of the aim of the trial.
+        * The aim is to evaluate the treatment effect on a secondary outcome.
+        * The aim is to evaluate the treatment effect for a subgroup.
+        * The aim is to evaluate overall improvement.
+* In the Methods section:
+    * Clearly report the primary outcome.
+    * According to space constraints, report all secondary outcomes evaluated in the Methods section or report no secondary outcome evaluated in the Methods section to avoid specifically highlighting statistically significant secondary outcomes.
+    * Delete information that could distort the understanding of the aim (eg, within-group comparison, modified population analysis, subgroup analysis).
+* In the Results section:
+    * Delete subgroup analyses that were not prespecified, based on the primary outcome, and interpreted in light of the totality of prespecified subgroup analyses undertaken.
+    * Delete within-group comparisons.
+    * Delete linguistic spin.
+    * Report the results for the primary outcome with numbers in both arms (if possible with some measure of variability) with no wording of judgment.
+    * Report results for all secondary outcomes, for no secondary outcome, or for the most clinically important secondary outcome.
+    * Report safety data including reason for withdrawals; report treatment discontinuation when applicable.
+* In the Conclusions section:
+    * Delete the author conclusion, and only add the following standardized conclusion: “the treatment A was not more effective than comparator B in patients with….”
+    * Specify the primary outcome in the conclusion when some secondary outcomes were statistically significant: “the treatment A was not more effective on overall survival than the comparator B in patients with….”
+
+Example: {examples}
+
+Abstract: {abstract}",gpt-4o,0.6,0.7,"BACKGROUND. Mental health problems are common and associated with increased disability and health care costs. This study evaluated the cost-effectiveness of Problem-Solving Treatment (PST) by mental health nurses compared with usual care (UC) by general practitioners for primary care patients with mental health issues.
+
+METHODS. An economic evaluation from a societal perspective was conducted alongside a randomized clinical trial. Eligible patients had a positive General Health Questionnaire score (≥4) and visited their general practitioner at least three times in the past 6 months. Outcome measures included improvement on the Hospital Anxiety and Depression Scale and QALYs based on the EQ-5D. Resource use was measured using a validated questionnaire. Missing data were imputed using multiple imputation techniques. Bootstrapping analyzed costs and cost-effectiveness of PST versus UC.
+
+RESULTS. No statistically significant differences in clinical outcomes were observed at 9 months. Mean total costs were €4795 in the PST group and €6857 in the UC group. Costs were not statistically significantly different between groups (95% CI -4698;359). The cost-effectiveness analysis suggested PST was cost-effective compared to UC. Sensitivity analyses supported these findings.
+
+CONCLUSIONS. PST was not more effective than UC in reducing costs for patients with mental health problems.
+
+TRIAL REGISTRATION. Nederlands Trial Register ISRCTN51021015"
+29491586,5827507,Comparative clinical evaluation of gallium-aluminum-arsenide diode laser and potassium nitrate in treating dentinal hypersensitivity.,"ABSTRACT.CONTEXT::
+Dentinal hypersensitivity (DH) is a chronic disorder in which patients report sharp and acute pain to a variety of stimuli. Till date, a standardized procedure to treat DH is missing, though several alternative treatment strategies have been designed, including laser therapies.
+
+ABSTRACT.AIM::
+The aim of the study was to treat DH with minimum chemical concentration and least laser energy level with longer follow-up period.
+
+ABSTRACT.MATERIALS AND METHODS::
+One hundred and twenty patients were randomly divided into four groups: (i) Group 1-5% potassium nitrate (KNO3); (ii) Group 2 - gallium-aluminum-arsenide diode laser (62.2 J/cm2, wavelength - 980 nm, noncontact pulse mode, and power wattage - 0.5 W); (iii) Group 3 - combined 5% KNO3 and the diode laser; and (iv) Group 4 - placebo (control). The visual analog scale (VAS) scores were recorded, analyzed, and compared to tactile stimuli, cold water, and air blast tests at different intervals for 6 weeks.
+
+ABSTRACT.RESULTS::
+Synergistic use of 5% KNO3 and diode laser (Group 3) significantly reduced the DH pain, which was almost negligible after 6th week (97%‚Äì99% of the pain was reported to be relieved) and showed promising results than any other studied groups. Further, the diode laser (Group 2) showed better results than 5% KNO3 (Group 1). One-way ANOVA and Bonferroni correction post hoc test revealed the combination of groups with significant differences in the mean VAS scores at the different interval of time (P &lt; 0.01).
+
+ABSTRACT.CONCLUSIONS::
+Convincingly, the combined application of 5% KNO3 with the diode laser can be recommended for treating DH patients.",gpt4o-guideline-1-example-remove-spin-tsv-temp0_6-p0_7,"system prompt: You are an expert in the field of health sciences. user prompt: Rewrite the provided abstract to remove any instances of spin. The length of the new abstract should be within 25 words of the original. Do not make any changes if there are no instances of spin in the original. Follow the guidelines below for removing spin from an abstract.
+Guidelines for writing an abstract without spin:
+* In the Context section:
+    * Delete all information that could distort the understanding of the aim of the trial.
+        * The aim is to evaluate the treatment effect on a secondary outcome.
+        * The aim is to evaluate the treatment effect for a subgroup.
+        * The aim is to evaluate overall improvement.
+* In the Methods section:
+    * Clearly report the primary outcome.
+    * According to space constraints, report all secondary outcomes evaluated in the Methods section or report no secondary outcome evaluated in the Methods section to avoid specifically highlighting statistically significant secondary outcomes.
+    * Delete information that could distort the understanding of the aim (eg, within-group comparison, modified population analysis, subgroup analysis).
+* In the Results section:
+    * Delete subgroup analyses that were not prespecified, based on the primary outcome, and interpreted in light of the totality of prespecified subgroup analyses undertaken.
+    * Delete within-group comparisons.
+    * Delete linguistic spin.
+    * Report the results for the primary outcome with numbers in both arms (if possible with some measure of variability) with no wording of judgment.
+    * Report results for all secondary outcomes, for no secondary outcome, or for the most clinically important secondary outcome.
+    * Report safety data including reason for withdrawals; report treatment discontinuation when applicable.
+* In the Conclusions section:
+    * Delete the author conclusion, and only add the following standardized conclusion: “the treatment A was not more effective than comparator B in patients with….”
+    * Specify the primary outcome in the conclusion when some secondary outcomes were statistically significant: “the treatment A was not more effective on overall survival than the comparator B in patients with….”
+
+Example: {examples}
+
+Abstract: {abstract}",gpt-4o,0.6,0.7,"ABSTRACT.CONTEXT::  
+Dentinal hypersensitivity (DH) is a chronic disorder characterized by sharp and acute pain in response to various stimuli. No standardized treatment exists, but several alternatives, including laser therapies, have been developed.
+
+ABSTRACT.AIM::  
+The aim of the study was to evaluate the effect of treating DH with minimal chemical concentration and laser energy over a longer follow-up period.
+
+ABSTRACT.MATERIALS AND METHODS::  
+One hundred and twenty patients were randomly divided into four groups: (i) Group 1-5% potassium nitrate (KNO3); (ii) Group 2 - gallium-aluminum-arsenide diode laser (62.2 J/cm2, wavelength - 980 nm, noncontact pulse mode, and power wattage - 0.5 W); (iii) Group 3 - combined 5% KNO3 and the diode laser; and (iv) Group 4 - placebo (control). The visual analog scale (VAS) scores were recorded and compared for tactile stimuli, cold water, and air blast tests at different intervals for 6 weeks.
+
+ABSTRACT.RESULTS::  
+The combination of 5% KNO3 and diode laser (Group 3) significantly reduced DH pain, with 97% to 99% relief reported after the 6th week. The diode laser (Group 2) showed better results than 5% KNO3 (Group 1). One-way ANOVA and Bonferroni correction post hoc test showed significant differences in mean VAS scores at different intervals (P < 0.01).
+
+ABSTRACT.CONCLUSIONS::  
+The combined application of 5% KNO3 with the diode laser was not more effective than the placebo in treating DH patients."
