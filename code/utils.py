@@ -11,7 +11,7 @@ def load_csv_file(file_path: str) -> List[Dict]:
 
     :return data as a list of dictionaries
     """
-    with open(file_path, "r") as file:
+    with open(file_path, "r", encoding="utf-8-sig") as file:
         reader = csv.DictReader(file)
         data = [row for row in reader]
     return data
