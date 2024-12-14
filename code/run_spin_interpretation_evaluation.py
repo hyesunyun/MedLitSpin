@@ -5,6 +5,7 @@ from typing import Dict, List
 from models.gpt35 import GPT35
 from models.gpt4 import GPT4
 from models.gemini import Gemini
+from models.claude import Claude
 from models.model import Model
 
 from tqdm import tqdm
@@ -17,9 +18,8 @@ from utils import load_csv_file, save_dataset_to_json, save_dataset_to_csv
 
 DATA_FOLDER_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
 SEED = 42
-REQ_TIME_GAP = 10
+REQ_TIME_GAP = 15
 
-# TODO: add personas to the prompts
 class Evaluator:
     BASE_PROMPT = '''
     This abstract describes a study evaluating a treatment in the field of cancer published in a peer-reviewed journal. 
@@ -36,6 +36,7 @@ class Evaluator:
         "full_text": "Are you interested in reading the full text article for the study described in the abstract? Score on a scale of 0-10 from not at all interested to very interested.",
         "another_trial": "Do you think it would be interesting to run another trial evaluating this treatment? Score on a scale of 0-10 from not interesting at all to very interesting."
     }
+    MODELS_WITH_RATE_LIMIT = {"gemini_1.5_flash", "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku"}
     def __init__(self, model_name: str, output_path: str, is_debug: bool = False) -> None:
         self.model_name = model_name
         self.output_path = output_path
@@ -82,12 +83,14 @@ class Evaluator:
             "gpt4o": GPT4,
             "gpt4o-mini": GPT4,
             "gemini_1.5_flash": Gemini,
-            "gemini_1.5_flash-8B": Gemini
+            "gemini_1.5_flash-8B": Gemini,
+            "claude_3.5-sonnet": Claude,
+            "claude_3.5-haiku": Claude
         }
         model_class = model_class_mapping[self.model_name]
         if "-" in self.model_name:
-            size = model_name.split("-")[-1]
-            self.model = model_class(model_size=size)
+            type = model_name.split("-")[-1]
+            self.model = model_class(model_type=type)
         else:
             self.model = model_class()
 
@@ -99,48 +102,38 @@ class Evaluator:
         """
         return 2
     
-    def __calculate_differences(self, dataset: List[Dict]) -> Dict:
+    def __calculate_mean_differences(self, dataset: List[Dict]) -> Dict:
         """
-        This method calculates the differences between the spin and no spin abstracts for each question
-        and then calculates the average differences for each question and also the average across all questions.
+        This method calculates the mean differences between the spin and no spin abstracts for each question
+        and then calculates the average across all questions.
 
         :param dataset: list of dictionaries containing the abstracts and the model outputs
         :return dictionary containing the differences
         """
-        print("Calculating differences in scores between spin and no spin abstracts...")
+        print("Calculating means differences in scores between spin and no spin abstracts...")
         df = pd.DataFrame(dataset)
-        # calculate the differences
-        # get unique PMID values in a list
-        pmids = df['PMID'].unique()
 
         # column names for the 5 questions
         column_names = ["benefit_answer", "rigor_answer", "importance_answer", "full_text_answer", "another_trial_answer"]
 
         diff_metrics = {}
         for col in column_names:
-            column_dffs = []
-            for pmid in pmids:
-                # Get the rows for the current PMID
-                pmid_rows = df[df['PMID'] == pmid]
-                # get the 'spin' answer and the 'no_spin' answer
-                spin_answer = int(pmid_rows.loc[pmid_rows['abstract_type'] == 'spin', col].values[0].strip())
-                no_spin_answer = int(pmid_rows.loc[pmid_rows['abstract_type'] == 'no_spin', col].values[0].strip())
-                # subtract the 'spin' answer from the 'no spin' answer
-                diff = no_spin_answer - spin_answer
-                
-                column_dffs.append(diff)
+            # for each column, get the average of spin and no_spin answers
+            spin_avg = df[df['abstract_type'] == 'spin'][col].astype(int).mean()
+            no_spin_avg = df[df['abstract_type'] == 'no_spin'][col].astype(int).mean()
+            
+            # print(f"Average for '{col}' (spin): {spin_avg}")
+            # print(f"Average for '{col}' (no_spin): {no_spin_avg}")
 
-            # Average all the differences for each column
-            column_avg = mean(column_dffs)
-
-            diff_metrics[f"{col}_avg"] = column_avg
-            print(f"Average differences for '{col}': {column_avg}")
+            diff = spin_avg - no_spin_avg
+            diff_metrics[f"{col}_diff"] = diff
+            print(f"Mean difference for '{col}': {diff}")
 
         # Average across all columns
         overall_avg = mean(diff_metrics.values())
         diff_metrics['overall_avg'] = overall_avg
 
-        print(f"\nOverall average difference across all answers: {overall_avg}")
+        print(f"\nOverall mean difference across all answers: {overall_avg}")
 
         return diff_metrics
 
@@ -161,10 +154,10 @@ class Evaluator:
                 input = self.BASE_PROMPT.format(ABSTRACT=example["abstract"], QUESTION=self.QUESTIONS[key])
                 output = self.model.generate_output(input, max_new_tokens=self.max_new_tokens)
                 
-                example[f"{key}_answer"] = output["response"] if "response" in output else "Error: No response from the model"
+                example[f"{key}_answer"] = output["response"].strip() if "response" in output else "Error: No response from the model"
                 example[f"{key}_log_probabilities"] = output["log_probabilities"] if "log_probabilities" in output else "Error: No response from the model"
-                if self.model_name == "gemini_1.5_flash" or self.model_name == "gemini_1.5_flash-8B":
-                    # add some default time gap to avoid rate limiting (free version)
+                if self.model_name == self.MODELS_WITH_RATE_LIMIT:
+                    # add some default time gap to avoid rate limiting (free version/tier)
                     time.sleep(REQ_TIME_GAP)
             results.append(example)
 
@@ -175,28 +168,30 @@ class Evaluator:
         results = sorted(results, key=lambda x: x["PMID"])
 
         # convert into json
-        json_file_path = f"{self.output_path}/{self.model_name}_outputs.json"
+        json_file_path = f"{self.output_path}/{self.model_name}_interpretation_outputs.json"
         save_dataset_to_json(results, json_file_path)
 
         # convert into csv
-        csv_file_path = f"{self.output_path}/{self.model_name}_outputs.csv"
+        csv_file_path = f"{self.output_path}/{self.model_name}_interpretation_outputs.csv"
         save_dataset_to_csv(results, csv_file_path)
 
         print(f"Model outputs saved to {json_file_path} and {csv_file_path}")
 
-        # To calculate the difference between spin and no spin abstracts, we can calculate the difference in the scores for each question
-        # and then calculate the average difference for each question and also the average across all questions
-        diff_metrics = self.__calculate_differences(results)
+        # To calculate the mean differences between the spin and no spin abstracts
+        diff_metrics = self.__calculate_mean_differences(results)
 
         # save the differences to a file 
-        diff_file_path = f"{self.output_path}/{self.model_name}_differences_metrics.json"
+        diff_file_path = f"{self.output_path}/{self.model_name}_mean_differences_metrics.json"
         save_dataset_to_json(diff_metrics, diff_file_path)
         
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Running Evaluation of Interpreting Clinical Trial Results from Abstracts Using LLMs")
 
-    parser.add_argument("--model", default="gpt4o", choices=["gpt35", "gpt4o", "gpt4o-mini", "gemini_1.5_flash", "gemini_1.5_flash-8B"], help="what model to run", required=True)
+    parser.add_argument("--model", default="gpt4o", 
+                        choices=["gpt35", "gpt4o", "gpt4o-mini", "gemini_1.5_flash", "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku"], 
+                        help="what model to run", 
+                        required=True)
     parser.add_argument("--output_path", default="./eval_outputs", help="directory of where the outputs/results should be saved.")
     # do --no-debug for explicit False
     parser.add_argument("--debug", action=argparse.BooleanOptionalAction, help="used for debugging purposes. This option will only run random 3 instances from the dataset.")

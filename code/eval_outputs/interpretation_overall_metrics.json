@@ -1,0 +1,42 @@
+{
+    "gpt4o": {
+        "benefit_answer_avg": 3.1333333333333333,
+        "rigor_answer_avg": 0.1,
+        "importance_answer_avg": 1.2333333333333334,
+        "full_text_answer_avg": 2.8666666666666667,
+        "another_trial_answer_avg": 3.3333333333333335,
+        "overall_avg": 2.1333333333333333
+    },
+    "gpt4o-mini":{
+        "benefit_answer_avg": 3.566666666666667,
+        "rigor_answer_avg": 1.4666666666666666,
+        "importance_answer_avg": 2.7333333333333334,
+        "full_text_answer_avg": 3.933333333333333,
+        "another_trial_answer_avg": 3.8666666666666667,
+        "overall_avg": 3.1133333333333333
+    },
+    "gpt35": {
+        "benefit_answer_avg": 3.9,
+        "rigor_answer_avg": 1.4333333333333333,
+        "importance_answer_avg": 2.066666666666667,
+        "full_text_answer_avg": 2.6,
+        "another_trial_answer_avg": 3.7666666666666666,
+        "overall_avg": 2.7533333333333334
+    },
+    "gemini_1.5_flash": {
+        "benefit_answer_avg": 2.5,
+        "rigor_answer_avg": -0.1,
+        "importance_answer_avg": 2.1666666666666665,
+        "full_text_answer_avg": 3,
+        "another_trial_answer_avg": 3.7,
+        "overall_avg": 2.2533333333333334
+    },
+    "gemini_1.5_flash-8B": {
+        "benefit_answer_avg": 3.066666666666667,
+        "rigor_answer_avg": -0.1,
+        "importance_answer_avg": 0.9666666666666667,
+        "full_text_answer_avg": 2.7333333333333334,
+        "another_trial_answer_avg": 3.433333333333333,
+        "overall_avg": 2.02
+    }
+}

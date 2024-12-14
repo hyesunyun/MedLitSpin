@@ -1,0 +1,38 @@
+[
+    {
+        "id": "15",
+        "PMID": "19273714",
+        "title": "Phase III study of gemcitabine plus docetaxel compared with capecitabine plus docetaxel for anthracycline-pretreated patients with metastatic breast cancer",
+        "journal": "J Clin Oncol",
+        "abstract": "Purpose:\nThis phase III study compared the efficacy and safety of treatment A with comparator B in advanced breast cancer.\nPatients and methods:\nPatients were randomly assigned to treatment A or comparator B. Comparison of progression\u2010free survival (PFS) was the primary objective.\nResults:\nPatient characteristics were balanced between arms (N = 305). Median PFS was 8.05 months (95% CI, 6.60 to 8.71) for treatment A and 7.98 (95% CI, 6.93 to 8.77) for comparator B (log\u2010rank P = .121). Overall response rate (ORR) was 32% in both arms, and overall survival (OS) was not different between arms (P = .983). Time to treatment failure (TTF; defined as discontinuation, progressive disease, death as a result of any cause, or the start of a new anticancer therapy) was superior in the treatment A arm (P = .059). Hematologic toxicity was similar in both arms, except for grades 3 to 4 leukopenia (treatment A, 78%; comparator B, 66%; P = .025) and transfusions (treatment A, 17%; comparator B, 7%; P = .0051). Grades 3 to 4 diarrhea, mucositis, and hand\u2010and\u2010foot syndrome were significantly higher in the comparator B arm. Fewer patients in the treatment A arm discontinued because of drug\u2010related adverse events (13% v 27% in CD; P = .002).\nConclusion:\nNo difference was observed between treatment A and comparator B arms in PFS, ORR, and OS. TTF was longer in the treatment A arm. These findings, combined with a nonhematologic toxicity profile that favors treatment A over approved doses of comparator B, suggest that treatment A may be a better option than comparator B in this clinical setting.",
+        "abstract_type": "spin",
+        "benefit_answer": "6",
+        "benefit_log_probabilities": null,
+        "rigor_answer": "8",
+        "rigor_log_probabilities": null,
+        "importance_answer": "8",
+        "importance_log_probabilities": null,
+        "full_text_answer": "7",
+        "full_text_log_probabilities": null,
+        "another_trial_answer": "7",
+        "another_trial_log_probabilities": null
+    },
+    {
+        "id": "16",
+        "PMID": "19273714",
+        "title": "Phase III study of gemcitabine plus docetaxel compared with capecitabine plus docetaxel for anthracycline-pretreated patients with metastatic breast cancer",
+        "journal": "J Clin Oncol",
+        "abstract": "Purpose:\nThis phase III study compared the efficacy and safety of treatment A with comparator B in advanced breast cancer.\nPatients and methods:\nPatients were randomly assigned to treatment A or comparator B. Comparison of progression\u2010free survival (PFS) was the primary objective.\nResults:\nPatient characteristics were balanced between arms (N = 305). Median PFS was 8.05 months (95% CI, 6.60 to 8.71) for treatment A and 7.98 (95% CI, 6.93 to 8.77) for comparator B (log\u2010rank P = .121). Overall response rate (ORR) was 32% in both arms, p=0.931. The median time to treatment failure (TTF; defined as discontinuation, progressive disease, death as a result of any cause, or the start of a new anticancer therapy) was 4.24 months (95% CI, 4.11 to 4.44) for treatment A and 4.07 months (95% CI, 3.81 to 4.24) for comparator B, p=0.059. The medial overall survival was 19.29 months (95% CI, 15.57 to 23.59) for treatment A vs. 21.45 months (95% CI, 17.12 to 24.94), p=0.983. Hematologic toxicity was similar in both arms, except for grades 3 to 4 leukopenia (treatment A, 78%; comparator B, 66%; P = .025) and transfusions (treatment A, 17%; comparator B, 7%; P = .0051) and grades 3 to 4 diarrhea (treatment A, 8%; comparator B, 18%; p=0.009), mucositis (treatment A, 4%; comparator B, 15%; p<.001), and hand\u2010and\u2010foot syndrome (treatment A, 0%; comparator B, 26%, p<.001). 13% in treatment A arm and 27% in the comparator B arm discontinued because of drug\u2010related adverse events (P = .002).\nConclusion:\nTreatment A was not more effective than comparator B for patients with advanced breast cancer.",
+        "abstract_type": "no_spin",
+        "benefit_answer": "3",
+        "benefit_log_probabilities": null,
+        "rigor_answer": "8",
+        "rigor_log_probabilities": null,
+        "importance_answer": "8",
+        "importance_log_probabilities": null,
+        "full_text_answer": "7",
+        "full_text_log_probabilities": null,
+        "another_trial_answer": "7",
+        "another_trial_log_probabilities": null
+    }
+]

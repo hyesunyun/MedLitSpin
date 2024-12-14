@@ -8,9 +8,9 @@ from dotenv import load_dotenv
 SEED = 42
 
 class Gemini(Model):
-    def __init__(self, model_size: str = "regular") -> None:
+    def __init__(self, model_type: str = "regular") -> None:
         super().__init__()
-        if model_size == "8B":
+        if model_type == "8B":
             model_name = "gemini-1.5-flash-8b"
         else:
             model_name = "gemini-1.5-flash"

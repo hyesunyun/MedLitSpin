@@ -11,6 +11,6 @@
 #     --output_path "code/pls_outputs/$model"
 # done
 
-  python3 code/generate_plain_language_summaries.py \
-    --model gpt4o \
-    --output_path "code/pls_outputs/gpt4o" \
+python3 code/generate_plain_language_summaries.py \
+  --model gpt4o \
+  --output_path "code/pls_outputs/gpt4o" \
