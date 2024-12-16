@@ -13,6 +13,7 @@ import random
 import pandas as pd
 import time
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+import string
 
 from utils import load_csv_file, save_dataset_to_json, save_dataset_to_csv
 
@@ -23,8 +24,9 @@ REQ_TIME_GAP = 15
 class Evaluator:
     # TODO: Update the BASE_PROMPT to match the spin detection task
     BASE_PROMPT = '''
+    Spin or misrepresentation of study findings can be used to influence, positively, the interpretation of statistically nonsignificant randomized controlled trials (RCTs), for example, by emphasizing the apparent benefit of a secondary outcome or findings from a subgroup of patients.
     Does the following clinical trial abstract contain spin (yes/no)?
-    Spin is defined as "reporting practices that distort the interpretation of results and mislead readers so that results are viewed in a more favorable light."
+    Answer only with 'yes' or 'no'. Do not provide any explanations.
     
     Abstract: {ABSTRACT}
     '''
@@ -57,10 +59,8 @@ class Evaluator:
 
         # if test, only get 3 random examples
         if self.is_debug:
-            # select random 3 pmids
-            pmids = random.sample([example["PMID"] for example in dataset], 1)
-            # get both spin and no spin abstracts for the selected pmids
-            dataset = [example for example in dataset if example["PMID"] in pmids]
+            # select random 3 instances
+            dataset = random.sample(dataset, 3)
         self.dataset = dataset
 
     def __load_model(self) -> Model:
@@ -94,6 +94,16 @@ class Evaluator:
         """
         return 1
     
+    def __clean_text(self, text: str) -> str:
+        """
+        This method cleans the text by removing any leading/trailing whitespaces.
+        Removes any punctuations and makes the text lowercase.
+
+        :param text: input text to clean
+        :return cleaned text
+        """
+        return text.strip().lower().translate(str.maketrans('', '', string.punctuation))
+    
     def __calculate_metrics(self, dataset: List[Dict]) -> Dict:
         """
         This method calculates accuracy, precision, recall, f1 score for the llm outputs against ground truth.
@@ -108,14 +118,14 @@ class Evaluator:
         # calculate the metrics
         metrics = {}
         # convert the spin and model_answer to binary values
-        df["spin"] = df["spin"].apply(lambda x: 1 if x == "spin" else 0)
+        df["ground_truth"] = df["abstract_type"].apply(lambda x: 1 if x == "spin" else 0)
         df["model_answer"] = df["model_answer"].apply(lambda x: 1 if x == "yes" else 0)
 
         # calculate the metrics (accuracy, precision, recall, f1 score)
-        accuracy = accuracy_score(df["spin"], df["model_answer"])
-        precision = precision_score(df["spin"], df["model_answer"])
-        recall = recall_score(df["spin"], df["model_answer"])
-        f1 = f1_score(df["spin"], df["model_answer"])
+        accuracy = accuracy_score(df["ground_truth"], df["model_answer"])
+        precision = precision_score(df["ground_truth"], df["model_answer"])
+        recall = recall_score(df["ground_truth"], df["model_answer"])
+        f1 = f1_score(df["ground_truth"], df["model_answer"])
 
         print(f"Accuracy: {accuracy}")
         print(f"Precision: {precision}")
@@ -144,7 +154,7 @@ class Evaluator:
             input = self.BASE_PROMPT.format(ABSTRACT=example["abstract"])
             output = self.model.generate_output(input, max_new_tokens=self.max_new_tokens)
             
-            example["model_answer"] = output["response"].strip() if "response" in output else "Error: No response from the model"
+            example["model_answer"] = self.__clean_text(output["response"]) if "response" in output else "Error: No response from the model"
             example["model_log_probabilities"] = output["log_probabilities"] if "log_probabilities" in output else "Error: No response from the model"
             if self.model_name == self.MODELS_WITH_RATE_LIMIT:
                 # add some default time gap to avoid rate limiting (free version/tier)

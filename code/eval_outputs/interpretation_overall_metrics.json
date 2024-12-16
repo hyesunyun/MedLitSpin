@@ -38,5 +38,21 @@
         "full_text_answer_avg": 2.7333333333333334,
         "another_trial_answer_avg": 3.433333333333333,
         "overall_avg": 2.02
+    },
+    "claude_3.5-sonnet": {
+        "benefit_answer_diff": 2.4999999999999996,
+        "rigor_answer_diff": -0.16666666666666696,
+        "importance_answer_diff": -0.6333333333333337,
+        "full_text_answer_diff": 3.2333333333333334,
+        "another_trial_answer_diff": 2.8666666666666663,
+        "overall_avg": 1.5599999999999996
+    },
+    "claude_3.5-haiku": {
+        "benefit_answer_diff": 2.9666666666666663,
+        "rigor_answer_diff": -0.033333333333333215,
+        "importance_answer_diff": 0.4666666666666668,
+        "full_text_answer_diff": 1.2999999999999998,
+        "another_trial_answer_diff": 2.166666666666667,
+        "overall_avg": 1.3733333333333333
     }
 }
