@@ -13,6 +13,7 @@ import random
 import pandas as pd
 from statistics import mean
 import time
+import string
 
 from utils import load_csv_file, save_dataset_to_json, save_dataset_to_csv
 
@@ -102,6 +103,16 @@ class Evaluator:
         """
         return 2
     
+    def __clean_text(self, text: str) -> str:
+        """
+        This method cleans the text by removing any leading/trailing whitespaces.
+        Removes any punctuations.
+
+        :param text: input text to clean
+        :return cleaned text
+        """
+        return text.strip().translate(str.maketrans('', '', string.punctuation))
+    
     def __calculate_mean_differences(self, dataset: List[Dict]) -> Dict:
         """
         This method calculates the mean differences between the spin and no spin abstracts for each question
@@ -154,7 +165,7 @@ class Evaluator:
                 input = self.BASE_PROMPT.format(ABSTRACT=example["abstract"], QUESTION=self.QUESTIONS[key])
                 output = self.model.generate_output(input, max_new_tokens=self.max_new_tokens)
                 
-                example[f"{key}_answer"] = output["response"].strip() if "response" in output else "Error: No response from the model"
+                example[f"{key}_answer"] = self.__clean_text(output["response"]) if "response" in output else "Error: No response from the model"
                 example[f"{key}_log_probabilities"] = output["log_probabilities"] if "log_probabilities" in output else "Error: No response from the model"
                 if self.model_name in self.MODELS_WITH_RATE_LIMIT:
                     # add some default time gap to avoid rate limiting (free version/tier)
