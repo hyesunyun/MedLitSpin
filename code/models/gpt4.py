@@ -8,9 +8,9 @@ from dotenv import load_dotenv
 SEED = 42
 
 class GPT4(Model):
-    def __init__(self, model_size: str = "regular") -> None:
+    def __init__(self, model_type: str = "regular") -> None:
         super().__init__()
-        if model_size == "mini":
+        if model_type == "mini":
             self.model_name = "gpt-4o-mini"
         else:
             self.model_name = "gpt-4o-2024-08-06"

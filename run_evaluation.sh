@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# List of models to evaluate
 models=("gpt35" "gpt4o" "gpt4o-mini" "gemini_1.5_flash" "gemini_1.5_flash-8B" "claude_3.5-sonnet" "claude_3.5-haiku")
 
 # Loop through each model for two different evaluation tasks: spin detection and spin interpretation

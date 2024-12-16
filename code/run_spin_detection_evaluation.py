@@ -22,7 +22,6 @@ SEED = 42
 REQ_TIME_GAP = 15
 
 class Evaluator:
-    # TODO: Update the BASE_PROMPT to match the spin detection task
     BASE_PROMPT = '''
     Spin or misrepresentation of study findings can be used to influence, positively, the interpretation of statistically nonsignificant randomized controlled trials (RCTs), for example, by emphasizing the apparent benefit of a secondary outcome or findings from a subgroup of patients.
     Does the following clinical trial abstract contain spin (yes/no)?
@@ -156,7 +155,7 @@ class Evaluator:
             
             example["model_answer"] = self.__clean_text(output["response"]) if "response" in output else "Error: No response from the model"
             example["model_log_probabilities"] = output["log_probabilities"] if "log_probabilities" in output else "Error: No response from the model"
-            if self.model_name == self.MODELS_WITH_RATE_LIMIT:
+            if self.model_name in self.MODELS_WITH_RATE_LIMIT:
                 # add some default time gap to avoid rate limiting (free version/tier)
                 time.sleep(REQ_TIME_GAP)
             results.append(example)

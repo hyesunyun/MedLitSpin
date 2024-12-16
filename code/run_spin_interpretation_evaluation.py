@@ -156,7 +156,7 @@ class Evaluator:
                 
                 example[f"{key}_answer"] = output["response"].strip() if "response" in output else "Error: No response from the model"
                 example[f"{key}_log_probabilities"] = output["log_probabilities"] if "log_probabilities" in output else "Error: No response from the model"
-                if self.model_name == self.MODELS_WITH_RATE_LIMIT:
+                if self.model_name in self.MODELS_WITH_RATE_LIMIT:
                     # add some default time gap to avoid rate limiting (free version/tier)
                     time.sleep(REQ_TIME_GAP)
             results.append(example)
