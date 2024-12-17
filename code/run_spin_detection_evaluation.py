@@ -6,6 +6,10 @@ from models.gpt35 import GPT35
 from models.gpt4 import GPT4
 from models.gemini import Gemini
 from models.claude import Claude
+from models.olmo import Olmo
+from models.mistral import Mistral
+from models.llama2 import Llama2
+from models.llama3 import Llama3
 from models.model import Model
 
 from tqdm import tqdm
@@ -20,6 +24,7 @@ from utils import load_csv_file, save_dataset_to_json, save_dataset_to_csv
 DATA_FOLDER_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
 SEED = 42
 REQ_TIME_GAP = 15
+TEMPERATURE = 0
 
 class Evaluator:
     BASE_PROMPT = '''
@@ -76,7 +81,14 @@ class Evaluator:
             "gemini_1.5_flash": Gemini,
             "gemini_1.5_flash-8B": Gemini,
             "claude_3.5-sonnet": Claude,
-            "claude_3.5-haiku": Claude
+            "claude_3.5-haiku": Claude,
+            "olmo2_instruct-7B": Olmo,
+            "olmo2_instruct-13B": Olmo,
+            "mistral_instruct_7B": Mistral,
+            "llama2_chat-13B": Llama2,
+            "llama2_chat-70B": Llama2,
+            "llama3_instruct-8B": Llama3,
+            "llama3_instruct-70B": Llama3
         }
         model_class = model_class_mapping[self.model_name]
         if "-" in self.model_name:
@@ -151,7 +163,9 @@ class Evaluator:
         pbar = tqdm(self.dataset, desc="Running evaluation on the dataset")
         for _, example in enumerate(pbar):
             input = self.BASE_PROMPT.format(ABSTRACT=example["abstract"])
-            output = self.model.generate_output(input, max_new_tokens=self.max_new_tokens)
+            output = self.model.generate_output(input, max_new_tokens=self.max_new_tokens, temperature=TEMPERATURE)
+            # TODO: remove this print statement
+            print(output)
             
             example["model_answer"] = self.__clean_text(output["response"]) if "response" in output else "Error: No response from the model"
             example["model_log_probabilities"] = output["log_probabilities"] if "log_probabilities" in output else "Error: No response from the model"
@@ -189,7 +203,9 @@ if __name__ == '__main__':
 
     parser.add_argument("--model", default="gpt4o", 
                         choices=["gpt35", "gpt4o", "gpt4o-mini", "gemini_1.5_flash", 
-                                 "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku"], 
+                                 "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku", 
+                                 "olmo2_instruct-7B", "olmo2_instruct-13B", "mistral_instruct_7B",
+                                 "llama2_chat-13B", "llama2_chat-70B", "llama3_instruct-8B", "llama3_instruct-70B"], 
                         help="what model to run", 
                         required=True)
     parser.add_argument("--output_path", default="./eval_outputs", help="directory of where the outputs/results should be saved.")
