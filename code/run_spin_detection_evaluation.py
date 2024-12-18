@@ -10,6 +10,11 @@ from models.olmo import Olmo
 from models.mistral import Mistral
 from models.llama2 import Llama2
 from models.llama3 import Llama3
+from models.med42 import Med42
+from models.openbiollm import OpenBioLLM
+from models.biomistral import BioMistral
+from models.biomedgpt import BioMedGPT
+from models.alpacare import AlpaCare
 from models.model import Model
 
 from tqdm import tqdm
@@ -84,11 +89,19 @@ class Evaluator:
             "claude_3.5-haiku": Claude,
             "olmo2_instruct-7B": Olmo,
             "olmo2_instruct-13B": Olmo,
-            "mistral_instruct_7B": Mistral,
+            "mistral_instruct7B": Mistral,
             "llama2_chat-13B": Llama2,
             "llama2_chat-70B": Llama2,
             "llama3_instruct-8B": Llama3,
-            "llama3_instruct-70B": Llama3
+            "llama3_instruct-70B": Llama3,
+            "med42-8B": Med42,
+            "med42-70B": Med42,
+            "openbiollm-8B": OpenBioLLM,
+            "openbiollm-70B": OpenBioLLM,
+            "biomistral7B": BioMistral,
+            "biomedgpt7B": BioMedGPT,
+            "alpacare-7B": AlpaCare,
+            "alpacare-13B": AlpaCare
         }
         model_class = model_class_mapping[self.model_name]
         if "-" in self.model_name:
@@ -204,8 +217,10 @@ if __name__ == '__main__':
     parser.add_argument("--model", default="gpt4o", 
                         choices=["gpt35", "gpt4o", "gpt4o-mini", "gemini_1.5_flash", 
                                  "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku", 
-                                 "olmo2_instruct-7B", "olmo2_instruct-13B", "mistral_instruct_7B",
-                                 "llama2_chat-13B", "llama2_chat-70B", "llama3_instruct-8B", "llama3_instruct-70B"], 
+                                 "olmo2_instruct-7B", "olmo2_instruct-13B", "mistral_instruct7B",
+                                 "llama2_chat-13B", "llama2_chat-70B", "llama3_instruct-8B", "llama3_instruct-70B",
+                                 "med42-8B", "med42-70B", "openbiollm-8B", "openbiollm-70B", "biomistral7B", "biomedgpt7B",
+                                 "alpacare-7B", "alpacare-13B"], 
                         help="what model to run", 
                         required=True)
     parser.add_argument("--output_path", default="./eval_outputs", help="directory of where the outputs/results should be saved.")

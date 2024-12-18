@@ -14,7 +14,8 @@ class Llama2(Model):
             # self.model_name = "meta-llama/Llama-2-13b-chat-hf"
             self.model_name = "/projects/frink/models/Llama-2-13b-chat-hf"
         else:
-            self.model_name = "meta-llama/Llama-2-70b-chat-hf"
+            # self.model_name = "meta-llama/Llama-2-70b-chat-hf"
+            self.model_name = "/projects/frink/models/llama_2_70b_chat_hf"
         self.model = self.__load_model()
         self.tokenizer = self.__load_tokenizer()
 

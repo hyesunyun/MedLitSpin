@@ -1,7 +1,31 @@
 #!/bin/bash
 
-# models=("gpt35" "gpt4o" "gpt4o-mini" "gemini_1.5_flash" "gemini_1.5_flash-8B" "claude_3.5-sonnet" "claude_3.5-haiku")
-models=("olmo2-7B" "olmo2-13B" "mistral_instruct_7B" "llama2_chat-13B" "llama2_chat-70B" "llama3_instruct-8B" "llama3_instruct-70B")
+# models=(
+#   "gpt35"
+#   "gpt4o"
+#   "gpt4o-mini"
+#   "gemini_1.5_flash"
+#   "gemini_1.5_flash-8B"
+#   "claude_3.5-sonnet"
+#   "claude_3.5-haiku"
+# )
+models=(
+  "olmo2-7B"
+  "olmo2-13B"
+  "mistral_instruct7B"
+  "llama2_chat-13B"
+  "llama2_chat-70B"
+  "llama3_instruct-8B"
+  "llama3_instruct-70B"
+  "med42-8B"
+  "med42-70B"
+  "openbiollm-8B"
+  "openbiollm-70B"
+  "biomistral7B"
+  "biomedgpt7B"
+  "alpacare-7B"
+  "alpacare-13B"
+)
 
 # Loop through each model for two different evaluation tasks: spin detection and spin interpretation
 echo "Running evaluation for detecting spin in abstracts of medical literature..."
