@@ -1,8 +1,8 @@
 from huggingface_hub import snapshot_download
 
-repo_name = "stabilityai/stable-diffusion-2-1"
-path_to_save = "./outputs/stable_diffusion_2_1"
+repo_name = "xz97/AlpaCare-llama2-13b"
+path_to_save = "/projects/frink/models/alpacare-13b"
 
 snapshot_download(repo_name, local_dir=path_to_save)
 
-# python -m pip install huggingface_hub
+print("Download complete!!")
