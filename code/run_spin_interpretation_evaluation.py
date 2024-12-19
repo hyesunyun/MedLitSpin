@@ -29,7 +29,6 @@ from utils import load_csv_file, save_dataset_to_json, save_dataset_to_csv
 DATA_FOLDER_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
 SEED = 42
 REQ_TIME_GAP = 15
-TEMPERATURE = 0
 
 class Evaluator:
     BASE_PROMPT = '''
@@ -188,7 +187,7 @@ class Evaluator:
         for _, example in enumerate(pbar):
             for key in self.QUESTIONS:
                 input = self.BASE_PROMPT.format(ABSTRACT=example["abstract"], QUESTION=self.QUESTIONS[key])
-                output = self.model.generate_output(input, max_new_tokens=self.max_new_tokens, temperature=TEMPERATURE)
+                output = self.model.generate_output(input, max_new_tokens=self.max_new_tokens)
                 # TODO: remove this print statement
                 print(output)
 

@@ -29,7 +29,7 @@ class Mistral(Model):
         tokenizer = AutoTokenizer.from_pretrained(model_name)
         return tokenizer
 
-    def generate_output(self, input: str, max_new_tokens: int, temperature: int = 0) -> Dict[str, Any]:
+    def generate_output(self, input: str, max_new_tokens: int) -> Dict[str, Any]:
         """
         This method generates the output given the input. Uses chat template for input.
 
@@ -44,7 +44,7 @@ class Mistral(Model):
             ]
             model_inputs = self.tokenizer.apply_chat_template(message, tokenize=True, add_generation_prompt=True, return_tensors="pt").to(self.model.device)
             with torch.no_grad():
-                result = self.model.generate(model_inputs, max_new_tokens=max_new_tokens, temperature=temperature, return_dict_in_generate=True, output_scores=True)
+                result = self.model.generate(model_inputs, max_new_tokens=max_new_tokens, do_sample=False, return_dict_in_generate=True, output_scores=True)
             response = self.tokenizer.decode(result[0, model_inputs.shape[1]:], skip_special_tokens=True)
             transition_scores = self.model.compute_transition_scores(
                 result.sequences, result.scores, normalize_logits=True

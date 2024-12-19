@@ -31,7 +31,7 @@ class Olmo(Model):
         tokenizer = AutoTokenizer.from_pretrained(self.model_name)
         return tokenizer
 
-    def generate_output(self, input: str, max_new_tokens: int, temperature: int = 0) -> Dict[str, Any]:
+    def generate_output(self, input: str, max_new_tokens: int) -> Dict[str, Any]:
         """
         This method generates the output given the input. Uses chat template for input.
 
@@ -46,7 +46,7 @@ class Olmo(Model):
             ]
             inputs = self.tokenizer.apply_chat_template(message, tokenize=True, add_generation_prompt=True, return_tensors="pt").to(self.model.device)
             with torch.no_grad():
-                result = self.model.generate(inputs, max_new_tokens=max_new_tokens, temperature=temperature, return_dict_in_generate=True, output_scores=True, return_legacy_cache=True)
+                result = self.model.generate(inputs, max_new_tokens=max_new_tokens, do_sample=False, return_dict_in_generate=True, output_scores=True, return_legacy_cache=True)
             response = self.tokenizer.decode(result[0, inputs.shape[1]:], skip_special_tokens=True)
             transition_scores = self.model.compute_transition_scores(
                 result.sequences, result.scores, normalize_logits=True

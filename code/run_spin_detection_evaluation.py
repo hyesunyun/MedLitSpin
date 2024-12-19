@@ -29,7 +29,6 @@ from utils import load_csv_file, save_dataset_to_json, save_dataset_to_csv
 DATA_FOLDER_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
 SEED = 42
 REQ_TIME_GAP = 15
-TEMPERATURE = 0
 
 class Evaluator:
     BASE_PROMPT = '''
@@ -176,7 +175,7 @@ class Evaluator:
         pbar = tqdm(self.dataset, desc="Running evaluation on the dataset")
         for _, example in enumerate(pbar):
             input = self.BASE_PROMPT.format(ABSTRACT=example["abstract"])
-            output = self.model.generate_output(input, max_new_tokens=self.max_new_tokens, temperature=TEMPERATURE)
+            output = self.model.generate_output(input, max_new_tokens=self.max_new_tokens)
             # TODO: remove this print statement
             print(output)
             
