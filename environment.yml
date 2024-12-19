@@ -465,7 +465,6 @@ dependencies:
   - tinycss2=1.2.1
   - tk=8.6.14
   - tldextract=5.1.2
-  - tokenizers=0.20.1
   - toml=0.10.2
   - tomli=2.0.1
   - tomlkit=0.13.2
@@ -476,10 +475,7 @@ dependencies:
   - tornado=6.4.1
   - tqdm=4.66.5
   - traitlets=5.14.3
-  - transformers=4.46.1
   - twisted=23.10.0
-  - typing-extensions=4.11.0
-  - typing_extensions=4.11.0
   - tzdata=2024b
   - uc-micro-py=1.0.1
   - ujson=5.10.0
@@ -532,3 +528,7 @@ dependencies:
     - webcolors==24.11.1
     - google-generativeai==0.8.3
     - anthropic==0.40.0
+    - transformers==4.47.1
+    - tokenizers==0.21.0
+    - typing-extensions==4.12.2
+    - accelerate==1.2.1

@@ -46,7 +46,7 @@ class Olmo(Model):
             ]
             inputs = self.tokenizer.apply_chat_template(message, tokenize=True, add_generation_prompt=True, return_tensors="pt").to(self.model.device)
             with torch.no_grad():
-                result = self.model.generate(inputs, max_new_tokens=max_new_tokens, temperature=temperature, return_dict_in_generate=True, output_scores=True)
+                result = self.model.generate(inputs, max_new_tokens=max_new_tokens, temperature=temperature, return_dict_in_generate=True, output_scores=True, return_legacy_cache=True)
             response = self.tokenizer.decode(result[0, inputs.shape[1]:], skip_special_tokens=True)
             transition_scores = self.model.compute_transition_scores(
                 result.sequences, result.scores, normalize_logits=True
