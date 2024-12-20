@@ -23,6 +23,7 @@ import pandas as pd
 import time
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 import string
+import torch, gc
 
 from utils import load_csv_file, save_dataset_to_json, save_dataset_to_csv
 
@@ -138,6 +139,11 @@ class Evaluator:
         print("Calculating metrics...")
         df = pd.DataFrame(dataset)
 
+        # check if any of results are errors
+        if df["model_answer"].str.contains("Error").any():
+            print("Some of the model outputs are errors. Cannot calculate the metrics.")
+            return {}
+
         # calculate the metrics
         metrics = {}
         # convert the spin and model_answer to binary values
@@ -176,8 +182,6 @@ class Evaluator:
         for _, example in enumerate(pbar):
             input = self.BASE_PROMPT.format(ABSTRACT=example["abstract"])
             output = self.model.generate_output(input, max_new_tokens=self.max_new_tokens)
-            # TODO: remove this print statement
-            print(output)
             
             example["model_answer"] = self.__clean_text(output["response"]) if "response" in output else "Error: No response from the model"
             example["model_log_probabilities"] = output["log_probabilities"] if "log_probabilities" in output else "Error: No response from the model"
@@ -244,3 +248,5 @@ if __name__ == '__main__':
     
     evaluator = Evaluator(model_name, output_path, is_debug)
     evaluator.evaluate()
+    gc.collect()
+    torch.cuda.empty_cache()

@@ -2,6 +2,7 @@
 import csv
 import json
 from typing import Dict, List, Optional
+import numpy as np
 
 def load_csv_file(file_path: str) -> List[Dict]:
     """
@@ -45,3 +46,18 @@ def save_dataset_to_csv(dataset: List[Dict], file_path: str, columns_to_drop: Op
         dict_writer = csv.DictWriter(file, keys)
         dict_writer.writeheader()
         dict_writer.writerows(dataset)
+
+def format_transition_scores(tokenizer, generated_tokens, transition_scores) -> List[Dict]:
+    """
+    This method formats the transition scores for the generated tokens
+
+    :param tokenizer: tokenizer
+    :param generated_tokens: generated tokens
+    :param transition_scores: transition scores
+
+    :return formatted transition scores
+    """
+    formatted_scores = []
+    for tok, score in zip(generated_tokens, transition_scores):
+        formatted_scores.append({"token": tokenizer.decode(tok), "logits": score.numpy().tolist(), "probability": np.exp(score.numpy()).tolist()})
+    return formatted_scores

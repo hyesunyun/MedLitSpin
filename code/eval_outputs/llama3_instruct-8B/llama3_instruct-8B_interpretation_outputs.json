@@ -1,0 +1,470 @@
+[
+    {
+        "id": "53",
+        "PMID": "17264336",
+        "title": "Phase III trial of concurrent or sequential adjuvant chemoradiotherapy after conservative surgery for early-stage breast cancer: final results of the ARCOSEIN trial",
+        "journal": "J Clin Oncol",
+        "abstract": "Purpose:\nIn 1996, we initiated the multicenter phase III randomized trial to compare the effect on disease\u2010free survival (DFS) of experimental treatment A versus comparator B after breast\u2010conserving surgery for stages I and II breast cancer. This report presents the clinical results with a median follow\u2010up of 60 months.\nPatients and methods:\nBetween February 1996 and April 2000, 716 patients were entered onto this trial. Adjuvant treatment began within 6 weeks after surgery.\nResults:\nThere was no statistically significant difference in treatment in the 5\u2010year DFS (80% in both groups; P = .83), locoregional recurrence\u2010free survival (LRFS; 92% in comparator B v 95% in treatment A; P = .76), metastasis\u2010free survival (87% in comparator B v 84% in treatment A; P = .55), or overall survival (90% in comparator B v 91% in treatment A; P = .76). Nevertheless, in the node\u2010positive subgroup, the 5\u2010year LRFS was statistically better in the treatment A arm (97% in treatment A v 91% in comparator B; P = .02), corresponding to a risk of locoregional recurrence decreased by 39% (hazard ratio, 0.61; 95% CI, 0.38 to 0.93).\nConclusion:\nThis treatment protocol remains an appealing clinical option for many women with operable breast cancer at a high risk of recurrence. Combination treatments with new drugs for breast cancer are warranted.",
+        "abstract_type": "spin",
+        "benefit_answer": "6",
+        "benefit_log_probabilities": [
+            {
+                "token": "6",
+                "logits": [
+                    -0.4083161950111389,
+                    -7.271740287251305e-06
+                ],
+                "probability": [
+                    0.6647685766220093,
+                    0.9999926686286926
+                ]
+            }
+        ],
+        "rigor_answer": "8",
+        "rigor_log_probabilities": [
+            {
+                "token": "8",
+                "logits": [
+                    -0.017299823462963104,
+                    -1.1801649634435307e-05
+                ],
+                "probability": [
+                    0.9828490018844604,
+                    0.9999881982803345
+                ]
+            }
+        ],
+        "importance_answer": "6",
+        "importance_log_probabilities": [
+            {
+                "token": "6",
+                "logits": [
+                    -0.06925293803215027,
+                    -5.364403477869928e-06
+                ],
+                "probability": [
+                    0.9330906271934509,
+                    0.999994695186615
+                ]
+            }
+        ],
+        "full_text_answer": "6",
+        "full_text_log_probabilities": [
+            {
+                "token": "6",
+                "logits": [
+                    -0.09897015243768692,
+                    -4.410734163684538e-06
+                ],
+                "probability": [
+                    0.9057697653770447,
+                    0.9999955892562866
+                ]
+            }
+        ],
+        "another_trial_answer": "8",
+        "another_trial_log_probabilities": [
+            {
+                "token": "8",
+                "logits": [
+                    -0.8705017566680908,
+                    -6.6756979322235566e-06
+                ],
+                "probability": [
+                    0.4187414050102234,
+                    0.9999933838844299
+                ]
+            }
+        ]
+    },
+    {
+        "id": "54",
+        "PMID": "17264336",
+        "title": "Phase III trial of concurrent or sequential adjuvant chemoradiotherapy after conservative surgery for early-stage breast cancer: final results of the ARCOSEIN trial",
+        "journal": "J Clin Oncol",
+        "abstract": "Purpose:\nIn 1996, we initiated the multicenter phase III randomized trial to compare the effect on disease\u2010free survival (DFS) of experimental treatment A versus comparator B after breast\u2010conserving surgery for stages I and II breast cancer. This report presents the clinical results with a median follow\u2010up of 60 months.\nPatients and methods:\nBetween February 1996 and April 2000, 716 patients were entered onto this trial (358 randomized to comparator B and 358 to treatment A) and respectively 343 and 352 patients were included in the analysis. Adjuvant treatment began within 6 weeks after surgery. The primary endpoint was disease\u2010free survival (DFS) defined as the time from randomization to the first treatment failure (in the ipsilateral breast, in the axillary/infraclavicular/IMCs, or at a distant site) or death (if no recurrence had been noted).\nResults:\nThere was no statistically significant difference in treatment in the 5\u2010year DFS (80% in both groups; P = .83), locoregional recurrence\u2010free survival (LRFS; 92% in comparator B v 95% in treatment A; P = .76), metastasis\u2010free survival (87% in comparator B v 84% in treatment A; P = .55), or overall survival (90% in comparator B v 91% in treatment A; P = .76).\nConclusion:\nTreatment A was not more effective than comparator B after breast\u2010conserving surgery for stages I and II breast cancer.",
+        "abstract_type": "no_spin",
+        "benefit_answer": "0",
+        "benefit_log_probabilities": [
+            {
+                "token": "0",
+                "logits": [
+                    -0.018656257539987564,
+                    -3.576272320060525e-06
+                ],
+                "probability": [
+                    0.9815166592597961,
+                    0.9999964237213135
+                ]
+            }
+        ],
+        "rigor_answer": "8",
+        "rigor_log_probabilities": [
+            {
+                "token": "8",
+                "logits": [
+                    -0.023940997198224068,
+                    -1.0013530300057027e-05
+                ],
+                "probability": [
+                    0.9763432741165161,
+                    0.9999899864196777
+                ]
+            }
+        ],
+        "importance_answer": "6",
+        "importance_log_probabilities": [
+            {
+                "token": "6",
+                "logits": [
+                    -0.6260479092597961,
+                    -4.172316494077677e-06
+                ],
+                "probability": [
+                    0.5347008109092712,
+                    0.999995768070221
+                ]
+            }
+        ],
+        "full_text_answer": "2",
+        "full_text_log_probabilities": [
+            {
+                "token": "2",
+                "logits": [
+                    -0.06315650790929794,
+                    -2.50339189733495e-06
+                ],
+                "probability": [
+                    0.9387965798377991,
+                    0.9999974966049194
+                ]
+            }
+        ],
+        "another_trial_answer": "2",
+        "another_trial_log_probabilities": [
+            {
+                "token": "2",
+                "logits": [
+                    -0.007087446749210358,
+                    -2.3841830625315197e-06
+                ],
+                "probability": [
+                    0.9929376244544983,
+                    0.9999976754188538
+                ]
+            }
+        ]
+    },
+    {
+        "id": "15",
+        "PMID": "19273714",
+        "title": "Phase III study of gemcitabine plus docetaxel compared with capecitabine plus docetaxel for anthracycline-pretreated patients with metastatic breast cancer",
+        "journal": "J Clin Oncol",
+        "abstract": "Purpose:\nThis phase III study compared the efficacy and safety of treatment A with comparator B in advanced breast cancer.\nPatients and methods:\nPatients were randomly assigned to treatment A or comparator B. Comparison of progression\u2010free survival (PFS) was the primary objective.\nResults:\nPatient characteristics were balanced between arms (N = 305). Median PFS was 8.05 months (95% CI, 6.60 to 8.71) for treatment A and 7.98 (95% CI, 6.93 to 8.77) for comparator B (log\u2010rank P = .121). Overall response rate (ORR) was 32% in both arms, and overall survival (OS) was not different between arms (P = .983). Time to treatment failure (TTF; defined as discontinuation, progressive disease, death as a result of any cause, or the start of a new anticancer therapy) was superior in the treatment A arm (P = .059). Hematologic toxicity was similar in both arms, except for grades 3 to 4 leukopenia (treatment A, 78%; comparator B, 66%; P = .025) and transfusions (treatment A, 17%; comparator B, 7%; P = .0051). Grades 3 to 4 diarrhea, mucositis, and hand\u2010and\u2010foot syndrome were significantly higher in the comparator B arm. Fewer patients in the treatment A arm discontinued because of drug\u2010related adverse events (13% v 27% in CD; P = .002).\nConclusion:\nNo difference was observed between treatment A and comparator B arms in PFS, ORR, and OS. TTF was longer in the treatment A arm. These findings, combined with a nonhematologic toxicity profile that favors treatment A over approved doses of comparator B, suggest that treatment A may be a better option than comparator B in this clinical setting.",
+        "abstract_type": "spin",
+        "benefit_answer": "8",
+        "benefit_log_probabilities": [
+            {
+                "token": "8",
+                "logits": [
+                    -0.39275485277175903,
+                    -7.271740287251305e-06
+                ],
+                "probability": [
+                    0.675194263458252,
+                    0.9999926686286926
+                ]
+            }
+        ],
+        "rigor_answer": "8",
+        "rigor_log_probabilities": [
+            {
+                "token": "8",
+                "logits": [
+                    -0.030440766364336014,
+                    -2.729855441430118e-05
+                ],
+                "probability": [
+                    0.9700178503990173,
+                    0.9999727010726929
+                ]
+            }
+        ],
+        "importance_answer": "6",
+        "importance_log_probabilities": [
+            {
+                "token": "6",
+                "logits": [
+                    -0.2038470357656479,
+                    -7.867782187531702e-06
+                ],
+                "probability": [
+                    0.8155871629714966,
+                    0.9999921321868896
+                ]
+            }
+        ],
+        "full_text_answer": "6",
+        "full_text_log_probabilities": [
+            {
+                "token": "6",
+                "logits": [
+                    -0.10231785476207733,
+                    -5.722029527532868e-06
+                ],
+                "probability": [
+                    0.9027426242828369,
+                    0.9999942779541016
+                ]
+            }
+        ],
+        "another_trial_answer": "8",
+        "another_trial_log_probabilities": [
+            {
+                "token": "8",
+                "logits": [
+                    -0.34920167922973633,
+                    -7.271740287251305e-06
+                ],
+                "probability": [
+                    0.7052508592605591,
+                    0.9999926686286926
+                ]
+            }
+        ]
+    },
+    {
+        "id": "16",
+        "PMID": "19273714",
+        "title": "Phase III study of gemcitabine plus docetaxel compared with capecitabine plus docetaxel for anthracycline-pretreated patients with metastatic breast cancer",
+        "journal": "J Clin Oncol",
+        "abstract": "Purpose:\nThis phase III study compared the efficacy and safety of treatment A with comparator B in advanced breast cancer.\nPatients and methods:\nPatients were randomly assigned to treatment A or comparator B. Comparison of progression\u2010free survival (PFS) was the primary objective.\nResults:\nPatient characteristics were balanced between arms (N = 305). Median PFS was 8.05 months (95% CI, 6.60 to 8.71) for treatment A and 7.98 (95% CI, 6.93 to 8.77) for comparator B (log\u2010rank P = .121). Overall response rate (ORR) was 32% in both arms, p=0.931. The median time to treatment failure (TTF; defined as discontinuation, progressive disease, death as a result of any cause, or the start of a new anticancer therapy) was 4.24 months (95% CI, 4.11 to 4.44) for treatment A and 4.07 months (95% CI, 3.81 to 4.24) for comparator B, p=0.059. The medial overall survival was 19.29 months (95% CI, 15.57 to 23.59) for treatment A vs. 21.45 months (95% CI, 17.12 to 24.94), p=0.983. Hematologic toxicity was similar in both arms, except for grades 3 to 4 leukopenia (treatment A, 78%; comparator B, 66%; P = .025) and transfusions (treatment A, 17%; comparator B, 7%; P = .0051) and grades 3 to 4 diarrhea (treatment A, 8%; comparator B, 18%; p=0.009), mucositis (treatment A, 4%; comparator B, 15%; p<.001), and hand\u2010and\u2010foot syndrome (treatment A, 0%; comparator B, 26%, p<.001). 13% in treatment A arm and 27% in the comparator B arm discontinued because of drug\u2010related adverse events (P = .002).\nConclusion:\nTreatment A was not more effective than comparator B for patients with advanced breast cancer.",
+        "abstract_type": "no_spin",
+        "benefit_answer": "2",
+        "benefit_log_probabilities": [
+            {
+                "token": "2",
+                "logits": [
+                    -0.03372518718242645,
+                    -3.2186455882765586e-06
+                ],
+                "probability": [
+                    0.9668371081352234,
+                    0.9999968409538269
+                ]
+            }
+        ],
+        "rigor_answer": "8",
+        "rigor_log_probabilities": [
+            {
+                "token": "8",
+                "logits": [
+                    -0.07920169085264206,
+                    -2.5152843591058627e-05
+                ],
+                "probability": [
+                    0.9238535761833191,
+                    0.9999748468399048
+                ]
+            }
+        ],
+        "importance_answer": "6",
+        "importance_log_probabilities": [
+            {
+                "token": "6",
+                "logits": [
+                    -0.4856341481208801,
+                    -5.125986263010418e-06
+                ],
+                "probability": [
+                    0.6153068542480469,
+                    0.9999948740005493
+                ]
+            }
+        ],
+        "full_text_answer": "2",
+        "full_text_log_probabilities": [
+            {
+                "token": "2",
+                "logits": [
+                    -0.8396594524383545,
+                    -2.9802276912960224e-06
+                ],
+                "probability": [
+                    0.43185755610466003,
+                    0.9999970197677612
+                ]
+            }
+        ],
+        "another_trial_answer": "2",
+        "another_trial_log_probabilities": [
+            {
+                "token": "2",
+                "logits": [
+                    -0.2509356737136841,
+                    -2.7418097943154862e-06
+                ],
+                "probability": [
+                    0.7780724167823792,
+                    0.9999973177909851
+                ]
+            }
+        ]
+    },
+    {
+        "id": "13",
+        "PMID": "9093724",
+        "title": "Doubling epirubicin dose intensity (100 mg/m2 versus 50 mg/m2) in the FEC regimen significantly increases response rates. An international randomised phase III study in metastatic breast cancer. The Epirubicin High Dose (HEPI 010) Study Group",
+        "journal": "Ann Oncol",
+        "abstract": "Purpose:\nA phase III study was performed in patients with metastatic breast cancer (MBC) to evaluate the effect on response rate and survival of a treatment A.\nPatients and methods:\nFour hundred fifty\u2010six patients were randomized to receive either treatment A or comparator B in combination with 5\u2010FU (500 mg/m2) and cyclophosphamide (500 mg/m2) i.v., every 21 days for a maximum of six cycles (eight in case of CR).\nResults:\nOf 456 patients, 390 were evaluable for efficacy. Objective response (CR + PR) was seen in 57% (treatment A) vs. 41% (comparator B) of the evaluable patients (P = 0.003). The CR rate was higher in the treatment A arm (12% vs. 7%, P = 0.07). Treatment A produced significantly higher response rates in patients with visceral localization (50% vs. 34%, P = 0.011) and in patients with more than two metastatic organ sites (64% vs. 37%, P = 0.001). Median time to progression (7.6 vs. 7 months) and overall survival (18 months vs. 17 months) were similar. Myelosuppression was the principal toxic effect, with grade IV neutropenia observed in 57% of the patients treated with treatment A vs. 9% of those on comparator B. Grade IV infection or febrile neutropenia were observed in 8% (treatment A) vs. 0.4% (comparator B), but the incidence of septic death was the same in the two arms (two patients each). Cardiac toxicity was similar in the two treatment groups, with 5% vs. 3% of the patients taken off study due to cardiac events, primarily due to a decline in LVEF. Only three patients (two in treatment A) experienced congestive heart failure.\nConclusion:\nThis trial shows that treatment A can be administered for repeated cycles without bone marrow support with increased, though acceptable, toxicity and with a significant increase of antitumor effect (especially in visceral and/or high\u2010burden disease), but no increased survival.",
+        "abstract_type": "spin",
+        "benefit_answer": "7",
+        "benefit_log_probabilities": [
+            {
+                "token": "7",
+                "logits": [
+                    -0.70027095079422,
+                    -7.510157047363464e-06
+                ],
+                "probability": [
+                    0.4964507818222046,
+                    0.9999925494194031
+                ]
+            }
+        ],
+        "rigor_answer": "8",
+        "rigor_log_probabilities": [
+            {
+                "token": "8",
+                "logits": [
+                    -0.0302885789424181,
+                    -2.0503786799963564e-05
+                ],
+                "probability": [
+                    0.970165491104126,
+                    0.9999794960021973
+                ]
+            }
+        ],
+        "importance_answer": "8",
+        "importance_log_probabilities": [
+            {
+                "token": "8",
+                "logits": [
+                    -0.20707853138446808,
+                    -7.390948667307384e-06
+                ],
+                "probability": [
+                    0.8129558563232422,
+                    0.9999926090240479
+                ]
+            }
+        ],
+        "full_text_answer": "8",
+        "full_text_log_probabilities": [
+            {
+                "token": "8",
+                "logits": [
+                    -0.13453823328018188,
+                    -6.6756979322235566e-06
+                ],
+                "probability": [
+                    0.8741194605827332,
+                    0.9999933838844299
+                ]
+            }
+        ],
+        "another_trial_answer": "8",
+        "another_trial_log_probabilities": [
+            {
+                "token": "8",
+                "logits": [
+                    -0.10301022976636887,
+                    -6.9141146923357155e-06
+                ],
+                "probability": [
+                    0.9021177291870117,
+                    0.999993085861206
+                ]
+            }
+        ]
+    },
+    {
+        "id": "14",
+        "PMID": "9093724",
+        "title": "Doubling epirubicin dose intensity (100 mg/m2 versus 50 mg/m2) in the FEC regimen significantly increases response rates. An international randomised phase III study in metastatic breast cancer. The Epirubicin High Dose (HEPI 010) Study Group",
+        "journal": "Ann Oncol",
+        "abstract": "Purpose:\nA phase III study was performed in patients with metastatic breast cancer (MBC) to evaluate the effect on response rate and survival of a treatment A.\nPatients and methods:\nFour hundred fifty\u2010six patients were randomized to receive either treatment A or comparator B in combination with 5\u2010FU (500 mg/m2) and cyclophosphamide (500 mg/m2) i.v., every 21 days for a maximum of six cycles (eight in case of CR). The primary outcome was overall survival.\nResults:\nOf 456 patients randomized to treatment A (214) or comparator B (242), 390 were evaluable for efficacy (treatment A 182, comparator B 208). There was no statistically significant difference between the 2 groups for the primary outcome with a median survival of 18 and 17 months, respectively for treatment A and comparator B (P = 0.54). Objective response (CR + PR) was seen in 57% (treatment A) vs. 41% (comparator B) of the evaluable patients (P = 0.003). The median duration of response was 9.1 months on treatment A and 9.3 on comparator B, the median Time to Treatment Failure (TTF) was, respectively, 5.8 vs. 5.3 months (P = 0.7). Myelosuppression was the principal toxic effect, with grade IV neutropenia observed in 57% of the patients treated with treatment A vs. 9% of those on comparator B. Grade IV infection or febrile neutropenia were observed in 8% (treatment A) vs. 0.4% (comparator B), but the incidence of septic death was the same in the two arms (two patients each). Cardiac toxicity was similar in the two treatment groups, with 5% vs. 3% of the patients taken off study due to cardiac events, primarily due to a decline in LVEF. Three patients (two in treatment A) experienced congestive heart failure.\nConclusion:\nTreatment A was not more effective than comparator B in patients with metastatic breast cancer.",
+        "abstract_type": "no_spin",
+        "benefit_answer": "6",
+        "benefit_log_probabilities": [
+            {
+                "token": "6",
+                "logits": [
+                    -0.5415800213813782,
+                    -6.556489552167477e-06
+                ],
+                "probability": [
+                    0.581828236579895,
+                    0.9999934434890747
+                ]
+            }
+        ],
+        "rigor_answer": "8",
+        "rigor_log_probabilities": [
+            {
+                "token": "8",
+                "logits": [
+                    -0.03044099733233452,
+                    -1.7881233361549675e-05
+                ],
+                "probability": [
+                    0.9700177311897278,
+                    0.9999821186065674
+                ]
+            }
+        ],
+        "importance_answer": "6",
+        "importance_log_probabilities": [
+            {
+                "token": "6",
+                "logits": [
+                    -0.09056733548641205,
+                    -4.887569048150908e-06
+                ],
+                "probability": [
+                    0.913412868976593,
+                    0.9999951124191284
+                ]
+            }
+        ],
+        "full_text_answer": "4",
+        "full_text_log_probabilities": [
+            {
+                "token": "4",
+                "logits": [
+                    -0.6185894012451172,
+                    -3.4570634852570947e-06
+                ],
+                "probability": [
+                    0.5387037992477417,
+                    0.999996542930603
+                ]
+            }
+        ],
+        "another_trial_answer": "6",
+        "another_trial_log_probabilities": [
+            {
+                "token": "6",
+                "logits": [
+                    -0.24033276736736298,
+                    -5.960446742392378e-06
+                ],
+                "probability": [
+                    0.7863661050796509,
+                    0.9999939799308777
+                ]
+            }
+        ]
+    }
+]

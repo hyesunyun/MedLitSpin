@@ -23,6 +23,7 @@ import pandas as pd
 from statistics import mean
 import time
 import string
+import torch, gc
 
 from utils import load_csv_file, save_dataset_to_json, save_dataset_to_csv
 
@@ -96,8 +97,8 @@ class Evaluator:
             "gemini_1.5_flash-8B": Gemini,
             "claude_3.5-sonnet": Claude,
             "claude_3.5-haiku": Claude,
-            "olmo2-7B": Olmo,
-            "olmo2-13B": Olmo,
+            "olmo2_instruct-7B": Olmo,
+            "olmo2_instruct-13B": Olmo,
             "mistral_instruct_7B": Mistral,
             "llama2_chat-13B": Llama2,
             "llama2_chat-70B": Llama2,
@@ -135,8 +136,13 @@ class Evaluator:
         :param text: input text to clean
         :return cleaned text
         """
-        return text.strip().translate(str.maketrans('', '', string.punctuation))
-    
+        cleaned_text = text.strip().translate(str.maketrans('', '', string.punctuation))
+        cleaned_text = ''.join(filter(str.isdigit, cleaned_text))
+        if cleaned_text == "":
+            return None
+        else:
+            return cleaned_text
+
     def __calculate_mean_differences(self, dataset: List[Dict]) -> Dict:
         """
         This method calculates the mean differences between the spin and no spin abstracts for each question
@@ -151,6 +157,11 @@ class Evaluator:
         # column names for the 5 questions
         column_names = ["benefit_answer", "rigor_answer", "importance_answer", "full_text_answer", "another_trial_answer"]
 
+        # check if any of the model outputs are errors
+        if df[column_names].apply(lambda x: x.str.contains("Error")).any().any():
+            print("Some of the model outputs are errors. Cannot calculate the metrics.")
+            return {}
+        
         diff_metrics = {}
         for col in column_names:
             # for each column, get the average of spin and no_spin answers
@@ -188,8 +199,6 @@ class Evaluator:
             for key in self.QUESTIONS:
                 input = self.BASE_PROMPT.format(ABSTRACT=example["abstract"], QUESTION=self.QUESTIONS[key])
                 output = self.model.generate_output(input, max_new_tokens=self.max_new_tokens)
-                # TODO: remove this print statement
-                print(output)
 
                 example[f"{key}_answer"] = self.__clean_text(output["response"]) if "response" in output else "Error: No response from the model"
                 example[f"{key}_log_probabilities"] = output["log_probabilities"] if "log_probabilities" in output else "Error: No response from the model"
@@ -226,8 +235,9 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Running Evaluation of Interpreting Clinical Trial Results from Abstracts Using LLMs")
 
     parser.add_argument("--model", default="gpt4o", 
-                        choices=["gpt35", "gpt4o", "gpt4o-mini", "gemini_1.5_flash", "gemini_1.5_flash-8B", 
-                                 "claude_3.5-sonnet", "claude_3.5-haiku", "olmo2-7B", "olmo2-13B", "mistral_instruct_7B",
+                        choices=["gpt35", "gpt4o", "gpt4o-mini", "gemini_1.5_flash", 
+                                 "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku", 
+                                 "olmo2_instruct-7B", "olmo2_instruct-13B", "mistral_instruct7B",
                                  "llama2_chat-13B", "llama2_chat-70B", "llama3_instruct-8B", "llama3_instruct-70B",
                                  "med42-8B", "med42-70B", "openbiollm-8B", "openbiollm-70B", "biomistral7B", "biomedgpt7B",
                                  "alpacare-7B", "alpacare-13B"], 
@@ -255,3 +265,5 @@ if __name__ == '__main__':
     
     evaluator = Evaluator(model_name, output_path, is_debug)
     evaluator.evaluate()
+    gc.collect()
+    torch.cuda.empty_cache()
