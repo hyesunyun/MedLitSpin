@@ -8,6 +8,14 @@ import logging
 SEED = 42
 
 class AlpaCare(Model):
+    PROMPT = """Below is an instruction that describes a task.
+        Write a response that appropriately completes the request.
+
+
+        ### Instruction:
+        {instruction}
+        
+        ### Response:"""
     def __init__(self, model_type: str = "7B") -> None:
         super().__init__()
         set_seed(SEED)
@@ -56,17 +64,23 @@ class AlpaCare(Model):
         :return output of the model
         """
         try:
-            message = [
-                {"role": "user", "content": input},
-            ]
-            model_inputs = self.tokenizer.apply_chat_template(message, tokenize=True, add_generation_prompt=True, return_tensors="pt").to(self.model.device)
+            if self.model_type == "7B":
+                text_input = self.PROMPT.format(instruction=input)
+                model_inputs = self.tokenizer(text_input, return_tensors="pt").to(self.model.device)
+            else:
+                message = [
+                    {"role": "user", "content": input},
+                ]
+                model_inputs = self.tokenizer.apply_chat_template(message, tokenize=True, add_generation_prompt=True, return_tensors="pt").to(self.model.device)
+            
             with torch.no_grad():
                 result = self.model.generate(model_inputs, max_new_tokens=max_new_tokens, do_sample=False, return_dict_in_generate=True, output_scores=True)
             response = self.tokenizer.decode(result.sequences[0, model_inputs.shape[1]:], skip_special_tokens=True)
+            
             transition_scores = self.model.compute_transition_scores(
                 result.sequences, result.scores, normalize_logits=True
             ).cpu()
-            transition_scores = format_transition_scores(self.tokenizer, result.sequences[0, model_inputs.shape[1]:], transition_scores)
+            transition_scores = format_transition_scores(self.tokenizer, result.sequences[:, model_inputs.shape[1]:].cpu(), transition_scores)
 
             return {"response": response, "log_probabilities": transition_scores}
         except Exception as e:

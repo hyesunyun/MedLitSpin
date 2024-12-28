@@ -39,7 +39,7 @@ class Evaluator:
     
     Abstract: {ABSTRACT}
     '''
-    MODELS_WITH_RATE_LIMIT = {"gemini_1.5_flash", "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku"}
+    MODELS_WITH_RATE_LIMIT = ["gemini_1.5_flash", "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku"]
     def __init__(self, model_name: str, output_path: str, is_debug: bool = False) -> None:
         self.model_name = model_name
         self.output_path = output_path
@@ -116,7 +116,7 @@ class Evaluator:
 
         :return maximum number of new tokens
         """
-        return 1
+        return 100
     
     def __clean_text(self, text: str) -> str:
         """
@@ -126,7 +126,14 @@ class Evaluator:
         :param text: input text to clean
         :return cleaned text
         """
-        return text.strip().lower().translate(str.maketrans('', '', string.punctuation))
+        cleaned_text = text.strip().lower().translate(str.maketrans('', '', string.punctuation))
+        # parse out 'yes' or 'no' from the text
+        if "yes" in cleaned_text:
+            return "yes"
+        elif "no" in cleaned_text:
+            return "no"
+        else:
+            return ""
     
     def __calculate_metrics(self, dataset: List[Dict]) -> Dict:
         """
@@ -143,6 +150,13 @@ class Evaluator:
         if df["model_answer"].str.contains("Error").any():
             print("Some of the model outputs are errors. Cannot calculate the metrics.")
             return {}
+
+        # check if column values have any Error or empty string values for model outputs
+        if df["model_answer"].apply(lambda x: "Error" in x or x == "").any():
+            print("Model's output has some 'Error' or empty string values. Removing these rows from the metrics...")
+            # remove rows with 'Error' or empty string values
+            df = df[df["model_answer"].apply(lambda x: "Error" not in x and x != "")]
+            print(f"Number of rows after removing 'Error' or empty string values: {len(df)}")
 
         # calculate the metrics
         metrics = {}
@@ -183,6 +197,7 @@ class Evaluator:
             input = self.BASE_PROMPT.format(ABSTRACT=example["abstract"])
             output = self.model.generate_output(input, max_new_tokens=self.max_new_tokens)
             
+            example["model_raw_answer"] = output["response"] if "response" in output else "Error: No response from the model"
             example["model_answer"] = self.__clean_text(output["response"]) if "response" in output else "Error: No response from the model"
             example["model_log_probabilities"] = output["log_probabilities"] if "log_probabilities" in output else "Error: No response from the model"
             if self.model_name in self.MODELS_WITH_RATE_LIMIT:

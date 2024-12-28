@@ -1,6 +1,5 @@
 from .model import Model
 from transformers import set_seed, AutoModelForCausalLM, AutoTokenizer
-import transformers
 import torch
 from typing import Dict, Any
 from utils import format_transition_scores
@@ -66,7 +65,7 @@ class OpenBioLLM(Model): # version 2
             transition_scores = self.model.compute_transition_scores(
                 result.sequences, result.scores, normalize_logits=True
             ).cpu()
-            transition_scores = format_transition_scores(self.tokenizer, result.sequences[0, model_inputs.shape[1]:], transition_scores)
+            transition_scores = format_transition_scores(self.tokenizer, result.sequences[:, model_inputs.shape[1]:].cpu(), transition_scores)
 
             return {"response": response, "log_probabilities": transition_scores}
         except Exception as e:

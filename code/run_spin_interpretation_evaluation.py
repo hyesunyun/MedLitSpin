@@ -13,8 +13,8 @@ from models.llama3 import Llama3
 from models.med42 import Med42
 from models.openbiollm import OpenBioLLM
 from models.biomistral import BioMistral
-import models.biomedgpt as BioMedGPT
-import models.alpacare as AlpaCare
+from models.biomedgpt import BioMedGPT
+from models.alpacare import AlpaCare
 from models.model import Model
 
 from tqdm import tqdm
@@ -99,7 +99,7 @@ class Evaluator:
             "claude_3.5-haiku": Claude,
             "olmo2_instruct-7B": Olmo,
             "olmo2_instruct-13B": Olmo,
-            "mistral_instruct_7B": Mistral,
+            "mistral_instruct7B": Mistral,
             "llama2_chat-13B": Llama2,
             "llama2_chat-70B": Llama2,
             "llama3_instruct-8B": Llama3,
@@ -126,7 +126,7 @@ class Evaluator:
 
         :return maximum number of new tokens
         """
-        return 2
+        return 100
     
     def __clean_text(self, text: str) -> str:
         """
@@ -138,10 +138,9 @@ class Evaluator:
         """
         cleaned_text = text.strip().translate(str.maketrans('', '', string.punctuation))
         cleaned_text = ''.join(filter(str.isdigit, cleaned_text))
-        if cleaned_text == "":
-            return None
-        else:
-            return cleaned_text
+        if len(cleaned_text) > 2:
+            cleaned_text = ""
+        return cleaned_text
 
     def __calculate_mean_differences(self, dataset: List[Dict]) -> Dict:
         """
@@ -157,16 +156,23 @@ class Evaluator:
         # column names for the 5 questions
         column_names = ["benefit_answer", "rigor_answer", "importance_answer", "full_text_answer", "another_trial_answer"]
 
-        # check if any of the model outputs are errors
-        if df[column_names].apply(lambda x: x.str.contains("Error")).any().any():
-            print("Some of the model outputs are errors. Cannot calculate the metrics.")
-            return {}
-        
         diff_metrics = {}
         for col in column_names:
+            df_copy = df.copy()
+            # check if column values have any Error or empty string values for model outputs
+            if df_copy[col].apply(lambda x: "Error" in x or x == "").any():
+                print(f"Column '{col}' has some 'Error' or empty string values. Removing these rows from the metrics...")
+                # remove pmids rows with 'Error' or empty string values
+                error_pmids = df_copy[df_copy[col].apply(lambda x: "Error" in x or x == "")]['PMID'].tolist()
+                # unique ids
+                error_pmids = list(set(error_pmids))
+                df_copy = df_copy[~df_copy['PMID'].isin(error_pmids)]
+                print(f"PMIDs with 'Error' or empty string values in column '{col}': {error_pmids}")
+                print(f"Number of rows after removing 'Error' or empty string values: {len(df_copy)}")
+
             # for each column, get the average of spin and no_spin answers
-            spin_avg = df[df['abstract_type'] == 'spin'][col].astype(int).mean()
-            no_spin_avg = df[df['abstract_type'] == 'no_spin'][col].astype(int).mean()
+            spin_avg = df_copy[df_copy['abstract_type'] == 'spin'][col].astype(int).mean()
+            no_spin_avg = df_copy[df_copy['abstract_type'] == 'no_spin'][col].astype(int).mean()
             
             # print(f"Average for '{col}' (spin): {spin_avg}")
             # print(f"Average for '{col}' (no_spin): {no_spin_avg}")
@@ -200,6 +206,7 @@ class Evaluator:
                 input = self.BASE_PROMPT.format(ABSTRACT=example["abstract"], QUESTION=self.QUESTIONS[key])
                 output = self.model.generate_output(input, max_new_tokens=self.max_new_tokens)
 
+                example[f"{key}_raw_answer"] = output["response"] if "response" in output else "Error: No response from the model"
                 example[f"{key}_answer"] = self.__clean_text(output["response"]) if "response" in output else "Error: No response from the model"
                 example[f"{key}_log_probabilities"] = output["log_probabilities"] if "log_probabilities" in output else "Error: No response from the model"
                 if self.model_name in self.MODELS_WITH_RATE_LIMIT:

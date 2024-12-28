@@ -8,6 +8,8 @@ import logging
 SEED = 42
 
 class BioMedGPT(Model):
+    PROMPT = """Human: {input}
+    ### Assistant:"""
     def __init__(self) -> None:
         super().__init__()
         set_seed(SEED)
@@ -23,6 +25,9 @@ class BioMedGPT(Model):
         model = AutoModelForCausalLM.from_pretrained(
             model_name, device_map="auto", torch_dtype=torch.float32
         ) # float32 based on config.json
+        model.generation_config.do_sample = False
+        model.generation_config.temperature = None
+        model.generation_config.top_p = None
 
         # print model's dtype and device
         print(f"Model's dtype: {model.dtype}")
@@ -48,17 +53,16 @@ class BioMedGPT(Model):
         :return output of the model
         """
         try:
-            message = [
-                {"role": "user", "content": input},
-            ]
-            model_inputs = self.tokenizer.apply_chat_template(message, tokenize=True, add_generation_prompt=True, return_tensors="pt").to(self.model.device)
+            input_text = self.PROMPT.format(input=input)
+            model_inputs = self.tokenizer(input_text, return_tensors="pt").to(self.model.device)
             with torch.no_grad():
                 result = self.model.generate(model_inputs, max_new_tokens=max_new_tokens, do_sample=False, return_dict_in_generate=True, output_scores=True)
             response = self.tokenizer.decode(result.sequences[0, model_inputs.shape[1]:], skip_special_tokens=True)
+            
             transition_scores = self.model.compute_transition_scores(
                 result.sequences, result.scores, normalize_logits=True
             ).cpu()
-            transition_scores = format_transition_scores(self.tokenizer, result.sequences[0, model_inputs.shape[1]:], transition_scores)
+            transition_scores = format_transition_scores(self.tokenizer, result.sequences[:, model_inputs.shape[1]:].cpu(), transition_scores)
 
             return {"response": response, "log_probabilities": transition_scores}
         except Exception as e:

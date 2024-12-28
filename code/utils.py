@@ -58,6 +58,8 @@ def format_transition_scores(tokenizer, generated_tokens, transition_scores) -> 
     :return formatted transition scores
     """
     formatted_scores = []
-    for tok, score in zip(generated_tokens, transition_scores):
-        formatted_scores.append({"token": tokenizer.decode(tok), "logits": score.numpy().tolist(), "probability": np.exp(score.numpy()).tolist()})
+    for tok, score in zip(generated_tokens[0], transition_scores[0]):
+        tok_numpy = tok.numpy()
+        score_numpy = score.numpy()
+        formatted_scores.append({"token": tok_numpy.item(), "token_string": tokenizer.decode(tok), "logits": score_numpy.item(), "probability": np.exp(score_numpy).item()})
     return formatted_scores

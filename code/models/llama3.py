@@ -14,10 +14,10 @@ class Llama3(Model):
         # TODO: revert to model_name = "meta-llama/Llama-2-13b-chat-hf" after running the models
         if model_type == "8B":
             # self.model_name = "meta-llama/Meta-Llama-3-8B-Instruct"
-            self.model_name = "/projects/frink/models/models--meta-llama--Meta-Llama-3-70B-Instruct/snapshots/5fcb2901844dde3111159f24205b71c25900ffbd"
+            self.model_name = "/projects/frink/models/llama3-8B-Instruct-HF"
         else:
             # self.model_name = "meta-llama/Meta-Llama-3-70B-Instruct"
-            self.model_name = "/projects/frink/models/llama3-8B-Instruct-HF"
+            self.model_name = "/projects/frink/models/models--meta-llama--Meta-Llama-3-70B-Instruct/snapshots/5fcb2901844dde3111159f24205b71c25900ffbd"
         self.model = self.__load_model()
         self.tokenizer = self.__load_tokenizer()
 
@@ -61,12 +61,13 @@ class Llama3(Model):
                 self.tokenizer.convert_tokens_to_ids("<|eot_id|>")
             ]
             with torch.no_grad():
-                result = self.model.generate(model_inputs, max_new_tokens=max_new_tokens, eos_token_id=terminators, do_sample=False, return_dict_in_generate=True, output_scores=True)
+                result = self.model.generate(model_inputs, max_new_tokens=max_new_tokens, eos_token_id=terminators, do_sample=False, return_dict_in_generate=True, output_scores=True, pad_token_id=self.tokenizer.eos_token_id)
             response = self.tokenizer.decode(result.sequences[0, model_inputs.shape[1]:], skip_special_tokens=True)
+            
             transition_scores = self.model.compute_transition_scores(
                 result.sequences, result.scores, normalize_logits=True
             ).cpu()
-            transition_scores = format_transition_scores(self.tokenizer, result.sequences[0, model_inputs.shape[1]:], transition_scores)
+            transition_scores = format_transition_scores(self.tokenizer, result.sequences[:, model_inputs.shape[1]:].cpu(), transition_scores)
 
             return {"response": response, "log_probabilities": transition_scores}
         except Exception as e:

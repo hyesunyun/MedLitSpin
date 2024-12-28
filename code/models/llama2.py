@@ -28,6 +28,9 @@ class Llama2(Model):
         model = AutoModelForCausalLM.from_pretrained(
             self.model_name, device_map="auto", torch_dtype=torch.float16
         ) # float16 based on config.json
+        model.generation_config.do_sample = False
+        model.generation_config.temperature = None
+        model.generation_config.top_p = None
 
         # print model's dtype and device
         print(f"Model's dtype: {model.dtype}")
@@ -58,11 +61,12 @@ class Llama2(Model):
             with torch.no_grad():
                 result = self.model.generate(model_inputs, max_new_tokens=max_new_tokens, do_sample=False, return_dict_in_generate=True, output_scores=True)
             response = self.tokenizer.decode(result.sequences[0, model_inputs.shape[1]:], skip_special_tokens=True)
+            
             transition_scores = self.model.compute_transition_scores(
                 result.sequences, result.scores, normalize_logits=True
             ).cpu()
-            transition_scores = format_transition_scores(self.tokenizer, result.sequences[0, model_inputs.shape[1]:], transition_scores)
-
+            transition_scores = format_transition_scores(self.tokenizer, result.sequences[:, model_inputs.shape[1]:].cpu(), transition_scores)
+            
             return {"response": response, "log_probabilities": transition_scores}
         except Exception as e:
             logging.error("[ERROR] %s", e)
