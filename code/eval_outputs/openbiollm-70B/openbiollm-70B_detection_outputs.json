@@ -12,14 +12,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.40957018733024597,
-                "probability": 0.6639355421066284
+                "logits": -0.3063944876194,
+                "probability": 0.7360961437225342
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.168244216387393e-05,
-                "probability": 0.999988317489624
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.00158565619494766,
+                "probability": 0.9984156489372253
             }
         ]
     },
@@ -36,14 +36,14 @@
             {
                 "token": 9891,
                 "token_string": "yes",
-                "logits": -0.9175121188163757,
-                "probability": 0.3995117247104645
+                "logits": -0.525261640548706,
+                "probability": 0.5914006233215332
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -9.775113539944869e-06,
-                "probability": 0.9999902844429016
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.007230069488286972,
+                "probability": 0.992796003818512
             }
         ]
     },
@@ -60,14 +60,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.0625479593873024,
-                "probability": 0.9393680095672607
+                "logits": -0.21980489790439606,
+                "probability": 0.8026753664016724
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.1801649634435307e-05,
-                "probability": 0.9999881982803345
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0003762729174923152,
+                "probability": 0.9996237754821777
             }
         ]
     },
@@ -84,14 +84,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.6474079489707947,
-                "probability": 0.5234007239341736
+                "logits": -0.7981706857681274,
+                "probability": 0.4501516819000244
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.0847986231965479e-05,
-                "probability": 0.9999891519546509
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0005814530304633081,
+                "probability": 0.9994186758995056
             }
         ]
     },
@@ -102,20 +102,20 @@
         "journal": "Breast Cancer Res Treat",
         "abstract": "Purpose:\nEfficacy and safety of treatment A was compared with comparator B in a group of postmenopausal women with advanced breast cancer, without previous systemic therapy for advanced breast cancer.\nMethods and materials:\nThe study was a prospective double\u2010blind randomized trial. All treated patients presented with positive estrogen receptors. Main end points were response rates, toxicity profile analysis, time to progression and survival. WHO and ECOG criteria were employed for response evaluation while toxicity was assessed according to WHO guidelines. Curves were constructed by means of Kaplan\u2010Meier methodology and were compared by means of log\u2010rank test.\nResults:\nFrom January 1996 to January 1999 a total of 217 patients were included in the study (106 in the treatment A and 111 in the comparator B). Both groups of patients were homogeneous regarding the main prognostic factors. A response rate of 64% (68/106) was observed in the treatment A group as compared with a 52% (58/111) in the comparator B group. Median times to progression and overall survival were not significantly different. A lower incidence of undesirable effects was appreciated in the treatment A arm.\nConclusion:\nOur data suggest that treatment A is an efficient and well\u2010tolerated agent for the therapy of postmenopausal women with hormonal positive receptors advanced breast cancer, and must be considered an alternative to comparator B as first line therapy for ER+ advanced breast cancer patients and as well as an adjuvant treatment.",
         "abstract_type": "spin",
-        "model_raw_answer": "Yes",
+        "model_raw_answer": "yes",
         "model_answer": "yes",
         "model_log_probabilities": [
             {
-                "token": 9642,
-                "token_string": "Yes",
-                "logits": -0.8382079601287842,
-                "probability": 0.43248486518859863
+                "token": 9891,
+                "token_string": "yes",
+                "logits": -0.4206247925758362,
+                "probability": 0.6566364765167236
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -0.0036185993812978268,
-                "probability": 0.9963878989219666
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0030622039921581745,
+                "probability": 0.9969424605369568
             }
         ]
     },
@@ -132,14 +132,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.11576079577207565,
-                "probability": 0.8906882405281067
+                "logits": -0.6343680024147034,
+                "probability": 0.530270516872406
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.1205610462639015e-05,
-                "probability": 0.9999887943267822
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0007267932523973286,
+                "probability": 0.9992734789848328
             }
         ]
     },
@@ -150,20 +150,20 @@
         "journal": "J Clin Oncol",
         "abstract": "Purpose:\nTo compare the efficacy and tolerability of treatment A with comparator B in the treatment of advanced breast cancer in patients whose disease progresses on prior endocrine treatment.\nPatients and methods:\nIn this double\u2010blind, double\u2010dummy, parallel\u2010group study, postmenopausal patients were randomized to receive either treatment A or comparator B. The primary end point was time to progression (TTP). Secondary end points included time to treatment failure (TTF), objective response (OR) rate, duration of response (DOR), and tolerability.\nResults:\nPatients (n = 400) were followed for a median period of 16.8 months. Treatment A was not more effective than comparator B in terms of TTP (hazard ratio, 0.92; 95% confidence interval [CI], 0.74 to 1.14; P =.43); median TTP was 5.4 months with treatment A and 3.4 months with comparator B. There was no statistically significant difference between the 2 groups for TTF. Median TTF was 4.6 months for treatment A and 3.3 months for comparator B (HR, 0.96; 95% CI, 0.77 to 1.19; P = .69). At the time of this data analysis, the rate of deaths was respectively for treatment A and comparator B, 35.4% (n=73) vs. 33.5% (n=65). OR rates were 17.5% with both treatments. DOR was statistically significantly greater for treatment A compared with comparator B; the ratio of average response durations was 1.35 (95% CI, 1.10 to 1.67; P < 0.01). Both treatments were well tolerated.\nConclusion:\nTreatment A was not more effective than comparator B for postmenopausal women with advanced breast cancer whose disease progresses on tamoxifen therapy.",
         "abstract_type": "no_spin",
-        "model_raw_answer": "no",
-        "model_answer": "no",
+        "model_raw_answer": "yes",
+        "model_answer": "yes",
         "model_log_probabilities": [
             {
-                "token": 2201,
-                "token_string": "no",
-                "logits": -0.1463795155286789,
-                "probability": 0.8638297319412231
+                "token": 9891,
+                "token_string": "yes",
+                "logits": -0.8247199058532715,
+                "probability": 0.43835777044296265
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.3589766240329482e-05,
-                "probability": 0.999986469745636
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0033554700203239918,
+                "probability": 0.9966501593589783
             }
         ]
     },
@@ -174,20 +174,20 @@
         "journal": "J Clin Oncol",
         "abstract": "Purpose:\nTo compare the efficacy and tolerability of treatment A with comparator B in the treatment of advanced breast cancer in patients whose disease progresses on prior endocrine treatment.\nPatients and methods:\nIn this double\u2010blind, double\u2010dummy, parallel\u2010group study, postmenopausal patients were randomized to receive either treatment A or comparator B. The primary end point was time to progression (TTP). Secondary end points included objective response (OR) rate, duration of response (DOR), and tolerability.\nResults:\nPatients (n = 400) were followed for a median period of 16.8 months. Treatment A was as effective as comparator B in terms of TTP (hazard ratio, 0.92; 95% confidence interval [CI], 0.74 to 1.14; P =.43); median TTP was 5.4 months with treatment A and 3.4 months with comparator B. OR rates were 17.5% with both treatments. Clinical benefit rates (complete response + partial response + stable disease > or = 24 weeks) were 42.2% for treatment A and 36.1% for comparator B (95% CI, \u20104.00% to 16.41%; P =.26). In responding patients, median DOR (from randomization to progression) was 19.0 months for treatment A and 10.8 months for comparator B. Using all patients, DOR was significantly greater for treatment A compared with comparator B; the ratio of average response durations was 1.35 (95% CI, 1.10 to 1.67; P < 0.01). Both treatments were well tolerated.\nConclusion:\nTreatment A was at least as effective as comparator B, with efficacy end points slightly favoring treatment A. Treatment A represents an additional treatment option for postmenopausal women with advanced breast cancer whose disease progresses on tamoxifen therapy.",
         "abstract_type": "spin",
-        "model_raw_answer": "no",
-        "model_answer": "no",
+        "model_raw_answer": "yes",
+        "model_answer": "yes",
         "model_log_probabilities": [
             {
-                "token": 2201,
-                "token_string": "no",
-                "logits": -0.6026650667190552,
-                "probability": 0.5473509430885315
+                "token": 9891,
+                "token_string": "yes",
+                "logits": -0.7469099164009094,
+                "probability": 0.4738284945487976
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.7523612768854946e-05,
-                "probability": 0.9999825358390808
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0055458261631429195,
+                "probability": 0.9944695830345154
             }
         ]
     },
@@ -204,14 +204,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.18440935015678406,
-                "probability": 0.8315953016281128
+                "logits": -0.349761039018631,
+                "probability": 0.7048565149307251
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.3470558769768104e-05,
-                "probability": 0.9999865293502808
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0004557524516712874,
+                "probability": 0.9995443820953369
             }
         ]
     },
@@ -228,14 +228,14 @@
             {
                 "token": 9891,
                 "token_string": "yes",
-                "logits": -0.903335452079773,
-                "probability": 0.4052158296108246
+                "logits": -0.6588203310966492,
+                "probability": 0.5174614191055298
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -9.775113539944869e-06,
-                "probability": 0.9999902844429016
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0018839959520846605,
+                "probability": 0.9981177449226379
             }
         ]
     },
@@ -252,14 +252,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.129095196723938,
-                "probability": 0.878890335559845
+                "logits": -0.7422868013381958,
+                "probability": 0.4760240912437439
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.2993727978027891e-05,
-                "probability": 0.999987006187439
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0007508557755500078,
+                "probability": 0.9992495179176331
             }
         ]
     },
@@ -270,20 +270,20 @@
         "journal": "Ann Oncol",
         "abstract": "Purpose:\nThe aim of this study was to explore the effect of dose\u2010dense sequential chemotherapy with or without treatment A primarily on disease\u2010free survival (DFS) and secondarily on overall survival (OS) in patients with high\u2010risk operable breast cancer.\nPatients and methods:\nFrom June 1997 until November 2000, 604 patients with T1\u20103N1M0 or T3N0M0 tumors were randomized to three cycles of epirubicin 110 mg/m2 followed by three cycles of treatment A followed by three cycles of 'intensified' CMF (cyclophosphamide 840 mg/m2, methotrexate 47 mg/m2 and fluorouracil 840 mg/m2) (group A), or to four cycles of epirubicin followed by four cycles of CMF, as in group A (group B). All cycles were given every 2 weeks with granulocyte colony\u2010stimulating factor support.\nResults:\nA total of 595 patients were eligible. Median follow\u2010up was 61.7 months for group A and 62 months for group B. The 3\u2010year DFS was 80% in group A and 77% in group B. Survival rates were 93% and 90%, respectively. The effect of treatment on the hazard of death was different according to hormonal receptor status. More specifically, in patients with negative receptor status the hazard of death was significantly higher for group B (hazard ratio 2.42). Both regimens were well tolerated and severe acute side\u2010effects were infrequent. No cases of severe cardiotoxicity or acute leukemia were recorded.\nConclusion:\nThe present study failed to demonstrate a significant difference in DFS or OS between the two treatment groups. However, our study has shown clearly that treatment A can be safely incorporated to dose\u2010dense sequential chemotherapy.",
         "abstract_type": "spin",
-        "model_raw_answer": "no",
-        "model_answer": "no",
+        "model_raw_answer": "yes",
+        "model_answer": "yes",
         "model_log_probabilities": [
             {
-                "token": 2201,
-                "token_string": "no",
-                "logits": -0.18759332597255707,
-                "probability": 0.8289517760276794
+                "token": 9891,
+                "token_string": "yes",
+                "logits": -0.45838481187820435,
+                "probability": 0.6323041319847107
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.5020257706055418e-05,
-                "probability": 0.9999849200248718
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0018856617389246821,
+                "probability": 0.998116135597229
             }
         ]
     },
@@ -294,20 +294,20 @@
         "journal": "J Clin Oncol",
         "abstract": "Purpose:\nTo determine whether treatment A, improves survival in patients with brain metastases when used as an adjunct to whole\u2010brain radiation therapy (WBRT).\nPatients and methods:\nPatients with brain metastases from solid tumors and a Karnofsky performance score of > or = 70 were randomly assigned to receive WBRT with supplemental oxygen and either treatment A (treatment A arm) or no treatment (control arm). The primary end point was survival.\nResults:\nThe study consisted of 515 eligible patients (treatment A arm, n = 265; control arm, n = 250). The median survival time (MST) was 5.4 months for the treatment A arm versus 4.4 months for the control arm (hazard ratio [HR] = 0.87; P = .16). For the subgroup of patients with non\u2010small\u2010cell lung cancer (NSCLC) or breast cancer, the MST was 6.0 and 4.4 months, respectively (HR = 0.82; P = .07). Cox multiple regression analysis demonstrated a significant reduction in the risk of death for the treatment A arm in both primary populations. Further analysis indicated that the benefit may be restricted to the subgroup of patients with breast cancer. Response rates (radiographic complete response plus partial response) improved by 7% (P = .10) and 13% (P = .01) for all patients and for NSCLC and breast cancer patients in the treatment A arm, respectively. The most common severe adverse event in patients treated with treatment A was hypoxemia, which was reversible and effectively managed with supplemental oxygen in most patients.\nConclusion:\nThe addition of treatment A to WBRT may improve response rates and survival in patients with brain metastases, particularly metastases from breast cancer. A confirmatory trial for breast cancer patients has been initiated.",
         "abstract_type": "spin",
-        "model_raw_answer": "Yes",
+        "model_raw_answer": "yes",
         "model_answer": "yes",
         "model_log_probabilities": [
             {
-                "token": 9642,
-                "token_string": "Yes",
-                "logits": -0.6832066774368286,
-                "probability": 0.5049950480461121
+                "token": 9891,
+                "token_string": "yes",
+                "logits": -0.29923319816589355,
+                "probability": 0.7413864731788635
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -0.004638507030904293,
-                "probability": 0.9953722953796387
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0024183334317058325,
+                "probability": 0.9975846409797668
             }
         ]
     },
@@ -324,14 +324,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.16204920411109924,
-                "probability": 0.850399374961853
+                "logits": -0.8557292819023132,
+                "probability": 0.42497316002845764
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.2993727978027891e-05,
-                "probability": 0.999987006187439
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0006551980040967464,
+                "probability": 0.999345064163208
             }
         ]
     },
@@ -348,14 +348,14 @@
             {
                 "token": 9891,
                 "token_string": "yes",
-                "logits": -0.5913012623786926,
-                "probability": 0.553606390953064
+                "logits": -0.34910112619400024,
+                "probability": 0.7053217887878418
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -8.940656698541716e-06,
-                "probability": 0.9999909996986389
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0032503176480531693,
+                "probability": 0.9967550039291382
             }
         ]
     },
@@ -372,14 +372,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.20597119629383087,
-                "probability": 0.8138565421104431
+                "logits": -0.5115326642990112,
+                "probability": 0.599575936794281
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.3828182090946939e-05,
-                "probability": 0.9999861717224121
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0003756771038752049,
+                "probability": 0.9996244311332703
             }
         ]
     },
@@ -396,14 +396,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.5414437055587769,
-                "probability": 0.5819075107574463
+                "logits": -1.0182644128799438,
+                "probability": 0.3612213134765625
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.156323378381785e-05,
-                "probability": 0.9999883770942688
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0004928089329041541,
+                "probability": 0.9995072484016418
             }
         ]
     },
@@ -414,20 +414,20 @@
         "journal": "Eur J Cancer",
         "abstract": "Background:\nThe contribution of treatment A in breast cancer patients after receiving adjuvant chemotherapy is not fully established. We investigated the impact of treatment A, given sequentially after completion of adjuvant chemotherapy in patients with operable breast cancer.\nPatients and methods:\nBetween March 1991 and June 1999, 1863 women with stages I\u2010IIIA operable breast cancer who had undergone surgery and completed six cycles of adjuvant combination chemotherapy with either CMF, CAF, CEF, FAC or FEC were randomised to receive either treatment A for 3 years or no further treatment. Irrespective of menstrual status and hormone receptor content of the primary tumour, patients were stratified by institute, chemotherapy scheme and age (above 50 years or younger). The main end\u2010point was to detect a 5% increase in the 5 year survival (from 80% to 85%) in favour of treatment A. Secondary end\u2010 points were relapse free survival (RFS), local control, incidence of second primary breast cancer and correlation of results with hormone receptor content.\nResults:\nAfter exclusion of all patients from three sites because of inadequate documentation, a total of 1724 patients (93%) were analyzed (Treatment A 861 and Control 863). At a median follow\u2010up of 6.5 years, 5\u2010year RFS on treatment A was 73% versus 67% in controls (p=0.035). No difference was seen in overall survival. The benefit of treatment A was mainly seen in the subgroup of patients with histologically documented positive axillary nodes (5\u2010year RFS on treatment A 71% versus 64% in the control group, p=0.044) and in patients with tumours expressing the ER and PR positive phenotype (5\u2010year RFS on treatment A 77% versus 70% in the control group, p=0.014).\nConclusion:\nTreatment A administered for 3 years after completion of adjuvant chemotherapy in this otherwise unselected group of patients for endocrine sensitivity had a limited impact on relapse and had no detectable effect on overall survival. The beneficial effect of treatment A is mainly confined to the subgroup of patients with node\u2010positive disease and to patients with tumours expressing the ER and PR positive phenotype.",
         "abstract_type": "spin",
-        "model_raw_answer": "No",
-        "model_answer": "no",
+        "model_raw_answer": "yes",
+        "model_answer": "yes",
         "model_log_probabilities": [
             {
-                "token": 2822,
-                "token_string": "No",
-                "logits": -1.0902800559997559,
-                "probability": 0.3361223340034485
+                "token": 9891,
+                "token_string": "yes",
+                "logits": -0.49620693922042847,
+                "probability": 0.6088356375694275
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -0.05491311103105545,
-                "probability": 0.9465674161911011
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0035596834495663643,
+                "probability": 0.9964466691017151
             }
         ]
     },
@@ -438,20 +438,20 @@
         "journal": "Gynecol Oncol",
         "abstract": "Objective:\nTo assess whether the use of intervention A as an adjunct to colposcopy increases the detection of biopsy confirmed CIN 2, 3 (high grade cervical intraepithelial neoplasia).\nMethods:\nThis is a multicenter two\u2010arm randomized trial comparing colposcopy alone with colposcopy plus intervention A. Patients were recruited from 13 colposcopy clinics in a variety of practice settings. 2299 women referred for the evaluation of an abnormal cervical cytology were randomized with stratification by cytology; subsequently 113 women were excluded for a variety of reasons. The main study outcomes were differences in true\u2010positive rates (CIN 2, 3 and cancer identified) and false\u2010positive rates between the study arms.\nResults:\nThe true\u2010positive (TP) rates were 14.4% vs. 11.4% (p=0.035, one\u2010sided) for the combined colposcopy and intervention A arm compared to colposcopy\u2010only arm, respectively, in women with either an atypical squamous cell (ASC) or low\u2010grade squamous intraepithelial lesion (LSIL) cytology result. TP rates were similar between the two arms among women referred for the evaluation of HSIL (high\u2010grade squamous intraepithelial lesion). The 26.5% gain in true\u2010positives observed with the use of intervention A and colposcopy among women referred for an ASC or LSIL cytology was achieved with only a fractional increase in number of biopsies obtained per patient (0.30) and a modest increase in false\u2010positive rate\n(4%). In the combined colposcopy and intervention A arm among women with ASC or LSIL, the PPV (positive predictive value) of biopsies indicated by ntervention A was 15.0% and the PPV of biopsies indicated by colposcopy was 15.2%. Joint hypothesis testing indicates that intervention A and colposcopy provides benefit compared to colposcopy alone among women with ASC or LSIL.\nConclusion:\nCombining intervention A with colposcopy provides a clinically meaningful increase in the detection of CIN 2, 3 in women referred for the evaluation of mildly abnormal cytology results.",
         "abstract_type": "spin",
-        "model_raw_answer": "Yes",
+        "model_raw_answer": "yes",
         "model_answer": "yes",
         "model_log_probabilities": [
             {
-                "token": 9642,
-                "token_string": "Yes",
-                "logits": -1.0895298719406128,
-                "probability": 0.3363746106624603
+                "token": 9891,
+                "token_string": "yes",
+                "logits": -0.7918097972869873,
+                "probability": 0.45302414894104004
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -0.007628357969224453,
-                "probability": 0.9924007058143616
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0034060818143188953,
+                "probability": 0.9965996146202087
             }
         ]
     },
@@ -468,14 +468,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.23071227967739105,
-                "probability": 0.7939678430557251
+                "logits": -0.44779354333877563,
+                "probability": 0.6390365958213806
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.6212332411669195e-05,
-                "probability": 0.9999838471412659
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0006986799417063594,
+                "probability": 0.9993016123771667
             }
         ]
     },
@@ -492,14 +492,14 @@
             {
                 "token": 9891,
                 "token_string": "yes",
-                "logits": -0.8065652847290039,
-                "probability": 0.4463886320590973
+                "logits": -0.20113971829414368,
+                "probability": 0.8177981972694397
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -9.059865078597795e-06,
-                "probability": 0.9999909400939941
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0019519339548423886,
+                "probability": 0.9980499744415283
             }
         ]
     },
@@ -510,20 +510,20 @@
         "journal": "J Clin Oncol",
         "abstract": "Purpose:\nTo evaluate the efficacy and tolerability of treatment A plus cyclophosphamide, doxorubicin, and fluorouracil (CAF) therapy in comparison with CAF + placebo, in patients with advanced or recurrent breast cancer.\nMethods and materials:\nIn this randomized, double\u2010blind, placebo\u2010controlled trial, patients were treated with six cycles of CAF therapy: 28 days/cycle, with doxorubicin (25 mg/m2) and fluorouracil (500 mg/m2) administered on days 1 and 8 and cyclophosphamide (100 mg orally [PO]) administered on day 1 through 14. Primary end point was overall response rate (ORR; partial or complete response). In total, 221 patients were assessable.\nResults:\nA total of 227 patients were recruited, the full analysis set consisted of 221 patients. ORR was 42.6% (95% confidence interval (CI), 33.1 to 52.5) for CAF + placebo compared with 53.1% (95% CI, 43.5 to 62.5) for treatment A + CAF (P = .077). The median progression\u2010free survival (PFS) was 241 days for CAF + placebo v 366 days for treatment A + CAF; P = .145. Any adverse event occurred more frequently with CAF + treatment A, 95.5% vs. 88.4%, p=0.025. Neutropenia occurred for 91.2% with CAF + treatment A vs 77.7% with CAF + placebo, p=0.005. Treatment with treatment A did not affect the plasma concentration of doxorubicin.\nConclusion:\nTreatment A + CAF was not more effective than CAF + placebo in patients with advanced or recurrent breast cancer.",
         "abstract_type": "no_spin",
-        "model_raw_answer": "no",
-        "model_answer": "no",
+        "model_raw_answer": "yes",
+        "model_answer": "yes",
         "model_log_probabilities": [
             {
-                "token": 2201,
-                "token_string": "no",
-                "logits": -0.3058512508869171,
-                "probability": 0.736496090888977
+                "token": 9891,
+                "token_string": "yes",
+                "logits": -0.5708589553833008,
+                "probability": 0.5650399327278137
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.6331539882230572e-05,
-                "probability": 0.9999836087226868
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.001430679694749415,
+                "probability": 0.9985702633857727
             }
         ]
     },
@@ -534,20 +534,20 @@
         "journal": "J Clin Oncol",
         "abstract": "Purpose:\nIn 1996, we initiated the multicenter phase III randomized trial to compare the effect on disease\u2010free survival (DFS) of experimental treatment A versus comparator B after breast\u2010conserving surgery for stages I and II breast cancer. This report presents the clinical results with a median follow\u2010up of 60 months.\nPatients and methods:\nBetween February 1996 and April 2000, 716 patients were entered onto this trial. Adjuvant treatment began within 6 weeks after surgery.\nResults:\nThere was no statistically significant difference in treatment in the 5\u2010year DFS (80% in both groups; P = .83), locoregional recurrence\u2010free survival (LRFS; 92% in comparator B v 95% in treatment A; P = .76), metastasis\u2010free survival (87% in comparator B v 84% in treatment A; P = .55), or overall survival (90% in comparator B v 91% in treatment A; P = .76). Nevertheless, in the node\u2010positive subgroup, the 5\u2010year LRFS was statistically better in the treatment A arm (97% in treatment A v 91% in comparator B; P = .02), corresponding to a risk of locoregional recurrence decreased by 39% (hazard ratio, 0.61; 95% CI, 0.38 to 0.93).\nConclusion:\nThis treatment protocol remains an appealing clinical option for many women with operable breast cancer at a high risk of recurrence. Combination treatments with new drugs for breast cancer are warranted.",
         "abstract_type": "spin",
-        "model_raw_answer": "Yes",
+        "model_raw_answer": "yes",
         "model_answer": "yes",
         "model_log_probabilities": [
             {
-                "token": 9642,
-                "token_string": "Yes",
-                "logits": -0.6537337303161621,
-                "probability": 0.5201002955436707
+                "token": 9891,
+                "token_string": "yes",
+                "logits": -0.32753005623817444,
+                "probability": 0.7207015752792358
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -0.0028248426970094442,
-                "probability": 0.9971791505813599
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0033378859516233206,
+                "probability": 0.9966676235198975
             }
         ]
     },
@@ -564,14 +564,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.10140195488929749,
-                "probability": 0.903569757938385
+                "logits": -0.26027974486351013,
+                "probability": 0.7708358764648438
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.2516897186287679e-05,
-                "probability": 0.9999874830245972
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0007532381569035351,
+                "probability": 0.9992470741271973
             }
         ]
     },
@@ -588,14 +588,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.527843713760376,
-                "probability": 0.5898755788803101
+                "logits": -0.12020983546972275,
+                "probability": 0.8867343664169312
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.168244216387393e-05,
-                "probability": 0.999988317489624
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0008522216230630875,
+                "probability": 0.9991480708122253
             }
         ]
     },
@@ -612,14 +612,14 @@
             {
                 "token": 9891,
                 "token_string": "yes",
-                "logits": -1.0967930555343628,
-                "probability": 0.3339402675628662
+                "logits": -0.1907126009464264,
+                "probability": 0.8263700604438782
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -9.179073458653875e-06,
-                "probability": 0.9999908208847046
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0029605866875499487,
+                "probability": 0.997043788433075
             }
         ]
     },
@@ -630,20 +630,20 @@
         "journal": "J Clin Oncol",
         "abstract": "Purpose:\nThis phase III randomized open\u2010label clinical trial was designed to evaluate the efficacy and safety of treatment A versus comparator B as first\u2010line treatment for metastatic breast cancer (MBC) in postmenopausal women.\nPatients and methods:\nThe study was conducted at 81 centers and enrolled postmenopausal patients with measurable hormone\u2010sensitive metastatic or locally advanced breast cancer. Prior adjuvant chemotherapy and/or comparator B were allowed. One previous chemotherapy regimen and no prior hormone therapy for advanced disease were permitted. Patients were randomly assigned to receive treatment A or comparator B until disease progression or unacceptable toxicity occurred. Progression\u2010free survival (PFS) as the primary study end point.\nResults:\nOf the 382 patients randomized at 79 sites, 371 (182 treatment A, 189 comparator B) were included in the analysis. No treatment related death were observed. A total of 319 events (progression or death) were observed: 161 (85%) in the comparator B arm and 158 (87%) in the treatment A arm. Median progression\u2010 free survival (PFS) (primary outcome) was 5.8 months with comparator B (95% CI, 5.3 to 8.1 months) vs 9.9 months; (95% CI, 8.7 to 11.8 months) with treatment A, HR = 0.84 (95% CI, 0.67 to 1.05), p = .121. No statistically significant differences in overall survival were observed between treatment arms: median overall survival for comparator B and treatment A was 43.3 vs. 37.2 months, HR=1.04 (95% CI, 0.76 to 1.41). Overall response rate was respectively for treatment A and for comparator B, 46% vs. 31%; odds ratio=1.85; 95% CI, 1.21 to 2.82; P = .005.\nConclusion:\nTreatment A was not more effective than comparator B for metastatic breast cancer in postmenopausal women on overall survival.",
         "abstract_type": "no_spin",
-        "model_raw_answer": "no",
-        "model_answer": "no",
+        "model_raw_answer": "yes",
+        "model_answer": "yes",
         "model_log_probabilities": [
             {
-                "token": 2201,
-                "token_string": "no",
-                "logits": -0.3190247416496277,
-                "probability": 0.7268575429916382
+                "token": 9891,
+                "token_string": "yes",
+                "logits": -0.8536836504936218,
+                "probability": 0.42584335803985596
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.2159273865108844e-05,
-                "probability": 0.9999878406524658
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0028143818490207195,
+                "probability": 0.9971895217895508
             }
         ]
     },
@@ -660,14 +660,14 @@
             {
                 "token": 9891,
                 "token_string": "yes",
-                "logits": -0.9550873041152954,
-                "probability": 0.38477855920791626
+                "logits": -0.7605051398277283,
+                "probability": 0.4674302339553833
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -8.702239938429557e-06,
-                "probability": 0.9999912977218628
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.002817234955728054,
+                "probability": 0.9971867203712463
             }
         ]
     },
@@ -678,20 +678,20 @@
         "journal": "J Clin Oncol",
         "abstract": "Purpose:\nTreatment A is effective against HER\u20102\u2010positive locally advanced or metastatic breast cancer (MBC). This phase III trial evaluated the efficacy of treatment A in HER\u20102\u2010negative and HER\u20102\u2010uncharacterized MBC.\nPatients and methods:\nWomen with MBC were randomly assigned to first\u2010line therapy with paclitaxel 175 mg/m2 every 3 weeks plus treatment A or placebo. A preplanned retrospective evaluation of HER\u20102 status was performed using fluorescence in situ hybridization and immunohistochemistry. The primary end point was time to progression (TTP); secondary end points were objective response rate (ORR), clinical benefit rate (CBR), event\u2010free survival (EFS), and overall survival (OS).\nResults:\nIn the intent\u2010to\u2010treat population (n = 579), there were no significant differences in TTP, EFS, or OS between treatment arms, although differences in ORR and CBR were noted. In 86 HER\u20102\u2010positive patients (15%), treatment with paclitaxel\u2010 treatment A resulted in statistically significant improvements in TTP, EFS, ORR, and CBR compared with paclitaxel\u2010placebo. No differences between treatment groups were observed for any end point in HER\u20102\u2010negative patients. The most common adverse events were alopecia, rash, and diarrhea. The incidence of diarrhea and rash was significantly higher in the paclitaxel\u2010treatment A arm. The rate of cardiac events was low, and no difference was observed between treatment arms.\nConclusion:\nPatients with HER\u20102\u2010negative or HER\u20102\u2010untested MBC did not benefit from the addition of treatment A to paclitaxel. However, first\u2010line therapy with paclitaxel\u2010 treatment A significantly improved clinical outcomes in HER\u20102\u2010positive patients. Prospective evaluation of the efficacy and safety of this combination is ongoing in early and metastatic HER\u20102\u2010positive breast cancer patients.",
         "abstract_type": "spin",
-        "model_raw_answer": "no",
-        "model_answer": "no",
+        "model_raw_answer": "yes",
+        "model_answer": "yes",
         "model_log_probabilities": [
             {
-                "token": 2201,
-                "token_string": "no",
-                "logits": -1.2376197576522827,
-                "probability": 0.29007384181022644
+                "token": 9891,
+                "token_string": "yes",
+                "logits": -0.709507942199707,
+                "probability": 0.4918861985206604
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.3589766240329482e-05,
-                "probability": 0.999986469745636
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0027901313733309507,
+                "probability": 0.9972137808799744
             }
         ]
     },
@@ -708,14 +708,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.3496829569339752,
-                "probability": 0.7049115896224976
+                "logits": -0.6492490768432617,
+                "probability": 0.5224379301071167
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.4424220353248529e-05,
-                "probability": 0.9999855756759644
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0005976559477858245,
+                "probability": 0.9994025230407715
             }
         ]
     },
@@ -726,20 +726,20 @@
         "journal": "J Clin Oncol",
         "abstract": "Purpose:\nThis phase III study compared the efficacy and safety of treatment A with comparator B in advanced breast cancer.\nPatients and methods:\nPatients were randomly assigned to treatment A or comparator B. Comparison of progression\u2010free survival (PFS) was the primary objective.\nResults:\nPatient characteristics were balanced between arms (N = 305). Median PFS was 8.05 months (95% CI, 6.60 to 8.71) for treatment A and 7.98 (95% CI, 6.93 to 8.77) for comparator B (log\u2010rank P = .121). Overall response rate (ORR) was 32% in both arms, and overall survival (OS) was not different between arms (P = .983). Time to treatment failure (TTF; defined as discontinuation, progressive disease, death as a result of any cause, or the start of a new anticancer therapy) was superior in the treatment A arm (P = .059). Hematologic toxicity was similar in both arms, except for grades 3 to 4 leukopenia (treatment A, 78%; comparator B, 66%; P = .025) and transfusions (treatment A, 17%; comparator B, 7%; P = .0051). Grades 3 to 4 diarrhea, mucositis, and hand\u2010and\u2010foot syndrome were significantly higher in the comparator B arm. Fewer patients in the treatment A arm discontinued because of drug\u2010related adverse events (13% v 27% in CD; P = .002).\nConclusion:\nNo difference was observed between treatment A and comparator B arms in PFS, ORR, and OS. TTF was longer in the treatment A arm. These findings, combined with a nonhematologic toxicity profile that favors treatment A over approved doses of comparator B, suggest that treatment A may be a better option than comparator B in this clinical setting.",
         "abstract_type": "spin",
-        "model_raw_answer": "Yes",
+        "model_raw_answer": "yes",
         "model_answer": "yes",
         "model_log_probabilities": [
             {
-                "token": 9642,
-                "token_string": "Yes",
-                "logits": -0.7129101753234863,
-                "probability": 0.4902155101299286
+                "token": 9891,
+                "token_string": "yes",
+                "logits": -0.5723421573638916,
+                "probability": 0.5642024278640747
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -0.006735833827406168,
-                "probability": 0.9932867288589478
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.004239619243890047,
+                "probability": 0.9957693815231323
             }
         ]
     },
@@ -756,14 +756,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.42381346225738525,
-                "probability": 0.6545460224151611
+                "logits": -0.7391754388809204,
+                "probability": 0.47750747203826904
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.4543427823809907e-05,
-                "probability": 0.9999855160713196
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0014603198505938053,
+                "probability": 0.9985406994819641
             }
         ]
     },
@@ -780,14 +780,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.3232116997241974,
-                "probability": 0.7238205671310425
+                "logits": -0.47688961029052734,
+                "probability": 0.6207110285758972
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.6331539882230572e-05,
-                "probability": 0.9999836087226868
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0015542344190180302,
+                "probability": 0.9984469413757324
             }
         ]
     },
@@ -798,20 +798,20 @@
         "journal": "Cancer Causes Control",
         "abstract": "Objective:\nMany cancer patients continue to smoke postdiagnosis, yet there have been few smoking cessation trials for this population. Depression, which is prevalent among cancer patients, may be a barrier to cessation.\nMethods:\nThis double\u2010blind placebo\u2010controlled trial randomized 246 cancer patients to 9 weeks of placebo or treatment A, stratifying by pre\u2010treatment depression symptoms. In addition, all patients received transdermal nicotine and behavioral counseling. Primary outcomes were 7\u2010day point\u2010prevalence abstinence, biochemically confirmed, at the end of treatment (Week 12), and at 6 months post quit day (Week 27). Additional outcomes included: withdrawal, affect, quality of life, compliance, and side effects.\nResults:\nThere was no main effect of treatment A vs. placebo on abstinence (Odds Ratio [OR] = 1.36, 95% CI: 0.38\u20104.81, p = 0.64). Patients with depression symptoms reported significantly lower abstinence rates vs. patients without depression symptoms (OR = .14, 95% CI: 0.02\u20100.80, p=0.03). Treatment A increased abstinence rates, vs. placebo, more for participants with depression vs. those without depression symptoms. For patients with depression symptoms, treatment A reduced withdrawal symptoms and improved quality of life vs. placebo.\nConclusion:\nFor patients with depression symptoms, treatment increases abstinence rates, lowers withdrawal, and increases quality of life. However, abstinence rates among patients with depression symptoms were low vs. patients without depression symptoms, who exhibited similar abstinence rates when treated with treatment A or transdermal nicotine and counseling alone. These results can guide future smoking cessation intervention studies with cancer patients.",
         "abstract_type": "spin",
-        "model_raw_answer": "yes",
-        "model_answer": "yes",
+        "model_raw_answer": "no",
+        "model_answer": "no",
         "model_log_probabilities": [
             {
-                "token": 9891,
-                "token_string": "yes",
-                "logits": -0.7356231808662415,
-                "probability": 0.47920674085617065
+                "token": 2201,
+                "token_string": "no",
+                "logits": -0.9247708320617676,
+                "probability": 0.39662227034568787
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -8.583032467868179e-06,
-                "probability": 0.9999913573265076
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.000433112756581977,
+                "probability": 0.9995670318603516
             }
         ]
     },
@@ -822,20 +822,20 @@
         "journal": "Lancet",
         "abstract": "Background:\nWe aimed to compare overall survival in patients receiving treatment A or comparator B.\nMethods:\nThis was an open\u2010label randomized trial undertaken in 50 centres across eight countries. 1006 treatment\u2010naive patients diagnosed with advanced metastatic renal cell carcinoma were randomly allocated (1 to 1) by minimization to receive comparator B or treatment A. Treatment was not masked. The primary endpoint was overall survival. Treatment groups were compared with a non\u2010stratified log\u2010 rank test. Analysis was by intention to treat. This study is registered, number ISRCTN XXXX.\nFindings:\n502 patients were randomly assigned to receive comparator B and 504 to receive combined treatment A. Median follow\u2010up was 37.2 months (24.8\u201052.3). Median overall survival was 18.8 months (17.0\u201023.2) for patients receiving comparator B versus 18.6 months (16.5\u201020.6) for those receiving treatment A. Overall survival did not differ between the two groups (hazard ratio 1.05 [95% CI 0.90\u20101.21], p=0.55; absolute difference 0.3% (\u20105.1 to 5.6) at 1 year and 2.7% (\u20108.2 to 2.9) at 3 years). Serious adverse events were reported in 113 (23%) patients receiving comparator B and 131 (26%) of those receiving combined treatment A.\nInterpretation:\nAlthough treatment A does not improve overall or progression\u2010free survival compared with comparator B, treatment A might still have a role because it can produce remissions that are of clinically relevant length in some patients. Identification of patients who will benefit from treatment A is crucial.",
         "abstract_type": "spin",
-        "model_raw_answer": "Yes",
+        "model_raw_answer": "yes",
         "model_answer": "yes",
         "model_log_probabilities": [
             {
-                "token": 9642,
-                "token_string": "Yes",
-                "logits": -0.7673623561859131,
-                "probability": 0.46423593163490295
+                "token": 9891,
+                "token_string": "yes",
+                "logits": -0.3124726414680481,
+                "probability": 0.7316356897354126
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -0.0022048468235880136,
-                "probability": 0.9977975487709045
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.001820098957978189,
+                "probability": 0.9981815218925476
             }
         ]
     },
@@ -852,14 +852,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.18639303743839264,
-                "probability": 0.8299473524093628
+                "logits": -0.3261701464653015,
+                "probability": 0.7216824293136597
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.6569954823353328e-05,
-                "probability": 0.9999834299087524
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0010399178136140108,
+                "probability": 0.9989606738090515
             }
         ]
     },
@@ -870,20 +870,20 @@
         "journal": "Blood",
         "abstract": "In this double\u2010blind, placebo\u2010controlled study, 363 patients with untreated multiple myeloma were randomized to receive either melphalan\u2010prednisone and treatment A or melphalan\u2010prednisone and placebo. The dose of melphalan was 0.25 mg/kg and prednisone was 100 mg given daily for 4 days every 6 weeks until plateau phase. A total of 357 patients were analyzed. Partial response was 34% and 33%, and very good partial response or better was 23% and 7% in the treatment A and placebo arms, respectively (P < .001). There was no significant difference in progression\u2010free or overall survival, with median survival being 29 months in the treatment A arm and 32 months in the placebo arm. Most quality of life outcomes improved equally in both arms, apart from constipation, which was markedly increased in the treatment A arm. Constipation, neuropathy, non\u2010neuropathy neurologic toxicity, and skin reactions were significantly more frequent in the treatment A arm. The number of thromboembolic events was equal in the 2 treatment arms. In conclusion, treatment A had a significant antimyeloma effect, but this did not translate into improved survival.",
         "abstract_type": "spin",
-        "model_raw_answer": "yes",
-        "model_answer": "yes",
+        "model_raw_answer": "no",
+        "model_answer": "no",
         "model_log_probabilities": [
             {
-                "token": 9891,
-                "token_string": "yes",
-                "logits": -1.1398359537124634,
-                "probability": 0.3198714852333069
+                "token": 2201,
+                "token_string": "no",
+                "logits": -0.6514474749565125,
+                "probability": 0.52129065990448
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -8.106198947643861e-06,
-                "probability": 0.9999918341636658
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0005104430601932108,
+                "probability": 0.9994897246360779
             }
         ]
     },
@@ -900,14 +900,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.09064486622810364,
-                "probability": 0.9133419990539551
+                "logits": -0.5403093695640564,
+                "probability": 0.5825680494308472
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.168244216387393e-05,
-                "probability": 0.999988317489624
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.00045015214709565043,
+                "probability": 0.999549925327301
             }
         ]
     },
@@ -924,14 +924,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.09021960198879242,
-                "probability": 0.9137305021286011
+                "logits": -0.6471775770187378,
+                "probability": 0.5235213041305542
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.5139465176616795e-05,
-                "probability": 0.999984860420227
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0012047183699905872,
+                "probability": 0.9987959861755371
             }
         ]
     },
@@ -948,14 +948,14 @@
             {
                 "token": 9891,
                 "token_string": "yes",
-                "logits": -0.9353080987930298,
-                "probability": 0.39246493577957153
+                "logits": -0.4696274697780609,
+                "probability": 0.6252351403236389
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -9.417489309271332e-06,
-                "probability": 0.9999905228614807
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0026188145857304335,
+                "probability": 0.9973846077919006
             }
         ]
     },
@@ -972,14 +972,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.3562649190425873,
-                "probability": 0.7002871036529541
+                "logits": -0.6862882375717163,
+                "probability": 0.5034412741661072
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.585470999998506e-05,
-                "probability": 0.9999842047691345
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0005507144378498197,
+                "probability": 0.9994494318962097
             }
         ]
     },
@@ -990,20 +990,20 @@
         "journal": "Cancer",
         "abstract": "Background:\nCancer\u2010related fatigue is a debilitating symptom affecting psychosocial functioning and quality of life in 70% to 100% of cancer patients during and after treatment. The authors examined the effect of treatment A on the severity of cancer\u2010related fatigue.\nMethods:\nThe authors conducted a multicenter, randomized, double\u2010blind, placebo\u2010 controlled, phase 3, clinical trial to examine the effect of treatment A on patient\u2010 reported fatigue in cancer patients undergoing chemotherapy. A sample of 877 cancer patients beginning chemotherapy at 23 geographically separate University of Rochester Cancer Center (URCC) Community Clinical Oncology Program (CCOP) affiliates were assessed for fatigue. Patients who reported fatigue (N = 867) were randomly assigned to receive either treatment A or a placebo. Treatment began on Day 5 of Cycle 2 and ended after Day 7 of Cycle 4. Fatigue and depression were assessed during Cycles 2 to 4 by using psychometrically valid measures. Group differences (treatment vs. control) in the worst level of fatigue during the previous week at Cycle 4 were examined by using an analysis of covariance (ANCOVA) adjusting for baseline fatigue (Cycle 2).\nResults:\nThere were 631 patients (315 treatment A, 316 placebo) who provided evaluable data. ANCOVA showed a significant interaction between treatment condition and baseline fatigue (P = .017), where patients with severe baseline fatigue (n = 458) benefited from treatment A, whereas patients with mild or moderate fatigue did not. Treatment A had no statistically significant effect on depression (P > .05).\nConclusions:\nTreatment A may be useful in controlling cancer\u2010related fatigue in patients who present with severe fatigue but is not useful in patients with mild or moderate fatigue.",
         "abstract_type": "spin",
-        "model_raw_answer": "yes",
-        "model_answer": "yes",
+        "model_raw_answer": "no",
+        "model_answer": "no",
         "model_log_probabilities": [
             {
-                "token": 9891,
-                "token_string": "yes",
-                "logits": -0.7252171039581299,
-                "probability": 0.4842194616794586
+                "token": 2201,
+                "token_string": "no",
+                "logits": -0.4505910873413086,
+                "probability": 0.6372513771057129
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -9.536697689327411e-06,
-                "probability": 0.9999904632568359
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0006112375995144248,
+                "probability": 0.9993889927864075
             }
         ]
     },
@@ -1020,14 +1020,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.13637812435626984,
-                "probability": 0.8725125789642334
+                "logits": -0.3743737041950226,
+                "probability": 0.6877198815345764
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.1444026313256472e-05,
-                "probability": 0.9999886155128479
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0006332775810733438,
+                "probability": 0.9993669390678406
             }
         ]
     },
@@ -1044,14 +1044,14 @@
             {
                 "token": 9891,
                 "token_string": "yes",
-                "logits": -0.7525529265403748,
-                "probability": 0.47116217017173767
+                "logits": -0.3096286952495575,
+                "probability": 0.7337192893028259
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -8.583032467868179e-06,
-                "probability": 0.9999913573265076
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.00224374164827168,
+                "probability": 0.997758686542511
             }
         ]
     },
@@ -1068,14 +1068,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.09082264453172684,
-                "probability": 0.9131796956062317
+                "logits": -0.823383629322052,
+                "probability": 0.43894392251968384
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.4185804502631072e-05,
-                "probability": 0.9999857544898987
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0015055523253977299,
+                "probability": 0.9984955191612244
             }
         ]
     },
@@ -1086,20 +1086,20 @@
         "journal": "Int J Radiat Oncol Biol Phys",
         "abstract": "Purpose:\nA two\u2010arm, double\u2010blind, randomized trial was performed to evaluate the effect of treatment A on acute skin\u2010related toxicity in patients undergoing breast or chest wall radiotherapy.\nMethods and materials:\nPatients with ductal carcinoma in situ or invasive breast carcinoma who were undergoing external beam radiotherapy to the breast or chest wall were randomly assigned to apply treatment A or placebo cream daily. The primary study endpoint was the provider assessed maximal grade of Common Terminology Criteria for Adverse Events, version 3.0, radiation dermatitis. The secondary endpoints included provider\u2010assessed Common Terminology Criteria for Adverse Events Grade 3 or greater radiation dermatitis and adverse event monitoring. The patient\u2010reported outcome measures included the Skindex\u201016, the Skin Toxicity Assessment Tool, a Symptom Experience Diary, and a quality\u2010of\u2010 life self\u2010assessment. An assessment was performed at baseline, weekly during radiotherapy, and for 2 weeks after radiotherapy.\nResults:\nA total of 176 patients were enrolled between September 21, 2007, and December 7, 2007. The provider assessed primary endpoint showed no difference in the mean maximum grade of radiation dermatitis by treatment arm (1.2 for treatment A vs. 1.3 for placebo; p = .18). Common Terminology Criteria for Adverse Events toxicity was greater in the placebo group (p = .04), primarily from pruritus. For the patient\u2010reported outcome measures, the maximum Skindex\u201016 score for the treatment A group showed less itching (p = .008), less irritation (p = .01), less symptom persistence or recurrence (p = .02), and less annoyance with skin problems (p = .04). The group\u2019s maximal Skin Toxicity Assessment Tool score showed less burning sensation (p = .02) and less itching (p = .002).\nConclusion:\nPatients receiving daily treatment A during radiotherapy might experience reduced acute skin toxicity compared with patients receiving placebo.",
         "abstract_type": "spin",
-        "model_raw_answer": "Yes",
+        "model_raw_answer": "yes",
         "model_answer": "yes",
         "model_log_probabilities": [
             {
-                "token": 9642,
-                "token_string": "Yes",
-                "logits": -0.8109912276268005,
-                "probability": 0.4444173276424408
+                "token": 9891,
+                "token_string": "yes",
+                "logits": -0.3015338182449341,
+                "probability": 0.7396827936172485
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -0.0036190745886415243,
-                "probability": 0.9963874220848083
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.00274269818328321,
+                "probability": 0.9972610473632812
             }
         ]
     },
@@ -1110,20 +1110,20 @@
         "journal": "Int J Gynecol Cancer",
         "abstract": "Objective:\nTo evaluate the safety and efficacy of treatment A in combination with pegylated liposomal doxorubicin (PLD) in platinum\u2010resistant ovarian cancer (OC).\nMethods:\nPatients with platinum\u2010refractory or \u2010resistant primary or secondary) OC were randomized to receive treatment A and PLD at 50 mg/m2 intravenously or PLD alone at 50 mg/m2 intravenously on day 1 every 28 days until tumor progression or unacceptable toxicity. The primary end point was progression\u2010free survival (PFS). Other end points were objective response rate and safety. The study was originally planned for 244 patients. The trial was temporarily placed on hold after 125 patients were randomized while the results of another trial were being reviewed and the sponsor decided not to resume enrollment. The interim analysis became the final analysis.\nResults:\nThe median PFS was 5.6 months for treatment A + PLD (n = 65) versus 3.7 months for PLD (n = 60) (hazards ratio, 0.92; P = 0.7243). A preplanned subgroup analysis showed that 75 patients with platinum\u2010refractory or primary platinum\u2010resistant OC had a median PFS of 5.6 months for treatment A + PLD versus 2.9 months for PLD (hazards ratio, 0.55; P = 0.0425). Hematologic adverse events were 66% on the treatment A + PLD arm versus 44% on the PLD arm, manageable with dose reductions. Nonhematologic adverse events were similar for both arms. The incidence of palmar\u2010plantar erythrodysesthesia and stomatitis was lower on treatment A + PLD (23%, 31%, respectively) versus (39%, 49%, respectively) on PLD.\nConclusion:\nOverall median PFS showed a positive trend but was not statistically significant. The median PFS in the platinum\u2010refractory and primary platinum\u2010resistant OC patients was significantly longer for treatment A + PLD versus PLD. Treatment A may ameliorate the palmar\u2010plantar erythrodysesthesia and stomatitis known to be associated with PLD. Further study of this active well\u2010tolerated regimen in platinum\u2010refractory and primary platinum\u2010resistant OC is planned. This study was registered at www.clinicaltrials.gov",
         "abstract_type": "spin",
-        "model_raw_answer": "no",
-        "model_answer": "no",
+        "model_raw_answer": "yes",
+        "model_answer": "yes",
         "model_log_probabilities": [
             {
-                "token": 2201,
-                "token_string": "no",
-                "logits": -0.47813063859939575,
-                "probability": 0.619941234588623
+                "token": 9891,
+                "token_string": "yes",
+                "logits": -0.2872045636177063,
+                "probability": 0.7503581643104553
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -2.169585604860913e-05,
-                "probability": 0.9999783039093018
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.004011798650026321,
+                "probability": 0.9959962368011475
             }
         ]
     },
@@ -1140,14 +1140,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.3249024450778961,
-                "probability": 0.7225977778434753
+                "logits": -0.9782655239105225,
+                "probability": 0.37596264481544495
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -3.302042750874534e-05,
-                "probability": 0.9999669790267944
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0013258008984848857,
+                "probability": 0.9986751079559326
             }
         ]
     },
@@ -1164,14 +1164,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.33224865794181824,
-                "probability": 0.7173088788986206
+                "logits": -0.8136196732521057,
+                "probability": 0.44325071573257446
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.585470999998506e-05,
-                "probability": 0.9999842047691345
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0014177043922245502,
+                "probability": 0.9985832571983337
             }
         ]
     },
@@ -1188,14 +1188,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.14640691876411438,
-                "probability": 0.8638061285018921
+                "logits": -0.7918953895568848,
+                "probability": 0.45298534631729126
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.8000440832111053e-05,
-                "probability": 0.9999820590019226
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0014765085652470589,
+                "probability": 0.9985246062278748
             }
         ]
     },
@@ -1206,20 +1206,20 @@
         "journal": "J Clin Oncol",
         "abstract": "Purpose:\nWe examined the value of treatment A in a phase III trial with strict preoperative staging and surgical resection guidelines.\nPatients and methods:\nPatients with locally advanced adenocarcinoma of the stomach or esophagogastric junction (AEG II and III) were randomly assigned to treatment A followed by surgery or to surgery alone. To detect with 80% power an improvement in median survival from 17 months with surgery alone to 24 months with treatment A, 282 events were required.\nResults:\nThis trial was stopped for poor accrual after 144 patients were randomly assigned (72:72); 52.8% patients had tumors located in the proximal third of the stomach, including AEG type II and III. The International Union against Cancer R0 resection rate was 81.9% after treatment A as compared with 66.7% with surgery alone (P = .036). The surgery\u2010only group had more lymph node metastases than the treatment A group (76.5% v 61.4%; P = .018). Postoperative complications were more frequent in the treatment A arm (27.1% v 16.2%; P = .09). After a median follow\u2010up of 4.4 years and 67 deaths, a survival benefit could not be shown (hazard ratio, 0.84; 95% CI, 0.52 to 1.35; P = .466).\nConclusion:\nThis trial showed a significantly increased R0 resection rate but failed to demonstrate a survival benefit. Possible explanations are low statistical power, a high rate of proximal gastric cancer including AEG and/or a better outcome than expected after radical surgery alone due to the high quality of surgery with resections of regional lymph nodes outside the perigastic area (celiac trunc, hepatic ligament, lymph node at a. lienalis; D2).",
         "abstract_type": "spin",
-        "model_raw_answer": "no",
-        "model_answer": "no",
+        "model_raw_answer": "yes",
+        "model_answer": "yes",
         "model_log_probabilities": [
             {
-                "token": 2201,
-                "token_string": "no",
-                "logits": -0.8381334543228149,
-                "probability": 0.43251708149909973
+                "token": 9891,
+                "token_string": "yes",
+                "logits": -0.646086573600769,
+                "probability": 0.5240927934646606
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.7881233361549675e-05,
-                "probability": 0.9999821186065674
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.001412704586982727,
+                "probability": 0.9985883235931396
             }
         ]
     },
@@ -1236,14 +1236,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.23180392384529114,
-                "probability": 0.7931016683578491
+                "logits": -0.9402482509613037,
+                "probability": 0.39053085446357727
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.883488948806189e-05,
-                "probability": 0.9999812245368958
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.00047338721924461424,
+                "probability": 0.9995267391204834
             }
         ]
     },
@@ -1260,14 +1260,14 @@
             {
                 "token": 9891,
                 "token_string": "yes",
-                "logits": -0.9087494015693665,
-                "probability": 0.4030279517173767
+                "logits": -0.621319055557251,
+                "probability": 0.5372353196144104
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -9.059865078597795e-06,
-                "probability": 0.9999909400939941
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0026953816413879395,
+                "probability": 0.9973081946372986
             }
         ]
     },
@@ -1284,14 +1284,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.6909940838813782,
-                "probability": 0.5010777115821838
+                "logits": -0.8695528507232666,
+                "probability": 0.41913890838623047
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.6331539882230572e-05,
-                "probability": 0.9999836087226868
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.000714523543138057,
+                "probability": 0.9992856979370117
             }
         ]
     },
@@ -1308,14 +1308,14 @@
             {
                 "token": 9891,
                 "token_string": "yes",
-                "logits": -0.5830415487289429,
-                "probability": 0.5581979751586914
+                "logits": -0.3157627582550049,
+                "probability": 0.7292323708534241
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -8.106198947643861e-06,
-                "probability": 0.9999918341636658
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0025515162851661444,
+                "probability": 0.9974517226219177
             }
         ]
     },
@@ -1332,14 +1332,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.3014678657054901,
-                "probability": 0.7397315502166748
+                "logits": -0.4386221468448639,
+                "probability": 0.6449244618415833
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.4066597032069694e-05,
-                "probability": 0.9999859929084778
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0004681444843299687,
+                "probability": 0.9995319843292236
             }
         ]
     },
@@ -1350,20 +1350,20 @@
         "journal": "Ann Oncol",
         "abstract": "Background:\nTreatment A, has activity alone and in combination with docetaxel (Taxotere) and prednisone (DP) in metastatic castration\u2010resistant prostate cancer (mCRPC). A randomized, double\u2010blind, placebo\u2010controlled phase II trial compared DP combined with either treatment A (A) or placebo in chemonaive mCRPC.\nPatients and methods:\nMen with progressive mCRPC despite androgen deprivation were eligible and randomized 1:1. Patients received docetaxel (75 mg/m2 day 1) and prednisone 5 mg orally twice daily every 21 days with either treatment A or placebo twice daily orally on days 1\u20103. The primary end point was overall survival (OS).\nResults:\nTwo hundred and twenty\u2010one patients were randomly assigned. Median OS for treatment A plus docetaxel\u2010prednisone (ADP) and placebo\u2010DP was 18.1 versus 17.8 months [hazard ratio (HR) 1.07, 95% confidence interval 0.72\u20101.55, P=0.63]. Secondary end points were also not statistically different. Grade 3/4 toxic effects for ADP versus placebo\u2010DP were cardiac events (5% versus 2%), lymphopenia (23% versus 16%), neutropenia (47% versus 40%), ileus (2% versus 0%) and pulmonary embolism (6% versus 2%). In a subgroup of high\u2010risk mCRPC (n=34), outcomes appeared to favor ADP (median OS 19 versus 14 months).\nConclusion:\nTreatment A was tolerable but did not extend OS when combined with DP in mCRPC; a potential benefit was observed in high\u2010risk patients.",
         "abstract_type": "spin",
-        "model_raw_answer": "no",
-        "model_answer": "no",
+        "model_raw_answer": "yes",
+        "model_answer": "yes",
         "model_log_probabilities": [
             {
-                "token": 2201,
-                "token_string": "no",
-                "logits": -0.9245850443840027,
-                "probability": 0.39669597148895264
+                "token": 9891,
+                "token_string": "yes",
+                "logits": -0.21567919850349426,
+                "probability": 0.8059937953948975
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.5020257706055418e-05,
-                "probability": 0.9999849200248718
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0018450870411470532,
+                "probability": 0.9981566667556763
             }
         ]
     },
@@ -1374,20 +1374,20 @@
         "journal": "Ann Oncol",
         "abstract": "Background:\nTreatment A, has activity alone and in combination with docetaxel (Taxotere) and prednisone (DP) in metastatic castration\u2010resistant prostate cancer (mCRPC). A randomized, double\u2010blind, placebo\u2010controlled phase II trial compared DP combined with either treatment A (A) or placebo in chemonaive mCRPC.\nPatients and methods:\nMen with progressive mCRPC despite androgen deprivation were eligible and randomized 1:1. Patients received docetaxel (75 mg/m2 day 1) and prednisone 5 mg orally twice daily every 21 days with either treatment A or placebo twice daily orally on days 1\u20103. The primary end point was overall survival (OS).\nResults:\nTwo hundred and twenty\u2010one patients were randomly assigned. Median OS for treatment A plus docetaxel\u2010prednisone (ADP) and placebo\u2010DP was 18.1 versus 17.8 months [hazard ratio (HR) 1.07, 95% confidence interval 0.72\u20101.55, P=0.63]. Secondary end points were also not statistically different. Grade 3/4 toxic effects for ADP versus placebo\u2010DP were cardiac events (5% versus 2%), lymphopenia (23% versus 16%), neutropenia (47% versus 40%), ileus (2% versus 0%) and pulmonary embolism (6% versus 2%). In a subgroup of high\u2010risk mCRPC (n=34), outcomes appeared to favor ADP (median OS 19 versus 14 months).\nConclusion:\nTreatment A was not more effective than placebo in metastatic castration\u2010 resistant prostate cancer patients.",
         "abstract_type": "no_spin",
-        "model_raw_answer": "no",
-        "model_answer": "no",
+        "model_raw_answer": "yes",
+        "model_answer": "yes",
         "model_log_probabilities": [
             {
-                "token": 2201,
-                "token_string": "no",
-                "logits": -0.3035014271736145,
-                "probability": 0.7382287383079529
+                "token": 9891,
+                "token_string": "yes",
+                "logits": -0.44002586603164673,
+                "probability": 0.6440197825431824
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.4543427823809907e-05,
-                "probability": 0.9999855160713196
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0014543681172654033,
+                "probability": 0.9985467195510864
             }
         ]
     },
@@ -1404,14 +1404,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.628834068775177,
-                "probability": 0.5332131385803223
+                "logits": -1.1669602394104004,
+                "probability": 0.311311811208725
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.549708758830093e-05,
-                "probability": 0.9999844431877136
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0015432840446010232,
+                "probability": 0.9984578490257263
             }
         ]
     },
@@ -1428,14 +1428,14 @@
             {
                 "token": 2201,
                 "token_string": "no",
-                "logits": -0.20804448425769806,
-                "probability": 0.8121709227561951
+                "logits": -0.6910144686698914,
+                "probability": 0.5010675191879272
             },
             {
-                "token": 128009,
-                "token_string": "<|eot_id|>",
-                "logits": -1.7523612768854946e-05,
-                "probability": 0.9999825358390808
+                "token": 128001,
+                "token_string": "<|end_of_text|>",
+                "logits": -0.0005881248507648706,
+                "probability": 0.9994120597839355
             }
         ]
     }
