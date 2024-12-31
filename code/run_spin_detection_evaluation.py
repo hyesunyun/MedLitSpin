@@ -128,13 +128,11 @@ class Evaluator:
         """
         cleaned_text = text.strip().lower().translate(str.maketrans('', '', string.punctuation))
         cleaned_text = cleaned_text.replace("\n", " ").replace("\r", " ")
-        # parse out 'yes' or 'no' from the text
-        if "yes" in cleaned_text:
-            return "yes"
-        elif "no" in cleaned_text:
-            return "no"
-        else:
-            return ""
+        # parse out the first instance of either 'yes' or 'no' from the text
+        for word in cleaned_text.split():
+            if word in ["yes", "no"]:
+                return word
+        return ""
     
     def __calculate_metrics(self, dataset: List[Dict]) -> Dict:
         """
