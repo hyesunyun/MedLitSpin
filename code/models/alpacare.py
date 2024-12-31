@@ -33,14 +33,9 @@ class AlpaCare(Model):
         return 4000
         
     def __load_model(self):
-        if self.model_type == "7B":
-            model = AutoModelForCausalLM.from_pretrained(
-                self.model_name, device_map="auto", torch_dtype=torch.float32
-            ) # float32 based on config.json
-        else:
-            model = AutoModelForCausalLM.from_pretrained(
-                self.model_name, device_map="auto", torch_dtype=torch.bfloat16
-            ) # bfloat16 based on config.json
+        model = AutoModelForCausalLM.from_pretrained(
+            self.model_name, device_map="auto", torch_dtype=torch.float16
+        ) # float16 based on https://github.com/XZhang97666/AlpaCare/blob/master/test_generation/generation.py
 
         # print model's dtype and device
         print(f"Model's dtype: {model.dtype}")
@@ -64,18 +59,11 @@ class AlpaCare(Model):
         :return output of the model
         """
         try:
-            if self.model_type == "7B":
-                text_input = self.PROMPT.format(instruction=input)
-                model_inputs = self.tokenizer(text_input, return_tensors="pt").to(self.model.device)
-            else:
-                message = [
-                    {"role": "user", "content": input},
-                ]
-                model_inputs = self.tokenizer.apply_chat_template(message, tokenize=True, add_generation_prompt=True, return_tensors="pt").to(self.model.device)
-            
+            text_input = self.PROMPT.format(instruction=input)
+            model_inputs = self.tokenizer(text_input, return_tensors="pt").input_ids.to(self.model.device)
             with torch.no_grad():
                 result = self.model.generate(model_inputs, max_new_tokens=max_new_tokens, do_sample=False, return_dict_in_generate=True, output_scores=True)
-            response = self.tokenizer.decode(result.sequences[0, model_inputs.shape[1]:], skip_special_tokens=True)
+            response = self.tokenizer.decode(result.sequences[0, model_inputs.shape[1]:], skip_special_tokens=True, clean_up_tokenization_spaces=False)
             
             transition_scores = self.model.compute_transition_scores(
                 result.sequences, result.scores, normalize_logits=True

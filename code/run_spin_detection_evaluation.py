@@ -116,7 +116,7 @@ class Evaluator:
 
         :return maximum number of new tokens
         """
-        return 100
+        return 50
     
     def __clean_text(self, text: str) -> str:
         """
@@ -127,6 +127,7 @@ class Evaluator:
         :return cleaned text
         """
         cleaned_text = text.strip().lower().translate(str.maketrans('', '', string.punctuation))
+        cleaned_text = cleaned_text.replace("\n", " ").replace("\r", " ")
         # parse out 'yes' or 'no' from the text
         if "yes" in cleaned_text:
             return "yes"

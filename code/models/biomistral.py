@@ -59,7 +59,7 @@ class BioMistral(Model):
             transition_scores = self.model.compute_transition_scores(
                 result.sequences, result.scores, normalize_logits=True
             ).cpu()
-            transition_scores = format_transition_scores(self.tokenizer, result.sequences[0, model_inputs.shape[1]:], transition_scores)
+            transition_scores = format_transition_scores(self.tokenizer, result.sequences[:, model_inputs.shape[1]:].cpu(), transition_scores)
 
             return {"response": response, "log_probabilities": transition_scores}
         except Exception as e:

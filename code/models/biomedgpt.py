@@ -23,8 +23,8 @@ class BioMedGPT(Model):
         # model_name = "PharMolix/BioMedGPT-LM-7B"
         model_name = "/projects/frink/models/biomedgpt-7b"
         model = AutoModelForCausalLM.from_pretrained(
-            model_name, device_map="auto", torch_dtype=torch.float32
-        ) # float32 based on config.json
+            model_name, device_map="auto", torch_dtype=torch.float16
+        ) # float16 based on https://github.com/PharMolix/OpenBioMed/blob/main/configs/encoders/multimodal/biomedgptv.json
         model.generation_config.do_sample = False
         model.generation_config.temperature = None
         model.generation_config.top_p = None

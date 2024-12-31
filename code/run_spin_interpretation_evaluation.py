@@ -22,8 +22,8 @@ import random
 import pandas as pd
 from statistics import mean
 import time
-import string
 import torch, gc
+import re
 
 from utils import load_csv_file, save_dataset_to_json, save_dataset_to_csv
 
@@ -126,7 +126,7 @@ class Evaluator:
 
         :return maximum number of new tokens
         """
-        return 100
+        return 50
     
     def __clean_text(self, text: str) -> str:
         """
@@ -136,10 +136,18 @@ class Evaluator:
         :param text: input text to clean
         :return cleaned text
         """
-        cleaned_text = text.strip().translate(str.maketrans('', '', string.punctuation))
-        cleaned_text = ''.join(filter(str.isdigit, cleaned_text))
-        if len(cleaned_text) > 2:
-            cleaned_text = ""
+        cleaned_text = text.replace("\n", " ").replace("\r", " ")
+        cleaned_text = cleaned_text.strip().lower()
+        # extract strings with int or float values
+        match = re.search(r"\d+\.\d+|\d+", cleaned_text)
+        if match:
+            cleaned_text = match.group()
+        else:
+            return ""
+
+        # if the cleaned text happens to have an invalid number (not 0-10), return empty string
+        if not (0.0 <= float(cleaned_text) <= 10.0):
+            return ""
         return cleaned_text
 
     def __calculate_mean_differences(self, dataset: List[Dict]) -> Dict:
@@ -171,8 +179,8 @@ class Evaluator:
                 print(f"Number of rows after removing 'Error' or empty string values: {len(df_copy)}")
 
             # for each column, get the average of spin and no_spin answers
-            spin_avg = df_copy[df_copy['abstract_type'] == 'spin'][col].astype(int).mean()
-            no_spin_avg = df_copy[df_copy['abstract_type'] == 'no_spin'][col].astype(int).mean()
+            spin_avg = df_copy[df_copy['abstract_type'] == 'spin'][col].astype(float).mean()
+            no_spin_avg = df_copy[df_copy['abstract_type'] == 'no_spin'][col].astype(float).mean()
             
             # print(f"Average for '{col}' (spin): {spin_avg}")
             # print(f"Average for '{col}' (no_spin): {no_spin_avg}")

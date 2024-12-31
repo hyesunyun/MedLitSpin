@@ -21,10 +21,10 @@ models=(
   "llama2_chat-13B"
   "llama3_instruct-8B"
   ########################
-  # "llama2_chat-70B"
-  # "llama3_instruct-70B"
-  # "med42-70B"
-  # "openbiollm-70B"
+  "llama2_chat-70B"
+  "llama3_instruct-70B"
+  "med42-70B"
+  "openbiollm-70B"
 )
 
 # models=(
@@ -34,13 +34,15 @@ models=(
 # )
 
 # Loop through each model for two different evaluation tasks: spin detection and spin interpretation
-echo "Running evaluation for detecting spin in abstracts of medical literature..."
-for model in "${models[@]}"; do
-  # Run the script with the current model
-  python3 code/run_spin_detection_evaluation.py \
-    --model "$model" \
-    --output_path "code/eval_outputs/$model"
-done
+# echo "Running evaluation for detecting spin in abstracts of medical literature..."
+# for model in "${models[@]}"; do
+#   # Run the script with the current model
+#   python3 code/run_spin_detection_evaluation.py \
+#     --model "$model" \
+#     --output_path "code/eval_outputs/$model"
+# done
+
+# echo "####################################"
 
 echo "Running evaluation for interpreting trial results..."
 for model in "${models[@]}"; do
