@@ -1,124 +1,0 @@
-Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:03<00:07,  3.64s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:11<00:05,  5.92s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:12<00:00,  3.75s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:12<00:00,  4.11s/it]
-You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama_fast.LlamaTokenizerFast'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565 - if you loaded a llama tokenizer from a GGUF file you can ignore this message.
-Running evaluation on the dataset:   0%|          | 0/60 [00:00<?, ?it/s]Token indices sequence length is longer than the specified maximum sequence length for this model (591 > 512). Running this sequence through the model will result in indexing errors
-From v4.47 onwards, when a model cache is to be returned, `generate` will return a `Cache` instance instead by default (as opposed to the legacy tuple of tuples format). If you want to keep returning the legacy format, please set `return_legacy_cache=True`.
-Running evaluation on the dataset:   2%|▏         | 1/60 [00:00<00:32,  1.79it/s]Running evaluation on the dataset:   5%|▌         | 3/60 [00:00<00:12,  4.72it/s]Running evaluation on the dataset:   8%|▊         | 5/60 [00:00<00:07,  7.18it/s]Running evaluation on the dataset:  12%|█▏        | 7/60 [00:01<00:05,  8.96it/s]Running evaluation on the dataset:  15%|█▌        | 9/60 [00:01<00:04, 10.71it/s]Running evaluation on the dataset:  18%|█▊        | 11/60 [00:01<00:04, 12.11it/s]Running evaluation on the dataset:  22%|██▏       | 13/60 [00:01<00:03, 12.78it/s]Running evaluation on the dataset:  25%|██▌       | 15/60 [00:01<00:03, 13.29it/s]Running evaluation on the dataset:  28%|██▊       | 17/60 [00:01<00:03, 14.06it/s]Running evaluation on the dataset:  32%|███▏      | 19/60 [00:01<00:02, 14.17it/s]Running evaluation on the dataset:  35%|███▌      | 21/60 [00:01<00:02, 14.22it/s]Running evaluation on the dataset:  38%|███▊      | 23/60 [00:02<00:02, 14.54it/s]Running evaluation on the dataset:  42%|████▏     | 25/60 [00:02<00:02, 14.46it/s]Running evaluation on the dataset:  45%|████▌     | 27/60 [00:02<00:02, 14.10it/s]Running evaluation on the dataset:  48%|████▊     | 29/60 [00:02<00:02, 14.25it/s]Running evaluation on the dataset:  52%|█████▏    | 31/60 [00:02<00:01, 14.59it/s]Running evaluation on the dataset:  55%|█████▌    | 33/60 [00:02<00:01, 14.48it/s]Running evaluation on the dataset:  58%|█████▊    | 35/60 [00:02<00:01, 14.77it/s]Running evaluation on the dataset:  62%|██████▏   | 37/60 [00:03<00:01, 14.31it/s]Running evaluation on the dataset:  65%|██████▌   | 39/60 [00:03<00:01, 14.56it/s]Running evaluation on the dataset:  68%|██████▊   | 41/60 [00:03<00:01, 14.52it/s]Running evaluation on the dataset:  72%|███████▏  | 43/60 [00:03<00:01, 14.42it/s]Running evaluation on the dataset:  75%|███████▌  | 45/60 [00:03<00:01, 14.92it/s]Running evaluation on the dataset:  78%|███████▊  | 47/60 [00:03<00:00, 15.11it/s]Running evaluation on the dataset:  82%|████████▏ | 49/60 [00:03<00:00, 15.20it/s]Running evaluation on the dataset:  85%|████████▌ | 51/60 [00:04<00:00, 14.59it/s]Running evaluation on the dataset:  88%|████████▊ | 53/60 [00:04<00:00, 14.86it/s]Running evaluation on the dataset:  92%|█████████▏| 55/60 [00:04<00:00, 14.62it/s]Running evaluation on the dataset:  95%|█████████▌| 57/60 [00:04<00:00, 14.54it/s]Running evaluation on the dataset:  98%|█████████▊| 59/60 [00:04<00:00, 13.91it/s]Running evaluation on the dataset: 100%|██████████| 60/60 [00:04<00:00, 12.92it/s]
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:06<00:34,  6.98s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:14<00:28,  7.19s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:20<00:20,  6.76s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:21<00:09,  4.61s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:23<00:03,  3.45s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:23<00:00,  2.50s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:23<00:00,  3.99s/it]
-You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama_fast.LlamaTokenizerFast'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565 - if you loaded a llama tokenizer from a GGUF file you can ignore this message.
-Traceback (most recent call last):
-  File "/home/yun.hy/.conda/envs/MedLitSpin/lib/python3.11/site-packages/transformers/convert_slow_tokenizer.py", line 1636, in convert_slow_tokenizer
-    ).converted()
-      ^^^^^^^^^^^
-  File "/home/yun.hy/.conda/envs/MedLitSpin/lib/python3.11/site-packages/transformers/convert_slow_tokenizer.py", line 1533, in converted
-    tokenizer = self.tokenizer()
-                ^^^^^^^^^^^^^^^^
-  File "/home/yun.hy/.conda/envs/MedLitSpin/lib/python3.11/site-packages/transformers/convert_slow_tokenizer.py", line 1526, in tokenizer
-    vocab_scores, merges = self.extract_vocab_merges_from_model(self.vocab_file)
-                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yun.hy/.conda/envs/MedLitSpin/lib/python3.11/site-packages/transformers/convert_slow_tokenizer.py", line 1502, in extract_vocab_merges_from_model
-    bpe_ranks = load_tiktoken_bpe(tiktoken_url)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yun.hy/.conda/envs/MedLitSpin/lib/python3.11/site-packages/tiktoken/load.py", line 145, in load_tiktoken_bpe
-    return {
-           ^
-  File "/home/yun.hy/.conda/envs/MedLitSpin/lib/python3.11/site-packages/tiktoken/load.py", line 147, in <dictcomp>
-    for token, rank in (line.split() for line in contents.splitlines() if line)
-        ^^^^^^^^^^^
-ValueError: not enough values to unpack (expected 2, got 1)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/scratch/yun.hy/MedLitSpin/code/run_spin_detection_evaluation.py", line 263, in <module>
-    evaluator = Evaluator(model_name, output_path, is_debug)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/scratch/yun.hy/MedLitSpin/code/run_spin_detection_evaluation.py", line 53, in __init__
-    self.__load_model()
-  File "/scratch/yun.hy/MedLitSpin/code/run_spin_detection_evaluation.py", line 109, in __load_model
-    self.model = model_class(model_type=type)
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/scratch/yun.hy/MedLitSpin/code/models/alpacare.py", line 30, in __init__
-    self.tokenizer = self.__load_tokenizer()
-                     ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/scratch/yun.hy/MedLitSpin/code/models/alpacare.py", line 49, in __load_tokenizer
-    tokenizer = AutoTokenizer.from_pretrained(self.model_name)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yun.hy/.conda/envs/MedLitSpin/lib/python3.11/site-packages/transformers/models/auto/tokenization_auto.py", line 921, in from_pretrained
-    return tokenizer_class.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yun.hy/.conda/envs/MedLitSpin/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 2032, in from_pretrained
-    return cls._from_pretrained(
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yun.hy/.conda/envs/MedLitSpin/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 2272, in _from_pretrained
-    tokenizer = cls(*init_inputs, **init_kwargs)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yun.hy/.conda/envs/MedLitSpin/lib/python3.11/site-packages/transformers/models/llama/tokenization_llama_fast.py", line 157, in __init__
-    super().__init__(
-  File "/home/yun.hy/.conda/envs/MedLitSpin/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 138, in __init__
-    fast_tokenizer = convert_slow_tokenizer(self, from_tiktoken=True)
-                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yun.hy/.conda/envs/MedLitSpin/lib/python3.11/site-packages/transformers/convert_slow_tokenizer.py", line 1638, in convert_slow_tokenizer
-    raise ValueError(
-ValueError: Converting from Tiktoken failed, if a converter for SentencePiece is available, provide a model path with a SentencePiece tokenizer.model file.Currently available slow->fast convertors: ['AlbertTokenizer', 'BartTokenizer', 'BarthezTokenizer', 'BertTokenizer', 'BigBirdTokenizer', 'BlenderbotTokenizer', 'CamembertTokenizer', 'CLIPTokenizer', 'CodeGenTokenizer', 'ConvBertTokenizer', 'DebertaTokenizer', 'DebertaV2Tokenizer', 'DistilBertTokenizer', 'DPRReaderTokenizer', 'DPRQuestionEncoderTokenizer', 'DPRContextEncoderTokenizer', 'ElectraTokenizer', 'FNetTokenizer', 'FunnelTokenizer', 'GPT2Tokenizer', 'HerbertTokenizer', 'LayoutLMTokenizer', 'LayoutLMv2Tokenizer', 'LayoutLMv3Tokenizer', 'LayoutXLMTokenizer', 'LongformerTokenizer', 'LEDTokenizer', 'LxmertTokenizer', 'MarkupLMTokenizer', 'MBartTokenizer', 'MBart50Tokenizer', 'MPNetTokenizer', 'MobileBertTokenizer', 'MvpTokenizer', 'NllbTokenizer', 'OpenAIGPTTokenizer', 'PegasusTokenizer', 'Qwen2Tokenizer', 'RealmTokenizer', 'ReformerTokenizer', 'RemBertTokenizer', 'RetriBertTokenizer', 'RobertaTokenizer', 'RoFormerTokenizer', 'SeamlessM4TTokenizer', 'SqueezeBertTokenizer', 'T5Tokenizer', 'UdopTokenizer', 'WhisperTokenizer', 'XLMRobertaTokenizer', 'XLNetTokenizer', 'SplinterTokenizer', 'XGLMTokenizer', 'LlamaTokenizer', 'CodeLlamaTokenizer', 'GemmaTokenizer', 'Phi3Tokenizer']
-Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.38s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:02<00:01,  1.23s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:03<00:00,  1.05s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:03<00:00,  1.11s/it]
-You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama_fast.LlamaTokenizerFast'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565 - if you loaded a llama tokenizer from a GGUF file you can ignore this message.
-Running evaluation on the dataset:   0%|          | 0/60 [00:00<?, ?it/s]Token indices sequence length is longer than the specified maximum sequence length for this model (640 > 512). Running this sequence through the model will result in indexing errors
-From v4.47 onwards, when a model cache is to be returned, `generate` will return a `Cache` instance instead by default (as opposed to the legacy tuple of tuples format). If you want to keep returning the legacy format, please set `return_legacy_cache=True`.
-Running evaluation on the dataset:   2%|▏         | 1/60 [00:01<01:37,  1.66s/it]Running evaluation on the dataset:   3%|▎         | 2/60 [00:02<00:57,  1.00it/s]Running evaluation on the dataset:   5%|▌         | 3/60 [00:03<01:10,  1.24s/it]Running evaluation on the dataset:   7%|▋         | 4/60 [00:04<00:56,  1.01s/it]Running evaluation on the dataset:   8%|▊         | 5/60 [00:05<00:57,  1.05s/it]Running evaluation on the dataset:  10%|█         | 6/60 [00:06<00:58,  1.07s/it]Running evaluation on the dataset:  12%|█▏        | 7/60 [00:07<00:56,  1.07s/it]Running evaluation on the dataset:  13%|█▎        | 8/60 [00:08<00:54,  1.05s/it]Running evaluation on the dataset:  15%|█▌        | 9/60 [00:09<00:52,  1.02s/it]Running evaluation on the dataset:  17%|█▋        | 10/60 [00:10<00:53,  1.06s/it]Running evaluation on the dataset:  18%|█▊        | 11/60 [00:11<00:47,  1.02it/s]Running evaluation on the dataset:  20%|██        | 12/60 [00:12<00:49,  1.04s/it]Running evaluation on the dataset:  22%|██▏       | 13/60 [00:13<00:44,  1.05it/s]Running evaluation on the dataset:  23%|██▎       | 14/60 [00:14<00:47,  1.03s/it]Running evaluation on the dataset:  25%|██▌       | 15/60 [00:15<00:48,  1.07s/it]Running evaluation on the dataset:  27%|██▋       | 16/60 [00:16<00:41,  1.06it/s]Running evaluation on the dataset:  28%|██▊       | 17/60 [00:17<00:36,  1.18it/s]Running evaluation on the dataset:  30%|███       | 18/60 [00:18<00:38,  1.08it/s]Running evaluation on the dataset:  32%|███▏      | 19/60 [00:19<00:39,  1.03it/s]Running evaluation on the dataset:  33%|███▎      | 20/60 [00:20<00:38,  1.04it/s]Running evaluation on the dataset:  35%|███▌      | 21/60 [00:21<00:42,  1.10s/it]Running evaluation on the dataset:  37%|███▋      | 22/60 [00:22<00:35,  1.08it/s]Running evaluation on the dataset:  38%|███▊      | 23/60 [00:22<00:29,  1.26it/s]Running evaluation on the dataset:  40%|████      | 24/60 [00:23<00:28,  1.25it/s]Running evaluation on the dataset:  42%|████▏     | 25/60 [00:24<00:33,  1.04it/s]Running evaluation on the dataset:  43%|████▎     | 26/60 [00:26<00:34,  1.02s/it]Running evaluation on the dataset:  45%|████▌     | 27/60 [00:27<00:38,  1.16s/it]Running evaluation on the dataset:  47%|████▋     | 28/60 [00:28<00:34,  1.08s/it]Running evaluation on the dataset:  48%|████▊     | 29/60 [00:29<00:33,  1.07s/it]Running evaluation on the dataset:  50%|█████     | 30/60 [00:30<00:32,  1.10s/it]Running evaluation on the dataset:  52%|█████▏    | 31/60 [00:31<00:32,  1.13s/it]Running evaluation on the dataset:  53%|█████▎    | 32/60 [00:33<00:34,  1.23s/it]Running evaluation on the dataset:  55%|█████▌    | 33/60 [00:34<00:31,  1.15s/it]Running evaluation on the dataset:  57%|█████▋    | 34/60 [00:35<00:31,  1.21s/it]Running evaluation on the dataset:  58%|█████▊    | 35/60 [00:36<00:30,  1.20s/it]Running evaluation on the dataset:  60%|██████    | 36/60 [00:38<00:35,  1.47s/it]Running evaluation on the dataset:  62%|██████▏   | 37/60 [00:40<00:31,  1.38s/it]Running evaluation on the dataset:  63%|██████▎   | 38/60 [00:41<00:28,  1.31s/it]Running evaluation on the dataset:  65%|██████▌   | 39/60 [00:42<00:28,  1.35s/it]Running evaluation on the dataset:  67%|██████▋   | 40/60 [00:43<00:22,  1.13s/it]Running evaluation on the dataset:  68%|██████▊   | 41/60 [00:44<00:22,  1.20s/it]Running evaluation on the dataset:  70%|███████   | 42/60 [00:45<00:18,  1.04s/it]Running evaluation on the dataset:  72%|███████▏  | 43/60 [00:46<00:19,  1.12s/it]Running evaluation on the dataset:  73%|███████▎  | 44/60 [00:47<00:17,  1.06s/it]Running evaluation on the dataset:  75%|███████▌  | 45/60 [00:48<00:15,  1.06s/it]Running evaluation on the dataset:  77%|███████▋  | 46/60 [00:49<00:13,  1.07it/s]Running evaluation on the dataset:  78%|███████▊  | 47/60 [00:49<00:10,  1.18it/s]Running evaluation on the dataset:  80%|████████  | 48/60 [00:51<00:11,  1.03it/s]Running evaluation on the dataset:  82%|████████▏ | 49/60 [00:51<00:09,  1.14it/s]Running evaluation on the dataset:  83%|████████▎ | 50/60 [00:52<00:09,  1.07it/s]Running evaluation on the dataset:  85%|████████▌ | 51/60 [00:53<00:08,  1.11it/s]Running evaluation on the dataset:  87%|████████▋ | 52/60 [00:55<00:08,  1.09s/it]Running evaluation on the dataset:  88%|████████▊ | 53/60 [00:56<00:07,  1.04s/it]Running evaluation on the dataset:  90%|█████████ | 54/60 [00:57<00:06,  1.16s/it]Running evaluation on the dataset:  92%|█████████▏| 55/60 [00:58<00:05,  1.09s/it]Running evaluation on the dataset:  93%|█████████▎| 56/60 [00:59<00:04,  1.12s/it]Running evaluation on the dataset:  95%|█████████▌| 57/60 [01:00<00:02,  1.03it/s]Running evaluation on the dataset:  97%|█████████▋| 58/60 [01:01<00:01,  1.01it/s]Running evaluation on the dataset:  98%|█████████▊| 59/60 [01:01<00:00,  1.17it/s]Running evaluation on the dataset: 100%|██████████| 60/60 [01:03<00:00,  1.04s/it]Running evaluation on the dataset: 100%|██████████| 60/60 [01:03<00:00,  1.06s/it]
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:01<00:09,  1.88s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:03<00:06,  1.55s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:04<00:04,  1.37s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:05<00:02,  1.26s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:06<00:01,  1.23s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:07<00:00,  1.04it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:07<00:00,  1.18s/it]
-You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama_fast.LlamaTokenizerFast'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565 - if you loaded a llama tokenizer from a GGUF file you can ignore this message.
-Traceback (most recent call last):
-  File "/home/yun.hy/.conda/envs/MedLitSpin/lib/python3.11/site-packages/transformers/convert_slow_tokenizer.py", line 1636, in convert_slow_tokenizer
-    ).converted()
-      ^^^^^^^^^^^
-  File "/home/yun.hy/.conda/envs/MedLitSpin/lib/python3.11/site-packages/transformers/convert_slow_tokenizer.py", line 1533, in converted
-    tokenizer = self.tokenizer()
-                ^^^^^^^^^^^^^^^^
-  File "/home/yun.hy/.conda/envs/MedLitSpin/lib/python3.11/site-packages/transformers/convert_slow_tokenizer.py", line 1526, in tokenizer
-    vocab_scores, merges = self.extract_vocab_merges_from_model(self.vocab_file)
-                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yun.hy/.conda/envs/MedLitSpin/lib/python3.11/site-packages/transformers/convert_slow_tokenizer.py", line 1502, in extract_vocab_merges_from_model
-    bpe_ranks = load_tiktoken_bpe(tiktoken_url)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yun.hy/.conda/envs/MedLitSpin/lib/python3.11/site-packages/tiktoken/load.py", line 145, in load_tiktoken_bpe
-    return {
-           ^
-  File "/home/yun.hy/.conda/envs/MedLitSpin/lib/python3.11/site-packages/tiktoken/load.py", line 147, in <dictcomp>
-    for token, rank in (line.split() for line in contents.splitlines() if line)
-        ^^^^^^^^^^^
-ValueError: not enough values to unpack (expected 2, got 1)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/scratch/yun.hy/MedLitSpin/code/run_spin_interpretation_evaluation.py", line 281, in <module>
-    evaluator = Evaluator(model_name, output_path, is_debug)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/scratch/yun.hy/MedLitSpin/code/run_spin_interpretation_evaluation.py", line 61, in __init__
-    self.__load_model()
-  File "/scratch/yun.hy/MedLitSpin/code/run_spin_interpretation_evaluation.py", line 119, in __load_model
-    self.model = model_class(model_type=type)
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/scratch/yun.hy/MedLitSpin/code/models/alpacare.py", line 30, in __init__
-    self.tokenizer = self.__load_tokenizer()
-                     ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/scratch/yun.hy/MedLitSpin/code/models/alpacare.py", line 49, in __load_tokenizer
-    tokenizer = AutoTokenizer.from_pretrained(self.model_name)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yun.hy/.conda/envs/MedLitSpin/lib/python3.11/site-packages/transformers/models/auto/tokenization_auto.py", line 921, in from_pretrained
-    return tokenizer_class.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yun.hy/.conda/envs/MedLitSpin/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 2032, in from_pretrained
-    return cls._from_pretrained(
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yun.hy/.conda/envs/MedLitSpin/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 2272, in _from_pretrained
-    tokenizer = cls(*init_inputs, **init_kwargs)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yun.hy/.conda/envs/MedLitSpin/lib/python3.11/site-packages/transformers/models/llama/tokenization_llama_fast.py", line 157, in __init__
-    super().__init__(
-  File "/home/yun.hy/.conda/envs/MedLitSpin/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 138, in __init__
-    fast_tokenizer = convert_slow_tokenizer(self, from_tiktoken=True)
-                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yun.hy/.conda/envs/MedLitSpin/lib/python3.11/site-packages/transformers/convert_slow_tokenizer.py", line 1638, in convert_slow_tokenizer
-    raise ValueError(
-ValueError: Converting from Tiktoken failed, if a converter for SentencePiece is available, provide a model path with a SentencePiece tokenizer.model file.Currently available slow->fast convertors: ['AlbertTokenizer', 'BartTokenizer', 'BarthezTokenizer', 'BertTokenizer', 'BigBirdTokenizer', 'BlenderbotTokenizer', 'CamembertTokenizer', 'CLIPTokenizer', 'CodeGenTokenizer', 'ConvBertTokenizer', 'DebertaTokenizer', 'DebertaV2Tokenizer', 'DistilBertTokenizer', 'DPRReaderTokenizer', 'DPRQuestionEncoderTokenizer', 'DPRContextEncoderTokenizer', 'ElectraTokenizer', 'FNetTokenizer', 'FunnelTokenizer', 'GPT2Tokenizer', 'HerbertTokenizer', 'LayoutLMTokenizer', 'LayoutLMv2Tokenizer', 'LayoutLMv3Tokenizer', 'LayoutXLMTokenizer', 'LongformerTokenizer', 'LEDTokenizer', 'LxmertTokenizer', 'MarkupLMTokenizer', 'MBartTokenizer', 'MBart50Tokenizer', 'MPNetTokenizer', 'MobileBertTokenizer', 'MvpTokenizer', 'NllbTokenizer', 'OpenAIGPTTokenizer', 'PegasusTokenizer', 'Qwen2Tokenizer', 'RealmTokenizer', 'ReformerTokenizer', 'RemBertTokenizer', 'RetriBertTokenizer', 'RobertaTokenizer', 'RoFormerTokenizer', 'SeamlessM4TTokenizer', 'SqueezeBertTokenizer', 'T5Tokenizer', 'UdopTokenizer', 'WhisperTokenizer', 'XLMRobertaTokenizer', 'XLNetTokenizer', 'SplinterTokenizer', 'XGLMTokenizer', 'LlamaTokenizer', 'CodeLlamaTokenizer', 'GemmaTokenizer', 'Phi3Tokenizer']
