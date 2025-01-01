@@ -18,7 +18,7 @@ models=(
   # "med42-8B"
   # "biomistral7B"
   # "openbiollm-8B"
-  "llama2_chat-7B"
+  # "llama2_chat-7B"
   # "llama2_chat-13B"
   # "llama3_instruct-8B"
   ########################
@@ -28,12 +28,12 @@ models=(
   # "openbiollm-70B",
   ########################
   # "alpacare-7B"
-  # "alpacare-13B"
+  # "alpacare-13B" # ERROR!
 )
 
-# models=(
-#   "biomedgpt7B"
-# )
+models=(
+  "biomedgpt7B"
+)
 
 # Loop through each model for two different evaluation tasks: spin detection and spin interpretation
 echo "Running evaluation for detecting spin in abstracts of medical literature..."

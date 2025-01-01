@@ -1,7 +1,7 @@
 from huggingface_hub import snapshot_download
 
-repo_name = "meta-llama/Llama-2-13b-chat-hf"
-path_to_save = "/projects/frink/models/Llama-2-13b-chat-hf"
+repo_name = "monsoon-nlp/BioMedGPT-16bit"
+path_to_save = "/projects/frink/models/BioMedGPT-16bit"
 
 snapshot_download(repo_name, local_dir=path_to_save)
 

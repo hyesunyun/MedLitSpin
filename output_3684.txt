@@ -275,3 +275,37 @@ Model's dtype: torch.bfloat16
 Model's device: cuda:0
 Model's device map: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 0, 'model.layers.7': 0, 'model.layers.8': 0, 'model.layers.9': 0, 'model.layers.10': 0, 'model.layers.11': 0, 'model.layers.12': 0, 'model.layers.13': 0, 'model.layers.14': 0, 'model.layers.15': 0, 'model.layers.16': 0, 'model.layers.17': 0, 'model.layers.18': 0, 'model.layers.19': 1, 'model.layers.20': 1, 'model.layers.21': 1, 'model.layers.22': 1, 'model.layers.23': 1, 'model.layers.24': 1, 'model.layers.25': 1, 'model.layers.26': 1, 'model.layers.27': 1, 'model.layers.28': 1, 'model.layers.29': 1, 'model.layers.30': 1, 'model.layers.31': 1, 'model.layers.32': 1, 'model.layers.33': 1, 'model.layers.34': 1, 'model.layers.35': 1, 'model.layers.36': 1, 'model.layers.37': 1, 'model.layers.38': 1, 'model.layers.39': 1, 'model.layers.40': 2, 'model.layers.41': 2, 'model.layers.42': 2, 'model.layers.43': 2, 'model.layers.44': 2, 'model.layers.45': 2, 'model.layers.46': 2, 'model.layers.47': 2, 'model.layers.48': 2, 'model.layers.49': 2, 'model.layers.50': 2, 'model.layers.51': 2, 'model.layers.52': 2, 'model.layers.53': 2, 'model.layers.54': 2, 'model.layers.55': 2, 'model.layers.56': 2, 'model.layers.57': 2, 'model.layers.58': 2, 'model.layers.59': 2, 'model.layers.60': 2, 'model.layers.61': 3, 'model.layers.62': 3, 'model.layers.63': 3, 'model.layers.64': 3, 'model.layers.65': 3, 'model.layers.66': 3, 'model.layers.67': 3, 'model.layers.68': 3, 'model.layers.69': 3, 'model.layers.70': 3, 'model.layers.71': 3, 'model.layers.72': 3, 'model.layers.73': 3, 'model.layers.74': 3, 'model.layers.75': 3, 'model.layers.76': 3, 'model.layers.77': 3, 'model.layers.78': 3, 'model.layers.79': 3, 'model.norm': 3, 'model.rotary_emb': 3, 'lm_head': 3}
 
+Saving outputs from model - med42-70B to csv and json
+Model outputs saved to code/eval_outputs/med42-70B/med42-70B_interpretation_outputs.json and code/eval_outputs/med42-70B/med42-70B_interpretation_outputs.csv
+Calculating means differences in scores between spin and no spin abstracts...
+Mean difference for 'benefit_answer': 4.833333333333333
+Mean difference for 'rigor_answer': 0.0
+Mean difference for 'importance_answer': 1.3666666666666663
+Mean difference for 'full_text_answer': 4.366666666666667
+Mean difference for 'another_trial_answer': 4.766666666666667
+
+Overall mean difference across all answers: 3.0666666666666664
+Arguments Provided for the Evaluator:
+Model:        openbiollm-70B
+Output Path:  code/eval_outputs/openbiollm-70B
+Is Debug:     None
+
+Loading the dataset...
+Loading the model...
+Model's dtype: torch.bfloat16
+Model's device: cuda:0
+Model's device map: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 0, 'model.layers.7': 0, 'model.layers.8': 0, 'model.layers.9': 0, 'model.layers.10': 0, 'model.layers.11': 0, 'model.layers.12': 0, 'model.layers.13': 0, 'model.layers.14': 0, 'model.layers.15': 0, 'model.layers.16': 0, 'model.layers.17': 0, 'model.layers.18': 0, 'model.layers.19': 1, 'model.layers.20': 1, 'model.layers.21': 1, 'model.layers.22': 1, 'model.layers.23': 1, 'model.layers.24': 1, 'model.layers.25': 1, 'model.layers.26': 1, 'model.layers.27': 1, 'model.layers.28': 1, 'model.layers.29': 1, 'model.layers.30': 1, 'model.layers.31': 1, 'model.layers.32': 1, 'model.layers.33': 1, 'model.layers.34': 1, 'model.layers.35': 1, 'model.layers.36': 1, 'model.layers.37': 1, 'model.layers.38': 1, 'model.layers.39': 1, 'model.layers.40': 2, 'model.layers.41': 2, 'model.layers.42': 2, 'model.layers.43': 2, 'model.layers.44': 2, 'model.layers.45': 2, 'model.layers.46': 2, 'model.layers.47': 2, 'model.layers.48': 2, 'model.layers.49': 2, 'model.layers.50': 2, 'model.layers.51': 2, 'model.layers.52': 2, 'model.layers.53': 2, 'model.layers.54': 2, 'model.layers.55': 2, 'model.layers.56': 2, 'model.layers.57': 2, 'model.layers.58': 2, 'model.layers.59': 2, 'model.layers.60': 2, 'model.layers.61': 3, 'model.layers.62': 3, 'model.layers.63': 3, 'model.layers.64': 3, 'model.layers.65': 3, 'model.layers.66': 3, 'model.layers.67': 3, 'model.layers.68': 3, 'model.layers.69': 3, 'model.layers.70': 3, 'model.layers.71': 3, 'model.layers.72': 3, 'model.layers.73': 3, 'model.layers.74': 3, 'model.layers.75': 3, 'model.layers.76': 3, 'model.layers.77': 3, 'model.layers.78': 3, 'model.layers.79': 3, 'model.norm': 3, 'model.rotary_emb': 3, 'lm_head': 3}
+
+Saving outputs from model - openbiollm-70B to csv and json
+Model outputs saved to code/eval_outputs/openbiollm-70B/openbiollm-70B_interpretation_outputs.json and code/eval_outputs/openbiollm-70B/openbiollm-70B_interpretation_outputs.csv
+Calculating means differences in scores between spin and no spin abstracts...
+Mean difference for 'benefit_answer': 4.4
+Mean difference for 'rigor_answer': 0.0
+Mean difference for 'importance_answer': 0.6333333333333337
+Column 'full_text_answer' has some 'Error' or empty string values. Removing these rows from the metrics...
+PMIDs with 'Error' or empty string values in column 'full_text_answer': ['16314619', '11261827', '15947110', '12177098', '17179098', '22112969', '18794551', '20530276', '21471562', '9093724', '20087643', '16148021']
+Number of rows after removing 'Error' or empty string values: 36
+Mean difference for 'full_text_answer': 1.0555555555555554
+Mean difference for 'another_trial_answer': 4.933333333333334
+
+Overall mean difference across all answers: 2.2044444444444444
