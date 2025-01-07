@@ -1,0 +1,27 @@
+Model: llama2_chat-13B
+Number of rows with NaN value(s) in llama2_chat-13B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.011
+Model:                            OLS   Adj. R-squared:                  0.006
+Method:                 Least Squares   F-statistic:                     2.019
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.157
+Time:                        12:22:01   Log-Likelihood:                -310.15
+No. Observations:                 180   AIC:                             624.3
+Df Residuals:                     178   BIC:                             630.7
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+============================================================================================
+                               coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+const                        2.0976      0.119     17.572      0.000       1.862       2.333
+detection_probility_mean     0.5536      0.390      1.421      0.157      -0.215       1.322
+==============================================================================
+Omnibus:                        3.873   Durbin-Watson:                   1.438
+Prob(Omnibus):                  0.144   Jarque-Bera (JB):                3.451
+Skew:                           0.320   Prob(JB):                        0.178
+Kurtosis:                       3.222   Cond. No.                         3.94
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

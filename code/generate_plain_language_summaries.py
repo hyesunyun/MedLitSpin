@@ -105,9 +105,9 @@ class Generator:
         model_class = model_class_mapping[self.model_name]
         if "-" in self.model_name:
             type = model_name.split("-")[-1]
-            return model_class(model_type=type)
+            self.model = model_class(model_type=type)
         else:
-            return model_class()
+            self.model = model_class()
     
     def __load_prompt_template(self) -> None:
         """

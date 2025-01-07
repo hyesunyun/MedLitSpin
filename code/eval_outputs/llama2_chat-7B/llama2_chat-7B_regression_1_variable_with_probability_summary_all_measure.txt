@@ -1,0 +1,29 @@
+Model: llama2_chat-7B
+Number of rows with NaN value(s) in llama2_chat-7B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.028
+Model:                            OLS   Adj. R-squared:                  0.023
+Method:                 Least Squares   F-statistic:                     5.128
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):             0.0248
+Time:                        12:22:01   Log-Likelihood:                -346.23
+No. Observations:                 180   AIC:                             696.5
+Df Residuals:                     178   BIC:                             702.8
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+============================================================================================
+                               coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+const                        1.4711      0.126     11.659      0.000       1.222       1.720
+detection_probility_mean  2089.8238    922.887      2.264      0.025     268.616    3911.031
+==============================================================================
+Omnibus:                       60.736   Durbin-Watson:                   2.041
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              128.773
+Skew:                           1.569   Prob(JB):                     1.09e-28
+Kurtosis:                       5.706   Cond. No.                     7.43e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 7.43e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

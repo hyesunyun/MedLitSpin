@@ -1,0 +1,27 @@
+Model: med42-8B
+Number of rows with NaN value(s) in med42-8B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.005
+Model:                            OLS   Adj. R-squared:                 -0.001
+Method:                 Least Squares   F-statistic:                    0.8618
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.354
+Time:                        12:22:01   Log-Likelihood:                -309.09
+No. Observations:                 180   AIC:                             622.2
+Df Residuals:                     178   BIC:                             628.6
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+============================================================================================
+                               coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+const                        1.8593      0.117     15.949      0.000       1.629       2.089
+detection_probility_mean     0.3003      0.323      0.928      0.354      -0.338       0.939
+==============================================================================
+Omnibus:                        9.420   Durbin-Watson:                   1.893
+Prob(Omnibus):                  0.009   Jarque-Bera (JB):                5.730
+Skew:                           0.271   Prob(JB):                       0.0570
+Kurtosis:                       2.314   Cond. No.                         3.32
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

@@ -1,0 +1,27 @@
+Model: biomistral7B
+Number of rows with NaN value(s) in biomistral7B: 2
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.096
+Model:                            OLS   Adj. R-squared:                  0.091
+Method:                 Least Squares   F-statistic:                     18.80
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):           2.44e-05
+Time:                        12:22:01   Log-Likelihood:                -274.89
+No. Observations:                 178   AIC:                             553.8
+Df Residuals:                     176   BIC:                             560.1
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+============================================================================================
+                               coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+const                        1.0070      0.093     10.812      0.000       0.823       1.191
+detection_probility_mean     4.1865      0.966      4.336      0.000       2.281       6.092
+==============================================================================
+Omnibus:                        3.429   Durbin-Watson:                   1.643
+Prob(Omnibus):                  0.180   Jarque-Bera (JB):                2.985
+Skew:                          -0.263   Prob(JB):                        0.225
+Kurtosis:                       3.354   Cond. No.                         11.3
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

@@ -1,0 +1,162 @@
+Model: llama3_instruct-70B - benefit_answer
+Number of rows with NaN value(s) in llama3_instruct-70B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.062
+Model:                            OLS   Adj. R-squared:                  0.028
+Method:                 Least Squares   F-statistic:                     1.842
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.186
+Time:                        12:18:44   Log-Likelihood:                -60.433
+No. Observations:                  30   AIC:                             124.9
+Df Residuals:                      28   BIC:                             127.7
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+============================================================================================
+                               coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+const                        3.7027      0.618      5.994      0.000       2.437       4.968
+detection_probility_mean     1.1923      0.879      1.357      0.186      -0.607       2.992
+==============================================================================
+Omnibus:                        0.428   Durbin-Watson:                   1.902
+Prob(Omnibus):                  0.807   Jarque-Bera (JB):                0.519
+Skew:                          -0.246   Prob(JB):                        0.772
+Kurtosis:                       2.584   Cond. No.                         3.55
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: llama3_instruct-70B - rigor_answer
+Number of rows with NaN value(s) in llama3_instruct-70B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.018
+Model:                            OLS   Adj. R-squared:                 -0.017
+Method:                 Least Squares   F-statistic:                    0.5276
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.474
+Time:                        12:18:44   Log-Likelihood:                 9.2384
+No. Observations:                  30   AIC:                            -14.48
+Df Residuals:                      28   BIC:                            -11.67
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+============================================================================================
+                               coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+const                        0.0033      0.061      0.054      0.957      -0.121       0.127
+detection_probility_mean    -0.0626      0.086     -0.726      0.474      -0.239       0.114
+==============================================================================
+Omnibus:                       70.607   Durbin-Watson:                   0.987
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              847.983
+Skew:                          -5.047   Prob(JB):                    7.29e-185
+Kurtosis:                      27.010   Cond. No.                         3.55
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: llama3_instruct-70B - importance_answer
+Number of rows with NaN value(s) in llama3_instruct-70B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.100
+Model:                            OLS   Adj. R-squared:                  0.068
+Method:                 Least Squares   F-statistic:                     3.117
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):             0.0884
+Time:                        12:18:44   Log-Likelihood:                -47.708
+No. Observations:                  30   AIC:                             99.42
+Df Residuals:                      28   BIC:                             102.2
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+============================================================================================
+                               coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+const                        1.5603      0.404      3.860      0.001       0.732       2.388
+detection_probility_mean    -1.0150      0.575     -1.766      0.088      -2.193       0.163
+==============================================================================
+Omnibus:                        4.994   Durbin-Watson:                   2.423
+Prob(Omnibus):                  0.082   Jarque-Bera (JB):                3.403
+Skew:                           0.585   Prob(JB):                        0.182
+Kurtosis:                       4.164   Cond. No.                         3.55
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: llama3_instruct-70B - full_text_answer
+Number of rows with NaN value(s) in llama3_instruct-70B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.044
+Model:                            OLS   Adj. R-squared:                  0.010
+Method:                 Least Squares   F-statistic:                     1.302
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.263
+Time:                        12:18:44   Log-Likelihood:                -54.423
+No. Observations:                  30   AIC:                             112.8
+Df Residuals:                      28   BIC:                             115.6
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+============================================================================================
+                               coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+const                        3.8799      0.506      7.674      0.000       2.844       4.916
+detection_probility_mean    -0.8206      0.719     -1.141      0.263      -2.294       0.652
+==============================================================================
+Omnibus:                        0.625   Durbin-Watson:                   1.984
+Prob(Omnibus):                  0.731   Jarque-Bera (JB):                0.569
+Skew:                          -0.304   Prob(JB):                        0.752
+Kurtosis:                       2.709   Cond. No.                         3.55
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: llama3_instruct-70B - another_trial_answer
+Number of rows with NaN value(s) in llama3_instruct-70B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.054
+Model:                            OLS   Adj. R-squared:                  0.020
+Method:                 Least Squares   F-statistic:                     1.587
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.218
+Time:                        12:18:44   Log-Likelihood:                -63.252
+No. Observations:                  30   AIC:                             130.5
+Df Residuals:                      28   BIC:                             133.3
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+============================================================================================
+                               coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+const                        3.3556      0.679      4.945      0.000       1.966       4.746
+detection_probility_mean     1.2157      0.965      1.260      0.218      -0.761       3.193
+==============================================================================
+Omnibus:                        5.605   Durbin-Watson:                   2.249
+Prob(Omnibus):                  0.061   Jarque-Bera (JB):                4.378
+Skew:                          -0.926   Prob(JB):                        0.112
+Kurtosis:                       3.268   Cond. No.                         3.55
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: llama3_instruct-70B - overall
+Number of rows with NaN value(s) in llama3_instruct-70B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.001
+Model:                            OLS   Adj. R-squared:                 -0.034
+Method:                 Least Squares   F-statistic:                   0.04178
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.840
+Time:                        12:18:44   Log-Likelihood:                -43.454
+No. Observations:                  30   AIC:                             90.91
+Df Residuals:                      28   BIC:                             93.71
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+============================================================================================
+                               coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+const                        2.5004      0.351      7.129      0.000       1.782       3.219
+detection_probility_mean     0.1020      0.499      0.204      0.840      -0.920       1.124
+==============================================================================
+Omnibus:                        1.298   Durbin-Watson:                   2.122
+Prob(Omnibus):                  0.523   Jarque-Bera (JB):                0.676
+Skew:                          -0.364   Prob(JB):                        0.713
+Kurtosis:                       3.102   Cond. No.                         3.55
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

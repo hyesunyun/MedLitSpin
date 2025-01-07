@@ -1,0 +1,135 @@
+Model: alpacare-7B - benefit_answer
+Number of rows with NaN value(s) in alpacare-7B: 1
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.001
+Model:                            OLS   Adj. R-squared:                 -0.036
+Method:                 Least Squares   F-statistic:                   0.03020
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.863
+Time:                        12:18:43   Log-Likelihood:                -68.853
+No. Observations:                  29   AIC:                             141.7
+Df Residuals:                      27   BIC:                             144.4
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+============================================================================================
+                               coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+const                        6.1463      0.739      8.313      0.000       4.629       7.663
+detection_probility_mean    -0.3614      2.079     -0.174      0.863      -4.628       3.905
+==============================================================================
+Omnibus:                        9.666   Durbin-Watson:                   2.457
+Prob(Omnibus):                  0.008   Jarque-Bera (JB):                8.787
+Skew:                          -1.328   Prob(JB):                       0.0124
+Kurtosis:                       3.462   Cond. No.                         4.46
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: alpacare-7B - rigor_answer
+Number of rows with NaN value(s) in alpacare-7B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.000
+Model:                            OLS   Adj. R-squared:                 -0.036
+Method:                 Least Squares   F-statistic:                 0.0009261
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.976
+Time:                        12:18:43   Log-Likelihood:                -30.992
+No. Observations:                  30   AIC:                             65.98
+Df Residuals:                      28   BIC:                             68.79
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+============================================================================================
+                               coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+const                        0.2709      0.188      1.438      0.162      -0.115       0.657
+detection_probility_mean    -0.0164      0.538     -0.030      0.976      -1.119       1.086
+==============================================================================
+Omnibus:                       23.596   Durbin-Watson:                   1.726
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               32.069
+Skew:                           2.157   Prob(JB):                     1.09e-07
+Kurtosis:                       5.654   Cond. No.                         4.48
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: alpacare-7B - importance_answer
+Number of rows with NaN value(s) in alpacare-7B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.067
+Model:                            OLS   Adj. R-squared:                  0.033
+Method:                 Least Squares   F-statistic:                     2.001
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.168
+Time:                        12:18:43   Log-Likelihood:                -40.921
+No. Observations:                  30   AIC:                             85.84
+Df Residuals:                      28   BIC:                             88.64
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+============================================================================================
+                               coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+const                        0.5287      0.262      2.016      0.054      -0.009       1.066
+detection_probility_mean     1.0602      0.750      1.415      0.168      -0.475       2.596
+==============================================================================
+Omnibus:                       21.137   Durbin-Watson:                   2.326
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):                3.744
+Skew:                           0.376   Prob(JB):                        0.154
+Kurtosis:                       1.441   Cond. No.                         4.48
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: alpacare-7B - full_text_answer
+Number of rows with NaN value(s) in alpacare-7B: 22
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                         nan
+Model:                            OLS   Adj. R-squared:                    nan
+Method:                 Least Squares   F-statistic:                       nan
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):                nan
+Time:                        12:18:43   Log-Likelihood:                    inf
+No. Observations:                   8   AIC:                              -inf
+Df Residuals:                       6   BIC:                              -inf
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+============================================================================================
+                               coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+const                             0          0        nan        nan           0           0
+detection_probility_mean          0          0        nan        nan           0           0
+==============================================================================
+Omnibus:                          nan   Durbin-Watson:                     nan
+Prob(Omnibus):                    nan   Jarque-Bera (JB):                  nan
+Skew:                             nan   Prob(JB):                          nan
+Kurtosis:                         nan   Cond. No.                         4.07
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: alpacare-7B - overall
+Number of rows with NaN value(s) in alpacare-7B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.009
+Model:                            OLS   Adj. R-squared:                 -0.026
+Method:                 Least Squares   F-statistic:                    0.2544
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.618
+Time:                        12:18:43   Log-Likelihood:                -43.159
+No. Observations:                  30   AIC:                             90.32
+Df Residuals:                      28   BIC:                             93.12
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+============================================================================================
+                               coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+const                        2.0305      0.283      7.185      0.000       1.452       2.609
+detection_probility_mean     0.4074      0.808      0.504      0.618      -1.247       2.062
+==============================================================================
+Omnibus:                        2.144   Durbin-Watson:                   2.521
+Prob(Omnibus):                  0.342   Jarque-Bera (JB):                1.840
+Skew:                          -0.583   Prob(JB):                        0.399
+Kurtosis:                       2.663   Cond. No.                         4.48
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

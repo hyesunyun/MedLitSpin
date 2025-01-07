@@ -1,0 +1,180 @@
+Model: llama2_chat-7B - benefit_answer
+Number of rows with NaN value(s) in llama2_chat-7B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.313
+Model:                            OLS   Adj. R-squared:                  0.262
+Method:                 Least Squares   F-statistic:                     6.151
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):            0.00629
+Time:                        12:18:47   Log-Likelihood:                -48.184
+No. Observations:                  30   AIC:                             102.4
+Df Residuals:                      27   BIC:                             106.6
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+==============================================================================================
+                                 coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------------
+const                       2805.5520    807.123      3.476      0.002    1149.473    4461.631
+detection_spin_variable    -2300.3645   1167.539     -1.970      0.059   -4695.956      95.227
+detection_no_spin_variable   503.4233    862.864      0.583      0.564   -1267.027    2273.873
+==============================================================================
+Omnibus:                        2.100   Durbin-Watson:                   2.269
+Prob(Omnibus):                  0.350   Jarque-Bera (JB):                1.161
+Skew:                           0.013   Prob(JB):                        0.560
+Kurtosis:                       2.037   Cond. No.                     1.07e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.07e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+Model: llama2_chat-7B - rigor_answer
+Number of rows with NaN value(s) in llama2_chat-7B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.357
+Model:                            OLS   Adj. R-squared:                  0.309
+Method:                 Least Squares   F-statistic:                     7.490
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):            0.00258
+Time:                        12:18:47   Log-Likelihood:                -23.970
+No. Observations:                  30   AIC:                             53.94
+Df Residuals:                      27   BIC:                             58.14
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+==============================================================================================
+                                 coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------------
+const                        576.3072    360.081      1.600      0.121    -162.518    1315.133
+detection_spin_variable      795.2440    520.873      1.527      0.138    -273.500    1863.988
+detection_no_spin_variable  1371.3459    384.949      3.562      0.001     581.496    2161.196
+==============================================================================
+Omnibus:                        7.065   Durbin-Watson:                   2.055
+Prob(Omnibus):                  0.029   Jarque-Bera (JB):                5.723
+Skew:                           1.047   Prob(JB):                       0.0572
+Kurtosis:                       3.435   Cond. No.                     1.07e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.07e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+Model: llama2_chat-7B - importance_answer
+Number of rows with NaN value(s) in llama2_chat-7B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.222
+Model:                            OLS   Adj. R-squared:                  0.165
+Method:                 Least Squares   F-statistic:                     3.862
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):             0.0335
+Time:                        12:18:47   Log-Likelihood:                -41.474
+No. Observations:                  30   AIC:                             88.95
+Df Residuals:                      27   BIC:                             93.15
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+==============================================================================================
+                                 coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------------
+const                       1373.5426    645.350      2.128      0.043      49.395    2697.691
+detection_spin_variable     -103.9034    933.527     -0.111      0.912   -2019.342    1811.535
+detection_no_spin_variable  1269.3727    689.918      1.840      0.077    -146.223    2684.968
+==============================================================================
+Omnibus:                       49.641   Durbin-Watson:                   1.818
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):                3.958
+Skew:                           0.102   Prob(JB):                        0.138
+Kurtosis:                       1.232   Cond. No.                     1.07e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.07e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+Model: llama2_chat-7B - full_text_answer
+Number of rows with NaN value(s) in llama2_chat-7B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.318
+Model:                            OLS   Adj. R-squared:                  0.268
+Method:                 Least Squares   F-statistic:                     6.295
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):            0.00570
+Time:                        12:18:47   Log-Likelihood:                -35.060
+No. Observations:                  30   AIC:                             76.12
+Df Residuals:                      27   BIC:                             80.32
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+==============================================================================================
+                                 coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------------
+const                        909.4944    521.133      1.745      0.092    -159.781    1978.770
+detection_spin_variable      834.7782    753.841      1.107      0.278    -711.976    2381.533
+detection_no_spin_variable  1744.4251    557.123      3.131      0.004     601.304    2887.546
+==============================================================================
+Omnibus:                        1.921   Durbin-Watson:                   1.763
+Prob(Omnibus):                  0.383   Jarque-Bera (JB):                1.610
+Skew:                           0.548   Prob(JB):                        0.447
+Kurtosis:                       2.708   Cond. No.                     1.07e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.07e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+Model: llama2_chat-7B - another_trial_answer
+Number of rows with NaN value(s) in llama2_chat-7B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.097
+Model:                            OLS   Adj. R-squared:                  0.030
+Method:                 Least Squares   F-statistic:                     1.442
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.254
+Time:                        12:18:47   Log-Likelihood:                -65.804
+No. Observations:                  30   AIC:                             137.6
+Df Residuals:                      27   BIC:                             141.8
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+==============================================================================================
+                                 coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------------
+const                      -2423.0553   1452.164     -1.669      0.107   -5402.649     556.539
+detection_spin_variable     2845.7795   2100.619      1.355      0.187   -1464.335    7155.894
+detection_no_spin_variable   419.4803   1552.452      0.270      0.789   -2765.888    3604.849
+==============================================================================
+Omnibus:                       12.560   Durbin-Watson:                   2.141
+Prob(Omnibus):                  0.002   Jarque-Bera (JB):               11.997
+Skew:                           1.457   Prob(JB):                      0.00248
+Kurtosis:                       4.049   Cond. No.                     1.07e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.07e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+Model: llama2_chat-7B - overall
+Number of rows with NaN value(s) in llama2_chat-7B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.220
+Model:                            OLS   Adj. R-squared:                  0.163
+Method:                 Least Squares   F-statistic:                     3.816
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):             0.0347
+Time:                        12:18:47   Log-Likelihood:                -28.898
+No. Observations:                  30   AIC:                             63.80
+Df Residuals:                      27   BIC:                             68.00
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+==============================================================================================
+                                 coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------------
+const                        648.3682    424.365      1.528      0.138    -222.358    1519.094
+detection_spin_variable      414.3068    613.863      0.675      0.505    -845.237    1673.850
+detection_no_spin_variable  1061.6095    453.673      2.340      0.027     130.750    1992.469
+==============================================================================
+Omnibus:                        0.835   Durbin-Watson:                   2.165
+Prob(Omnibus):                  0.659   Jarque-Bera (JB):                0.664
+Skew:                           0.347   Prob(JB):                        0.718
+Kurtosis:                       2.777   Cond. No.                     1.07e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.07e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.

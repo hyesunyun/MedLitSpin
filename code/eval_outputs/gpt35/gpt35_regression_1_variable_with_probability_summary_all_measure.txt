@@ -1,0 +1,27 @@
+Model: gpt35
+Number of rows with NaN value(s) in gpt35: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.051
+Model:                            OLS   Adj. R-squared:                  0.045
+Method:                 Least Squares   F-statistic:                     9.522
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):            0.00235
+Time:                        12:22:01   Log-Likelihood:                -351.00
+No. Observations:                 180   AIC:                             706.0
+Df Residuals:                     178   BIC:                             712.4
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+============================================================================================
+                               coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+const                        2.5315      0.146     17.299      0.000       2.243       2.820
+detection_probility_mean     3.0208      0.979      3.086      0.002       1.089       4.953
+==============================================================================
+Omnibus:                        0.371   Durbin-Watson:                   1.305
+Prob(Omnibus):                  0.831   Jarque-Bera (JB):                0.513
+Skew:                           0.081   Prob(JB):                        0.774
+Kurtosis:                       2.795   Cond. No.                         7.72
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
