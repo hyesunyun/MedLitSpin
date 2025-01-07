@@ -15,7 +15,6 @@ from models.openbiollm import OpenBioLLM
 from models.biomistral import BioMistral
 from models.biomedgpt import BioMedGPT
 from models.alpacare import AlpaCare
-from models.model import Model
 
 from tqdm import tqdm
 import random
@@ -52,7 +51,7 @@ class Evaluator:
         self.__load_dataset()
         self.__load_model()
 
-    def __load_dataset(self) -> List[Dict]:
+    def __load_dataset(self) -> None:
         """
         This method loads the dataset (test split)
 
@@ -72,7 +71,7 @@ class Evaluator:
             dataset = random.sample(dataset, 3)
         self.dataset = dataset
 
-    def __load_model(self) -> Model:
+    def __load_model(self) -> None:
         """
         This method loads the model requested for the task based on the model size.
 

@@ -5,6 +5,16 @@ from typing import Dict, List
 from models.gpt35 import GPT35
 from models.gpt4 import GPT4
 from models.gemini import Gemini
+from models.claude import Claude
+from models.olmo import Olmo
+from models.mistral import Mistral
+from models.llama2 import Llama2
+from models.llama3 import Llama3
+from models.med42 import Med42
+from models.openbiollm import OpenBioLLM
+from models.biomistral import BioMistral
+from models.biomedgpt import BioMedGPT
+from models.alpacare import AlpaCare
 from models.model import Model
 
 from tqdm import tqdm
@@ -15,27 +25,32 @@ from utils import load_csv_file, save_dataset_to_json, save_dataset_to_csv
 
 DATA_FOLDER_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
 SEED = 42
-REQ_TIME_GAP = 20
+REQ_TIME_GAP = 15
+DEFAULT_MAX_NEW_TOKENS = 300 # arbitrary number for default max tokens
 
-# TODO: add personas to the prompts
+# TODO: add details for different audience/length limits/etc.
 class Generator:
     BASE_PROMPT = '''
     My fifth grader asked me what this passage means: {ABSTRACT}
     Help me summarize it for him, in plain language a fifth grader can understand.
     '''
-    def __init__(self, model_name: str, output_path: str, is_debug: bool = False) -> None:
+    MODELS_WITH_RATE_LIMIT = ["gemini_1.5_flash", "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku"]
+    def __init__(self, model_name: str, output_path: str, max_new_tokens: int, prompt_template_name: str, is_debug: bool = False) -> None:
         self.model_name = model_name
         self.output_path = output_path
+        self.prompt_template_name = prompt_template_name
         self.is_debug = is_debug
 
         self.dataset = None
         self.model = None
-        self.max_new_tokens = self.__get_max_new_tokens()
+        self.prompt_template = None
+        self.max_new_tokens = max_new_tokens
 
+        self.__load_prompt_template()
         self.__load_dataset()
         self.__load_model()
 
-    def __load_dataset(self) -> List[Dict]:
+    def __load_dataset(self) -> None:
         """
         This method loads the dataset (test split)
 
@@ -57,7 +72,7 @@ class Generator:
             dataset = [example for example in dataset if example["PMID"] in pmids]
         self.dataset = dataset
 
-    def __load_model(self) -> Model:
+    def __load_model(self) -> None:
         """
         This method loads the model requested for the task based on the model size.
 
@@ -65,26 +80,51 @@ class Generator:
         """
         print("Loading the model...")
         model_class_mapping = {
-            "gpt35": GPT35,
-            "gpt4o": GPT4,
-            "gpt4o-mini": GPT4,
-            "gemini_1.5_flash": Gemini,
-            "gemini_1.5_flash-8B": Gemini
-        }
+                "gpt35": GPT35,
+                "gpt4o": GPT4,
+                "gpt4o-mini": GPT4,
+                "gemini_1.5_flash": Gemini,
+                "gemini_1.5_flash-8B": Gemini,
+                "claude_3.5-sonnet": Claude,
+                "claude_3.5-haiku": Claude,
+                "olmo2_instruct-7B": Olmo,
+                "olmo2_instruct-13B": Olmo,
+                "mistral_instruct7B": Mistral,
+                "llama2_chat-7B": Llama2,
+                "llama2_chat-13B": Llama2,
+                "llama2_chat-70B": Llama2,
+                "llama3_instruct-8B": Llama3,
+                "llama3_instruct-70B": Llama3,
+                "med42-8B": Med42,
+                "med42-70B": Med42,
+                "openbiollm-8B": OpenBioLLM,
+                "openbiollm-70B": OpenBioLLM,
+                "biomistral7B": BioMistral,
+                "biomedgpt7B": BioMedGPT,
+                "alpacare-7B": AlpaCare,
+                "alpacare-13B": AlpaCare
+            }
         model_class = model_class_mapping[self.model_name]
         if "-" in self.model_name:
-            size = model_name.split("-")[-1]
-            self.model = model_class(model_size=size)
+            type = model_name.split("-")[-1]
+            return model_class(model_type=type)
         else:
-            self.model = model_class()
-
-    def __get_max_new_tokens(self) -> int:
+            return model_class()
+    
+    def __load_prompt_template(self) -> None:
         """
-        This method returns the maximum number of new tokens to add by the model
+        This method loads the prompt template for the task
 
-        :return maximum number of new tokens
+        :return None
         """
-        return 500 # arbitrary number that is big enough for the task
+        print("Loading the prompt template...")
+        template_mapping = {
+            "default": self.BASE_PROMPT
+        }
+        try:
+            self.prompt_template = template_mapping[self.prompt_template_name]
+        except KeyError:
+            raise ValueError("Template not found")
 
     def generate_pls(self) -> None:
         """
@@ -101,8 +141,8 @@ class Generator:
             output = self.model.generate_output(input, max_new_tokens=self.max_new_tokens)
             
             example[f"plain_language_summary"] = output["response"] if "response" in output else "Error: No response from the model"
-            if self.model_name == "gemini_1.5_flash" or self.model_name == "gemini_1.5_flash-8B":
-                # add some default time gap to avoid rate limiting (free version)
+            if self.model_name in self.MODELS_WITH_RATE_LIMIT:
+                # add some default time gap to avoid rate limiting (free version/tier)
                 time.sleep(REQ_TIME_GAP)
             results.append(example)
 
@@ -128,6 +168,8 @@ if __name__ == '__main__':
 
     parser.add_argument("--model", default="gpt4o", choices=["gpt35", "gpt4o", "gpt4o-mini", "gemini_1.5_flash", "gemini_1.5_flash-8B"], help="what model to run", required=True)
     parser.add_argument("--output_path", default="./pls_outputs", help="directory of where the outputs/results should be saved.")
+    parser.add_argument("--max_new_tokens", default=DEFAULT_MAX_NEW_TOKENS, type=int, help="maximum number of tokens to generate for the plain language summary")
+    parser.add_argument("--prompt_template_name", default="default", help="name of the template to use for the prompt")
     # do --no-debug for explicit False
     parser.add_argument("--debug", action=argparse.BooleanOptionalAction, help="used for debugging purposes. This option will only run random 3 instances from the dataset.")
     
@@ -135,11 +177,15 @@ if __name__ == '__main__':
 
     model_name = args.model
     output_path = args.output_path
+    max_new_tokens = args.max_new_tokens
+    prompt_template_name = args.prompt_template_name
     is_debug = args.debug
 
     print("Arguments Provided for the Generator:")
     print(f"Model:        {model_name}")
     print(f"Output Path:  {output_path}")
+    print(f"Max Output Tokens:   {max_new_tokens}")
+    print(f"Prompt Template:     {prompt_template_name}")
     print(f"Is Debug:     {is_debug}")
     print()
 
@@ -147,5 +193,5 @@ if __name__ == '__main__':
         os.makedirs(output_path)
         print("Output path did not exist. Directory was created.")
     
-    generator = Generator(model_name, output_path, is_debug)
+    generator = Generator(model_name, output_path, max_new_tokens, prompt_template_name, is_debug)
     generator.generate_pls()
