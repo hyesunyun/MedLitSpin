@@ -1,0 +1,167 @@
+Model: alpacare-7B - benefit_answer
+Number of rows with NaN value(s) in alpacare-7B: 1
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.715
+Model:                               OLS   Adj. R-squared:                  0.705
+Method:                    Least Squares   F-statistic:                     70.27
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           5.41e-16
+Time:                           17:23:11   Log-Likelihood:                -122.37
+No. Observations:                     59   AIC:                             250.7
+Df Residuals:                         56   BIC:                             257.0
+Df Model:                              2                                         
+Covariance Type:               nonrobust                                         
+========================================================================================
+                           coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+const                    0.3007      0.762      0.395      0.695      -1.226       1.827
+is_spin_in_abstract      6.3215      0.646      9.779      0.000       5.027       7.616
+is_detection_correct     0.4029      0.692      0.583      0.563      -0.983       1.788
+==============================================================================
+Omnibus:                       25.190   Durbin-Watson:                   2.013
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               73.196
+Skew:                          -1.126   Prob(JB):                     1.28e-16
+Kurtosis:                       7.970   Cond. No.                         5.79
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: alpacare-7B - rigor_answer
+Number of rows with NaN value(s) in alpacare-7B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.049
+Model:                               OLS   Adj. R-squared:                  0.016
+Method:                    Least Squares   F-statistic:                     1.481
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):              0.236
+Time:                           17:23:11   Log-Likelihood:                -52.967
+No. Observations:                     60   AIC:                             111.9
+Df Residuals:                         57   BIC:                             118.2
+Df Model:                              2                                         
+Covariance Type:               nonrobust                                         
+========================================================================================
+                           coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+const                    8.0588      0.231     34.931      0.000       7.597       8.521
+is_spin_in_abstract      0.2713      0.195      1.388      0.170      -0.120       0.663
+is_detection_correct     0.0082      0.210      0.039      0.969      -0.412       0.429
+==============================================================================
+Omnibus:                       44.380   Durbin-Watson:                   1.701
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              111.183
+Skew:                           2.451   Prob(JB):                     7.19e-25
+Kurtosis:                       7.522   Cond. No.                         5.83
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: alpacare-7B - importance_answer
+Number of rows with NaN value(s) in alpacare-7B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.312
+Model:                               OLS   Adj. R-squared:                  0.288
+Method:                    Least Squares   F-statistic:                     12.91
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.38e-05
+Time:                           17:23:11   Log-Likelihood:                -60.540
+No. Observations:                     60   AIC:                             127.1
+Df Residuals:                         57   BIC:                             133.4
+Df Model:                              2                                         
+Covariance Type:               nonrobust                                         
+========================================================================================
+                           coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+const                    7.4792      0.262     28.574      0.000       6.955       8.003
+is_spin_in_abstract      1.1053      0.222      4.986      0.000       0.661       1.549
+is_detection_correct     0.5388      0.238      2.261      0.028       0.062       1.016
+==============================================================================
+Omnibus:                        3.180   Durbin-Watson:                   2.234
+Prob(Omnibus):                  0.204   Jarque-Bera (JB):                2.871
+Skew:                           0.533   Prob(JB):                        0.238
+Kurtosis:                       2.900   Cond. No.                         5.83
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: alpacare-7B - full_text_answer
+Number of rows with NaN value(s) in alpacare-7B: 29
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                        -inf
+Model:                               OLS   Adj. R-squared:                   -inf
+Method:                    Least Squares   F-statistic:                    -14.00
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):               1.00
+Time:                           17:23:11   Log-Likelihood:                 1004.6
+No. Observations:                     31   AIC:                            -2003.
+Df Residuals:                         28   BIC:                            -1999.
+Df Model:                              2                                         
+Covariance Type:               nonrobust                                         
+========================================================================================
+                           coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+const                   10.0000   1.04e-15   9.58e+15      0.000      10.000      10.000
+is_spin_in_abstract    1.11e-15   9.28e-16      1.197      0.241    -7.9e-16    3.01e-15
+is_detection_correct  2.665e-15   8.53e-16      3.122      0.004    9.16e-16    4.41e-15
+==============================================================================
+Omnibus:                       11.392   Durbin-Watson:                   1.317
+Prob(Omnibus):                  0.003   Jarque-Bera (JB):                4.288
+Skew:                          -0.626   Prob(JB):                        0.117
+Kurtosis:                       1.677   Cond. No.                         5.21
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: alpacare-7B - another_trial_answer
+Number of rows with NaN value(s) in alpacare-7B: 58
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       1.000
+Model:                               OLS   Adj. R-squared:                    nan
+Method:                    Least Squares   F-statistic:                       nan
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):                nan
+Time:                           17:23:11   Log-Likelihood:                 64.338
+No. Observations:                      2   AIC:                            -124.7
+Df Residuals:                          0   BIC:                            -127.3
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+========================================================================================
+                           coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+is_spin_in_abstract  -8.826e-16        inf         -0        nan         nan         nan
+is_detection_correct     8.0000        inf          0        nan         nan         nan
+==============================================================================
+Omnibus:                          nan   Durbin-Watson:                   1.468
+Prob(Omnibus):                    nan   Jarque-Bera (JB):                0.333
+Skew:                           0.000   Prob(JB):                        0.846
+Kurtosis:                       1.000   Cond. No.                         2.62
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: alpacare-7B - overall
+Number of rows with NaN value(s) in alpacare-7B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.618
+Model:                               OLS   Adj. R-squared:                  0.605
+Method:                    Least Squares   F-statistic:                     46.19
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           1.19e-12
+Time:                           17:23:11   Log-Likelihood:                -78.876
+No. Observations:                     60   AIC:                             163.8
+Df Residuals:                         57   BIC:                             170.0
+Df Model:                              2                                         
+Covariance Type:               nonrobust                                         
+========================================================================================
+                           coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+const                    5.6360      0.355     15.862      0.000       4.925       6.347
+is_spin_in_abstract      2.4930      0.301      8.285      0.000       1.890       3.096
+is_detection_correct     0.3823      0.323      1.182      0.242      -0.265       1.030
+==============================================================================
+Omnibus:                        9.233   Durbin-Watson:                   1.737
+Prob(Omnibus):                  0.010   Jarque-Bera (JB):                9.218
+Skew:                          -0.735   Prob(JB):                      0.00996
+Kurtosis:                       4.236   Cond. No.                         5.83
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

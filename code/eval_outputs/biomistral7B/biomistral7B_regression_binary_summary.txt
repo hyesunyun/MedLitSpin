@@ -1,0 +1,168 @@
+Model: biomistral7B - benefit_answer
+Number of rows with NaN value(s) in biomistral7B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.481
+Model:                               OLS   Adj. R-squared:                  0.462
+Method:                    Least Squares   F-statistic:                     26.37
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           7.81e-09
+Time:                           17:23:11   Log-Likelihood:                -79.696
+No. Observations:                     60   AIC:                             165.4
+Df Residuals:                         57   BIC:                             171.7
+Df Model:                              2                                         
+Covariance Type:               nonrobust                                         
+========================================================================================
+                           coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+const                    3.0270      0.968      3.126      0.003       1.088       4.966
+is_spin_in_abstract      3.7833      0.953      3.972      0.000       1.876       5.691
+is_detection_correct     2.1897      0.953      2.298      0.025       0.281       4.098
+==============================================================================
+Omnibus:                        1.649   Durbin-Watson:                   1.998
+Prob(Omnibus):                  0.438   Jarque-Bera (JB):                1.387
+Skew:                          -0.371   Prob(JB):                        0.500
+Kurtosis:                       2.925   Cond. No.                         16.8
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: biomistral7B - rigor_answer
+Number of rows with NaN value(s) in biomistral7B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.107
+Model:                               OLS   Adj. R-squared:                  0.076
+Method:                    Least Squares   F-statistic:                     3.411
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):             0.0399
+Time:                           17:23:11   Log-Likelihood:                -44.283
+No. Observations:                     60   AIC:                             94.57
+Df Residuals:                         57   BIC:                             100.8
+Df Model:                              2                                         
+Covariance Type:               nonrobust                                         
+========================================================================================
+                           coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+const                    7.5483      0.537     14.066      0.000       6.474       8.623
+is_spin_in_abstract      0.4000      0.528      0.758      0.452      -0.657       1.457
+is_detection_correct     0.0517      0.528      0.098      0.922      -1.006       1.109
+==============================================================================
+Omnibus:                        7.506   Durbin-Watson:                   1.308
+Prob(Omnibus):                  0.023   Jarque-Bera (JB):                3.626
+Skew:                          -0.359   Prob(JB):                        0.163
+Kurtosis:                       2.033   Cond. No.                         16.8
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: biomistral7B - importance_answer
+Number of rows with NaN value(s) in biomistral7B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.260
+Model:                               OLS   Adj. R-squared:                  0.234
+Method:                    Least Squares   F-statistic:                     10.00
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           0.000189
+Time:                           17:23:11   Log-Likelihood:                -84.457
+No. Observations:                     60   AIC:                             174.9
+Df Residuals:                         57   BIC:                             181.2
+Df Model:                              2                                         
+Covariance Type:               nonrobust                                         
+========================================================================================
+                           coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+const                    4.1368      1.048      3.946      0.000       2.038       6.236
+is_spin_in_abstract      2.4667      1.031      2.392      0.020       0.402       4.532
+is_detection_correct     1.3966      1.032      1.354      0.181      -0.670       3.463
+==============================================================================
+Omnibus:                        1.726   Durbin-Watson:                   1.435
+Prob(Omnibus):                  0.422   Jarque-Bera (JB):                1.208
+Skew:                           0.007   Prob(JB):                        0.547
+Kurtosis:                       2.305   Cond. No.                         16.8
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: biomistral7B - full_text_answer
+Number of rows with NaN value(s) in biomistral7B: 2
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.156
+Model:                               OLS   Adj. R-squared:                  0.125
+Method:                    Least Squares   F-statistic:                     5.065
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):            0.00957
+Time:                           17:23:11   Log-Likelihood:                -101.61
+No. Observations:                     58   AIC:                             209.2
+Df Residuals:                         55   BIC:                             215.4
+Df Model:                              2                                         
+Covariance Type:               nonrobust                                         
+========================================================================================
+                           coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+const                    5.2333      1.482      3.531      0.001       2.263       8.203
+is_spin_in_abstract      2.4333      1.456      1.671      0.100      -0.485       5.352
+is_detection_correct     1.3333      1.459      0.914      0.365      -1.590       4.257
+==============================================================================
+Omnibus:                       31.073   Durbin-Watson:                   1.313
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              154.916
+Skew:                          -1.193   Prob(JB):                     2.29e-34
+Kurtosis:                      10.642   Cond. No.                         16.5
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: biomistral7B - another_trial_answer
+Number of rows with NaN value(s) in biomistral7B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.521
+Model:                               OLS   Adj. R-squared:                  0.505
+Method:                    Least Squares   F-statistic:                     31.06
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           7.53e-10
+Time:                           17:23:11   Log-Likelihood:                -74.457
+No. Observations:                     60   AIC:                             154.9
+Df Residuals:                         57   BIC:                             161.2
+Df Model:                              2                                         
+Covariance Type:               nonrobust                                         
+========================================================================================
+                           coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+const                    3.2644      0.887      3.679      0.001       1.488       5.041
+is_spin_in_abstract      3.6667      0.873      4.201      0.000       1.919       5.415
+is_detection_correct     2.0690      0.873      2.369      0.021       0.320       3.818
+==============================================================================
+Omnibus:                        1.817   Durbin-Watson:                   1.724
+Prob(Omnibus):                  0.403   Jarque-Bera (JB):                1.116
+Skew:                          -0.022   Prob(JB):                        0.572
+Kurtosis:                       3.667   Cond. No.                         16.8
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: biomistral7B - overall
+Number of rows with NaN value(s) in biomistral7B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.442
+Model:                               OLS   Adj. R-squared:                  0.422
+Method:                    Least Squares   F-statistic:                     22.55
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           6.10e-08
+Time:                           17:23:11   Log-Likelihood:                -63.064
+No. Observations:                     60   AIC:                             132.1
+Df Residuals:                         57   BIC:                             138.4
+Df Model:                              2                                         
+Covariance Type:               nonrobust                                         
+========================================================================================
+                           coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+const                    4.6302      0.734      6.309      0.000       3.161       6.100
+is_spin_in_abstract      2.5500      0.722      3.532      0.001       1.104       3.996
+is_detection_correct     1.4198      0.722      1.966      0.054      -0.027       2.866
+==============================================================================
+Omnibus:                        0.221   Durbin-Watson:                   1.363
+Prob(Omnibus):                  0.895   Jarque-Bera (JB):                0.410
+Skew:                          -0.080   Prob(JB):                        0.815
+Kurtosis:                       2.628   Cond. No.                         16.8
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

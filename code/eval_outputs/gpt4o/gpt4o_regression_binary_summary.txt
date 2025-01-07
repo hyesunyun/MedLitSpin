@@ -1,0 +1,168 @@
+Model: gpt4o - benefit_answer
+Number of rows with NaN value(s) in gpt4o: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.613
+Model:                               OLS   Adj. R-squared:                  0.599
+Method:                    Least Squares   F-statistic:                     45.12
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           1.79e-12
+Time:                           17:23:12   Log-Likelihood:                -99.591
+No. Observations:                     60   AIC:                             205.2
+Df Residuals:                         57   BIC:                             211.5
+Df Model:                              2                                         
+Covariance Type:               nonrobust                                         
+========================================================================================
+                           coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+const                    3.5030      0.363      9.644      0.000       2.776       4.230
+is_spin_in_abstract      3.4611      0.376      9.195      0.000       2.707       4.215
+is_detection_correct    -0.8939      0.457     -1.957      0.055      -1.809       0.021
+==============================================================================
+Omnibus:                        1.867   Durbin-Watson:                   1.161
+Prob(Omnibus):                  0.393   Jarque-Bera (JB):                1.366
+Skew:                          -0.139   Prob(JB):                        0.505
+Kurtosis:                       2.315   Cond. No.                         4.75
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gpt4o - rigor_answer
+Number of rows with NaN value(s) in gpt4o: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.041
+Model:                               OLS   Adj. R-squared:                  0.007
+Method:                    Least Squares   F-statistic:                     1.216
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):              0.304
+Time:                           17:23:12   Log-Likelihood:                -26.913
+No. Observations:                     60   AIC:                             59.83
+Df Residuals:                         57   BIC:                             66.11
+Df Model:                              2                                         
+Covariance Type:               nonrobust                                         
+========================================================================================
+                           coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+const                    7.0646      0.108     65.309      0.000       6.848       7.281
+is_spin_in_abstract      0.1599      0.112      1.426      0.159      -0.065       0.384
+is_detection_correct    -0.1633      0.136     -1.200      0.235      -0.436       0.109
+==============================================================================
+Omnibus:                       10.069   Durbin-Watson:                   1.271
+Prob(Omnibus):                  0.007   Jarque-Bera (JB):               26.550
+Skew:                           0.076   Prob(JB):                     1.72e-06
+Kurtosis:                       6.255   Cond. No.                         4.75
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gpt4o - importance_answer
+Number of rows with NaN value(s) in gpt4o: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.390
+Model:                               OLS   Adj. R-squared:                  0.369
+Method:                    Least Squares   F-statistic:                     18.25
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           7.48e-07
+Time:                           17:23:12   Log-Likelihood:                -73.231
+No. Observations:                     60   AIC:                             152.5
+Df Residuals:                         57   BIC:                             158.7
+Df Model:                              2                                         
+Covariance Type:               nonrobust                                         
+========================================================================================
+                           coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+const                    5.9649      0.234     25.482      0.000       5.496       6.434
+is_spin_in_abstract      1.4563      0.243      6.004      0.000       0.971       1.942
+is_detection_correct    -0.6082      0.294     -2.066      0.043      -1.198      -0.019
+==============================================================================
+Omnibus:                        1.843   Durbin-Watson:                   1.808
+Prob(Omnibus):                  0.398   Jarque-Bera (JB):                1.769
+Skew:                          -0.399   Prob(JB):                        0.413
+Kurtosis:                       2.735   Cond. No.                         4.75
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gpt4o - full_text_answer
+Number of rows with NaN value(s) in gpt4o: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.691
+Model:                               OLS   Adj. R-squared:                  0.680
+Method:                    Least Squares   F-statistic:                     63.61
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           3.02e-15
+Time:                           17:23:12   Log-Likelihood:                -83.660
+No. Observations:                     60   AIC:                             173.3
+Df Residuals:                         57   BIC:                             179.6
+Df Model:                              2                                         
+Covariance Type:               nonrobust                                         
+========================================================================================
+                           coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+const                    4.2977      0.279     15.430      0.000       3.740       4.855
+is_spin_in_abstract      3.1301      0.289     10.845      0.000       2.552       3.708
+is_detection_correct    -0.7184      0.350     -2.051      0.045      -1.420      -0.017
+==============================================================================
+Omnibus:                        4.709   Durbin-Watson:                   1.683
+Prob(Omnibus):                  0.095   Jarque-Bera (JB):                3.743
+Skew:                          -0.495   Prob(JB):                        0.154
+Kurtosis:                       3.721   Cond. No.                         4.75
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gpt4o - another_trial_answer
+Number of rows with NaN value(s) in gpt4o: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.784
+Model:                               OLS   Adj. R-squared:                  0.777
+Method:                    Least Squares   F-statistic:                     103.6
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           1.04e-19
+Time:                           17:23:12   Log-Likelihood:                -78.367
+No. Observations:                     60   AIC:                             162.7
+Df Residuals:                         57   BIC:                             169.0
+Df Model:                              2                                         
+Covariance Type:               nonrobust                                         
+========================================================================================
+                           coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+const                    3.8706      0.255     15.178      0.000       3.360       4.381
+is_spin_in_abstract      3.6820      0.264     13.934      0.000       3.153       4.211
+is_detection_correct    -0.9510      0.321     -2.965      0.004      -1.593      -0.309
+==============================================================================
+Omnibus:                        6.153   Durbin-Watson:                   1.554
+Prob(Omnibus):                  0.046   Jarque-Bera (JB):                9.623
+Skew:                           0.083   Prob(JB):                      0.00814
+Kurtosis:                       4.955   Cond. No.                         4.75
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gpt4o - overall
+Number of rows with NaN value(s) in gpt4o: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.692
+Model:                               OLS   Adj. R-squared:                  0.682
+Method:                    Least Squares   F-statistic:                     64.16
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.55e-15
+Time:                           17:23:12   Log-Likelihood:                -66.220
+No. Observations:                     60   AIC:                             138.4
+Df Residuals:                         57   BIC:                             144.7
+Df Model:                              2                                         
+Covariance Type:               nonrobust                                         
+========================================================================================
+                           coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+const                    4.9402      0.208     23.720      0.000       4.523       5.357
+is_spin_in_abstract      2.3779      0.216     11.018      0.000       1.946       2.810
+is_detection_correct    -0.6669      0.262     -2.546      0.014      -1.191      -0.142
+==============================================================================
+Omnibus:                        2.014   Durbin-Watson:                   1.360
+Prob(Omnibus):                  0.365   Jarque-Bera (JB):                1.445
+Skew:                          -0.373   Prob(JB):                        0.486
+Kurtosis:                       3.148   Cond. No.                         4.75
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
