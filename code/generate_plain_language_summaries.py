@@ -164,7 +164,15 @@ class Generator:
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Running Generation of Plain Language Summaries from Abstracts Using LLMs")
 
-    parser.add_argument("--model", default="gpt4o", choices=["gpt35", "gpt4o", "gpt4o-mini", "gemini_1.5_flash", "gemini_1.5_flash-8B"], help="what model to run", required=True)
+    parser.add_argument("--model", default="gpt4o", 
+                        choices=["gpt35", "gpt4o", "gpt4o-mini", "gemini_1.5_flash", 
+                                 "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku", 
+                                 "olmo2_instruct-7B", "olmo2_instruct-13B", "mistral_instruct7B", "llama2_chat-7B",
+                                 "llama2_chat-13B", "llama2_chat-70B", "llama3_instruct-8B", "llama3_instruct-70B",
+                                 "med42-8B", "med42-70B", "openbiollm-8B", "openbiollm-70B", "biomistral7B", "biomedgpt7B",
+                                 "alpacare-7B", "alpacare-13B"], 
+                        help="what model to run", 
+                        required=True)
     parser.add_argument("--output_path", default="./pls_outputs", help="directory of where the outputs/results should be saved.")
     parser.add_argument("--max_new_tokens", default=DEFAULT_MAX_NEW_TOKENS, type=int, help="maximum number of tokens to generate for the plain language summary")
     parser.add_argument("--prompt_template_name", default="default", help="name of the template to use for the prompt")
