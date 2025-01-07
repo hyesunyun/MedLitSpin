@@ -1,0 +1,89 @@
+Model: biomedgpt7B - benefit_answer
+Number of rows with NaN value(s) in biomedgpt7B: 3
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.205
+Model:                            OLS   Adj. R-squared:                  0.173
+Method:                 Least Squares   F-statistic:                     6.443
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):             0.0177
+Time:                        00:07:28   Log-Likelihood:                -27.884
+No. Observations:                  27   AIC:                             59.77
+Df Residuals:                      25   BIC:                             62.36
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+================================================================================================
+                                   coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+const                            1.3910      0.240      5.798      0.000       0.897       1.885
+is_detection_spin_correct       -0.2179      0.253     -0.862      0.397      -0.739       0.303
+is_detection_no_spin_correct     1.6090      0.473      3.401      0.002       0.635       2.583
+==============================================================================
+Omnibus:                        2.613   Durbin-Watson:                   1.983
+Prob(Omnibus):                  0.271   Jarque-Bera (JB):                1.362
+Skew:                           0.503   Prob(JB):                        0.506
+Kurtosis:                       3.445   Cond. No.                     8.44e+15
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 7.38e-31. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
+Model: biomedgpt7B - full_text_answer
+Number of rows with NaN value(s) in biomedgpt7B: 17
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.000
+Model:                            OLS   Adj. R-squared:                  0.000
+Method:                 Least Squares   F-statistic:                       nan
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):                nan
+Time:                        00:07:28   Log-Likelihood:                -5.1936
+No. Observations:                  13   AIC:                             12.39
+Df Residuals:                      12   BIC:                             12.95
+Df Model:                           0                                         
+Covariance Type:            nonrobust                                         
+================================================================================================
+                                   coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+is_detection_spin_correct       -0.1538      0.104     -1.477      0.165      -0.381       0.073
+is_detection_no_spin_correct          0          0        nan        nan           0           0
+==============================================================================
+Omnibus:                       14.249   Durbin-Watson:                   2.364
+Prob(Omnibus):                  0.001   Jarque-Bera (JB):                9.509
+Skew:                          -1.919   Prob(JB):                      0.00861
+Kurtosis:                       4.682   Cond. No.                          inf
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is      0. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
+Model: biomedgpt7B - overall
+Number of rows with NaN value(s) in biomedgpt7B: 2
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.279
+Model:                            OLS   Adj. R-squared:                  0.251
+Method:                 Least Squares   F-statistic:                     10.04
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):            0.00390
+Time:                        00:07:28   Log-Likelihood:                -28.019
+No. Observations:                  28   AIC:                             60.04
+Df Residuals:                      26   BIC:                             62.70
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+================================================================================================
+                                   coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+const                            1.2654      0.232      5.458      0.000       0.789       1.742
+is_detection_spin_correct       -0.4691      0.244     -1.923      0.065      -0.971       0.032
+is_detection_no_spin_correct     1.7346      0.457      3.792      0.001       0.794       2.675
+==============================================================================
+Omnibus:                       15.935   Durbin-Watson:                   2.257
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               18.129
+Skew:                           1.442   Prob(JB):                     0.000116
+Kurtosis:                       5.686   Cond. No.                     1.05e+16
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 4.97e-31. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.

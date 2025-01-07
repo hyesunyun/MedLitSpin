@@ -1,0 +1,78 @@
+Model: biomedgpt7B - benefit_answer
+Number of rows with NaN value(s) in biomedgpt7B: 3
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.000
+Model:                            OLS   Adj. R-squared:                  0.000
+Method:                 Least Squares   F-statistic:                       nan
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):                nan
+Time:                        00:07:16   Log-Likelihood:                -30.979
+No. Observations:                  27   AIC:                             63.96
+Df Residuals:                      26   BIC:                             65.25
+Df Model:                           0                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+0              2.4815      0.299      8.301      0.000       1.867       3.096
+==============================================================================
+Omnibus:                        2.602   Durbin-Watson:                   2.200
+Prob(Omnibus):                  0.272   Jarque-Bera (JB):                1.641
+Skew:                           0.600   Prob(JB):                        0.440
+Kurtosis:                       3.140   Cond. No.                         1.00
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: biomedgpt7B - full_text_answer
+Number of rows with NaN value(s) in biomedgpt7B: 17
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.000
+Model:                            OLS   Adj. R-squared:                  0.000
+Method:                 Least Squares   F-statistic:                       nan
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):                nan
+Time:                        00:07:16   Log-Likelihood:                -5.1936
+No. Observations:                  13   AIC:                             12.39
+Df Residuals:                      12   BIC:                             12.95
+Df Model:                           0                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+0             -0.3077      0.208     -1.477      0.165      -0.762       0.146
+==============================================================================
+Omnibus:                       14.249   Durbin-Watson:                   2.364
+Prob(Omnibus):                  0.001   Jarque-Bera (JB):                9.509
+Skew:                          -1.919   Prob(JB):                      0.00861
+Kurtosis:                       4.682   Cond. No.                         1.00
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: biomedgpt7B - overall
+Number of rows with NaN value(s) in biomedgpt7B: 2
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.000
+Model:                            OLS   Adj. R-squared:                  0.000
+Method:                 Least Squares   F-statistic:                       nan
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):                nan
+Time:                        00:07:16   Log-Likelihood:                -32.589
+No. Observations:                  28   AIC:                             67.18
+Df Residuals:                      27   BIC:                             68.51
+Df Model:                           0                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+0              1.7500      0.298      5.867      0.000       1.138       2.362
+==============================================================================
+Omnibus:                       13.089   Durbin-Watson:                   2.230
+Prob(Omnibus):                  0.001   Jarque-Bera (JB):               12.378
+Skew:                           1.400   Prob(JB):                      0.00205
+Kurtosis:                       4.665   Cond. No.                         1.00
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

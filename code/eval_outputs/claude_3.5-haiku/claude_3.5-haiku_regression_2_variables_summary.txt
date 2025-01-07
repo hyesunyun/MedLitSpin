@@ -1,0 +1,162 @@
+Model: claude_3.5-haiku - benefit_answer
+Number of rows with NaN value(s) in claude_3.5-haiku: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.023
+Model:                            OLS   Adj. R-squared:                 -0.012
+Method:                 Least Squares   F-statistic:                    0.6605
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.423
+Time:                        00:07:28   Log-Likelihood:                -51.837
+No. Observations:                  30   AIC:                             107.7
+Df Residuals:                      28   BIC:                             110.5
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+================================================================================================
+                                   coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+is_detection_spin_correct        2.8846      0.276     10.433      0.000       2.318       3.451
+is_detection_no_spin_correct     0.6154      0.757      0.813      0.423      -0.936       2.166
+==============================================================================
+Omnibus:                        4.644   Durbin-Watson:                   1.621
+Prob(Omnibus):                  0.098   Jarque-Bera (JB):                2.995
+Skew:                          -0.630   Prob(JB):                        0.224
+Kurtosis:                       3.900   Cond. No.                         3.00
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: claude_3.5-haiku - rigor_answer
+Number of rows with NaN value(s) in claude_3.5-haiku: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.073
+Model:                            OLS   Adj. R-squared:                  0.040
+Method:                 Least Squares   F-statistic:                     2.206
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.149
+Time:                        00:07:28   Log-Likelihood:                -6.7242
+No. Observations:                  30   AIC:                             17.45
+Df Residuals:                      28   BIC:                             20.25
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+================================================================================================
+                                   coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+is_detection_spin_correct     9.337e-18      0.061   1.52e-16      1.000      -0.126       0.126
+is_detection_no_spin_correct    -0.2500      0.168     -1.485      0.149      -0.595       0.095
+==============================================================================
+Omnibus:                       14.686   Durbin-Watson:                   1.932
+Prob(Omnibus):                  0.001   Jarque-Bera (JB):               49.617
+Skew:                          -0.450   Prob(JB):                     1.68e-11
+Kurtosis:                       9.236   Cond. No.                         3.00
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: claude_3.5-haiku - importance_answer
+Number of rows with NaN value(s) in claude_3.5-haiku: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.043
+Model:                            OLS   Adj. R-squared:                  0.009
+Method:                 Least Squares   F-statistic:                     1.253
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.272
+Time:                        00:07:28   Log-Likelihood:                -38.227
+No. Observations:                  30   AIC:                             80.45
+Df Residuals:                      28   BIC:                             83.26
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+================================================================================================
+                                   coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+is_detection_spin_correct        0.5385      0.176      3.065      0.005       0.179       0.898
+is_detection_no_spin_correct    -0.5385      0.481     -1.119      0.272      -1.524       0.447
+==============================================================================
+Omnibus:                        4.151   Durbin-Watson:                   2.284
+Prob(Omnibus):                  0.125   Jarque-Bera (JB):                2.641
+Skew:                           0.663   Prob(JB):                        0.267
+Kurtosis:                       3.595   Cond. No.                         3.00
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: claude_3.5-haiku - full_text_answer
+Number of rows with NaN value(s) in claude_3.5-haiku: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.000
+Model:                            OLS   Adj. R-squared:                 -0.035
+Method:                 Least Squares   F-statistic:                  0.007295
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.933
+Time:                        00:07:28   Log-Likelihood:                -48.411
+No. Observations:                  30   AIC:                             100.8
+Df Residuals:                      28   BIC:                             103.6
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+================================================================================================
+                                   coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+is_detection_spin_correct        1.3077      0.247      5.302      0.000       0.802       1.813
+is_detection_no_spin_correct    -0.0577      0.675     -0.085      0.933      -1.441       1.326
+==============================================================================
+Omnibus:                       10.373   Durbin-Watson:                   2.258
+Prob(Omnibus):                  0.006   Jarque-Bera (JB):                8.991
+Skew:                           1.179   Prob(JB):                       0.0112
+Kurtosis:                       4.279   Cond. No.                         3.00
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: claude_3.5-haiku - another_trial_answer
+Number of rows with NaN value(s) in claude_3.5-haiku: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.030
+Model:                            OLS   Adj. R-squared:                 -0.005
+Method:                 Least Squares   F-statistic:                    0.8550
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.363
+Time:                        00:07:28   Log-Likelihood:                -61.354
+No. Observations:                  30   AIC:                             126.7
+Df Residuals:                      28   BIC:                             129.5
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+================================================================================================
+                                   coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+is_detection_spin_correct        2.0385      0.380      5.369      0.000       1.261       2.816
+is_detection_no_spin_correct     0.9615      1.040      0.925      0.363      -1.169       3.092
+==============================================================================
+Omnibus:                        1.297   Durbin-Watson:                   2.238
+Prob(Omnibus):                  0.523   Jarque-Bera (JB):                0.971
+Skew:                           0.137   Prob(JB):                        0.616
+Kurtosis:                       2.163   Cond. No.                         3.00
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: claude_3.5-haiku - overall
+Number of rows with NaN value(s) in claude_3.5-haiku: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.003
+Model:                            OLS   Adj. R-squared:                 -0.033
+Method:                 Least Squares   F-statistic:                   0.08233
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.776
+Time:                        00:07:28   Log-Likelihood:                -39.944
+No. Observations:                  30   AIC:                             83.89
+Df Residuals:                      28   BIC:                             86.69
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+================================================================================================
+                                   coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+is_detection_spin_correct        1.3538      0.186      7.279      0.000       0.973       1.735
+is_detection_no_spin_correct     0.1462      0.509      0.287      0.776      -0.897       1.190
+==============================================================================
+Omnibus:                        1.152   Durbin-Watson:                   2.176
+Prob(Omnibus):                  0.562   Jarque-Bera (JB):                0.354
+Skew:                           0.205   Prob(JB):                        0.838
+Kurtosis:                       3.339   Cond. No.                         3.00
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

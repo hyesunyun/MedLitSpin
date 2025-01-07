@@ -1,0 +1,174 @@
+Model: llama2_chat-7B - benefit_answer
+Number of rows with NaN value(s) in llama2_chat-7B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.000
+Model:                            OLS   Adj. R-squared:                  0.000
+Method:                 Least Squares   F-statistic:                       nan
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):                nan
+Time:                        00:07:29   Log-Likelihood:                -53.816
+No. Observations:                  30   AIC:                             109.6
+Df Residuals:                      29   BIC:                             111.0
+Df Model:                           0                                         
+Covariance Type:            nonrobust                                         
+================================================================================================
+                                   coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+is_detection_spin_correct        3.5000      0.270     12.955      0.000       2.947       4.053
+is_detection_no_spin_correct          0          0        nan        nan           0           0
+==============================================================================
+Omnibus:                        0.777   Durbin-Watson:                   1.827
+Prob(Omnibus):                  0.678   Jarque-Bera (JB):                0.793
+Skew:                           0.195   Prob(JB):                        0.673
+Kurtosis:                       2.305   Cond. No.                          inf
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is      0. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
+Model: llama2_chat-7B - rigor_answer
+Number of rows with NaN value(s) in llama2_chat-7B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.000
+Model:                            OLS   Adj. R-squared:                  0.000
+Method:                 Least Squares   F-statistic:                       nan
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):                nan
+Time:                        00:07:29   Log-Likelihood:                -30.591
+No. Observations:                  30   AIC:                             63.18
+Df Residuals:                      29   BIC:                             64.58
+Df Model:                           0                                         
+Covariance Type:            nonrobust                                         
+================================================================================================
+                                   coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+is_detection_spin_correct        0.5000      0.125      4.014      0.000       0.245       0.755
+is_detection_no_spin_correct          0          0        nan        nan           0           0
+==============================================================================
+Omnibus:                        5.530   Durbin-Watson:                   2.444
+Prob(Omnibus):                  0.063   Jarque-Bera (JB):                5.000
+Skew:                           0.994   Prob(JB):                       0.0821
+Kurtosis:                       2.778   Cond. No.                          inf
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is      0. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
+Model: llama2_chat-7B - importance_answer
+Number of rows with NaN value(s) in llama2_chat-7B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                      -0.000
+Model:                            OLS   Adj. R-squared:                 -0.000
+Method:                 Least Squares   F-statistic:                       nan
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):                nan
+Time:                        00:07:29   Log-Likelihood:                -45.247
+No. Observations:                  30   AIC:                             92.49
+Df Residuals:                      29   BIC:                             93.90
+Df Model:                           0                                         
+Covariance Type:            nonrobust                                         
+================================================================================================
+                                   coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+is_detection_spin_correct        1.0667      0.203      5.253      0.000       0.651       1.482
+is_detection_no_spin_correct          0          0        nan        nan           0           0
+==============================================================================
+Omnibus:                       31.295   Durbin-Watson:                   1.673
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):                3.618
+Skew:                           0.174   Prob(JB):                        0.164
+Kurtosis:                       1.335   Cond. No.                          inf
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is      0. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
+Model: llama2_chat-7B - full_text_answer
+Number of rows with NaN value(s) in llama2_chat-7B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.000
+Model:                            OLS   Adj. R-squared:                  0.000
+Method:                 Least Squares   F-statistic:                       nan
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):                nan
+Time:                        00:07:29   Log-Likelihood:                -40.801
+No. Observations:                  30   AIC:                             83.60
+Df Residuals:                      29   BIC:                             85.00
+Df Model:                           0                                         
+Covariance Type:            nonrobust                                         
+================================================================================================
+                                   coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+is_detection_spin_correct        0.3333      0.175      1.904      0.067      -0.025       0.691
+is_detection_no_spin_correct          0          0        nan        nan           0           0
+==============================================================================
+Omnibus:                       26.716   Durbin-Watson:                   1.950
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               55.098
+Skew:                           1.918   Prob(JB):                     1.09e-12
+Kurtosis:                       8.419   Cond. No.                          inf
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is      0. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
+Model: llama2_chat-7B - another_trial_answer
+Number of rows with NaN value(s) in llama2_chat-7B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.000
+Model:                            OLS   Adj. R-squared:                  0.000
+Method:                 Least Squares   F-statistic:                       nan
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):                nan
+Time:                        00:07:29   Log-Likelihood:                -67.327
+No. Observations:                  30   AIC:                             136.7
+Df Residuals:                      29   BIC:                             138.1
+Df Model:                           0                                         
+Covariance Type:            nonrobust                                         
+================================================================================================
+                                   coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+is_detection_spin_correct        1.7000      0.424      4.011      0.000       0.833       2.567
+is_detection_no_spin_correct          0          0        nan        nan           0           0
+==============================================================================
+Omnibus:                       18.457   Durbin-Watson:                   2.003
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               21.211
+Skew:                           1.818   Prob(JB):                     2.48e-05
+Kurtosis:                       4.937   Cond. No.                          inf
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is      0. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
+Model: llama2_chat-7B - overall
+Number of rows with NaN value(s) in llama2_chat-7B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.000
+Model:                            OLS   Adj. R-squared:                  0.000
+Method:                 Least Squares   F-statistic:                       nan
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):                nan
+Time:                        00:07:29   Log-Likelihood:                -32.632
+No. Observations:                  30   AIC:                             67.26
+Df Residuals:                      29   BIC:                             68.66
+Df Model:                           0                                         
+Covariance Type:            nonrobust                                         
+================================================================================================
+                                   coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+is_detection_spin_correct        1.4200      0.133     10.650      0.000       1.147       1.693
+is_detection_no_spin_correct          0          0        nan        nan           0           0
+==============================================================================
+Omnibus:                        2.108   Durbin-Watson:                   1.857
+Prob(Omnibus):                  0.349   Jarque-Bera (JB):                1.857
+Skew:                           0.575   Prob(JB):                        0.395
+Kurtosis:                       2.599   Cond. No.                          inf
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is      0. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.

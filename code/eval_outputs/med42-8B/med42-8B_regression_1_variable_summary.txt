@@ -1,0 +1,162 @@
+Model: med42-8B - benefit_answer
+Number of rows with NaN value(s) in med42-8B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.021
+Model:                            OLS   Adj. R-squared:                 -0.014
+Method:                 Least Squares   F-statistic:                    0.6085
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.442
+Time:                        00:07:17   Log-Likelihood:                -50.773
+No. Observations:                  30   AIC:                             105.5
+Df Residuals:                      28   BIC:                             108.3
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          2.3600      0.816      2.891      0.007       0.688       4.032
+0              1.0400      1.333      0.780      0.442      -1.691       3.771
+==============================================================================
+Omnibus:                        1.024   Durbin-Watson:                   1.639
+Prob(Omnibus):                  0.599   Jarque-Bera (JB):                0.864
+Skew:                          -0.392   Prob(JB):                        0.649
+Kurtosis:                       2.724   Cond. No.                         7.24
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: med42-8B - rigor_answer
+Number of rows with NaN value(s) in med42-8B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.004
+Model:                            OLS   Adj. R-squared:                 -0.032
+Method:                 Least Squares   F-statistic:                    0.1124
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.740
+Time:                        00:07:17   Log-Likelihood:                -19.947
+No. Observations:                  30   AIC:                             43.89
+Df Residuals:                      28   BIC:                             46.70
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          0.2400      0.292      0.821      0.418      -0.359       0.839
+0              0.1600      0.477      0.335      0.740      -0.817       1.137
+==============================================================================
+Omnibus:                       18.342   Durbin-Watson:                   2.417
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):                5.237
+Skew:                           0.704   Prob(JB):                       0.0729
+Kurtosis:                       1.514   Cond. No.                         7.24
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: med42-8B - importance_answer
+Number of rows with NaN value(s) in med42-8B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.006
+Model:                            OLS   Adj. R-squared:                 -0.029
+Method:                 Least Squares   F-statistic:                    0.1818
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.673
+Time:                        00:07:17   Log-Likelihood:                -45.698
+No. Observations:                  30   AIC:                             95.40
+Df Residuals:                      28   BIC:                             98.20
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          1.8800      0.689      2.727      0.011       0.468       3.292
+0             -0.4800      1.126     -0.426      0.673      -2.786       1.826
+==============================================================================
+Omnibus:                        0.379   Durbin-Watson:                   2.099
+Prob(Omnibus):                  0.827   Jarque-Bera (JB):                0.524
+Skew:                           0.206   Prob(JB):                        0.769
+Kurtosis:                       2.501   Cond. No.                         7.24
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: med42-8B - full_text_answer
+Number of rows with NaN value(s) in med42-8B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.000
+Model:                            OLS   Adj. R-squared:                 -0.035
+Method:                 Least Squares   F-statistic:                  0.009845
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.922
+Time:                        00:07:17   Log-Likelihood:                -35.685
+No. Observations:                  30   AIC:                             75.37
+Df Residuals:                      28   BIC:                             78.17
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          1.6800      0.494      3.403      0.002       0.669       2.691
+0             -0.0800      0.806     -0.099      0.922      -1.732       1.572
+==============================================================================
+Omnibus:                        1.291   Durbin-Watson:                   2.273
+Prob(Omnibus):                  0.524   Jarque-Bera (JB):                1.053
+Skew:                          -0.441   Prob(JB):                        0.591
+Kurtosis:                       2.748   Cond. No.                         7.24
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: med42-8B - another_trial_answer
+Number of rows with NaN value(s) in med42-8B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.018
+Model:                            OLS   Adj. R-squared:                 -0.017
+Method:                 Least Squares   F-statistic:                    0.5115
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.480
+Time:                        00:07:17   Log-Likelihood:                -48.367
+No. Observations:                  30   AIC:                             100.7
+Df Residuals:                      28   BIC:                             103.5
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          2.5200      0.754      3.344      0.002       0.977       4.063
+0              0.8800      1.230      0.715      0.480      -1.641       3.401
+==============================================================================
+Omnibus:                        3.655   Durbin-Watson:                   1.699
+Prob(Omnibus):                  0.161   Jarque-Bera (JB):                2.821
+Skew:                          -0.751   Prob(JB):                        0.244
+Kurtosis:                       2.996   Cond. No.                         7.24
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: med42-8B - overall
+Number of rows with NaN value(s) in med42-8B: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.006
+Model:                            OLS   Adj. R-squared:                 -0.030
+Method:                 Least Squares   F-statistic:                    0.1640
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.689
+Time:                        00:07:17   Log-Likelihood:                -33.544
+No. Observations:                  30   AIC:                             71.09
+Df Residuals:                      28   BIC:                             73.89
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          1.7360      0.460      3.776      0.001       0.794       2.678
+0              0.3040      0.751      0.405      0.689      -1.234       1.842
+==============================================================================
+Omnibus:                        0.687   Durbin-Watson:                   1.773
+Prob(Omnibus):                  0.709   Jarque-Bera (JB):                0.695
+Skew:                          -0.079   Prob(JB):                        0.706
+Kurtosis:                       2.271   Cond. No.                         7.24
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

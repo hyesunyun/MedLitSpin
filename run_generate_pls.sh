@@ -6,10 +6,10 @@ models=(
   "gpt4o-mini" 
   "claude_3.5-sonnet"
   "llama3_instruct-8B"
-  # "llama2_chat-70B"
-  # "llama3_instruct-70B"
-  # "med42-70B"
-  # "openbiollm-70B"
+  "llama2_chat-70B"
+  "llama3_instruct-70B"
+  "med42-70B"
+  "openbiollm-70B"
 )
 
 # DEFAULT PROMPT TEMPLATE with 300 max new tokens

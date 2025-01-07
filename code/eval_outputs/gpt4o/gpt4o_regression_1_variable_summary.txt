@@ -1,0 +1,162 @@
+Model: gpt4o - benefit_answer
+Number of rows with NaN value(s) in gpt4o: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.152
+Model:                            OLS   Adj. R-squared:                  0.122
+Method:                 Least Squares   F-statistic:                     5.013
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):             0.0333
+Time:                        00:07:17   Log-Likelihood:                -48.766
+No. Observations:                  30   AIC:                             101.5
+Df Residuals:                      28   BIC:                             104.3
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          1.4887      0.770      1.932      0.064      -0.090       3.067
+0              2.0995      0.938      2.239      0.033       0.179       4.020
+==============================================================================
+Omnibus:                        1.477   Durbin-Watson:                   1.657
+Prob(Omnibus):                  0.478   Jarque-Bera (JB):                1.006
+Skew:                          -0.096   Prob(JB):                        0.605
+Kurtosis:                       2.124   Cond. No.                         6.61
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gpt4o - rigor_answer
+Number of rows with NaN value(s) in gpt4o: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.005
+Model:                            OLS   Adj. R-squared:                 -0.031
+Method:                 Least Squares   F-statistic:                    0.1273
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.724
+Time:                        00:07:17   Log-Likelihood:                -6.3809
+No. Observations:                  30   AIC:                             16.76
+Df Residuals:                      28   BIC:                             19.56
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          0.0362      0.188      0.193      0.848      -0.348       0.420
+0              0.0814      0.228      0.357      0.724      -0.386       0.549
+==============================================================================
+Omnibus:                       33.293   Durbin-Watson:                   2.181
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               67.107
+Skew:                           2.648   Prob(JB):                     2.68e-15
+Kurtosis:                       8.063   Cond. No.                         6.61
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gpt4o - importance_answer
+Number of rows with NaN value(s) in gpt4o: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.070
+Model:                            OLS   Adj. R-squared:                  0.037
+Method:                 Least Squares   F-statistic:                     2.121
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.156
+Time:                        00:07:17   Log-Likelihood:                -42.141
+No. Observations:                  30   AIC:                             88.28
+Df Residuals:                      28   BIC:                             91.09
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          0.3756      0.618      0.608      0.548      -0.890       1.641
+0              1.0950      0.752      1.456      0.156      -0.445       2.635
+==============================================================================
+Omnibus:                        0.353   Durbin-Watson:                   2.591
+Prob(Omnibus):                  0.838   Jarque-Bera (JB):                0.386
+Skew:                          -0.228   Prob(JB):                        0.825
+Kurtosis:                       2.683   Cond. No.                         6.61
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gpt4o - full_text_answer
+Number of rows with NaN value(s) in gpt4o: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.123
+Model:                            OLS   Adj. R-squared:                  0.091
+Method:                 Least Squares   F-statistic:                     3.914
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):             0.0578
+Time:                        00:07:17   Log-Likelihood:                -46.167
+No. Observations:                  30   AIC:                             96.33
+Df Residuals:                      28   BIC:                             99.14
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          1.5339      0.707      2.171      0.039       0.087       2.981
+0              1.7014      0.860      1.978      0.058      -0.060       3.463
+==============================================================================
+Omnibus:                        6.115   Durbin-Watson:                   1.899
+Prob(Omnibus):                  0.047   Jarque-Bera (JB):                4.441
+Skew:                          -0.875   Prob(JB):                        0.109
+Kurtosis:                       3.699   Cond. No.                         6.61
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gpt4o - another_trial_answer
+Number of rows with NaN value(s) in gpt4o: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.298
+Model:                            OLS   Adj. R-squared:                  0.273
+Method:                 Least Squares   F-statistic:                     11.88
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):            0.00181
+Time:                        00:07:17   Log-Likelihood:                -44.521
+No. Observations:                  30   AIC:                             93.04
+Df Residuals:                      28   BIC:                             95.84
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          1.1357      0.669      1.698      0.101      -0.234       2.506
+0              2.8054      0.814      3.446      0.002       1.138       4.473
+==============================================================================
+Omnibus:                        5.341   Durbin-Watson:                   2.037
+Prob(Omnibus):                  0.069   Jarque-Bera (JB):                3.723
+Skew:                          -0.803   Prob(JB):                        0.155
+Kurtosis:                       3.632   Cond. No.                         6.61
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gpt4o - overall
+Number of rows with NaN value(s) in gpt4o: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.226
+Model:                            OLS   Adj. R-squared:                  0.199
+Method:                 Least Squares   F-statistic:                     8.196
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):            0.00786
+Time:                        00:07:17   Log-Likelihood:                -32.414
+No. Observations:                  30   AIC:                             68.83
+Df Residuals:                      28   BIC:                             71.63
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          0.9140      0.447      2.046      0.050      -0.001       1.829
+0              1.5566      0.544      2.863      0.008       0.443       2.670
+==============================================================================
+Omnibus:                        4.720   Durbin-Watson:                   2.028
+Prob(Omnibus):                  0.094   Jarque-Bera (JB):                3.440
+Skew:                          -0.815   Prob(JB):                        0.179
+Kurtosis:                       3.305   Cond. No.                         6.61
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

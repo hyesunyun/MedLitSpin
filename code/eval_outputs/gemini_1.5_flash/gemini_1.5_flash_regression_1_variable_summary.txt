@@ -1,0 +1,162 @@
+Model: gemini_1.5_flash - benefit_answer
+Number of rows with NaN value(s) in gemini_1.5_flash: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.010
+Model:                            OLS   Adj. R-squared:                 -0.025
+Method:                 Least Squares   F-statistic:                    0.2943
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.592
+Time:                        00:07:17   Log-Likelihood:                -50.517
+No. Observations:                  30   AIC:                             105.0
+Df Residuals:                      28   BIC:                             107.8
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          2.1071      0.765      2.755      0.010       0.540       3.674
+0              0.5357      0.987      0.543      0.592      -1.487       2.558
+==============================================================================
+Omnibus:                        3.960   Durbin-Watson:                   2.107
+Prob(Omnibus):                  0.138   Jarque-Bera (JB):                3.532
+Skew:                           0.778   Prob(JB):                        0.171
+Kurtosis:                       2.363   Cond. No.                         6.25
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gemini_1.5_flash - rigor_answer
+Number of rows with NaN value(s) in gemini_1.5_flash: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.097
+Model:                            OLS   Adj. R-squared:                  0.065
+Method:                 Least Squares   F-statistic:                     3.015
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):             0.0935
+Time:                        00:07:17   Log-Likelihood:                -4.9148
+No. Observations:                  30   AIC:                             13.83
+Df Residuals:                      28   BIC:                             16.63
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -0.3750      0.167     -2.242      0.033      -0.718      -0.032
+0              0.3750      0.216      1.736      0.093      -0.067       0.817
+==============================================================================
+Omnibus:                       26.207   Durbin-Watson:                   2.466
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               40.991
+Skew:                          -2.193   Prob(JB):                     1.26e-09
+Kurtosis:                       6.683   Cond. No.                         6.25
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gemini_1.5_flash - importance_answer
+Number of rows with NaN value(s) in gemini_1.5_flash: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.004
+Model:                            OLS   Adj. R-squared:                 -0.031
+Method:                 Least Squares   F-statistic:                    0.1236
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.728
+Time:                        00:07:17   Log-Likelihood:                -51.365
+No. Observations:                  30   AIC:                             106.7
+Df Residuals:                      28   BIC:                             109.5
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          2.4286      0.787      3.087      0.005       0.817       4.040
+0             -0.3571      1.016     -0.352      0.728      -2.438       1.724
+==============================================================================
+Omnibus:                        0.894   Durbin-Watson:                   1.695
+Prob(Omnibus):                  0.640   Jarque-Bera (JB):                0.793
+Skew:                           0.097   Prob(JB):                        0.673
+Kurtosis:                       2.228   Cond. No.                         6.25
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gemini_1.5_flash - full_text_answer
+Number of rows with NaN value(s) in gemini_1.5_flash: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.029
+Model:                            OLS   Adj. R-squared:                 -0.006
+Method:                 Least Squares   F-statistic:                    0.8350
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.369
+Time:                        00:07:17   Log-Likelihood:                -55.670
+No. Observations:                  30   AIC:                             115.3
+Df Residuals:                      28   BIC:                             118.1
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          2.2143      0.908      2.438      0.021       0.354       4.075
+0              1.0714      1.173      0.914      0.369      -1.330       3.473
+==============================================================================
+Omnibus:                        5.916   Durbin-Watson:                   1.939
+Prob(Omnibus):                  0.052   Jarque-Bera (JB):                1.984
+Skew:                          -0.160   Prob(JB):                        0.371
+Kurtosis:                       1.782   Cond. No.                         6.25
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gemini_1.5_flash - another_trial_answer
+Number of rows with NaN value(s) in gemini_1.5_flash: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.044
+Model:                            OLS   Adj. R-squared:                  0.010
+Method:                 Least Squares   F-statistic:                     1.289
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.266
+Time:                        00:07:17   Log-Likelihood:                -57.031
+No. Observations:                  30   AIC:                             118.1
+Df Residuals:                      28   BIC:                             120.9
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          2.6786      0.950      2.818      0.009       0.732       4.625
+0              1.3929      1.227      1.135      0.266      -1.120       3.906
+==============================================================================
+Omnibus:                        4.994   Durbin-Watson:                   2.418
+Prob(Omnibus):                  0.082   Jarque-Bera (JB):                2.837
+Skew:                          -0.534   Prob(JB):                        0.242
+Kurtosis:                       1.937   Cond. No.                         6.25
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gemini_1.5_flash - overall
+Number of rows with NaN value(s) in gemini_1.5_flash: 0
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.023
+Model:                            OLS   Adj. R-squared:                 -0.012
+Method:                 Least Squares   F-statistic:                    0.6495
+Date:                Tue, 07 Jan 2025   Prob (F-statistic):              0.427
+Time:                        00:07:17   Log-Likelihood:                -42.222
+No. Observations:                  30   AIC:                             88.44
+Df Residuals:                      28   BIC:                             91.25
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          1.8107      0.580      3.121      0.004       0.622       2.999
+0              0.6036      0.749      0.806      0.427      -0.931       2.138
+==============================================================================
+Omnibus:                        6.529   Durbin-Watson:                   2.279
+Prob(Omnibus):                  0.038   Jarque-Bera (JB):                2.042
+Skew:                           0.139   Prob(JB):                        0.360
+Kurtosis:                       1.752   Cond. No.                         6.25
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

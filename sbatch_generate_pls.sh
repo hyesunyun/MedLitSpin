@@ -1,12 +1,12 @@
 #!/bin/bash
 #SBATCH --nodes=1
-#SBATCH --time=10:00:00
+#SBATCH --time=24:00:00
 #SBATCH --job-name=pls_gen
-#SBATCH --cpus-per-task=16
+#SBATCH --cpus-per-task=24
 #SBATCH --ntasks-per-node=1
-#SBATCH --mem=100G
+#SBATCH --mem=200G
 #SBATCH --partition=177huntington
-#SBATCH --gres=gpu:1
+#SBATCH --gres=gpu:4
 #SBATCH -o output_%j.txt                     # Standard output file
 #SBATCH -e error_%j.txt                      # Standard error file
 #SBATCH --mail-user=yun.hy@northeastern.edu  # Email

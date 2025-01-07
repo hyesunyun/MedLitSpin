@@ -1,6 +1,5 @@
 import argparse
 import os
-from typing import Dict, List
 
 from models.gpt35 import GPT35
 from models.gpt4 import GPT4
@@ -15,7 +14,6 @@ from models.openbiollm import OpenBioLLM
 from models.biomistral import BioMistral
 from models.biomedgpt import BioMedGPT
 from models.alpacare import AlpaCare
-from models.model import Model
 
 from tqdm import tqdm
 import random
