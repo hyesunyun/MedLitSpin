@@ -2,26 +2,27 @@ Model: med42-70B - benefit_answer
 Number of rows with NaN value(s) in med42-70B: 0
                               OLS Regression Results                             
 =================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.713
-Model:                               OLS   Adj. R-squared:                  0.703
-Method:                    Least Squares   F-statistic:                     70.94
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           3.41e-16
-Time:                           17:23:12   Log-Likelihood:                -110.87
-No. Observations:                     60   AIC:                             227.7
-Df Residuals:                         57   BIC:                             234.0
-Df Model:                              2                                         
+Dep. Variable:     interpretation_answer   R-squared:                       0.714
+Model:                               OLS   Adj. R-squared:                  0.698
+Method:                    Least Squares   F-statistic:                     46.50
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           3.23e-15
+Time:                           19:56:31   Log-Likelihood:                -110.86
+No. Observations:                     60   AIC:                             229.7
+Df Residuals:                         56   BIC:                             238.1
+Df Model:                              3                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    2.6563      0.580      4.582      0.000       1.495       3.817
-is_spin_in_abstract      4.7125      0.431     10.922      0.000       3.849       5.576
-is_detection_correct    -0.4531      0.539     -0.840      0.404      -1.533       0.627
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    2.5000      1.124      2.225      0.030       0.249       4.751
+is_spin_in_abstract                          4.9000      1.231      3.981      0.000       2.434       7.366
+is_detection_correct                        -0.2857      1.163     -0.246      0.807      -2.616       2.044
+is_spin_in_abstract:is_detection_correct    -0.2143      1.316     -0.163      0.871      -2.850       2.422
 ==============================================================================
-Omnibus:                        8.153   Durbin-Watson:                   1.560
-Prob(Omnibus):                  0.017   Jarque-Bera (JB):               16.978
-Skew:                           0.065   Prob(JB):                     0.000206
-Kurtosis:                       5.603   Cond. No.                         5.52
+Omnibus:                        8.081   Durbin-Watson:                   1.564
+Prob(Omnibus):                  0.018   Jarque-Bera (JB):               16.678
+Skew:                           0.063   Prob(JB):                     0.000239
+Kurtosis:                       5.580   Cond. No.                         16.6
 ==============================================================================
 
 Notes:
@@ -32,24 +33,25 @@ Number of rows with NaN value(s) in med42-70B: 0
 =================================================================================
 Dep. Variable:     interpretation_answer   R-squared:                        -inf
 Model:                               OLS   Adj. R-squared:                   -inf
-Method:                    Least Squares   F-statistic:                    -28.50
+Method:                    Least Squares   F-statistic:                    -18.67
 Date:                   Tue, 07 Jan 2025   Prob (F-statistic):               1.00
-Time:                           17:23:12   Log-Likelihood:                 1887.0
-No. Observations:                     60   AIC:                            -3768.
-Df Residuals:                         57   BIC:                            -3762.
-Df Model:                              2                                         
+Time:                           19:56:31   Log-Likelihood:                 1872.4
+No. Observations:                     60   AIC:                            -3737.
+Df Residuals:                         56   BIC:                            -3728.
+Df Model:                              3                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    8.0000      2e-15   3.99e+15      0.000       8.000       8.000
-is_spin_in_abstract  -3.553e-15   1.49e-15     -2.382      0.021   -6.54e-15   -5.65e-16
-is_detection_correct  3.997e-15   1.86e-15      2.143      0.036    2.63e-16    7.73e-15
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    8.0000   4.96e-15   1.61e+15      0.000       8.000       8.000
+is_spin_in_abstract                       5.107e-15   5.43e-15      0.940      0.351   -5.77e-15     1.6e-14
+is_detection_correct                      4.441e-15   5.13e-15      0.865      0.391   -5.84e-15    1.47e-14
+is_spin_in_abstract:is_detection_correct  1.776e-15   5.81e-15      0.306      0.761   -9.85e-15    1.34e-14
 ==============================================================================
-Omnibus:                       10.036   Durbin-Watson:                   0.657
-Prob(Omnibus):                  0.007   Jarque-Bera (JB):                5.398
-Skew:                           0.539   Prob(JB):                       0.0673
-Kurtosis:                       2.002   Cond. No.                         5.52
+Omnibus:                       24.611   Durbin-Watson:                   0.675
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):                6.570
+Skew:                          -0.496   Prob(JB):                       0.0374
+Kurtosis:                       1.718   Cond. No.                         16.6
 ==============================================================================
 
 Notes:
@@ -58,26 +60,27 @@ Model: med42-70B - importance_answer
 Number of rows with NaN value(s) in med42-70B: 0
                               OLS Regression Results                             
 =================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.284
-Model:                               OLS   Adj. R-squared:                  0.259
-Method:                    Least Squares   F-statistic:                     11.32
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           7.26e-05
-Time:                           17:23:12   Log-Likelihood:                -90.920
-No. Observations:                     60   AIC:                             187.8
-Df Residuals:                         57   BIC:                             194.1
-Df Model:                              2                                         
+Dep. Variable:     interpretation_answer   R-squared:                       0.286
+Model:                               OLS   Adj. R-squared:                  0.247
+Method:                    Least Squares   F-statistic:                     7.467
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           0.000273
+Time:                           19:56:31   Log-Likelihood:                -90.858
+No. Observations:                     60   AIC:                             189.7
+Df Residuals:                         56   BIC:                             198.1
+Df Model:                              3                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    6.7656      0.416     16.273      0.000       5.933       7.598
-is_spin_in_abstract      1.2812      0.309      4.141      0.000       0.662       1.901
-is_detection_correct    -0.3203      0.387     -0.828      0.411      -1.095       0.454
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    7.0000      0.805      8.694      0.000       5.387       8.613
+is_spin_in_abstract                          1.0000      0.882      1.134      0.262      -0.767       2.767
+is_detection_correct                        -0.5714      0.833     -0.686      0.496      -2.241       1.098
+is_spin_in_abstract:is_detection_correct     0.3214      0.943      0.341      0.734      -1.567       2.210
 ==============================================================================
-Omnibus:                        3.732   Durbin-Watson:                   1.884
-Prob(Omnibus):                  0.155   Jarque-Bera (JB):                3.116
-Skew:                          -0.555   Prob(JB):                        0.211
-Kurtosis:                       3.123   Cond. No.                         5.52
+Omnibus:                        3.647   Durbin-Watson:                   1.884
+Prob(Omnibus):                  0.161   Jarque-Bera (JB):                3.036
+Skew:                          -0.548   Prob(JB):                        0.219
+Kurtosis:                       3.119   Cond. No.                         16.6
 ==============================================================================
 
 Notes:
@@ -87,25 +90,26 @@ Number of rows with NaN value(s) in med42-70B: 0
                               OLS Regression Results                             
 =================================================================================
 Dep. Variable:     interpretation_answer   R-squared:                       0.808
-Model:                               OLS   Adj. R-squared:                  0.801
-Method:                    Least Squares   F-statistic:                     119.6
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           4.02e-21
-Time:                           17:23:12   Log-Likelihood:                -89.023
-No. Observations:                     60   AIC:                             184.0
-Df Residuals:                         57   BIC:                             190.3
-Df Model:                              2                                         
+Model:                               OLS   Adj. R-squared:                  0.797
+Method:                    Least Squares   F-statistic:                     78.32
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           5.01e-20
+Time:                           19:56:31   Log-Likelihood:                -89.023
+No. Observations:                     60   AIC:                             186.0
+Df Residuals:                         56   BIC:                             194.4
+Df Model:                              3                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    3.5000      0.403      8.689      0.000       2.693       4.307
-is_spin_in_abstract      4.3000      0.300     14.344      0.000       3.700       4.900
-is_detection_correct    -0.2500      0.375     -0.667      0.507      -1.000       0.500
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    3.5000      0.781      4.482      0.000       1.936       5.064
+is_spin_in_abstract                          4.3000      0.855      5.027      0.000       2.586       6.014
+is_detection_correct                        -0.2500      0.808     -0.309      0.758      -1.869       1.369
+is_spin_in_abstract:is_detection_correct  3.331e-15      0.915   3.64e-15      1.000      -1.832       1.832
 ==============================================================================
 Omnibus:                       20.320   Durbin-Watson:                   1.529
 Prob(Omnibus):                  0.000   Jarque-Bera (JB):              101.329
 Skew:                           0.547   Prob(JB):                     9.92e-23
-Kurtosis:                       9.272   Cond. No.                         5.52
+Kurtosis:                       9.272   Cond. No.                         16.6
 ==============================================================================
 
 Notes:
@@ -114,26 +118,27 @@ Model: med42-70B - another_trial_answer
 Number of rows with NaN value(s) in med42-70B: 0
                               OLS Regression Results                             
 =================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.803
-Model:                               OLS   Adj. R-squared:                  0.796
-Method:                    Least Squares   F-statistic:                     116.0
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           8.05e-21
-Time:                           17:23:12   Log-Likelihood:                -95.164
-No. Observations:                     60   AIC:                             196.3
-Df Residuals:                         57   BIC:                             202.6
-Df Model:                              2                                         
+Dep. Variable:     interpretation_answer   R-squared:                       0.804
+Model:                               OLS   Adj. R-squared:                  0.794
+Method:                    Least Squares   F-statistic:                     76.80
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           7.78e-20
+Time:                           19:56:31   Log-Likelihood:                -94.907
+No. Observations:                     60   AIC:                             197.8
+Df Residuals:                         56   BIC:                             206.2
+Df Model:                              3                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    2.9896      0.446      6.700      0.000       2.096       3.883
-is_spin_in_abstract      4.7125      0.332     14.191      0.000       4.048       5.377
-is_detection_correct    -0.2031      0.415     -0.489      0.626      -1.034       0.628
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    3.5000      0.861      4.063      0.000       1.774       5.226
+is_spin_in_abstract                          4.1000      0.944      4.345      0.000       2.210       5.990
+is_detection_correct                        -0.7500      0.892     -0.841      0.404      -2.536       1.036
+is_spin_in_abstract:is_detection_correct     0.7000      1.009      0.694      0.491      -1.321       2.721
 ==============================================================================
-Omnibus:                       19.728   Durbin-Watson:                   1.655
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):              107.973
-Skew:                           0.444   Prob(JB):                     3.58e-24
-Kurtosis:                       9.512   Cond. No.                         5.52
+Omnibus:                       20.693   Durbin-Watson:                   1.647
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              116.896
+Skew:                           0.494   Prob(JB):                     4.13e-26
+Kurtosis:                       9.766   Cond. No.                         16.6
 ==============================================================================
 
 Notes:
@@ -143,25 +148,26 @@ Number of rows with NaN value(s) in med42-70B: 0
                               OLS Regression Results                             
 =================================================================================
 Dep. Variable:     interpretation_answer   R-squared:                       0.767
-Model:                               OLS   Adj. R-squared:                  0.758
-Method:                    Least Squares   F-statistic:                     93.64
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           9.71e-19
-Time:                           17:23:12   Log-Likelihood:                -75.204
-No. Observations:                     60   AIC:                             156.4
-Df Residuals:                         57   BIC:                             162.7
-Df Model:                              2                                         
+Model:                               OLS   Adj. R-squared:                  0.754
+Method:                    Least Squares   F-statistic:                     61.40
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           1.04e-17
+Time:                           19:56:31   Log-Likelihood:                -75.178
+No. Observations:                     60   AIC:                             158.4
+Df Residuals:                         56   BIC:                             166.7
+Df Model:                              3                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    4.7823      0.320     14.947      0.000       4.142       5.423
-is_spin_in_abstract      3.0012      0.238     12.604      0.000       2.524       3.478
-is_detection_correct    -0.2453      0.298     -0.824      0.413      -0.841       0.351
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    4.9000      0.620      7.903      0.000       3.658       6.142
+is_spin_in_abstract                          2.8600      0.679      4.211      0.000       1.499       4.221
+is_detection_correct                        -0.3714      0.642     -0.579      0.565      -1.657       0.914
+is_spin_in_abstract:is_detection_correct     0.1614      0.726      0.222      0.825      -1.293       1.616
 ==============================================================================
-Omnibus:                       13.684   Durbin-Watson:                   1.634
-Prob(Omnibus):                  0.001   Jarque-Bera (JB):               41.662
-Skew:                           0.381   Prob(JB):                     8.98e-10
-Kurtosis:                       7.010   Cond. No.                         5.52
+Omnibus:                       13.886   Durbin-Watson:                   1.632
+Prob(Omnibus):                  0.001   Jarque-Bera (JB):               43.013
+Skew:                           0.386   Prob(JB):                     4.57e-10
+Kurtosis:                       7.075   Cond. No.                         16.6
 ==============================================================================
 
 Notes:

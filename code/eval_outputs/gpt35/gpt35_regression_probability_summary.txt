@@ -2,26 +2,27 @@ Model: gpt35 - benefit_answer
 Number of rows with NaN value(s) in gpt35: 0
                               OLS Regression Results                             
 =================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.710
-Model:                               OLS   Adj. R-squared:                  0.699
-Method:                    Least Squares   F-statistic:                     69.63
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           4.97e-16
-Time:                           17:23:18   Log-Likelihood:                -99.457
-No. Observations:                     60   AIC:                             204.9
-Df Residuals:                         57   BIC:                             211.2
-Df Model:                              2                                         
+Dep. Variable:     interpretation_answer   R-squared:                       0.712
+Model:                               OLS   Adj. R-squared:                  0.696
+Method:                    Least Squares   F-statistic:                     46.13
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           3.79e-15
+Time:                           19:56:33   Log-Likelihood:                -99.215
+No. Observations:                     60   AIC:                             206.4
+Df Residuals:                         56   BIC:                             214.8
+Df Model:                              3                                         
 Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                            -0.4328      1.376     -0.315      0.754      -3.188       2.323
-is_spin_in_abstract               6.2839      1.140      5.512      0.000       4.001       8.567
-regression_detection_variable     3.1866      1.456      2.189      0.033       0.271       6.102
+=====================================================================================================================
+                                                        coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------
+Intercept                                             1.5097      3.203      0.471      0.639      -4.907       7.926
+is_spin_in_abstract                                   4.2567      3.225      1.320      0.192      -2.205      10.718
+regression_detection_variable                         1.0997      3.431      0.320      0.750      -5.774       7.974
+is_spin_in_abstract:regression_detection_variable     2.5505      3.794      0.672      0.504      -5.049      10.150
 ==============================================================================
-Omnibus:                        2.158   Durbin-Watson:                   2.000
-Prob(Omnibus):                  0.340   Jarque-Bera (JB):                1.549
-Skew:                          -0.180   Prob(JB):                        0.461
-Kurtosis:                       2.300   Cond. No.                         17.0
+Omnibus:                        1.360   Durbin-Watson:                   1.982
+Prob(Omnibus):                  0.507   Jarque-Bera (JB):                1.144
+Skew:                          -0.133   Prob(JB):                        0.564
+Kurtosis:                       2.378   Cond. No.                         49.8
 ==============================================================================
 
 Notes:
@@ -30,26 +31,27 @@ Model: gpt35 - rigor_answer
 Number of rows with NaN value(s) in gpt35: 0
                               OLS Regression Results                             
 =================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.413
-Model:                               OLS   Adj. R-squared:                  0.392
-Method:                    Least Squares   F-statistic:                     20.04
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.56e-07
-Time:                           17:23:18   Log-Likelihood:                -75.848
-No. Observations:                     60   AIC:                             157.7
-Df Residuals:                         57   BIC:                             164.0
-Df Model:                              2                                         
+Dep. Variable:     interpretation_answer   R-squared:                       0.414
+Model:                               OLS   Adj. R-squared:                  0.382
+Method:                    Least Squares   F-statistic:                     13.16
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           1.29e-06
+Time:                           19:56:33   Log-Likelihood:                -75.814
+No. Observations:                     60   AIC:                             159.6
+Df Residuals:                         56   BIC:                             168.0
+Df Model:                              3                                         
 Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             5.9065      0.928      6.362      0.000       4.047       7.766
-is_spin_in_abstract               1.7496      0.769      2.275      0.027       0.209       3.290
-regression_detection_variable     0.4228      0.982      0.430      0.669      -1.544       2.390
+=====================================================================================================================
+                                                        coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------
+Intercept                                             6.3967      2.169      2.950      0.005       2.053      10.741
+is_spin_in_abstract                                   1.2380      2.184      0.567      0.573      -3.137       5.613
+regression_detection_variable                        -0.1039      2.323     -0.045      0.964      -4.758       4.550
+is_spin_in_abstract:regression_detection_variable     0.6437      2.568      0.251      0.803      -4.501       5.789
 ==============================================================================
-Omnibus:                        2.948   Durbin-Watson:                   1.751
-Prob(Omnibus):                  0.229   Jarque-Bera (JB):                2.714
-Skew:                          -0.515   Prob(JB):                        0.257
-Kurtosis:                       2.842   Cond. No.                         17.0
+Omnibus:                        2.729   Durbin-Watson:                   1.747
+Prob(Omnibus):                  0.256   Jarque-Bera (JB):                2.511
+Skew:                          -0.494   Prob(JB):                        0.285
+Kurtosis:                       2.833   Cond. No.                         49.8
 ==============================================================================
 
 Notes:
@@ -59,25 +61,26 @@ Number of rows with NaN value(s) in gpt35: 0
                               OLS Regression Results                             
 =================================================================================
 Dep. Variable:     interpretation_answer   R-squared:                       0.544
-Model:                               OLS   Adj. R-squared:                  0.528
-Method:                    Least Squares   F-statistic:                     34.01
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           1.90e-10
-Time:                           17:23:18   Log-Likelihood:                -82.516
-No. Observations:                     60   AIC:                             171.0
-Df Residuals:                         57   BIC:                             177.3
-Df Model:                              2                                         
+Model:                               OLS   Adj. R-squared:                  0.520
+Method:                    Least Squares   F-statistic:                     22.28
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           1.27e-09
+Time:                           19:56:33   Log-Likelihood:                -82.516
+No. Observations:                     60   AIC:                             173.0
+Df Residuals:                         56   BIC:                             181.4
+Df Model:                              3                                         
 Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             3.9703      1.038      3.827      0.000       1.893       6.048
-is_spin_in_abstract               3.1086      0.860      3.616      0.001       1.387       4.830
-regression_detection_variable     1.3927      1.098      1.269      0.210      -0.806       3.591
+=====================================================================================================================
+                                                        coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------
+Intercept                                             3.9397      2.425      1.625      0.110      -0.918       8.797
+is_spin_in_abstract                                   3.1405      2.442      1.286      0.204      -1.751       8.032
+regression_detection_variable                         1.4256      2.598      0.549      0.585      -3.778       6.629
+is_spin_in_abstract:regression_detection_variable    -0.0401      2.872     -0.014      0.989      -5.793       5.713
 ==============================================================================
-Omnibus:                        3.764   Durbin-Watson:                   1.977
-Prob(Omnibus):                  0.152   Jarque-Bera (JB):                2.802
-Skew:                          -0.441   Prob(JB):                        0.246
-Kurtosis:                       3.585   Cond. No.                         17.0
+Omnibus:                        3.774   Durbin-Watson:                   1.977
+Prob(Omnibus):                  0.152   Jarque-Bera (JB):                2.810
+Skew:                          -0.442   Prob(JB):                        0.245
+Kurtosis:                       3.584   Cond. No.                         49.8
 ==============================================================================
 
 Notes:
@@ -86,26 +89,27 @@ Model: gpt35 - full_text_answer
 Number of rows with NaN value(s) in gpt35: 0
                               OLS Regression Results                             
 =================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.529
-Model:                               OLS   Adj. R-squared:                  0.513
-Method:                    Least Squares   F-statistic:                     32.07
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           4.66e-10
-Time:                           17:23:18   Log-Likelihood:                -97.351
-No. Observations:                     60   AIC:                             200.7
-Df Residuals:                         57   BIC:                             207.0
-Df Model:                              2                                         
+Dep. Variable:     interpretation_answer   R-squared:                       0.534
+Model:                               OLS   Adj. R-squared:                  0.509
+Method:                    Least Squares   F-statistic:                     21.40
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.32e-09
+Time:                           19:56:33   Log-Likelihood:                -97.057
+No. Observations:                     60   AIC:                             202.1
+Df Residuals:                         56   BIC:                             210.5
+Df Model:                              3                                         
 Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             4.6722      1.329      3.517      0.001       2.012       7.333
-is_spin_in_abstract               2.7831      1.101      2.528      0.014       0.579       4.987
-regression_detection_variable     0.2447      1.406      0.174      0.862      -2.570       3.060
+=====================================================================================================================
+                                                        coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------
+Intercept                                             6.7427      3.090      2.182      0.033       0.553      12.932
+is_spin_in_abstract                                   0.6223      3.111      0.200      0.842      -5.611       6.855
+regression_detection_variable                        -1.9796      3.310     -0.598      0.552      -8.611       4.651
+is_spin_in_abstract:regression_detection_variable     2.7186      3.659      0.743      0.461      -4.612      10.049
 ==============================================================================
-Omnibus:                        8.173   Durbin-Watson:                   1.492
-Prob(Omnibus):                  0.017   Jarque-Bera (JB):                8.923
-Skew:                          -0.577   Prob(JB):                       0.0115
-Kurtosis:                       4.496   Cond. No.                         17.0
+Omnibus:                        7.149   Durbin-Watson:                   1.505
+Prob(Omnibus):                  0.028   Jarque-Bera (JB):                7.613
+Skew:                          -0.506   Prob(JB):                       0.0222
+Kurtosis:                       4.422   Cond. No.                         49.8
 ==============================================================================
 
 Notes:
@@ -114,26 +118,27 @@ Model: gpt35 - another_trial_answer
 Number of rows with NaN value(s) in gpt35: 0
                               OLS Regression Results                             
 =================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.705
-Model:                               OLS   Adj. R-squared:                  0.695
-Method:                    Least Squares   F-statistic:                     68.12
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           7.73e-16
-Time:                           17:23:18   Log-Likelihood:                -97.482
-No. Observations:                     60   AIC:                             201.0
-Df Residuals:                         57   BIC:                             207.2
-Df Model:                              2                                         
+Dep. Variable:     interpretation_answer   R-squared:                       0.713
+Model:                               OLS   Adj. R-squared:                  0.698
+Method:                    Least Squares   F-statistic:                     46.44
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           3.31e-15
+Time:                           19:56:33   Log-Likelihood:                -96.633
+No. Observations:                     60   AIC:                             201.3
+Df Residuals:                         56   BIC:                             209.6
+Df Model:                              3                                         
 Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             1.3207      1.331      0.992      0.325      -1.345       3.987
-is_spin_in_abstract               5.3574      1.103      4.857      0.000       3.149       7.566
-regression_detection_variable     2.1264      1.409      1.509      0.137      -0.695       4.948
+=====================================================================================================================
+                                                        coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------
+Intercept                                             4.8310      3.068      1.575      0.121      -1.315      10.977
+is_spin_in_abstract                                   1.6941      3.090      0.548      0.586      -4.495       7.883
+regression_detection_variable                        -1.6447      3.287     -0.500      0.619      -8.229       4.940
+is_spin_in_abstract:regression_detection_variable     4.6091      3.634      1.268      0.210      -2.670      11.888
 ==============================================================================
-Omnibus:                       19.852   Durbin-Watson:                   1.816
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):                5.100
-Skew:                          -0.353   Prob(JB):                       0.0781
-Kurtosis:                       1.759   Cond. No.                         17.0
+Omnibus:                       13.053   Durbin-Watson:                   1.819
+Prob(Omnibus):                  0.001   Jarque-Bera (JB):                3.956
+Skew:                          -0.265   Prob(JB):                        0.138
+Kurtosis:                       1.859   Cond. No.                         49.8
 ==============================================================================
 
 Notes:
@@ -142,530 +147,27 @@ Model: gpt35 - overall
 Number of rows with NaN value(s) in gpt35: 0
                               OLS Regression Results                             
 =================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.695
-Model:                               OLS   Adj. R-squared:                  0.684
-Method:                    Least Squares   F-statistic:                     64.94
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.01e-15
-Time:                           17:23:18   Log-Likelihood:                -80.064
-No. Observations:                     60   AIC:                             166.1
-Df Residuals:                         57   BIC:                             172.4
-Df Model:                              2                                         
+Dep. Variable:     interpretation_answer   R-squared:                       0.698
+Model:                               OLS   Adj. R-squared:                  0.682
+Method:                    Least Squares   F-statistic:                     43.17
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           1.38e-14
+Time:                           19:56:33   Log-Likelihood:                -79.753
+No. Observations:                     60   AIC:                             167.5
+Df Residuals:                         56   BIC:                             175.9
+Df Model:                              3                                         
 Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             3.0874      0.996      3.100      0.003       1.093       5.082
-is_spin_in_abstract               3.8565      0.825      4.674      0.000       2.204       5.509
-regression_detection_variable     1.4746      1.054      1.399      0.167      -0.636       3.585
+=====================================================================================================================
+                                                        coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------
+Intercept                                             4.6840      2.316      2.023      0.048       0.045       9.323
+is_spin_in_abstract                                   2.1903      2.332      0.939      0.352      -2.481       6.862
+regression_detection_variable                        -0.2406      2.481     -0.097      0.923      -5.210       4.729
+is_spin_in_abstract:regression_detection_variable     2.0963      2.743      0.764      0.448      -3.398       7.590
 ==============================================================================
-Omnibus:                        2.223   Durbin-Watson:                   1.800
-Prob(Omnibus):                  0.329   Jarque-Bera (JB):                2.175
-Skew:                          -0.418   Prob(JB):                        0.337
-Kurtosis:                       2.587   Cond. No.                         17.0
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt35 - benefit_answer
-Number of rows with NaN value(s) in gpt35: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.710
-Model:                               OLS   Adj. R-squared:                  0.699
-Method:                    Least Squares   F-statistic:                     69.63
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           4.97e-16
-Time:                           17:24:30   Log-Likelihood:                -99.457
-No. Observations:                     60   AIC:                             204.9
-Df Residuals:                         57   BIC:                             211.2
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                            -0.4328      1.376     -0.315      0.754      -3.188       2.323
-is_spin_in_abstract               6.2839      1.140      5.512      0.000       4.001       8.567
-regression_detection_variable     3.1866      1.456      2.189      0.033       0.271       6.102
-==============================================================================
-Omnibus:                        2.158   Durbin-Watson:                   2.000
-Prob(Omnibus):                  0.340   Jarque-Bera (JB):                1.549
-Skew:                          -0.180   Prob(JB):                        0.461
-Kurtosis:                       2.300   Cond. No.                         17.0
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt35 - rigor_answer
-Number of rows with NaN value(s) in gpt35: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.413
-Model:                               OLS   Adj. R-squared:                  0.392
-Method:                    Least Squares   F-statistic:                     20.04
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.56e-07
-Time:                           17:24:30   Log-Likelihood:                -75.848
-No. Observations:                     60   AIC:                             157.7
-Df Residuals:                         57   BIC:                             164.0
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             5.9065      0.928      6.362      0.000       4.047       7.766
-is_spin_in_abstract               1.7496      0.769      2.275      0.027       0.209       3.290
-regression_detection_variable     0.4228      0.982      0.430      0.669      -1.544       2.390
-==============================================================================
-Omnibus:                        2.948   Durbin-Watson:                   1.751
-Prob(Omnibus):                  0.229   Jarque-Bera (JB):                2.714
-Skew:                          -0.515   Prob(JB):                        0.257
-Kurtosis:                       2.842   Cond. No.                         17.0
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt35 - importance_answer
-Number of rows with NaN value(s) in gpt35: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.544
-Model:                               OLS   Adj. R-squared:                  0.528
-Method:                    Least Squares   F-statistic:                     34.01
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           1.90e-10
-Time:                           17:24:30   Log-Likelihood:                -82.516
-No. Observations:                     60   AIC:                             171.0
-Df Residuals:                         57   BIC:                             177.3
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             3.9703      1.038      3.827      0.000       1.893       6.048
-is_spin_in_abstract               3.1086      0.860      3.616      0.001       1.387       4.830
-regression_detection_variable     1.3927      1.098      1.269      0.210      -0.806       3.591
-==============================================================================
-Omnibus:                        3.764   Durbin-Watson:                   1.977
-Prob(Omnibus):                  0.152   Jarque-Bera (JB):                2.802
-Skew:                          -0.441   Prob(JB):                        0.246
-Kurtosis:                       3.585   Cond. No.                         17.0
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt35 - full_text_answer
-Number of rows with NaN value(s) in gpt35: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.529
-Model:                               OLS   Adj. R-squared:                  0.513
-Method:                    Least Squares   F-statistic:                     32.07
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           4.66e-10
-Time:                           17:24:30   Log-Likelihood:                -97.351
-No. Observations:                     60   AIC:                             200.7
-Df Residuals:                         57   BIC:                             207.0
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             4.6722      1.329      3.517      0.001       2.012       7.333
-is_spin_in_abstract               2.7831      1.101      2.528      0.014       0.579       4.987
-regression_detection_variable     0.2447      1.406      0.174      0.862      -2.570       3.060
-==============================================================================
-Omnibus:                        8.173   Durbin-Watson:                   1.492
-Prob(Omnibus):                  0.017   Jarque-Bera (JB):                8.923
-Skew:                          -0.577   Prob(JB):                       0.0115
-Kurtosis:                       4.496   Cond. No.                         17.0
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt35 - another_trial_answer
-Number of rows with NaN value(s) in gpt35: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.705
-Model:                               OLS   Adj. R-squared:                  0.695
-Method:                    Least Squares   F-statistic:                     68.12
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           7.73e-16
-Time:                           17:24:30   Log-Likelihood:                -97.482
-No. Observations:                     60   AIC:                             201.0
-Df Residuals:                         57   BIC:                             207.2
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             1.3207      1.331      0.992      0.325      -1.345       3.987
-is_spin_in_abstract               5.3574      1.103      4.857      0.000       3.149       7.566
-regression_detection_variable     2.1264      1.409      1.509      0.137      -0.695       4.948
-==============================================================================
-Omnibus:                       19.852   Durbin-Watson:                   1.816
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):                5.100
-Skew:                          -0.353   Prob(JB):                       0.0781
-Kurtosis:                       1.759   Cond. No.                         17.0
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt35 - overall
-Number of rows with NaN value(s) in gpt35: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.695
-Model:                               OLS   Adj. R-squared:                  0.684
-Method:                    Least Squares   F-statistic:                     64.94
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.01e-15
-Time:                           17:24:30   Log-Likelihood:                -80.064
-No. Observations:                     60   AIC:                             166.1
-Df Residuals:                         57   BIC:                             172.4
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             3.0874      0.996      3.100      0.003       1.093       5.082
-is_spin_in_abstract               3.8565      0.825      4.674      0.000       2.204       5.509
-regression_detection_variable     1.4746      1.054      1.399      0.167      -0.636       3.585
-==============================================================================
-Omnibus:                        2.223   Durbin-Watson:                   1.800
-Prob(Omnibus):                  0.329   Jarque-Bera (JB):                2.175
-Skew:                          -0.418   Prob(JB):                        0.337
-Kurtosis:                       2.587   Cond. No.                         17.0
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt35 - benefit_answer
-Number of rows with NaN value(s) in gpt35: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.710
-Model:                               OLS   Adj. R-squared:                  0.699
-Method:                    Least Squares   F-statistic:                     69.63
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           4.97e-16
-Time:                           17:24:58   Log-Likelihood:                -99.457
-No. Observations:                     60   AIC:                             204.9
-Df Residuals:                         57   BIC:                             211.2
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                            -0.4328      1.376     -0.315      0.754      -3.188       2.323
-is_spin_in_abstract               6.2839      1.140      5.512      0.000       4.001       8.567
-regression_detection_variable     3.1866      1.456      2.189      0.033       0.271       6.102
-==============================================================================
-Omnibus:                        2.158   Durbin-Watson:                   2.000
-Prob(Omnibus):                  0.340   Jarque-Bera (JB):                1.549
-Skew:                          -0.180   Prob(JB):                        0.461
-Kurtosis:                       2.300   Cond. No.                         17.0
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt35 - rigor_answer
-Number of rows with NaN value(s) in gpt35: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.413
-Model:                               OLS   Adj. R-squared:                  0.392
-Method:                    Least Squares   F-statistic:                     20.04
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.56e-07
-Time:                           17:24:58   Log-Likelihood:                -75.848
-No. Observations:                     60   AIC:                             157.7
-Df Residuals:                         57   BIC:                             164.0
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             5.9065      0.928      6.362      0.000       4.047       7.766
-is_spin_in_abstract               1.7496      0.769      2.275      0.027       0.209       3.290
-regression_detection_variable     0.4228      0.982      0.430      0.669      -1.544       2.390
-==============================================================================
-Omnibus:                        2.948   Durbin-Watson:                   1.751
-Prob(Omnibus):                  0.229   Jarque-Bera (JB):                2.714
-Skew:                          -0.515   Prob(JB):                        0.257
-Kurtosis:                       2.842   Cond. No.                         17.0
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt35 - importance_answer
-Number of rows with NaN value(s) in gpt35: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.544
-Model:                               OLS   Adj. R-squared:                  0.528
-Method:                    Least Squares   F-statistic:                     34.01
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           1.90e-10
-Time:                           17:24:58   Log-Likelihood:                -82.516
-No. Observations:                     60   AIC:                             171.0
-Df Residuals:                         57   BIC:                             177.3
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             3.9703      1.038      3.827      0.000       1.893       6.048
-is_spin_in_abstract               3.1086      0.860      3.616      0.001       1.387       4.830
-regression_detection_variable     1.3927      1.098      1.269      0.210      -0.806       3.591
-==============================================================================
-Omnibus:                        3.764   Durbin-Watson:                   1.977
-Prob(Omnibus):                  0.152   Jarque-Bera (JB):                2.802
-Skew:                          -0.441   Prob(JB):                        0.246
-Kurtosis:                       3.585   Cond. No.                         17.0
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt35 - full_text_answer
-Number of rows with NaN value(s) in gpt35: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.529
-Model:                               OLS   Adj. R-squared:                  0.513
-Method:                    Least Squares   F-statistic:                     32.07
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           4.66e-10
-Time:                           17:24:58   Log-Likelihood:                -97.351
-No. Observations:                     60   AIC:                             200.7
-Df Residuals:                         57   BIC:                             207.0
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             4.6722      1.329      3.517      0.001       2.012       7.333
-is_spin_in_abstract               2.7831      1.101      2.528      0.014       0.579       4.987
-regression_detection_variable     0.2447      1.406      0.174      0.862      -2.570       3.060
-==============================================================================
-Omnibus:                        8.173   Durbin-Watson:                   1.492
-Prob(Omnibus):                  0.017   Jarque-Bera (JB):                8.923
-Skew:                          -0.577   Prob(JB):                       0.0115
-Kurtosis:                       4.496   Cond. No.                         17.0
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt35 - another_trial_answer
-Number of rows with NaN value(s) in gpt35: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.705
-Model:                               OLS   Adj. R-squared:                  0.695
-Method:                    Least Squares   F-statistic:                     68.12
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           7.73e-16
-Time:                           17:24:58   Log-Likelihood:                -97.482
-No. Observations:                     60   AIC:                             201.0
-Df Residuals:                         57   BIC:                             207.2
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             1.3207      1.331      0.992      0.325      -1.345       3.987
-is_spin_in_abstract               5.3574      1.103      4.857      0.000       3.149       7.566
-regression_detection_variable     2.1264      1.409      1.509      0.137      -0.695       4.948
-==============================================================================
-Omnibus:                       19.852   Durbin-Watson:                   1.816
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):                5.100
-Skew:                          -0.353   Prob(JB):                       0.0781
-Kurtosis:                       1.759   Cond. No.                         17.0
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt35 - overall
-Number of rows with NaN value(s) in gpt35: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.695
-Model:                               OLS   Adj. R-squared:                  0.684
-Method:                    Least Squares   F-statistic:                     64.94
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.01e-15
-Time:                           17:24:58   Log-Likelihood:                -80.064
-No. Observations:                     60   AIC:                             166.1
-Df Residuals:                         57   BIC:                             172.4
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             3.0874      0.996      3.100      0.003       1.093       5.082
-is_spin_in_abstract               3.8565      0.825      4.674      0.000       2.204       5.509
-regression_detection_variable     1.4746      1.054      1.399      0.167      -0.636       3.585
-==============================================================================
-Omnibus:                        2.223   Durbin-Watson:                   1.800
-Prob(Omnibus):                  0.329   Jarque-Bera (JB):                2.175
-Skew:                          -0.418   Prob(JB):                        0.337
-Kurtosis:                       2.587   Cond. No.                         17.0
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt35 - benefit_answer
-Number of rows with NaN value(s) in gpt35: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.710
-Model:                               OLS   Adj. R-squared:                  0.699
-Method:                    Least Squares   F-statistic:                     69.63
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           4.97e-16
-Time:                           17:25:55   Log-Likelihood:                -99.457
-No. Observations:                     60   AIC:                             204.9
-Df Residuals:                         57   BIC:                             211.2
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                            -0.4328      1.376     -0.315      0.754      -3.188       2.323
-is_spin_in_abstract               6.2839      1.140      5.512      0.000       4.001       8.567
-regression_detection_variable     3.1866      1.456      2.189      0.033       0.271       6.102
-==============================================================================
-Omnibus:                        2.158   Durbin-Watson:                   2.000
-Prob(Omnibus):                  0.340   Jarque-Bera (JB):                1.549
-Skew:                          -0.180   Prob(JB):                        0.461
-Kurtosis:                       2.300   Cond. No.                         17.0
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt35 - rigor_answer
-Number of rows with NaN value(s) in gpt35: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.413
-Model:                               OLS   Adj. R-squared:                  0.392
-Method:                    Least Squares   F-statistic:                     20.04
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.56e-07
-Time:                           17:25:56   Log-Likelihood:                -75.848
-No. Observations:                     60   AIC:                             157.7
-Df Residuals:                         57   BIC:                             164.0
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             5.9065      0.928      6.362      0.000       4.047       7.766
-is_spin_in_abstract               1.7496      0.769      2.275      0.027       0.209       3.290
-regression_detection_variable     0.4228      0.982      0.430      0.669      -1.544       2.390
-==============================================================================
-Omnibus:                        2.948   Durbin-Watson:                   1.751
-Prob(Omnibus):                  0.229   Jarque-Bera (JB):                2.714
-Skew:                          -0.515   Prob(JB):                        0.257
-Kurtosis:                       2.842   Cond. No.                         17.0
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt35 - importance_answer
-Number of rows with NaN value(s) in gpt35: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.544
-Model:                               OLS   Adj. R-squared:                  0.528
-Method:                    Least Squares   F-statistic:                     34.01
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           1.90e-10
-Time:                           17:25:56   Log-Likelihood:                -82.516
-No. Observations:                     60   AIC:                             171.0
-Df Residuals:                         57   BIC:                             177.3
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             3.9703      1.038      3.827      0.000       1.893       6.048
-is_spin_in_abstract               3.1086      0.860      3.616      0.001       1.387       4.830
-regression_detection_variable     1.3927      1.098      1.269      0.210      -0.806       3.591
-==============================================================================
-Omnibus:                        3.764   Durbin-Watson:                   1.977
-Prob(Omnibus):                  0.152   Jarque-Bera (JB):                2.802
-Skew:                          -0.441   Prob(JB):                        0.246
-Kurtosis:                       3.585   Cond. No.                         17.0
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt35 - full_text_answer
-Number of rows with NaN value(s) in gpt35: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.529
-Model:                               OLS   Adj. R-squared:                  0.513
-Method:                    Least Squares   F-statistic:                     32.07
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           4.66e-10
-Time:                           17:25:56   Log-Likelihood:                -97.351
-No. Observations:                     60   AIC:                             200.7
-Df Residuals:                         57   BIC:                             207.0
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             4.6722      1.329      3.517      0.001       2.012       7.333
-is_spin_in_abstract               2.7831      1.101      2.528      0.014       0.579       4.987
-regression_detection_variable     0.2447      1.406      0.174      0.862      -2.570       3.060
-==============================================================================
-Omnibus:                        8.173   Durbin-Watson:                   1.492
-Prob(Omnibus):                  0.017   Jarque-Bera (JB):                8.923
-Skew:                          -0.577   Prob(JB):                       0.0115
-Kurtosis:                       4.496   Cond. No.                         17.0
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt35 - another_trial_answer
-Number of rows with NaN value(s) in gpt35: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.705
-Model:                               OLS   Adj. R-squared:                  0.695
-Method:                    Least Squares   F-statistic:                     68.12
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           7.73e-16
-Time:                           17:25:56   Log-Likelihood:                -97.482
-No. Observations:                     60   AIC:                             201.0
-Df Residuals:                         57   BIC:                             207.2
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             1.3207      1.331      0.992      0.325      -1.345       3.987
-is_spin_in_abstract               5.3574      1.103      4.857      0.000       3.149       7.566
-regression_detection_variable     2.1264      1.409      1.509      0.137      -0.695       4.948
-==============================================================================
-Omnibus:                       19.852   Durbin-Watson:                   1.816
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):                5.100
-Skew:                          -0.353   Prob(JB):                       0.0781
-Kurtosis:                       1.759   Cond. No.                         17.0
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt35 - overall
-Number of rows with NaN value(s) in gpt35: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.695
-Model:                               OLS   Adj. R-squared:                  0.684
-Method:                    Least Squares   F-statistic:                     64.94
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.01e-15
-Time:                           17:25:56   Log-Likelihood:                -80.064
-No. Observations:                     60   AIC:                             166.1
-Df Residuals:                         57   BIC:                             172.4
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             3.0874      0.996      3.100      0.003       1.093       5.082
-is_spin_in_abstract               3.8565      0.825      4.674      0.000       2.204       5.509
-regression_detection_variable     1.4746      1.054      1.399      0.167      -0.636       3.585
-==============================================================================
-Omnibus:                        2.223   Durbin-Watson:                   1.800
-Prob(Omnibus):                  0.329   Jarque-Bera (JB):                2.175
-Skew:                          -0.418   Prob(JB):                        0.337
-Kurtosis:                       2.587   Cond. No.                         17.0
+Omnibus:                        1.674   Durbin-Watson:                   1.795
+Prob(Omnibus):                  0.433   Jarque-Bera (JB):                1.674
+Skew:                          -0.358   Prob(JB):                        0.433
+Kurtosis:                       2.605   Cond. No.                         49.8
 ==============================================================================
 
 Notes:

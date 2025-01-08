@@ -1,0 +1,174 @@
+Model: med42-8B - benefit_answer
+Number of rows with NaN value(s) in med42-8B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.668
+Model:                               OLS   Adj. R-squared:                  0.650
+Method:                    Least Squares   F-statistic:                     37.59
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           1.92e-13
+Time:                           19:56:34   Log-Likelihood:                -88.585
+No. Observations:                     60   AIC:                             185.2
+Df Residuals:                         56   BIC:                             193.5
+Df Model:                              3                                         
+Covariance Type:               nonrobust                                         
+=====================================================================================================================
+                                                        coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------
+Intercept                                             1.7125     14.745      0.116      0.908     -27.825      31.250
+is_spin_in_abstract                                   4.4355     14.747      0.301      0.765     -25.107      33.978
+regression_detection_variable                         1.8176     15.277      0.119      0.906     -28.786      32.421
+is_spin_in_abstract:regression_detection_variable    -0.5673     15.295     -0.037      0.971     -31.206      30.072
+==============================================================================
+Omnibus:                        6.297   Durbin-Watson:                   1.837
+Prob(Omnibus):                  0.043   Jarque-Bera (JB):                6.251
+Skew:                          -0.746   Prob(JB):                       0.0439
+Kurtosis:                       2.479   Cond. No.                         271.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: med42-8B - rigor_answer
+Number of rows with NaN value(s) in med42-8B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.140
+Model:                               OLS   Adj. R-squared:                  0.094
+Method:                    Least Squares   F-statistic:                     3.035
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):             0.0365
+Time:                           19:56:34   Log-Likelihood:                -44.386
+No. Observations:                     60   AIC:                             96.77
+Df Residuals:                         56   BIC:                             105.1
+Df Model:                              3                                         
+Covariance Type:               nonrobust                                         
+=====================================================================================================================
+                                                        coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------
+Intercept                                            -0.7267      7.059     -0.103      0.918     -14.867      13.413
+is_spin_in_abstract                                   8.4222      7.060      1.193      0.238      -5.720      22.565
+regression_detection_variable                         8.4899      7.313      1.161      0.251      -6.161      23.140
+is_spin_in_abstract:regression_detection_variable    -8.0320      7.322     -1.097      0.277     -22.699       6.635
+==============================================================================
+Omnibus:                        7.174   Durbin-Watson:                   1.046
+Prob(Omnibus):                  0.028   Jarque-Bera (JB):                7.050
+Skew:                          -0.839   Prob(JB):                       0.0294
+Kurtosis:                       3.040   Cond. No.                         271.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: med42-8B - importance_answer
+Number of rows with NaN value(s) in med42-8B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.481
+Model:                               OLS   Adj. R-squared:                  0.453
+Method:                    Least Squares   F-statistic:                     17.29
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           4.55e-08
+Time:                           19:56:34   Log-Likelihood:                -75.058
+No. Observations:                     60   AIC:                             158.1
+Df Residuals:                         56   BIC:                             166.5
+Df Model:                              3                                         
+Covariance Type:               nonrobust                                         
+=====================================================================================================================
+                                                        coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------
+Intercept                                            14.7379     11.769      1.252      0.216      -8.838      38.314
+is_spin_in_abstract                                  -7.7782     11.771     -0.661      0.511     -31.358      15.801
+regression_detection_variable                        -9.5722     12.194     -0.785      0.436     -33.999      14.854
+is_spin_in_abstract:regression_detection_variable    10.1873     12.208      0.835      0.408     -14.267      34.642
+==============================================================================
+Omnibus:                        8.311   Durbin-Watson:                   2.190
+Prob(Omnibus):                  0.016   Jarque-Bera (JB):                5.907
+Skew:                          -0.632   Prob(JB):                       0.0522
+Kurtosis:                       2.126   Cond. No.                         271.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: med42-8B - full_text_answer
+Number of rows with NaN value(s) in med42-8B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.600
+Model:                               OLS   Adj. R-squared:                  0.579
+Method:                    Least Squares   F-statistic:                     28.04
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           3.33e-11
+Time:                           19:56:34   Log-Likelihood:                -61.749
+No. Observations:                     60   AIC:                             131.5
+Df Residuals:                         56   BIC:                             139.9
+Df Model:                              3                                         
+Covariance Type:               nonrobust                                         
+=====================================================================================================================
+                                                        coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------
+Intercept                                            14.8897      9.428      1.579      0.120      -3.996      33.775
+is_spin_in_abstract                                  -8.7537      9.429     -0.928      0.357     -27.642      10.135
+regression_detection_variable                       -10.6275      9.768     -1.088      0.281     -30.195       8.940
+is_spin_in_abstract:regression_detection_variable    11.2002      9.779      1.145      0.257      -8.390      30.790
+==============================================================================
+Omnibus:                        4.318   Durbin-Watson:                   1.762
+Prob(Omnibus):                  0.115   Jarque-Bera (JB):                4.188
+Skew:                           0.636   Prob(JB):                        0.123
+Kurtosis:                       2.764   Cond. No.                         271.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: med42-8B - another_trial_answer
+Number of rows with NaN value(s) in med42-8B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.752
+Model:                               OLS   Adj. R-squared:                  0.739
+Method:                    Least Squares   F-statistic:                     56.65
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           5.74e-17
+Time:                           19:56:34   Log-Likelihood:                -77.386
+No. Observations:                     60   AIC:                             162.8
+Df Residuals:                         56   BIC:                             171.2
+Df Model:                              3                                         
+Covariance Type:               nonrobust                                         
+=====================================================================================================================
+                                                        coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------
+Intercept                                            20.5793     12.235      1.682      0.098      -3.929      45.088
+is_spin_in_abstract                                 -13.7063     12.236     -1.120      0.267     -38.219      10.806
+regression_detection_variable                       -17.1793     12.676     -1.355      0.181     -42.573       8.214
+is_spin_in_abstract:regression_detection_variable    17.8816     12.691      1.409      0.164      -7.541      43.304
+==============================================================================
+Omnibus:                       19.147   Durbin-Watson:                   1.807
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               27.667
+Skew:                          -1.167   Prob(JB):                     9.82e-07
+Kurtosis:                       5.371   Cond. No.                         271.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: med42-8B - overall
+Number of rows with NaN value(s) in med42-8B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.716
+Model:                               OLS   Adj. R-squared:                  0.701
+Method:                    Least Squares   F-statistic:                     47.02
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.58e-15
+Time:                           19:56:34   Log-Likelihood:                -55.471
+No. Observations:                     60   AIC:                             118.9
+Df Residuals:                         56   BIC:                             127.3
+Df Model:                              3                                         
+Covariance Type:               nonrobust                                         
+=====================================================================================================================
+                                                        coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------
+Intercept                                            10.2385      8.491      1.206      0.233      -6.771      27.248
+is_spin_in_abstract                                  -3.4761      8.492     -0.409      0.684     -20.488      13.536
+regression_detection_variable                        -5.4143      8.797     -0.615      0.541     -23.038      12.209
+is_spin_in_abstract:regression_detection_variable     6.1340      8.808      0.696      0.489     -11.510      23.778
+==============================================================================
+Omnibus:                        4.549   Durbin-Watson:                   1.798
+Prob(Omnibus):                  0.103   Jarque-Bera (JB):                2.741
+Skew:                          -0.317   Prob(JB):                        0.254
+Kurtosis:                       2.167   Cond. No.                         271.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

@@ -6,26 +6,29 @@ Dep. Variable:     interpretation_answer   R-squared:                       0.66
 Model:                               OLS   Adj. R-squared:                  0.648
 Method:                    Least Squares   F-statistic:                     55.40
 Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           4.32e-14
-Time:                           17:23:12   Log-Likelihood:                -89.289
+Time:                           19:56:31   Log-Likelihood:                -89.289
 No. Observations:                     60   AIC:                             184.6
 Df Residuals:                         57   BIC:                             190.9
 Df Model:                              2                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    2.7867      0.575      4.848      0.000       1.636       3.938
-is_spin_in_abstract      3.5333      0.531      6.653      0.000       2.470       4.597
-is_detection_correct     0.6800      0.539      1.262      0.212      -0.399       1.759
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    3.1433      0.193     16.281      0.000       2.757       3.530
+is_spin_in_abstract                          3.1767      0.193     16.454      0.000       2.790       3.563
+is_detection_correct                         0.3233      0.193      1.675      0.099      -0.063       0.710
+is_spin_in_abstract:is_detection_correct     0.3567      0.398      0.897      0.374      -0.440       1.153
 ==============================================================================
 Omnibus:                        6.341   Durbin-Watson:                   1.809
 Prob(Omnibus):                  0.042   Jarque-Bera (JB):                6.396
 Skew:                          -0.764   Prob(JB):                       0.0408
-Kurtosis:                       2.528   Cond. No.                         8.21
+Kurtosis:                       2.528   Cond. No.                     1.02e+16
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 9.39e-31. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
 Model: med42-8B - rigor_answer
 Number of rows with NaN value(s) in med42-8B: 0
                               OLS Regression Results                             
@@ -34,26 +37,29 @@ Dep. Variable:     interpretation_answer   R-squared:                       0.10
 Model:                               OLS   Adj. R-squared:                  0.075
 Method:                    Least Squares   F-statistic:                     3.391
 Date:                   Tue, 07 Jan 2025   Prob (F-statistic):             0.0406
-Time:                           17:23:12   Log-Likelihood:                -45.534
+Time:                           19:56:31   Log-Likelihood:                -45.534
 No. Observations:                     60   AIC:                             97.07
 Df Residuals:                         57   BIC:                             103.4
 Df Model:                              2                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    7.2267      0.277     26.068      0.000       6.672       7.782
-is_spin_in_abstract      0.5333      0.256      2.082      0.042       0.020       1.046
-is_detection_correct     0.2400      0.260      0.924      0.359      -0.280       0.760
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    5.6133      0.093     60.287      0.000       5.427       5.800
+is_spin_in_abstract                          2.1467      0.093     23.055      0.000       1.960       2.333
+is_detection_correct                         1.8533      0.093     19.905      0.000       1.667       2.040
+is_spin_in_abstract:is_detection_correct    -1.6133      0.192     -8.412      0.000      -1.997      -1.229
 ==============================================================================
 Omnibus:                        8.123   Durbin-Watson:                   0.949
 Prob(Omnibus):                  0.017   Jarque-Bera (JB):                8.156
 Skew:                          -0.902   Prob(JB):                       0.0169
-Kurtosis:                       3.079   Cond. No.                         8.21
+Kurtosis:                       3.079   Cond. No.                     1.02e+16
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 9.39e-31. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
 Model: med42-8B - importance_answer
 Number of rows with NaN value(s) in med42-8B: 0
                               OLS Regression Results                             
@@ -62,26 +68,29 @@ Dep. Variable:     interpretation_answer   R-squared:                       0.47
 Model:                               OLS   Adj. R-squared:                  0.453
 Method:                    Least Squares   F-statistic:                     25.42
 Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           1.28e-08
-Time:                           17:23:12   Log-Likelihood:                -75.599
+Time:                           19:56:31   Log-Likelihood:                -75.599
 No. Observations:                     60   AIC:                             157.2
 Df Residuals:                         57   BIC:                             163.5
 Df Model:                              2                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    5.1400      0.458     11.233      0.000       4.224       6.056
-is_spin_in_abstract      1.9000      0.423      4.494      0.000       1.053       2.747
-is_detection_correct     0.3600      0.429      0.840      0.405      -0.499       1.219
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    4.4200      0.154     28.761      0.000       4.112       4.728
+is_spin_in_abstract                          2.6200      0.154     17.049      0.000       2.312       2.928
+is_detection_correct                         1.0800      0.154      7.028      0.000       0.772       1.388
+is_spin_in_abstract:is_detection_correct    -0.7200      0.317     -2.274      0.027      -1.354      -0.086
 ==============================================================================
 Omnibus:                        9.311   Durbin-Watson:                   2.177
 Prob(Omnibus):                  0.010   Jarque-Bera (JB):                6.249
 Skew:                          -0.643   Prob(JB):                       0.0440
-Kurtosis:                       2.081   Cond. No.                         8.21
+Kurtosis:                       2.081   Cond. No.                     1.02e+16
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 9.39e-31. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
 Model: med42-8B - full_text_answer
 Number of rows with NaN value(s) in med42-8B: 0
                               OLS Regression Results                             
@@ -90,26 +99,29 @@ Dep. Variable:     interpretation_answer   R-squared:                       0.58
 Model:                               OLS   Adj. R-squared:                  0.568
 Method:                    Least Squares   F-statistic:                     39.81
 Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           1.52e-11
-Time:                           17:23:12   Log-Likelihood:                -63.041
+Time:                           19:56:31   Log-Likelihood:                -63.041
 No. Observations:                     60   AIC:                             132.1
 Df Residuals:                         57   BIC:                             138.4
 Df Model:                              2                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    4.4733      0.371     12.053      0.000       3.730       5.217
-is_spin_in_abstract      1.7667      0.343      5.152      0.000       1.080       2.453
-is_detection_correct     0.1600      0.348      0.460      0.647      -0.536       0.856
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    3.8367      0.125     30.778      0.000       3.587       4.086
+is_spin_in_abstract                          2.4033      0.125     19.280      0.000       2.154       2.653
+is_detection_correct                         0.7967      0.125      6.391      0.000       0.547       1.046
+is_spin_in_abstract:is_detection_correct    -0.6367      0.257     -2.479      0.016      -1.151      -0.122
 ==============================================================================
 Omnibus:                        6.608   Durbin-Watson:                   1.708
 Prob(Omnibus):                  0.037   Jarque-Bera (JB):                6.325
 Skew:                           0.795   Prob(JB):                       0.0423
-Kurtosis:                       3.069   Cond. No.                         8.21
+Kurtosis:                       3.069   Cond. No.                     1.02e+16
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 9.39e-31. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
 Model: med42-8B - another_trial_answer
 Number of rows with NaN value(s) in med42-8B: 0
                               OLS Regression Results                             
@@ -118,26 +130,29 @@ Dep. Variable:     interpretation_answer   R-squared:                       0.74
 Model:                               OLS   Adj. R-squared:                  0.733
 Method:                    Least Squares   F-statistic:                     82.15
 Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           1.62e-17
-Time:                           17:23:12   Log-Likelihood:                -78.542
+Time:                           19:56:31   Log-Likelihood:                -78.542
 No. Observations:                     60   AIC:                             163.1
 Df Residuals:                         57   BIC:                             169.4
 Df Model:                              2                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    3.5600      0.481      7.408      0.000       2.598       4.522
-is_spin_in_abstract      3.4000      0.444      7.657      0.000       2.511       4.289
-is_detection_correct     0.4400      0.450      0.977      0.333      -0.462       1.342
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    3.6300      0.161     22.490      0.000       3.307       3.953
+is_spin_in_abstract                          3.3300      0.161     20.631      0.000       3.007       3.653
+is_detection_correct                         0.3700      0.161      2.292      0.026       0.047       0.693
+is_spin_in_abstract:is_detection_correct     0.0700      0.332      0.211      0.834      -0.596       0.736
 ==============================================================================
 Omnibus:                       18.052   Durbin-Watson:                   1.890
 Prob(Omnibus):                  0.000   Jarque-Bera (JB):               26.447
 Skew:                          -1.083   Prob(JB):                     1.81e-06
-Kurtosis:                       5.427   Cond. No.                         8.21
+Kurtosis:                       5.427   Cond. No.                     1.02e+16
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 9.39e-31. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
 Model: med42-8B - overall
 Number of rows with NaN value(s) in med42-8B: 0
                               OLS Regression Results                             
@@ -146,23 +161,26 @@ Dep. Variable:     interpretation_answer   R-squared:                       0.70
 Model:                               OLS   Adj. R-squared:                  0.696
 Method:                    Least Squares   F-statistic:                     68.64
 Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           6.64e-16
-Time:                           17:23:12   Log-Likelihood:                -56.428
+Time:                           19:56:31   Log-Likelihood:                -56.428
 No. Observations:                     60   AIC:                             118.9
 Df Residuals:                         57   BIC:                             125.1
 Df Model:                              2                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    4.6373      0.332     13.950      0.000       3.972       5.303
-is_spin_in_abstract      2.2267      0.307      7.250      0.000       1.612       2.842
-is_detection_correct     0.3760      0.311      1.207      0.232      -0.248       1.000
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    4.1287      0.112     36.979      0.000       3.905       4.352
+is_spin_in_abstract                          2.7353      0.112     24.499      0.000       2.512       2.959
+is_detection_correct                         0.8847      0.112      7.924      0.000       0.661       1.108
+is_spin_in_abstract:is_detection_correct    -0.5087      0.230     -2.212      0.031      -0.969      -0.048
 ==============================================================================
 Omnibus:                        3.366   Durbin-Watson:                   1.795
 Prob(Omnibus):                  0.186   Jarque-Bera (JB):                2.250
 Skew:                          -0.282   Prob(JB):                        0.325
-Kurtosis:                       2.237   Cond. No.                         8.21
+Kurtosis:                       2.237   Cond. No.                     1.02e+16
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 9.39e-31. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.

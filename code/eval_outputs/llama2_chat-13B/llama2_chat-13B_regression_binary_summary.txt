@@ -2,26 +2,27 @@ Model: llama2_chat-13B - benefit_answer
 Number of rows with NaN value(s) in llama2_chat-13B: 0
                               OLS Regression Results                             
 =================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.638
-Model:                               OLS   Adj. R-squared:                  0.625
-Method:                    Least Squares   F-statistic:                     50.23
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.65e-13
-Time:                           17:23:12   Log-Likelihood:                -91.159
-No. Observations:                     60   AIC:                             188.3
-Df Residuals:                         57   BIC:                             194.6
-Df Model:                              2                                         
+Dep. Variable:     interpretation_answer   R-squared:                       0.663
+Model:                               OLS   Adj. R-squared:                  0.645
+Method:                    Least Squares   F-statistic:                     36.66
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           3.04e-13
+Time:                           19:56:30   Log-Likelihood:                -89.045
+No. Observations:                     60   AIC:                             186.1
+Df Residuals:                         56   BIC:                             194.5
+Df Model:                              3                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    2.2009      0.223      9.857      0.000       1.754       2.648
-is_spin_in_abstract      2.7775      0.496      5.598      0.000       1.784       3.771
-is_detection_correct     0.1948      0.501      0.389      0.699      -0.808       1.197
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    2.2800      0.221     10.319      0.000       1.837       2.723
+is_spin_in_abstract                          0.7200      1.127      0.639      0.525      -1.537       2.977
+is_detection_correct                        -0.2800      0.541     -0.517      0.607      -1.364       0.804
+is_spin_in_abstract:is_detection_correct     2.5214      1.247      2.022      0.048       0.023       5.020
 ==============================================================================
-Omnibus:                        7.261   Durbin-Watson:                   2.023
-Prob(Omnibus):                  0.027   Jarque-Bera (JB):                7.863
-Skew:                           0.505   Prob(JB):                       0.0196
-Kurtosis:                       4.458   Cond. No.                         6.09
+Omnibus:                        8.052   Durbin-Watson:                   1.995
+Prob(Omnibus):                  0.018   Jarque-Bera (JB):               10.219
+Skew:                           0.476   Prob(JB):                      0.00604
+Kurtosis:                       4.784   Cond. No.                         17.0
 ==============================================================================
 
 Notes:
@@ -30,26 +31,27 @@ Model: llama2_chat-13B - rigor_answer
 Number of rows with NaN value(s) in llama2_chat-13B: 0
                               OLS Regression Results                             
 =================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.254
-Model:                               OLS   Adj. R-squared:                  0.228
-Method:                    Least Squares   F-statistic:                     9.716
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           0.000234
-Time:                           17:23:12   Log-Likelihood:                -70.250
-No. Observations:                     60   AIC:                             146.5
-Df Residuals:                         57   BIC:                             152.8
-Df Model:                              2                                         
+Dep. Variable:     interpretation_answer   R-squared:                       0.255
+Model:                               OLS   Adj. R-squared:                  0.215
+Method:                    Least Squares   F-statistic:                     6.377
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           0.000854
+Time:                           19:56:30   Log-Likelihood:                -70.234
+No. Observations:                     60   AIC:                             148.5
+Df Residuals:                         56   BIC:                             156.8
+Df Model:                              3                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    6.7950      0.158     43.122      0.000       6.479       7.111
-is_spin_in_abstract      0.3294      0.350      0.941      0.351      -0.372       1.031
-is_detection_correct     0.6299      0.353      1.783      0.080      -0.078       1.337
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    6.8000      0.161     42.108      0.000       6.476       7.124
+is_spin_in_abstract                          0.2000      0.823      0.243      0.809      -1.450       1.850
+is_detection_correct                         0.6000      0.396      1.517      0.135      -0.192       1.392
+is_spin_in_abstract:is_detection_correct     0.1586      0.912      0.174      0.862      -1.667       1.985
 ==============================================================================
-Omnibus:                        4.089   Durbin-Watson:                   1.773
-Prob(Omnibus):                  0.129   Jarque-Bera (JB):                2.804
-Skew:                           0.360   Prob(JB):                        0.246
-Kurtosis:                       2.224   Cond. No.                         6.09
+Omnibus:                        3.864   Durbin-Watson:                   1.768
+Prob(Omnibus):                  0.145   Jarque-Bera (JB):                2.702
+Skew:                           0.354   Prob(JB):                        0.259
+Kurtosis:                       2.238   Cond. No.                         17.0
 ==============================================================================
 
 Notes:
@@ -59,25 +61,26 @@ Number of rows with NaN value(s) in llama2_chat-13B: 0
                               OLS Regression Results                             
 =================================================================================
 Dep. Variable:     interpretation_answer   R-squared:                       0.627
-Model:                               OLS   Adj. R-squared:                  0.614
-Method:                    Least Squares   F-statistic:                     47.99
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           6.03e-13
-Time:                           17:23:12   Log-Likelihood:                -70.496
-No. Observations:                     60   AIC:                             147.0
-Df Residuals:                         57   BIC:                             153.3
-Df Model:                              2                                         
+Model:                               OLS   Adj. R-squared:                  0.608
+Method:                    Least Squares   F-statistic:                     31.44
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           4.75e-12
+Time:                           19:56:30   Log-Likelihood:                -70.489
+No. Observations:                     60   AIC:                             149.0
+Df Residuals:                         56   BIC:                             157.4
+Df Model:                              3                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    4.0366      0.158     25.512      0.000       3.720       4.353
-is_spin_in_abstract      2.0489      0.352      5.827      0.000       1.345       2.753
-is_detection_correct    -0.0195      0.355     -0.055      0.956      -0.730       0.691
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    4.0400      0.162     24.911      0.000       3.715       4.365
+is_spin_in_abstract                          1.9600      0.827      2.370      0.021       0.303       3.617
+is_detection_correct                        -0.0400      0.397     -0.101      0.920      -0.836       0.756
+is_spin_in_abstract:is_detection_correct     0.1090      0.915      0.119      0.906      -1.725       1.943
 ==============================================================================
-Omnibus:                        9.267   Durbin-Watson:                   1.585
-Prob(Omnibus):                  0.010   Jarque-Bera (JB):               21.535
-Skew:                          -0.134   Prob(JB):                     2.11e-05
-Kurtosis:                       5.923   Cond. No.                         6.09
+Omnibus:                        9.319   Durbin-Watson:                   1.579
+Prob(Omnibus):                  0.009   Jarque-Bera (JB):               21.634
+Skew:                          -0.146   Prob(JB):                     2.01e-05
+Kurtosis:                       5.927   Cond. No.                         17.0
 ==============================================================================
 
 Notes:
@@ -86,26 +89,27 @@ Model: llama2_chat-13B - full_text_answer
 Number of rows with NaN value(s) in llama2_chat-13B: 0
                               OLS Regression Results                             
 =================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.621
-Model:                               OLS   Adj. R-squared:                  0.608
-Method:                    Least Squares   F-statistic:                     46.78
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           9.51e-13
-Time:                           17:23:12   Log-Likelihood:                -80.588
-No. Observations:                     60   AIC:                             167.2
-Df Residuals:                         57   BIC:                             173.5
-Df Model:                              2                                         
+Dep. Variable:     interpretation_answer   R-squared:                       0.668
+Model:                               OLS   Adj. R-squared:                  0.650
+Method:                    Least Squares   F-statistic:                     37.57
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           1.94e-13
+Time:                           19:56:30   Log-Likelihood:                -76.643
+No. Observations:                     60   AIC:                             161.3
+Df Residuals:                         56   BIC:                             169.7
+Df Model:                              3                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    3.5907      0.187     19.180      0.000       3.216       3.966
-is_spin_in_abstract      2.6420      0.416      6.351      0.000       1.809       3.475
-is_detection_correct    -0.3442      0.420     -0.820      0.416      -1.185       0.496
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    3.6800      0.180     20.479      0.000       3.320       4.040
+is_spin_in_abstract                          0.3200      0.916      0.349      0.728      -1.515       2.155
+is_detection_correct                        -0.8800      0.440     -1.999      0.050      -1.762       0.002
+is_spin_in_abstract:is_detection_correct     2.8455      1.014      2.805      0.007       0.814       4.877
 ==============================================================================
-Omnibus:                        4.360   Durbin-Watson:                   2.207
-Prob(Omnibus):                  0.113   Jarque-Bera (JB):                3.487
-Skew:                          -0.427   Prob(JB):                        0.175
-Kurtosis:                       3.815   Cond. No.                         6.09
+Omnibus:                        4.963   Durbin-Watson:                   2.101
+Prob(Omnibus):                  0.084   Jarque-Bera (JB):                4.949
+Skew:                          -0.328   Prob(JB):                       0.0842
+Kurtosis:                       4.245   Cond. No.                         17.0
 ==============================================================================
 
 Notes:
@@ -114,26 +118,27 @@ Model: llama2_chat-13B - another_trial_answer
 Number of rows with NaN value(s) in llama2_chat-13B: 0
                               OLS Regression Results                             
 =================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.748
-Model:                               OLS   Adj. R-squared:                  0.739
-Method:                    Least Squares   F-statistic:                     84.58
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           8.75e-18
-Time:                           17:23:12   Log-Likelihood:                -72.183
-No. Observations:                     60   AIC:                             150.4
-Df Residuals:                         57   BIC:                             156.6
-Df Model:                              2                                         
+Dep. Variable:     interpretation_answer   R-squared:                       0.793
+Model:                               OLS   Adj. R-squared:                  0.782
+Method:                    Least Squares   F-statistic:                     71.72
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           3.57e-19
+Time:                           19:56:31   Log-Likelihood:                -66.208
+No. Observations:                     60   AIC:                             140.4
+Df Residuals:                         56   BIC:                             148.8
+Df Model:                              3                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    3.2660      0.163     20.069      0.000       2.940       3.592
-is_spin_in_abstract      3.0835      0.362      8.526      0.000       2.359       3.808
-is_detection_correct    -0.3961      0.365     -1.085      0.282      -1.127       0.335
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    3.3600      0.151     22.250      0.000       3.057       3.663
+is_spin_in_abstract                          0.6400      0.770      0.831      0.409      -0.902       2.182
+is_detection_correct                        -0.9600      0.370     -2.595      0.012      -1.701      -0.219
+is_spin_in_abstract:is_detection_correct     2.9945      0.852      3.513      0.001       1.287       4.702
 ==============================================================================
-Omnibus:                        7.843   Durbin-Watson:                   1.846
-Prob(Omnibus):                  0.020   Jarque-Bera (JB):                7.794
-Skew:                          -0.882   Prob(JB):                       0.0203
-Kurtosis:                       3.085   Cond. No.                         6.09
+Omnibus:                        6.643   Durbin-Watson:                   2.013
+Prob(Omnibus):                  0.036   Jarque-Bera (JB):                5.956
+Skew:                          -0.754   Prob(JB):                       0.0509
+Kurtosis:                       3.333   Cond. No.                         17.0
 ==============================================================================
 
 Notes:
@@ -142,26 +147,27 @@ Model: llama2_chat-13B - overall
 Number of rows with NaN value(s) in llama2_chat-13B: 0
                               OLS Regression Results                             
 =================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.734
-Model:                               OLS   Adj. R-squared:                  0.724
-Method:                    Least Squares   F-statistic:                     78.52
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           4.20e-17
-Time:                           17:23:12   Log-Likelihood:                -60.088
-No. Observations:                     60   AIC:                             126.2
-Df Residuals:                         57   BIC:                             132.5
-Df Model:                              2                                         
+Dep. Variable:     interpretation_answer   R-squared:                       0.758
+Model:                               OLS   Adj. R-squared:                  0.745
+Method:                    Least Squares   F-statistic:                     58.34
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           3.10e-17
+Time:                           19:56:31   Log-Likelihood:                -57.266
+No. Observations:                     60   AIC:                             122.5
+Df Residuals:                         56   BIC:                             130.9
+Df Model:                              3                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    3.9778      0.133     29.903      0.000       3.711       4.244
-is_spin_in_abstract      2.1763      0.296      7.362      0.000       1.584       2.768
-is_detection_correct     0.0130      0.298      0.044      0.965      -0.584       0.610
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    4.0320      0.130     30.991      0.000       3.771       4.293
+is_spin_in_abstract                          0.7680      0.663      1.158      0.252      -0.561       2.097
+is_detection_correct                        -0.3120      0.319     -0.979      0.332      -0.950       0.326
+is_spin_in_abstract:is_detection_correct     1.7258      0.734      2.350      0.022       0.255       3.197
 ==============================================================================
-Omnibus:                        1.459   Durbin-Watson:                   2.061
-Prob(Omnibus):                  0.482   Jarque-Bera (JB):                0.752
-Skew:                           0.095   Prob(JB):                        0.687
-Kurtosis:                       3.515   Cond. No.                         6.09
+Omnibus:                        2.326   Durbin-Watson:                   2.013
+Prob(Omnibus):                  0.313   Jarque-Bera (JB):                1.683
+Skew:                           0.077   Prob(JB):                        0.431
+Kurtosis:                       3.806   Cond. No.                         17.0
 ==============================================================================
 
 Notes:

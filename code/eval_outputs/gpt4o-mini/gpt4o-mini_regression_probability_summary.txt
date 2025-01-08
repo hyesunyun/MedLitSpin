@@ -2,26 +2,27 @@ Model: gpt4o-mini - benefit_answer
 Number of rows with NaN value(s) in gpt4o-mini: 0
                               OLS Regression Results                             
 =================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.679
-Model:                               OLS   Adj. R-squared:                  0.668
-Method:                    Least Squares   F-statistic:                     60.33
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           8.49e-15
-Time:                           17:23:17   Log-Likelihood:                -97.633
-No. Observations:                     60   AIC:                             201.3
-Df Residuals:                         57   BIC:                             207.5
-Df Model:                              2                                         
+Dep. Variable:     interpretation_answer   R-squared:                       0.687
+Model:                               OLS   Adj. R-squared:                  0.670
+Method:                    Least Squares   F-statistic:                     40.88
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           3.95e-14
+Time:                           19:56:33   Log-Likelihood:                -96.937
+No. Observations:                     60   AIC:                             201.9
+Df Residuals:                         56   BIC:                             210.3
+Df Model:                              3                                         
 Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             2.5368      0.496      5.114      0.000       1.543       3.530
-is_spin_in_abstract               3.7347      0.362     10.316      0.000       3.010       4.460
-regression_detection_variable    -0.6658      0.622     -1.071      0.289      -1.911       0.580
+=====================================================================================================================
+                                                        coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------
+Intercept                                             2.6920      0.513      5.249      0.000       1.665       3.719
+is_spin_in_abstract                                   1.3731      2.091      0.657      0.514      -2.815       5.561
+regression_detection_variable                        -0.8856      0.649     -1.364      0.178      -2.186       0.415
+is_spin_in_abstract:regression_detection_variable     2.5219      2.199      1.147      0.256      -1.884       6.928
 ==============================================================================
-Omnibus:                        3.593   Durbin-Watson:                   1.674
-Prob(Omnibus):                  0.166   Jarque-Bera (JB):                2.017
-Skew:                          -0.181   Prob(JB):                        0.365
-Kurtosis:                       2.178   Cond. No.                         6.86
+Omnibus:                        3.334   Durbin-Watson:                   1.675
+Prob(Omnibus):                  0.189   Jarque-Bera (JB):                1.976
+Skew:                          -0.195   Prob(JB):                        0.372
+Kurtosis:                       2.201   Cond. No.                         28.7
 ==============================================================================
 
 Notes:
@@ -30,26 +31,27 @@ Model: gpt4o-mini - rigor_answer
 Number of rows with NaN value(s) in gpt4o-mini: 0
                               OLS Regression Results                             
 =================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.361
-Model:                               OLS   Adj. R-squared:                  0.338
-Method:                    Least Squares   F-statistic:                     16.09
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.88e-06
-Time:                           17:23:17   Log-Likelihood:                -83.870
-No. Observations:                     60   AIC:                             173.7
-Df Residuals:                         57   BIC:                             180.0
-Df Model:                              2                                         
+Dep. Variable:     interpretation_answer   R-squared:                       0.362
+Model:                               OLS   Adj. R-squared:                  0.328
+Method:                    Least Squares   F-statistic:                     10.59
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           1.29e-05
+Time:                           19:56:33   Log-Likelihood:                -83.821
+No. Observations:                     60   AIC:                             175.6
+Df Residuals:                         56   BIC:                             184.0
+Df Model:                              3                                         
 Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             5.1064      0.394     12.948      0.000       4.317       5.896
-is_spin_in_abstract               1.4094      0.288      4.897      0.000       0.833       1.986
-regression_detection_variable     0.2270      0.494      0.459      0.648      -0.763       1.217
+=====================================================================================================================
+                                                        coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------
+Intercept                                             5.1393      0.412     12.469      0.000       4.314       5.965
+is_spin_in_abstract                                   0.9079      1.680      0.540      0.591      -2.458       4.274
+regression_detection_variable                         0.1804      0.522      0.346      0.731      -0.865       1.225
+is_spin_in_abstract:regression_detection_variable     0.5355      1.767      0.303      0.763      -3.005       4.076
 ==============================================================================
-Omnibus:                        0.859   Durbin-Watson:                   1.215
-Prob(Omnibus):                  0.651   Jarque-Bera (JB):                0.770
-Skew:                          -0.268   Prob(JB):                        0.680
-Kurtosis:                       2.854   Cond. No.                         6.86
+Omnibus:                        0.883   Durbin-Watson:                   1.226
+Prob(Omnibus):                  0.643   Jarque-Bera (JB):                0.747
+Skew:                          -0.268   Prob(JB):                        0.688
+Kurtosis:                       2.892   Cond. No.                         28.7
 ==============================================================================
 
 Notes:
@@ -59,25 +61,26 @@ Number of rows with NaN value(s) in gpt4o-mini: 0
                               OLS Regression Results                             
 =================================================================================
 Dep. Variable:     interpretation_answer   R-squared:                       0.664
-Model:                               OLS   Adj. R-squared:                  0.652
-Method:                    Least Squares   F-statistic:                     56.32
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           3.17e-14
-Time:                           17:23:17   Log-Likelihood:                -83.661
-No. Observations:                     60   AIC:                             173.3
-Df Residuals:                         57   BIC:                             179.6
-Df Model:                              2                                         
+Model:                               OLS   Adj. R-squared:                  0.646
+Method:                    Least Squares   F-statistic:                     36.90
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.70e-13
+Time:                           19:56:33   Log-Likelihood:                -83.655
+No. Observations:                     60   AIC:                             175.3
+Df Residuals:                         56   BIC:                             183.7
+Df Model:                              3                                         
 Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             3.9467      0.393     10.042      0.000       3.160       4.734
-is_spin_in_abstract               2.8453      0.287      9.920      0.000       2.271       3.420
-regression_detection_variable    -0.4438      0.493     -0.901      0.372      -1.431       0.543
+=====================================================================================================================
+                                                        coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------
+Intercept                                             3.9581      0.411      9.630      0.000       3.135       4.781
+is_spin_in_abstract                                   2.6722      1.676      1.595      0.116      -0.684       6.029
+regression_detection_variable                        -0.4599      0.520     -0.884      0.380      -1.502       0.582
+is_spin_in_abstract:regression_detection_variable     0.1848      1.763      0.105      0.917      -3.346       3.716
 ==============================================================================
-Omnibus:                        0.279   Durbin-Watson:                   1.500
-Prob(Omnibus):                  0.870   Jarque-Bera (JB):                0.467
-Skew:                           0.051   Prob(JB):                        0.792
-Kurtosis:                       2.580   Cond. No.                         6.86
+Omnibus:                        0.245   Durbin-Watson:                   1.501
+Prob(Omnibus):                  0.885   Jarque-Bera (JB):                0.438
+Skew:                           0.049   Prob(JB):                        0.803
+Kurtosis:                       2.593   Cond. No.                         28.7
 ==============================================================================
 
 Notes:
@@ -86,26 +89,27 @@ Model: gpt4o-mini - full_text_answer
 Number of rows with NaN value(s) in gpt4o-mini: 0
                               OLS Regression Results                             
 =================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.740
-Model:                               OLS   Adj. R-squared:                  0.731
-Method:                    Least Squares   F-statistic:                     81.17
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.09e-17
-Time:                           17:23:17   Log-Likelihood:                -94.489
-No. Observations:                     60   AIC:                             195.0
-Df Residuals:                         57   BIC:                             201.3
-Df Model:                              2                                         
+Dep. Variable:     interpretation_answer   R-squared:                       0.758
+Model:                               OLS   Adj. R-squared:                  0.745
+Method:                    Least Squares   F-statistic:                     58.38
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           3.06e-17
+Time:                           19:56:33   Log-Likelihood:                -92.387
+No. Observations:                     60   AIC:                             192.8
+Df Residuals:                         56   BIC:                             201.2
+Df Model:                              3                                         
 Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             3.0989      0.471      6.583      0.000       2.156       4.042
-is_spin_in_abstract               4.0759      0.344     11.864      0.000       3.388       4.764
-regression_detection_variable    -0.5649      0.590     -0.957      0.343      -1.747       0.617
+=====================================================================================================================
+                                                        coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------
+Intercept                                             3.3518      0.475      7.050      0.000       2.399       4.304
+is_spin_in_abstract                                   0.2269      1.938      0.117      0.907      -3.656       4.109
+regression_detection_variable                        -0.9231      0.602     -1.534      0.131      -2.129       0.282
+is_spin_in_abstract:regression_detection_variable     4.1104      2.039      2.016      0.049       0.027       8.194
 ==============================================================================
-Omnibus:                        2.791   Durbin-Watson:                   1.576
-Prob(Omnibus):                  0.248   Jarque-Bera (JB):                2.302
-Skew:                          -0.479   Prob(JB):                        0.316
-Kurtosis:                       3.042   Cond. No.                         6.86
+Omnibus:                        1.689   Durbin-Watson:                   1.542
+Prob(Omnibus):                  0.430   Jarque-Bera (JB):                1.419
+Skew:                          -0.375   Prob(JB):                        0.492
+Kurtosis:                       2.928   Cond. No.                         28.7
 ==============================================================================
 
 Notes:
@@ -114,26 +118,27 @@ Model: gpt4o-mini - another_trial_answer
 Number of rows with NaN value(s) in gpt4o-mini: 0
                               OLS Regression Results                             
 =================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.738
-Model:                               OLS   Adj. R-squared:                  0.729
-Method:                    Least Squares   F-statistic:                     80.24
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.67e-17
-Time:                           17:23:18   Log-Likelihood:                -93.914
-No. Observations:                     60   AIC:                             193.8
-Df Residuals:                         57   BIC:                             200.1
-Df Model:                              2                                         
+Dep. Variable:     interpretation_answer   R-squared:                       0.751
+Model:                               OLS   Adj. R-squared:                  0.738
+Method:                    Least Squares   F-statistic:                     56.42
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           6.27e-17
+Time:                           19:56:33   Log-Likelihood:                -92.330
+No. Observations:                     60   AIC:                             192.7
+Df Residuals:                         56   BIC:                             201.0
+Df Model:                              3                                         
 Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             3.0003      0.466      6.435      0.000       2.067       3.934
-is_spin_in_abstract               4.0455      0.340     11.889      0.000       3.364       4.727
-regression_detection_variable    -0.7086      0.585     -1.212      0.230      -1.879       0.462
+=====================================================================================================================
+                                                        coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------
+Intercept                                             3.2187      0.475      6.777      0.000       2.267       4.170
+is_spin_in_abstract                                   0.7218      1.936      0.373      0.711      -3.157       4.601
+regression_detection_variable                        -1.0178      0.601     -1.693      0.096      -2.222       0.187
+is_spin_in_abstract:regression_detection_variable     3.5494      2.037      1.743      0.087      -0.531       7.629
 ==============================================================================
-Omnibus:                        2.024   Durbin-Watson:                   1.879
-Prob(Omnibus):                  0.363   Jarque-Bera (JB):                1.766
-Skew:                          -0.417   Prob(JB):                        0.414
-Kurtosis:                       2.898   Cond. No.                         6.86
+Omnibus:                        0.885   Durbin-Watson:                   1.865
+Prob(Omnibus):                  0.642   Jarque-Bera (JB):                0.824
+Skew:                          -0.274   Prob(JB):                        0.662
+Kurtosis:                       2.826   Cond. No.                         28.7
 ==============================================================================
 
 Notes:
@@ -142,530 +147,27 @@ Model: gpt4o-mini - overall
 Number of rows with NaN value(s) in gpt4o-mini: 0
                               OLS Regression Results                             
 =================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.720
-Model:                               OLS   Adj. R-squared:                  0.710
-Method:                    Least Squares   F-statistic:                     73.29
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           1.75e-16
-Time:                           17:23:18   Log-Likelihood:                -83.510
-No. Observations:                     60   AIC:                             173.0
-Df Residuals:                         57   BIC:                             179.3
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             3.5378      0.392      9.025      0.000       2.753       4.323
-is_spin_in_abstract               3.2221      0.286     11.262      0.000       2.649       3.795
-regression_detection_variable    -0.4312      0.492     -0.877      0.384      -1.415       0.553
-==============================================================================
-Omnibus:                        0.446   Durbin-Watson:                   1.488
-Prob(Omnibus):                  0.800   Jarque-Bera (JB):                0.595
-Skew:                          -0.068   Prob(JB):                        0.743
-Kurtosis:                       2.531   Cond. No.                         6.86
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt4o-mini - benefit_answer
-Number of rows with NaN value(s) in gpt4o-mini: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.679
-Model:                               OLS   Adj. R-squared:                  0.668
-Method:                    Least Squares   F-statistic:                     60.33
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           8.49e-15
-Time:                           17:24:30   Log-Likelihood:                -97.633
-No. Observations:                     60   AIC:                             201.3
-Df Residuals:                         57   BIC:                             207.5
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             2.5368      0.496      5.114      0.000       1.543       3.530
-is_spin_in_abstract               3.7347      0.362     10.316      0.000       3.010       4.460
-regression_detection_variable    -0.6658      0.622     -1.071      0.289      -1.911       0.580
-==============================================================================
-Omnibus:                        3.593   Durbin-Watson:                   1.674
-Prob(Omnibus):                  0.166   Jarque-Bera (JB):                2.017
-Skew:                          -0.181   Prob(JB):                        0.365
-Kurtosis:                       2.178   Cond. No.                         6.86
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt4o-mini - rigor_answer
-Number of rows with NaN value(s) in gpt4o-mini: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.361
-Model:                               OLS   Adj. R-squared:                  0.338
-Method:                    Least Squares   F-statistic:                     16.09
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.88e-06
-Time:                           17:24:30   Log-Likelihood:                -83.870
-No. Observations:                     60   AIC:                             173.7
-Df Residuals:                         57   BIC:                             180.0
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             5.1064      0.394     12.948      0.000       4.317       5.896
-is_spin_in_abstract               1.4094      0.288      4.897      0.000       0.833       1.986
-regression_detection_variable     0.2270      0.494      0.459      0.648      -0.763       1.217
-==============================================================================
-Omnibus:                        0.859   Durbin-Watson:                   1.215
-Prob(Omnibus):                  0.651   Jarque-Bera (JB):                0.770
-Skew:                          -0.268   Prob(JB):                        0.680
-Kurtosis:                       2.854   Cond. No.                         6.86
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt4o-mini - importance_answer
-Number of rows with NaN value(s) in gpt4o-mini: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.664
-Model:                               OLS   Adj. R-squared:                  0.652
-Method:                    Least Squares   F-statistic:                     56.32
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           3.17e-14
-Time:                           17:24:30   Log-Likelihood:                -83.661
+Dep. Variable:     interpretation_answer   R-squared:                       0.728
+Model:                               OLS   Adj. R-squared:                  0.713
+Method:                    Least Squares   F-statistic:                     49.89
+Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           7.88e-16
+Time:                           19:56:33   Log-Likelihood:                -82.675
 No. Observations:                     60   AIC:                             173.3
-Df Residuals:                         57   BIC:                             179.6
-Df Model:                              2                                         
+Df Residuals:                         56   BIC:                             181.7
+Df Model:                              3                                         
 Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             3.9467      0.393     10.042      0.000       3.160       4.734
-is_spin_in_abstract               2.8453      0.287      9.920      0.000       2.271       3.420
-regression_detection_variable    -0.4438      0.493     -0.901      0.372      -1.431       0.543
+=====================================================================================================================
+                                                        coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------
+Intercept                                             3.6720      0.404      9.081      0.000       2.862       4.482
+is_spin_in_abstract                                   1.1804      1.648      0.716      0.477      -2.122       4.483
+regression_detection_variable                        -0.6212      0.512     -1.214      0.230      -1.647       0.404
+is_spin_in_abstract:regression_detection_variable     2.1804      1.734      1.257      0.214      -1.293       5.654
 ==============================================================================
-Omnibus:                        0.279   Durbin-Watson:                   1.500
-Prob(Omnibus):                  0.870   Jarque-Bera (JB):                0.467
-Skew:                           0.051   Prob(JB):                        0.792
-Kurtosis:                       2.580   Cond. No.                         6.86
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt4o-mini - full_text_answer
-Number of rows with NaN value(s) in gpt4o-mini: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.740
-Model:                               OLS   Adj. R-squared:                  0.731
-Method:                    Least Squares   F-statistic:                     81.17
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.09e-17
-Time:                           17:24:30   Log-Likelihood:                -94.489
-No. Observations:                     60   AIC:                             195.0
-Df Residuals:                         57   BIC:                             201.3
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             3.0989      0.471      6.583      0.000       2.156       4.042
-is_spin_in_abstract               4.0759      0.344     11.864      0.000       3.388       4.764
-regression_detection_variable    -0.5649      0.590     -0.957      0.343      -1.747       0.617
-==============================================================================
-Omnibus:                        2.791   Durbin-Watson:                   1.576
-Prob(Omnibus):                  0.248   Jarque-Bera (JB):                2.302
-Skew:                          -0.479   Prob(JB):                        0.316
-Kurtosis:                       3.042   Cond. No.                         6.86
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt4o-mini - another_trial_answer
-Number of rows with NaN value(s) in gpt4o-mini: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.738
-Model:                               OLS   Adj. R-squared:                  0.729
-Method:                    Least Squares   F-statistic:                     80.24
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.67e-17
-Time:                           17:24:30   Log-Likelihood:                -93.914
-No. Observations:                     60   AIC:                             193.8
-Df Residuals:                         57   BIC:                             200.1
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             3.0003      0.466      6.435      0.000       2.067       3.934
-is_spin_in_abstract               4.0455      0.340     11.889      0.000       3.364       4.727
-regression_detection_variable    -0.7086      0.585     -1.212      0.230      -1.879       0.462
-==============================================================================
-Omnibus:                        2.024   Durbin-Watson:                   1.879
-Prob(Omnibus):                  0.363   Jarque-Bera (JB):                1.766
-Skew:                          -0.417   Prob(JB):                        0.414
-Kurtosis:                       2.898   Cond. No.                         6.86
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt4o-mini - overall
-Number of rows with NaN value(s) in gpt4o-mini: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.720
-Model:                               OLS   Adj. R-squared:                  0.710
-Method:                    Least Squares   F-statistic:                     73.29
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           1.75e-16
-Time:                           17:24:30   Log-Likelihood:                -83.510
-No. Observations:                     60   AIC:                             173.0
-Df Residuals:                         57   BIC:                             179.3
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             3.5378      0.392      9.025      0.000       2.753       4.323
-is_spin_in_abstract               3.2221      0.286     11.262      0.000       2.649       3.795
-regression_detection_variable    -0.4312      0.492     -0.877      0.384      -1.415       0.553
-==============================================================================
-Omnibus:                        0.446   Durbin-Watson:                   1.488
-Prob(Omnibus):                  0.800   Jarque-Bera (JB):                0.595
-Skew:                          -0.068   Prob(JB):                        0.743
-Kurtosis:                       2.531   Cond. No.                         6.86
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt4o-mini - benefit_answer
-Number of rows with NaN value(s) in gpt4o-mini: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.679
-Model:                               OLS   Adj. R-squared:                  0.668
-Method:                    Least Squares   F-statistic:                     60.33
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           8.49e-15
-Time:                           17:24:58   Log-Likelihood:                -97.633
-No. Observations:                     60   AIC:                             201.3
-Df Residuals:                         57   BIC:                             207.5
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             2.5368      0.496      5.114      0.000       1.543       3.530
-is_spin_in_abstract               3.7347      0.362     10.316      0.000       3.010       4.460
-regression_detection_variable    -0.6658      0.622     -1.071      0.289      -1.911       0.580
-==============================================================================
-Omnibus:                        3.593   Durbin-Watson:                   1.674
-Prob(Omnibus):                  0.166   Jarque-Bera (JB):                2.017
-Skew:                          -0.181   Prob(JB):                        0.365
-Kurtosis:                       2.178   Cond. No.                         6.86
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt4o-mini - rigor_answer
-Number of rows with NaN value(s) in gpt4o-mini: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.361
-Model:                               OLS   Adj. R-squared:                  0.338
-Method:                    Least Squares   F-statistic:                     16.09
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.88e-06
-Time:                           17:24:58   Log-Likelihood:                -83.870
-No. Observations:                     60   AIC:                             173.7
-Df Residuals:                         57   BIC:                             180.0
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             5.1064      0.394     12.948      0.000       4.317       5.896
-is_spin_in_abstract               1.4094      0.288      4.897      0.000       0.833       1.986
-regression_detection_variable     0.2270      0.494      0.459      0.648      -0.763       1.217
-==============================================================================
-Omnibus:                        0.859   Durbin-Watson:                   1.215
-Prob(Omnibus):                  0.651   Jarque-Bera (JB):                0.770
-Skew:                          -0.268   Prob(JB):                        0.680
-Kurtosis:                       2.854   Cond. No.                         6.86
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt4o-mini - importance_answer
-Number of rows with NaN value(s) in gpt4o-mini: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.664
-Model:                               OLS   Adj. R-squared:                  0.652
-Method:                    Least Squares   F-statistic:                     56.32
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           3.17e-14
-Time:                           17:24:58   Log-Likelihood:                -83.661
-No. Observations:                     60   AIC:                             173.3
-Df Residuals:                         57   BIC:                             179.6
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             3.9467      0.393     10.042      0.000       3.160       4.734
-is_spin_in_abstract               2.8453      0.287      9.920      0.000       2.271       3.420
-regression_detection_variable    -0.4438      0.493     -0.901      0.372      -1.431       0.543
-==============================================================================
-Omnibus:                        0.279   Durbin-Watson:                   1.500
-Prob(Omnibus):                  0.870   Jarque-Bera (JB):                0.467
-Skew:                           0.051   Prob(JB):                        0.792
-Kurtosis:                       2.580   Cond. No.                         6.86
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt4o-mini - full_text_answer
-Number of rows with NaN value(s) in gpt4o-mini: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.740
-Model:                               OLS   Adj. R-squared:                  0.731
-Method:                    Least Squares   F-statistic:                     81.17
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.09e-17
-Time:                           17:24:58   Log-Likelihood:                -94.489
-No. Observations:                     60   AIC:                             195.0
-Df Residuals:                         57   BIC:                             201.3
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             3.0989      0.471      6.583      0.000       2.156       4.042
-is_spin_in_abstract               4.0759      0.344     11.864      0.000       3.388       4.764
-regression_detection_variable    -0.5649      0.590     -0.957      0.343      -1.747       0.617
-==============================================================================
-Omnibus:                        2.791   Durbin-Watson:                   1.576
-Prob(Omnibus):                  0.248   Jarque-Bera (JB):                2.302
-Skew:                          -0.479   Prob(JB):                        0.316
-Kurtosis:                       3.042   Cond. No.                         6.86
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt4o-mini - another_trial_answer
-Number of rows with NaN value(s) in gpt4o-mini: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.738
-Model:                               OLS   Adj. R-squared:                  0.729
-Method:                    Least Squares   F-statistic:                     80.24
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.67e-17
-Time:                           17:24:58   Log-Likelihood:                -93.914
-No. Observations:                     60   AIC:                             193.8
-Df Residuals:                         57   BIC:                             200.1
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             3.0003      0.466      6.435      0.000       2.067       3.934
-is_spin_in_abstract               4.0455      0.340     11.889      0.000       3.364       4.727
-regression_detection_variable    -0.7086      0.585     -1.212      0.230      -1.879       0.462
-==============================================================================
-Omnibus:                        2.024   Durbin-Watson:                   1.879
-Prob(Omnibus):                  0.363   Jarque-Bera (JB):                1.766
-Skew:                          -0.417   Prob(JB):                        0.414
-Kurtosis:                       2.898   Cond. No.                         6.86
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt4o-mini - overall
-Number of rows with NaN value(s) in gpt4o-mini: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.720
-Model:                               OLS   Adj. R-squared:                  0.710
-Method:                    Least Squares   F-statistic:                     73.29
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           1.75e-16
-Time:                           17:24:58   Log-Likelihood:                -83.510
-No. Observations:                     60   AIC:                             173.0
-Df Residuals:                         57   BIC:                             179.3
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             3.5378      0.392      9.025      0.000       2.753       4.323
-is_spin_in_abstract               3.2221      0.286     11.262      0.000       2.649       3.795
-regression_detection_variable    -0.4312      0.492     -0.877      0.384      -1.415       0.553
-==============================================================================
-Omnibus:                        0.446   Durbin-Watson:                   1.488
-Prob(Omnibus):                  0.800   Jarque-Bera (JB):                0.595
-Skew:                          -0.068   Prob(JB):                        0.743
-Kurtosis:                       2.531   Cond. No.                         6.86
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt4o-mini - benefit_answer
-Number of rows with NaN value(s) in gpt4o-mini: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.679
-Model:                               OLS   Adj. R-squared:                  0.668
-Method:                    Least Squares   F-statistic:                     60.33
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           8.49e-15
-Time:                           17:25:55   Log-Likelihood:                -97.633
-No. Observations:                     60   AIC:                             201.3
-Df Residuals:                         57   BIC:                             207.5
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             2.5368      0.496      5.114      0.000       1.543       3.530
-is_spin_in_abstract               3.7347      0.362     10.316      0.000       3.010       4.460
-regression_detection_variable    -0.6658      0.622     -1.071      0.289      -1.911       0.580
-==============================================================================
-Omnibus:                        3.593   Durbin-Watson:                   1.674
-Prob(Omnibus):                  0.166   Jarque-Bera (JB):                2.017
-Skew:                          -0.181   Prob(JB):                        0.365
-Kurtosis:                       2.178   Cond. No.                         6.86
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt4o-mini - rigor_answer
-Number of rows with NaN value(s) in gpt4o-mini: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.361
-Model:                               OLS   Adj. R-squared:                  0.338
-Method:                    Least Squares   F-statistic:                     16.09
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.88e-06
-Time:                           17:25:55   Log-Likelihood:                -83.870
-No. Observations:                     60   AIC:                             173.7
-Df Residuals:                         57   BIC:                             180.0
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             5.1064      0.394     12.948      0.000       4.317       5.896
-is_spin_in_abstract               1.4094      0.288      4.897      0.000       0.833       1.986
-regression_detection_variable     0.2270      0.494      0.459      0.648      -0.763       1.217
-==============================================================================
-Omnibus:                        0.859   Durbin-Watson:                   1.215
-Prob(Omnibus):                  0.651   Jarque-Bera (JB):                0.770
-Skew:                          -0.268   Prob(JB):                        0.680
-Kurtosis:                       2.854   Cond. No.                         6.86
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt4o-mini - importance_answer
-Number of rows with NaN value(s) in gpt4o-mini: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.664
-Model:                               OLS   Adj. R-squared:                  0.652
-Method:                    Least Squares   F-statistic:                     56.32
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           3.17e-14
-Time:                           17:25:55   Log-Likelihood:                -83.661
-No. Observations:                     60   AIC:                             173.3
-Df Residuals:                         57   BIC:                             179.6
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             3.9467      0.393     10.042      0.000       3.160       4.734
-is_spin_in_abstract               2.8453      0.287      9.920      0.000       2.271       3.420
-regression_detection_variable    -0.4438      0.493     -0.901      0.372      -1.431       0.543
-==============================================================================
-Omnibus:                        0.279   Durbin-Watson:                   1.500
-Prob(Omnibus):                  0.870   Jarque-Bera (JB):                0.467
-Skew:                           0.051   Prob(JB):                        0.792
-Kurtosis:                       2.580   Cond. No.                         6.86
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt4o-mini - full_text_answer
-Number of rows with NaN value(s) in gpt4o-mini: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.740
-Model:                               OLS   Adj. R-squared:                  0.731
-Method:                    Least Squares   F-statistic:                     81.17
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.09e-17
-Time:                           17:25:55   Log-Likelihood:                -94.489
-No. Observations:                     60   AIC:                             195.0
-Df Residuals:                         57   BIC:                             201.3
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             3.0989      0.471      6.583      0.000       2.156       4.042
-is_spin_in_abstract               4.0759      0.344     11.864      0.000       3.388       4.764
-regression_detection_variable    -0.5649      0.590     -0.957      0.343      -1.747       0.617
-==============================================================================
-Omnibus:                        2.791   Durbin-Watson:                   1.576
-Prob(Omnibus):                  0.248   Jarque-Bera (JB):                2.302
-Skew:                          -0.479   Prob(JB):                        0.316
-Kurtosis:                       3.042   Cond. No.                         6.86
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt4o-mini - another_trial_answer
-Number of rows with NaN value(s) in gpt4o-mini: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.738
-Model:                               OLS   Adj. R-squared:                  0.729
-Method:                    Least Squares   F-statistic:                     80.24
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.67e-17
-Time:                           17:25:55   Log-Likelihood:                -93.914
-No. Observations:                     60   AIC:                             193.8
-Df Residuals:                         57   BIC:                             200.1
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             3.0003      0.466      6.435      0.000       2.067       3.934
-is_spin_in_abstract               4.0455      0.340     11.889      0.000       3.364       4.727
-regression_detection_variable    -0.7086      0.585     -1.212      0.230      -1.879       0.462
-==============================================================================
-Omnibus:                        2.024   Durbin-Watson:                   1.879
-Prob(Omnibus):                  0.363   Jarque-Bera (JB):                1.766
-Skew:                          -0.417   Prob(JB):                        0.414
-Kurtosis:                       2.898   Cond. No.                         6.86
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-Model: gpt4o-mini - overall
-Number of rows with NaN value(s) in gpt4o-mini: 0
-                              OLS Regression Results                             
-=================================================================================
-Dep. Variable:     interpretation_answer   R-squared:                       0.720
-Model:                               OLS   Adj. R-squared:                  0.710
-Method:                    Least Squares   F-statistic:                     73.29
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           1.75e-16
-Time:                           17:25:55   Log-Likelihood:                -83.510
-No. Observations:                     60   AIC:                             173.0
-Df Residuals:                         57   BIC:                             179.3
-Df Model:                              2                                         
-Covariance Type:               nonrobust                                         
-=================================================================================================
-                                    coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------
-const                             3.5378      0.392      9.025      0.000       2.753       4.323
-is_spin_in_abstract               3.2221      0.286     11.262      0.000       2.649       3.795
-regression_detection_variable    -0.4312      0.492     -0.877      0.384      -1.415       0.553
-==============================================================================
-Omnibus:                        0.446   Durbin-Watson:                   1.488
-Prob(Omnibus):                  0.800   Jarque-Bera (JB):                0.595
-Skew:                          -0.068   Prob(JB):                        0.743
-Kurtosis:                       2.531   Cond. No.                         6.86
+Omnibus:                        0.174   Durbin-Watson:                   1.486
+Prob(Omnibus):                  0.917   Jarque-Bera (JB):                0.375
+Skew:                          -0.029   Prob(JB):                        0.829
+Kurtosis:                       2.617   Cond. No.                         28.7
 ==============================================================================
 
 Notes:

@@ -6,26 +6,29 @@ Dep. Variable:     interpretation_answer   R-squared:                       0.61
 Model:                               OLS   Adj. R-squared:                  0.597
 Method:                    Least Squares   F-statistic:                     44.69
 Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.12e-12
-Time:                           17:23:12   Log-Likelihood:                -119.03
+Time:                           19:56:31   Log-Likelihood:                -119.03
 No. Observations:                     60   AIC:                             244.1
 Df Residuals:                         57   BIC:                             250.3
 Df Model:                              2                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    1.5833      0.773      2.049      0.045       0.036       3.131
-is_spin_in_abstract      4.5167      0.521      8.668      0.000       3.473       5.560
-is_detection_correct     0.3500      0.699      0.501      0.619      -1.050       1.750
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    2.4042      0.345      6.976      0.000       1.714       3.094
+is_spin_in_abstract                          3.6958      0.345     10.723      0.000       3.006       4.386
+is_detection_correct                        -0.4708      0.345     -1.366      0.177      -1.161       0.219
+is_spin_in_abstract:is_detection_correct     0.8208      0.447      1.834      0.072      -0.075       1.717
 ==============================================================================
 Omnibus:                        2.791   Durbin-Watson:                   1.136
 Prob(Omnibus):                  0.248   Jarque-Bera (JB):                1.906
 Skew:                           0.347   Prob(JB):                        0.386
-Kurtosis:                       3.530   Cond. No.                         6.48
+Kurtosis:                       3.530   Cond. No.                     3.90e+15
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 8.54e-30. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
 Model: llama3_instruct-70B - rigor_answer
 Number of rows with NaN value(s) in llama3_instruct-70B: 0
                               OLS Regression Results                             
@@ -34,26 +37,29 @@ Dep. Variable:     interpretation_answer   R-squared:                       0.02
 Model:                               OLS   Adj. R-squared:                 -0.005
 Method:                    Least Squares   F-statistic:                    0.8584
 Date:                   Tue, 07 Jan 2025   Prob (F-statistic):              0.429
-Time:                           17:23:12   Log-Likelihood:                 7.1647
+Time:                           19:56:31   Log-Likelihood:                 7.1647
 No. Observations:                     60   AIC:                            -8.329
 Df Residuals:                         57   BIC:                            -2.046
 Df Model:                              2                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    8.1667      0.094     86.573      0.000       7.978       8.356
-is_spin_in_abstract     -0.0667      0.064     -1.048      0.299      -0.194       0.061
-is_detection_correct    -0.1000      0.085     -1.172      0.246      -0.271       0.071
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    6.0833      0.042    144.611      0.000       5.999       6.168
+is_spin_in_abstract                          2.0167      0.042     47.940      0.000       1.932       2.101
+is_detection_correct                         1.9833      0.042     47.147      0.000       1.899       2.068
+is_spin_in_abstract:is_detection_correct    -2.0833      0.055    -38.144      0.000      -2.193      -1.974
 ==============================================================================
 Omnibus:                       78.162   Durbin-Watson:                   1.029
 Prob(Omnibus):                  0.000   Jarque-Bera (JB):              648.394
 Skew:                           3.935   Prob(JB):                    1.60e-141
-Kurtosis:                      17.051   Cond. No.                         6.48
+Kurtosis:                      17.051   Cond. No.                     3.90e+15
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 8.54e-30. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
 Model: llama3_instruct-70B - importance_answer
 Number of rows with NaN value(s) in llama3_instruct-70B: 0
                               OLS Regression Results                             
@@ -62,26 +68,29 @@ Dep. Variable:     interpretation_answer   R-squared:                       0.20
 Model:                               OLS   Adj. R-squared:                  0.175
 Method:                    Least Squares   F-statistic:                     7.246
 Date:                   Tue, 07 Jan 2025   Prob (F-statistic):            0.00157
-Time:                           17:23:12   Log-Likelihood:                -87.337
+Time:                           19:56:31   Log-Likelihood:                -87.337
 No. Observations:                     60   AIC:                             180.7
 Df Residuals:                         57   BIC:                             187.0
 Df Model:                              2                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    6.4333      0.456     14.117      0.000       5.521       7.346
-is_spin_in_abstract      0.7667      0.307      2.495      0.016       0.151       1.382
-is_detection_correct    -0.6000      0.412     -1.456      0.151      -1.425       0.225
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    4.8667      0.203     23.948      0.000       4.460       5.274
+is_spin_in_abstract                          2.3333      0.203     11.482      0.000       1.926       2.740
+is_detection_correct                         0.9667      0.203      4.757      0.000       0.560       1.374
+is_spin_in_abstract:is_detection_correct    -1.5667      0.264     -5.938      0.000      -2.095      -1.038
 ==============================================================================
 Omnibus:                       32.426   Durbin-Watson:                   1.783
 Prob(Omnibus):                  0.000   Jarque-Bera (JB):               80.229
 Skew:                          -1.630   Prob(JB):                     3.79e-18
-Kurtosis:                       7.633   Cond. No.                         6.48
+Kurtosis:                       7.633   Cond. No.                     3.90e+15
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 8.54e-30. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
 Model: llama3_instruct-70B - full_text_answer
 Number of rows with NaN value(s) in llama3_instruct-70B: 0
                               OLS Regression Results                             
@@ -90,26 +99,29 @@ Dep. Variable:     interpretation_answer   R-squared:                       0.64
 Model:                               OLS   Adj. R-squared:                  0.629
 Method:                    Least Squares   F-statistic:                     50.91
 Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.07e-13
-Time:                           17:23:12   Log-Likelihood:                -99.671
+Time:                           19:56:31   Log-Likelihood:                -99.671
 No. Observations:                     60   AIC:                             205.3
 Df Residuals:                         57   BIC:                             211.6
 Df Model:                              2                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    3.5000      0.560      6.253      0.000       2.379       4.621
-is_spin_in_abstract      3.3000      0.377      8.745      0.000       2.544       4.056
-is_detection_correct    -0.3000      0.506     -0.593      0.556      -1.314       0.714
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    3.3750      0.250     13.522      0.000       2.875       3.875
+is_spin_in_abstract                          3.4250      0.250     13.722      0.000       2.925       3.925
+is_detection_correct                        -0.1750      0.250     -0.701      0.486      -0.675       0.325
+is_spin_in_abstract:is_detection_correct    -0.1250      0.324     -0.386      0.701      -0.774       0.524
 ==============================================================================
 Omnibus:                       15.997   Durbin-Watson:                   1.524
 Prob(Omnibus):                  0.000   Jarque-Bera (JB):               19.843
 Skew:                           1.074   Prob(JB):                     4.91e-05
-Kurtosis:                       4.822   Cond. No.                         6.48
+Kurtosis:                       4.822   Cond. No.                     3.90e+15
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 8.54e-30. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
 Model: llama3_instruct-70B - another_trial_answer
 Number of rows with NaN value(s) in llama3_instruct-70B: 0
                               OLS Regression Results                             
@@ -118,26 +130,29 @@ Dep. Variable:     interpretation_answer   R-squared:                       0.67
 Model:                               OLS   Adj. R-squared:                  0.668
 Method:                    Least Squares   F-statistic:                     60.33
 Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           8.49e-15
-Time:                           17:23:12   Log-Likelihood:                -105.56
+Time:                           19:56:31   Log-Likelihood:                -105.56
 No. Observations:                     60   AIC:                             217.1
 Df Residuals:                         57   BIC:                             223.4
 Df Model:                              2                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    2.4167      0.617      3.914      0.000       1.180       3.653
-is_spin_in_abstract      4.2833      0.416     10.290      0.000       3.450       5.117
-is_detection_correct     0.6500      0.558      1.164      0.249      -0.468       1.768
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    3.0458      0.275     11.063      0.000       2.494       3.597
+is_spin_in_abstract                          3.6542      0.275     13.272      0.000       3.103       4.206
+is_detection_correct                         0.0208      0.275      0.076      0.940      -0.531       0.572
+is_spin_in_abstract:is_detection_correct     0.6292      0.357      1.760      0.084      -0.087       1.345
 ==============================================================================
 Omnibus:                       14.694   Durbin-Watson:                   1.729
 Prob(Omnibus):                  0.001   Jarque-Bera (JB):               16.422
 Skew:                           1.101   Prob(JB):                     0.000272
-Kurtosis:                       4.312   Cond. No.                         6.48
+Kurtosis:                       4.312   Cond. No.                     3.90e+15
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 8.54e-30. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
 Model: llama3_instruct-70B - overall
 Number of rows with NaN value(s) in llama3_instruct-70B: 0
                               OLS Regression Results                             
@@ -146,23 +161,26 @@ Dep. Variable:     interpretation_answer   R-squared:                       0.65
 Model:                               OLS   Adj. R-squared:                  0.642
 Method:                    Least Squares   F-statistic:                     53.99
 Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           7.02e-14
-Time:                           17:23:12   Log-Likelihood:                -80.783
+Time:                           19:56:31   Log-Likelihood:                -80.783
 No. Observations:                     60   AIC:                             167.6
 Df Residuals:                         57   BIC:                             173.8
 Df Model:                              2                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    4.4200      0.409     10.819      0.000       3.602       5.238
-is_spin_in_abstract      2.5600      0.275      9.294      0.000       2.008       3.112
-is_detection_correct  1.998e-15      0.370   5.41e-15      1.000      -0.740       0.740
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    3.9550      0.182     21.708      0.000       3.590       4.320
+is_spin_in_abstract                          3.0250      0.182     16.603      0.000       2.660       3.390
+is_detection_correct                         0.4650      0.182      2.552      0.013       0.100       0.830
+is_spin_in_abstract:is_detection_correct    -0.4650      0.237     -1.966      0.054      -0.939       0.009
 ==============================================================================
 Omnibus:                        6.183   Durbin-Watson:                   1.331
 Prob(Omnibus):                  0.045   Jarque-Bera (JB):                5.359
 Skew:                           0.577   Prob(JB):                       0.0686
-Kurtosis:                       3.901   Cond. No.                         6.48
+Kurtosis:                       3.901   Cond. No.                     3.90e+15
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 8.54e-30. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
