@@ -1,0 +1,174 @@
+Model: llama3_instruct-70B - benefit_answer
+Number of rows with NaN value(s) in llama3_instruct-70B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.644
+Model:                               OLS   Adj. R-squared:                  0.624
+Method:                    Least Squares   F-statistic:                     33.71
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           1.40e-12
+Time:                           10:07:16   Log-Likelihood:                -116.38
+No. Observations:                     60   AIC:                             240.8
+Df Residuals:                         56   BIC:                             249.1
+Df Model:                              3                                         
+Covariance Type:               nonrobust                                         
+=====================================================================================================================
+                                                        coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------
+Intercept                                             3.1594      0.712      4.437      0.000       1.733       4.586
+is_spin_in_abstract                                   2.4749      0.942      2.627      0.011       0.587       4.362
+regression_detection_variable                       -32.7504     17.019     -1.924      0.059     -66.844       1.343
+is_spin_in_abstract:regression_detection_variable    34.0437     17.047      1.997      0.051      -0.106      68.193
+==============================================================================
+Omnibus:                        6.204   Durbin-Watson:                   1.119
+Prob(Omnibus):                  0.045   Jarque-Bera (JB):                5.873
+Skew:                           0.497   Prob(JB):                       0.0531
+Kurtosis:                       4.166   Cond. No.                         134.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: llama3_instruct-70B - rigor_answer
+Number of rows with NaN value(s) in llama3_instruct-70B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.079
+Model:                               OLS   Adj. R-squared:                  0.030
+Method:                    Least Squares   F-statistic:                     1.605
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):              0.198
+Time:                           10:07:16   Log-Likelihood:                 8.7489
+No. Observations:                     60   AIC:                            -9.498
+Df Residuals:                         56   BIC:                            -1.120
+Df Model:                              3                                         
+Covariance Type:               nonrobust                                         
+=====================================================================================================================
+                                                        coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------
+Intercept                                             7.9292      0.088     89.611      0.000       7.752       8.106
+is_spin_in_abstract                                   0.1831      0.117      1.564      0.124      -0.051       0.418
+regression_detection_variable                         3.6718      2.115      1.736      0.088      -0.564       7.908
+is_spin_in_abstract:regression_detection_variable    -3.8178      2.118     -1.802      0.077      -8.061       0.425
+==============================================================================
+Omnibus:                       73.218   Durbin-Watson:                   1.064
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              540.992
+Skew:                           3.633   Prob(JB):                    3.35e-118
+Kurtosis:                      15.790   Cond. No.                         134.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: llama3_instruct-70B - importance_answer
+Number of rows with NaN value(s) in llama3_instruct-70B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.188
+Model:                               OLS   Adj. R-squared:                  0.144
+Method:                    Least Squares   F-statistic:                     4.310
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):            0.00835
+Time:                           10:07:16   Log-Likelihood:                -87.901
+No. Observations:                     60   AIC:                             183.8
+Df Residuals:                         56   BIC:                             192.2
+Df Model:                              3                                         
+Covariance Type:               nonrobust                                         
+=====================================================================================================================
+                                                        coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------
+Intercept                                             5.5990      0.443     12.638      0.000       4.711       6.486
+is_spin_in_abstract                                   1.4661      0.586      2.501      0.015       0.292       2.640
+regression_detection_variable                         6.2602     10.588      0.591      0.557     -14.950      27.471
+is_spin_in_abstract:regression_detection_variable    -6.7506     10.606     -0.637      0.527     -27.996      14.495
+==============================================================================
+Omnibus:                       29.336   Durbin-Watson:                   1.865
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               65.413
+Skew:                          -1.509   Prob(JB):                     6.25e-15
+Kurtosis:                       7.130   Cond. No.                         134.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: llama3_instruct-70B - full_text_answer
+Number of rows with NaN value(s) in llama3_instruct-70B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.676
+Model:                               OLS   Adj. R-squared:                  0.658
+Method:                    Least Squares   F-statistic:                     38.92
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           1.00e-13
+Time:                           10:07:16   Log-Likelihood:                -96.617
+No. Observations:                     60   AIC:                             201.2
+Df Residuals:                         56   BIC:                             209.6
+Df Model:                              3                                         
+Covariance Type:               nonrobust                                         
+=====================================================================================================================
+                                                        coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------
+Intercept                                             4.3565      0.512      8.504      0.000       3.330       5.383
+is_spin_in_abstract                                   2.2905      0.678      3.379      0.001       0.933       3.648
+regression_detection_variable                       -30.8932     12.244     -2.523      0.014     -55.420      -6.366
+is_spin_in_abstract:regression_detection_variable    30.8062     12.264      2.512      0.015       6.239      55.373
+==============================================================================
+Omnibus:                       23.266   Durbin-Watson:                   1.578
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               48.498
+Skew:                           1.184   Prob(JB):                     2.94e-11
+Kurtosis:                       6.713   Cond. No.                         134.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: llama3_instruct-70B - another_trial_answer
+Number of rows with NaN value(s) in llama3_instruct-70B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.714
+Model:                               OLS   Adj. R-squared:                  0.699
+Method:                    Least Squares   F-statistic:                     46.60
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           3.09e-15
+Time:                           10:07:16   Log-Likelihood:                -102.11
+No. Observations:                     60   AIC:                             212.2
+Df Residuals:                         56   BIC:                             220.6
+Df Model:                              3                                         
+Covariance Type:               nonrobust                                         
+=====================================================================================================================
+                                                        coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------
+Intercept                                             4.2423      0.561      7.556      0.000       3.118       5.367
+is_spin_in_abstract                                   2.1894      0.743      2.948      0.005       0.701       3.677
+regression_detection_variable                       -31.4016     13.417     -2.340      0.023     -58.280      -4.523
+is_spin_in_abstract:regression_detection_variable    32.6998     13.439      2.433      0.018       5.777      59.622
+==============================================================================
+Omnibus:                       20.865   Durbin-Watson:                   1.671
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               32.658
+Skew:                           1.220   Prob(JB):                     8.10e-08
+Kurtosis:                       5.665   Cond. No.                         134.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: llama3_instruct-70B - overall
+Number of rows with NaN value(s) in llama3_instruct-70B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.678
+Model:                               OLS   Adj. R-squared:                  0.660
+Method:                    Least Squares   F-statistic:                     39.24
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           8.59e-14
+Time:                           10:07:16   Log-Likelihood:                -78.701
+No. Observations:                     60   AIC:                             165.4
+Df Residuals:                         56   BIC:                             173.8
+Df Model:                              3                                         
+Covariance Type:               nonrobust                                         
+=====================================================================================================================
+                                                        coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------
+Intercept                                             5.0573      0.380     13.307      0.000       4.296       5.819
+is_spin_in_abstract                                   1.7208      0.503      3.422      0.001       0.713       2.728
+regression_detection_variable                       -17.0226      9.083     -1.874      0.066     -35.218       1.173
+is_spin_in_abstract:regression_detection_variable    17.3962      9.098      1.912      0.061      -0.829      35.622
+==============================================================================
+Omnibus:                       10.673   Durbin-Watson:                   1.329
+Prob(Omnibus):                  0.005   Jarque-Bera (JB):               14.219
+Skew:                           0.647   Prob(JB):                     0.000817
+Kurtosis:                       5.003   Cond. No.                         134.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

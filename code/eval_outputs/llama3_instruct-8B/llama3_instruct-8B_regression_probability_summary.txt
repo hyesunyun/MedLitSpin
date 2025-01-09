@@ -5,8 +5,8 @@ Number of rows with NaN value(s) in llama3_instruct-8B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.592
 Model:                               OLS   Adj. R-squared:                  0.571
 Method:                    Least Squares   F-statistic:                     27.13
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           5.76e-11
-Time:                           19:56:34   Log-Likelihood:                -79.847
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           5.76e-11
+Time:                           10:07:12   Log-Likelihood:                -79.847
 No. Observations:                     60   AIC:                             167.7
 Df Residuals:                         56   BIC:                             176.1
 Df Model:                              3                                         
@@ -34,8 +34,8 @@ Number of rows with NaN value(s) in llama3_instruct-8B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.064
 Model:                               OLS   Adj. R-squared:                  0.013
 Method:                    Least Squares   F-statistic:                     1.268
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):              0.294
-Time:                           19:56:34   Log-Likelihood:                -35.336
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):              0.294
+Time:                           10:07:12   Log-Likelihood:                -35.336
 No. Observations:                     60   AIC:                             78.67
 Df Residuals:                         56   BIC:                             87.05
 Df Model:                              3                                         
@@ -63,8 +63,8 @@ Number of rows with NaN value(s) in llama3_instruct-8B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.357
 Model:                               OLS   Adj. R-squared:                  0.323
 Method:                    Least Squares   F-statistic:                     10.38
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           1.57e-05
-Time:                           19:56:34   Log-Likelihood:                -55.345
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           1.57e-05
+Time:                           10:07:12   Log-Likelihood:                -55.345
 No. Observations:                     60   AIC:                             118.7
 Df Residuals:                         56   BIC:                             127.1
 Df Model:                              3                                         
@@ -92,8 +92,8 @@ Number of rows with NaN value(s) in llama3_instruct-8B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.373
 Model:                               OLS   Adj. R-squared:                  0.339
 Method:                    Least Squares   F-statistic:                     11.09
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           8.12e-06
-Time:                           19:56:34   Log-Likelihood:                -84.676
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           8.12e-06
+Time:                           10:07:12   Log-Likelihood:                -84.676
 No. Observations:                     60   AIC:                             177.4
 Df Residuals:                         56   BIC:                             185.7
 Df Model:                              3                                         
@@ -121,8 +121,8 @@ Number of rows with NaN value(s) in llama3_instruct-8B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.700
 Model:                               OLS   Adj. R-squared:                  0.684
 Method:                    Least Squares   F-statistic:                     43.64
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           1.12e-14
-Time:                           19:56:34   Log-Likelihood:                -78.463
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           1.12e-14
+Time:                           10:07:12   Log-Likelihood:                -78.463
 No. Observations:                     60   AIC:                             164.9
 Df Residuals:                         56   BIC:                             173.3
 Df Model:                              3                                         
@@ -150,8 +150,8 @@ Number of rows with NaN value(s) in llama3_instruct-8B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.633
 Model:                               OLS   Adj. R-squared:                  0.613
 Method:                    Least Squares   F-statistic:                     32.20
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           3.13e-12
-Time:                           19:56:34   Log-Likelihood:                -51.778
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           3.13e-12
+Time:                           10:07:12   Log-Likelihood:                -51.778
 No. Observations:                     60   AIC:                             111.6
 Df Residuals:                         56   BIC:                             119.9
 Df Model:                              3                                         

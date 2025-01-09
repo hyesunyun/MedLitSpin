@@ -1,0 +1,176 @@
+Model: openbiollm-70B - benefit_answer
+Number of rows with NaN value(s) in openbiollm-70B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.789
+Model:                               OLS   Adj. R-squared:                  0.778
+Method:                    Least Squares   F-statistic:                     69.75
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           6.59e-19
+Time:                           10:07:08   Log-Likelihood:                -94.066
+No. Observations:                     60   AIC:                             196.1
+Df Residuals:                         56   BIC:                             204.5
+Df Model:                              3                                         
+Covariance Type:               nonrobust                                         
+==================================================================================================================
+                                                     coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------
+Intercept                                          2.1538      0.236      9.143      0.000       1.682       2.626
+is_spin_in_abstract                                4.0128      0.544      7.376      0.000       2.923       5.103
+detection_model_prediction                         1.5962      0.645      2.474      0.016       0.304       2.889
+is_spin_in_abstract:detection_model_prediction    -0.8462      0.847     -0.999      0.322      -2.542       0.850
+==============================================================================
+Omnibus:                        5.668   Durbin-Watson:                   1.823
+Prob(Omnibus):                  0.059   Jarque-Bera (JB):                5.258
+Skew:                          -0.457   Prob(JB):                       0.0721
+Kurtosis:                       4.126   Cond. No.                         9.45
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: openbiollm-70B - rigor_answer
+Number of rows with NaN value(s) in openbiollm-70B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                        -inf
+Model:                               OLS   Adj. R-squared:                   -inf
+Method:                    Least Squares   F-statistic:                    -18.67
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):               1.00
+Time:                           10:07:08   Log-Likelihood:                 1892.0
+No. Observations:                     60   AIC:                            -3776.
+Df Residuals:                         56   BIC:                            -3768.
+Df Model:                              3                                         
+Covariance Type:               nonrobust                                         
+==================================================================================================================
+                                                     coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------
+Intercept                                          8.0000   9.92e-16   8.07e+15      0.000       8.000       8.000
+is_spin_in_abstract                             5.218e-15   2.29e-15      2.278      0.027    6.29e-16    9.81e-15
+detection_model_prediction                      3.109e-15   2.72e-15      1.144      0.257   -2.33e-15    8.55e-15
+is_spin_in_abstract:detection_model_prediction  -1.11e-15   3.56e-15     -0.311      0.757   -8.25e-15    6.03e-15
+==============================================================================
+Omnibus:                     1255.031   Durbin-Watson:                   1.374
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):                8.675
+Skew:                           0.080   Prob(JB):                       0.0131
+Kurtosis:                       1.144   Cond. No.                         9.45
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: openbiollm-70B - importance_answer
+Number of rows with NaN value(s) in openbiollm-70B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.225
+Model:                               OLS   Adj. R-squared:                  0.183
+Method:                    Least Squares   F-statistic:                     5.407
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):            0.00244
+Time:                           10:07:08   Log-Likelihood:                -55.259
+No. Observations:                     60   AIC:                             118.5
+Df Residuals:                         56   BIC:                             126.9
+Df Model:                              3                                         
+Covariance Type:               nonrobust                                         
+==================================================================================================================
+                                                     coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------
+Intercept                                          6.8077      0.123     55.177      0.000       6.561       7.055
+is_spin_in_abstract                                0.6923      0.285      2.430      0.018       0.122       1.263
+detection_model_prediction                        -0.3077      0.338     -0.911      0.366      -0.985       0.369
+is_spin_in_abstract:detection_model_prediction     0.1827      0.443      0.412      0.682      -0.706       1.071
+==============================================================================
+Omnibus:                        7.340   Durbin-Watson:                   2.339
+Prob(Omnibus):                  0.025   Jarque-Bera (JB):                3.535
+Skew:                           0.348   Prob(JB):                        0.171
+Kurtosis:                       2.036   Cond. No.                         9.45
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: openbiollm-70B - full_text_answer
+Number of rows with NaN value(s) in openbiollm-70B: 14
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.259
+Model:                               OLS   Adj. R-squared:                  0.225
+Method:                    Least Squares   F-statistic:                     7.529
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):            0.00157
+Time:                           10:07:08   Log-Likelihood:                -71.441
+No. Observations:                     46   AIC:                             148.9
+Df Residuals:                         43   BIC:                             154.4
+Df Model:                              2                                         
+Covariance Type:               nonrobust                                         
+==================================================================================================================
+                                                     coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------
+Intercept                                          5.1053      0.271     18.815      0.000       4.558       5.652
+is_spin_in_abstract                                1.8947      0.594      3.187      0.003       0.696       3.094
+detection_model_prediction                        -0.3636      0.293     -1.241      0.221      -0.955       0.227
+is_spin_in_abstract:detection_model_prediction    -0.3636      0.293     -1.241      0.221      -0.955       0.227
+==============================================================================
+Omnibus:                       65.993   Durbin-Watson:                   1.843
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              653.060
+Skew:                          -3.559   Prob(JB):                    1.55e-142
+Kurtosis:                      20.032   Cond. No.                     1.64e+16
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 3.72e-31. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
+Model: openbiollm-70B - another_trial_answer
+Number of rows with NaN value(s) in openbiollm-70B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.843
+Model:                               OLS   Adj. R-squared:                  0.834
+Method:                    Least Squares   F-statistic:                     100.2
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           1.73e-22
+Time:                           10:07:08   Log-Likelihood:                -89.583
+No. Observations:                     60   AIC:                             187.2
+Df Residuals:                         56   BIC:                             195.5
+Df Model:                              3                                         
+Covariance Type:               nonrobust                                         
+==================================================================================================================
+                                                     coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------
+Intercept                                          2.4615      0.219     11.260      0.000       2.024       2.899
+is_spin_in_abstract                                5.0385      0.505      9.980      0.000       4.027       6.050
+detection_model_prediction                         1.5385      0.599      2.570      0.013       0.339       2.738
+is_spin_in_abstract:detection_model_prediction    -1.4135      0.786     -1.799      0.077      -2.987       0.160
+==============================================================================
+Omnibus:                       30.344   Durbin-Watson:                   1.977
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               62.959
+Skew:                           1.625   Prob(JB):                     2.13e-14
+Kurtosis:                       6.824   Cond. No.                         9.45
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: openbiollm-70B - overall
+Number of rows with NaN value(s) in openbiollm-70B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.794
+Model:                               OLS   Adj. R-squared:                  0.782
+Method:                    Least Squares   F-statistic:                     71.74
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           3.55e-19
+Time:                           10:07:08   Log-Likelihood:                -53.024
+No. Observations:                     60   AIC:                             114.0
+Df Residuals:                         56   BIC:                             122.4
+Df Model:                              3                                         
+Covariance Type:               nonrobust                                         
+==================================================================================================================
+                                                     coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------
+Intercept                                          4.8962      0.119     41.191      0.000       4.658       5.134
+is_spin_in_abstract                                2.3622      0.275      8.605      0.000       1.812       2.912
+detection_model_prediction                         0.6663      0.326      2.047      0.045       0.014       1.318
+is_spin_in_abstract:detection_model_prediction    -0.6663      0.427     -1.560      0.124      -1.522       0.189
+==============================================================================
+Omnibus:                        9.507   Durbin-Watson:                   2.051
+Prob(Omnibus):                  0.009   Jarque-Bera (JB):               12.931
+Skew:                          -0.551   Prob(JB):                      0.00156
+Kurtosis:                       4.990   Cond. No.                         9.45
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

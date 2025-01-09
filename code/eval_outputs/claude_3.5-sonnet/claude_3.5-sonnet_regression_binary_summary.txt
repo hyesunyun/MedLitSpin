@@ -5,27 +5,30 @@ Number of rows with NaN value(s) in claude_3.5-sonnet: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.544
 Model:                               OLS   Adj. R-squared:                  0.528
 Method:                    Least Squares   F-statistic:                     34.04
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           1.87e-10
-Time:                           17:23:11   Log-Likelihood:                -93.325
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           1.87e-10
+Time:                           10:07:02   Log-Likelihood:                -93.325
 No. Observations:                     60   AIC:                             192.7
 Df Residuals:                         57   BIC:                             198.9
 Df Model:                              2                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    3.0310      0.887      3.417      0.001       1.255       4.807
-is_spin_in_abstract      2.4690      0.309      7.990      0.000       1.850       3.088
-is_detection_correct    -0.4643      0.861     -0.539      0.592      -2.188       1.259
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    2.7744      0.433      6.407      0.000       1.907       3.641
+is_spin_in_abstract                          2.7256      0.433      6.295      0.000       1.859       3.593
+is_detection_correct                        -0.2077      0.433     -0.480      0.633      -1.075       0.659
+is_spin_in_abstract:is_detection_correct    -0.2565      0.461     -0.557      0.580      -1.179       0.666
 ==============================================================================
 Omnibus:                        0.662   Durbin-Watson:                   1.694
 Prob(Omnibus):                  0.718   Jarque-Bera (JB):                0.666
 Skew:                           0.236   Prob(JB):                        0.717
-Kurtosis:                       2.792   Cond. No.                         12.1
+Kurtosis:                       2.792   Cond. No.                     3.55e+15
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 1.2e-29. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
 Model: claude_3.5-sonnet - rigor_answer
 Number of rows with NaN value(s) in claude_3.5-sonnet: 0
                               OLS Regression Results                             
@@ -33,27 +36,30 @@ Number of rows with NaN value(s) in claude_3.5-sonnet: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.023
 Model:                               OLS   Adj. R-squared:                 -0.012
 Method:                    Least Squares   F-statistic:                    0.6643
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):              0.519
-Time:                           17:23:11   Log-Likelihood:                -58.161
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):              0.519
+Time:                           10:07:02   Log-Likelihood:                -58.161
 No. Observations:                     60   AIC:                             122.3
 Df Residuals:                         57   BIC:                             128.6
 Df Model:                              2                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    8.1857      0.494     16.581      0.000       7.197       9.174
-is_spin_in_abstract     -0.1857      0.172     -1.080      0.285      -0.530       0.159
-is_detection_correct    -0.2857      0.479     -0.596      0.553      -1.245       0.674
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    6.0214      0.241     24.989      0.000       5.539       6.504
+is_spin_in_abstract                          1.9786      0.241      8.211      0.000       1.496       2.461
+is_detection_correct                         1.8786      0.241      7.796      0.000       1.396       2.361
+is_spin_in_abstract:is_detection_correct    -2.1643      0.256     -8.443      0.000      -2.678      -1.651
 ==============================================================================
 Omnibus:                       60.023   Durbin-Watson:                   1.233
 Prob(Omnibus):                  0.000   Jarque-Bera (JB):              339.391
 Skew:                          -2.855   Prob(JB):                     2.01e-74
-Kurtosis:                      13.156   Cond. No.                         12.1
+Kurtosis:                      13.156   Cond. No.                     3.55e+15
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 1.2e-29. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
 Model: claude_3.5-sonnet - importance_answer
 Number of rows with NaN value(s) in claude_3.5-sonnet: 0
                               OLS Regression Results                             
@@ -61,27 +67,30 @@ Number of rows with NaN value(s) in claude_3.5-sonnet: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.222
 Model:                               OLS   Adj. R-squared:                  0.195
 Method:                    Least Squares   F-statistic:                     8.129
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           0.000783
-Time:                           17:23:11   Log-Likelihood:                -57.781
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           0.000783
+Time:                           10:07:02   Log-Likelihood:                -57.781
 No. Observations:                     60   AIC:                             121.6
 Df Residuals:                         57   BIC:                             127.8
 Df Model:                              2                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    8.1786      0.491     16.671      0.000       7.196       9.161
-is_spin_in_abstract     -0.6786      0.171     -3.971      0.000      -1.021      -0.336
-is_detection_correct    -0.6786      0.476     -1.426      0.159      -1.632       0.275
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    5.7946      0.239     24.200      0.000       5.315       6.274
+is_spin_in_abstract                          1.7054      0.239      7.122      0.000       1.226       2.185
+is_detection_correct                         1.7054      0.239      7.122      0.000       1.226       2.185
+is_spin_in_abstract:is_detection_correct    -2.3839      0.255     -9.359      0.000      -2.894      -1.874
 ==============================================================================
 Omnibus:                       27.560   Durbin-Watson:                   1.456
 Prob(Omnibus):                  0.000   Jarque-Bera (JB):               70.016
 Skew:                          -1.323   Prob(JB):                     6.25e-16
-Kurtosis:                       7.583   Cond. No.                         12.1
+Kurtosis:                       7.583   Cond. No.                     3.55e+15
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 1.2e-29. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
 Model: claude_3.5-sonnet - full_text_answer
 Number of rows with NaN value(s) in claude_3.5-sonnet: 0
                               OLS Regression Results                             
@@ -89,27 +98,30 @@ Number of rows with NaN value(s) in claude_3.5-sonnet: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.561
 Model:                               OLS   Adj. R-squared:                  0.546
 Method:                    Least Squares   F-statistic:                     36.41
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           6.49e-11
-Time:                           17:23:11   Log-Likelihood:                -107.05
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           6.49e-11
+Time:                           10:07:02   Log-Likelihood:                -107.05
 No. Observations:                     60   AIC:                             220.1
 Df Residuals:                         57   BIC:                             226.4
 Df Model:                              2                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    4.3405      1.115      3.893      0.000       2.108       6.573
-is_spin_in_abstract      3.1595      0.388      8.134      0.000       2.382       3.937
-is_detection_correct    -1.1071      1.082     -1.023      0.310      -3.274       1.059
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    3.7685      0.544      6.924      0.000       2.679       4.858
+is_spin_in_abstract                          3.7315      0.544      6.856      0.000       2.642       4.821
+is_detection_correct                        -0.5351      0.544     -0.983      0.330      -1.625       0.555
+is_spin_in_abstract:is_detection_correct    -0.5720      0.579     -0.988      0.327      -1.731       0.587
 ==============================================================================
 Omnibus:                        0.135   Durbin-Watson:                   1.404
 Prob(Omnibus):                  0.935   Jarque-Bera (JB):                0.001
 Skew:                           0.001   Prob(JB):                         1.00
-Kurtosis:                       2.985   Cond. No.                         12.1
+Kurtosis:                       2.985   Cond. No.                     3.55e+15
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 1.2e-29. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
 Model: claude_3.5-sonnet - another_trial_answer
 Number of rows with NaN value(s) in claude_3.5-sonnet: 0
                               OLS Regression Results                             
@@ -117,27 +129,30 @@ Number of rows with NaN value(s) in claude_3.5-sonnet: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.456
 Model:                               OLS   Adj. R-squared:                  0.436
 Method:                    Least Squares   F-statistic:                     23.85
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           2.98e-08
-Time:                           17:23:11   Log-Likelihood:                -113.79
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           2.98e-08
+Time:                           10:07:02   Log-Likelihood:                -113.79
 No. Observations:                     60   AIC:                             233.6
 Df Residuals:                         57   BIC:                             239.9
 Df Model:                              2                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    1.0024      1.248      0.803      0.425      -1.496       3.501
-is_spin_in_abstract      2.9976      0.435      6.897      0.000       2.127       3.868
-is_detection_correct     1.9643      1.211      1.623      0.110      -0.460       4.388
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    1.9923      0.609      3.271      0.002       0.773       3.212
+is_spin_in_abstract                          2.0077      0.609      3.297      0.002       0.788       3.227
+is_detection_correct                         0.9744      0.609      1.600      0.115      -0.245       2.194
+is_spin_in_abstract:is_detection_correct     0.9899      0.648      1.528      0.132      -0.307       2.287
 ==============================================================================
 Omnibus:                        2.999   Durbin-Watson:                   1.526
 Prob(Omnibus):                  0.223   Jarque-Bera (JB):                2.269
 Skew:                           0.462   Prob(JB):                        0.322
-Kurtosis:                       3.232   Cond. No.                         12.1
+Kurtosis:                       3.232   Cond. No.                     3.55e+15
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 1.2e-29. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
 Model: claude_3.5-sonnet - overall
 Number of rows with NaN value(s) in claude_3.5-sonnet: 0
                               OLS Regression Results                             
@@ -145,24 +160,27 @@ Number of rows with NaN value(s) in claude_3.5-sonnet: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.532
 Model:                               OLS   Adj. R-squared:                  0.516
 Method:                    Least Squares   F-statistic:                     32.43
-Date:                   Tue, 07 Jan 2025   Prob (F-statistic):           3.94e-10
-Time:                           17:23:11   Log-Likelihood:                -66.373
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           3.94e-10
+Time:                           10:07:02   Log-Likelihood:                -66.373
 No. Observations:                     60   AIC:                             138.7
 Df Residuals:                         57   BIC:                             145.0
 Df Model:                              2                                         
 Covariance Type:               nonrobust                                         
-========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
-----------------------------------------------------------------------------------------
-const                    4.9476      0.566      8.740      0.000       3.814       6.081
-is_spin_in_abstract      1.5524      0.197      7.872      0.000       1.158       1.947
-is_detection_correct    -0.1143      0.549     -0.208      0.836      -1.214       0.986
+============================================================================================================
+                                               coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                    4.0702      0.276     14.731      0.000       3.517       4.624
+is_spin_in_abstract                          2.4298      0.276      8.794      0.000       1.876       2.983
+is_detection_correct                         0.7631      0.276      2.762      0.008       0.210       1.316
+is_spin_in_abstract:is_detection_correct    -0.8774      0.294     -2.985      0.004      -1.466      -0.289
 ==============================================================================
 Omnibus:                        0.512   Durbin-Watson:                   1.508
 Prob(Omnibus):                  0.774   Jarque-Bera (JB):                0.350
 Skew:                           0.186   Prob(JB):                        0.839
-Kurtosis:                       2.957   Cond. No.                         12.1
+Kurtosis:                       2.957   Cond. No.                     3.55e+15
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 1.2e-29. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.

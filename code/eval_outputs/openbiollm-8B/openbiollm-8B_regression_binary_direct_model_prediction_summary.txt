@@ -1,0 +1,186 @@
+Model: openbiollm-8B - benefit_answer
+Number of rows with NaN value(s) in openbiollm-8B: 15
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.584
+Model:                               OLS   Adj. R-squared:                  0.574
+Method:                    Least Squares   F-statistic:                     60.31
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           1.02e-09
+Time:                           10:07:08   Log-Likelihood:                -71.340
+No. Observations:                     45   AIC:                             146.7
+Df Residuals:                         43   BIC:                             150.3
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+==================================================================================================================
+                                                     coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------
+Intercept                                          2.1458      0.123     17.402      0.000       1.897       2.395
+is_spin_in_abstract                                1.4018      0.181      7.766      0.000       1.038       1.766
+detection_model_prediction                         2.1458      0.123     17.402      0.000       1.897       2.395
+is_spin_in_abstract:detection_model_prediction     1.4018      0.181      7.766      0.000       1.038       1.766
+==============================================================================
+Omnibus:                       21.726   Durbin-Watson:                   2.166
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               29.962
+Skew:                          -1.622   Prob(JB):                     3.12e-07
+Kurtosis:                       5.335   Cond. No.                     6.01e+15
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 3.17e-30. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
+Model: openbiollm-8B - rigor_answer
+Number of rows with NaN value(s) in openbiollm-8B: 2
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.029
+Model:                               OLS   Adj. R-squared:                  0.012
+Method:                    Least Squares   F-statistic:                     1.670
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):              0.202
+Time:                           10:07:08   Log-Likelihood:                -60.682
+No. Observations:                     58   AIC:                             125.4
+Df Residuals:                         56   BIC:                             129.5
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+==================================================================================================================
+                                                     coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------
+Intercept                                          3.6667      0.064     57.293      0.000       3.538       3.795
+is_spin_in_abstract                                0.1190      0.092      1.292      0.202      -0.065       0.304
+detection_model_prediction                         3.6667      0.064     57.293      0.000       3.538       3.795
+is_spin_in_abstract:detection_model_prediction     0.1190      0.092      1.292      0.202      -0.065       0.304
+==============================================================================
+Omnibus:                       20.152   Durbin-Watson:                   1.264
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               27.739
+Skew:                          -1.306   Prob(JB):                     9.48e-07
+Kurtosis:                       5.158   Cond. No.                     1.20e+17
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 1.03e-32. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
+Model: openbiollm-8B - importance_answer
+Number of rows with NaN value(s) in openbiollm-8B: 4
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.184
+Model:                               OLS   Adj. R-squared:                  0.169
+Method:                    Least Squares   F-statistic:                     12.17
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           0.000973
+Time:                           10:07:08   Log-Likelihood:                -110.58
+No. Observations:                     56   AIC:                             225.2
+Df Residuals:                         54   BIC:                             229.2
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+==================================================================================================================
+                                                     coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------
+Intercept                                          2.7407      0.171     16.044      0.000       2.398       3.083
+is_spin_in_abstract                                0.8282      0.237      3.489      0.001       0.352       1.304
+detection_model_prediction                         2.7407      0.171     16.044      0.000       2.398       3.083
+is_spin_in_abstract:detection_model_prediction     0.8282      0.237      3.489      0.001       0.352       1.304
+==============================================================================
+Omnibus:                       26.469   Durbin-Watson:                   1.757
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               43.661
+Skew:                          -1.626   Prob(JB):                     3.30e-10
+Kurtosis:                       5.854   Cond. No.                     5.24e+16
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 5.42e-32. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
+Model: openbiollm-8B - full_text_answer
+Number of rows with NaN value(s) in openbiollm-8B: 5
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.233
+Model:                               OLS   Adj. R-squared:                  0.219
+Method:                    Least Squares   F-statistic:                     16.14
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           0.000187
+Time:                           10:07:08   Log-Likelihood:                -126.38
+No. Observations:                     55   AIC:                             256.8
+Df Residuals:                         53   BIC:                             260.8
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+==================================================================================================================
+                                                     coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------
+Intercept                                          2.1346      0.241      8.873      0.000       1.652       2.617
+is_spin_in_abstract                                1.3309      0.331      4.017      0.000       0.666       1.995
+detection_model_prediction                         2.1346      0.241      8.873      0.000       1.652       2.617
+is_spin_in_abstract:detection_model_prediction     1.3309      0.331      4.017      0.000       0.666       1.995
+==============================================================================
+Omnibus:                       14.166   Durbin-Watson:                   2.147
+Prob(Omnibus):                  0.001   Jarque-Bera (JB):               15.670
+Skew:                          -1.098   Prob(JB):                     0.000396
+Kurtosis:                       4.421   Cond. No.                     7.66e+15
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 2.51e-30. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
+Model: openbiollm-8B - another_trial_answer
+Number of rows with NaN value(s) in openbiollm-8B: 34
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.004
+Model:                               OLS   Adj. R-squared:                 -0.038
+Method:                    Least Squares   F-statistic:                   0.09257
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):              0.764
+Time:                           10:07:08   Log-Likelihood:                -60.477
+No. Observations:                     26   AIC:                             125.0
+Df Residuals:                         24   BIC:                             127.5
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+==================================================================================================================
+                                                     coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------
+Intercept                                          2.6154      0.358      7.315      0.000       1.877       3.353
+is_spin_in_abstract                                0.1538      0.506      0.304      0.764      -0.890       1.197
+detection_model_prediction                         2.6154      0.358      7.315      0.000       1.877       3.353
+is_spin_in_abstract:detection_model_prediction     0.1538      0.506      0.304      0.764      -0.890       1.197
+==============================================================================
+Omnibus:                        3.985   Durbin-Watson:                   2.037
+Prob(Omnibus):                  0.136   Jarque-Bera (JB):                3.386
+Skew:                          -0.870   Prob(JB):                        0.184
+Kurtosis:                       2.687   Cond. No.                     3.01e+16
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 7.52e-32. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
+Model: openbiollm-8B - overall
+Number of rows with NaN value(s) in openbiollm-8B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.336
+Model:                               OLS   Adj. R-squared:                  0.324
+Method:                    Least Squares   F-statistic:                     29.32
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           1.23e-06
+Time:                           10:07:08   Log-Likelihood:                -91.354
+No. Observations:                     60   AIC:                             186.7
+Df Residuals:                         58   BIC:                             190.9
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+==================================================================================================================
+                                                     coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------
+Intercept                                          2.7233      0.103     26.444      0.000       2.517       2.929
+is_spin_in_abstract                                0.7886      0.146      5.415      0.000       0.497       1.080
+detection_model_prediction                         2.7233      0.103     26.444      0.000       2.517       2.929
+is_spin_in_abstract:detection_model_prediction     0.7886      0.146      5.415      0.000       0.497       1.080
+==============================================================================
+Omnibus:                        6.401   Durbin-Watson:                   1.633
+Prob(Omnibus):                  0.041   Jarque-Bera (JB):                6.343
+Skew:                          -0.751   Prob(JB):                       0.0419
+Kurtosis:                       2.468   Cond. No.                     3.80e+16
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 1.09e-31. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.

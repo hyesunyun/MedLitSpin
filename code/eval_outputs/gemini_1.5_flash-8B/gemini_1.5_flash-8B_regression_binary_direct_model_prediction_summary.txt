@@ -1,0 +1,174 @@
+Model: gemini_1.5_flash-8B - benefit_answer
+Number of rows with NaN value(s) in gemini_1.5_flash-8B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.684
+Model:                               OLS   Adj. R-squared:                  0.667
+Method:                    Least Squares   F-statistic:                     40.33
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           5.11e-14
+Time:                           10:07:07   Log-Likelihood:                -87.706
+No. Observations:                     60   AIC:                             183.4
+Df Residuals:                         56   BIC:                             191.8
+Df Model:                              3                                         
+Covariance Type:               nonrobust                                         
+==================================================================================================================
+                                                     coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------
+Intercept                                          2.7391      0.225     12.159      0.000       2.288       3.190
+is_spin_in_abstract                                2.9275      0.663      4.414      0.000       1.599       4.256
+detection_model_prediction                         0.1180      0.466      0.253      0.801      -0.816       1.052
+is_spin_in_abstract:detection_model_prediction     0.0672      0.806      0.083      0.934      -1.548       1.682
+==============================================================================
+Omnibus:                        0.530   Durbin-Watson:                   1.770
+Prob(Omnibus):                  0.767   Jarque-Bera (JB):                0.236
+Skew:                          -0.150   Prob(JB):                        0.889
+Kurtosis:                       3.068   Cond. No.                         10.7
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gemini_1.5_flash-8B - rigor_answer
+Number of rows with NaN value(s) in gemini_1.5_flash-8B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.049
+Model:                               OLS   Adj. R-squared:                 -0.002
+Method:                    Least Squares   F-statistic:                    0.9628
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):              0.417
+Time:                           10:07:07   Log-Likelihood:                -47.812
+No. Observations:                     60   AIC:                             103.6
+Df Residuals:                         56   BIC:                             112.0
+Df Model:                              3                                         
+Covariance Type:               nonrobust                                         
+==================================================================================================================
+                                                     coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------
+Intercept                                          7.3478      0.116     63.416      0.000       7.116       7.580
+is_spin_in_abstract                               -0.0145      0.341     -0.042      0.966      -0.698       0.669
+detection_model_prediction                        -0.3478      0.240     -1.450      0.153      -0.828       0.133
+is_spin_in_abstract:detection_model_prediction     0.1626      0.415      0.392      0.696      -0.668       0.993
+==============================================================================
+Omnibus:                        4.386   Durbin-Watson:                   1.217
+Prob(Omnibus):                  0.112   Jarque-Bera (JB):                3.943
+Skew:                           0.329   Prob(JB):                        0.139
+Kurtosis:                       4.069   Cond. No.                         10.7
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gemini_1.5_flash-8B - importance_answer
+Number of rows with NaN value(s) in gemini_1.5_flash-8B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.277
+Model:                               OLS   Adj. R-squared:                  0.238
+Method:                    Least Squares   F-statistic:                     7.136
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           0.000384
+Time:                           10:07:07   Log-Likelihood:                -70.460
+No. Observations:                     60   AIC:                             148.9
+Df Residuals:                         56   BIC:                             157.3
+Df Model:                              3                                         
+Covariance Type:               nonrobust                                         
+==================================================================================================================
+                                                     coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------
+Intercept                                          5.4783      0.169     32.416      0.000       5.140       5.817
+is_spin_in_abstract                                0.8551      0.498      1.719      0.091      -0.142       1.852
+detection_model_prediction                        -0.0497      0.350     -0.142      0.888      -0.751       0.651
+is_spin_in_abstract:detection_model_prediction     0.1608      0.605      0.266      0.791      -1.051       1.372
+==============================================================================
+Omnibus:                       13.914   Durbin-Watson:                   1.292
+Prob(Omnibus):                  0.001   Jarque-Bera (JB):               15.785
+Skew:                          -1.003   Prob(JB):                     0.000374
+Kurtosis:                       4.513   Cond. No.                         10.7
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gemini_1.5_flash-8B - full_text_answer
+Number of rows with NaN value(s) in gemini_1.5_flash-8B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.569
+Model:                               OLS   Adj. R-squared:                  0.546
+Method:                    Least Squares   F-statistic:                     24.68
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           2.63e-10
+Time:                           10:07:07   Log-Likelihood:                -97.389
+No. Observations:                     60   AIC:                             202.8
+Df Residuals:                         56   BIC:                             211.2
+Df Model:                              3                                         
+Covariance Type:               nonrobust                                         
+==================================================================================================================
+                                                     coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------
+Intercept                                          3.5652      0.265     13.467      0.000       3.035       4.096
+is_spin_in_abstract                                2.7681      0.779      3.552      0.001       1.207       4.329
+detection_model_prediction                         1.1491      0.548      2.097      0.041       0.051       2.247
+is_spin_in_abstract:detection_model_prediction    -0.8898      0.947     -0.939      0.352      -2.787       1.008
+==============================================================================
+Omnibus:                        2.623   Durbin-Watson:                   1.271
+Prob(Omnibus):                  0.269   Jarque-Bera (JB):                2.100
+Skew:                           0.457   Prob(JB):                        0.350
+Kurtosis:                       3.074   Cond. No.                         10.7
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gemini_1.5_flash-8B - another_trial_answer
+Number of rows with NaN value(s) in gemini_1.5_flash-8B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.831
+Model:                               OLS   Adj. R-squared:                  0.822
+Method:                    Least Squares   F-statistic:                     92.09
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           1.23e-21
+Time:                           10:07:07   Log-Likelihood:                -70.005
+No. Observations:                     60   AIC:                             148.0
+Df Residuals:                         56   BIC:                             156.4
+Df Model:                              3                                         
+Covariance Type:               nonrobust                                         
+==================================================================================================================
+                                                     coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------
+Intercept                                          3.0000      0.168     17.887      0.000       2.664       3.336
+is_spin_in_abstract                                3.0000      0.494      6.076      0.000       2.011       3.989
+detection_model_prediction                         0.4286      0.347      1.234      0.222      -0.267       1.124
+is_spin_in_abstract:detection_model_prediction     0.1640      0.600      0.273      0.786      -1.038       1.366
+==============================================================================
+Omnibus:                       25.803   Durbin-Watson:                   1.697
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               52.079
+Skew:                           1.357   Prob(JB):                     4.91e-12
+Kurtosis:                       6.669   Cond. No.                         10.7
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gemini_1.5_flash-8B - overall
+Number of rows with NaN value(s) in gemini_1.5_flash-8B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.699
+Model:                               OLS   Adj. R-squared:                  0.682
+Method:                    Least Squares   F-statistic:                     43.26
+Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           1.33e-14
+Time:                           10:07:07   Log-Likelihood:                -60.746
+No. Observations:                     60   AIC:                             129.5
+Df Residuals:                         56   BIC:                             137.9
+Df Model:                              3                                         
+Covariance Type:               nonrobust                                         
+==================================================================================================================
+                                                     coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------
+Intercept                                          4.4261      0.144     30.792      0.000       4.138       4.714
+is_spin_in_abstract                                1.9072      0.423      4.507      0.000       1.060       2.755
+detection_model_prediction                         0.2596      0.298      0.872      0.387      -0.336       0.856
+is_spin_in_abstract:detection_model_prediction    -0.0670      0.514     -0.130      0.897      -1.097       0.963
+==============================================================================
+Omnibus:                        1.191   Durbin-Watson:                   1.348
+Prob(Omnibus):                  0.551   Jarque-Bera (JB):                0.534
+Skew:                           0.101   Prob(JB):                        0.766
+Kurtosis:                       3.416   Cond. No.                         10.7
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
