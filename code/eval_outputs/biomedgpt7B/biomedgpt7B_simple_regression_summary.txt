@@ -1,0 +1,162 @@
+Model: biomedgpt7B - benefit_answer
+Number of rows with NaN value(s) in biomedgpt7B: 5
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.472
+Model:                               OLS   Adj. R-squared:                  0.462
+Method:                    Least Squares   F-statistic:                     47.30
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           7.11e-09
+Time:                           11:13:41   Log-Likelihood:                -56.721
+No. Observations:                     55   AIC:                             117.4
+Df Residuals:                         53   BIC:                             121.5
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               5.5926      0.133     42.035      0.000       5.326       5.859
+is_spin_in_abstract     1.2824      0.186      6.877      0.000       0.908       1.656
+==============================================================================
+Omnibus:                       18.623   Durbin-Watson:                   1.560
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               26.555
+Skew:                          -1.189   Prob(JB):                     1.71e-06
+Kurtosis:                       5.435   Cond. No.                         2.64
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: biomedgpt7B - rigor_answer
+Number of rows with NaN value(s) in biomedgpt7B: 52
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.082
+Model:                               OLS   Adj. R-squared:                 -0.071
+Method:                    Least Squares   F-statistic:                    0.5363
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):              0.492
+Time:                           11:13:41   Log-Likelihood:                -15.724
+No. Observations:                      8   AIC:                             35.45
+Df Residuals:                          6   BIC:                             35.61
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               0.6000      0.892      0.673      0.526      -1.582       2.782
+is_spin_in_abstract     1.0667      1.457      0.732      0.492      -2.497       4.631
+==============================================================================
+Omnibus:                        2.788   Durbin-Watson:                   2.861
+Prob(Omnibus):                  0.248   Jarque-Bera (JB):                1.413
+Skew:                           0.988   Prob(JB):                        0.493
+Kurtosis:                       2.424   Cond. No.                         2.43
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: biomedgpt7B - importance_answer
+Number of rows with NaN value(s) in biomedgpt7B: 52
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.158
+Model:                               OLS   Adj. R-squared:                  0.018
+Method:                    Least Squares   F-statistic:                     1.125
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):              0.330
+Time:                           11:13:41   Log-Likelihood:                -21.033
+No. Observations:                      8   AIC:                             46.07
+Df Residuals:                          6   BIC:                             46.22
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               5.0000      1.732      2.887      0.028       0.762       9.238
+is_spin_in_abstract    -3.0000      2.828     -1.061      0.330      -9.921       3.921
+==============================================================================
+Omnibus:                        1.650   Durbin-Watson:                   0.800
+Prob(Omnibus):                  0.438   Jarque-Bera (JB):                0.873
+Skew:                          -0.457   Prob(JB):                        0.646
+Kurtosis:                       1.665   Cond. No.                         2.43
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: biomedgpt7B - full_text_answer
+Number of rows with NaN value(s) in biomedgpt7B: 27
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.117
+Model:                               OLS   Adj. R-squared:                  0.089
+Method:                    Least Squares   F-statistic:                     4.120
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):             0.0510
+Time:                           11:13:41   Log-Likelihood:                -16.804
+No. Observations:                     33   AIC:                             37.61
+Df Residuals:                         31   BIC:                             40.60
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               9.9286      0.111     89.427      0.000       9.702      10.155
+is_spin_in_abstract    -0.2970      0.146     -2.030      0.051      -0.595       0.001
+==============================================================================
+Omnibus:                        5.396   Durbin-Watson:                   1.757
+Prob(Omnibus):                  0.067   Jarque-Bera (JB):                5.051
+Skew:                          -0.910   Prob(JB):                       0.0800
+Kurtosis:                       2.397   Cond. No.                         2.84
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: biomedgpt7B - another_trial_answer
+Number of rows with NaN value(s) in biomedgpt7B: 55
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.003
+Model:                               OLS   Adj. R-squared:                 -0.329
+Method:                    Least Squares   F-statistic:                  0.008696
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):              0.932
+Time:                           11:13:41   Log-Likelihood:                -13.656
+No. Observations:                      5   AIC:                             31.31
+Df Residuals:                          3   BIC:                             30.53
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               5.5000      2.398      2.294      0.106      -2.131      13.131
+is_spin_in_abstract    -0.5000      5.362     -0.093      0.932     -17.564      16.564
+==============================================================================
+Omnibus:                          nan   Durbin-Watson:                   3.120
+Prob(Omnibus):                    nan   Jarque-Bera (JB):                0.443
+Skew:                          -0.187   Prob(JB):                        0.801
+Kurtosis:                       1.590   Cond. No.                         2.62
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: biomedgpt7B - overall
+Number of rows with NaN value(s) in biomedgpt7B: 2
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.090
+Model:                               OLS   Adj. R-squared:                  0.074
+Method:                    Least Squares   F-statistic:                     5.552
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):             0.0220
+Time:                           11:13:41   Log-Likelihood:                -124.01
+No. Observations:                     58   AIC:                             252.0
+Df Residuals:                         56   BIC:                             256.1
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               5.9833      0.381     15.687      0.000       5.219       6.747
+is_spin_in_abstract     1.2935      0.549      2.356      0.022       0.194       2.393
+==============================================================================
+Omnibus:                       16.116   Durbin-Watson:                   1.222
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               18.418
+Skew:                          -1.261   Prob(JB):                     0.000100
+Kurtosis:                       4.124   Cond. No.                         2.58
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

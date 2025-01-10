@@ -1,0 +1,162 @@
+Model: llama2_chat-13B - benefit_answer
+Number of rows with NaN value(s) in llama2_chat-13B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.637
+Model:                               OLS   Adj. R-squared:                  0.631
+Method:                    Least Squares   F-statistic:                     101.8
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           2.23e-14
+Time:                           11:13:41   Log-Likelihood:                -91.238
+No. Observations:                     60   AIC:                             186.5
+Df Residuals:                         58   BIC:                             190.7
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               2.2333      0.206     10.864      0.000       1.822       2.645
+is_spin_in_abstract     2.9333      0.291     10.090      0.000       2.351       3.515
+==============================================================================
+Omnibus:                        7.198   Durbin-Watson:                   2.057
+Prob(Omnibus):                  0.027   Jarque-Bera (JB):                8.013
+Skew:                           0.482   Prob(JB):                       0.0182
+Kurtosis:                       4.509   Cond. No.                         2.62
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: llama2_chat-13B - rigor_answer
+Number of rows with NaN value(s) in llama2_chat-13B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.213
+Model:                               OLS   Adj. R-squared:                  0.199
+Method:                    Least Squares   F-statistic:                     15.67
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           0.000209
+Time:                           11:13:41   Log-Likelihood:                -71.878
+No. Observations:                     60   AIC:                             147.8
+Df Residuals:                         58   BIC:                             151.9
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               6.9000      0.149     46.347      0.000       6.602       7.198
+is_spin_in_abstract     0.8333      0.211      3.958      0.000       0.412       1.255
+==============================================================================
+Omnibus:                        3.156   Durbin-Watson:                   1.867
+Prob(Omnibus):                  0.206   Jarque-Bera (JB):                3.069
+Skew:                           0.521   Prob(JB):                        0.216
+Kurtosis:                       2.622   Cond. No.                         2.62
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: llama2_chat-13B - importance_answer
+Number of rows with NaN value(s) in llama2_chat-13B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.627
+Model:                               OLS   Adj. R-squared:                  0.621
+Method:                    Least Squares   F-statistic:                     97.66
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           4.81e-14
+Time:                           11:13:41   Log-Likelihood:                -70.498
+No. Observations:                     60   AIC:                             145.0
+Df Residuals:                         58   BIC:                             149.2
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               4.0333      0.145     27.722      0.000       3.742       4.325
+is_spin_in_abstract     2.0333      0.206      9.882      0.000       1.621       2.445
+==============================================================================
+Omnibus:                        9.281   Durbin-Watson:                   1.580
+Prob(Omnibus):                  0.010   Jarque-Bera (JB):               21.599
+Skew:                          -0.134   Prob(JB):                     2.04e-05
+Kurtosis:                       5.927   Cond. No.                         2.62
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: llama2_chat-13B - full_text_answer
+Number of rows with NaN value(s) in llama2_chat-13B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.617
+Model:                               OLS   Adj. R-squared:                  0.610
+Method:                    Least Squares   F-statistic:                     93.41
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           1.08e-13
+Time:                           11:13:41   Log-Likelihood:                -80.939
+No. Observations:                     60   AIC:                             165.9
+Df Residuals:                         58   BIC:                             170.1
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               3.5333      0.173     20.406      0.000       3.187       3.880
+is_spin_in_abstract     2.3667      0.245      9.665      0.000       1.877       2.857
+==============================================================================
+Omnibus:                        3.367   Durbin-Watson:                   2.140
+Prob(Omnibus):                  0.186   Jarque-Bera (JB):                2.483
+Skew:                          -0.351   Prob(JB):                        0.289
+Kurtosis:                       3.708   Cond. No.                         2.62
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: llama2_chat-13B - another_trial_answer
+Number of rows with NaN value(s) in llama2_chat-13B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.743
+Model:                               OLS   Adj. R-squared:                  0.738
+Method:                    Least Squares   F-statistic:                     167.5
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           9.57e-19
+Time:                           11:13:41   Log-Likelihood:                -72.797
+No. Observations:                     60   AIC:                             149.6
+Df Residuals:                         58   BIC:                             153.8
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               3.2000      0.151     21.167      0.000       2.897       3.503
+is_spin_in_abstract     2.7667      0.214     12.941      0.000       2.339       3.195
+==============================================================================
+Omnibus:                        5.955   Durbin-Watson:                   1.801
+Prob(Omnibus):                  0.051   Jarque-Bera (JB):                5.888
+Skew:                          -0.723   Prob(JB):                       0.0527
+Kurtosis:                       2.489   Cond. No.                         2.62
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: llama2_chat-13B - overall
+Number of rows with NaN value(s) in llama2_chat-13B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.734
+Model:                               OLS   Adj. R-squared:                  0.729
+Method:                    Least Squares   F-statistic:                     159.8
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           2.63e-18
+Time:                           11:13:41   Log-Likelihood:                -60.089
+No. Observations:                     60   AIC:                             124.2
+Df Residuals:                         58   BIC:                             128.4
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               3.9800      0.122     32.537      0.000       3.735       4.225
+is_spin_in_abstract     2.1867      0.173     12.641      0.000       1.840       2.533
+==============================================================================
+Omnibus:                        1.476   Durbin-Watson:                   2.065
+Prob(Omnibus):                  0.478   Jarque-Bera (JB):                0.768
+Skew:                           0.091   Prob(JB):                        0.681
+Kurtosis:                       3.524   Cond. No.                         2.62
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

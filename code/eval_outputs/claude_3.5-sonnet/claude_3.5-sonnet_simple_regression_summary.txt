@@ -1,0 +1,162 @@
+Model: claude_3.5-sonnet - benefit_answer
+Number of rows with NaN value(s) in claude_3.5-sonnet: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.542
+Model:                               OLS   Adj. R-squared:                  0.534
+Method:                    Least Squares   F-statistic:                     68.63
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           2.05e-11
+Time:                           11:13:41   Log-Likelihood:                -93.478
+No. Observations:                     60   AIC:                             191.0
+Df Residuals:                         58   BIC:                             195.1
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               2.5667      0.213     12.028      0.000       2.140       2.994
+is_spin_in_abstract     2.5000      0.302      8.284      0.000       1.896       3.104
+==============================================================================
+Omnibus:                        0.731   Durbin-Watson:                   1.704
+Prob(Omnibus):                  0.694   Jarque-Bera (JB):                0.711
+Skew:                           0.249   Prob(JB):                        0.701
+Kurtosis:                       2.807   Cond. No.                         2.62
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: claude_3.5-sonnet - rigor_answer
+Number of rows with NaN value(s) in claude_3.5-sonnet: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.017
+Model:                               OLS   Adj. R-squared:                 -0.000
+Method:                    Least Squares   F-statistic:                    0.9837
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):              0.325
+Time:                           11:13:41   Log-Likelihood:                -58.348
+No. Observations:                     60   AIC:                             120.7
+Df Residuals:                         58   BIC:                             124.9
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               7.9000      0.119     66.486      0.000       7.662       8.138
+is_spin_in_abstract    -0.1667      0.168     -0.992      0.325      -0.503       0.170
+==============================================================================
+Omnibus:                       60.210   Durbin-Watson:                   1.289
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              340.285
+Skew:                          -2.869   Prob(JB):                     1.28e-74
+Kurtosis:                      13.158   Cond. No.                         2.62
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: claude_3.5-sonnet - importance_answer
+Number of rows with NaN value(s) in claude_3.5-sonnet: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.194
+Model:                               OLS   Adj. R-squared:                  0.180
+Method:                    Least Squares   F-statistic:                     13.98
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           0.000425
+Time:                           11:13:41   Log-Likelihood:                -58.832
+No. Observations:                     60   AIC:                             121.7
+Df Residuals:                         58   BIC:                             125.9
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               7.5000      0.120     62.612      0.000       7.260       7.740
+is_spin_in_abstract    -0.6333      0.169     -3.739      0.000      -0.972      -0.294
+==============================================================================
+Omnibus:                       27.226   Durbin-Watson:                   1.492
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               69.538
+Skew:                          -1.300   Prob(JB):                     7.94e-16
+Kurtosis:                       7.588   Cond. No.                         2.62
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: claude_3.5-sonnet - full_text_answer
+Number of rows with NaN value(s) in claude_3.5-sonnet: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.553
+Model:                               OLS   Adj. R-squared:                  0.545
+Method:                    Least Squares   F-statistic:                     71.71
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           1.01e-11
+Time:                           11:13:41   Log-Likelihood:                -107.59
+No. Observations:                     60   AIC:                             219.2
+Df Residuals:                         58   BIC:                             223.4
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               3.2333      0.270     11.976      0.000       2.693       3.774
+is_spin_in_abstract     3.2333      0.382      8.468      0.000       2.469       3.998
+==============================================================================
+Omnibus:                        0.213   Durbin-Watson:                   1.419
+Prob(Omnibus):                  0.899   Jarque-Bera (JB):                0.033
+Skew:                          -0.057   Prob(JB):                        0.984
+Kurtosis:                       3.014   Cond. No.                         2.62
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: claude_3.5-sonnet - another_trial_answer
+Number of rows with NaN value(s) in claude_3.5-sonnet: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.430
+Model:                               OLS   Adj. R-squared:                  0.421
+Method:                    Least Squares   F-statistic:                     43.83
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           1.27e-08
+Time:                           11:13:41   Log-Likelihood:                -115.14
+No. Observations:                     60   AIC:                             234.3
+Df Residuals:                         58   BIC:                             238.5
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               2.9667      0.306      9.689      0.000       2.354       3.580
+is_spin_in_abstract     2.8667      0.433      6.620      0.000       2.000       3.733
+==============================================================================
+Omnibus:                        2.834   Durbin-Watson:                   1.543
+Prob(Omnibus):                  0.242   Jarque-Bera (JB):                2.501
+Skew:                           0.499   Prob(JB):                        0.286
+Kurtosis:                       2.924   Cond. No.                         2.62
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: claude_3.5-sonnet - overall
+Number of rows with NaN value(s) in claude_3.5-sonnet: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.532
+Model:                               OLS   Adj. R-squared:                  0.524
+Method:                    Least Squares   F-statistic:                     65.91
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           3.88e-11
+Time:                           11:13:41   Log-Likelihood:                -66.395
+No. Observations:                     60   AIC:                             136.8
+Df Residuals:                         58   BIC:                             141.0
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               4.8333      0.136     35.571      0.000       4.561       5.105
+is_spin_in_abstract     1.5600      0.192      8.118      0.000       1.175       1.945
+==============================================================================
+Omnibus:                        0.463   Durbin-Watson:                   1.514
+Prob(Omnibus):                  0.793   Jarque-Bera (JB):                0.299
+Skew:                           0.172   Prob(JB):                        0.861
+Kurtosis:                       2.965   Cond. No.                         2.62
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

@@ -1,0 +1,162 @@
+Model: gemini_1.5_flash-8B - benefit_answer
+Number of rows with NaN value(s) in gemini_1.5_flash-8B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.683
+Model:                               OLS   Adj. R-squared:                  0.677
+Method:                    Least Squares   F-statistic:                     124.9
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           4.33e-16
+Time:                           11:13:41   Log-Likelihood:                -87.783
+No. Observations:                     60   AIC:                             179.6
+Df Residuals:                         58   BIC:                             183.8
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               2.7667      0.194     14.256      0.000       2.378       3.155
+is_spin_in_abstract     3.0667      0.274     11.174      0.000       2.517       3.616
+==============================================================================
+Omnibus:                        0.526   Durbin-Watson:                   1.756
+Prob(Omnibus):                  0.769   Jarque-Bera (JB):                0.256
+Skew:                          -0.158   Prob(JB):                        0.880
+Kurtosis:                       3.047   Cond. No.                         2.62
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gemini_1.5_flash-8B - rigor_answer
+Number of rows with NaN value(s) in gemini_1.5_flash-8B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.008
+Model:                               OLS   Adj. R-squared:                 -0.009
+Method:                    Least Squares   F-statistic:                    0.4824
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):              0.490
+Time:                           11:13:41   Log-Likelihood:                -49.073
+No. Observations:                     60   AIC:                             102.1
+Df Residuals:                         58   BIC:                             106.3
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               7.2667      0.102     71.379      0.000       7.063       7.470
+is_spin_in_abstract    -0.1000      0.144     -0.695      0.490      -0.388       0.188
+==============================================================================
+Omnibus:                        6.321   Durbin-Watson:                   1.191
+Prob(Omnibus):                  0.042   Jarque-Bera (JB):                5.546
+Skew:                           0.578   Prob(JB):                       0.0625
+Kurtosis:                       3.939   Cond. No.                         2.62
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gemini_1.5_flash-8B - importance_answer
+Number of rows with NaN value(s) in gemini_1.5_flash-8B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.276
+Model:                               OLS   Adj. R-squared:                  0.263
+Method:                    Least Squares   F-statistic:                     22.07
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           1.66e-05
+Time:                           11:13:41   Log-Likelihood:                -70.498
+No. Observations:                     60   AIC:                             145.0
+Df Residuals:                         58   BIC:                             149.2
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               5.4667      0.145     37.573      0.000       5.175       5.758
+is_spin_in_abstract     0.9667      0.206      4.698      0.000       0.555       1.379
+==============================================================================
+Omnibus:                       13.253   Durbin-Watson:                   1.281
+Prob(Omnibus):                  0.001   Jarque-Bera (JB):               14.685
+Skew:                          -0.974   Prob(JB):                     0.000647
+Kurtosis:                       4.441   Cond. No.                         2.62
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gemini_1.5_flash-8B - full_text_answer
+Number of rows with NaN value(s) in gemini_1.5_flash-8B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.535
+Model:                               OLS   Adj. R-squared:                  0.527
+Method:                    Least Squares   F-statistic:                     66.64
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           3.26e-11
+Time:                           11:13:41   Log-Likelihood:                -99.712
+No. Observations:                     60   AIC:                             203.4
+Df Residuals:                         58   BIC:                             207.6
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               3.8333      0.237     16.191      0.000       3.359       4.307
+is_spin_in_abstract     2.7333      0.335      8.163      0.000       2.063       3.404
+==============================================================================
+Omnibus:                        1.561   Durbin-Watson:                   1.318
+Prob(Omnibus):                  0.458   Jarque-Bera (JB):                1.558
+Skew:                           0.322   Prob(JB):                        0.459
+Kurtosis:                       2.544   Cond. No.                         2.62
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gemini_1.5_flash-8B - another_trial_answer
+Number of rows with NaN value(s) in gemini_1.5_flash-8B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.822
+Model:                               OLS   Adj. R-squared:                  0.819
+Method:                    Least Squares   F-statistic:                     268.7
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           1.94e-23
+Time:                           11:13:41   Log-Likelihood:                -71.565
+No. Observations:                     60   AIC:                             147.1
+Df Residuals:                         58   BIC:                             151.3
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               3.1000      0.148     20.931      0.000       2.804       3.396
+is_spin_in_abstract     3.4333      0.209     16.392      0.000       3.014       3.853
+==============================================================================
+Omnibus:                       25.457   Durbin-Watson:                   1.593
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               54.753
+Skew:                           1.296   Prob(JB):                     1.29e-12
+Kurtosis:                       6.896   Cond. No.                         2.62
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gemini_1.5_flash-8B - overall
+Number of rows with NaN value(s) in gemini_1.5_flash-8B: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.693
+Model:                               OLS   Adj. R-squared:                  0.688
+Method:                    Least Squares   F-statistic:                     131.1
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           1.62e-16
+Time:                           11:13:41   Log-Likelihood:                -61.262
+No. Observations:                     60   AIC:                             126.5
+Df Residuals:                         58   BIC:                             130.7
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               4.4867      0.125     35.969      0.000       4.237       4.736
+is_spin_in_abstract     2.0200      0.176     11.451      0.000       1.667       2.373
+==============================================================================
+Omnibus:                        0.873   Durbin-Watson:                   1.327
+Prob(Omnibus):                  0.646   Jarque-Bera (JB):                0.297
+Skew:                           0.030   Prob(JB):                        0.862
+Kurtosis:                       3.339   Cond. No.                         2.62
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

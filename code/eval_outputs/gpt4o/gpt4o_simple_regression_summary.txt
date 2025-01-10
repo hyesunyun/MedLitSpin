@@ -1,0 +1,162 @@
+Model: gpt4o - benefit_answer
+Number of rows with NaN value(s) in gpt4o: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.587
+Model:                               OLS   Adj. R-squared:                  0.580
+Method:                    Least Squares   F-statistic:                     82.39
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           9.90e-13
+Time:                           11:13:41   Log-Likelihood:                -101.54
+No. Observations:                     60   AIC:                             207.1
+Df Residuals:                         58   BIC:                             211.3
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               2.9667      0.244     12.154      0.000       2.478       3.455
+is_spin_in_abstract     3.1333      0.345      9.077      0.000       2.442       3.824
+==============================================================================
+Omnibus:                        0.328   Durbin-Watson:                   1.189
+Prob(Omnibus):                  0.849   Jarque-Bera (JB):                0.498
+Skew:                          -0.126   Prob(JB):                        0.780
+Kurtosis:                       2.631   Cond. No.                         2.62
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gpt4o - rigor_answer
+Number of rows with NaN value(s) in gpt4o: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.017
+Model:                               OLS   Adj. R-squared:                 -0.000
+Method:                    Least Squares   F-statistic:                    0.9849
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):              0.325
+Time:                           11:13:41   Log-Likelihood:                -27.662
+No. Observations:                     60   AIC:                             59.32
+Df Residuals:                         58   BIC:                             63.51
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               6.9667      0.071     97.777      0.000       6.824       7.109
+is_spin_in_abstract     0.1000      0.101      0.992      0.325      -0.102       0.302
+==============================================================================
+Omnibus:                       11.241   Durbin-Watson:                   1.277
+Prob(Omnibus):                  0.004   Jarque-Bera (JB):               31.319
+Skew:                           0.211   Prob(JB):                     1.58e-07
+Kurtosis:                       6.514   Cond. No.                         2.62
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gpt4o - importance_answer
+Number of rows with NaN value(s) in gpt4o: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.345
+Model:                               OLS   Adj. R-squared:                  0.333
+Method:                    Least Squares   F-statistic:                     30.52
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           8.18e-07
+Time:                           11:13:41   Log-Likelihood:                -75.397
+No. Observations:                     60   AIC:                             154.8
+Df Residuals:                         58   BIC:                             159.0
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               5.6000      0.158     35.472      0.000       5.284       5.916
+is_spin_in_abstract     1.2333      0.223      5.524      0.000       0.786       1.680
+==============================================================================
+Omnibus:                        1.349   Durbin-Watson:                   1.731
+Prob(Omnibus):                  0.510   Jarque-Bera (JB):                1.383
+Skew:                          -0.315   Prob(JB):                        0.501
+Kurtosis:                       2.605   Cond. No.                         2.62
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gpt4o - full_text_answer
+Number of rows with NaN value(s) in gpt4o: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.668
+Model:                               OLS   Adj. R-squared:                  0.662
+Method:                    Least Squares   F-statistic:                     116.6
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           1.68e-15
+Time:                           11:13:41   Log-Likelihood:                -85.796
+No. Observations:                     60   AIC:                             175.6
+Df Residuals:                         58   BIC:                             179.8
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               3.8667      0.188     20.595      0.000       3.491       4.242
+is_spin_in_abstract     2.8667      0.266     10.797      0.000       2.335       3.398
+==============================================================================
+Omnibus:                        3.029   Durbin-Watson:                   1.710
+Prob(Omnibus):                  0.220   Jarque-Bera (JB):                2.347
+Skew:                          -0.227   Prob(JB):                        0.309
+Kurtosis:                       3.856   Cond. No.                         2.62
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gpt4o - another_trial_answer
+Number of rows with NaN value(s) in gpt4o: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.751
+Model:                               OLS   Adj. R-squared:                  0.747
+Method:                    Least Squares   F-statistic:                     174.9
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           3.71e-19
+Time:                           11:13:41   Log-Likelihood:                -82.671
+No. Observations:                     60   AIC:                             169.3
+Df Residuals:                         58   BIC:                             173.5
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               3.3000      0.178     18.516      0.000       2.943       3.657
+is_spin_in_abstract     3.3333      0.252     13.225      0.000       2.829       3.838
+==============================================================================
+Omnibus:                       11.449   Durbin-Watson:                   1.622
+Prob(Omnibus):                  0.003   Jarque-Bera (JB):               21.727
+Skew:                           0.506   Prob(JB):                     1.91e-05
+Kurtosis:                       5.769   Cond. No.                         2.62
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Model: gpt4o - overall
+Number of rows with NaN value(s) in gpt4o: 0
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     interpretation_answer   R-squared:                       0.657
+Model:                               OLS   Adj. R-squared:                  0.652
+Method:                    Least Squares   F-statistic:                     111.3
+Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           4.10e-15
+Time:                           11:13:41   Log-Likelihood:                -69.452
+No. Observations:                     60   AIC:                             142.9
+Df Residuals:                         58   BIC:                             147.1
+Df Model:                              1                                         
+Covariance Type:               nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept               4.5400      0.143     31.753      0.000       4.254       4.826
+is_spin_in_abstract     2.1333      0.202     10.550      0.000       1.729       2.538
+==============================================================================
+Omnibus:                        0.959   Durbin-Watson:                   1.391
+Prob(Omnibus):                  0.619   Jarque-Bera (JB):                0.361
+Skew:                          -0.068   Prob(JB):                        0.835
+Kurtosis:                       3.355   Cond. No.                         2.62
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
