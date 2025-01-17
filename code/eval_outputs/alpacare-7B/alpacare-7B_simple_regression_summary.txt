@@ -5,8 +5,8 @@ Number of rows with NaN value(s) in alpacare-7B: 1
 Dep. Variable:     interpretation_answer   R-squared:                       0.713
 Model:                               OLS   Adj. R-squared:                  0.708
 Method:                    Least Squares   F-statistic:                     141.8
-Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           4.25e-17
-Time:                           11:13:40   Log-Likelihood:                -122.55
+Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           4.25e-17
+Time:                           00:26:05   Log-Likelihood:                -122.55
 No. Observations:                     59   AIC:                             249.1
 Df Residuals:                         57   BIC:                             253.3
 Df Model:                              1                                         
@@ -32,8 +32,8 @@ Number of rows with NaN value(s) in alpacare-7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.049
 Model:                               OLS   Adj. R-squared:                  0.033
 Method:                    Least Squares   F-statistic:                     3.013
-Date:                   Fri, 10 Jan 2025   Prob (F-statistic):             0.0879
-Time:                           11:13:40   Log-Likelihood:                -52.967
+Date:                   Fri, 17 Jan 2025   Prob (F-statistic):             0.0879
+Time:                           00:26:05   Log-Likelihood:                -52.967
 No. Observations:                     60   AIC:                             109.9
 Df Residuals:                         58   BIC:                             114.1
 Df Model:                              1                                         
@@ -59,8 +59,8 @@ Number of rows with NaN value(s) in alpacare-7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.250
 Model:                               OLS   Adj. R-squared:                  0.237
 Method:                    Least Squares   F-statistic:                     19.33
-Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           4.75e-05
-Time:                           11:13:40   Log-Likelihood:                -63.117
+Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           4.75e-05
+Time:                           00:26:05   Log-Likelihood:                -63.117
 No. Observations:                     60   AIC:                             130.2
 Df Residuals:                         58   BIC:                             134.4
 Df Model:                              1                                         
@@ -86,8 +86,8 @@ Number of rows with NaN value(s) in alpacare-7B: 29
 Dep. Variable:     interpretation_answer   R-squared:                         nan
 Model:                               OLS   Adj. R-squared:                    nan
 Method:                    Least Squares   F-statistic:                       nan
-Date:                   Fri, 10 Jan 2025   Prob (F-statistic):                nan
-Time:                           11:13:40   Log-Likelihood:                    inf
+Date:                   Fri, 17 Jan 2025   Prob (F-statistic):                nan
+Time:                           00:26:05   Log-Likelihood:                    inf
 No. Observations:                     31   AIC:                              -inf
 Df Residuals:                         29   BIC:                              -inf
 Df Model:                              1                                         
@@ -113,8 +113,8 @@ Number of rows with NaN value(s) in alpacare-7B: 58
 Dep. Variable:     interpretation_answer   R-squared:                       0.000
 Model:                               OLS   Adj. R-squared:                  0.000
 Method:                    Least Squares   F-statistic:                       nan
-Date:                   Fri, 10 Jan 2025   Prob (F-statistic):                nan
-Time:                           11:13:41   Log-Likelihood:                -5.6105
+Date:                   Fri, 17 Jan 2025   Prob (F-statistic):                nan
+Time:                           00:26:05   Log-Likelihood:                -5.6105
 No. Observations:                      2   AIC:                             13.22
 Df Residuals:                          1   BIC:                             11.91
 Df Model:                              0                                         
@@ -142,8 +142,8 @@ Number of rows with NaN value(s) in alpacare-7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.609
 Model:                               OLS   Adj. R-squared:                  0.602
 Method:                    Least Squares   F-statistic:                     90.36
-Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           1.96e-13
-Time:                           11:13:41   Log-Likelihood:                -79.603
+Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           1.96e-13
+Time:                           00:26:06   Log-Likelihood:                -79.603
 No. Observations:                     60   AIC:                             163.2
 Df Residuals:                         58   BIC:                             167.4
 Df Model:                              1                                         

@@ -5,8 +5,8 @@ Number of rows with NaN value(s) in med42-8B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.660
 Model:                               OLS   Adj. R-squared:                  0.648
 Method:                    Least Squares   F-statistic:                     55.40
-Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           4.32e-14
-Time:                           10:07:08   Log-Likelihood:                -89.289
+Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           4.32e-14
+Time:                           00:26:21   Log-Likelihood:                -89.289
 No. Observations:                     60   AIC:                             184.6
 Df Residuals:                         57   BIC:                             190.9
 Df Model:                              2                                         
@@ -36,8 +36,8 @@ Number of rows with NaN value(s) in med42-8B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.106
 Model:                               OLS   Adj. R-squared:                  0.075
 Method:                    Least Squares   F-statistic:                     3.391
-Date:                   Thu, 09 Jan 2025   Prob (F-statistic):             0.0406
-Time:                           10:07:08   Log-Likelihood:                -45.534
+Date:                   Fri, 17 Jan 2025   Prob (F-statistic):             0.0406
+Time:                           00:26:21   Log-Likelihood:                -45.534
 No. Observations:                     60   AIC:                             97.07
 Df Residuals:                         57   BIC:                             103.4
 Df Model:                              2                                         
@@ -67,8 +67,8 @@ Number of rows with NaN value(s) in med42-8B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.471
 Model:                               OLS   Adj. R-squared:                  0.453
 Method:                    Least Squares   F-statistic:                     25.42
-Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           1.28e-08
-Time:                           10:07:08   Log-Likelihood:                -75.599
+Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           1.28e-08
+Time:                           00:26:21   Log-Likelihood:                -75.599
 No. Observations:                     60   AIC:                             157.2
 Df Residuals:                         57   BIC:                             163.5
 Df Model:                              2                                         
@@ -98,8 +98,8 @@ Number of rows with NaN value(s) in med42-8B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.583
 Model:                               OLS   Adj. R-squared:                  0.568
 Method:                    Least Squares   F-statistic:                     39.81
-Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           1.52e-11
-Time:                           10:07:08   Log-Likelihood:                -63.041
+Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           1.52e-11
+Time:                           00:26:21   Log-Likelihood:                -63.041
 No. Observations:                     60   AIC:                             132.1
 Df Residuals:                         57   BIC:                             138.4
 Df Model:                              2                                         
@@ -129,8 +129,8 @@ Number of rows with NaN value(s) in med42-8B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.742
 Model:                               OLS   Adj. R-squared:                  0.733
 Method:                    Least Squares   F-statistic:                     82.15
-Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           1.62e-17
-Time:                           10:07:08   Log-Likelihood:                -78.542
+Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           1.62e-17
+Time:                           00:26:21   Log-Likelihood:                -78.542
 No. Observations:                     60   AIC:                             163.1
 Df Residuals:                         57   BIC:                             169.4
 Df Model:                              2                                         
@@ -160,8 +160,8 @@ Number of rows with NaN value(s) in med42-8B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.707
 Model:                               OLS   Adj. R-squared:                  0.696
 Method:                    Least Squares   F-statistic:                     68.64
-Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           6.64e-16
-Time:                           10:07:08   Log-Likelihood:                -56.428
+Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           6.64e-16
+Time:                           00:26:21   Log-Likelihood:                -56.428
 No. Observations:                     60   AIC:                             118.9
 Df Residuals:                         57   BIC:                             125.1
 Df Model:                              2                                         

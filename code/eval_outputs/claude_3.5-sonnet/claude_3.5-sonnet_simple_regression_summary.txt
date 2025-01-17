@@ -5,8 +5,8 @@ Number of rows with NaN value(s) in claude_3.5-sonnet: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.542
 Model:                               OLS   Adj. R-squared:                  0.534
 Method:                    Least Squares   F-statistic:                     68.63
-Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           2.05e-11
-Time:                           11:13:41   Log-Likelihood:                -93.478
+Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           2.05e-11
+Time:                           00:26:07   Log-Likelihood:                -93.478
 No. Observations:                     60   AIC:                             191.0
 Df Residuals:                         58   BIC:                             195.1
 Df Model:                              1                                         
@@ -32,8 +32,8 @@ Number of rows with NaN value(s) in claude_3.5-sonnet: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.017
 Model:                               OLS   Adj. R-squared:                 -0.000
 Method:                    Least Squares   F-statistic:                    0.9837
-Date:                   Fri, 10 Jan 2025   Prob (F-statistic):              0.325
-Time:                           11:13:41   Log-Likelihood:                -58.348
+Date:                   Fri, 17 Jan 2025   Prob (F-statistic):              0.325
+Time:                           00:26:07   Log-Likelihood:                -58.348
 No. Observations:                     60   AIC:                             120.7
 Df Residuals:                         58   BIC:                             124.9
 Df Model:                              1                                         
@@ -59,8 +59,8 @@ Number of rows with NaN value(s) in claude_3.5-sonnet: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.194
 Model:                               OLS   Adj. R-squared:                  0.180
 Method:                    Least Squares   F-statistic:                     13.98
-Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           0.000425
-Time:                           11:13:41   Log-Likelihood:                -58.832
+Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           0.000425
+Time:                           00:26:07   Log-Likelihood:                -58.832
 No. Observations:                     60   AIC:                             121.7
 Df Residuals:                         58   BIC:                             125.9
 Df Model:                              1                                         
@@ -86,8 +86,8 @@ Number of rows with NaN value(s) in claude_3.5-sonnet: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.553
 Model:                               OLS   Adj. R-squared:                  0.545
 Method:                    Least Squares   F-statistic:                     71.71
-Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           1.01e-11
-Time:                           11:13:41   Log-Likelihood:                -107.59
+Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           1.01e-11
+Time:                           00:26:07   Log-Likelihood:                -107.59
 No. Observations:                     60   AIC:                             219.2
 Df Residuals:                         58   BIC:                             223.4
 Df Model:                              1                                         
@@ -113,8 +113,8 @@ Number of rows with NaN value(s) in claude_3.5-sonnet: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.430
 Model:                               OLS   Adj. R-squared:                  0.421
 Method:                    Least Squares   F-statistic:                     43.83
-Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           1.27e-08
-Time:                           11:13:41   Log-Likelihood:                -115.14
+Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           1.27e-08
+Time:                           00:26:07   Log-Likelihood:                -115.14
 No. Observations:                     60   AIC:                             234.3
 Df Residuals:                         58   BIC:                             238.5
 Df Model:                              1                                         
@@ -140,8 +140,8 @@ Number of rows with NaN value(s) in claude_3.5-sonnet: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.532
 Model:                               OLS   Adj. R-squared:                  0.524
 Method:                    Least Squares   F-statistic:                     65.91
-Date:                   Fri, 10 Jan 2025   Prob (F-statistic):           3.88e-11
-Time:                           11:13:41   Log-Likelihood:                -66.395
+Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           3.88e-11
+Time:                           00:26:08   Log-Likelihood:                -66.395
 No. Observations:                     60   AIC:                             136.8
 Df Residuals:                         58   BIC:                             141.0
 Df Model:                              1                                         

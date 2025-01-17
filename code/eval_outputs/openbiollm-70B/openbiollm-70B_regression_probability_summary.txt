@@ -5,8 +5,8 @@ Number of rows with NaN value(s) in openbiollm-70B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.764
 Model:                               OLS   Adj. R-squared:                  0.751
 Method:                    Least Squares   F-statistic:                     60.44
-Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           1.46e-17
-Time:                           10:07:13   Log-Likelihood:                -97.405
+Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           1.46e-17
+Time:                           00:26:27   Log-Likelihood:                -97.405
 No. Observations:                     60   AIC:                             202.8
 Df Residuals:                         56   BIC:                             211.2
 Df Model:                              3                                         
@@ -34,8 +34,8 @@ Number of rows with NaN value(s) in openbiollm-70B: 0
 Dep. Variable:     interpretation_answer   R-squared:                        -inf
 Model:                               OLS   Adj. R-squared:                   -inf
 Method:                    Least Squares   F-statistic:                    -18.67
-Date:                   Thu, 09 Jan 2025   Prob (F-statistic):               1.00
-Time:                           10:07:13   Log-Likelihood:                 1875.7
+Date:                   Fri, 17 Jan 2025   Prob (F-statistic):               1.00
+Time:                           00:26:27   Log-Likelihood:                 1875.7
 No. Observations:                     60   AIC:                            -3743.
 Df Residuals:                         56   BIC:                            -3735.
 Df Model:                              3                                         
@@ -63,8 +63,8 @@ Number of rows with NaN value(s) in openbiollm-70B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.229
 Model:                               OLS   Adj. R-squared:                  0.187
 Method:                    Least Squares   F-statistic:                     5.532
-Date:                   Thu, 09 Jan 2025   Prob (F-statistic):            0.00213
-Time:                           10:07:13   Log-Likelihood:                -55.104
+Date:                   Fri, 17 Jan 2025   Prob (F-statistic):            0.00213
+Time:                           00:26:27   Log-Likelihood:                -55.104
 No. Observations:                     60   AIC:                             118.2
 Df Residuals:                         56   BIC:                             126.6
 Df Model:                              3                                         
@@ -92,8 +92,8 @@ Number of rows with NaN value(s) in openbiollm-70B: 14
 Dep. Variable:     interpretation_answer   R-squared:                       0.261
 Model:                               OLS   Adj. R-squared:                  0.208
 Method:                    Least Squares   F-statistic:                     4.938
-Date:                   Thu, 09 Jan 2025   Prob (F-statistic):            0.00501
-Time:                           10:07:13   Log-Likelihood:                -71.398
+Date:                   Fri, 17 Jan 2025   Prob (F-statistic):            0.00501
+Time:                           00:26:27   Log-Likelihood:                -71.398
 No. Observations:                     46   AIC:                             150.8
 Df Residuals:                         42   BIC:                             158.1
 Df Model:                              3                                         
@@ -121,8 +121,8 @@ Number of rows with NaN value(s) in openbiollm-70B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.825
 Model:                               OLS   Adj. R-squared:                  0.816
 Method:                    Least Squares   F-statistic:                     88.25
-Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           3.30e-21
-Time:                           10:07:13   Log-Likelihood:                -92.749
+Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           3.30e-21
+Time:                           00:26:27   Log-Likelihood:                -92.749
 No. Observations:                     60   AIC:                             193.5
 Df Residuals:                         56   BIC:                             201.9
 Df Model:                              3                                         
@@ -150,8 +150,8 @@ Number of rows with NaN value(s) in openbiollm-70B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.783
 Model:                               OLS   Adj. R-squared:                  0.771
 Method:                    Least Squares   F-statistic:                     67.23
-Date:                   Thu, 09 Jan 2025   Prob (F-statistic):           1.47e-18
-Time:                           10:07:13   Log-Likelihood:                -54.557
+Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           1.47e-18
+Time:                           00:26:27   Log-Likelihood:                -54.557
 No. Observations:                     60   AIC:                             117.1
 Df Residuals:                         56   BIC:                             125.5
 Df Model:                              3                                         
