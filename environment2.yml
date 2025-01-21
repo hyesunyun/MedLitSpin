@@ -1,0 +1,22 @@
+name: MedLitSpin
+channels:
+  - defaults
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - anaconda
+  - python=3.11
+  - pytorch
+  - torchvision
+  - pytorch-cuda=12.1
+  - torchaudio
+  - altair-all
+  - notebook
+  - pip:
+    - transformers
+    - tiktoken
+    - openai
+    - google-generativeai
+    - anthropic
+    - python-dotenv
