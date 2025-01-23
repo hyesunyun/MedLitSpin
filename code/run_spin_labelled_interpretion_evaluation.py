@@ -51,8 +51,9 @@ class Evaluator:
         "another_trial": "Do you think it would be interesting to run another trial evaluating this treatment? Score on a scale of 0-10 from not interesting at all to very interesting."
     }
     MODELS_WITH_RATE_LIMIT = {"gemini_1.5_flash", "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku"}
-    def __init__(self, model_name: str, output_path: str, is_debug: bool = False) -> None:
+    def __init__(self, model_name: str, label_mode: str, output_path: str, is_debug: bool = False) -> None:
         self.model_name = model_name
+        self.label_mode = label_mode
         self.output_path = output_path
         self.is_debug = is_debug
 
@@ -61,6 +62,8 @@ class Evaluator:
         self.max_new_tokens = self.__get_max_new_tokens()
 
         self.__load_dataset()
+        if self.label_mode == "model_output_label":
+            self.__load_spin_label_dataset()
         self.__load_model()
 
     def __load_dataset(self) -> None:
@@ -84,6 +87,18 @@ class Evaluator:
             # get both spin and no spin abstracts for the selected pmids
             dataset = [example for example in dataset if example["PMID"] in pmids]
         self.dataset = dataset
+
+    def __load_spin_label_dataset(self) -> None:
+        """
+        This method loads the dataset with spin labels
+
+        :return dataset as a list of dictionaries
+        """
+        print("Loading the dataset with spin labels...")
+        model_output_file_path = f"{self.output_path}/{self.model_name}_detection_outputs.csv"
+        model_output_label_dataset = load_csv_file(model_output_file_path)
+        # Convert this list of dict to a dict indexed by thePMID column value
+        self.model_output_label_dataset = {d["PMID"]: d for d in model_output_label_dataset}
 
     def __load_model(self) -> None:
         """
@@ -215,7 +230,12 @@ class Evaluator:
         pbar = tqdm(self.dataset, desc="Running evaluation on the dataset")
         for _, example in enumerate(pbar):
             for key in self.QUESTIONS:
-                if_contains = "contains" if example["abstract_type"] == "spin" else "does not contain"
+                if self.label_mode == "model_output_label": # this is using the label from the same model's outputs
+                    pmid = example["PMID"]
+                    pmid_data = self.model_output_label_dataset[pmid]
+                    if_contains = "contains" if pmid_data["model_answer"] == "yes" else "does not contain"
+                else: # This is using the ground truth labels
+                    if_contains = "contains" if example["abstract_type"] == "spin" else "does not contain"
                 input = self.BASE_PROMPT.format(ABSTRACT=example["abstract"], QUESTION=self.QUESTIONS[key], IF_CONTAINS = if_contains)
                 output = self.model.generate_output(input, max_new_tokens=self.max_new_tokens)
 
@@ -233,12 +253,13 @@ class Evaluator:
         # sort results by id
         results = sorted(results, key=lambda x: x["PMID"])
 
+        mode_short_name = self.label_mode.split("_label")[0] if "_label" in self.label_mode else self.label_mode
         # convert into json
-        json_file_path = f"{self.output_path}/{self.model_name}_labelled_interpretation_outputs.json"
+        json_file_path = f"{self.output_path}/{self.model_name}_{mode_short_name}_labelled_interpretation_outputs.json"
         save_dataset_to_json(results, json_file_path)
 
         # convert into csv
-        csv_file_path = f"{self.output_path}/{self.model_name}_labelled_interpretation_outputs.csv"
+        csv_file_path = f"{self.output_path}/{self.model_name}_{mode_short_name}_labelled_interpretation_outputs.csv"
         save_dataset_to_csv(results, csv_file_path)
 
         print(f"Model outputs saved to {json_file_path} and {csv_file_path}")
@@ -247,7 +268,7 @@ class Evaluator:
         diff_metrics = self.__calculate_mean_differences(results)
 
         # save the differences to a file 
-        diff_file_path = f"{self.output_path}/{self.model_name}_mean_differences_labelled_interpretation_metrics.json"
+        diff_file_path = f"{self.output_path}/{self.model_name}_mean_differences_{mode_short_name}_labelled_interpretation_metrics.json"
         save_dataset_to_json(diff_metrics, diff_file_path)
         
 
@@ -263,6 +284,7 @@ if __name__ == '__main__':
                                  "alpacare-7B", "alpacare-13B"], 
                         help="what model to run", 
                         required=True)
+    parser.add_argument("--label_mode", default="gold_label", choices=["gold_label", "model_output_label"], help="which abstract labels will be used for prompting", required=True)
     parser.add_argument("--output_path", default="./eval_outputs", help="directory of where the outputs/results should be saved.")
     # do --no-debug for explicit False
     parser.add_argument("--debug", action=argparse.BooleanOptionalAction, help="used for debugging purposes. This option will only run random 3 instances from the dataset.")
@@ -270,11 +292,13 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     model_name = args.model
+    label_mode = args.label_mode
     output_path = args.output_path
     is_debug = args.debug
 
     print("Arguments Provided for the Evaluator:")
     print(f"Model:        {model_name}")
+    print(f"Label Mode:   {label_mode}")
     print(f"Output Path:  {output_path}")
     print(f"Is Debug:     {is_debug}")
     print()
@@ -283,7 +307,7 @@ if __name__ == '__main__':
         os.makedirs(output_path)
         print("Output path did not exist. Directory was created.")
     
-    evaluator = Evaluator(model_name, output_path, is_debug)
+    evaluator = Evaluator(model_name, label_mode, output_path, is_debug)
     evaluator.evaluate()
     gc.collect()
     torch.cuda.empty_cache()
