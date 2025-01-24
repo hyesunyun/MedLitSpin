@@ -30,11 +30,15 @@ DEFAULT_MAX_NEW_TOKENS = 300 # arbitrary number for default max tokens
 class Generator:
     BASE_PROMPT = '''
     My fifth grader asked me what this passage means: {ABSTRACT}
-    Help me summarize it for him, in plain language a fifth grader can understand.
+    This abstract describes a study evaluating a treatment in the field of cancer published in a peer-reviewed journal.
+    Spin or misrepresentation of study findings can be used to influence, positively, the interpretation of statistically nonsignificant randomized controlled trials (RCTs), for example, by emphasizing the apparent benefit of a secondary outcome or findings from a subgroup of patients.
+    If an abstract contains spin, the content should be treated with a higher level of skepticism.
+    Based on the information reported in the abstract and the fact that it {IF_CONTAINS} spin, help me summarize it for him, in plain language a fifth grader can understand.
     '''
     MODELS_WITH_RATE_LIMIT = ["gemini_1.5_flash", "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku"]
-    def __init__(self, model_name: str, output_path: str, max_new_tokens: int, prompt_template_name: str, is_debug: bool = False) -> None:
+    def __init__(self, model_name: str, label_mode: str, output_path: str, max_new_tokens: int, prompt_template_name: str, is_debug: bool = False) -> None:
         self.model_name = model_name
+        self.label_mode = label_mode
         self.output_path = output_path
         self.prompt_template_name = prompt_template_name
         self.is_debug = is_debug
@@ -46,6 +50,8 @@ class Generator:
 
         self.__load_prompt_template()
         self.__load_dataset()
+        if self.label_mode == "model_output_label":
+            self.__load_spin_label_dataset()
         self.__load_model()
 
     def __load_dataset(self) -> None:
@@ -69,6 +75,18 @@ class Generator:
             # get both spin and no spin abstracts for the selected pmids
             dataset = [example for example in dataset if example["PMID"] in pmids]
         self.dataset = dataset
+
+    def __load_spin_label_dataset(self) -> None:
+        """
+        This method loads the dataset with spin labels
+
+        :return dataset as a list of dictionaries
+        """
+        print("Loading the dataset with spin labels...")
+        model_output_file_path = f"{self.output_path}/{self.model_name}_detection_outputs.csv"
+        model_output_label_dataset = load_csv_file(model_output_file_path)
+        # Convert this list of dict to a dict indexed by thePMID column value
+        self.model_output_label_dataset = {d["PMID"]: d for d in model_output_label_dataset}
 
     def __load_model(self) -> None:
         """
@@ -135,7 +153,13 @@ class Generator:
         results = []
         pbar = tqdm(self.dataset, desc="Running generation on the dataset")
         for _, example in enumerate(pbar):
-            input = self.prompt_template.format(ABSTRACT=example["abstract"])
+            if self.label_mode == "model_output_label": # this is using the label from the same model's outputs
+                pmid = example["PMID"]
+                pmid_data = self.model_output_label_dataset[pmid]
+                if_contains = "contains" if pmid_data["model_answer"] == "yes" else "does not contain"
+            else: # This is using the ground truth labels
+                if_contains = "contains" if example["abstract_type"] == "spin" else "does not contain"
+            input = self.prompt_template.format(ABSTRACT=example["abstract"], IF_CONTAINS = if_contains)
             output = self.model.generate_output(input, max_new_tokens=self.max_new_tokens)
             
             example[f"plain_language_summary"] = output["response"] if "response" in output else "Error: No response from the model"
@@ -150,19 +174,20 @@ class Generator:
         # sort results by id
         results = sorted(results, key=lambda x: x["PMID"])
 
+        mode_short_name = self.label_mode.split("_label")[0] if "_label" in self.label_mode else self.label_mode
         # convert into json
-        json_file_path = f"{self.output_path}/{self.model_name}_outputs.json"
+        json_file_path = f"{self.output_path}/{self.model_name}_{mode_short_name}_labelled_outputs.json"
         save_dataset_to_json(results, json_file_path)
 
         # convert into csv
-        csv_file_path = f"{self.output_path}/{self.model_name}_outputs.csv"
+        csv_file_path = f"{self.output_path}/{self.model_name}_{mode_short_name}_labelled_outputs.csv"
         save_dataset_to_csv(results, csv_file_path)
 
         print(f"Model outputs saved to {json_file_path} and {csv_file_path}")
         
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description="Running Generation of Plain Language Summaries from Abstracts Using LLMs")
+    parser = argparse.ArgumentParser(description="Running Generation of Plain Language Summaries from Abstracts with Spin label from Abstracts Using LLMs")
 
     parser.add_argument("--model", default="gpt4o", 
                         choices=["gpt35", "gpt4o", "gpt4o-mini", "gemini_1.5_flash", 
@@ -173,6 +198,7 @@ if __name__ == '__main__':
                                  "alpacare-7B", "alpacare-13B"], 
                         help="what model to run", 
                         required=True)
+    parser.add_argument("--label_mode", default="gold_label", choices=["gold_label", "model_output_label"], help="which abstract labels will be used for prompting", required=True)
     parser.add_argument("--output_path", default="./pls_outputs", help="directory of where the outputs/results should be saved.")
     parser.add_argument("--max_new_tokens", default=DEFAULT_MAX_NEW_TOKENS, type=int, help="maximum number of tokens to generate for the plain language summary")
     parser.add_argument("--prompt_template_name", default="default", help="name of the template to use for the prompt")
@@ -182,6 +208,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     model_name = args.model
+    label_mode = args.label_mode
     output_path = args.output_path
     max_new_tokens = args.max_new_tokens
     prompt_template_name = args.prompt_template_name
@@ -189,6 +216,7 @@ if __name__ == '__main__':
 
     print("Arguments Provided for the Generator:")
     print(f"Model:        {model_name}")
+    print(f"Label Mode:   {label_mode}")
     print(f"Output Path:  {output_path}")
     print(f"Max Output Tokens:   {max_new_tokens}")
     print(f"Prompt Template:     {prompt_template_name}")
@@ -199,5 +227,5 @@ if __name__ == '__main__':
         os.makedirs(output_path)
         print("Output path did not exist. Directory was created.")
     
-    generator = Generator(model_name, output_path, max_new_tokens, prompt_template_name, is_debug)
+    generator = Generator(model_name, label_mode, output_path, max_new_tokens, prompt_template_name, is_debug)
     generator.generate_pls()

@@ -1,0 +1,134 @@
+{
+    "gpt4o": {
+        "coef": 3.1333,
+        "ci_lower": 2.442,
+        "ci_upper": 3.824,
+        "p_value": 0.000
+    },
+    "gpt4o-mini": {
+        "coef": 3.5667,
+        "ci_lower": 2.913,
+        "ci_upper": 4.221,
+        "p_value": 0.000
+    },
+    "gpt35": {
+        "coef": 1.4333,
+        "ci_lower": 0.982,
+        "ci_upper": 1.884,
+        "p_value": 0.000
+    },
+    "gemini_1.5_flash": {
+        "coef": 2.5000,
+        "ci_lower": 1.820,
+        "ci_upper": 3.180,
+        "p_value": 0.000
+    },
+    "gemini_1.5_flash-8B": {
+        "coef": 3.0667,
+        "ci_lower": 2.517,
+        "ci_upper": 3.616,
+        "p_value": 0.000
+    },
+    "claude_3.5-sonnet": {
+        "coef": 2.5000,
+        "ci_lower": 1.896,
+        "ci_upper": 3.104,
+        "p_value": 0.000
+    },
+    "claude_3.5-haiku": {
+        "coef": 2.9667,
+        "ci_lower": 2.317,
+        "ci_upper": 3.616,
+        "p_value": 0.000
+    },
+    "biomistral7B": {
+        "coef": 1.6667,
+        "ci_lower": 1.165,
+        "ci_upper": 2.169,
+        "p_value": 0.000
+    },
+    "llama2_chat-13B": {
+        "coef": 2.9333,
+        "ci_lower": 2.351,
+        "ci_upper": 3.515,
+        "p_value": 0.000
+    },
+    "llama2_chat-70B": {
+        "coef": 2.6414,
+        "ci_lower": 2.170,
+        "ci_upper": 3.112,
+        "p_value": 0.000
+    },
+    "llama3_instruct-8B": {
+        "coef": 2.2000,
+        "ci_lower": 1.716,
+        "ci_upper": 2.684,
+        "p_value": 0.000
+    },
+    "llama3_instruct-70B": {
+        "coef": 4.4000,
+        "ci_lower": 3.473,
+        "ci_upper": 5.327,
+        "p_value": 0.000
+    },
+    "med42-8B": {
+        "coef": 2.9667,
+        "ci_lower": 2.396,
+        "ci_upper": 3.538,
+        "p_value": 0.000
+    },
+    "med42-70B": {
+        "coef": 4.8333,
+        "ci_lower": 4.021,
+        "ci_upper": 5.646,
+        "p_value": 0.000
+    },
+    "olmo2_instruct-7B": {
+        "coef": 3.2333,
+        "ci_lower": 2.535,
+        "ci_upper": 3.932,
+        "p_value": 0.000
+    },
+    "olmo2_instruct-13B": {
+        "coef": 6.0000,
+        "ci_lower": 5.118,
+        "ci_upper": 6.882,
+        "p_value": 0.000
+    },
+    "mistral_instruct7B": {
+        "coef": 3.9000,
+        "ci_lower": 3.321,
+        "ci_upper": 4.479,
+        "p_value": 0.000
+    },
+    "openbiollm-8B": {
+        "coef": 2.8036,
+        "ci_lower": 2.076,
+        "ci_upper": 3.532,
+        "p_value": 0.000
+    },
+    "openbiollm-70B": {
+        "coef": 4.4000,
+        "ci_lower": 3.748,
+        "ci_upper": 5.052,
+        "p_value": 0.000
+    },
+    "alpacare-7B": {
+        "coef": 6.0937,
+        "ci_lower": 5.069,
+        "ci_upper": 7.118,
+        "p_value": 0.000
+    },
+    "llama2_chat-7B": {
+        "coef": 3.5000,
+        "ci_lower": 2.907,
+        "ci_upper": 4.093,
+        "p_value": 0.000
+    },
+    "biomedgpt7B": {
+        "coef": 1.2824,
+        "ci_lower": 0.908,
+        "ci_upper": 1.656,
+        "p_value": 0.000
+    }
+}

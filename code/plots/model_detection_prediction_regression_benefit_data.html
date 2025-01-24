@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "layer": [{"mark": {"type": "point", "color": "red", "filled": true}, "encoding": {"x": {"field": "coef", "title": "Coefficient", "type": "quantitative"}, "y": {"field": "model_name", "sort": {"field": "coef", "order": "descending"}, "type": "nominal"}}}, {"mark": {"type": "rule"}, "encoding": {"x": {"field": "ci_lower", "type": "quantitative"}, "x2": {"field": "ci_upper"}, "y": {"field": "model_name", "sort": {"field": "coef", "order": "descending"}, "type": "nominal"}}}], "data": {"name": "data-af31fd4cd929a29b29bd854d66047282"}, "height": 300, "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-af31fd4cd929a29b29bd854d66047282": [{"model_name": "gpt4o", "coef": 0.8889, "ci_lower": -0.094, "ci_upper": 1.8719999999999999, "p_value": 0.076}, {"model_name": "gpt4o-mini", "coef": 0.7614000000000001, "ci_lower": -0.268, "ci_upper": 1.79, "p_value": 0.14400000000000002}, {"model_name": "gpt35", "coef": 1.3276, "ci_lower": -0.008, "ci_upper": 2.6630000000000003, "p_value": 0.051000000000000004}, {"model_name": "gemini_1.5_flash", "coef": 0.7411, "ci_lower": -0.212, "ci_upper": 1.694, "p_value": 0.125}, {"model_name": "gemini_1.5_flash-8B", "coef": 0.11800000000000001, "ci_lower": -0.8160000000000001, "ci_upper": 1.052, "p_value": 0.801}, {"model_name": "claude_3.5-sonnet", "coef": -0.2321, "ci_lower": -1.094, "ci_upper": 0.63, "p_value": 0.592}, {"model_name": "claude_3.5-haiku", "coef": 0.7115, "ci_lower": -0.639, "ci_upper": 2.062, "p_value": 0.296}, {"model_name": "biomistral7B", "coef": 1.0948, "ci_lower": 0.14100000000000001, "ci_upper": 2.049, "p_value": 0.025}, {"model_name": "llama2_chat-13B", "coef": 0.28, "ci_lower": -0.804, "ci_upper": 1.3639999999999999, "p_value": 0.607}, {"model_name": "llama2_chat-70B", "coef": 0.875, "ci_lower": 0.165, "ci_upper": 1.585, "p_value": 0.017}, {"model_name": "llama3_instruct-8B", "coef": 0.3, "ci_lower": -0.057, "ci_upper": 0.657, "p_value": 0.098}, {"model_name": "llama3_instruct-70B", "coef": 0.17500000000000002, "ci_lower": -0.525, "ci_upper": 0.875, "p_value": 0.619}, {"model_name": "med42-8B", "coef": 0.34, "ci_lower": -0.199, "ci_upper": 0.879, "p_value": 0.212}, {"model_name": "med42-70B", "coef": 0.2857, "ci_lower": -2.044, "ci_upper": 2.616, "p_value": 0.807}, {"model_name": "olmo2_instruct-7B", "coef": 0.2222, "ci_lower": -0.28300000000000003, "ci_upper": 0.728, "p_value": 0.382}, {"model_name": "olmo2_instruct-13B", "coef": 1.7931, "ci_lower": 0.106, "ci_upper": 3.481, "p_value": 0.038}, {"model_name": "mistral_instruct7B", "coef": 0.0, "ci_lower": 0.0, "ci_upper": 0.0, "p_value": null}, {"model_name": "openbiollm-8B", "coef": 2.1458, "ci_lower": 1.897, "ci_upper": 2.395, "p_value": 0.0}, {"model_name": "openbiollm-70B", "coef": 1.5962, "ci_lower": 0.304, "ci_upper": 2.8890000000000002, "p_value": 0.016}, {"model_name": "alpacare-7B", "coef": -0.19640000000000002, "ci_lower": -4.263, "ci_upper": 3.87, "p_value": 0.923}, {"model_name": "llama2_chat-7B", "coef": 1.5167000000000002, "ci_lower": 1.307, "ci_upper": 1.726, "p_value": 0.0}, {"model_name": "biomedgpt7B", "coef": 2.6923, "ci_lower": 1.492, "ci_upper": 3.893, "p_value": 0.0}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
