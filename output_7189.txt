@@ -1,0 +1,89 @@
+
+     active environment : MedLitSpin
+    active env location : /home/yun.hy/.conda/envs/MedLitSpin
+            shell level : 4
+       user config file : /home/yun.hy/.condarc
+ populated config files : 
+          conda version : 24.5.0
+    conda-build version : 24.5.1
+         python version : 3.12.4.final.0
+                 solver : libmamba (default)
+       virtual packages : __archspec=1=sapphirerapids
+                          __conda=24.5.0=0
+                          __cuda=12.3=0
+                          __glibc=2.34=0
+                          __linux=5.14.0=0
+                          __unix=0=0
+       base environment : /shared/EL9/explorer/anaconda3/2024.06  (read only)
+      conda av data dir : /shared/EL9/explorer/anaconda3/2024.06/etc/conda
+  conda av metadata url : None
+           channel URLs : https://repo.anaconda.com/pkgs/main/linux-64
+                          https://repo.anaconda.com/pkgs/main/noarch
+                          https://repo.anaconda.com/pkgs/r/linux-64
+                          https://repo.anaconda.com/pkgs/r/noarch
+          package cache : /shared/EL9/explorer/anaconda3/2024.06/pkgs
+                          /home/yun.hy/.conda/pkgs
+       envs directories : /home/yun.hy/.conda/envs
+                          /shared/EL9/explorer/anaconda3/2024.06/envs
+               platform : linux-64
+             user-agent : conda/24.5.0 requests/2.32.2 CPython/3.12.4 Linux/5.14.0-362.13.1.el9_3.x86_64 rocky/9.3 glibc/2.34 solver/libmamba conda-libmamba-solver/24.1.0 libmambapy/1.5.8 aau/0.4.4 c/. s/. e/.
+                UID:GID : 1825635949:100
+             netrc file : /home/yun.hy/.netrc
+           offline mode : False
+
+
+Generating plain language summaries with model output's spin/no spin labels...
+Arguments Provided for the Generator:
+Model:        gpt35
+Label Mode:   model_output_label
+Output Path:  code/pls_outputs/gpt35
+Max Output Tokens:   300
+Prompt Template:     default
+Is Debug:     None
+
+Loading the prompt template...
+Loading the dataset...
+Loading the dataset with spin labels...
+Loading the model...
+Saving outputs from model - gpt35 to csv and json
+Model outputs saved to code/pls_outputs/gpt35/gpt35_model_output_labelled_outputs.json and code/pls_outputs/gpt35/gpt35_model_output_labelled_outputs.csv
+Arguments Provided for the Generator:
+Model:        gpt4o
+Label Mode:   model_output_label
+Output Path:  code/pls_outputs/gpt4o
+Max Output Tokens:   300
+Prompt Template:     default
+Is Debug:     None
+
+Loading the prompt template...
+Loading the dataset...
+Loading the dataset with spin labels...
+Loading the model...
+Saving outputs from model - gpt4o to csv and json
+Model outputs saved to code/pls_outputs/gpt4o/gpt4o_model_output_labelled_outputs.json and code/pls_outputs/gpt4o/gpt4o_model_output_labelled_outputs.csv
+Arguments Provided for the Generator:
+Model:        gpt4o-mini
+Label Mode:   model_output_label
+Output Path:  code/pls_outputs/gpt4o-mini
+Max Output Tokens:   300
+Prompt Template:     default
+Is Debug:     None
+
+Loading the prompt template...
+Loading the dataset...
+Loading the dataset with spin labels...
+Loading the model...
+Saving outputs from model - gpt4o-mini to csv and json
+Model outputs saved to code/pls_outputs/gpt4o-mini/gpt4o-mini_model_output_labelled_outputs.json and code/pls_outputs/gpt4o-mini/gpt4o-mini_model_output_labelled_outputs.csv
+Arguments Provided for the Generator:
+Model:        gemini_1.5_flash
+Label Mode:   model_output_label
+Output Path:  code/pls_outputs/gemini_1.5_flash
+Max Output Tokens:   300
+Prompt Template:     default
+Is Debug:     None
+
+Loading the prompt template...
+Loading the dataset...
+Loading the dataset with spin labels...
+Loading the model...
