@@ -165,3 +165,239 @@ Model's dtype: torch.bfloat16
 Model's device: cuda:0
 Model's device map: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 0, 'model.layers.7': 0, 'model.layers.8': 1, 'model.layers.9': 1, 'model.layers.10': 1, 'model.layers.11': 1, 'model.layers.12': 1, 'model.layers.13': 1, 'model.layers.14': 1, 'model.layers.15': 1, 'model.layers.16': 1, 'model.layers.17': 1, 'model.layers.18': 1, 'model.layers.19': 1, 'model.layers.20': 2, 'model.layers.21': 2, 'model.layers.22': 2, 'model.layers.23': 2, 'model.layers.24': 2, 'model.layers.25': 2, 'model.layers.26': 2, 'model.layers.27': 2, 'model.layers.28': 2, 'model.layers.29': 2, 'model.layers.30': 2, 'model.layers.31': 2, 'model.layers.32': 3, 'model.layers.33': 3, 'model.layers.34': 3, 'model.layers.35': 3, 'model.layers.36': 3, 'model.layers.37': 3, 'model.layers.38': 3, 'model.layers.39': 3, 'model.norm': 3, 'lm_head': 3}
 
+Saving outputs from model - olmo2_instruct-13B to csv and json
+Model outputs saved to code/pls_outputs/olmo2_instruct-13B/olmo2_instruct-13B_model_output_labelled_outputs.json and code/pls_outputs/olmo2_instruct-13B/olmo2_instruct-13B_model_output_labelled_outputs.csv
+Arguments Provided for the Generator:
+Model:        mistral_instruct7B
+Label Mode:   model_output_label
+Output Path:  code/pls_outputs/mistral_instruct7B
+Max Output Tokens:   300
+Prompt Template:     default
+Is Debug:     None
+
+Loading the prompt template...
+Loading the dataset...
+Loading the dataset with spin labels...
+Loading the model...
+Model's dtype: torch.bfloat16
+Model's device: cuda:0
+Model's device map: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 0, 'model.layers.7': 1, 'model.layers.8': 1, 'model.layers.9': 1, 'model.layers.10': 1, 'model.layers.11': 1, 'model.layers.12': 1, 'model.layers.13': 1, 'model.layers.14': 1, 'model.layers.15': 1, 'model.layers.16': 2, 'model.layers.17': 2, 'model.layers.18': 2, 'model.layers.19': 2, 'model.layers.20': 2, 'model.layers.21': 2, 'model.layers.22': 2, 'model.layers.23': 2, 'model.layers.24': 2, 'model.layers.25': 3, 'model.layers.26': 3, 'model.layers.27': 3, 'model.layers.28': 3, 'model.layers.29': 3, 'model.layers.30': 3, 'model.layers.31': 3, 'model.norm': 3, 'lm_head': 3}
+
+Saving outputs from model - mistral_instruct7B to csv and json
+Model outputs saved to code/pls_outputs/mistral_instruct7B/mistral_instruct7B_model_output_labelled_outputs.json and code/pls_outputs/mistral_instruct7B/mistral_instruct7B_model_output_labelled_outputs.csv
+Arguments Provided for the Generator:
+Model:        med42-8B
+Label Mode:   model_output_label
+Output Path:  code/pls_outputs/med42-8B
+Max Output Tokens:   300
+Prompt Template:     default
+Is Debug:     None
+
+Loading the prompt template...
+Loading the dataset...
+Loading the dataset with spin labels...
+Loading the model...
+Model's dtype: torch.bfloat16
+Model's device: cuda:0
+Model's device map: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 1, 'model.layers.6': 1, 'model.layers.7': 1, 'model.layers.8': 1, 'model.layers.9': 1, 'model.layers.10': 1, 'model.layers.11': 1, 'model.layers.12': 1, 'model.layers.13': 1, 'model.layers.14': 1, 'model.layers.15': 2, 'model.layers.16': 2, 'model.layers.17': 2, 'model.layers.18': 2, 'model.layers.19': 2, 'model.layers.20': 2, 'model.layers.21': 2, 'model.layers.22': 2, 'model.layers.23': 2, 'model.layers.24': 2, 'model.layers.25': 3, 'model.layers.26': 3, 'model.layers.27': 3, 'model.layers.28': 3, 'model.layers.29': 3, 'model.layers.30': 3, 'model.layers.31': 3, 'model.norm': 3, 'model.rotary_emb': 3, 'lm_head': 3}
+
+Saving outputs from model - med42-8B to csv and json
+Model outputs saved to code/pls_outputs/med42-8B/med42-8B_model_output_labelled_outputs.json and code/pls_outputs/med42-8B/med42-8B_model_output_labelled_outputs.csv
+Arguments Provided for the Generator:
+Model:        med42-70B
+Label Mode:   model_output_label
+Output Path:  code/pls_outputs/med42-70B
+Max Output Tokens:   300
+Prompt Template:     default
+Is Debug:     None
+
+Loading the prompt template...
+Loading the dataset...
+Loading the dataset with spin labels...
+Loading the model...
+Model's dtype: torch.bfloat16
+Model's device: cuda:0
+Model's device map: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 0, 'model.layers.7': 0, 'model.layers.8': 0, 'model.layers.9': 0, 'model.layers.10': 0, 'model.layers.11': 0, 'model.layers.12': 0, 'model.layers.13': 0, 'model.layers.14': 0, 'model.layers.15': 0, 'model.layers.16': 0, 'model.layers.17': 0, 'model.layers.18': 0, 'model.layers.19': 1, 'model.layers.20': 1, 'model.layers.21': 1, 'model.layers.22': 1, 'model.layers.23': 1, 'model.layers.24': 1, 'model.layers.25': 1, 'model.layers.26': 1, 'model.layers.27': 1, 'model.layers.28': 1, 'model.layers.29': 1, 'model.layers.30': 1, 'model.layers.31': 1, 'model.layers.32': 1, 'model.layers.33': 1, 'model.layers.34': 1, 'model.layers.35': 1, 'model.layers.36': 1, 'model.layers.37': 1, 'model.layers.38': 1, 'model.layers.39': 1, 'model.layers.40': 2, 'model.layers.41': 2, 'model.layers.42': 2, 'model.layers.43': 2, 'model.layers.44': 2, 'model.layers.45': 2, 'model.layers.46': 2, 'model.layers.47': 2, 'model.layers.48': 2, 'model.layers.49': 2, 'model.layers.50': 2, 'model.layers.51': 2, 'model.layers.52': 2, 'model.layers.53': 2, 'model.layers.54': 2, 'model.layers.55': 2, 'model.layers.56': 2, 'model.layers.57': 2, 'model.layers.58': 2, 'model.layers.59': 2, 'model.layers.60': 2, 'model.layers.61': 3, 'model.layers.62': 3, 'model.layers.63': 3, 'model.layers.64': 3, 'model.layers.65': 3, 'model.layers.66': 3, 'model.layers.67': 3, 'model.layers.68': 3, 'model.layers.69': 3, 'model.layers.70': 3, 'model.layers.71': 3, 'model.layers.72': 3, 'model.layers.73': 3, 'model.layers.74': 3, 'model.layers.75': 3, 'model.layers.76': 3, 'model.layers.77': 3, 'model.layers.78': 3, 'model.layers.79': 3, 'model.norm': 3, 'model.rotary_emb': 3, 'lm_head': 3}
+
+Saving outputs from model - med42-70B to csv and json
+Model outputs saved to code/pls_outputs/med42-70B/med42-70B_model_output_labelled_outputs.json and code/pls_outputs/med42-70B/med42-70B_model_output_labelled_outputs.csv
+Arguments Provided for the Generator:
+Model:        biomistral7B
+Label Mode:   model_output_label
+Output Path:  code/pls_outputs/biomistral7B
+Max Output Tokens:   300
+Prompt Template:     default
+Is Debug:     None
+
+Loading the prompt template...
+Loading the dataset...
+Loading the dataset with spin labels...
+Loading the model...
+Model's dtype: torch.bfloat16
+Model's device: cuda:0
+Model's device map: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 0, 'model.layers.7': 1, 'model.layers.8': 1, 'model.layers.9': 1, 'model.layers.10': 1, 'model.layers.11': 1, 'model.layers.12': 1, 'model.layers.13': 1, 'model.layers.14': 1, 'model.layers.15': 1, 'model.layers.16': 2, 'model.layers.17': 2, 'model.layers.18': 2, 'model.layers.19': 2, 'model.layers.20': 2, 'model.layers.21': 2, 'model.layers.22': 2, 'model.layers.23': 2, 'model.layers.24': 2, 'model.layers.25': 3, 'model.layers.26': 3, 'model.layers.27': 3, 'model.layers.28': 3, 'model.layers.29': 3, 'model.layers.30': 3, 'model.layers.31': 3, 'model.norm': 3, 'lm_head': 3}
+
+Saving outputs from model - biomistral7B to csv and json
+Model outputs saved to code/pls_outputs/biomistral7B/biomistral7B_model_output_labelled_outputs.json and code/pls_outputs/biomistral7B/biomistral7B_model_output_labelled_outputs.csv
+Arguments Provided for the Generator:
+Model:        openbiollm-8B
+Label Mode:   model_output_label
+Output Path:  code/pls_outputs/openbiollm-8B
+Max Output Tokens:   300
+Prompt Template:     default
+Is Debug:     None
+
+Loading the prompt template...
+Loading the dataset...
+Loading the dataset with spin labels...
+Loading the model...
+Model's dtype: torch.bfloat16
+Model's device: cuda:0
+Model's device map: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 1, 'model.layers.6': 1, 'model.layers.7': 1, 'model.layers.8': 1, 'model.layers.9': 1, 'model.layers.10': 1, 'model.layers.11': 1, 'model.layers.12': 1, 'model.layers.13': 1, 'model.layers.14': 1, 'model.layers.15': 2, 'model.layers.16': 2, 'model.layers.17': 2, 'model.layers.18': 2, 'model.layers.19': 2, 'model.layers.20': 2, 'model.layers.21': 2, 'model.layers.22': 2, 'model.layers.23': 2, 'model.layers.24': 2, 'model.layers.25': 3, 'model.layers.26': 3, 'model.layers.27': 3, 'model.layers.28': 3, 'model.layers.29': 3, 'model.layers.30': 3, 'model.layers.31': 3, 'model.norm': 3, 'model.rotary_emb': 3, 'lm_head': 3}
+
+Saving outputs from model - openbiollm-8B to csv and json
+Model outputs saved to code/pls_outputs/openbiollm-8B/openbiollm-8B_model_output_labelled_outputs.json and code/pls_outputs/openbiollm-8B/openbiollm-8B_model_output_labelled_outputs.csv
+Arguments Provided for the Generator:
+Model:        openbiollm-70B
+Label Mode:   model_output_label
+Output Path:  code/pls_outputs/openbiollm-70B
+Max Output Tokens:   300
+Prompt Template:     default
+Is Debug:     None
+
+Loading the prompt template...
+Loading the dataset...
+Loading the dataset with spin labels...
+Loading the model...
+Model's dtype: torch.bfloat16
+Model's device: cuda:0
+Model's device map: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 0, 'model.layers.7': 0, 'model.layers.8': 0, 'model.layers.9': 0, 'model.layers.10': 0, 'model.layers.11': 0, 'model.layers.12': 0, 'model.layers.13': 0, 'model.layers.14': 0, 'model.layers.15': 0, 'model.layers.16': 0, 'model.layers.17': 0, 'model.layers.18': 0, 'model.layers.19': 1, 'model.layers.20': 1, 'model.layers.21': 1, 'model.layers.22': 1, 'model.layers.23': 1, 'model.layers.24': 1, 'model.layers.25': 1, 'model.layers.26': 1, 'model.layers.27': 1, 'model.layers.28': 1, 'model.layers.29': 1, 'model.layers.30': 1, 'model.layers.31': 1, 'model.layers.32': 1, 'model.layers.33': 1, 'model.layers.34': 1, 'model.layers.35': 1, 'model.layers.36': 1, 'model.layers.37': 1, 'model.layers.38': 1, 'model.layers.39': 1, 'model.layers.40': 2, 'model.layers.41': 2, 'model.layers.42': 2, 'model.layers.43': 2, 'model.layers.44': 2, 'model.layers.45': 2, 'model.layers.46': 2, 'model.layers.47': 2, 'model.layers.48': 2, 'model.layers.49': 2, 'model.layers.50': 2, 'model.layers.51': 2, 'model.layers.52': 2, 'model.layers.53': 2, 'model.layers.54': 2, 'model.layers.55': 2, 'model.layers.56': 2, 'model.layers.57': 2, 'model.layers.58': 2, 'model.layers.59': 2, 'model.layers.60': 2, 'model.layers.61': 3, 'model.layers.62': 3, 'model.layers.63': 3, 'model.layers.64': 3, 'model.layers.65': 3, 'model.layers.66': 3, 'model.layers.67': 3, 'model.layers.68': 3, 'model.layers.69': 3, 'model.layers.70': 3, 'model.layers.71': 3, 'model.layers.72': 3, 'model.layers.73': 3, 'model.layers.74': 3, 'model.layers.75': 3, 'model.layers.76': 3, 'model.layers.77': 3, 'model.layers.78': 3, 'model.layers.79': 3, 'model.norm': 3, 'model.rotary_emb': 3, 'lm_head': 3}
+
+Saving outputs from model - openbiollm-70B to csv and json
+Model outputs saved to code/pls_outputs/openbiollm-70B/openbiollm-70B_model_output_labelled_outputs.json and code/pls_outputs/openbiollm-70B/openbiollm-70B_model_output_labelled_outputs.csv
+Arguments Provided for the Generator:
+Model:        llama2_chat-7B
+Label Mode:   model_output_label
+Output Path:  code/pls_outputs/llama2_chat-7B
+Max Output Tokens:   300
+Prompt Template:     default
+Is Debug:     None
+
+Loading the prompt template...
+Loading the dataset...
+Loading the dataset with spin labels...
+Loading the model...
+Model's dtype: torch.float16
+Model's device: cuda:0
+Model's device map: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 0, 'model.layers.7': 1, 'model.layers.8': 1, 'model.layers.9': 1, 'model.layers.10': 1, 'model.layers.11': 1, 'model.layers.12': 1, 'model.layers.13': 1, 'model.layers.14': 1, 'model.layers.15': 1, 'model.layers.16': 2, 'model.layers.17': 2, 'model.layers.18': 2, 'model.layers.19': 2, 'model.layers.20': 2, 'model.layers.21': 2, 'model.layers.22': 2, 'model.layers.23': 2, 'model.layers.24': 2, 'model.layers.25': 3, 'model.layers.26': 3, 'model.layers.27': 3, 'model.layers.28': 3, 'model.layers.29': 3, 'model.layers.30': 3, 'model.layers.31': 3, 'model.norm': 3, 'model.rotary_emb': 3, 'lm_head': 3}
+
+Saving outputs from model - llama2_chat-7B to csv and json
+Model outputs saved to code/pls_outputs/llama2_chat-7B/llama2_chat-7B_model_output_labelled_outputs.json and code/pls_outputs/llama2_chat-7B/llama2_chat-7B_model_output_labelled_outputs.csv
+Arguments Provided for the Generator:
+Model:        llama2_chat-13B
+Label Mode:   model_output_label
+Output Path:  code/pls_outputs/llama2_chat-13B
+Max Output Tokens:   300
+Prompt Template:     default
+Is Debug:     None
+
+Loading the prompt template...
+Loading the dataset...
+Loading the dataset with spin labels...
+Loading the model...
+Model's dtype: torch.float16
+Model's device: cuda:0
+Model's device map: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 0, 'model.layers.7': 0, 'model.layers.8': 0, 'model.layers.9': 1, 'model.layers.10': 1, 'model.layers.11': 1, 'model.layers.12': 1, 'model.layers.13': 1, 'model.layers.14': 1, 'model.layers.15': 1, 'model.layers.16': 1, 'model.layers.17': 1, 'model.layers.18': 1, 'model.layers.19': 1, 'model.layers.20': 2, 'model.layers.21': 2, 'model.layers.22': 2, 'model.layers.23': 2, 'model.layers.24': 2, 'model.layers.25': 2, 'model.layers.26': 2, 'model.layers.27': 2, 'model.layers.28': 2, 'model.layers.29': 2, 'model.layers.30': 2, 'model.layers.31': 3, 'model.layers.32': 3, 'model.layers.33': 3, 'model.layers.34': 3, 'model.layers.35': 3, 'model.layers.36': 3, 'model.layers.37': 3, 'model.layers.38': 3, 'model.layers.39': 3, 'model.norm': 3, 'model.rotary_emb': 3, 'lm_head': 3}
+
+Saving outputs from model - llama2_chat-13B to csv and json
+Model outputs saved to code/pls_outputs/llama2_chat-13B/llama2_chat-13B_model_output_labelled_outputs.json and code/pls_outputs/llama2_chat-13B/llama2_chat-13B_model_output_labelled_outputs.csv
+Arguments Provided for the Generator:
+Model:        llama2_chat-70B
+Label Mode:   model_output_label
+Output Path:  code/pls_outputs/llama2_chat-70B
+Max Output Tokens:   300
+Prompt Template:     default
+Is Debug:     None
+
+Loading the prompt template...
+Loading the dataset...
+Loading the dataset with spin labels...
+Loading the model...
+Model's dtype: torch.float16
+Model's device: cuda:0
+Model's device map: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 0, 'model.layers.7': 0, 'model.layers.8': 0, 'model.layers.9': 0, 'model.layers.10': 0, 'model.layers.11': 0, 'model.layers.12': 0, 'model.layers.13': 0, 'model.layers.14': 0, 'model.layers.15': 0, 'model.layers.16': 0, 'model.layers.17': 0, 'model.layers.18': 0, 'model.layers.19': 0, 'model.layers.20': 1, 'model.layers.21': 1, 'model.layers.22': 1, 'model.layers.23': 1, 'model.layers.24': 1, 'model.layers.25': 1, 'model.layers.26': 1, 'model.layers.27': 1, 'model.layers.28': 1, 'model.layers.29': 1, 'model.layers.30': 1, 'model.layers.31': 1, 'model.layers.32': 1, 'model.layers.33': 1, 'model.layers.34': 1, 'model.layers.35': 1, 'model.layers.36': 1, 'model.layers.37': 1, 'model.layers.38': 1, 'model.layers.39': 1, 'model.layers.40': 1, 'model.layers.41': 2, 'model.layers.42': 2, 'model.layers.43': 2, 'model.layers.44': 2, 'model.layers.45': 2, 'model.layers.46': 2, 'model.layers.47': 2, 'model.layers.48': 2, 'model.layers.49': 2, 'model.layers.50': 2, 'model.layers.51': 2, 'model.layers.52': 2, 'model.layers.53': 2, 'model.layers.54': 2, 'model.layers.55': 2, 'model.layers.56': 2, 'model.layers.57': 2, 'model.layers.58': 2, 'model.layers.59': 2, 'model.layers.60': 2, 'model.layers.61': 2, 'model.layers.62': 3, 'model.layers.63': 3, 'model.layers.64': 3, 'model.layers.65': 3, 'model.layers.66': 3, 'model.layers.67': 3, 'model.layers.68': 3, 'model.layers.69': 3, 'model.layers.70': 3, 'model.layers.71': 3, 'model.layers.72': 3, 'model.layers.73': 3, 'model.layers.74': 3, 'model.layers.75': 3, 'model.layers.76': 3, 'model.layers.77': 3, 'model.layers.78': 3, 'model.layers.79': 3, 'model.norm': 3, 'model.rotary_emb': 3, 'lm_head': 3}
+
+Saving outputs from model - llama2_chat-70B to csv and json
+Model outputs saved to code/pls_outputs/llama2_chat-70B/llama2_chat-70B_model_output_labelled_outputs.json and code/pls_outputs/llama2_chat-70B/llama2_chat-70B_model_output_labelled_outputs.csv
+Arguments Provided for the Generator:
+Model:        llama3_instruct-8B
+Label Mode:   model_output_label
+Output Path:  code/pls_outputs/llama3_instruct-8B
+Max Output Tokens:   300
+Prompt Template:     default
+Is Debug:     None
+
+Loading the prompt template...
+Loading the dataset...
+Loading the dataset with spin labels...
+Loading the model...
+Model's dtype: torch.bfloat16
+Model's device: cuda:0
+Model's device map: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 1, 'model.layers.6': 1, 'model.layers.7': 1, 'model.layers.8': 1, 'model.layers.9': 1, 'model.layers.10': 1, 'model.layers.11': 1, 'model.layers.12': 1, 'model.layers.13': 1, 'model.layers.14': 1, 'model.layers.15': 2, 'model.layers.16': 2, 'model.layers.17': 2, 'model.layers.18': 2, 'model.layers.19': 2, 'model.layers.20': 2, 'model.layers.21': 2, 'model.layers.22': 2, 'model.layers.23': 2, 'model.layers.24': 2, 'model.layers.25': 3, 'model.layers.26': 3, 'model.layers.27': 3, 'model.layers.28': 3, 'model.layers.29': 3, 'model.layers.30': 3, 'model.layers.31': 3, 'model.norm': 3, 'model.rotary_emb': 3, 'lm_head': 3}
+
+Saving outputs from model - llama3_instruct-8B to csv and json
+Model outputs saved to code/pls_outputs/llama3_instruct-8B/llama3_instruct-8B_model_output_labelled_outputs.json and code/pls_outputs/llama3_instruct-8B/llama3_instruct-8B_model_output_labelled_outputs.csv
+Arguments Provided for the Generator:
+Model:        llama3_instruct-70B
+Label Mode:   model_output_label
+Output Path:  code/pls_outputs/llama3_instruct-70B
+Max Output Tokens:   300
+Prompt Template:     default
+Is Debug:     None
+
+Loading the prompt template...
+Loading the dataset...
+Loading the dataset with spin labels...
+Loading the model...
+Model's dtype: torch.bfloat16
+Model's device: cuda:0
+Model's device map: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 0, 'model.layers.7': 0, 'model.layers.8': 0, 'model.layers.9': 0, 'model.layers.10': 0, 'model.layers.11': 0, 'model.layers.12': 0, 'model.layers.13': 0, 'model.layers.14': 0, 'model.layers.15': 0, 'model.layers.16': 0, 'model.layers.17': 0, 'model.layers.18': 0, 'model.layers.19': 1, 'model.layers.20': 1, 'model.layers.21': 1, 'model.layers.22': 1, 'model.layers.23': 1, 'model.layers.24': 1, 'model.layers.25': 1, 'model.layers.26': 1, 'model.layers.27': 1, 'model.layers.28': 1, 'model.layers.29': 1, 'model.layers.30': 1, 'model.layers.31': 1, 'model.layers.32': 1, 'model.layers.33': 1, 'model.layers.34': 1, 'model.layers.35': 1, 'model.layers.36': 1, 'model.layers.37': 1, 'model.layers.38': 1, 'model.layers.39': 1, 'model.layers.40': 2, 'model.layers.41': 2, 'model.layers.42': 2, 'model.layers.43': 2, 'model.layers.44': 2, 'model.layers.45': 2, 'model.layers.46': 2, 'model.layers.47': 2, 'model.layers.48': 2, 'model.layers.49': 2, 'model.layers.50': 2, 'model.layers.51': 2, 'model.layers.52': 2, 'model.layers.53': 2, 'model.layers.54': 2, 'model.layers.55': 2, 'model.layers.56': 2, 'model.layers.57': 2, 'model.layers.58': 2, 'model.layers.59': 2, 'model.layers.60': 2, 'model.layers.61': 3, 'model.layers.62': 3, 'model.layers.63': 3, 'model.layers.64': 3, 'model.layers.65': 3, 'model.layers.66': 3, 'model.layers.67': 3, 'model.layers.68': 3, 'model.layers.69': 3, 'model.layers.70': 3, 'model.layers.71': 3, 'model.layers.72': 3, 'model.layers.73': 3, 'model.layers.74': 3, 'model.layers.75': 3, 'model.layers.76': 3, 'model.layers.77': 3, 'model.layers.78': 3, 'model.layers.79': 3, 'model.norm': 3, 'model.rotary_emb': 3, 'lm_head': 3}
+
+Saving outputs from model - llama3_instruct-70B to csv and json
+Model outputs saved to code/pls_outputs/llama3_instruct-70B/llama3_instruct-70B_model_output_labelled_outputs.json and code/pls_outputs/llama3_instruct-70B/llama3_instruct-70B_model_output_labelled_outputs.csv
+Arguments Provided for the Generator:
+Model:        biomedgpt7B
+Label Mode:   model_output_label
+Output Path:  code/pls_outputs/biomedgpt7B
+Max Output Tokens:   300
+Prompt Template:     default
+Is Debug:     None
+
+Loading the prompt template...
+Loading the dataset...
+Loading the dataset with spin labels...
+Loading the model...
+Model's dtype: torch.float16
+Model's device: cuda:0
+Model's device map: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 0, 'model.layers.7': 1, 'model.layers.8': 1, 'model.layers.9': 1, 'model.layers.10': 1, 'model.layers.11': 1, 'model.layers.12': 1, 'model.layers.13': 1, 'model.layers.14': 1, 'model.layers.15': 1, 'model.layers.16': 2, 'model.layers.17': 2, 'model.layers.18': 2, 'model.layers.19': 2, 'model.layers.20': 2, 'model.layers.21': 2, 'model.layers.22': 2, 'model.layers.23': 2, 'model.layers.24': 2, 'model.layers.25': 3, 'model.layers.26': 3, 'model.layers.27': 3, 'model.layers.28': 3, 'model.layers.29': 3, 'model.layers.30': 3, 'model.layers.31': 3, 'model.norm': 3, 'model.rotary_emb': 3, 'lm_head': 3}
+
+Saving outputs from model - biomedgpt7B to csv and json
+Model outputs saved to code/pls_outputs/biomedgpt7B/biomedgpt7B_model_output_labelled_outputs.json and code/pls_outputs/biomedgpt7B/biomedgpt7B_model_output_labelled_outputs.csv
+Arguments Provided for the Generator:
+Model:        alpacare-7B
+Label Mode:   model_output_label
+Output Path:  code/pls_outputs/alpacare-7B
+Max Output Tokens:   300
+Prompt Template:     default
+Is Debug:     None
+
+Loading the prompt template...
+Loading the dataset...
+Loading the dataset with spin labels...
+Loading the model...
+Model's dtype: torch.float16
+Model's device: cuda:0
+Model's device map: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 0, 'model.layers.7': 1, 'model.layers.8': 1, 'model.layers.9': 1, 'model.layers.10': 1, 'model.layers.11': 1, 'model.layers.12': 1, 'model.layers.13': 1, 'model.layers.14': 1, 'model.layers.15': 1, 'model.layers.16': 2, 'model.layers.17': 2, 'model.layers.18': 2, 'model.layers.19': 2, 'model.layers.20': 2, 'model.layers.21': 2, 'model.layers.22': 2, 'model.layers.23': 2, 'model.layers.24': 2, 'model.layers.25': 3, 'model.layers.26': 3, 'model.layers.27': 3, 'model.layers.28': 3, 'model.layers.29': 3, 'model.layers.30': 3, 'model.layers.31': 3, 'model.norm': 3, 'model.rotary_emb': 3, 'lm_head': 3}
+
+Saving outputs from model - alpacare-7B to csv and json
+Model outputs saved to code/pls_outputs/alpacare-7B/alpacare-7B_model_output_labelled_outputs.json and code/pls_outputs/alpacare-7B/alpacare-7B_model_output_labelled_outputs.csv
