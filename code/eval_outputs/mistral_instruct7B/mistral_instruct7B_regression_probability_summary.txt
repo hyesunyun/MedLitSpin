@@ -5,8 +5,8 @@ Number of rows with NaN value(s) in mistral_instruct7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.762
 Model:                               OLS   Adj. R-squared:                  0.749
 Method:                    Least Squares   F-statistic:                     59.66
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           1.93e-17
-Time:                           21:26:19   Log-Likelihood:                -90.479
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):           1.93e-17
+Time:                           09:51:54   Log-Likelihood:                -90.479
 No. Observations:                     60   AIC:                             189.0
 Df Residuals:                         56   BIC:                             197.3
 Df Model:                              3                                         
@@ -34,8 +34,8 @@ Number of rows with NaN value(s) in mistral_instruct7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.036
 Model:                               OLS   Adj. R-squared:                 -0.016
 Method:                    Least Squares   F-statistic:                    0.6933
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):              0.560
-Time:                           21:26:19   Log-Likelihood:                -13.601
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):              0.560
+Time:                           09:51:54   Log-Likelihood:                -13.601
 No. Observations:                     60   AIC:                             35.20
 Df Residuals:                         56   BIC:                             43.58
 Df Model:                              3                                         
@@ -63,8 +63,8 @@ Number of rows with NaN value(s) in mistral_instruct7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.586
 Model:                               OLS   Adj. R-squared:                  0.564
 Method:                    Least Squares   F-statistic:                     26.40
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           8.99e-11
-Time:                           21:26:19   Log-Likelihood:                -90.592
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):           8.99e-11
+Time:                           09:51:54   Log-Likelihood:                -90.592
 No. Observations:                     60   AIC:                             189.2
 Df Residuals:                         56   BIC:                             197.6
 Df Model:                              3                                         
@@ -92,8 +92,8 @@ Number of rows with NaN value(s) in mistral_instruct7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.797
 Model:                               OLS   Adj. R-squared:                  0.786
 Method:                    Least Squares   F-statistic:                     73.31
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           2.19e-19
-Time:                           21:26:19   Log-Likelihood:                -56.792
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):           2.19e-19
+Time:                           09:51:54   Log-Likelihood:                -56.792
 No. Observations:                     60   AIC:                             121.6
 Df Residuals:                         56   BIC:                             130.0
 Df Model:                              3                                         
@@ -121,8 +121,8 @@ Number of rows with NaN value(s) in mistral_instruct7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.787
 Model:                               OLS   Adj. R-squared:                  0.776
 Method:                    Least Squares   F-statistic:                     69.10
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           8.10e-19
-Time:                           21:26:19   Log-Likelihood:                -62.844
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):           8.10e-19
+Time:                           09:51:54   Log-Likelihood:                -62.844
 No. Observations:                     60   AIC:                             133.7
 Df Residuals:                         56   BIC:                             142.1
 Df Model:                              3                                         
@@ -150,8 +150,8 @@ Number of rows with NaN value(s) in mistral_instruct7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.818
 Model:                               OLS   Adj. R-squared:                  0.808
 Method:                    Least Squares   F-statistic:                     83.69
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           1.11e-20
-Time:                           21:26:19   Log-Likelihood:                -48.920
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):           1.11e-20
+Time:                           09:51:54   Log-Likelihood:                -48.920
 No. Observations:                     60   AIC:                             105.8
 Df Residuals:                         56   BIC:                             114.2
 Df Model:                              3                                         

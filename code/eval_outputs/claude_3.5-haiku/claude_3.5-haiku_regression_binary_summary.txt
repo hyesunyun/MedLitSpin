@@ -5,8 +5,8 @@ Number of rows with NaN value(s) in claude_3.5-haiku: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.598
 Model:                               OLS   Adj. R-squared:                  0.584
 Method:                    Least Squares   F-statistic:                     42.42
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           5.21e-12
-Time:                           21:26:16   Log-Likelihood:                -97.260
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):           5.21e-12
+Time:                           09:51:51   Log-Likelihood:                -97.260
 No. Observations:                     60   AIC:                             200.5
 Df Residuals:                         57   BIC:                             206.8
 Df Model:                              2                                         
@@ -36,8 +36,8 @@ Number of rows with NaN value(s) in claude_3.5-haiku: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.035
 Model:                               OLS   Adj. R-squared:                  0.002
 Method:                    Least Squares   F-statistic:                     1.047
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):              0.358
-Time:                           21:26:16   Log-Likelihood:                -8.5934
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):              0.358
+Time:                           09:51:51   Log-Likelihood:                -8.5934
 No. Observations:                     60   AIC:                             23.19
 Df Residuals:                         57   BIC:                             29.47
 Df Model:                              2                                         
@@ -67,8 +67,8 @@ Number of rows with NaN value(s) in claude_3.5-haiku: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.109
 Model:                               OLS   Adj. R-squared:                  0.078
 Method:                    Least Squares   F-statistic:                     3.492
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):             0.0371
-Time:                           21:26:16   Log-Likelihood:                -63.673
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):             0.0371
+Time:                           09:51:51   Log-Likelihood:                -63.673
 No. Observations:                     60   AIC:                             133.3
 Df Residuals:                         57   BIC:                             139.6
 Df Model:                              2                                         
@@ -98,8 +98,8 @@ Number of rows with NaN value(s) in claude_3.5-haiku: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.306
 Model:                               OLS   Adj. R-squared:                  0.282
 Method:                    Least Squares   F-statistic:                     12.56
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           3.03e-05
-Time:                           21:26:16   Log-Likelihood:                -83.912
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):           3.03e-05
+Time:                           09:51:51   Log-Likelihood:                -83.912
 No. Observations:                     60   AIC:                             173.8
 Df Residuals:                         57   BIC:                             180.1
 Df Model:                              2                                         
@@ -129,8 +129,8 @@ Number of rows with NaN value(s) in claude_3.5-haiku: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.482
 Model:                               OLS   Adj. R-squared:                  0.464
 Method:                    Least Squares   F-statistic:                     26.56
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           7.06e-09
-Time:                           21:26:16   Log-Likelihood:                -94.080
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):           7.06e-09
+Time:                           09:51:51   Log-Likelihood:                -94.080
 No. Observations:                     60   AIC:                             194.2
 Df Residuals:                         57   BIC:                             200.4
 Df Model:                              2                                         
@@ -160,8 +160,8 @@ Number of rows with NaN value(s) in claude_3.5-haiku: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.512
 Model:                               OLS   Adj. R-squared:                  0.495
 Method:                    Least Squares   F-statistic:                     29.90
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           1.32e-09
-Time:                           21:26:16   Log-Likelihood:                -61.384
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):           1.32e-09
+Time:                           09:51:51   Log-Likelihood:                -61.384
 No. Observations:                     60   AIC:                             128.8
 Df Residuals:                         57   BIC:                             135.1
 Df Model:                              2                                         

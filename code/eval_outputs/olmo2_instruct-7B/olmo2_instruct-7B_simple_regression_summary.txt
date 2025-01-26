@@ -5,8 +5,8 @@ Number of rows with NaN value(s) in olmo2_instruct-7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.597
 Model:                               OLS   Adj. R-squared:                  0.590
 Method:                    Least Squares   F-statistic:                     85.78
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           4.92e-13
-Time:                           21:26:15   Log-Likelihood:                -102.22
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):           4.92e-13
+Time:                           09:51:51   Log-Likelihood:                -102.22
 No. Observations:                     60   AIC:                             208.4
 Df Residuals:                         58   BIC:                             212.6
 Df Model:                              1                                         
@@ -32,8 +32,8 @@ Number of rows with NaN value(s) in olmo2_instruct-7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.118
 Model:                               OLS   Adj. R-squared:                  0.103
 Method:                    Least Squares   F-statistic:                     7.786
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):            0.00711
-Time:                           21:26:15   Log-Likelihood:                -58.061
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):            0.00711
+Time:                           09:51:51   Log-Likelihood:                -58.061
 No. Observations:                     60   AIC:                             120.1
 Df Residuals:                         58   BIC:                             124.3
 Df Model:                              1                                         
@@ -59,8 +59,8 @@ Number of rows with NaN value(s) in olmo2_instruct-7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.368
 Model:                               OLS   Adj. R-squared:                  0.357
 Method:                    Least Squares   F-statistic:                     33.74
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           2.82e-07
-Time:                           21:26:15   Log-Likelihood:                -78.546
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):           2.82e-07
+Time:                           09:51:51   Log-Likelihood:                -78.546
 No. Observations:                     60   AIC:                             161.1
 Df Residuals:                         58   BIC:                             165.3
 Df Model:                              1                                         
@@ -86,8 +86,8 @@ Number of rows with NaN value(s) in olmo2_instruct-7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.702
 Model:                               OLS   Adj. R-squared:                  0.697
 Method:                    Least Squares   F-statistic:                     136.8
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           6.78e-17
-Time:                           21:26:15   Log-Likelihood:                -67.772
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):           6.78e-17
+Time:                           09:51:51   Log-Likelihood:                -67.772
 No. Observations:                     60   AIC:                             139.5
 Df Residuals:                         58   BIC:                             143.7
 Df Model:                              1                                         
@@ -113,8 +113,8 @@ Number of rows with NaN value(s) in olmo2_instruct-7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.756
 Model:                               OLS   Adj. R-squared:                  0.752
 Method:                    Least Squares   F-statistic:                     180.0
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           1.97e-19
-Time:                           21:26:15   Log-Likelihood:                -69.166
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):           1.97e-19
+Time:                           09:51:51   Log-Likelihood:                -69.166
 No. Observations:                     60   AIC:                             142.3
 Df Residuals:                         58   BIC:                             146.5
 Df Model:                              1                                         
@@ -140,8 +140,8 @@ Number of rows with NaN value(s) in olmo2_instruct-7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.649
 Model:                               OLS   Adj. R-squared:                  0.643
 Method:                    Least Squares   F-statistic:                     107.3
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           8.28e-15
-Time:                           21:26:15   Log-Likelihood:                -67.080
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):           8.28e-15
+Time:                           09:51:51   Log-Likelihood:                -67.080
 No. Observations:                     60   AIC:                             138.2
 Df Residuals:                         58   BIC:                             142.3
 Df Model:                              1                                         

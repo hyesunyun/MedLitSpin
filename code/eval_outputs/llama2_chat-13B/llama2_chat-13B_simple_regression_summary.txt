@@ -5,8 +5,8 @@ Number of rows with NaN value(s) in llama2_chat-13B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.637
 Model:                               OLS   Adj. R-squared:                  0.631
 Method:                    Least Squares   F-statistic:                     101.8
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           2.23e-14
-Time:                           21:26:15   Log-Likelihood:                -91.238
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):           2.23e-14
+Time:                           09:51:50   Log-Likelihood:                -91.238
 No. Observations:                     60   AIC:                             186.5
 Df Residuals:                         58   BIC:                             190.7
 Df Model:                              1                                         
@@ -32,8 +32,8 @@ Number of rows with NaN value(s) in llama2_chat-13B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.213
 Model:                               OLS   Adj. R-squared:                  0.199
 Method:                    Least Squares   F-statistic:                     15.67
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           0.000209
-Time:                           21:26:15   Log-Likelihood:                -71.878
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):           0.000209
+Time:                           09:51:50   Log-Likelihood:                -71.878
 No. Observations:                     60   AIC:                             147.8
 Df Residuals:                         58   BIC:                             151.9
 Df Model:                              1                                         
@@ -59,8 +59,8 @@ Number of rows with NaN value(s) in llama2_chat-13B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.627
 Model:                               OLS   Adj. R-squared:                  0.621
 Method:                    Least Squares   F-statistic:                     97.66
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           4.81e-14
-Time:                           21:26:15   Log-Likelihood:                -70.498
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):           4.81e-14
+Time:                           09:51:50   Log-Likelihood:                -70.498
 No. Observations:                     60   AIC:                             145.0
 Df Residuals:                         58   BIC:                             149.2
 Df Model:                              1                                         
@@ -86,8 +86,8 @@ Number of rows with NaN value(s) in llama2_chat-13B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.617
 Model:                               OLS   Adj. R-squared:                  0.610
 Method:                    Least Squares   F-statistic:                     93.41
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           1.08e-13
-Time:                           21:26:15   Log-Likelihood:                -80.939
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):           1.08e-13
+Time:                           09:51:50   Log-Likelihood:                -80.939
 No. Observations:                     60   AIC:                             165.9
 Df Residuals:                         58   BIC:                             170.1
 Df Model:                              1                                         
@@ -113,8 +113,8 @@ Number of rows with NaN value(s) in llama2_chat-13B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.743
 Model:                               OLS   Adj. R-squared:                  0.738
 Method:                    Least Squares   F-statistic:                     167.5
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           9.57e-19
-Time:                           21:26:15   Log-Likelihood:                -72.797
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):           9.57e-19
+Time:                           09:51:50   Log-Likelihood:                -72.797
 No. Observations:                     60   AIC:                             149.6
 Df Residuals:                         58   BIC:                             153.8
 Df Model:                              1                                         
@@ -140,8 +140,8 @@ Number of rows with NaN value(s) in llama2_chat-13B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.734
 Model:                               OLS   Adj. R-squared:                  0.729
 Method:                    Least Squares   F-statistic:                     159.8
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           2.63e-18
-Time:                           21:26:15   Log-Likelihood:                -60.089
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):           2.63e-18
+Time:                           09:51:50   Log-Likelihood:                -60.089
 No. Observations:                     60   AIC:                             124.2
 Df Residuals:                         58   BIC:                             128.4
 Df Model:                              1                                         

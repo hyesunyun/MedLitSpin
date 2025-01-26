@@ -5,8 +5,8 @@ Number of rows with NaN value(s) in biomistral7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.481
 Model:                               OLS   Adj. R-squared:                  0.462
 Method:                    Least Squares   F-statistic:                     26.37
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           7.81e-09
-Time:                           21:26:17   Log-Likelihood:                -79.696
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):           7.81e-09
+Time:                           09:51:52   Log-Likelihood:                -79.696
 No. Observations:                     60   AIC:                             165.4
 Df Residuals:                         57   BIC:                             171.7
 Df Model:                              2                                         
@@ -36,8 +36,8 @@ Number of rows with NaN value(s) in biomistral7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.107
 Model:                               OLS   Adj. R-squared:                  0.076
 Method:                    Least Squares   F-statistic:                     3.411
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):             0.0399
-Time:                           21:26:17   Log-Likelihood:                -44.283
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):             0.0399
+Time:                           09:51:52   Log-Likelihood:                -44.283
 No. Observations:                     60   AIC:                             94.57
 Df Residuals:                         57   BIC:                             100.8
 Df Model:                              2                                         
@@ -67,8 +67,8 @@ Number of rows with NaN value(s) in biomistral7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.260
 Model:                               OLS   Adj. R-squared:                  0.234
 Method:                    Least Squares   F-statistic:                     10.00
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           0.000189
-Time:                           21:26:17   Log-Likelihood:                -84.457
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):           0.000189
+Time:                           09:51:52   Log-Likelihood:                -84.457
 No. Observations:                     60   AIC:                             174.9
 Df Residuals:                         57   BIC:                             181.2
 Df Model:                              2                                         
@@ -98,8 +98,8 @@ Number of rows with NaN value(s) in biomistral7B: 2
 Dep. Variable:     interpretation_answer   R-squared:                       0.156
 Model:                               OLS   Adj. R-squared:                  0.125
 Method:                    Least Squares   F-statistic:                     5.065
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):            0.00957
-Time:                           21:26:17   Log-Likelihood:                -101.61
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):            0.00957
+Time:                           09:51:52   Log-Likelihood:                -101.61
 No. Observations:                     58   AIC:                             209.2
 Df Residuals:                         55   BIC:                             215.4
 Df Model:                              2                                         
@@ -129,8 +129,8 @@ Number of rows with NaN value(s) in biomistral7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.521
 Model:                               OLS   Adj. R-squared:                  0.505
 Method:                    Least Squares   F-statistic:                     31.06
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           7.53e-10
-Time:                           21:26:17   Log-Likelihood:                -74.457
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):           7.53e-10
+Time:                           09:51:52   Log-Likelihood:                -74.457
 No. Observations:                     60   AIC:                             154.9
 Df Residuals:                         57   BIC:                             161.2
 Df Model:                              2                                         
@@ -160,8 +160,8 @@ Number of rows with NaN value(s) in biomistral7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.442
 Model:                               OLS   Adj. R-squared:                  0.422
 Method:                    Least Squares   F-statistic:                     22.55
-Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           6.10e-08
-Time:                           21:26:17   Log-Likelihood:                -63.064
+Date:                   Sun, 26 Jan 2025   Prob (F-statistic):           6.10e-08
+Time:                           09:51:52   Log-Likelihood:                -63.064
 No. Observations:                     60   AIC:                             132.1
 Df Residuals:                         57   BIC:                             138.4
 Df Model:                              2                                         
