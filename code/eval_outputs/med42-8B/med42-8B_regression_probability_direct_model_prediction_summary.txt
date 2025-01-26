@@ -6,7 +6,7 @@ Dep. Variable:     interpretation_answer   R-squared:                       0.66
 Model:                               OLS   Adj. R-squared:                  0.650
 Method:                    Least Squares   F-statistic:                     37.59
 Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           1.92e-13
-Time:                           20:41:26   Log-Likelihood:                -88.585
+Time:                           21:26:20   Log-Likelihood:                -88.585
 No. Observations:                     60   AIC:                             185.2
 Df Residuals:                         56   BIC:                             193.5
 Df Model:                              3                                         
@@ -35,7 +35,7 @@ Dep. Variable:     interpretation_answer   R-squared:                       0.14
 Model:                               OLS   Adj. R-squared:                  0.094
 Method:                    Least Squares   F-statistic:                     3.035
 Date:                   Sat, 25 Jan 2025   Prob (F-statistic):             0.0365
-Time:                           20:41:26   Log-Likelihood:                -44.386
+Time:                           21:26:20   Log-Likelihood:                -44.386
 No. Observations:                     60   AIC:                             96.77
 Df Residuals:                         56   BIC:                             105.1
 Df Model:                              3                                         
@@ -64,7 +64,7 @@ Dep. Variable:     interpretation_answer   R-squared:                       0.48
 Model:                               OLS   Adj. R-squared:                  0.453
 Method:                    Least Squares   F-statistic:                     17.29
 Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           4.55e-08
-Time:                           20:41:26   Log-Likelihood:                -75.058
+Time:                           21:26:20   Log-Likelihood:                -75.058
 No. Observations:                     60   AIC:                             158.1
 Df Residuals:                         56   BIC:                             166.5
 Df Model:                              3                                         
@@ -93,7 +93,7 @@ Dep. Variable:     interpretation_answer   R-squared:                       0.60
 Model:                               OLS   Adj. R-squared:                  0.579
 Method:                    Least Squares   F-statistic:                     28.04
 Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           3.33e-11
-Time:                           20:41:26   Log-Likelihood:                -61.749
+Time:                           21:26:20   Log-Likelihood:                -61.749
 No. Observations:                     60   AIC:                             131.5
 Df Residuals:                         56   BIC:                             139.9
 Df Model:                              3                                         
@@ -122,7 +122,7 @@ Dep. Variable:     interpretation_answer   R-squared:                       0.75
 Model:                               OLS   Adj. R-squared:                  0.739
 Method:                    Least Squares   F-statistic:                     56.65
 Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           5.74e-17
-Time:                           20:41:26   Log-Likelihood:                -77.386
+Time:                           21:26:20   Log-Likelihood:                -77.386
 No. Observations:                     60   AIC:                             162.8
 Df Residuals:                         56   BIC:                             171.2
 Df Model:                              3                                         
@@ -151,7 +151,7 @@ Dep. Variable:     interpretation_answer   R-squared:                       0.71
 Model:                               OLS   Adj. R-squared:                  0.701
 Method:                    Least Squares   F-statistic:                     47.02
 Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           2.58e-15
-Time:                           20:41:26   Log-Likelihood:                -55.471
+Time:                           21:26:20   Log-Likelihood:                -55.471
 No. Observations:                     60   AIC:                             118.9
 Df Residuals:                         56   BIC:                             127.3
 Df Model:                              3                                         
