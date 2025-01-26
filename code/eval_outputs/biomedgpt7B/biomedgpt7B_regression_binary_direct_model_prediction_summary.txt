@@ -5,8 +5,8 @@ Number of rows with NaN value(s) in biomedgpt7B: 5
 Dep. Variable:     interpretation_answer   R-squared:                       0.634
 Model:                               OLS   Adj. R-squared:                  0.612
 Method:                    Least Squares   F-statistic:                     29.42
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           3.50e-11
-Time:                           00:26:18   Log-Likelihood:                -46.640
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           3.50e-11
+Time:                           20:41:23   Log-Likelihood:                -46.640
 No. Observations:                     55   AIC:                             101.3
 Df Residuals:                         51   BIC:                             109.3
 Df Model:                              3                                         
@@ -34,8 +34,8 @@ Number of rows with NaN value(s) in biomedgpt7B: 52
 Dep. Variable:     interpretation_answer   R-squared:                       0.099
 Model:                               OLS   Adj. R-squared:                 -0.261
 Method:                    Least Squares   F-statistic:                    0.2758
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):              0.770
-Time:                           00:26:18   Log-Likelihood:                -15.648
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):              0.770
+Time:                           20:41:23   Log-Likelihood:                -15.648
 No. Observations:                      8   AIC:                             37.30
 Df Residuals:                          5   BIC:                             37.53
 Df Model:                              2                                         
@@ -43,7 +43,7 @@ Covariance Type:               nonrobust
 ==================================================================================================================
                                                      coef    std err          t      P>|t|      [0.025      0.975]
 ------------------------------------------------------------------------------------------------------------------
-Intercept                                       2.163e-16      2.164      1e-16      1.000      -5.563       5.563
+Intercept                                        2.39e-16      2.164    1.1e-16      1.000      -5.563       5.563
 is_spin_in_abstract                                0.4583      0.826      0.555      0.603      -1.666       2.583
 detection_model_prediction                         0.7500      2.420      0.310      0.769      -5.470       6.970
 is_spin_in_abstract:detection_model_prediction     0.4583      0.826      0.555      0.603      -1.666       2.583
@@ -51,12 +51,12 @@ is_spin_in_abstract:detection_model_prediction     0.4583      0.826      0.555 
 Omnibus:                        2.560   Durbin-Watson:                   2.915
 Prob(Omnibus):                  0.278   Jarque-Bera (JB):                1.308
 Skew:                           0.946   Prob(JB):                        0.520
-Kurtosis:                       2.414   Cond. No.                     3.79e+16
+Kurtosis:                       2.414   Cond. No.                     8.21e+16
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 1.23e-32. This might indicate that there are
+[2] The smallest eigenvalue is 2.61e-33. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
 Model: biomedgpt7B - importance_answer
 Number of rows with NaN value(s) in biomedgpt7B: 52
@@ -65,8 +65,8 @@ Number of rows with NaN value(s) in biomedgpt7B: 52
 Dep. Variable:     interpretation_answer   R-squared:                       0.450
 Model:                               OLS   Adj. R-squared:                  0.230
 Method:                    Least Squares   F-statistic:                     2.048
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):              0.224
-Time:                           00:26:18   Log-Likelihood:                -19.327
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):              0.224
+Time:                           20:41:23   Log-Likelihood:                -19.327
 No. Observations:                      8   AIC:                             44.65
 Df Residuals:                          5   BIC:                             44.89
 Df Model:                              2                                         
@@ -74,7 +74,7 @@ Covariance Type:               nonrobust
 ==================================================================================================================
                                                      coef    std err          t      P>|t|      [0.025      0.975]
 ------------------------------------------------------------------------------------------------------------------
-Intercept                                        -4.8e-16      3.428   -1.4e-16      1.000      -8.812       8.812
+Intercept                                       1.795e-15      3.428   5.24e-16      1.000      -8.812       8.812
 is_spin_in_abstract                               -2.1250      1.309     -1.623      0.165      -5.490       1.240
 detection_model_prediction                         6.2500      3.832      1.631      0.164      -3.602      16.102
 is_spin_in_abstract:detection_model_prediction    -2.1250      1.309     -1.623      0.165      -5.490       1.240
@@ -82,12 +82,12 @@ is_spin_in_abstract:detection_model_prediction    -2.1250      1.309     -1.623 
 Omnibus:                        8.111   Durbin-Watson:                   1.359
 Prob(Omnibus):                  0.017   Jarque-Bera (JB):                2.704
 Skew:                          -1.373   Prob(JB):                        0.259
-Kurtosis:                       3.754   Cond. No.                          inf
+Kurtosis:                       3.754   Cond. No.                     2.35e+16
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is      0. This might indicate that there are
+[2] The smallest eigenvalue is 3.19e-32. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
 Model: biomedgpt7B - full_text_answer
 Number of rows with NaN value(s) in biomedgpt7B: 27
@@ -96,8 +96,8 @@ Number of rows with NaN value(s) in biomedgpt7B: 27
 Dep. Variable:     interpretation_answer   R-squared:                       0.117
 Model:                               OLS   Adj. R-squared:                  0.089
 Method:                    Least Squares   F-statistic:                     4.120
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):             0.0510
-Time:                           00:26:18   Log-Likelihood:                -16.804
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):             0.0510
+Time:                           20:41:23   Log-Likelihood:                -16.804
 No. Observations:                     33   AIC:                             37.61
 Df Residuals:                         31   BIC:                             40.60
 Df Model:                              1                                         
@@ -127,8 +127,8 @@ Number of rows with NaN value(s) in biomedgpt7B: 55
 Dep. Variable:     interpretation_answer   R-squared:                       0.003
 Model:                               OLS   Adj. R-squared:                 -0.329
 Method:                    Least Squares   F-statistic:                  0.008696
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):              0.932
-Time:                           00:26:18   Log-Likelihood:                -13.656
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):              0.932
+Time:                           20:41:23   Log-Likelihood:                -13.656
 No. Observations:                      5   AIC:                             31.31
 Df Residuals:                          3   BIC:                             30.53
 Df Model:                              1                                         
@@ -144,12 +144,12 @@ is_spin_in_abstract:detection_model_prediction    -0.2500      2.681     -0.093 
 Omnibus:                          nan   Durbin-Watson:                   3.120
 Prob(Omnibus):                    nan   Jarque-Bera (JB):                0.443
 Skew:                          -0.187   Prob(JB):                        0.801
-Kurtosis:                       1.590   Cond. No.                     7.95e+16
+Kurtosis:                       1.590   Cond. No.                     7.17e+16
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 1.66e-33. This might indicate that there are
+[2] The smallest eigenvalue is 2.04e-33. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
 Model: biomedgpt7B - overall
 Number of rows with NaN value(s) in biomedgpt7B: 2
@@ -158,8 +158,8 @@ Number of rows with NaN value(s) in biomedgpt7B: 2
 Dep. Variable:     interpretation_answer   R-squared:                       0.192
 Model:                               OLS   Adj. R-squared:                  0.147
 Method:                    Least Squares   F-statistic:                     4.280
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):            0.00879
-Time:                           00:26:18   Log-Likelihood:                -120.57
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):            0.00879
+Time:                           20:41:23   Log-Likelihood:                -120.57
 No. Observations:                     58   AIC:                             249.1
 Df Residuals:                         54   BIC:                             257.4
 Df Model:                              3                                         

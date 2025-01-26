@@ -71,7 +71,7 @@ class Generator:
         # if test, only get 3 random examples
         if self.is_debug:
             # select random 3 pmids
-            pmids = random.sample([example["PMID"] for example in dataset], 1)
+            pmids = random.sample([example["PMID"] for example in dataset], 3)
             # get both spin and no spin abstracts for the selected pmids
             dataset = [example for example in dataset if example["PMID"] in pmids]
         self.dataset = dataset
@@ -83,7 +83,7 @@ class Generator:
         :return dataset as a list of dictionaries
         """
         print("Loading the dataset with spin labels...")
-        model_output_file_path = f"{self.output_path}/{self.model_name}_detection_outputs.csv"
+        model_output_file_path = f"code/eval_outputs/{self.model_name}/{self.model_name}_detection_outputs.csv"
         model_output_label_dataset = load_csv_file(model_output_file_path)
         # Convert this list of dict to a dict indexed by thePMID column value
         self.model_output_label_dataset = {d["PMID"]: d for d in model_output_label_dataset}

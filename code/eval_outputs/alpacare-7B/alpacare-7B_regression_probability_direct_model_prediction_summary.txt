@@ -5,8 +5,8 @@ Number of rows with NaN value(s) in alpacare-7B: 1
 Dep. Variable:     interpretation_answer   R-squared:                       0.722
 Model:                               OLS   Adj. R-squared:                  0.706
 Method:                    Least Squares   F-statistic:                     47.52
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           2.75e-15
-Time:                           00:26:34   Log-Likelihood:                -121.69
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           2.75e-15
+Time:                           20:41:26   Log-Likelihood:                -121.69
 No. Observations:                     59   AIC:                             251.4
 Df Residuals:                         55   BIC:                             259.7
 Df Model:                              3                                         
@@ -34,8 +34,8 @@ Number of rows with NaN value(s) in alpacare-7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.132
 Model:                               OLS   Adj. R-squared:                  0.086
 Method:                    Least Squares   F-statistic:                     2.840
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):             0.0460
-Time:                           00:26:34   Log-Likelihood:                -50.239
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):             0.0460
+Time:                           20:41:26   Log-Likelihood:                -50.239
 No. Observations:                     60   AIC:                             108.5
 Df Residuals:                         56   BIC:                             116.9
 Df Model:                              3                                         
@@ -63,8 +63,8 @@ Number of rows with NaN value(s) in alpacare-7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.312
 Model:                               OLS   Adj. R-squared:                  0.275
 Method:                    Least Squares   F-statistic:                     8.471
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           9.88e-05
-Time:                           00:26:34   Log-Likelihood:                -60.523
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           9.88e-05
+Time:                           20:41:26   Log-Likelihood:                -60.523
 No. Observations:                     60   AIC:                             129.0
 Df Residuals:                         56   BIC:                             137.4
 Df Model:                              3                                         
@@ -74,7 +74,7 @@ Covariance Type:               nonrobust
 ---------------------------------------------------------------------------------------------------------------------
 Intercept                                             8.0000      0.537     14.904      0.000       6.925       9.075
 is_spin_in_abstract                                  -1.4410      1.139     -1.266      0.211      -3.722       0.840
-regression_detection_variable                     -1.776e-14      1.580  -1.12e-14      1.000      -3.164       3.164
+regression_detection_variable                     -5.884e-15      1.580  -3.73e-15      1.000      -3.164       3.164
 is_spin_in_abstract:regression_detection_variable     4.7124      2.624      1.796      0.078      -0.544       9.969
 ==============================================================================
 Omnibus:                        2.695   Durbin-Watson:                   2.047
@@ -92,24 +92,24 @@ Number of rows with NaN value(s) in alpacare-7B: 29
 Dep. Variable:     interpretation_answer   R-squared:                        -inf
 Model:                               OLS   Adj. R-squared:                   -inf
 Method:                    Least Squares   F-statistic:                    -9.000
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):               1.00
-Time:                           00:26:35   Log-Likelihood:                 978.60
-No. Observations:                     31   AIC:                            -1949.
-Df Residuals:                         27   BIC:                            -1943.
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):               1.00
+Time:                           20:41:26   Log-Likelihood:                 969.62
+No. Observations:                     31   AIC:                            -1931.
+Df Residuals:                         27   BIC:                            -1925.
 Df Model:                              3                                         
 Covariance Type:               nonrobust                                         
 =====================================================================================================================
                                                         coef    std err          t      P>|t|      [0.025      0.975]
 ---------------------------------------------------------------------------------------------------------------------
-Intercept                                            10.0000   6.73e-15   1.48e+15      0.000      10.000      10.000
-is_spin_in_abstract                               -8.882e-16   1.22e-14     -0.073      0.943    -2.6e-14    2.42e-14
-regression_detection_variable                      7.105e-15   1.86e-14      0.382      0.705   -3.11e-14    4.53e-14
-is_spin_in_abstract:regression_detection_variable  5.329e-15    2.8e-14      0.190      0.851   -5.22e-14    6.29e-14
+Intercept                                            10.0000      9e-15   1.11e+15      0.000      10.000      10.000
+is_spin_in_abstract                                3.553e-15   1.63e-14      0.217      0.830      -3e-14    3.71e-14
+regression_detection_variable                      5.329e-15   2.49e-14      0.214      0.832   -4.57e-14    5.63e-14
+is_spin_in_abstract:regression_detection_variable -7.105e-15   3.75e-14     -0.190      0.851    -8.4e-14    6.98e-14
 ==============================================================================
-Omnibus:                        8.724   Durbin-Watson:                   0.201
-Prob(Omnibus):                  0.013   Jarque-Bera (JB):                8.573
-Skew:                           1.288   Prob(JB):                       0.0138
-Kurtosis:                       2.978   Cond. No.                         51.4
+Omnibus:                      339.011   Durbin-Watson:                   0.049
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):                5.167
+Skew:                           0.065   Prob(JB):                       0.0755
+Kurtosis:                       1.004   Cond. No.                         51.4
 ==============================================================================
 
 Notes:
@@ -121,10 +121,10 @@ Number of rows with NaN value(s) in alpacare-7B: 58
 Dep. Variable:     interpretation_answer   R-squared:                       1.000
 Model:                               OLS   Adj. R-squared:                    nan
 Method:                    Least Squares   F-statistic:                       nan
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):                nan
-Time:                           00:26:35   Log-Likelihood:                 61.402
-No. Observations:                      2   AIC:                            -118.8
-Df Residuals:                          0   BIC:                            -121.4
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):                nan
+Time:                           20:41:26   Log-Likelihood:                 63.011
+No. Observations:                      2   AIC:                            -122.0
+Df Residuals:                          0   BIC:                            -124.6
 Df Model:                              1                                         
 Covariance Type:               nonrobust                                         
 =====================================================================================================================
@@ -135,7 +135,7 @@ is_spin_in_abstract                                  34.0930        inf         
 regression_detection_variable                       -67.2903        inf         -0        nan         nan         nan
 is_spin_in_abstract:regression_detection_variable   -67.2903        inf         -0        nan         nan         nan
 ==============================================================================
-Omnibus:                          nan   Durbin-Watson:                   0.200
+Omnibus:                          nan   Durbin-Watson:                   1.000
 Prob(Omnibus):                    nan   Jarque-Bera (JB):                0.333
 Skew:                           0.000   Prob(JB):                        0.846
 Kurtosis:                       1.000   Cond. No.                         41.3
@@ -151,8 +151,8 @@ Number of rows with NaN value(s) in alpacare-7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.641
 Model:                               OLS   Adj. R-squared:                  0.621
 Method:                    Least Squares   F-statistic:                     33.26
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           1.77e-12
-Time:                           00:26:36   Log-Likelihood:                -77.086
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           1.77e-12
+Time:                           20:41:26   Log-Likelihood:                -77.086
 No. Observations:                     60   AIC:                             162.2
 Df Residuals:                         56   BIC:                             170.5
 Df Model:                              3                                         

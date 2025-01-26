@@ -1,0 +1,178 @@
+{
+    "gpt4o": {
+        "benefit_answer_diff": 1.2666666666666666,
+        "rigor_answer_diff": -1.2999999999999998,
+        "importance_answer_diff": -0.7666666666666666,
+        "full_text_answer_diff": 0.7666666666666666,
+        "another_trial_answer_diff": 1.9000000000000004,
+        "overall_avg": 0.3733333333333334
+    },
+    "gpt4o-mini": {
+        "benefit_answer_diff": 1.7999999999999998,
+        "rigor_answer_diff": -3.0666666666666673,
+        "importance_answer_diff": -0.6333333333333333,
+        "full_text_answer_diff": 0.666666666666667,
+        "another_trial_answer_diff": 1.1333333333333333,
+        "overall_avg": -0.020000000000000108
+    },
+    "gpt35": {
+        "benefit_answer_diff": 2.933333333333333,
+        "rigor_answer_diff": -1.8666666666666663,
+        "importance_answer_diff": 0.833333333333333,
+        "full_text_answer_diff": 0.7999999999999998,
+        "another_trial_answer_diff": 1.4000000000000004,
+        "overall_avg": 0.8200000000000001
+    },
+    "gemini_1.5_flash": {
+        "benefit_answer_diff": 1.0666666666666669,
+        "rigor_answer_diff": -1.5999999999999996,
+        "importance_answer_diff": -0.1333333333333333,
+        "full_text_answer_diff": -0.03333333333333366,
+        "another_trial_answer_diff": 0.7000000000000002,
+        "overall_avg": 8.881784197001253e-17
+    },
+    "gemini_1.5_flash-8B": {
+        "benefit_answer_diff": 0.6999999999999997,
+        "rigor_answer_diff": -4.266666666666667,
+        "importance_answer_diff": -3.1333333333333333,
+        "full_text_answer_diff": -2.4333333333333336,
+        "another_trial_answer_diff": -0.733333333333333,
+        "overall_avg": -1.9733333333333334
+    },
+    "claude_3.5-sonnet": {
+        "benefit_answer_diff": 1.2666666666666666,
+        "rigor_answer_diff": -1.5000000000000009,
+        "importance_answer_diff": -3.533333333333334,
+        "full_text_answer_diff": 2.1666666666666665,
+        "another_trial_answer_diff": 1.2666666666666662,
+        "overall_avg": -0.06666666666666714
+    },
+    "claude_3.5-haiku": {
+        "benefit_answer_diff": 2.4666666666666663,
+        "rigor_answer_diff": -1.2666666666666666,
+        "importance_answer_diff": -0.5999999999999996,
+        "full_text_answer_diff": -0.09999999999999964,
+        "another_trial_answer_diff": 1.7999999999999998,
+        "overall_avg": 0.4600000000000001
+    },
+    "alpacare-7B": {
+        "benefit_answer_diff": 1.6,
+        "rigor_answer_diff": -1.5333333333333332,
+        "importance_answer_diff": -0.40000000000000036,
+        "full_text_answer_diff": 0.0,
+        "another_trial_answer_diff": 0.0,
+        "overall_avg": -0.0666666666666667
+    },
+    "biomistral7B": {
+        "benefit_answer_diff": 0.2333333333333334,
+        "rigor_answer_diff": -0.8833333333333337,
+        "importance_answer_diff": -0.9166666666666661,
+        "full_text_answer_diff": -1.2647058823529411,
+        "another_trial_answer_diff": -1.2586206896551726,
+        "overall_avg": -0.817998647734956
+    },
+    "llama2_chat-7B": {
+        "benefit_answer_diff": 0.833333333333333,
+        "rigor_answer_diff": -1.0666666666666664,
+        "importance_answer_diff": 0.033333333333333215,
+        "full_text_answer_diff": 0.2999999999999998,
+        "another_trial_answer_diff": -1.3999999999999995,
+        "overall_avg": -0.25999999999999995
+    },
+    "llama2_chat-13B": {
+        "benefit_answer_diff": 1.0,
+        "rigor_answer_diff": -1.3666666666666663,
+        "importance_answer_diff": 0.39999999999999947,
+        "full_text_answer_diff": 1.5333333333333332,
+        "another_trial_answer_diff": 1.4,
+        "overall_avg": 0.5933333333333333
+    },
+    "llama2_chat-70B": {
+        "benefit_answer_diff": 1.8421052631578942,
+        "rigor_answer_diff": -1.0666666666666673,
+        "importance_answer_diff": -0.20000000000000018,
+        "full_text_answer_diff": 0.06666666666666643,
+        "another_trial_answer_diff": 0.6500000000000004,
+        "overall_avg": 0.2584210526315787
+    },
+    "llama3_instruct-8B": {
+        "benefit_answer_diff": 1.5999999999999996,
+        "rigor_answer_diff": -1.2000000000000002,
+        "importance_answer_diff": -0.09999999999999964,
+        "full_text_answer_diff": 0.06666666666666732,
+        "another_trial_answer_diff": 0.4666666666666668,
+        "overall_avg": 0.1666666666666668
+    },
+    "llama3_instruct-70B": {
+        "benefit_answer_diff": 3.966666666666667,
+        "rigor_answer_diff": -1.3999999999999995,
+        "importance_answer_diff": -0.09999999999999964,
+        "full_text_answer_diff": 2.333333333333333,
+        "another_trial_answer_diff": 2.566666666666667,
+        "overall_avg": 1.4733333333333336
+    },
+    "med42-8B": {
+        "benefit_answer_diff": 1.4666666666666663,
+        "rigor_answer_diff": -0.7333333333333334,
+        "importance_answer_diff": -0.2333333333333334,
+        "full_text_answer_diff": -0.7000000000000002,
+        "another_trial_answer_diff": 1.7000000000000006,
+        "overall_avg": 0.3
+    },
+    "med42-70B": {
+        "benefit_answer_diff": 3.7,
+        "rigor_answer_diff": -1.2333333333333334,
+        "importance_answer_diff": -1.5666666666666673,
+        "full_text_answer_diff": 0.1333333333333333,
+        "another_trial_answer_diff": 3.0,
+        "overall_avg": 0.8066666666666665
+    },
+    "olmo2_instruct-7B": {
+        "benefit_answer_diff": 3.095238095238095,
+        "rigor_answer_diff": -1.5999999999999996,
+        "importance_answer_diff": 1.0666666666666664,
+        "full_text_answer_diff": 0.833333333333333,
+        "another_trial_answer_diff": 2.0,
+        "overall_avg": 1.079047619047619
+    },
+    "olmo2_instruct-13B": {
+        "benefit_answer_diff": 3.466666666666667,
+        "rigor_answer_diff": -2.3000000000000007,
+        "importance_answer_diff": 0.06666666666666643,
+        "full_text_answer_diff": 0.33333333333333304,
+        "another_trial_answer_diff": 0.13333333333333375,
+        "overall_avg": 0.33999999999999986
+    },
+    "openbiollm-8B": {
+        "benefit_answer_diff": 2.833333333333333,
+        "rigor_answer_diff": -1.06896551724138,
+        "importance_answer_diff": -0.7777777777777777,
+        "full_text_answer_diff": -0.5714285714285721,
+        "another_trial_answer_diff": 0.33333333333333304,
+        "overall_avg": 0.1496989600437873
+    },
+    "openbiollm-70B": {
+        "benefit_answer_diff": 2.933333333333333,
+        "rigor_answer_diff": -0.833333333333333,
+        "importance_answer_diff": -0.2333333333333334,
+        "full_text_answer_diff": 1.0,
+        "another_trial_answer_diff": 3.733333333333333,
+        "overall_avg": 1.3199999999999998
+    },
+    "mistral_instruct7B": {
+        "benefit_answer_diff": 2.5999999999999996,
+        "rigor_answer_diff": -0.36666666666666625,
+        "importance_answer_diff": 1.0999999999999996,
+        "full_text_answer_diff": 2.7666666666666666,
+        "another_trial_answer_diff": 2.2,
+        "overall_avg": 1.66
+    },
+    "biomedgpt7B": {
+        "benefit_answer_diff": 0.0,
+        "rigor_answer_diff": 0.0,
+        "importance_answer_diff": 0.0,
+        "full_text_answer_diff": -2.333333333333333,
+        "another_trial_answer_diff": null,
+        "overall_avg": null
+    }
+}

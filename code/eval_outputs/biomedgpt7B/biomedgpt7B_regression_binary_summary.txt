@@ -5,8 +5,8 @@ Number of rows with NaN value(s) in biomedgpt7B: 5
 Dep. Variable:     interpretation_answer   R-squared:                       0.634
 Model:                               OLS   Adj. R-squared:                  0.612
 Method:                    Least Squares   F-statistic:                     29.42
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           3.50e-11
-Time:                           00:26:13   Log-Likelihood:                -46.640
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           3.50e-11
+Time:                           20:41:22   Log-Likelihood:                -46.640
 No. Observations:                     55   AIC:                             101.3
 Df Residuals:                         51   BIC:                             109.3
 Df Model:                              3                                         
@@ -34,8 +34,8 @@ Number of rows with NaN value(s) in biomedgpt7B: 52
 Dep. Variable:     interpretation_answer   R-squared:                       0.099
 Model:                               OLS   Adj. R-squared:                 -0.261
 Method:                    Least Squares   F-statistic:                    0.2758
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):              0.770
-Time:                           00:26:13   Log-Likelihood:                -15.648
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):              0.770
+Time:                           20:41:22   Log-Likelihood:                -15.648
 No. Observations:                      8   AIC:                             37.30
 Df Residuals:                          5   BIC:                             37.53
 Df Model:                              2                                         
@@ -51,12 +51,12 @@ is_spin_in_abstract:is_detection_correct     0.8333      1.249      0.667      0
 Omnibus:                        2.560   Durbin-Watson:                   2.915
 Prob(Omnibus):                  0.278   Jarque-Bera (JB):                1.308
 Skew:                           0.946   Prob(JB):                        0.520
-Kurtosis:                       2.414   Cond. No.                     3.44e+16
+Kurtosis:                       2.414   Cond. No.                     7.46e+16
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 1.23e-32. This might indicate that there are
+[2] The smallest eigenvalue is 2.61e-33. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
 Model: biomedgpt7B - importance_answer
 Number of rows with NaN value(s) in biomedgpt7B: 52
@@ -65,8 +65,8 @@ Number of rows with NaN value(s) in biomedgpt7B: 52
 Dep. Variable:     interpretation_answer   R-squared:                       0.450
 Model:                               OLS   Adj. R-squared:                  0.230
 Method:                    Least Squares   F-statistic:                     2.048
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):              0.224
-Time:                           00:26:13   Log-Likelihood:                -19.327
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):              0.224
+Time:                           20:41:22   Log-Likelihood:                -19.327
 No. Observations:                      8   AIC:                             44.65
 Df Residuals:                          5   BIC:                             44.89
 Df Model:                              2                                         
@@ -82,12 +82,12 @@ is_spin_in_abstract:is_detection_correct     1.0000      1.979      0.505      0
 Omnibus:                        8.111   Durbin-Watson:                   1.359
 Prob(Omnibus):                  0.017   Jarque-Bera (JB):                2.704
 Skew:                          -1.373   Prob(JB):                        0.259
-Kurtosis:                       3.754   Cond. No.                          inf
+Kurtosis:                       3.754   Cond. No.                     2.13e+16
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is      0. This might indicate that there are
+[2] The smallest eigenvalue is 3.19e-32. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
 Model: biomedgpt7B - full_text_answer
 Number of rows with NaN value(s) in biomedgpt7B: 27
@@ -96,8 +96,8 @@ Number of rows with NaN value(s) in biomedgpt7B: 27
 Dep. Variable:     interpretation_answer   R-squared:                       0.117
 Model:                               OLS   Adj. R-squared:                  0.089
 Method:                    Least Squares   F-statistic:                     4.120
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):             0.0510
-Time:                           00:26:13   Log-Likelihood:                -16.804
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):             0.0510
+Time:                           20:41:22   Log-Likelihood:                -16.804
 No. Observations:                     33   AIC:                             37.61
 Df Residuals:                         31   BIC:                             40.60
 Df Model:                              1                                         
@@ -113,12 +113,12 @@ is_spin_in_abstract:is_detection_correct    -0.0990      0.049     -2.030      0
 Omnibus:                        5.396   Durbin-Watson:                   1.757
 Prob(Omnibus):                  0.067   Jarque-Bera (JB):                5.051
 Skew:                          -0.910   Prob(JB):                       0.0800
-Kurtosis:                       2.397   Cond. No.                     5.20e+31
+Kurtosis:                       2.397   Cond. No.                     2.79e+31
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 2.96e-62. This might indicate that there are
+[2] The smallest eigenvalue is 1.03e-61. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
 Model: biomedgpt7B - another_trial_answer
 Number of rows with NaN value(s) in biomedgpt7B: 55
@@ -127,8 +127,8 @@ Number of rows with NaN value(s) in biomedgpt7B: 55
 Dep. Variable:     interpretation_answer   R-squared:                       0.003
 Model:                               OLS   Adj. R-squared:                 -0.329
 Method:                    Least Squares   F-statistic:                  0.008696
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):              0.932
-Time:                           00:26:13   Log-Likelihood:                -13.656
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):              0.932
+Time:                           20:41:22   Log-Likelihood:                -13.656
 No. Observations:                      5   AIC:                             31.31
 Df Residuals:                          3   BIC:                             30.53
 Df Model:                              1                                         
@@ -144,12 +144,12 @@ is_spin_in_abstract:is_detection_correct    -0.1667      1.787     -0.093      0
 Omnibus:                          nan   Durbin-Watson:                   3.120
 Prob(Omnibus):                    nan   Jarque-Bera (JB):                0.443
 Skew:                          -0.187   Prob(JB):                        0.801
-Kurtosis:                       1.590   Cond. No.                     2.42e+33
+Kurtosis:                       1.590   Cond. No.                     2.15e+33
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 1.02e-66. This might indicate that there are
+[2] The smallest eigenvalue is 1.3e-66. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
 Model: biomedgpt7B - overall
 Number of rows with NaN value(s) in biomedgpt7B: 2
@@ -158,8 +158,8 @@ Number of rows with NaN value(s) in biomedgpt7B: 2
 Dep. Variable:     interpretation_answer   R-squared:                       0.192
 Model:                               OLS   Adj. R-squared:                  0.147
 Method:                    Least Squares   F-statistic:                     4.280
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):            0.00879
-Time:                           00:26:13   Log-Likelihood:                -120.57
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):            0.00879
+Time:                           20:41:22   Log-Likelihood:                -120.57
 No. Observations:                     58   AIC:                             249.1
 Df Residuals:                         54   BIC:                             257.4
 Df Model:                              3                                         

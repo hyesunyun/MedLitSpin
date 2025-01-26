@@ -5,8 +5,8 @@ Number of rows with NaN value(s) in openbiollm-70B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.764
 Model:                               OLS   Adj. R-squared:                  0.751
 Method:                    Least Squares   F-statistic:                     60.44
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           1.46e-17
-Time:                           00:26:49   Log-Likelihood:                -97.405
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           1.46e-17
+Time:                           20:41:27   Log-Likelihood:                -97.405
 No. Observations:                     60   AIC:                             202.8
 Df Residuals:                         56   BIC:                             211.2
 Df Model:                              3                                         
@@ -34,24 +34,24 @@ Number of rows with NaN value(s) in openbiollm-70B: 0
 Dep. Variable:     interpretation_answer   R-squared:                        -inf
 Model:                               OLS   Adj. R-squared:                   -inf
 Method:                    Least Squares   F-statistic:                    -18.67
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):               1.00
-Time:                           00:26:49   Log-Likelihood:                 1944.5
-No. Observations:                     60   AIC:                            -3881.
-Df Residuals:                         56   BIC:                            -3873.
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):               1.00
+Time:                           20:41:27   Log-Likelihood:                 1891.9
+No. Observations:                     60   AIC:                            -3776.
+Df Residuals:                         56   BIC:                            -3767.
 Df Model:                              3                                         
 Covariance Type:               nonrobust                                         
 =====================================================================================================================
                                                         coef    std err          t      P>|t|      [0.025      0.975]
 ---------------------------------------------------------------------------------------------------------------------
-Intercept                                             8.0000   1.29e-15   6.18e+15      0.000       8.000       8.000
-is_spin_in_abstract                                        0    2.4e-15          0      1.000   -4.81e-15    4.81e-15
-regression_detection_variable                     -1.776e-15   2.79e-15     -0.636      0.527   -7.37e-15    3.81e-15
-is_spin_in_abstract:regression_detection_variable  3.553e-15   4.24e-15      0.838      0.405   -4.94e-15     1.2e-14
+Intercept                                             8.0000   3.11e-15   2.58e+15      0.000       8.000       8.000
+is_spin_in_abstract                               -1.332e-15   5.76e-15     -0.231      0.818   -1.29e-14    1.02e-14
+regression_detection_variable                      8.882e-16    6.7e-15      0.133      0.895   -1.25e-14    1.43e-14
+is_spin_in_abstract:regression_detection_variable  5.329e-15   1.02e-14      0.524      0.602    -1.5e-14    2.57e-14
 ==============================================================================
-Omnibus:                        0.016   Durbin-Watson:                   0.582
-Prob(Omnibus):                  0.992   Jarque-Bera (JB):                0.051
-Skew:                          -0.004   Prob(JB):                        0.975
-Kurtosis:                       2.857   Cond. No.                         25.7
+Omnibus:                        9.922   Durbin-Watson:                   0.211
+Prob(Omnibus):                  0.007   Jarque-Bera (JB):                6.670
+Skew:                          -0.671   Prob(JB):                       0.0356
+Kurtosis:                       2.068   Cond. No.                         25.7
 ==============================================================================
 
 Notes:
@@ -63,8 +63,8 @@ Number of rows with NaN value(s) in openbiollm-70B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.229
 Model:                               OLS   Adj. R-squared:                  0.187
 Method:                    Least Squares   F-statistic:                     5.532
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):            0.00213
-Time:                           00:26:49   Log-Likelihood:                -55.104
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):            0.00213
+Time:                           20:41:27   Log-Likelihood:                -55.104
 No. Observations:                     60   AIC:                             118.2
 Df Residuals:                         56   BIC:                             126.6
 Df Model:                              3                                         
@@ -92,8 +92,8 @@ Number of rows with NaN value(s) in openbiollm-70B: 14
 Dep. Variable:     interpretation_answer   R-squared:                       0.261
 Model:                               OLS   Adj. R-squared:                  0.208
 Method:                    Least Squares   F-statistic:                     4.938
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):            0.00501
-Time:                           00:26:49   Log-Likelihood:                -71.398
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):            0.00501
+Time:                           20:41:27   Log-Likelihood:                -71.398
 No. Observations:                     46   AIC:                             150.8
 Df Residuals:                         42   BIC:                             158.1
 Df Model:                              3                                         
@@ -121,8 +121,8 @@ Number of rows with NaN value(s) in openbiollm-70B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.825
 Model:                               OLS   Adj. R-squared:                  0.816
 Method:                    Least Squares   F-statistic:                     88.25
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           3.30e-21
-Time:                           00:26:49   Log-Likelihood:                -92.749
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           3.30e-21
+Time:                           20:41:27   Log-Likelihood:                -92.749
 No. Observations:                     60   AIC:                             193.5
 Df Residuals:                         56   BIC:                             201.9
 Df Model:                              3                                         
@@ -150,8 +150,8 @@ Number of rows with NaN value(s) in openbiollm-70B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.783
 Model:                               OLS   Adj. R-squared:                  0.771
 Method:                    Least Squares   F-statistic:                     67.23
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           1.47e-18
-Time:                           00:26:49   Log-Likelihood:                -54.557
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           1.47e-18
+Time:                           20:41:27   Log-Likelihood:                -54.557
 No. Observations:                     60   AIC:                             117.1
 Df Residuals:                         56   BIC:                             125.5
 Df Model:                              3                                         

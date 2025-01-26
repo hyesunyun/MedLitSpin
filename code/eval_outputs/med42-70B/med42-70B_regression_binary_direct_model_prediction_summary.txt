@@ -5,8 +5,8 @@ Number of rows with NaN value(s) in med42-70B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.714
 Model:                               OLS   Adj. R-squared:                  0.698
 Method:                    Least Squares   F-statistic:                     46.50
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           3.23e-15
-Time:                           00:26:21   Log-Likelihood:                -110.86
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           3.23e-15
+Time:                           20:41:24   Log-Likelihood:                -110.86
 No. Observations:                     60   AIC:                             229.7
 Df Residuals:                         56   BIC:                             238.1
 Df Model:                              3                                         
@@ -34,24 +34,24 @@ Number of rows with NaN value(s) in med42-70B: 0
 Dep. Variable:     interpretation_answer   R-squared:                        -inf
 Model:                               OLS   Adj. R-squared:                   -inf
 Method:                    Least Squares   F-statistic:                    -18.67
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):               1.00
-Time:                           00:26:21   Log-Likelihood:                 1903.1
-No. Observations:                     60   AIC:                            -3798.
-Df Residuals:                         56   BIC:                            -3790.
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):               1.00
+Time:                           20:41:24   Log-Likelihood:                 1896.1
+No. Observations:                     60   AIC:                            -3784.
+Df Residuals:                         56   BIC:                            -3776.
 Df Model:                              3                                         
 Covariance Type:               nonrobust                                         
 ==================================================================================================================
                                                      coef    std err          t      P>|t|      [0.025      0.975]
 ------------------------------------------------------------------------------------------------------------------
-Intercept                                          8.0000   7.95e-16   1.01e+16      0.000       8.000       8.000
-is_spin_in_abstract                            -1.998e-15   1.55e-15     -1.290      0.202    -5.1e-15    1.11e-15
-detection_model_prediction                     -3.109e-15   3.08e-15     -1.010      0.317   -9.28e-15    3.06e-15
-is_spin_in_abstract:detection_model_prediction  1.332e-15   3.48e-15      0.382      0.704   -5.65e-15    8.31e-15
+Intercept                                          8.0000   8.93e-16   8.96e+15      0.000       8.000       8.000
+is_spin_in_abstract                             1.776e-15   1.74e-15      1.021      0.312   -1.71e-15    5.26e-15
+detection_model_prediction                      1.776e-15   3.46e-15      0.514      0.609   -5.15e-15     8.7e-15
+is_spin_in_abstract:detection_model_prediction  2.665e-15   3.91e-15      0.681      0.499   -5.17e-15    1.05e-14
 ==============================================================================
-Omnibus:                     1652.597   Durbin-Watson:                   0.471
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):                8.104
-Skew:                           0.198   Prob(JB):                       0.0174
-Kurtosis:                       1.244   Cond. No.                         11.0
+Omnibus:                       90.066   Durbin-Watson:                   0.783
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):                8.434
+Skew:                          -0.487   Prob(JB):                       0.0147
+Kurtosis:                       1.442   Cond. No.                         11.0
 ==============================================================================
 
 Notes:
@@ -63,8 +63,8 @@ Number of rows with NaN value(s) in med42-70B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.286
 Model:                               OLS   Adj. R-squared:                  0.247
 Method:                    Least Squares   F-statistic:                     7.467
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           0.000273
-Time:                           00:26:21   Log-Likelihood:                -90.858
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           0.000273
+Time:                           20:41:24   Log-Likelihood:                -90.858
 No. Observations:                     60   AIC:                             189.7
 Df Residuals:                         56   BIC:                             198.1
 Df Model:                              3                                         
@@ -92,8 +92,8 @@ Number of rows with NaN value(s) in med42-70B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.808
 Model:                               OLS   Adj. R-squared:                  0.797
 Method:                    Least Squares   F-statistic:                     78.32
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           5.01e-20
-Time:                           00:26:21   Log-Likelihood:                -89.023
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           5.01e-20
+Time:                           20:41:24   Log-Likelihood:                -89.023
 No. Observations:                     60   AIC:                             186.0
 Df Residuals:                         56   BIC:                             194.4
 Df Model:                              3                                         
@@ -121,8 +121,8 @@ Number of rows with NaN value(s) in med42-70B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.804
 Model:                               OLS   Adj. R-squared:                  0.794
 Method:                    Least Squares   F-statistic:                     76.80
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           7.78e-20
-Time:                           00:26:21   Log-Likelihood:                -94.907
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           7.78e-20
+Time:                           20:41:24   Log-Likelihood:                -94.907
 No. Observations:                     60   AIC:                             197.8
 Df Residuals:                         56   BIC:                             206.2
 Df Model:                              3                                         
@@ -150,8 +150,8 @@ Number of rows with NaN value(s) in med42-70B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.767
 Model:                               OLS   Adj. R-squared:                  0.754
 Method:                    Least Squares   F-statistic:                     61.40
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           1.04e-17
-Time:                           00:26:21   Log-Likelihood:                -75.178
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           1.04e-17
+Time:                           20:41:24   Log-Likelihood:                -75.178
 No. Observations:                     60   AIC:                             158.4
 Df Residuals:                         56   BIC:                             166.7
 Df Model:                              3                                         

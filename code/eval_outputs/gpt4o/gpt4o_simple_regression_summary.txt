@@ -5,8 +5,8 @@ Number of rows with NaN value(s) in gpt4o: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.587
 Model:                               OLS   Adj. R-squared:                  0.580
 Method:                    Least Squares   F-statistic:                     82.39
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           9.90e-13
-Time:                           00:26:08   Log-Likelihood:                -101.54
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           9.90e-13
+Time:                           20:41:21   Log-Likelihood:                -101.54
 No. Observations:                     60   AIC:                             207.1
 Df Residuals:                         58   BIC:                             211.3
 Df Model:                              1                                         
@@ -32,8 +32,8 @@ Number of rows with NaN value(s) in gpt4o: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.017
 Model:                               OLS   Adj. R-squared:                 -0.000
 Method:                    Least Squares   F-statistic:                    0.9849
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):              0.325
-Time:                           00:26:08   Log-Likelihood:                -27.662
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):              0.325
+Time:                           20:41:21   Log-Likelihood:                -27.662
 No. Observations:                     60   AIC:                             59.32
 Df Residuals:                         58   BIC:                             63.51
 Df Model:                              1                                         
@@ -59,8 +59,8 @@ Number of rows with NaN value(s) in gpt4o: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.345
 Model:                               OLS   Adj. R-squared:                  0.333
 Method:                    Least Squares   F-statistic:                     30.52
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           8.18e-07
-Time:                           00:26:08   Log-Likelihood:                -75.397
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           8.18e-07
+Time:                           20:41:21   Log-Likelihood:                -75.397
 No. Observations:                     60   AIC:                             154.8
 Df Residuals:                         58   BIC:                             159.0
 Df Model:                              1                                         
@@ -86,8 +86,8 @@ Number of rows with NaN value(s) in gpt4o: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.668
 Model:                               OLS   Adj. R-squared:                  0.662
 Method:                    Least Squares   F-statistic:                     116.6
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           1.68e-15
-Time:                           00:26:08   Log-Likelihood:                -85.796
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           1.68e-15
+Time:                           20:41:21   Log-Likelihood:                -85.796
 No. Observations:                     60   AIC:                             175.6
 Df Residuals:                         58   BIC:                             179.8
 Df Model:                              1                                         
@@ -113,8 +113,8 @@ Number of rows with NaN value(s) in gpt4o: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.751
 Model:                               OLS   Adj. R-squared:                  0.747
 Method:                    Least Squares   F-statistic:                     174.9
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           3.71e-19
-Time:                           00:26:08   Log-Likelihood:                -82.671
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           3.71e-19
+Time:                           20:41:21   Log-Likelihood:                -82.671
 No. Observations:                     60   AIC:                             169.3
 Df Residuals:                         58   BIC:                             173.5
 Df Model:                              1                                         
@@ -140,8 +140,8 @@ Number of rows with NaN value(s) in gpt4o: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.657
 Model:                               OLS   Adj. R-squared:                  0.652
 Method:                    Least Squares   F-statistic:                     111.3
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           4.10e-15
-Time:                           00:26:09   Log-Likelihood:                -69.452
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           4.10e-15
+Time:                           20:41:21   Log-Likelihood:                -69.452
 No. Observations:                     60   AIC:                             142.9
 Df Residuals:                         58   BIC:                             147.1
 Df Model:                              1                                         

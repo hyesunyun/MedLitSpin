@@ -30,6 +30,7 @@ models=(
 # DEFAULT PROMPT TEMPLATE with 300 max new tokens
 
 # # Loop through each model
+# echo "Generating plain language summaries..."
 # for model in "${models[@]}"; do
 #   # Run the script with the current model
 #   python3 code/generate_plain_language_summaries.py \
@@ -41,24 +42,24 @@ models=(
 
 # echo "####################################"
 
-echo "Generating plain language summaries with ground truth spin/no spin labels..."
-for model in "${models[@]}"; do
-  # Run the script with the current model
-  python3 code/generate_plain_language_summaries_with_abstract_labels.py.py \
-    --model "$model" \
-    --label_mode "gold_label" \
-    --output_path "code/pls_outputs/$model" \
-    --max_new_tokens 300 \
-    --prompt_template_name "default"
-done
+# echo "Generating plain language summaries with ground truth spin/no spin labels..."
+# for model in "${models[@]}"; do
+#   # Run the script with the current model
+#   python3 code/generate_plain_language_summaries_with_abstract_labels.py \
+#     --model "$model" \
+#     --label_mode "gold_label" \
+#     --output_path "code/pls_outputs/$model" \
+#     --max_new_tokens 300 \
+#     --prompt_template_name "default"
+# done
 
-echo "####################################"
+# echo "####################################"
 
 # Loop through each model
 echo "Generating plain language summaries with model output's spin/no spin labels..."
 for model in "${models[@]}"; do
   # Run the script with the current model
-  python3 code/generate_plain_language_summaries_with_abstract_labels.py.py \
+  python3 code/generate_plain_language_summaries_with_abstract_labels.py \
     --model "$model" \
     --label_mode "model_output_label" \
     --output_path "code/pls_outputs/$model" \

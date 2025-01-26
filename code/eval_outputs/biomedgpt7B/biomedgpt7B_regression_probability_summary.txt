@@ -5,8 +5,8 @@ Number of rows with NaN value(s) in biomedgpt7B: 5
 Dep. Variable:     interpretation_answer   R-squared:                       0.570
 Model:                               OLS   Adj. R-squared:                  0.544
 Method:                    Least Squares   F-statistic:                     21.65
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           4.56e-09
-Time:                           00:26:23   Log-Likelihood:                -43.400
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           4.56e-09
+Time:                           20:41:25   Log-Likelihood:                -43.400
 No. Observations:                     53   AIC:                             94.80
 Df Residuals:                         49   BIC:                             102.7
 Df Model:                              3                                         
@@ -34,8 +34,8 @@ Number of rows with NaN value(s) in biomedgpt7B: 52
 Dep. Variable:     interpretation_answer   R-squared:                       0.615
 Model:                               OLS   Adj. R-squared:                  0.230
 Method:                    Least Squares   F-statistic:                     1.597
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):              0.355
-Time:                           00:26:23   Log-Likelihood:                -11.027
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):              0.355
+Time:                           20:41:25   Log-Likelihood:                -11.027
 No. Observations:                      7   AIC:                             30.05
 Df Residuals:                          3   BIC:                             29.84
 Df Model:                              3                                         
@@ -63,8 +63,8 @@ Number of rows with NaN value(s) in biomedgpt7B: 52
 Dep. Variable:     interpretation_answer   R-squared:                       0.469
 Model:                               OLS   Adj. R-squared:                 -0.062
 Method:                    Least Squares   F-statistic:                    0.8840
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):              0.539
-Time:                           00:26:23   Log-Likelihood:                -16.643
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):              0.539
+Time:                           20:41:25   Log-Likelihood:                -16.643
 No. Observations:                      7   AIC:                             41.29
 Df Residuals:                          3   BIC:                             41.07
 Df Model:                              3                                         
@@ -92,8 +92,8 @@ Number of rows with NaN value(s) in biomedgpt7B: 27
 Dep. Variable:     interpretation_answer   R-squared:                       0.204
 Model:                               OLS   Adj. R-squared:                  0.122
 Method:                    Least Squares   F-statistic:                     2.482
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):             0.0807
-Time:                           00:26:23   Log-Likelihood:                -15.091
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):             0.0807
+Time:                           20:41:25   Log-Likelihood:                -15.091
 No. Observations:                     33   AIC:                             38.18
 Df Residuals:                         29   BIC:                             44.17
 Df Model:                              3                                         
@@ -121,8 +121,8 @@ Number of rows with NaN value(s) in biomedgpt7B: 55
 Dep. Variable:     interpretation_answer   R-squared:                       0.786
 Model:                               OLS   Adj. R-squared:                  0.572
 Method:                    Least Squares   F-statistic:                     3.678
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):              0.214
-Time:                           00:26:24   Log-Likelihood:                -9.8066
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):              0.214
+Time:                           20:41:25   Log-Likelihood:                -9.8066
 No. Observations:                      5   AIC:                             25.61
 Df Residuals:                          2   BIC:                             24.44
 Df Model:                              2                                         
@@ -138,12 +138,12 @@ is_spin_in_abstract:regression_detection_variable   -11.0528      4.114     -2.6
 Omnibus:                          nan   Durbin-Watson:                   1.719
 Prob(Omnibus):                    nan   Jarque-Bera (JB):                0.479
 Skew:                          -0.723   Prob(JB):                        0.787
-Kurtosis:                       2.541   Cond. No.                     9.05e+16
+Kurtosis:                       2.541   Cond. No.                     3.17e+17
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 8.8e-34. This might indicate that there are
+[2] The smallest eigenvalue is 7.19e-35. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
 Model: biomedgpt7B - overall
 Number of rows with NaN value(s) in biomedgpt7B: 2
@@ -152,8 +152,8 @@ Number of rows with NaN value(s) in biomedgpt7B: 2
 Dep. Variable:     interpretation_answer   R-squared:                       0.149
 Model:                               OLS   Adj. R-squared:                  0.100
 Method:                    Least Squares   F-statistic:                     3.045
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):             0.0368
-Time:                           00:26:24   Log-Likelihood:                -115.22
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):             0.0368
+Time:                           20:41:25   Log-Likelihood:                -115.22
 No. Observations:                     56   AIC:                             238.4
 Df Residuals:                         52   BIC:                             246.5
 Df Model:                              3                                         

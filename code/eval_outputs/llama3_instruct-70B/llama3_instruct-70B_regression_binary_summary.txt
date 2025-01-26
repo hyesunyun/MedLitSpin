@@ -5,8 +5,8 @@ Number of rows with NaN value(s) in llama3_instruct-70B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.611
 Model:                               OLS   Adj. R-squared:                  0.597
 Method:                    Least Squares   F-statistic:                     44.69
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           2.12e-12
-Time:                           00:26:16   Log-Likelihood:                -119.03
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           2.12e-12
+Time:                           20:41:23   Log-Likelihood:                -119.03
 No. Observations:                     60   AIC:                             244.1
 Df Residuals:                         57   BIC:                             250.3
 Df Model:                              2                                         
@@ -22,12 +22,12 @@ is_spin_in_abstract:is_detection_correct     0.8208      0.447      1.834      0
 Omnibus:                        2.791   Durbin-Watson:                   1.136
 Prob(Omnibus):                  0.248   Jarque-Bera (JB):                1.906
 Skew:                           0.347   Prob(JB):                        0.386
-Kurtosis:                       3.530   Cond. No.                     3.90e+15
+Kurtosis:                       3.530   Cond. No.                     9.25e+15
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 8.54e-30. This might indicate that there are
+[2] The smallest eigenvalue is 1.52e-30. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
 Model: llama3_instruct-70B - rigor_answer
 Number of rows with NaN value(s) in llama3_instruct-70B: 0
@@ -36,8 +36,8 @@ Number of rows with NaN value(s) in llama3_instruct-70B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.029
 Model:                               OLS   Adj. R-squared:                 -0.005
 Method:                    Least Squares   F-statistic:                    0.8584
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):              0.429
-Time:                           00:26:16   Log-Likelihood:                 7.1647
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):              0.429
+Time:                           20:41:23   Log-Likelihood:                 7.1647
 No. Observations:                     60   AIC:                            -8.329
 Df Residuals:                         57   BIC:                            -2.046
 Df Model:                              2                                         
@@ -53,12 +53,12 @@ is_spin_in_abstract:is_detection_correct    -2.0833      0.055    -38.144      0
 Omnibus:                       78.162   Durbin-Watson:                   1.029
 Prob(Omnibus):                  0.000   Jarque-Bera (JB):              648.394
 Skew:                           3.935   Prob(JB):                    1.60e-141
-Kurtosis:                      17.051   Cond. No.                     3.90e+15
+Kurtosis:                      17.051   Cond. No.                     9.25e+15
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 8.54e-30. This might indicate that there are
+[2] The smallest eigenvalue is 1.52e-30. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
 Model: llama3_instruct-70B - importance_answer
 Number of rows with NaN value(s) in llama3_instruct-70B: 0
@@ -67,8 +67,8 @@ Number of rows with NaN value(s) in llama3_instruct-70B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.203
 Model:                               OLS   Adj. R-squared:                  0.175
 Method:                    Least Squares   F-statistic:                     7.246
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):            0.00157
-Time:                           00:26:16   Log-Likelihood:                -87.337
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):            0.00157
+Time:                           20:41:23   Log-Likelihood:                -87.337
 No. Observations:                     60   AIC:                             180.7
 Df Residuals:                         57   BIC:                             187.0
 Df Model:                              2                                         
@@ -84,12 +84,12 @@ is_spin_in_abstract:is_detection_correct    -1.5667      0.264     -5.938      0
 Omnibus:                       32.426   Durbin-Watson:                   1.783
 Prob(Omnibus):                  0.000   Jarque-Bera (JB):               80.229
 Skew:                          -1.630   Prob(JB):                     3.79e-18
-Kurtosis:                       7.633   Cond. No.                     3.90e+15
+Kurtosis:                       7.633   Cond. No.                     9.25e+15
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 8.54e-30. This might indicate that there are
+[2] The smallest eigenvalue is 1.52e-30. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
 Model: llama3_instruct-70B - full_text_answer
 Number of rows with NaN value(s) in llama3_instruct-70B: 0
@@ -98,8 +98,8 @@ Number of rows with NaN value(s) in llama3_instruct-70B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.641
 Model:                               OLS   Adj. R-squared:                  0.629
 Method:                    Least Squares   F-statistic:                     50.91
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           2.07e-13
-Time:                           00:26:16   Log-Likelihood:                -99.671
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           2.07e-13
+Time:                           20:41:23   Log-Likelihood:                -99.671
 No. Observations:                     60   AIC:                             205.3
 Df Residuals:                         57   BIC:                             211.6
 Df Model:                              2                                         
@@ -115,12 +115,12 @@ is_spin_in_abstract:is_detection_correct    -0.1250      0.324     -0.386      0
 Omnibus:                       15.997   Durbin-Watson:                   1.524
 Prob(Omnibus):                  0.000   Jarque-Bera (JB):               19.843
 Skew:                           1.074   Prob(JB):                     4.91e-05
-Kurtosis:                       4.822   Cond. No.                     3.90e+15
+Kurtosis:                       4.822   Cond. No.                     9.25e+15
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 8.54e-30. This might indicate that there are
+[2] The smallest eigenvalue is 1.52e-30. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
 Model: llama3_instruct-70B - another_trial_answer
 Number of rows with NaN value(s) in llama3_instruct-70B: 0
@@ -129,8 +129,8 @@ Number of rows with NaN value(s) in llama3_instruct-70B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.679
 Model:                               OLS   Adj. R-squared:                  0.668
 Method:                    Least Squares   F-statistic:                     60.33
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           8.49e-15
-Time:                           00:26:16   Log-Likelihood:                -105.56
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           8.49e-15
+Time:                           20:41:23   Log-Likelihood:                -105.56
 No. Observations:                     60   AIC:                             217.1
 Df Residuals:                         57   BIC:                             223.4
 Df Model:                              2                                         
@@ -146,12 +146,12 @@ is_spin_in_abstract:is_detection_correct     0.6292      0.357      1.760      0
 Omnibus:                       14.694   Durbin-Watson:                   1.729
 Prob(Omnibus):                  0.001   Jarque-Bera (JB):               16.422
 Skew:                           1.101   Prob(JB):                     0.000272
-Kurtosis:                       4.312   Cond. No.                     3.90e+15
+Kurtosis:                       4.312   Cond. No.                     9.25e+15
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 8.54e-30. This might indicate that there are
+[2] The smallest eigenvalue is 1.52e-30. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
 Model: llama3_instruct-70B - overall
 Number of rows with NaN value(s) in llama3_instruct-70B: 0
@@ -160,8 +160,8 @@ Number of rows with NaN value(s) in llama3_instruct-70B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.654
 Model:                               OLS   Adj. R-squared:                  0.642
 Method:                    Least Squares   F-statistic:                     53.99
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           7.02e-14
-Time:                           00:26:16   Log-Likelihood:                -80.783
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           7.02e-14
+Time:                           20:41:23   Log-Likelihood:                -80.783
 No. Observations:                     60   AIC:                             167.6
 Df Residuals:                         57   BIC:                             173.8
 Df Model:                              2                                         
@@ -177,10 +177,10 @@ is_spin_in_abstract:is_detection_correct    -0.4650      0.237     -1.966      0
 Omnibus:                        6.183   Durbin-Watson:                   1.331
 Prob(Omnibus):                  0.045   Jarque-Bera (JB):                5.359
 Skew:                           0.577   Prob(JB):                       0.0686
-Kurtosis:                       3.901   Cond. No.                     3.90e+15
+Kurtosis:                       3.901   Cond. No.                     9.25e+15
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 8.54e-30. This might indicate that there are
+[2] The smallest eigenvalue is 1.52e-30. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.

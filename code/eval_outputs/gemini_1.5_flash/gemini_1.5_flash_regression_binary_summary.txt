@@ -5,8 +5,8 @@ Number of rows with NaN value(s) in gemini_1.5_flash: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.504
 Model:                               OLS   Adj. R-squared:                  0.487
 Method:                    Least Squares   F-statistic:                     28.95
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           2.11e-09
-Time:                           00:26:14   Log-Likelihood:                -99.340
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           2.11e-09
+Time:                           20:41:22   Log-Likelihood:                -99.340
 No. Observations:                     60   AIC:                             204.7
 Df Residuals:                         57   BIC:                             211.0
 Df Model:                              2                                         
@@ -22,12 +22,12 @@ is_spin_in_abstract:is_detection_correct     1.4476      0.210      6.881      0
 Omnibus:                        5.182   Durbin-Watson:                   1.586
 Prob(Omnibus):                  0.075   Jarque-Bera (JB):                5.177
 Skew:                           0.697   Prob(JB):                       0.0751
-Kurtosis:                       2.643   Cond. No.                     3.09e+16
+Kurtosis:                       2.643   Cond. No.                     2.45e+16
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 1.47e-31. This might indicate that there are
+[2] The smallest eigenvalue is 2.35e-31. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
 Model: gemini_1.5_flash - rigor_answer
 Number of rows with NaN value(s) in gemini_1.5_flash: 0
@@ -36,8 +36,8 @@ Number of rows with NaN value(s) in gemini_1.5_flash: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.023
 Model:                               OLS   Adj. R-squared:                 -0.011
 Method:                    Least Squares   F-statistic:                    0.6654
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):              0.518
-Time:                           00:26:14   Log-Likelihood:                -33.505
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):              0.518
+Time:                           20:41:22   Log-Likelihood:                -33.505
 No. Observations:                     60   AIC:                             73.01
 Df Residuals:                         57   BIC:                             79.29
 Df Model:                              2                                         
@@ -53,12 +53,12 @@ is_spin_in_abstract:is_detection_correct    -0.0810      0.070     -1.153      0
 Omnibus:                       39.032   Durbin-Watson:                   1.372
 Prob(Omnibus):                  0.000   Jarque-Bera (JB):               88.205
 Skew:                          -2.155   Prob(JB):                     7.02e-20
-Kurtosis:                       7.088   Cond. No.                     3.09e+16
+Kurtosis:                       7.088   Cond. No.                     2.45e+16
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 1.47e-31. This might indicate that there are
+[2] The smallest eigenvalue is 2.35e-31. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
 Model: gemini_1.5_flash - importance_answer
 Number of rows with NaN value(s) in gemini_1.5_flash: 0
@@ -67,8 +67,8 @@ Number of rows with NaN value(s) in gemini_1.5_flash: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.444
 Model:                               OLS   Adj. R-squared:                  0.425
 Method:                    Least Squares   F-statistic:                     22.78
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           5.35e-08
-Time:                           00:26:14   Log-Likelihood:                -96.746
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           5.35e-08
+Time:                           20:41:22   Log-Likelihood:                -96.746
 No. Observations:                     60   AIC:                             199.5
 Df Residuals:                         57   BIC:                             205.8
 Df Model:                              2                                         
@@ -84,12 +84,12 @@ is_spin_in_abstract:is_detection_correct     1.1286      0.201      5.601      0
 Omnibus:                       20.228   Durbin-Watson:                   1.949
 Prob(Omnibus):                  0.000   Jarque-Bera (JB):                4.008
 Skew:                           0.042   Prob(JB):                        0.135
-Kurtosis:                       1.737   Cond. No.                     3.09e+16
+Kurtosis:                       1.737   Cond. No.                     2.45e+16
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 1.47e-31. This might indicate that there are
+[2] The smallest eigenvalue is 2.35e-31. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
 Model: gemini_1.5_flash - full_text_answer
 Number of rows with NaN value(s) in gemini_1.5_flash: 0
@@ -98,8 +98,8 @@ Number of rows with NaN value(s) in gemini_1.5_flash: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.560
 Model:                               OLS   Adj. R-squared:                  0.545
 Method:                    Least Squares   F-statistic:                     36.28
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           6.88e-11
-Time:                           00:26:14   Log-Likelihood:                -102.58
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           6.88e-11
+Time:                           20:41:22   Log-Likelihood:                -102.58
 No. Observations:                     60   AIC:                             211.2
 Df Residuals:                         57   BIC:                             217.4
 Df Model:                              2                                         
@@ -115,12 +115,12 @@ is_spin_in_abstract:is_detection_correct     1.6238      0.222      7.312      0
 Omnibus:                        1.793   Durbin-Watson:                   1.557
 Prob(Omnibus):                  0.408   Jarque-Bera (JB):                1.512
 Skew:                          -0.234   Prob(JB):                        0.469
-Kurtosis:                       2.379   Cond. No.                     3.09e+16
+Kurtosis:                       2.379   Cond. No.                     2.45e+16
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 1.47e-31. This might indicate that there are
+[2] The smallest eigenvalue is 2.35e-31. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
 Model: gemini_1.5_flash - another_trial_answer
 Number of rows with NaN value(s) in gemini_1.5_flash: 0
@@ -129,8 +129,8 @@ Number of rows with NaN value(s) in gemini_1.5_flash: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.696
 Model:                               OLS   Adj. R-squared:                  0.686
 Method:                    Least Squares   F-statistic:                     65.37
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           1.76e-15
-Time:                           00:26:14   Log-Likelihood:                -97.981
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           1.76e-15
+Time:                           20:41:22   Log-Likelihood:                -97.981
 No. Observations:                     60   AIC:                             202.0
 Df Residuals:                         57   BIC:                             208.2
 Df Model:                              2                                         
@@ -146,12 +146,12 @@ is_spin_in_abstract:is_detection_correct     2.0857      0.206     10.141      0
 Omnibus:                        3.753   Durbin-Watson:                   1.826
 Prob(Omnibus):                  0.153   Jarque-Bera (JB):                3.905
 Skew:                          -0.061   Prob(JB):                        0.142
-Kurtosis:                       4.244   Cond. No.                     3.09e+16
+Kurtosis:                       4.244   Cond. No.                     2.45e+16
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 1.47e-31. This might indicate that there are
+[2] The smallest eigenvalue is 2.35e-31. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
 Model: gemini_1.5_flash - overall
 Number of rows with NaN value(s) in gemini_1.5_flash: 0
@@ -160,8 +160,8 @@ Number of rows with NaN value(s) in gemini_1.5_flash: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.616
 Model:                               OLS   Adj. R-squared:                  0.603
 Method:                    Least Squares   F-statistic:                     45.78
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           1.39e-12
-Time:                           00:26:14   Log-Likelihood:                -78.606
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           1.39e-12
+Time:                           20:41:22   Log-Likelihood:                -78.606
 No. Observations:                     60   AIC:                             163.2
 Df Residuals:                         57   BIC:                             169.5
 Df Model:                              2                                         
@@ -177,10 +177,10 @@ is_spin_in_abstract:is_detection_correct     1.2410      0.149      8.333      0
 Omnibus:                        2.363   Durbin-Watson:                   1.696
 Prob(Omnibus):                  0.307   Jarque-Bera (JB):                1.592
 Skew:                           0.164   Prob(JB):                        0.451
-Kurtosis:                       2.272   Cond. No.                     3.09e+16
+Kurtosis:                       2.272   Cond. No.                     2.45e+16
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 1.47e-31. This might indicate that there are
+[2] The smallest eigenvalue is 2.35e-31. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.

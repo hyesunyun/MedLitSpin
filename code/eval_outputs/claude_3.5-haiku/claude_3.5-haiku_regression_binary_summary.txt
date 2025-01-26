@@ -5,8 +5,8 @@ Number of rows with NaN value(s) in claude_3.5-haiku: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.598
 Model:                               OLS   Adj. R-squared:                  0.584
 Method:                    Least Squares   F-statistic:                     42.42
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           5.21e-12
-Time:                           00:26:13   Log-Likelihood:                -97.260
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           5.21e-12
+Time:                           20:41:22   Log-Likelihood:                -97.260
 No. Observations:                     60   AIC:                             200.5
 Df Residuals:                         57   BIC:                             206.8
 Df Model:                              2                                         
@@ -22,12 +22,12 @@ is_spin_in_abstract:is_detection_correct     1.7917      0.334      5.361      0
 Omnibus:                        0.548   Durbin-Watson:                   1.429
 Prob(Omnibus):                  0.760   Jarque-Bera (JB):                0.125
 Skew:                           0.055   Prob(JB):                        0.940
-Kurtosis:                       3.195   Cond. No.                     3.08e+16
+Kurtosis:                       3.195   Cond. No.                     2.37e+16
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 1.4e-31. This might indicate that there are
+[2] The smallest eigenvalue is 2.35e-31. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
 Model: claude_3.5-haiku - rigor_answer
 Number of rows with NaN value(s) in claude_3.5-haiku: 0
@@ -36,8 +36,8 @@ Number of rows with NaN value(s) in claude_3.5-haiku: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.035
 Model:                               OLS   Adj. R-squared:                  0.002
 Method:                    Least Squares   F-statistic:                     1.047
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):              0.358
-Time:                           00:26:13   Log-Likelihood:                -8.5934
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):              0.358
+Time:                           20:41:22   Log-Likelihood:                -8.5934
 No. Observations:                     60   AIC:                             23.19
 Df Residuals:                         57   BIC:                             29.47
 Df Model:                              2                                         
@@ -53,12 +53,12 @@ is_spin_in_abstract:is_detection_correct    -0.1083      0.076     -1.421      0
 Omnibus:                       36.971   Durbin-Watson:                   1.474
 Prob(Omnibus):                  0.000   Jarque-Bera (JB):              188.746
 Skew:                           1.481   Prob(JB):                     1.03e-41
-Kurtosis:                      11.169   Cond. No.                     3.08e+16
+Kurtosis:                      11.169   Cond. No.                     2.37e+16
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 1.4e-31. This might indicate that there are
+[2] The smallest eigenvalue is 2.35e-31. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
 Model: claude_3.5-haiku - importance_answer
 Number of rows with NaN value(s) in claude_3.5-haiku: 0
@@ -67,8 +67,8 @@ Number of rows with NaN value(s) in claude_3.5-haiku: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.109
 Model:                               OLS   Adj. R-squared:                  0.078
 Method:                    Least Squares   F-statistic:                     3.492
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):             0.0371
-Time:                           00:26:14   Log-Likelihood:                -63.673
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):             0.0371
+Time:                           20:41:22   Log-Likelihood:                -63.673
 No. Observations:                     60   AIC:                             133.3
 Df Residuals:                         57   BIC:                             139.6
 Df Model:                              2                                         
@@ -84,12 +84,12 @@ is_spin_in_abstract:is_detection_correct     0.1000      0.191      0.524      0
 Omnibus:                       17.658   Durbin-Watson:                   2.023
 Prob(Omnibus):                  0.000   Jarque-Bera (JB):               21.482
 Skew:                          -1.241   Prob(JB):                     2.16e-05
-Kurtosis:                       4.559   Cond. No.                     3.08e+16
+Kurtosis:                       4.559   Cond. No.                     2.37e+16
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 1.4e-31. This might indicate that there are
+[2] The smallest eigenvalue is 2.35e-31. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
 Model: claude_3.5-haiku - full_text_answer
 Number of rows with NaN value(s) in claude_3.5-haiku: 0
@@ -98,8 +98,8 @@ Number of rows with NaN value(s) in claude_3.5-haiku: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.306
 Model:                               OLS   Adj. R-squared:                  0.282
 Method:                    Least Squares   F-statistic:                     12.56
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           3.03e-05
-Time:                           00:26:14   Log-Likelihood:                -83.912
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           3.03e-05
+Time:                           20:41:22   Log-Likelihood:                -83.912
 No. Observations:                     60   AIC:                             173.8
 Df Residuals:                         57   BIC:                             180.1
 Df Model:                              2                                         
@@ -115,12 +115,12 @@ is_spin_in_abstract:is_detection_correct     0.6083      0.268      2.274      0
 Omnibus:                        7.799   Durbin-Watson:                   1.773
 Prob(Omnibus):                  0.020   Jarque-Bera (JB):                7.002
 Skew:                          -0.748   Prob(JB):                       0.0302
-Kurtosis:                       3.750   Cond. No.                     3.08e+16
+Kurtosis:                       3.750   Cond. No.                     2.37e+16
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 1.4e-31. This might indicate that there are
+[2] The smallest eigenvalue is 2.35e-31. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
 Model: claude_3.5-haiku - another_trial_answer
 Number of rows with NaN value(s) in claude_3.5-haiku: 0
@@ -129,8 +129,8 @@ Number of rows with NaN value(s) in claude_3.5-haiku: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.482
 Model:                               OLS   Adj. R-squared:                  0.464
 Method:                    Least Squares   F-statistic:                     26.56
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           7.06e-09
-Time:                           00:26:14   Log-Likelihood:                -94.080
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           7.06e-09
+Time:                           20:41:22   Log-Likelihood:                -94.080
 No. Observations:                     60   AIC:                             194.2
 Df Residuals:                         57   BIC:                             200.4
 Df Model:                              2                                         
@@ -146,12 +146,12 @@ is_spin_in_abstract:is_detection_correct     1.6000      0.317      5.048      0
 Omnibus:                        2.108   Durbin-Watson:                   2.278
 Prob(Omnibus):                  0.349   Jarque-Bera (JB):                1.992
 Skew:                          -0.430   Prob(JB):                        0.369
-Kurtosis:                       2.763   Cond. No.                     3.08e+16
+Kurtosis:                       2.763   Cond. No.                     2.37e+16
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 1.4e-31. This might indicate that there are
+[2] The smallest eigenvalue is 2.35e-31. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
 Model: claude_3.5-haiku - overall
 Number of rows with NaN value(s) in claude_3.5-haiku: 0
@@ -160,8 +160,8 @@ Number of rows with NaN value(s) in claude_3.5-haiku: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.512
 Model:                               OLS   Adj. R-squared:                  0.495
 Method:                    Least Squares   F-statistic:                     29.90
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           1.32e-09
-Time:                           00:26:14   Log-Likelihood:                -61.384
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           1.32e-09
+Time:                           20:41:22   Log-Likelihood:                -61.384
 No. Observations:                     60   AIC:                             128.8
 Df Residuals:                         57   BIC:                             135.1
 Df Model:                              2                                         
@@ -177,10 +177,10 @@ is_spin_in_abstract:is_detection_correct     0.7983      0.184      4.344      0
 Omnibus:                        2.083   Durbin-Watson:                   2.013
 Prob(Omnibus):                  0.353   Jarque-Bera (JB):                1.355
 Skew:                          -0.334   Prob(JB):                        0.508
-Kurtosis:                       3.309   Cond. No.                     3.08e+16
+Kurtosis:                       3.309   Cond. No.                     2.37e+16
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 1.4e-31. This might indicate that there are
+[2] The smallest eigenvalue is 2.35e-31. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.

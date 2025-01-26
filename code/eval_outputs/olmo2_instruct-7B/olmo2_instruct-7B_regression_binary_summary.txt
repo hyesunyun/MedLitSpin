@@ -5,8 +5,8 @@ Number of rows with NaN value(s) in olmo2_instruct-7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.602
 Model:                               OLS   Adj. R-squared:                  0.588
 Method:                    Least Squares   F-statistic:                     43.11
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           3.95e-12
-Time:                           00:26:17   Log-Likelihood:                -101.81
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           3.95e-12
+Time:                           20:41:23   Log-Likelihood:                -101.81
 No. Observations:                     60   AIC:                             209.6
 Df Residuals:                         57   BIC:                             215.9
 Df Model:                              2                                         
@@ -22,12 +22,12 @@ is_spin_in_abstract:is_detection_correct     0.2639      0.356      0.741      0
 Omnibus:                        5.566   Durbin-Watson:                   1.797
 Prob(Omnibus):                  0.062   Jarque-Bera (JB):                4.694
 Skew:                          -0.656   Prob(JB):                       0.0956
-Kurtosis:                       3.396   Cond. No.                     4.68e+15
+Kurtosis:                       3.396   Cond. No.                     7.28e+15
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 5.04e-30. This might indicate that there are
+[2] The smallest eigenvalue is 2.09e-30. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
 Model: olmo2_instruct-7B - rigor_answer
 Number of rows with NaN value(s) in olmo2_instruct-7B: 0
@@ -36,8 +36,8 @@ Number of rows with NaN value(s) in olmo2_instruct-7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.128
 Model:                               OLS   Adj. R-squared:                  0.098
 Method:                    Least Squares   F-statistic:                     4.192
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):             0.0200
-Time:                           00:26:17   Log-Likelihood:                -57.724
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):             0.0200
+Time:                           20:41:23   Log-Likelihood:                -57.724
 No. Observations:                     60   AIC:                             121.4
 Df Residuals:                         57   BIC:                             127.7
 Df Model:                              2                                         
@@ -53,12 +53,12 @@ is_spin_in_abstract:is_detection_correct    -1.6514      0.171     -9.669      0
 Omnibus:                       35.792   Durbin-Watson:                   1.803
 Prob(Omnibus):                  0.000   Jarque-Bera (JB):               86.599
 Skew:                          -1.861   Prob(JB):                     1.57e-19
-Kurtosis:                       7.558   Cond. No.                     4.68e+15
+Kurtosis:                       7.558   Cond. No.                     7.28e+15
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 5.04e-30. This might indicate that there are
+[2] The smallest eigenvalue is 2.09e-30. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
 Model: olmo2_instruct-7B - importance_answer
 Number of rows with NaN value(s) in olmo2_instruct-7B: 0
@@ -67,8 +67,8 @@ Number of rows with NaN value(s) in olmo2_instruct-7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.370
 Model:                               OLS   Adj. R-squared:                  0.348
 Method:                    Least Squares   F-statistic:                     16.77
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           1.88e-06
-Time:                           00:26:17   Log-Likelihood:                -78.421
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           1.88e-06
+Time:                           20:41:23   Log-Likelihood:                -78.421
 No. Observations:                     60   AIC:                             162.8
 Df Residuals:                         57   BIC:                             169.1
 Df Model:                              2                                         
@@ -84,12 +84,12 @@ is_spin_in_abstract:is_detection_correct    -1.0583      0.241     -4.389      0
 Omnibus:                        5.142   Durbin-Watson:                   2.079
 Prob(Omnibus):                  0.076   Jarque-Bera (JB):                5.124
 Skew:                          -0.699   Prob(JB):                       0.0772
-Kurtosis:                       2.689   Cond. No.                     4.68e+15
+Kurtosis:                       2.689   Cond. No.                     7.28e+15
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 5.04e-30. This might indicate that there are
+[2] The smallest eigenvalue is 2.09e-30. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
 Model: olmo2_instruct-7B - full_text_answer
 Number of rows with NaN value(s) in olmo2_instruct-7B: 0
@@ -98,8 +98,8 @@ Number of rows with NaN value(s) in olmo2_instruct-7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.702
 Model:                               OLS   Adj. R-squared:                  0.692
 Method:                    Least Squares   F-statistic:                     67.24
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           1.00e-15
-Time:                           00:26:17   Log-Likelihood:                -67.772
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           1.00e-15
+Time:                           20:41:23   Log-Likelihood:                -67.772
 No. Observations:                     60   AIC:                             141.5
 Df Residuals:                         57   BIC:                             147.8
 Df Model:                              2                                         
@@ -115,12 +115,12 @@ is_spin_in_abstract:is_detection_correct    -0.5583      0.202     -2.765      0
 Omnibus:                       20.971   Durbin-Watson:                   2.198
 Prob(Omnibus):                  0.000   Jarque-Bera (JB):               27.361
 Skew:                          -1.576   Prob(JB):                     1.14e-06
-Kurtosis:                       4.007   Cond. No.                     4.68e+15
+Kurtosis:                       4.007   Cond. No.                     7.28e+15
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 5.04e-30. This might indicate that there are
+[2] The smallest eigenvalue is 2.09e-30. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
 Model: olmo2_instruct-7B - another_trial_answer
 Number of rows with NaN value(s) in olmo2_instruct-7B: 0
@@ -129,8 +129,8 @@ Number of rows with NaN value(s) in olmo2_instruct-7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.757
 Model:                               OLS   Adj. R-squared:                  0.748
 Method:                    Least Squares   F-statistic:                     88.75
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           3.12e-18
-Time:                           00:26:17   Log-Likelihood:                -69.090
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           3.12e-18
+Time:                           20:41:23   Log-Likelihood:                -69.090
 No. Observations:                     60   AIC:                             144.2
 Df Residuals:                         57   BIC:                             150.5
 Df Model:                              2                                         
@@ -146,12 +146,12 @@ is_spin_in_abstract:is_detection_correct    -0.3944      0.206     -1.911      0
 Omnibus:                       12.631   Durbin-Watson:                   1.967
 Prob(Omnibus):                  0.002   Jarque-Bera (JB):               13.274
 Skew:                          -1.097   Prob(JB):                      0.00131
-Kurtosis:                       3.706   Cond. No.                     4.68e+15
+Kurtosis:                       3.706   Cond. No.                     7.28e+15
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 5.04e-30. This might indicate that there are
+[2] The smallest eigenvalue is 2.09e-30. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
 Model: olmo2_instruct-7B - overall
 Number of rows with NaN value(s) in olmo2_instruct-7B: 0
@@ -160,8 +160,8 @@ Number of rows with NaN value(s) in olmo2_instruct-7B: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.650
 Model:                               OLS   Adj. R-squared:                  0.638
 Method:                    Least Squares   F-statistic:                     52.92
-Date:                   Fri, 17 Jan 2025   Prob (F-statistic):           1.02e-13
-Time:                           00:26:17   Log-Likelihood:                -67.006
+Date:                   Sat, 25 Jan 2025   Prob (F-statistic):           1.02e-13
+Time:                           20:41:23   Log-Likelihood:                -67.006
 No. Observations:                     60   AIC:                             140.0
 Df Residuals:                         57   BIC:                             146.3
 Df Model:                              2                                         
@@ -177,10 +177,10 @@ is_spin_in_abstract:is_detection_correct    -0.6797      0.199     -3.410      0
 Omnibus:                       19.519   Durbin-Watson:                   1.992
 Prob(Omnibus):                  0.000   Jarque-Bera (JB):               25.112
 Skew:                          -1.321   Prob(JB):                     3.52e-06
-Kurtosis:                       4.752   Cond. No.                     4.68e+15
+Kurtosis:                       4.752   Cond. No.                     7.28e+15
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The smallest eigenvalue is 5.04e-30. This might indicate that there are
+[2] The smallest eigenvalue is 2.09e-30. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
