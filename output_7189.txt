@@ -101,3 +101,67 @@ Loading the prompt template...
 Loading the dataset...
 Loading the dataset with spin labels...
 Loading the model...
+Saving outputs from model - gemini_1.5_flash-8B to csv and json
+Model outputs saved to code/pls_outputs/gemini_1.5_flash-8B/gemini_1.5_flash-8B_model_output_labelled_outputs.json and code/pls_outputs/gemini_1.5_flash-8B/gemini_1.5_flash-8B_model_output_labelled_outputs.csv
+Arguments Provided for the Generator:
+Model:        claude_3.5-sonnet
+Label Mode:   model_output_label
+Output Path:  code/pls_outputs/claude_3.5-sonnet
+Max Output Tokens:   300
+Prompt Template:     default
+Is Debug:     None
+
+Loading the prompt template...
+Loading the dataset...
+Loading the dataset with spin labels...
+Loading the model...
+Saving outputs from model - claude_3.5-sonnet to csv and json
+Model outputs saved to code/pls_outputs/claude_3.5-sonnet/claude_3.5-sonnet_model_output_labelled_outputs.json and code/pls_outputs/claude_3.5-sonnet/claude_3.5-sonnet_model_output_labelled_outputs.csv
+Arguments Provided for the Generator:
+Model:        claude_3.5-haiku
+Label Mode:   model_output_label
+Output Path:  code/pls_outputs/claude_3.5-haiku
+Max Output Tokens:   300
+Prompt Template:     default
+Is Debug:     None
+
+Loading the prompt template...
+Loading the dataset...
+Loading the dataset with spin labels...
+Loading the model...
+Saving outputs from model - claude_3.5-haiku to csv and json
+Model outputs saved to code/pls_outputs/claude_3.5-haiku/claude_3.5-haiku_model_output_labelled_outputs.json and code/pls_outputs/claude_3.5-haiku/claude_3.5-haiku_model_output_labelled_outputs.csv
+Arguments Provided for the Generator:
+Model:        olmo2_instruct-7B
+Label Mode:   model_output_label
+Output Path:  code/pls_outputs/olmo2_instruct-7B
+Max Output Tokens:   300
+Prompt Template:     default
+Is Debug:     None
+
+Loading the prompt template...
+Loading the dataset...
+Loading the dataset with spin labels...
+Loading the model...
+Model's dtype: torch.bfloat16
+Model's device: cuda:0
+Model's device map: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 1, 'model.layers.7': 1, 'model.layers.8': 1, 'model.layers.9': 1, 'model.layers.10': 1, 'model.layers.11': 1, 'model.layers.12': 1, 'model.layers.13': 1, 'model.layers.14': 1, 'model.layers.15': 1, 'model.layers.16': 2, 'model.layers.17': 2, 'model.layers.18': 2, 'model.layers.19': 2, 'model.layers.20': 2, 'model.layers.21': 2, 'model.layers.22': 2, 'model.layers.23': 2, 'model.layers.24': 2, 'model.layers.25': 2, 'model.layers.26': 3, 'model.layers.27': 3, 'model.layers.28': 3, 'model.layers.29': 3, 'model.layers.30': 3, 'model.layers.31': 3, 'model.norm': 3, 'lm_head': 3}
+
+Saving outputs from model - olmo2_instruct-7B to csv and json
+Model outputs saved to code/pls_outputs/olmo2_instruct-7B/olmo2_instruct-7B_model_output_labelled_outputs.json and code/pls_outputs/olmo2_instruct-7B/olmo2_instruct-7B_model_output_labelled_outputs.csv
+Arguments Provided for the Generator:
+Model:        olmo2_instruct-13B
+Label Mode:   model_output_label
+Output Path:  code/pls_outputs/olmo2_instruct-13B
+Max Output Tokens:   300
+Prompt Template:     default
+Is Debug:     None
+
+Loading the prompt template...
+Loading the dataset...
+Loading the dataset with spin labels...
+Loading the model...
+Model's dtype: torch.bfloat16
+Model's device: cuda:0
+Model's device map: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 0, 'model.layers.7': 0, 'model.layers.8': 1, 'model.layers.9': 1, 'model.layers.10': 1, 'model.layers.11': 1, 'model.layers.12': 1, 'model.layers.13': 1, 'model.layers.14': 1, 'model.layers.15': 1, 'model.layers.16': 1, 'model.layers.17': 1, 'model.layers.18': 1, 'model.layers.19': 1, 'model.layers.20': 2, 'model.layers.21': 2, 'model.layers.22': 2, 'model.layers.23': 2, 'model.layers.24': 2, 'model.layers.25': 2, 'model.layers.26': 2, 'model.layers.27': 2, 'model.layers.28': 2, 'model.layers.29': 2, 'model.layers.30': 2, 'model.layers.31': 2, 'model.layers.32': 3, 'model.layers.33': 3, 'model.layers.34': 3, 'model.layers.35': 3, 'model.layers.36': 3, 'model.layers.37': 3, 'model.layers.38': 3, 'model.layers.39': 3, 'model.norm': 3, 'lm_head': 3}
+
