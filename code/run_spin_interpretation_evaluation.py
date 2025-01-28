@@ -110,8 +110,7 @@ class Evaluator:
             "openbiollm-70B": OpenBioLLM,
             "biomistral7B": BioMistral,
             "biomedgpt7B": BioMedGPT,
-            "alpacare-7B": AlpaCare,
-            "alpacare-13B": AlpaCare
+            "alpacare-7B": AlpaCare
         }
         model_class = model_class_mapping[self.model_name]
         if "-" in self.model_name:
@@ -255,7 +254,7 @@ if __name__ == '__main__':
                                  "olmo2_instruct-7B", "olmo2_instruct-13B", "mistral_instruct7B", "llama2_chat-7B",
                                  "llama2_chat-13B", "llama2_chat-70B", "llama3_instruct-8B", "llama3_instruct-70B",
                                  "med42-8B", "med42-70B", "openbiollm-8B", "openbiollm-70B", "biomistral7B", "biomedgpt7B",
-                                 "alpacare-7B", "alpacare-13B"], 
+                                 "alpacare-7B"], 
                         help="what model to run", 
                         required=True)
     parser.add_argument("--output_path", default="./eval_outputs", help="directory of where the outputs/results should be saved.")

@@ -48,7 +48,7 @@ models=(
 echo "Running evaluation for interpreting trial results with ground truth spin/no spin labels..."
 for model in "${models[@]}"; do
   # Run the script with the current model
-  python3 code/run_spin_labelled_interpretion_evaluation.py \
+  python3 code/run_spin_interpretation_evaluation_with_abstract_labels.py \
     --model "$model" \
     --label_mode "gold_label" \
     --output_path "code/eval_outputs/$model"
@@ -59,7 +59,7 @@ echo "####################################"
 echo "Running evaluation for interpreting trial results with model output's spin/no spin labels..."
 for model in "${models[@]}"; do
   # Run the script with the current model
-  python3 code/run_spin_labelled_interpretion_evaluation.py \
+  python3 code/run_spin_interpretation_evaluation_with_abstract_labels.py \
     --model "$model" \
     --label_mode "model_output_label" \
     --output_path "code/eval_outputs/$model"
