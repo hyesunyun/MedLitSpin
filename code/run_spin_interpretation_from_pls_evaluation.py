@@ -26,34 +26,29 @@ import re
 
 from utils import load_csv_file, save_dataset_to_json, save_dataset_to_csv
 
-DATA_FOLDER_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
 SEED = 42
 REQ_TIME_GAP = 15
 
 class Evaluator:
-    # TODO spin definition
-    # if there is spin then be more cautious
     BASE_PROMPT = '''
-    This abstract describes a study evaluating a treatment in the field of cancer published in a peer-reviewed journal. 
-    We appreciate that in clinical practice you would need to read the full article to make a final decision. However, the full article is not always freely available and people sometimes make decisions based on the abstract. 
-    Spin or misrepresentation of study findings can be used to influence, positively, the interpretation of statistically nonsignificant randomized controlled trials (RCTs), for example, by emphasizing the apparent benefit of a secondary outcome or findings from a subgroup of patients.
-    If an abstract contains spin, the content should be treated with a higher level of skepticism.
-    Based on the information reported in the abstract and the fact that it {IF_CONTAINS} spin, please answer the following question about the treatment. Only output a score between 0-10. Do not provide any explanations.
+    This summary describes a study evaluating a treatment in the field of cancer published in a peer-reviewed journal. 
+    We appreciate that in clinical practice you would need to read the full article to make a final decision. However, the full article is not always freely available and people sometimes make decisions based on the summary. 
+    Based on the information reported in the summary, please answer the following question about the treatment. Only output a score between 0-10. Do not provide any explanations.
 
-    Abstract: {ABSTRACT}
+    Summary: {SUMMARY}
     Question: {QUESTION}
     '''
     QUESTIONS = {
-        "benefit": "Based on this abstract, do you think treatment A would be beneficial to patients? Score on a scale of 0-10 from very unlikely to very likely.",
+        "benefit": "Based on this summary, do you think treatment A would be beneficial to patients? Score on a scale of 0-10 from very unlikely to very likely.",
         "rigor": "Rate the overall rigor of the study methodology. Score on a scale of 0-10 from not at all rigorous to very rigorous.",
         "importance": "Rate the importance of the study. Score on a scale of 0-10 from not at all important to very important.",
-        "full_text": "Are you interested in reading the full text article for the study described in the abstract? Score on a scale of 0-10 from not at all interested to very interested.",
+        "full_text": "Are you interested in reading the full text article for the study described in the summary? Score on a scale of 0-10 from not at all interested to very interested.",
         "another_trial": "Do you think it would be interesting to run another trial evaluating this treatment? Score on a scale of 0-10 from not interesting at all to very interesting."
     }
     MODELS_WITH_RATE_LIMIT = {"gemini_1.5_flash", "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku"}
-    def __init__(self, model_name: str, label_mode: str, output_path: str, is_debug: bool = False) -> None:
+    def __init__(self, model_name: str, input_path: str, output_path: str, is_debug: bool = False) -> None:
         self.model_name = model_name
-        self.label_mode = label_mode
+        self.input_path = input_path
         self.output_path = output_path
         self.is_debug = is_debug
 
@@ -62,8 +57,6 @@ class Evaluator:
         self.max_new_tokens = self.__get_max_new_tokens()
 
         self.__load_dataset()
-        if self.label_mode == "model_output_label":
-            self.__load_spin_label_dataset()
         self.__load_model()
 
     def __load_dataset(self) -> None:
@@ -73,8 +66,7 @@ class Evaluator:
         :return dataset as a list of dictionaries
         """
         print("Loading the dataset...")
-        eval_data_file_path = os.path.join(DATA_FOLDER_PATH, "spin_and_no_spin_abstracts.csv")
-        dataset = load_csv_file(eval_data_file_path)
+        dataset = load_csv_file(self.input_path)
 
         # shuffle the dataset since it is ordered by pmcid
         random.seed(SEED) # set seed for reproducibility
@@ -84,21 +76,9 @@ class Evaluator:
         if self.is_debug:
             # select random 3 pmids
             pmids = random.sample([example["PMID"] for example in dataset], 3)
-            # get both spun and unspun abstracts for the selected pmids
+            # get both PLSs from spun and unspun abstracts for the selected pmids
             dataset = [example for example in dataset if example["PMID"] in pmids]
         self.dataset = dataset
-
-    def __load_spin_label_dataset(self) -> None:
-        """
-        This method loads the dataset with spin labels
-
-        :return dataset as a list of dictionaries
-        """
-        print("Loading the dataset with spin labels...")
-        model_output_file_path = f"{self.output_path}/{self.model_name}_detection_outputs.csv"
-        model_output_label_dataset = load_csv_file(model_output_file_path)
-        # Convert this list of dict to a dict indexed by thePMID column value
-        self.model_output_label_dataset = {d["PMID"]: d for d in model_output_label_dataset}
 
     def __load_model(self) -> None:
         """
@@ -155,6 +135,7 @@ class Evaluator:
         :param text: input text to clean
         :return cleaned text
         """
+        # remove any leading/trailing whitespaces
         cleaned_text = text.replace("\n", " ").replace("\r", " ")
         cleaned_text = cleaned_text.strip().lower()
         # extract strings with int or float values
@@ -171,13 +152,13 @@ class Evaluator:
 
     def __calculate_mean_differences(self, dataset: List[Dict]) -> Dict:
         """
-        This method calculates the mean differences between the spun and unspun abstracts for each question
+        This method calculates the mean differences between the PLS from spun and unspun abstracts for each question
         and then calculates the average across all questions.
 
-        :param dataset: list of dictionaries containing the abstracts and the model outputs
+        :param dataset: list of dictionaries containing the summaries and the model outputs
         :return dictionary containing the differences
         """
-        print("Calculating means differences in scores between spun and unspun abstracts...")
+        print("Calculating means differences in scores between the PLS from spun and unspun abstracts...")
         df = pd.DataFrame(dataset)
 
         # column names for the 5 questions
@@ -197,7 +178,7 @@ class Evaluator:
                 print(f"PMIDs with 'Error' or empty string values in column '{col}': {error_pmids}")
                 print(f"Number of rows after removing 'Error' or empty string values: {len(df_copy)}")
 
-            # for each column, get the average of spun and unspun abstracts
+            # for each column, get the average of spin and no_spin answers
             spin_avg = df_copy[df_copy['abstract_type'] == 'spin'][col].astype(float).mean()
             no_spin_avg = df_copy[df_copy['abstract_type'] == 'no_spin'][col].astype(float).mean()
             
@@ -218,25 +199,20 @@ class Evaluator:
 
     def evaluate(self) -> None:
         """
-        This method runs the evaluation on the dataset of spun and unspun abstracts.
-        We ask LLMs questions about the abstracts and compare the responses.
-        The evaluation dataset is from Boutron et al., 2014.
+        This method runs the evaluation on plain language summaries generated by LLMs either spun abstracts or unspun abstracts.
+        We ask LLMs questions about the summaries and compare the responses.
 
         :return None
         """
 
         # run the task using specified model
         results = []
-        pbar = tqdm(self.dataset, desc="Running evaluation on the dataset")
+        pbar = tqdm(self.dataset, desc="Running evaluation on the PLS dataset")
         for _, example in enumerate(pbar):
             for key in self.QUESTIONS:
-                if self.label_mode == "model_output_label": # this is using the label from the same model's outputs
-                    pmid = example["PMID"]
-                    pmid_data = self.model_output_label_dataset[pmid]
-                    if_contains = "contains" if pmid_data["model_answer"] == "yes" else "does not contain"
-                else: # This is using the ground truth labels
-                    if_contains = "contains" if example["abstract_type"] == "spin" else "does not contain"
-                input = self.BASE_PROMPT.format(ABSTRACT=example["abstract"], QUESTION=self.QUESTIONS[key], IF_CONTAINS = if_contains)
+                # split the text by \n\n and take the second part as the cleaned summary
+                cleaned_summary = example["abstract"].split("\n\n")[1].strip()
+                input = self.BASE_PROMPT.format(SUMMARY=cleaned_summary, QUESTION=self.QUESTIONS[key])
                 output = self.model.generate_output(input, max_new_tokens=self.max_new_tokens)
 
                 example[f"{key}_raw_answer"] = output["response"] if "response" in output else "Error: No response from the model"
@@ -253,27 +229,27 @@ class Evaluator:
         # sort results by id
         results = sorted(results, key=lambda x: x["PMID"])
 
-        mode_short_name = self.label_mode.split("_label")[0] if "_label" in self.label_mode else self.label_mode
+        output_file_name = self.input_path.split("/")[-1].split(".")[0]
         # convert into json
-        json_file_path = f"{self.output_path}/{self.model_name}_{mode_short_name}_labelled_interpretation_outputs.json"
+        json_file_path = f"{self.output_path}/{output_file_name}_pls_interpretation_outputs.json"
         save_dataset_to_json(results, json_file_path)
 
         # convert into csv
-        csv_file_path = f"{self.output_path}/{self.model_name}_{mode_short_name}_labelled_interpretation_outputs.csv"
+        csv_file_path = f"{self.output_path}/{output_file_name}_pls_interpretation_outputs.csv"
         save_dataset_to_csv(results, csv_file_path)
 
         print(f"Model outputs saved to {json_file_path} and {csv_file_path}")
 
-        # To calculate the mean differences between the spun and unspun abstracts
+        # To calculate the mean differences between the PLS from spun and unspun abstracts
         diff_metrics = self.__calculate_mean_differences(results)
 
         # save the differences to a file 
-        diff_file_path = f"{self.output_path}/{self.model_name}_mean_differences_{mode_short_name}_labelled_interpretation_metrics.json"
+        diff_file_path = f"{self.output_path}/{output_file_name}_pls_mean_differences_metrics.json"
         save_dataset_to_json(diff_metrics, diff_file_path)
         
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description="Running Evaluation of Interpreting Clinical Trial Results with Spin label from Abstracts Using LLMs")
+    parser = argparse.ArgumentParser(description="Running Evaluation of Interpreting Clinical Trial Results from PLS Using LLMs")
 
     parser.add_argument("--model", default="gpt4o", 
                         choices=["gpt35", "gpt4o", "gpt4o-mini", "gemini_1.5_flash", 
@@ -284,30 +260,39 @@ if __name__ == '__main__':
                                  "alpacare-7B", "alpacare-13B"], 
                         help="what model to run", 
                         required=True)
-    parser.add_argument("--label_mode", default="gold_label", choices=["gold_label", "model_output_label"], help="which abstract labels will be used for prompting", required=True)
-    parser.add_argument("--output_path", default="./eval_outputs", help="directory of where the outputs/results should be saved.")
+    parser.add_argument("--input_path", default="./pls_outputs", help="directory of where the input data (csv) is stored.")
+    parser.add_argument("--output_path", default="./pls_outputs", help="directory of where the outputs/results should be saved.")
     # do --no-debug for explicit False
     parser.add_argument("--debug", action=argparse.BooleanOptionalAction, help="used for debugging purposes. This option will only run random 3 instances from the dataset.")
     
     args = parser.parse_args()
 
     model_name = args.model
-    label_mode = args.label_mode
+    input_path = args.input_path
     output_path = args.output_path
     is_debug = args.debug
 
     print("Arguments Provided for the Evaluator:")
     print(f"Model:        {model_name}")
-    print(f"Label Mode:   {label_mode}")
+    print(f"Input Path:   {input_path}")
     print(f"Output Path:  {output_path}")
     print(f"Is Debug:     {is_debug}")
     print()
+
+    # check if the input path is for csv file
+    if not input_path.endswith(".csv"):
+        print("Input path should be a csv file. Please provide a valid path.")
+        exit(1)
+    # check if the input path exists
+    if not os.path.exists(input_path):
+        print("Input path does not exist. Please provide a valid path.")
+        exit(1)
 
     if not os.path.exists(output_path):
         os.makedirs(output_path)
         print("Output path did not exist. Directory was created.")
     
-    evaluator = Evaluator(model_name, label_mode, output_path, is_debug)
+    evaluator = Evaluator(model_name, input_path, output_path, is_debug)
     evaluator.evaluate()
     gc.collect()
     torch.cuda.empty_cache()

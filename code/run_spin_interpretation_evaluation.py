@@ -77,7 +77,7 @@ class Evaluator:
         if self.is_debug:
             # select random 3 pmids
             pmids = random.sample([example["PMID"] for example in dataset], 3)
-            # get both spin and no spin abstracts for the selected pmids
+            # get both spun and unspun abstracts for the selected pmids
             dataset = [example for example in dataset if example["PMID"] in pmids]
         self.dataset = dataset
 
@@ -152,13 +152,13 @@ class Evaluator:
 
     def __calculate_mean_differences(self, dataset: List[Dict]) -> Dict:
         """
-        This method calculates the mean differences between the spin and no spin abstracts for each question
+        This method calculates the mean differences between spun and unspun abstracts for each question
         and then calculates the average across all questions.
 
         :param dataset: list of dictionaries containing the abstracts and the model outputs
         :return dictionary containing the differences
         """
-        print("Calculating means differences in scores between spin and no spin abstracts...")
+        print("Calculating means differences in scores between spun and unspun abstracts...")
         df = pd.DataFrame(dataset)
 
         # column names for the 5 questions
@@ -199,7 +199,7 @@ class Evaluator:
 
     def evaluate(self) -> None:
         """
-        This method runs the evaluation on the dataset of abstracts with and without spin.
+        This method runs the evaluation on the dataset of spun and unspun abstracts.
         We ask LLMs questions about the abstracts and compare the responses.
         The evaluation dataset is from Boutron et al., 2014.
 
@@ -238,7 +238,7 @@ class Evaluator:
 
         print(f"Model outputs saved to {json_file_path} and {csv_file_path}")
 
-        # To calculate the mean differences between the spin and no spin abstracts
+        # To calculate the mean differences between spun and unspun abstracts
         diff_metrics = self.__calculate_mean_differences(results)
 
         # save the differences to a file 
