@@ -211,7 +211,10 @@ class Evaluator:
         for _, example in enumerate(pbar):
             for key in self.QUESTIONS:
                 # split the text by \n\n and take the second part as the cleaned summary
-                cleaned_summary = example["abstract"].split("\n\n")[1].strip()
+                if "\n\n" in example["abstract"]:
+                    cleaned_summary = example["abstract"].split("\n\n")[1].strip()
+                else:
+                    cleaned_summary = example["abstract"].strip()
                 input = self.BASE_PROMPT.format(SUMMARY=cleaned_summary, QUESTION=self.QUESTIONS[key])
                 output = self.model.generate_output(input, max_new_tokens=self.max_new_tokens)
 

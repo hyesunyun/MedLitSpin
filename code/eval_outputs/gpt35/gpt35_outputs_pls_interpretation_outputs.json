@@ -1,0 +1,4837 @@
+[
+    {
+        "id": "51",
+        "PMID": "16314619",
+        "title": "Phase III study of efaproxiral as an adjunct to whole-brain radiation therapy for brain metastases",
+        "journal": "J Clin Oncol",
+        "abstract": "Purpose:\nTo determine whether treatment A, improves survival in patients with brain metastases when used as an adjunct to whole\u2010brain radiation therapy (WBRT).\nPatients and methods:\nPatients with brain metastases from solid tumors and a Karnofsky performance score of > or = 70 were randomly assigned to receive WBRT with supplemental oxygen and either treatment A (treatment A arm) or no treatment (control arm). The primary end point was survival.\nResults:\nThe study consisted of 515 eligible patients (treatment A arm, n = 265; control arm, n = 250). The median survival time (MST) was 5.4 months for the treatment A arm versus 4.4 months for the control arm (hazard ratio [HR] = 0.87; P = .16). For the subgroup of patients with non\u2010small\u2010cell lung cancer (NSCLC) or breast cancer, the MST was 6.0 and 4.4 months, respectively (HR = 0.82; P = .07). Cox multiple regression analysis demonstrated a significant reduction in the risk of death for the treatment A arm in both primary populations. Further analysis indicated that the benefit may be restricted to the subgroup of patients with breast cancer. Response rates (radiographic complete response plus partial response) improved by 7% (P = .10) and 13% (P = .01) for all patients and for NSCLC and breast cancer patients in the treatment A arm, respectively. The most common severe adverse event in patients treated with treatment A was hypoxemia, which was reversible and effectively managed with supplemental oxygen in most patients.\nConclusion:\nThe addition of treatment A to WBRT may improve response rates and survival in patients with brain metastases, particularly metastases from breast cancer. A confirmatory trial for breast cancer patients has been initiated.",
+        "abstract_type": "spin",
+        "plain_language_summary": "This passage is about a study that looked at whether a treatment called treatment A can help people with brain tumors live longer when used with radiation therapy. They studied 515 patients with brain tumors from different types of cancer. They found that adding treatment A to the radiation therapy may help patients with breast cancer live longer. The study also showed that treatment A improved how well the tumors responded to treatment. The most common side effect of treatment A was low oxygen levels, but it was manageable. They are now doing more research to confirm these findings for patients with breast cancer.",
+        "benefit_raw_answer": "8",
+        "benefit_answer": "8",
+        "benefit_log_probabilities": [
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -0.22481975
+            },
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -1.6573797
+            },
+            {
+                "token": "9",
+                "bytes": [
+                    57
+                ],
+                "logprob": -4.74112
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -6.313641
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -9.127391
+            },
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -10.135064
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -11.543302
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -13.704793
+            },
+            {
+                "token": "Based",
+                "bytes": [
+                    66,
+                    97,
+                    115,
+                    101,
+                    100
+                ],
+                "logprob": -13.801312
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -14.112231
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -15.404485
+            },
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -15.795901
+            },
+            {
+                "token": "10",
+                "bytes": [
+                    49,
+                    48
+                ],
+                "logprob": -15.902249
+            },
+            {
+                "token": "On",
+                "bytes": [
+                    79,
+                    110
+                ],
+                "logprob": -16.979618
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -17.016161
+            },
+            {
+                "token": "In",
+                "bytes": [
+                    73,
+                    110
+                ],
+                "logprob": -17.406328
+            },
+            {
+                "token": "Given",
+                "bytes": [
+                    71,
+                    105,
+                    118,
+                    101,
+                    110
+                ],
+                "logprob": -17.961823
+            },
+            {
+                "token": "2",
+                "bytes": [
+                    50
+                ],
+                "logprob": -18.08078
+            },
+            {
+                "token": "\n\n",
+                "bytes": [
+                    10,
+                    10
+                ],
+                "logprob": -18.25041
+            },
+            {
+                "token": "A",
+                "bytes": [
+                    65
+                ],
+                "logprob": -18.285097
+            }
+        ],
+        "rigor_raw_answer": "8",
+        "rigor_answer": "8",
+        "rigor_log_probabilities": [
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -0.03565828
+            },
+            {
+                "token": "9",
+                "bytes": [
+                    57
+                ],
+                "logprob": -3.8017564
+            },
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -4.372847
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -9.974394
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -10.374002
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -12.490274
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -14.576105
+            },
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -14.5874195
+            },
+            {
+                "token": "Rating",
+                "bytes": [
+                    82,
+                    97,
+                    116,
+                    105,
+                    110,
+                    103
+                ],
+                "logprob": -16.064785
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -16.071634
+            },
+            {
+                "token": "Based",
+                "bytes": [
+                    66,
+                    97,
+                    115,
+                    101,
+                    100
+                ],
+                "logprob": -16.327402
+            },
+            {
+                "token": "10",
+                "bytes": [
+                    49,
+                    48
+                ],
+                "logprob": -16.466667
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -17.12274
+            },
+            {
+                "token": "Overall",
+                "bytes": [
+                    79,
+                    118,
+                    101,
+                    114,
+                    97,
+                    108,
+                    108
+                ],
+                "logprob": -17.493256
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -18.369026
+            },
+            {
+                "token": "In",
+                "bytes": [
+                    73,
+                    110
+                ],
+                "logprob": -18.542274
+            },
+            {
+                "token": "R",
+                "bytes": [
+                    82
+                ],
+                "logprob": -18.701952
+            },
+            {
+                "token": "Rate",
+                "bytes": [
+                    82,
+                    97,
+                    116,
+                    101
+                ],
+                "logprob": -19.037184
+            },
+            {
+                "token": "This",
+                "bytes": [
+                    84,
+                    104,
+                    105,
+                    115
+                ],
+                "logprob": -19.244267
+            },
+            {
+                "token": "On",
+                "bytes": [
+                    79,
+                    110
+                ],
+                "logprob": -19.472343
+            }
+        ],
+        "importance_raw_answer": "8",
+        "importance_answer": "8",
+        "importance_log_probabilities": [
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -0.054439045
+            },
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -3.4353518
+            },
+            {
+                "token": "9",
+                "bytes": [
+                    57
+                ],
+                "logprob": -3.8780894
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -9.497718
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -12.992745
+            },
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -13.581637
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -14.986585
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -15.676438
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -15.881873
+            },
+            {
+                "token": "10",
+                "bytes": [
+                    49,
+                    48
+                ],
+                "logprob": -16.801575
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -17.2002
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -17.490034
+            },
+            {
+                "token": "Rating",
+                "bytes": [
+                    82,
+                    97,
+                    116,
+                    105,
+                    110,
+                    103
+                ],
+                "logprob": -18.15946
+            },
+            {
+                "token": "Rate",
+                "bytes": [
+                    82,
+                    97,
+                    116,
+                    101
+                ],
+                "logprob": -18.73746
+            },
+            {
+                "token": "\n\n",
+                "bytes": [
+                    10,
+                    10
+                ],
+                "logprob": -18.953274
+            },
+            {
+                "token": "In",
+                "bytes": [
+                    73,
+                    110
+                ],
+                "logprob": -19.175024
+            },
+            {
+                "token": "This",
+                "bytes": [
+                    84,
+                    104,
+                    105,
+                    115
+                ],
+                "logprob": -19.317726
+            },
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -19.579012
+            },
+            {
+                "token": "It",
+                "bytes": [
+                    73,
+                    116
+                ],
+                "logprob": -19.644382
+            },
+            {
+                "token": "A",
+                "bytes": [
+                    65
+                ],
+                "logprob": -19.713165
+            }
+        ],
+        "full_text_raw_answer": "8",
+        "full_text_answer": "8",
+        "full_text_log_probabilities": [
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -0.24752367
+            },
+            {
+                "token": "9",
+                "bytes": [
+                    57
+                ],
+                "logprob": -1.608909
+            },
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -3.9704661
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -8.853578
+            },
+            {
+                "token": "10",
+                "bytes": [
+                    49,
+                    48
+                ],
+                "logprob": -9.085858
+            },
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -10.428193
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -11.608867
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -13.763196
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -13.999621
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -14.512963
+            },
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -15.313617
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -15.444972
+            },
+            {
+                "token": "\n\n",
+                "bytes": [
+                    10,
+                    10
+                ],
+                "logprob": -16.753565
+            },
+            {
+                "token": "1",
+                "bytes": [
+                    49
+                ],
+                "logprob": -17.284857
+            },
+            {
+                "token": "-",
+                "bytes": [
+                    45
+                ],
+                "logprob": -17.56336
+            },
+            {
+                "token": "2",
+                "bytes": [
+                    50
+                ],
+                "logprob": -17.648668
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -17.942732
+            },
+            {
+                "token": "A",
+                "bytes": [
+                    65
+                ],
+                "logprob": -18.661839
+            },
+            {
+                "token": " \n",
+                "bytes": [
+                    32,
+                    10
+                ],
+                "logprob": -18.697382
+            },
+            {
+                "token": "In",
+                "bytes": [
+                    73,
+                    110
+                ],
+                "logprob": -18.75828
+            }
+        ],
+        "another_trial_raw_answer": "8",
+        "another_trial_answer": "8",
+        "another_trial_log_probabilities": [
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -0.63025916
+            },
+            {
+                "token": "9",
+                "bytes": [
+                    57
+                ],
+                "logprob": -0.76756155
+            },
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -5.777571
+            },
+            {
+                "token": "10",
+                "bytes": [
+                    49,
+                    48
+                ],
+                "logprob": -8.142316
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -11.672442
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -12.539811
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -13.622455
+            },
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -13.888076
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -13.936435
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -15.484487
+            },
+            {
+                "token": "\n\n",
+                "bytes": [
+                    10,
+                    10
+                ],
+                "logprob": -15.997565
+            },
+            {
+                "token": "It",
+                "bytes": [
+                    73,
+                    116
+                ],
+                "logprob": -17.463963
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -17.724688
+            },
+            {
+                "token": "1",
+                "bytes": [
+                    49
+                ],
+                "logprob": -18.345259
+            },
+            {
+                "token": "Based",
+                "bytes": [
+                    66,
+                    97,
+                    115,
+                    101,
+                    100
+                ],
+                "logprob": -18.391914
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -18.416096
+            },
+            {
+                "token": " \n",
+                "bytes": [
+                    32,
+                    10
+                ],
+                "logprob": -18.54401
+            },
+            {
+                "token": "-",
+                "bytes": [
+                    45
+                ],
+                "logprob": -18.697895
+            },
+            {
+                "token": "In",
+                "bytes": [
+                    73,
+                    110
+                ],
+                "logprob": -18.943388
+            },
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -18.99596
+            }
+        ]
+    },
+    {
+        "id": "52",
+        "PMID": "16314619",
+        "title": "Phase III study of efaproxiral as an adjunct to whole-brain radiation therapy for brain metastases",
+        "journal": "J Clin Oncol",
+        "abstract": "Purpose:\nTo determine whether treatment A, improves survival in patients with brain metastases when used as an adjunct to whole\u2010brain radiation therapy (WBRT).\nPatients and methods:\nPatients with brain metastases from solid tumors and a Karnofsky performance score of > or = 70 were randomly assigned to receive WBRT with supplemental oxygen and either treatment A (treatment A arm) or no treatment (control arm). The primary end point was survival.\nResults:\nThe study consisted of 515 eligible patients (treatment A arm, n = 265; control arm, n = 250). The median survival time (MST) was 5.4 months for the treatment A arm versus 4.4 months for the control arm (hazard ratio [HR] = 0.87; P = .16). There was no statistically significant difference between the 2 groups for response rate (complete plus partial response) (46% for the treatment A arm and 38% for the control arm; P = .10). There was not a statistically significant difference in the cumulative incidence at 1 year after random assignment of radiographic (21% treatment A vs. 18% control; p=0.53) or clinical progression (49% treatment A vs. 51% control; p = 0.49) in the brain between the treatment groups. At 6 months, respectively 16% and 15% of the patients had a stable or improving quality of life in treatment A arm and control arm. The most common severe adverse event in patients treated with treatment A was hypoxemia.\nConclusion:\nThe addition of treatment A to WBRT was not more effective than WBRT alone in patients with brain metastases.",
+        "abstract_type": "no_spin",
+        "plain_language_summary": "This passage is about a study that looked at whether adding treatment A to whole-brain radiation therapy helps people with brain tumors live longer. They studied 515 patients with brain tumors and found that adding treatment A did not make a big difference in how long they lived compared to just getting radiation therapy. The study also found that the side effect of treatment A was low oxygen levels in the blood. In conclusion, adding treatment A to radiation therapy did not improve survival for patients with brain tumors.",
+        "benefit_raw_answer": "2",
+        "benefit_answer": "2",
+        "benefit_log_probabilities": [
+            {
+                "token": "2",
+                "bytes": [
+                    50
+                ],
+                "logprob": -0.35218108
+            },
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -1.2781492
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -4.072476
+            },
+            {
+                "token": "1",
+                "bytes": [
+                    49
+                ],
+                "logprob": -6.7492414
+            },
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -9.700786
+            },
+            {
+                "token": "0",
+                "bytes": [
+                    48
+                ],
+                "logprob": -10.62276
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -13.707767
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -13.92842
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -15.747138
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -15.766437
+            },
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -16.536291
+            },
+            {
+                "token": "\n\n",
+                "bytes": [
+                    10,
+                    10
+                ],
+                "logprob": -18.080324
+            },
+            {
+                "token": "-",
+                "bytes": [
+                    45
+                ],
+                "logprob": -18.26363
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -18.96829
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -18.99721
+            },
+            {
+                "token": "score",
+                "bytes": [
+                    115,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -20.433102
+            },
+            {
+                "token": "Based",
+                "bytes": [
+                    66,
+                    97,
+                    115,
+                    101,
+                    100
+                ],
+                "logprob": -20.584845
+            },
+            {
+                "token": "<|end|>",
+                "bytes": null,
+                "logprob": -20.768356
+            },
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -20.936968
+            },
+            {
+                "token": "It",
+                "bytes": [
+                    73,
+                    116
+                ],
+                "logprob": -20.981647
+            }
+        ],
+        "rigor_raw_answer": "7",
+        "rigor_answer": "7",
+        "rigor_log_probabilities": [
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -0.84581023
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -0.89020187
+            },
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -2.0877688
+            },
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -3.854252
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -4.2351346
+            },
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -7.593308
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -10.081461
+            },
+            {
+                "token": "2",
+                "bytes": [
+                    50
+                ],
+                "logprob": -10.846689
+            },
+            {
+                "token": "9",
+                "bytes": [
+                    57
+                ],
+                "logprob": -10.870361
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -13.2217045
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -14.945259
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -15.755047
+            },
+            {
+                "token": "Rating",
+                "bytes": [
+                    82,
+                    97,
+                    116,
+                    105,
+                    110,
+                    103
+                ],
+                "logprob": -15.790165
+            },
+            {
+                "token": "1",
+                "bytes": [
+                    49
+                ],
+                "logprob": -15.883396
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -16.483446
+            },
+            {
+                "token": "Overall",
+                "bytes": [
+                    79,
+                    118,
+                    101,
+                    114,
+                    97,
+                    108,
+                    108
+                ],
+                "logprob": -17.312849
+            },
+            {
+                "token": "\n\n",
+                "bytes": [
+                    10,
+                    10
+                ],
+                "logprob": -17.474623
+            },
+            {
+                "token": "-",
+                "bytes": [
+                    45
+                ],
+                "logprob": -17.845985
+            },
+            {
+                "token": "S",
+                "bytes": [
+                    83
+                ],
+                "logprob": -18.033665
+            },
+            {
+                "token": "Based",
+                "bytes": [
+                    66,
+                    97,
+                    115,
+                    101,
+                    100
+                ],
+                "logprob": -18.084866
+            }
+        ],
+        "importance_raw_answer": "5",
+        "importance_answer": "5",
+        "importance_log_probabilities": [
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -0.8492639
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -1.5186975
+            },
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -1.7121446
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -1.9565828
+            },
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -3.7629678
+            },
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -4.9730396
+            },
+            {
+                "token": "2",
+                "bytes": [
+                    50
+                ],
+                "logprob": -6.659027
+            },
+            {
+                "token": "9",
+                "bytes": [
+                    57
+                ],
+                "logprob": -10.43713
+            },
+            {
+                "token": "1",
+                "bytes": [
+                    49
+                ],
+                "logprob": -12.995523
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -13.170891
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -13.695343
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -14.801361
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -16.17879
+            },
+            {
+                "token": "0",
+                "bytes": [
+                    48
+                ],
+                "logprob": -16.560043
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -17.034508
+            },
+            {
+                "token": "\n\n",
+                "bytes": [
+                    10,
+                    10
+                ],
+                "logprob": -17.316492
+            },
+            {
+                "token": "-",
+                "bytes": [
+                    45
+                ],
+                "logprob": -17.720104
+            },
+            {
+                "token": "This",
+                "bytes": [
+                    84,
+                    104,
+                    105,
+                    115
+                ],
+                "logprob": -18.503572
+            },
+            {
+                "token": "In",
+                "bytes": [
+                    73,
+                    110
+                ],
+                "logprob": -18.530054
+            },
+            {
+                "token": "<|end|>",
+                "bytes": null,
+                "logprob": -18.624138
+            }
+        ],
+        "full_text_raw_answer": "5",
+        "full_text_answer": "5",
+        "full_text_log_probabilities": [
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -1.0741876
+            },
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -1.3328279
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -1.533214
+            },
+            {
+                "token": "2",
+                "bytes": [
+                    50
+                ],
+                "logprob": -1.9716524
+            },
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -3.733192
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -4.4279475
+            },
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -5.6489863
+            },
+            {
+                "token": "1",
+                "bytes": [
+                    49
+                ],
+                "logprob": -8.465344
+            },
+            {
+                "token": "9",
+                "bytes": [
+                    57
+                ],
+                "logprob": -10.65854
+            },
+            {
+                "token": "0",
+                "bytes": [
+                    48
+                ],
+                "logprob": -11.152205
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -14.094623
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -14.320613
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -14.632991
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -15.979379
+            },
+            {
+                "token": "\n\n",
+                "bytes": [
+                    10,
+                    10
+                ],
+                "logprob": -17.023573
+            },
+            {
+                "token": "-",
+                "bytes": [
+                    45
+                ],
+                "logprob": -17.210535
+            },
+            {
+                "token": "10",
+                "bytes": [
+                    49,
+                    48
+                ],
+                "logprob": -17.422474
+            },
+            {
+                "token": " \n",
+                "bytes": [
+                    32,
+                    10
+                ],
+                "logprob": -18.757322
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -18.806175
+            },
+            {
+                "token": "<|end|>",
+                "bytes": null,
+                "logprob": -19.292786
+            }
+        ],
+        "another_trial_raw_answer": "3",
+        "another_trial_answer": "3",
+        "another_trial_log_probabilities": [
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -0.72754943
+            },
+            {
+                "token": "2",
+                "bytes": [
+                    50
+                ],
+                "logprob": -1.2743748
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -1.8123273
+            },
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -2.61732
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -7.588916
+            },
+            {
+                "token": "1",
+                "bytes": [
+                    49
+                ],
+                "logprob": -8.07532
+            },
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -8.597312
+            },
+            {
+                "token": "0",
+                "bytes": [
+                    48
+                ],
+                "logprob": -10.816007
+            },
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -11.673678
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -15.22321
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -15.636273
+            },
+            {
+                "token": "9",
+                "bytes": [
+                    57
+                ],
+                "logprob": -17.080427
+            },
+            {
+                "token": "\n\n",
+                "bytes": [
+                    10,
+                    10
+                ],
+                "logprob": -17.540852
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -18.404615
+            },
+            {
+                "token": "-",
+                "bytes": [
+                    45
+                ],
+                "logprob": -18.453302
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -18.830915
+            },
+            {
+                "token": "<|end|>",
+                "bytes": null,
+                "logprob": -19.458265
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -19.680645
+            },
+            {
+                "token": " \n",
+                "bytes": [
+                    32,
+                    10
+                ],
+                "logprob": -19.9304
+            },
+            {
+                "token": "It",
+                "bytes": [
+                    73,
+                    116
+                ],
+                "logprob": -19.998281
+            }
+        ]
+    },
+    {
+        "id": "37",
+        "PMID": "16504757",
+        "title": "A phase III randomized trial comparing adjuvant concomitant chemoradiotherapy versus standard adjuvant chemotherapy followed by radiotherapy in operable node-positive breast cancer: final results",
+        "journal": "Int J Radiat Oncol Biol Phys",
+        "abstract": "Purpose:\nTo compare treatment A and comparator B in node\u2010positive, operable breast cancer patients.\nMethods and materials:\nThis was a randomized, multicenter, phase III trial enrolling 638 eligible women with prior breast surgery and positive axillary dissection. Patients in Arm A received treatment A, with concomitant radiotherapy (50 Gy +/\u2010 10\u201020\u2010Gy boost). Patients in Arm B received comparator B, with subsequent radiotherapy.\nResults:\nMedian treatment durations were 64 and 126 days (Arms A and B, respectively), with no significant difference in overall or disease\u2010free survival. Five\u2010year locoregional relapse\u2010free survival favored patients with conservative surgery (two thirds of the population), with less local and / or regional recurrence in Arm A than in Arm B (3% vs. 9%; p = 0.01). Multivariate analysis in this subgroup showed a 2.8\u2010fold increased risk of locoregional recurrence with comparator B, independent of other prognostic factors (p = 0.027). Febrile neutropenia and Grade 3\u20104 leukopenia were significantly more frequent in Arm A. Subclinical left ventricular ejection fraction events at 1 year were more frequent with treatment A (p = 0.02).\nConclusion:\nTreatment A has significantly better locoregional control in node\u2010positive breast cancer after conservative surgery and 50% shorter treatment, albeit with slightly more acute toxicity.",
+        "abstract_type": "spin",
+        "plain_language_summary": "This passage is about a study that compared two different treatments for breast cancer. One treatment (A) had better control of the cancer spreading to nearby areas, but caused more side effects. The other treatment (B) took longer to complete and had a higher risk of the cancer coming back in the same area. Overall, treatment A was found to be more effective in controlling the cancer near the breast, even though it had more side effects.",
+        "benefit_raw_answer": "8",
+        "benefit_answer": "8",
+        "benefit_log_probabilities": [
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -0.20392045
+            },
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -2.0884266
+            },
+            {
+                "token": "9",
+                "bytes": [
+                    57
+                ],
+                "logprob": -2.8427143
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -6.1237125
+            },
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -9.090408
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -12.06274
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -12.257572
+            },
+            {
+                "token": "10",
+                "bytes": [
+                    49,
+                    48
+                ],
+                "logprob": -12.520721
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -12.7580185
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -13.198954
+            },
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -13.854919
+            },
+            {
+                "token": "Based",
+                "bytes": [
+                    66,
+                    97,
+                    115,
+                    101,
+                    100
+                ],
+                "logprob": -15.625294
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -15.902567
+            },
+            {
+                "token": "2",
+                "bytes": [
+                    50
+                ],
+                "logprob": -15.978844
+            },
+            {
+                "token": "\n\n",
+                "bytes": [
+                    10,
+                    10
+                ],
+                "logprob": -16.974619
+            },
+            {
+                "token": "1",
+                "bytes": [
+                    49
+                ],
+                "logprob": -17.040459
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -17.413393
+            },
+            {
+                "token": "It",
+                "bytes": [
+                    73,
+                    116
+                ],
+                "logprob": -17.624905
+            },
+            {
+                "token": "In",
+                "bytes": [
+                    73,
+                    110
+                ],
+                "logprob": -18.018173
+            },
+            {
+                "token": "On",
+                "bytes": [
+                    79,
+                    110
+                ],
+                "logprob": -18.935366
+            }
+        ],
+        "rigor_raw_answer": "8",
+        "rigor_answer": "8",
+        "rigor_log_probabilities": [
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -0.06939128
+            },
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -3.0663242
+            },
+            {
+                "token": "9",
+                "bytes": [
+                    57
+                ],
+                "logprob": -3.8991413
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -8.645475
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -12.10758
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -12.874586
+            },
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -12.938749
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -16.081606
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -16.194578
+            },
+            {
+                "token": "Rating",
+                "bytes": [
+                    82,
+                    97,
+                    116,
+                    105,
+                    110,
+                    103
+                ],
+                "logprob": -16.23199
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -16.609272
+            },
+            {
+                "token": "10",
+                "bytes": [
+                    49,
+                    48
+                ],
+                "logprob": -16.713472
+            },
+            {
+                "token": "Overall",
+                "bytes": [
+                    79,
+                    118,
+                    101,
+                    114,
+                    97,
+                    108,
+                    108
+                ],
+                "logprob": -17.23037
+            },
+            {
+                "token": "Based",
+                "bytes": [
+                    66,
+                    97,
+                    115,
+                    101,
+                    100
+                ],
+                "logprob": -17.252337
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -17.447395
+            },
+            {
+                "token": "\n\n",
+                "bytes": [
+                    10,
+                    10
+                ],
+                "logprob": -17.628809
+            },
+            {
+                "token": "In",
+                "bytes": [
+                    73,
+                    110
+                ],
+                "logprob": -18.648273
+            },
+            {
+                "token": "R",
+                "bytes": [
+                    82
+                ],
+                "logprob": -18.715546
+            },
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -18.741405
+            },
+            {
+                "token": "This",
+                "bytes": [
+                    84,
+                    104,
+                    105,
+                    115
+                ],
+                "logprob": -18.820978
+            }
+        ],
+        "importance_raw_answer": "8",
+        "importance_answer": "8",
+        "importance_log_probabilities": [
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -0.12865773
+            },
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -2.3149524
+            },
+            {
+                "token": "9",
+                "bytes": [
+                    57
+                ],
+                "logprob": -3.8351512
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -7.9729075
+            },
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -11.8745985
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -13.178935
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -13.597699
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -13.909795
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -15.834796
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -16.073488
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -16.32616
+            },
+            {
+                "token": "10",
+                "bytes": [
+                    49,
+                    48
+                ],
+                "logprob": -16.594164
+            },
+            {
+                "token": "In",
+                "bytes": [
+                    73,
+                    110
+                ],
+                "logprob": -17.594704
+            },
+            {
+                "token": "\n\n",
+                "bytes": [
+                    10,
+                    10
+                ],
+                "logprob": -17.63746
+            },
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -18.109148
+            },
+            {
+                "token": "This",
+                "bytes": [
+                    84,
+                    104,
+                    105,
+                    115
+                ],
+                "logprob": -18.18673
+            },
+            {
+                "token": "Rating",
+                "bytes": [
+                    82,
+                    97,
+                    116,
+                    105,
+                    110,
+                    103
+                ],
+                "logprob": -18.251509
+            },
+            {
+                "token": "Based",
+                "bytes": [
+                    66,
+                    97,
+                    115,
+                    101,
+                    100
+                ],
+                "logprob": -18.798098
+            },
+            {
+                "token": "It",
+                "bytes": [
+                    73,
+                    116
+                ],
+                "logprob": -18.816572
+            },
+            {
+                "token": "Rate",
+                "bytes": [
+                    82,
+                    97,
+                    116,
+                    101
+                ],
+                "logprob": -18.826439
+            }
+        ],
+        "full_text_raw_answer": "8",
+        "full_text_answer": "8",
+        "full_text_log_probabilities": [
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -0.20343773
+            },
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -1.9271125
+            },
+            {
+                "token": "9",
+                "bytes": [
+                    57
+                ],
+                "logprob": -3.4368057
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -5.4002113
+            },
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -6.352768
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -9.656952
+            },
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -11.408173
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -12.549223
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -12.582624
+            },
+            {
+                "token": "10",
+                "bytes": [
+                    49,
+                    48
+                ],
+                "logprob": -13.402489
+            },
+            {
+                "token": "2",
+                "bytes": [
+                    50
+                ],
+                "logprob": -13.663521
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -13.937059
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -15.279173
+            },
+            {
+                "token": "\n\n",
+                "bytes": [
+                    10,
+                    10
+                ],
+                "logprob": -15.929783
+            },
+            {
+                "token": "1",
+                "bytes": [
+                    49
+                ],
+                "logprob": -15.943441
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -17.336065
+            },
+            {
+                "token": "-",
+                "bytes": [
+                    45
+                ],
+                "logprob": -17.491978
+            },
+            {
+                "token": " \n",
+                "bytes": [
+                    32,
+                    10
+                ],
+                "logprob": -17.774382
+            },
+            {
+                "token": "0",
+                "bytes": [
+                    48
+                ],
+                "logprob": -18.081472
+            },
+            {
+                "token": "In",
+                "bytes": [
+                    73,
+                    110
+                ],
+                "logprob": -18.49216
+            }
+        ],
+        "another_trial_raw_answer": "8",
+        "another_trial_answer": "8",
+        "another_trial_log_probabilities": [
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -0.126066
+            },
+            {
+                "token": "9",
+                "bytes": [
+                    57
+                ],
+                "logprob": -2.7849252
+            },
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -2.8861368
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -7.1243725
+            },
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -9.156874
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -12.661074
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -13.022953
+            },
+            {
+                "token": "10",
+                "bytes": [
+                    49,
+                    48
+                ],
+                "logprob": -13.781282
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -14.769693
+            },
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -14.930033
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -15.467871
+            },
+            {
+                "token": "\n\n",
+                "bytes": [
+                    10,
+                    10
+                ],
+                "logprob": -16.14173
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -16.66338
+            },
+            {
+                "token": "2",
+                "bytes": [
+                    50
+                ],
+                "logprob": -16.737946
+            },
+            {
+                "token": "It",
+                "bytes": [
+                    73,
+                    116
+                ],
+                "logprob": -17.804785
+            },
+            {
+                "token": "1",
+                "bytes": [
+                    49
+                ],
+                "logprob": -17.906082
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -18.08257
+            },
+            {
+                "token": " \n",
+                "bytes": [
+                    32,
+                    10
+                ],
+                "logprob": -18.347343
+            },
+            {
+                "token": "Based",
+                "bytes": [
+                    66,
+                    97,
+                    115,
+                    101,
+                    100
+                ],
+                "logprob": -18.97923
+            },
+            {
+                "token": "In",
+                "bytes": [
+                    73,
+                    110
+                ],
+                "logprob": -19.299759
+            }
+        ]
+    },
+    {
+        "id": "38",
+        "PMID": "16504757",
+        "title": "A phase III randomized trial comparing adjuvant concomitant chemoradiotherapy versus standard adjuvant chemotherapy followed by radiotherapy in operable node-positive breast cancer: final results",
+        "journal": "Int J Radiat Oncol Biol Phys",
+        "abstract": "Purpose:\nTo compare treatment A and comparator B in node\u2010positive, operable breast cancer patients.\nMethods and materials:\nThis was a randomized, multicenter, phase III trial enrolling 638 eligible women with prior breast surgery and positive axillary dissection. Patients in Arm A received treatment A, with concomitant radiotherapy (50 Gy +/\u2010 10\u201020\u2010Gy boost). Patients in Arm B received comparator B, with subsequent radiotherapy. The primary outcome was disease free survival.\nResults:\n650 women were enrolled in this trial, and a total of 638 patients were treated. Median treatment durations were 64 and 126 days (Arms A and B, respectively). Five\u2010year DFS in Arm A was 83% and in Arm B 79%, p = 0.22. Disease\u2010specific survival at 5 years was not statistically significantly different between Arm A and Arm B. Sixty\u2010eight patients died 34 in each group. There was no statistically significant difference at 5 years for regional or metastatic relapses. Local recurrences at 5 years was 3% in Arm A and 7% in Arm B, p=0.047). Febrile neutropenia (n=10 in arm A vs. n=1 in arm B) and Grade 3\u20104 leukopenia (n=43 vs n=4) were statistically significantly more frequent in Arm A. Subclinical left ventricular ejection fraction events at 1 year were more frequent with treatment A (p=0.02).\nConclusion:\nTreatment A was not more effective than comparator B in node\u2010positive, operable breast cancer patients.",
+        "abstract_type": "no_spin",
+        "plain_language_summary": "This passage is about a study that compared two different treatments for breast cancer. One group of patients received treatment A with radiation therapy, while the other group received treatment B with radiation therapy later on. The study found that there was no significant difference in survival rates between the two groups after five years. However, patients in group A had more side effects like febrile neutropenia and heart problems compared to those in group B. In conclusion, treatment A was not found to be more effective than treatment B for breast cancer patients with cancer in their lymph nodes.",
+        "benefit_raw_answer": "2",
+        "benefit_answer": "2",
+        "benefit_log_probabilities": [
+            {
+                "token": "2",
+                "bytes": [
+                    50
+                ],
+                "logprob": -0.2636013
+            },
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -1.6795483
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -3.2310238
+            },
+            {
+                "token": "1",
+                "bytes": [
+                    49
+                ],
+                "logprob": -5.3418026
+            },
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -7.1292934
+            },
+            {
+                "token": "0",
+                "bytes": [
+                    48
+                ],
+                "logprob": -8.895323
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -11.154961
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -12.75419
+            },
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -13.608572
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -14.308382
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -15.12743
+            },
+            {
+                "token": "\n\n",
+                "bytes": [
+                    10,
+                    10
+                ],
+                "logprob": -16.466265
+            },
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -17.67898
+            },
+            {
+                "token": "-",
+                "bytes": [
+                    45
+                ],
+                "logprob": -17.767939
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -18.275194
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -18.292532
+            },
+            {
+                "token": "<|end|>",
+                "bytes": null,
+                "logprob": -19.197922
+            },
+            {
+                "token": " \n",
+                "bytes": [
+                    32,
+                    10
+                ],
+                "logprob": -19.410114
+            },
+            {
+                "token": "9",
+                "bytes": [
+                    57
+                ],
+                "logprob": -19.55018
+            },
+            {
+                "token": "score",
+                "bytes": [
+                    115,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -19.616692
+            }
+        ],
+        "rigor_raw_answer": "8",
+        "rigor_answer": "8",
+        "rigor_log_probabilities": [
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -0.36414456
+            },
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -1.2377484
+            },
+            {
+                "token": "9",
+                "bytes": [
+                    57
+                ],
+                "logprob": -4.906251
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -4.9105005
+            },
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -7.8561144
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -11.528771
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -12.504365
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -13.583079
+            },
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -14.084674
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -15.456458
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -15.776076
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -15.95044
+            },
+            {
+                "token": "10",
+                "bytes": [
+                    49,
+                    48
+                ],
+                "logprob": -16.043745
+            },
+            {
+                "token": "2",
+                "bytes": [
+                    50
+                ],
+                "logprob": -16.272945
+            },
+            {
+                "token": "Rating",
+                "bytes": [
+                    82,
+                    97,
+                    116,
+                    105,
+                    110,
+                    103
+                ],
+                "logprob": -16.7126
+            },
+            {
+                "token": "Overall",
+                "bytes": [
+                    79,
+                    118,
+                    101,
+                    114,
+                    97,
+                    108,
+                    108
+                ],
+                "logprob": -17.428865
+            },
+            {
+                "token": "Based",
+                "bytes": [
+                    66,
+                    97,
+                    115,
+                    101,
+                    100
+                ],
+                "logprob": -17.745071
+            },
+            {
+                "token": "\n\n",
+                "bytes": [
+                    10,
+                    10
+                ],
+                "logprob": -17.935986
+            },
+            {
+                "token": "-",
+                "bytes": [
+                    45
+                ],
+                "logprob": -18.221718
+            },
+            {
+                "token": "1",
+                "bytes": [
+                    49
+                ],
+                "logprob": -18.380604
+            }
+        ],
+        "importance_raw_answer": "7",
+        "importance_answer": "7",
+        "importance_log_probabilities": [
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -0.7877089
+            },
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -0.8140379
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -2.7686124
+            },
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -3.8288121
+            },
+            {
+                "token": "9",
+                "bytes": [
+                    57
+                ],
+                "logprob": -4.195851
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -6.0821233
+            },
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -8.577888
+            },
+            {
+                "token": "2",
+                "bytes": [
+                    50
+                ],
+                "logprob": -10.811318
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -11.700597
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -12.873956
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -13.005239
+            },
+            {
+                "token": "1",
+                "bytes": [
+                    49
+                ],
+                "logprob": -14.42475
+            },
+            {
+                "token": "10",
+                "bytes": [
+                    49,
+                    48
+                ],
+                "logprob": -15.021913
+            },
+            {
+                "token": "\n\n",
+                "bytes": [
+                    10,
+                    10
+                ],
+                "logprob": -15.414634
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -16.188229
+            },
+            {
+                "token": "-",
+                "bytes": [
+                    45
+                ],
+                "logprob": -16.19346
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -16.329271
+            },
+            {
+                "token": "0",
+                "bytes": [
+                    48
+                ],
+                "logprob": -16.434744
+            },
+            {
+                "token": " \n",
+                "bytes": [
+                    32,
+                    10
+                ],
+                "logprob": -17.355408
+            },
+            {
+                "token": "In",
+                "bytes": [
+                    73,
+                    110
+                ],
+                "logprob": -17.499016
+            }
+        ],
+        "full_text_raw_answer": "8",
+        "full_text_answer": "8",
+        "full_text_log_probabilities": [
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -0.64542204
+            },
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -1.1351376
+            },
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -2.6703014
+            },
+            {
+                "token": "9",
+                "bytes": [
+                    57
+                ],
+                "logprob": -3.3177547
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -3.5529156
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -4.577242
+            },
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -4.786104
+            },
+            {
+                "token": "2",
+                "bytes": [
+                    50
+                ],
+                "logprob": -6.5733147
+            },
+            {
+                "token": "10",
+                "bytes": [
+                    49,
+                    48
+                ],
+                "logprob": -10.780249
+            },
+            {
+                "token": "1",
+                "bytes": [
+                    49
+                ],
+                "logprob": -10.990595
+            },
+            {
+                "token": "0",
+                "bytes": [
+                    48
+                ],
+                "logprob": -12.343952
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -12.420174
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -13.610788
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -13.86372
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -14.339556
+            },
+            {
+                "token": "\n\n",
+                "bytes": [
+                    10,
+                    10
+                ],
+                "logprob": -15.906359
+            },
+            {
+                "token": "-",
+                "bytes": [
+                    45
+                ],
+                "logprob": -16.365578
+            },
+            {
+                "token": " \n",
+                "bytes": [
+                    32,
+                    10
+                ],
+                "logprob": -17.24056
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -17.629217
+            },
+            {
+                "token": "In",
+                "bytes": [
+                    73,
+                    110
+                ],
+                "logprob": -18.220507
+            }
+        ],
+        "another_trial_raw_answer": "5",
+        "another_trial_answer": "5",
+        "another_trial_log_probabilities": [
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -0.6896519
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -1.381329
+            },
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -2.1029286
+            },
+            {
+                "token": "2",
+                "bytes": [
+                    50
+                ],
+                "logprob": -3.1043706
+            },
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -3.2671018
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -3.3333364
+            },
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -5.106541
+            },
+            {
+                "token": "1",
+                "bytes": [
+                    49
+                ],
+                "logprob": -8.910124
+            },
+            {
+                "token": "9",
+                "bytes": [
+                    57
+                ],
+                "logprob": -9.750174
+            },
+            {
+                "token": "0",
+                "bytes": [
+                    48
+                ],
+                "logprob": -11.627436
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -12.822268
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -14.163973
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -15.256123
+            },
+            {
+                "token": "\n\n",
+                "bytes": [
+                    10,
+                    10
+                ],
+                "logprob": -15.70846
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -16.813272
+            },
+            {
+                "token": " \n",
+                "bytes": [
+                    32,
+                    10
+                ],
+                "logprob": -17.796581
+            },
+            {
+                "token": "10",
+                "bytes": [
+                    49,
+                    48
+                ],
+                "logprob": -17.99682
+            },
+            {
+                "token": "-",
+                "bytes": [
+                    45
+                ],
+                "logprob": -18.133932
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -18.217535
+            },
+            {
+                "token": "It",
+                "bytes": [
+                    73,
+                    116
+                ],
+                "logprob": -18.66475
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "PMID": "21399726",
+        "title": "The use of Valeriana officinalis (Valerian) in improving sleep in patients who are undergoing treatment for cancer: a phase III randomized, placebo-controlled, double-blind study (NCCTG Trial, N01C5)",
+        "journal": "J Support Oncol",
+        "abstract": "Sleep disorders are a substantial problem for cancer survivors, with prevalence estimates ranging from 23% to 61%. Although numerous prescription hypnotics are available, few are approved for long\u2010term use or have demonstrated benefit in this circumstance. Hypnotics may have unwanted side effects and are costly, and cancer survivors often wish to avoid prescription drugs. New options with limited side effects are needed. The purpose of this trial was to evaluate the efficacy of treatment A for sleep in people with cancer who were undergoing cancer treatment. Participants were randomized to receive treatment A or placebo orally 1 hour before bedtime for 8 weeks. The primary end point was area under the curve (AUC) of the overall Pittsburgh Sleep Quality Index (PSQI). Secondary outcomes included the Functional Outcomes of Sleep Questionnaire, the Brief Fatigue Inventory (BFI), and the Profile of Mood States (POMS). Toxicity was evaluated with both self\u2010reported numeric analogue scale questions and the Common Terminology Criteria for Adverse Events (CTCAE), version 3.0. Questionnaires were completed at baseline and at 4 and 8 weeks. A total of 227 patients were randomized into this study between March 19, 2004, and March 9, 2007, with 119 being evaluable for the primary end point. The AUC over the 8 weeks for treatment A was 51.4 (SD = 16), while that for placebo was 49.7 (SD = 15), with a P value of 0.6957. A supplemental, exploratory analysis revealed that several fatigue end points, as measured by the BFI and POMS, were significantly better for those taking treatment A over placebo. Participants also reported less trouble with sleep and less drowsiness on treatment A than placebo. There were no significant differences in toxicities as measured by self\u2010report or the CTCAE except for mild alkaline phosphatase increases, which were slightly more common in the placebo group. This study failed to provide data to support the hypothesis that treatment A, at bedtime could improve sleep as measured by the PSQI. However, exploratory analyses revealed improvement in some secondary outcomes, such as fatigue. Further research with treatment A exploring physiologic effects in oncology symptom management may be warranted.",
+        "abstract_type": "spin",
+        "plain_language_summary": "This passage is about how many cancer survivors have trouble sleeping, and how doctors are trying to find better ways to help them sleep. They did a study where some patients took a new treatment before bed, while others took a fake pill. The study found that the new treatment didn't make a big difference in overall sleep quality, but it did help with things like feeling tired and having trouble sleeping. More research is needed to see if this treatment can help with other symptoms of cancer.",
+        "benefit_raw_answer": "5",
+        "benefit_answer": "5",
+        "benefit_log_probabilities": [
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -0.7678529
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -1.1666795
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -1.8727723
+            },
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -2.8393326
+            },
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -4.4415207
+            },
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -7.743536
+            },
+            {
+                "token": "2",
+                "bytes": [
+                    50
+                ],
+                "logprob": -8.482868
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -12.001732
+            },
+            {
+                "token": "9",
+                "bytes": [
+                    57
+                ],
+                "logprob": -13.031979
+            },
+            {
+                "token": "1",
+                "bytes": [
+                    49
+                ],
+                "logprob": -13.204248
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -14.228312
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -14.539255
+            },
+            {
+                "token": "Based",
+                "bytes": [
+                    66,
+                    97,
+                    115,
+                    101,
+                    100
+                ],
+                "logprob": -14.571175
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -14.888634
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -16.666147
+            },
+            {
+                "token": "0",
+                "bytes": [
+                    48
+                ],
+                "logprob": -17.020014
+            },
+            {
+                "token": "It",
+                "bytes": [
+                    73,
+                    116
+                ],
+                "logprob": -17.167713
+            },
+            {
+                "token": "\n\n",
+                "bytes": [
+                    10,
+                    10
+                ],
+                "logprob": -17.190897
+            },
+            {
+                "token": "In",
+                "bytes": [
+                    73,
+                    110
+                ],
+                "logprob": -18.176228
+            },
+            {
+                "token": "-",
+                "bytes": [
+                    45
+                ],
+                "logprob": -18.214497
+            }
+        ],
+        "rigor_raw_answer": "7",
+        "rigor_answer": "7",
+        "rigor_log_probabilities": [
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -0.42470974
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -1.3807836
+            },
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -2.9195523
+            },
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -3.2873425
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -5.7435346
+            },
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -9.373022
+            },
+            {
+                "token": "9",
+                "bytes": [
+                    57
+                ],
+                "logprob": -9.934708
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -11.849815
+            },
+            {
+                "token": "2",
+                "bytes": [
+                    50
+                ],
+                "logprob": -12.93939
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -14.275307
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -14.76185
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -15.209963
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -15.679914
+            },
+            {
+                "token": "Based",
+                "bytes": [
+                    66,
+                    97,
+                    115,
+                    101,
+                    100
+                ],
+                "logprob": -16.34032
+            },
+            {
+                "token": "Rating",
+                "bytes": [
+                    82,
+                    97,
+                    116,
+                    105,
+                    110,
+                    103
+                ],
+                "logprob": -16.883293
+            },
+            {
+                "token": "1",
+                "bytes": [
+                    49
+                ],
+                "logprob": -16.96132
+            },
+            {
+                "token": "Overall",
+                "bytes": [
+                    79,
+                    118,
+                    101,
+                    114,
+                    97,
+                    108,
+                    108
+                ],
+                "logprob": -17.080269
+            },
+            {
+                "token": "-",
+                "bytes": [
+                    45
+                ],
+                "logprob": -17.811262
+            },
+            {
+                "token": "In",
+                "bytes": [
+                    73,
+                    110
+                ],
+                "logprob": -18.029629
+            },
+            {
+                "token": "This",
+                "bytes": [
+                    84,
+                    104,
+                    105,
+                    115
+                ],
+                "logprob": -18.979671
+            }
+        ],
+        "importance_raw_answer": "7",
+        "importance_answer": "7",
+        "importance_log_probabilities": [
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -0.28670263
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -1.9607558
+            },
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -2.5691314
+            },
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -3.4960074
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -6.6596694
+            },
+            {
+                "token": "9",
+                "bytes": [
+                    57
+                ],
+                "logprob": -8.2735195
+            },
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -9.887705
+            },
+            {
+                "token": "2",
+                "bytes": [
+                    50
+                ],
+                "logprob": -13.311569
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -13.325754
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -13.468246
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -15.082026
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -16.993773
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -17.00674
+            },
+            {
+                "token": "1",
+                "bytes": [
+                    49
+                ],
+                "logprob": -17.023846
+            },
+            {
+                "token": "\n\n",
+                "bytes": [
+                    10,
+                    10
+                ],
+                "logprob": -17.885517
+            },
+            {
+                "token": "Rating",
+                "bytes": [
+                    82,
+                    97,
+                    116,
+                    105,
+                    110,
+                    103
+                ],
+                "logprob": -18.06393
+            },
+            {
+                "token": "10",
+                "bytes": [
+                    49,
+                    48
+                ],
+                "logprob": -18.703686
+            },
+            {
+                "token": "In",
+                "bytes": [
+                    73,
+                    110
+                ],
+                "logprob": -18.80372
+            },
+            {
+                "token": "-",
+                "bytes": [
+                    45
+                ],
+                "logprob": -19.087734
+            },
+            {
+                "token": "0",
+                "bytes": [
+                    48
+                ],
+                "logprob": -19.664406
+            }
+        ],
+        "full_text_raw_answer": "7",
+        "full_text_answer": "7",
+        "full_text_log_probabilities": [
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -0.6839444
+            },
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -1.0055845
+            },
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -2.8718565
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -2.8743742
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -4.8286242
+            },
+            {
+                "token": "9",
+                "bytes": [
+                    57
+                ],
+                "logprob": -5.188411
+            },
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -5.898763
+            },
+            {
+                "token": "2",
+                "bytes": [
+                    50
+                ],
+                "logprob": -8.687265
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -11.786535
+            },
+            {
+                "token": "1",
+                "bytes": [
+                    49
+                ],
+                "logprob": -13.621716
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -14.058283
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -14.062304
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -14.801668
+            },
+            {
+                "token": "10",
+                "bytes": [
+                    49,
+                    48
+                ],
+                "logprob": -14.834583
+            },
+            {
+                "token": "0",
+                "bytes": [
+                    48
+                ],
+                "logprob": -15.819658
+            },
+            {
+                "token": "-",
+                "bytes": [
+                    45
+                ],
+                "logprob": -16.325375
+            },
+            {
+                "token": "\n\n",
+                "bytes": [
+                    10,
+                    10
+                ],
+                "logprob": -17.268198
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -17.347569
+            },
+            {
+                "token": "In",
+                "bytes": [
+                    73,
+                    110
+                ],
+                "logprob": -18.40835
+            },
+            {
+                "token": "A",
+                "bytes": [
+                    65
+                ],
+                "logprob": -18.437408
+            }
+        ],
+        "another_trial_raw_answer": "7",
+        "another_trial_answer": "7",
+        "another_trial_log_probabilities": [
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -0.50348264
+            },
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -1.2196538
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -2.8424757
+            },
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -3.2930372
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -6.060707
+            },
+            {
+                "token": "9",
+                "bytes": [
+                    57
+                ],
+                "logprob": -6.1670227
+            },
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -7.9097023
+            },
+            {
+                "token": "2",
+                "bytes": [
+                    50
+                ],
+                "logprob": -10.744177
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -13.140005
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -13.298464
+            },
+            {
+                "token": "1",
+                "bytes": [
+                    49
+                ],
+                "logprob": -14.906527
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -15.47471
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -15.665054
+            },
+            {
+                "token": "\n\n",
+                "bytes": [
+                    10,
+                    10
+                ],
+                "logprob": -16.706997
+            },
+            {
+                "token": "0",
+                "bytes": [
+                    48
+                ],
+                "logprob": -17.112036
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -17.466671
+            },
+            {
+                "token": "10",
+                "bytes": [
+                    49,
+                    48
+                ],
+                "logprob": -17.523176
+            },
+            {
+                "token": "It",
+                "bytes": [
+                    73,
+                    116
+                ],
+                "logprob": -17.567091
+            },
+            {
+                "token": "Based",
+                "bytes": [
+                    66,
+                    97,
+                    115,
+                    101,
+                    100
+                ],
+                "logprob": -18.159346
+            },
+            {
+                "token": " \n",
+                "bytes": [
+                    32,
+                    10
+                ],
+                "logprob": -18.71655
+            }
+        ]
+    },
+    {
+        "id": "8",
+        "PMID": "21399726",
+        "title": "The use of Valeriana officinalis (Valerian) in improving sleep in patients who are undergoing treatment for cancer: a phase III randomized, placebo-controlled, double-blind study (NCCTG Trial, N01C5)",
+        "journal": "J Support Oncol",
+        "abstract": "Sleep disorders are a substantial problem for cancer survivors, with prevalence estimates ranging from 23% to 61%. Although numerous prescription hypnotics are available, few are approved for long\u2010term use or have demonstrated benefit in this circumstance. Hypnotics may have unwanted side effects and are costly, and cancer survivors often wish to avoid prescription drugs. New options with limited side effects are needed. The purpose of this trial was to evaluate the efficacy of a treatment A for sleep in people with cancer who were undergoing cancer treatment. Participants were randomized to receive treatment A or placebo orally 1 hour before bedtime for 8 weeks. The primary end point was area under the curve (AUC) of the overall Pittsburgh Sleep Quality Index (PSQI). Secondary outcomes included the Functional Outcomes of Sleep Questionnaire, the Brief Fatigue Inventory (BFI), and the Profile of Mood States (POMS). Toxicity was evaluated with both self\u2010reported numeric analogue scale questions and the Common Terminology Criteria for Adverse Events (CTCAE), version 3.0. Questionnaires were completed at baseline and at 4 and 8 weeks. A total of 227 patients were randomized into this study between March 19, 2004, and March 9, 2007. Twenty\u2010three patients withdrew before starting the study treatment. Primary end\u2010point data were available on 119 patients (62 receiving treatment A and 57 receiving placebo). Baseline characteristics and baseline patient reported outcomes were well balanced between arms. The AUC over the 8 weeks for treatment A was 51.4 (SD = 16 and for placebo was 49.7 (SD = 15), with a P value of 0.7. The FOSQ was not statistically significantly different between groups. There was no statistically significant difference between groups for the POMS week 8 treatment A 6.9 vs. placebo 6.0; p=0.90. For the BFI at week 8 the treatment A and placebo arm scored respectively for fatigue now 22.1 vs. 10.5; p<0.01; for usual fatigue 19.4 vs. 10.0; p=0.05; for worst fatigue 14.8 vs. 12.4; p=0.65; and for activity inference 12.3 vs. 10.8; p=0.75.There were no significant differences in toxicities as measured by self\u2010report or the CTCAE. Treatment A was not more effective than placebo on sleep quality in patients who were undergoing cancer treatment.",
+        "abstract_type": "no_spin",
+        "plain_language_summary": "This passage is about how many cancer survivors have trouble sleeping, and how doctors are trying to find better ways to help them sleep. They did a study where some patients took a new treatment for sleep, while others took a fake pill. They found that the new treatment did not work any better than the fake pill for helping people sleep. They also looked at how tired the patients felt and their mood, but there were no big differences between the two groups. Overall, the new treatment did not seem to be very helpful for cancer patients who were having trouble sleeping.",
+        "benefit_raw_answer": "2",
+        "benefit_answer": "2",
+        "benefit_log_probabilities": [
+            {
+                "token": "2",
+                "bytes": [
+                    50
+                ],
+                "logprob": -0.618561
+            },
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -0.9848063
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -2.50235
+            },
+            {
+                "token": "1",
+                "bytes": [
+                    49
+                ],
+                "logprob": -5.8633385
+            },
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -5.8991547
+            },
+            {
+                "token": "0",
+                "bytes": [
+                    48
+                ],
+                "logprob": -8.296852
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -10.587795
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -11.054644
+            },
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -13.029018
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -14.364584
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -15.783951
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -16.794882
+            },
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -16.90843
+            },
+            {
+                "token": "-",
+                "bytes": [
+                    45
+                ],
+                "logprob": -17.237587
+            },
+            {
+                "token": "\n\n",
+                "bytes": [
+                    10,
+                    10
+                ],
+                "logprob": -17.505833
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -17.563862
+            },
+            {
+                "token": "Based",
+                "bytes": [
+                    66,
+                    97,
+                    115,
+                    101,
+                    100
+                ],
+                "logprob": -17.639969
+            },
+            {
+                "token": "score",
+                "bytes": [
+                    115,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -17.774431
+            },
+            {
+                "token": "**",
+                "bytes": [
+                    42,
+                    42
+                ],
+                "logprob": -18.989815
+            },
+            {
+                "token": "It",
+                "bytes": [
+                    73,
+                    116
+                ],
+                "logprob": -19.086826
+            }
+        ],
+        "rigor_raw_answer": "5",
+        "rigor_answer": "5",
+        "rigor_log_probabilities": [
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -0.9270098
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -1.4262011
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -1.7329867
+            },
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -1.7515719
+            },
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -4.729973
+            },
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -5.3728485
+            },
+            {
+                "token": "2",
+                "bytes": [
+                    50
+                ],
+                "logprob": -8.210201
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -10.431793
+            },
+            {
+                "token": "9",
+                "bytes": [
+                    57
+                ],
+                "logprob": -11.158588
+            },
+            {
+                "token": "1",
+                "bytes": [
+                    49
+                ],
+                "logprob": -13.466892
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -13.905146
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -13.9064045
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -14.034769
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -15.10001
+            },
+            {
+                "token": "Based",
+                "bytes": [
+                    66,
+                    97,
+                    115,
+                    101,
+                    100
+                ],
+                "logprob": -15.954357
+            },
+            {
+                "token": "Rating",
+                "bytes": [
+                    82,
+                    97,
+                    116,
+                    105,
+                    110,
+                    103
+                ],
+                "logprob": -15.976671
+            },
+            {
+                "token": "Overall",
+                "bytes": [
+                    79,
+                    118,
+                    101,
+                    114,
+                    97,
+                    108,
+                    108
+                ],
+                "logprob": -16.182285
+            },
+            {
+                "token": "-",
+                "bytes": [
+                    45
+                ],
+                "logprob": -16.403902
+            },
+            {
+                "token": "0",
+                "bytes": [
+                    48
+                ],
+                "logprob": -16.694794
+            },
+            {
+                "token": "In",
+                "bytes": [
+                    73,
+                    110
+                ],
+                "logprob": -17.156033
+            }
+        ],
+        "importance_raw_answer": "5",
+        "importance_answer": "5",
+        "importance_log_probabilities": [
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -0.7238559
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -1.5183353
+            },
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -1.9535046
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -2.108717
+            },
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -3.770506
+            },
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -4.798895
+            },
+            {
+                "token": "2",
+                "bytes": [
+                    50
+                ],
+                "logprob": -6.4877377
+            },
+            {
+                "token": "9",
+                "bytes": [
+                    57
+                ],
+                "logprob": -9.74674
+            },
+            {
+                "token": "1",
+                "bytes": [
+                    49
+                ],
+                "logprob": -12.003054
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -12.183254
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -13.358994
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -13.684132
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -14.647572
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -15.1924305
+            },
+            {
+                "token": "0",
+                "bytes": [
+                    48
+                ],
+                "logprob": -15.541107
+            },
+            {
+                "token": "-",
+                "bytes": [
+                    45
+                ],
+                "logprob": -17.085892
+            },
+            {
+                "token": "In",
+                "bytes": [
+                    73,
+                    110
+                ],
+                "logprob": -17.213741
+            },
+            {
+                "token": "This",
+                "bytes": [
+                    84,
+                    104,
+                    105,
+                    115
+                ],
+                "logprob": -17.352276
+            },
+            {
+                "token": "\n\n",
+                "bytes": [
+                    10,
+                    10
+                ],
+                "logprob": -17.42392
+            },
+            {
+                "token": "Rating",
+                "bytes": [
+                    82,
+                    97,
+                    116,
+                    105,
+                    110,
+                    103
+                ],
+                "logprob": -17.838842
+            }
+        ],
+        "full_text_raw_answer": "5",
+        "full_text_answer": "5",
+        "full_text_log_probabilities": [
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -1.1217788
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -1.5100883
+            },
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -1.5494865
+            },
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -2.1559548
+            },
+            {
+                "token": "2",
+                "bytes": [
+                    50
+                ],
+                "logprob": -2.8560014
+            },
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -3.3628793
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -3.4500985
+            },
+            {
+                "token": "9",
+                "bytes": [
+                    57
+                ],
+                "logprob": -7.057051
+            },
+            {
+                "token": "1",
+                "bytes": [
+                    49
+                ],
+                "logprob": -7.7863297
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -9.813261
+            },
+            {
+                "token": "0",
+                "bytes": [
+                    48
+                ],
+                "logprob": -10.131712
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -11.79575
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -13.032261
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -13.803377
+            },
+            {
+                "token": "10",
+                "bytes": [
+                    49,
+                    48
+                ],
+                "logprob": -13.858969
+            },
+            {
+                "token": "-",
+                "bytes": [
+                    45
+                ],
+                "logprob": -14.823708
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -15.633335
+            },
+            {
+                "token": "\n\n",
+                "bytes": [
+                    10,
+                    10
+                ],
+                "logprob": -16.359266
+            },
+            {
+                "token": "Based",
+                "bytes": [
+                    66,
+                    97,
+                    115,
+                    101,
+                    100
+                ],
+                "logprob": -16.706503
+            },
+            {
+                "token": "It",
+                "bytes": [
+                    73,
+                    116
+                ],
+                "logprob": -16.805634
+            }
+        ],
+        "another_trial_raw_answer": "3",
+        "another_trial_answer": "3",
+        "another_trial_log_probabilities": [
+            {
+                "token": "3",
+                "bytes": [
+                    51
+                ],
+                "logprob": -0.89600974
+            },
+            {
+                "token": "4",
+                "bytes": [
+                    52
+                ],
+                "logprob": -1.2891371
+            },
+            {
+                "token": "2",
+                "bytes": [
+                    50
+                ],
+                "logprob": -1.5774214
+            },
+            {
+                "token": "5",
+                "bytes": [
+                    53
+                ],
+                "logprob": -2.225199
+            },
+            {
+                "token": "1",
+                "bytes": [
+                    49
+                ],
+                "logprob": -7.085955
+            },
+            {
+                "token": "6",
+                "bytes": [
+                    54
+                ],
+                "logprob": -7.7959886
+            },
+            {
+                "token": "7",
+                "bytes": [
+                    55
+                ],
+                "logprob": -7.8116326
+            },
+            {
+                "token": "0",
+                "bytes": [
+                    48
+                ],
+                "logprob": -9.717737
+            },
+            {
+                "token": "8",
+                "bytes": [
+                    56
+                ],
+                "logprob": -10.472101
+            },
+            {
+                "token": "Score",
+                "bytes": [
+                    83,
+                    99,
+                    111,
+                    114,
+                    101
+                ],
+                "logprob": -13.831249
+            },
+            {
+                "token": "\n",
+                "bytes": [
+                    10
+                ],
+                "logprob": -14.710356
+            },
+            {
+                "token": " ",
+                "bytes": [
+                    32
+                ],
+                "logprob": -15.037819
+            },
+            {
+                "token": "9",
+                "bytes": [
+                    57
+                ],
+                "logprob": -15.439911
+            },
+            {
+                "token": "The",
+                "bytes": [
+                    84,
+                    104,
+                    101
+                ],
+                "logprob": -17.280643
+            },
+            {
+                "token": "I",
+                "bytes": [
+                    73
+                ],
+                "logprob": -17.28426
+            },
+            {
+                "token": "\n\n",
+                "bytes": [
+                    10,
+                    10
+                ],
+                "logprob": -17.659512
+            },
+            {
+                "token": "-",
+                "bytes": [
+                    45
+                ],
+                "logprob": -17.938446
+            },
+            {
+                "token": "It",
+                "bytes": [
+                    73,
+                    116
+                ],
+                "logprob": -18.308187
+            },
+            {
+                "token": " \n",
+                "bytes": [
+                    32,
+                    10
+                ],
+                "logprob": -19.432058
+            },
+            {
+                "token": "10",
+                "bytes": [
+                    49,
+                    48
+                ],
+                "logprob": -19.733135
+            }
+        ]
+    }
+]
