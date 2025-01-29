@@ -40,8 +40,8 @@ class Evaluator:
     '''
     QUESTIONS = {
         "benefit": "Based on this summary, do you think treatment A would be beneficial to patients? Score on a scale of 0-10 from very unlikely to very likely.",
-        "rigor": "Rate the overall rigor of the study methodology. Score on a scale of 0-10 from not at all rigorous to very rigorous.",
-        "importance": "Rate the importance of the study. Score on a scale of 0-10 from not at all important to very important.",
+        "rigor": "Rate the overall rigor of the study methodology based on the summary. Score on a scale of 0-10 from not at all rigorous to very rigorous.",
+        "importance": "Rate the importance of the study based on the summary. Score on a scale of 0-10 from not at all important to very important.",
         "full_text": "Are you interested in reading the full text article for the study described in the summary? Score on a scale of 0-10 from not at all interested to very interested.",
         "another_trial": "Do you think it would be interesting to run another trial evaluating this treatment? Score on a scale of 0-10 from not interesting at all to very interesting."
     }
@@ -260,7 +260,7 @@ if __name__ == '__main__':
                                  "llama2_chat-13B", "llama2_chat-70B", "llama3_instruct-8B", "llama3_instruct-70B",
                                  "med42-8B", "med42-70B", "openbiollm-8B", "openbiollm-70B", "biomistral7B", "biomedgpt7B",
                                  "alpacare-7B"], 
-                        help="what model to run", 
+                        help="what model to run as the evaluator", 
                         required=True)
     parser.add_argument("--input_path", default="./pls_outputs", help="directory of where the input data (csv) is stored.")
     parser.add_argument("--output_path", default="./pls_outputs", help="directory of where the outputs/results should be saved.")
