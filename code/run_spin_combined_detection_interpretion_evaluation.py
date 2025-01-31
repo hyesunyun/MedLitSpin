@@ -233,11 +233,11 @@ class Evaluator:
         results = sorted(results, key=lambda x: x["PMID"])
 
         # convert into json
-        json_file_path = f"{self.output_path}/{self.model_name}_labelled_interpretation_outputs.json"
+        json_file_path = f"{self.output_path}/{self.model_name}_combined_detection_interpretation_outputs.json"
         save_dataset_to_json(results, json_file_path)
 
         # convert into csv
-        csv_file_path = f"{self.output_path}/{self.model_name}_labelled_interpretation_outputs.csv"
+        csv_file_path = f"{self.output_path}/{self.model_name}_combined_detection_interpretation_outputs.csv"
         save_dataset_to_csv(results, csv_file_path)
 
         print(f"Model outputs saved to {json_file_path} and {csv_file_path}")
@@ -246,7 +246,7 @@ class Evaluator:
         diff_metrics = self.__calculate_mean_differences(results)
 
         # save the differences to a file 
-        diff_file_path = f"{self.output_path}/{self.model_name}_mean_differences_labelled_interpretation_metrics.json"
+        diff_file_path = f"{self.output_path}/{self.model_name}_mean_differences_combined_detection_interpretation_metrics.json"
         save_dataset_to_json(diff_metrics, diff_file_path)
         
 
