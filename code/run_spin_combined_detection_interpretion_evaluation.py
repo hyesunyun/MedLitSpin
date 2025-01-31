@@ -37,9 +37,9 @@ class Evaluator:
     This abstract describes a study evaluating a treatment in the field of cancer published in a peer-reviewed journal. 
     We appreciate that in clinical practice you would need to read the full article to make a final decision. However, the full article is not always freely available and people sometimes make decisions based on the abstract. 
     Spin or misrepresentation of study findings can be used to influence, positively, the interpretation of statistically nonsignificant randomized controlled trials (RCTs), for example, by emphasizing the apparent benefit of a secondary outcome or findings from a subgroup of patients.
+    Answer the following two questions with one JSON that contains one object for each answer.
     Does the following clinical trial abstract contain spin (yes/no)? Answer only with 'yes' or 'no'. Do not provide any explanations.
-    If an abstract contains spin, the content should be treated with a higher level of skepticism.
-    Based on the information reported in the abstract, {QUESTION} Only output a score between 0-10. Do not provide any explanations.
+    Based on this abstract and previous spin detection, {QUESTION} Only output a score between 0-10. Do not provide any explanations. If an abstract contains spin, the contents should be treated with a higher level of skepticism.
 
     Abstract: {ABSTRACT}
     '''
