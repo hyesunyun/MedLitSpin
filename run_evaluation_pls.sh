@@ -1,18 +1,13 @@
 #!/bin/bash
 
 evaluators=(
-  # "gpt4o"
+  "gpt4o-mini"
   # "claude_3.5-sonnet"
-  # "llama2_chat-70B"
-  "llama3_instruct-8B"
-  # "llama3_instruct-70B"
-  # "med42-70B"
-  # "openbiollm-70B"
 )
 
 models=(
   "gpt35"
-  # "gpt4o"
+  "gpt4o"
   # "gpt4o-mini"
   # "gemini_1.5_flash"
   # "gemini_1.5_flash-8B"
