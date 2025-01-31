@@ -214,8 +214,7 @@ class Evaluator:
         pbar = tqdm(self.dataset, desc="Running evaluation on the dataset")
         for _, example in enumerate(pbar):
             for key in self.QUESTIONS:
-                if_contains = "contains" if example["abstract_type"] == "spin" else "does not contain"
-                input = self.BASE_PROMPT.format(ABSTRACT=example["abstract"], QUESTION=self.QUESTIONS[key], IF_CONTAINS = if_contains)
+                input = self.BASE_PROMPT.format(ABSTRACT=example["abstract"], QUESTION=self.QUESTIONS[key])
                 output = self.model.generate_output(input, max_new_tokens=self.max_new_tokens)
 
                 example[f"{key}_raw_answer"] = output["response"] if "response" in output else "Error: No response from the model"
