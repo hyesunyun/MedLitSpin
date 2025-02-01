@@ -12,7 +12,7 @@ evaluators=(
 
 models=(
   "gpt35"
-  # "gpt4o"
+  "gpt4o"
   # "gpt4o-mini"
   # "gemini_1.5_flash"
   # "gemini_1.5_flash-8B"
