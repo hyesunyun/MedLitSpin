@@ -209,11 +209,12 @@ class Evaluator:
         pbar = tqdm(self.dataset, desc="Running evaluation on the PLS dataset")
         for _, example in enumerate(pbar):
             for key in self.QUESTIONS:
+                # The cleaning doesn't work well so we will use the full PLS as the summary
                 # split the text by \n\n and take the second part as the cleaned summary
-                if "\n\n" in example["abstract"]:
-                    cleaned_summary = example["abstract"].split("\n\n")[1].strip()
-                else:
-                    cleaned_summary = example["abstract"].strip()
+                # if "\n\n" in example["abstract"]:
+                #     cleaned_summary = example["abstract"].split("\n\n")[1].strip()
+                # else:
+                cleaned_summary = example["abstract"].strip()
                 input = self.BASE_PROMPT.format(SUMMARY=cleaned_summary, QUESTION=self.QUESTIONS[key])
                 output = self.model.generate_output(input, max_new_tokens=self.max_new_tokens)
 

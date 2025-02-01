@@ -37,9 +37,9 @@ class Evaluator:
     This abstract describes a study evaluating a treatment in the field of cancer published in a peer-reviewed journal. 
     We appreciate that in clinical practice you would need to read the full article to make a final decision. However, the full article is not always freely available and people sometimes make decisions based on the abstract. 
     Spin or misrepresentation of study findings can be used to influence, positively, the interpretation of statistically nonsignificant randomized controlled trials (RCTs), for example, by emphasizing the apparent benefit of a secondary outcome or findings from a subgroup of patients.
-    Does the following clinical trial abstract contain spin (yes/no)? Answer only with 'yes' or 'no'. Do not provide any explanations.
-    If an abstract contains spin, the content should be treated with a higher level of skepticism.
-    Based on the information reported in the abstract, {QUESTION} Only output a score between 0-10. Do not provide any explanations.
+    Answer the following two questions with one JSON that contains one object for each answer.
+    Question 1: Does the following clinical trial abstract contain spin (yes/no)? Answer only with 'yes' or 'no'. Do not provide any explanations.
+    Question 2: Based on this abstract and previous spin detection, {QUESTION} Only output a score between 0-10. Do not provide any explanations. If an abstract contains spin, the contents should be treated with a higher level of skepticism.
 
     Abstract: {ABSTRACT}
     '''
@@ -214,8 +214,7 @@ class Evaluator:
         pbar = tqdm(self.dataset, desc="Running evaluation on the dataset")
         for _, example in enumerate(pbar):
             for key in self.QUESTIONS:
-                if_contains = "contains" if example["abstract_type"] == "spin" else "does not contain"
-                input = self.BASE_PROMPT.format(ABSTRACT=example["abstract"], QUESTION=self.QUESTIONS[key], IF_CONTAINS = if_contains)
+                input = self.BASE_PROMPT.format(ABSTRACT=example["abstract"], QUESTION=self.QUESTIONS[key])
                 output = self.model.generate_output(input, max_new_tokens=self.max_new_tokens)
 
                 example[f"{key}_raw_answer"] = output["response"] if "response" in output else "Error: No response from the model"
@@ -233,11 +232,11 @@ class Evaluator:
         results = sorted(results, key=lambda x: x["PMID"])
 
         # convert into json
-        json_file_path = f"{self.output_path}/{self.model_name}_labelled_interpretation_outputs.json"
+        json_file_path = f"{self.output_path}/{self.model_name}_combined_detection_interpretation_outputs.json"
         save_dataset_to_json(results, json_file_path)
 
         # convert into csv
-        csv_file_path = f"{self.output_path}/{self.model_name}_labelled_interpretation_outputs.csv"
+        csv_file_path = f"{self.output_path}/{self.model_name}_combined_detection_interpretation_outputs.csv"
         save_dataset_to_csv(results, csv_file_path)
 
         print(f"Model outputs saved to {json_file_path} and {csv_file_path}")
@@ -246,7 +245,7 @@ class Evaluator:
         diff_metrics = self.__calculate_mean_differences(results)
 
         # save the differences to a file 
-        diff_file_path = f"{self.output_path}/{self.model_name}_mean_differences_labelled_interpretation_metrics.json"
+        diff_file_path = f"{self.output_path}/{self.model_name}_mean_differences_combined_detection_interpretation_metrics.json"
         save_dataset_to_json(diff_metrics, diff_file_path)
         
 

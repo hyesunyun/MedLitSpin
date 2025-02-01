@@ -1,12 +1,11 @@
 #!/bin/bash
 #SBATCH --nodes=1
-#SBATCH --time=30:00:00
+#SBATCH --time=24:00:00
 #SBATCH --job-name=spin_eval
-#SBATCH --cpus-per-task=48
+#SBATCH --cpus-per-task=4
 #SBATCH --ntasks-per-node=1
-#SBATCH --mem=200G
-#SBATCH --partition=177huntington
-#SBATCH --gres=gpu:4
+#SBATCH --mem=50G
+#SBATCH --partition=short
 #SBATCH -o output_%j.txt                     # Standard output file
 #SBATCH -e error_%j.txt                      # Standard error file
 #SBATCH --mail-user=yun.hy@northeastern.edu  # Email
@@ -14,7 +13,7 @@
 
 # Your program/command here
 module purge
-module load explorer anaconda3/2024.06 cuda/12.1.1
+module load explorer anaconda3/2024.06
 
 source activate base
 source activate MedLitSpin
