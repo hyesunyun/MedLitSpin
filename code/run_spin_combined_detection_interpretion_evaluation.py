@@ -140,6 +140,7 @@ class Evaluator:
         :param text: input text to clean
         :return cleaned text
         """
+        text = text.replace("`", "").replace("''", "").replace("``", "")
         # Parse the JSON string
         json_response = json.loads(text)
         # Extract the text from the JSON
