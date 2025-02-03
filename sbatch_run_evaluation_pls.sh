@@ -12,7 +12,7 @@
 #SBATCH --mail-type=ALL                      # Type of email notifications
 
 # Your program/command here
-module purge
+# module purge
 # module load explorer anaconda3/2024.06
 module load anaconda3/3.6
 

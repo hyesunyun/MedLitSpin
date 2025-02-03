@@ -1,8 +1,8 @@
 #!/bin/bash
 
 evaluators=(
-  "gpt4o-mini"
-  # "claude_3.5-sonnet"
+  # "gpt4o-mini"
+  "claude_3.5-sonnet"
 )
 
 models=(
