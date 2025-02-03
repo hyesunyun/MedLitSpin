@@ -31,8 +31,6 @@ SEED = 42
 REQ_TIME_GAP = 15
 
 class Evaluator:
-    # TODO spin definition
-    # if there is spin then be more cautious
     BASE_PROMPT = '''
     This abstract describes a study evaluating a treatment in the field of cancer published in a peer-reviewed journal. 
     We appreciate that in clinical practice you would need to read the full article to make a final decision. However, the full article is not always freely available and people sometimes make decisions based on the abstract. 

@@ -23,6 +23,7 @@ from statistics import mean
 import time
 import torch, gc
 import re
+import json
 
 from utils import load_csv_file, save_dataset_to_json, save_dataset_to_csv
 
@@ -31,15 +32,15 @@ SEED = 42
 REQ_TIME_GAP = 15
 
 class Evaluator:
-    # TODO spin definition
-    # if there is spin then be more cautious
     BASE_PROMPT = '''
     This abstract describes a study evaluating a treatment in the field of cancer published in a peer-reviewed journal. 
     We appreciate that in clinical practice you would need to read the full article to make a final decision. However, the full article is not always freely available and people sometimes make decisions based on the abstract. 
     Spin or misrepresentation of study findings can be used to influence, positively, the interpretation of statistically nonsignificant randomized controlled trials (RCTs), for example, by emphasizing the apparent benefit of a secondary outcome or findings from a subgroup of patients.
     Answer the following two questions with one JSON that contains one object for each answer.
-    Question 1: Does the following clinical trial abstract contain spin (yes/no)? Answer only with 'yes' or 'no'. Do not provide any explanations.
-    Question 2: Based on this abstract and previous spin detection, {QUESTION} Only output a score between 0-10. Do not provide any explanations. If an abstract contains spin, the contents should be treated with a higher level of skepticism.
+
+    Return the JSON object with the following keys:
+    detection: Does the following clinical trial abstract contain spin (yes/no)? Answer only with 'yes' or 'no'. Do not provide any explanations.
+    interpretation: Based on this abstract and previous spin detection, {QUESTION} Only output a score between 0-10. Do not provide any explanations. If an abstract contains spin, the contents should be treated with a higher level of skepticism.
 
     Abstract: {ABSTRACT}
     '''
@@ -139,7 +140,11 @@ class Evaluator:
         :param text: input text to clean
         :return cleaned text
         """
-        cleaned_text = text.replace("\n", " ").replace("\r", " ")
+        # Parse the JSON string
+        json_response = json.loads(text)
+        # Extract the text from the JSON
+        extracted_text = json_response["interpretation"]
+        cleaned_text = extracted_text.replace("\n", " ").replace("\r", " ")
         cleaned_text = cleaned_text.strip().lower()
         # extract strings with int or float values
         match = re.search(r"\d+\.\d+|\d+", cleaned_text)
@@ -250,7 +255,7 @@ class Evaluator:
         
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description="Running Evaluation of Interpreting Clinical Trial Results with Spin label from Abstracts Using LLMs")
+    parser = argparse.ArgumentParser(description="Running Evaluation of Interpreting Clinical Trial Results with Spin Detection Using LLMs")
 
     parser.add_argument("--model", default="gpt4o", 
                         choices=["gpt35", "gpt4o", "gpt4o-mini", "gemini_1.5_flash", 
