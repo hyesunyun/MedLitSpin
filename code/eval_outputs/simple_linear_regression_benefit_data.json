@@ -12,9 +12,9 @@
         "p_value": 0.000
     },
     "gpt35": {
-        "coef": 1.4333,
-        "ci_lower": 0.982,
-        "ci_upper": 1.884,
+        "coef": 3.9000,
+        "ci_lower": 3.205,
+        "ci_upper": 4.595,
         "p_value": 0.000
     },
     "gemini_1.5_flash": {

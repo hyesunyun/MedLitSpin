@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.8.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}, "axis": {"labelFontSize": 20, "titleFontSize": 22}, "header": {"labelFontSize": 20, "titleFontSize": 22}, "legend": {"labelFontSize": 18, "titleFontSize": 20}, "text": {"fontSize": 20}}, "data": {"name": "data-3c9086933036790af59bff10c59cd985"}, "facet": {"column": {"field": "metric", "sort": ["Benefit", "Rigor", "Importance", "Full-Text", "Another Trial"], "title": null, "type": "nominal"}}, "spec": {"layer": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "evaluator", "legend": null, "scale": {"domain": ["Claude 3.5 Sonnet", "GPT4o Mini"], "range": ["#0868ac", "#43a2ca"]}, "title": "Evaluator", "type": "nominal"}, "x": {"axis": {"labelAngle": -45}, "field": "evaluator", "sort": ["Claude 3.5 Sonnet", "GPT4o Mini"], "title": null, "type": "nominal"}, "y": {"field": "mean_diff", "title": "Mean Difference", "type": "quantitative"}}}, {"mark": {"type": "text", "align": "center", "baseline": "bottom", "dy": {"expr": "if((datum.mean_diff >= 0),-1,20)"}, "fontWeight": "bold"}, "encoding": {"color": {"value": "black"}, "text": {"field": "mean_diff", "format": ".2f", "type": "quantitative"}, "x": {"axis": {"labelAngle": -45}, "field": "evaluator", "sort": ["Claude 3.5 Sonnet", "GPT4o Mini"], "title": null, "type": "nominal"}, "y": {"field": "mean_diff", "title": "Mean Difference", "type": "quantitative"}}}, {"mark": {"type": "errorbar"}, "encoding": {"color": {"value": "gray"}, "strokeWidth": {"value": 2}, "x": {"field": "evaluator", "sort": ["Claude 3.5 Sonnet", "GPT4o Mini"], "type": "nominal"}, "y": {"field": "ci_lower", "title": "Mean Difference", "type": "quantitative"}, "y2": {"field": "ci_upper"}}}], "height": 250, "width": 120}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-3c9086933036790af59bff10c59cd985": [{"mean_diff": 3.592424242424241, "ci_lower": 3.573720651762486, "ci_upper": 3.611127833085996, "metric": "Benefit", "evaluator": "GPT4o Mini"}, {"mean_diff": 1.3530303030303024, "ci_lower": 1.332121563463645, "ci_upper": 1.3739390425969598, "metric": "Rigor", "evaluator": "GPT4o Mini"}, {"mean_diff": 2.7303030303030305, "ci_lower": 2.70759383884234, "ci_upper": 2.7530122217637207, "metric": "Importance", "evaluator": "GPT4o Mini"}, {"mean_diff": 3.686363636363637, "ci_lower": 3.655170035896047, "ci_upper": 3.717557236831227, "metric": "Full-Text", "evaluator": "GPT4o Mini"}, {"mean_diff": 3.8681818181818186, "ci_lower": 3.8404974942114825, "ci_upper": 3.8958661421521548, "metric": "Another Trial", "evaluator": "GPT4o Mini"}, {"mean_diff": 2.471212121212122, "ci_lower": 2.4663195188992315, "ci_upper": 2.4761047235250127, "metric": "Benefit", "evaluator": "Claude 3.5 Sonnet"}, {"mean_diff": -0.1757575757575753, "ci_lower": -0.18210705495937363, "ci_upper": -0.169408096555777, "metric": "Rigor", "evaluator": "Claude 3.5 Sonnet"}, {"mean_diff": -0.33787878787878745, "ci_lower": -0.34568223495993894, "ci_upper": -0.33007534079763595, "metric": "Importance", "evaluator": "Claude 3.5 Sonnet"}, {"mean_diff": 2.818181818181818, "ci_lower": 2.8047750415739086, "ci_upper": 2.8315885947897272, "metric": "Full-Text", "evaluator": "Claude 3.5 Sonnet"}, {"mean_diff": 2.706060606060605, "ci_lower": 2.6870121684552104, "ci_upper": 2.725109043666, "metric": "Another Trial", "evaluator": "Claude 3.5 Sonnet"}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
