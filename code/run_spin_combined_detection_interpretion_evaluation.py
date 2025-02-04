@@ -139,7 +139,8 @@ class Evaluator:
         :return cleaned text
         """
         text = text.replace("`", "").replace("''", "").replace("``", "").replace("\n", "").replace("\r", "").replace("json", "")
-        # remove text after "}"
+        # remove text before "{" and after "}"
+        text = "{" + text.split("{")[-1]
         text = text.split("}")[0] + "}"
         # Parse the JSON string
         try:
