@@ -1,0 +1,148 @@
+
+     active environment : MedLitSpin
+    active env location : /home/yun.hy/.conda/envs/MedLitSpin
+            shell level : 2
+       user config file : /home/yun.hy/.condarc
+ populated config files : 
+          conda version : 4.5.4
+    conda-build version : 3.10.5
+         python version : 3.6.5.final.0
+       base environment : /shared/centos7/anaconda3/3.6  (read only)
+           channel URLs : https://repo.anaconda.com/pkgs/main/linux-64
+                          https://repo.anaconda.com/pkgs/main/noarch
+                          https://repo.anaconda.com/pkgs/free/linux-64
+                          https://repo.anaconda.com/pkgs/free/noarch
+                          https://repo.anaconda.com/pkgs/r/linux-64
+                          https://repo.anaconda.com/pkgs/r/noarch
+                          https://repo.anaconda.com/pkgs/pro/linux-64
+                          https://repo.anaconda.com/pkgs/pro/noarch
+          package cache : /shared/centos7/anaconda3/3.6/pkgs
+                          /home/yun.hy/.conda/pkgs
+       envs directories : /home/yun.hy/.conda/envs
+                          /shared/centos7/anaconda3/3.6/envs
+               platform : linux-64
+             user-agent : conda/4.5.4 requests/2.18.4 CPython/3.6.5 Linux/3.10.0-1160.25.1.el7.x86_64 centos/7 glibc/2.17
+                UID:GID : 1825635949:100
+             netrc file : /home/yun.hy/.netrc
+           offline mode : False
+
+Running evaluation for interpreting trial results with model detection in one prompt...
+Arguments Provided for the Evaluator:
+Model:        gpt35
+Output Path:  code/eval_outputs/gpt35
+Is Debug:     None
+
+Loading the dataset...
+Loading the model...
+Saving outputs from model - gpt35 to csv and json
+Model outputs saved to code/eval_outputs/gpt35/gpt35_combined_detection_interpretation_outputs.json and code/eval_outputs/gpt35/gpt35_combined_detection_interpretation_outputs.csv
+Calculating means differences in scores between spin and no spin abstracts...
+Mean difference for 'benefit_answer': 2.5333333333333328
+Mean difference for 'rigor_answer': -0.8666666666666671
+Mean difference for 'importance_answer': 0.8666666666666671
+Mean difference for 'full_text_answer': 1.7333333333333334
+Mean difference for 'another_trial_answer': 2.466666666666667
+
+Overall mean difference across all answers: 1.3466666666666667
+Arguments Provided for the Evaluator:
+Model:        gpt4o
+Output Path:  code/eval_outputs/gpt4o
+Is Debug:     None
+
+Loading the dataset...
+Loading the model...
+Saving outputs from model - gpt4o to csv and json
+Model outputs saved to code/eval_outputs/gpt4o/gpt4o_combined_detection_interpretation_outputs.json and code/eval_outputs/gpt4o/gpt4o_combined_detection_interpretation_outputs.csv
+Calculating means differences in scores between spin and no spin abstracts...
+Mean difference for 'benefit_answer': 0.8999999999999995
+Mean difference for 'rigor_answer': -1.9333333333333336
+Mean difference for 'importance_answer': -0.06666666666666643
+Mean difference for 'full_text_answer': 0.09999999999999964
+Mean difference for 'another_trial_answer': 0.7999999999999998
+
+Overall mean difference across all answers: -0.040000000000000216
+Arguments Provided for the Evaluator:
+Model:        gpt4o-mini
+Output Path:  code/eval_outputs/gpt4o-mini
+Is Debug:     None
+
+Loading the dataset...
+Loading the model...
+Saving outputs from model - gpt4o-mini to csv and json
+Model outputs saved to code/eval_outputs/gpt4o-mini/gpt4o-mini_combined_detection_interpretation_outputs.json and code/eval_outputs/gpt4o-mini/gpt4o-mini_combined_detection_interpretation_outputs.csv
+Calculating means differences in scores between spin and no spin abstracts...
+Mean difference for 'benefit_answer': 1.3333333333333335
+Mean difference for 'rigor_answer': -2.8666666666666663
+Mean difference for 'importance_answer': 0.7666666666666662
+Mean difference for 'full_text_answer': 0.06666666666666732
+Mean difference for 'another_trial_answer': 0.5666666666666669
+
+Overall mean difference across all answers: -0.026666666666666484
+Arguments Provided for the Evaluator:
+Model:        gemini_1.5_flash
+Output Path:  code/eval_outputs/gemini_1.5_flash
+Is Debug:     None
+
+Loading the dataset...
+Loading the model...
+Saving outputs from model - gemini_1.5_flash to csv and json
+Model outputs saved to code/eval_outputs/gemini_1.5_flash/gemini_1.5_flash_combined_detection_interpretation_outputs.json and code/eval_outputs/gemini_1.5_flash/gemini_1.5_flash_combined_detection_interpretation_outputs.csv
+Calculating means differences in scores between spin and no spin abstracts...
+Mean difference for 'benefit_answer': 0.10000000000000009
+Mean difference for 'rigor_answer': -2.4
+Mean difference for 'importance_answer': -0.5333333333333332
+Mean difference for 'full_text_answer': -1.5333333333333328
+Mean difference for 'another_trial_answer': 0.19999999999999973
+
+Overall mean difference across all answers: -0.8333333333333333
+Arguments Provided for the Evaluator:
+Model:        gemini_1.5_flash-8B
+Output Path:  code/eval_outputs/gemini_1.5_flash-8B
+Is Debug:     None
+
+Loading the dataset...
+Loading the model...
+Saving outputs from model - gemini_1.5_flash-8B to csv and json
+Model outputs saved to code/eval_outputs/gemini_1.5_flash-8B/gemini_1.5_flash-8B_combined_detection_interpretation_outputs.json and code/eval_outputs/gemini_1.5_flash-8B/gemini_1.5_flash-8B_combined_detection_interpretation_outputs.csv
+Calculating means differences in scores between spin and no spin abstracts...
+Mean difference for 'benefit_answer': 0.8999999999999999
+Mean difference for 'rigor_answer': -1.6333333333333337
+Mean difference for 'importance_answer': -0.36666666666666625
+Mean difference for 'full_text_answer': -1.9
+Mean difference for 'another_trial_answer': -0.33333333333333304
+
+Overall mean difference across all answers: -0.6666666666666666
+Arguments Provided for the Evaluator:
+Model:        claude_3.5-sonnet
+Output Path:  code/eval_outputs/claude_3.5-sonnet
+Is Debug:     None
+
+Loading the dataset...
+Loading the model...
+Saving outputs from model - claude_3.5-sonnet to csv and json
+Model outputs saved to code/eval_outputs/claude_3.5-sonnet/claude_3.5-sonnet_combined_detection_interpretation_outputs.json and code/eval_outputs/claude_3.5-sonnet/claude_3.5-sonnet_combined_detection_interpretation_outputs.csv
+Calculating means differences in scores between spin and no spin abstracts...
+Mean difference for 'benefit_answer': 0.8666666666666667
+Mean difference for 'rigor_answer': -3.000000000000001
+Mean difference for 'importance_answer': -2.8
+Mean difference for 'full_text_answer': -4.066666666666666
+Mean difference for 'another_trial_answer': 1.266666666666667
+
+Overall mean difference across all answers: -1.5466666666666666
+Arguments Provided for the Evaluator:
+Model:        claude_3.5-haiku
+Output Path:  code/eval_outputs/claude_3.5-haiku
+Is Debug:     None
+
+Loading the dataset...
+Loading the model...
+Saving outputs from model - claude_3.5-haiku to csv and json
+Model outputs saved to code/eval_outputs/claude_3.5-haiku/claude_3.5-haiku_combined_detection_interpretation_outputs.json and code/eval_outputs/claude_3.5-haiku/claude_3.5-haiku_combined_detection_interpretation_outputs.csv
+Calculating means differences in scores between spin and no spin abstracts...
+Mean difference for 'benefit_answer': 0.7333333333333334
+Mean difference for 'rigor_answer': -0.7999999999999998
+Mean difference for 'importance_answer': 0.49999999999999956
+Mean difference for 'full_text_answer': -0.2999999999999998
+Mean difference for 'another_trial_answer': 0.7666666666666666
+
+Overall mean difference across all answers: 0.18

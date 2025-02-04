@@ -3,11 +3,11 @@
 models=(
   "gpt35"
   "gpt4o"
-  # "gpt4o-mini"
-  # "gemini_1.5_flash"
-  # "gemini_1.5_flash-8B"
-  # "claude_3.5-sonnet"
-  # "claude_3.5-haiku"
+  "gpt4o-mini"
+  "gemini_1.5_flash"
+  "gemini_1.5_flash-8B"
+  "claude_3.5-sonnet"
+  "claude_3.5-haiku"
   # "olmo2_instruct-7B"
   # "olmo2_instruct-13B"
   # "mistral_instruct7B"
@@ -72,6 +72,5 @@ for model in "${models[@]}"; do
   # Run the script with the current model
   python3 code/run_spin_combined_detection_interpretion_evaluation.py \
     --model "$model" \
-    --label_mode "model_output_label" \
-    --output_path "code/eval_outputs/$model" --debug
+    --output_path "code/eval_outputs/$model"
 done

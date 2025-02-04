@@ -138,11 +138,18 @@ class Evaluator:
         :param text: input text to clean
         :return cleaned text
         """
-        text = text.replace("`", "").replace("''", "").replace("``", "")
+        text = text.replace("`", "").replace("''", "").replace("``", "").replace("\n", "").replace("\r", "").replace("json", "")
+        # remove text after "}"
+        text = text.split("}")[0] + "}"
         # Parse the JSON string
-        json_response = json.loads(text)
+        try:
+            json_response = json.loads(text)
+        except json.JSONDecodeError:
+            print("Error: JSONDecodeError while parsing the response")
+            print(f"Response: {text}")
+            return ""
         # Extract the text from the JSON
-        extracted_text = json_response["interpretation"]
+        extracted_text = str(json_response["interpretation"])
         cleaned_text = extracted_text.replace("\n", " ").replace("\r", " ")
         cleaned_text = cleaned_text.strip().lower()
         # extract strings with int or float values
