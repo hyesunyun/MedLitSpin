@@ -5,8 +5,8 @@ Number of rows with NaN value(s) in gemini_1.5_flash: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.483
 Model:                               OLS   Adj. R-squared:                  0.474
 Method:                    Least Squares   F-statistic:                     54.14
-Date:                   Mon, 03 Feb 2025   Prob (F-statistic):           7.33e-10
-Time:                           17:25:11   Log-Likelihood:                -100.59
+Date:                   Tue, 18 Mar 2025   Prob (F-statistic):           7.33e-10
+Time:                           14:48:32   Log-Likelihood:                -100.59
 No. Observations:                     60   AIC:                             205.2
 Df Residuals:                         58   BIC:                             209.4
 Df Model:                              1                                         
@@ -32,8 +32,8 @@ Number of rows with NaN value(s) in gemini_1.5_flash: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.014
 Model:                               OLS   Adj. R-squared:                 -0.003
 Method:                    Least Squares   F-statistic:                    0.8031
-Date:                   Mon, 03 Feb 2025   Prob (F-statistic):              0.374
-Time:                           17:25:11   Log-Likelihood:                -33.785
+Date:                   Tue, 18 Mar 2025   Prob (F-statistic):              0.374
+Time:                           14:48:32   Log-Likelihood:                -33.785
 No. Observations:                     60   AIC:                             71.57
 Df Residuals:                         58   BIC:                             75.76
 Df Model:                              1                                         
@@ -59,8 +59,8 @@ Number of rows with NaN value(s) in gemini_1.5_flash: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.443
 Model:                               OLS   Adj. R-squared:                  0.433
 Method:                    Least Squares   F-statistic:                     46.11
-Date:                   Mon, 03 Feb 2025   Prob (F-statistic):           6.58e-09
-Time:                           17:25:11   Log-Likelihood:                -96.819
+Date:                   Tue, 18 Mar 2025   Prob (F-statistic):           6.58e-09
+Time:                           14:48:32   Log-Likelihood:                -96.819
 No. Observations:                     60   AIC:                             197.6
 Df Residuals:                         58   BIC:                             201.8
 Df Model:                              1                                         
@@ -86,8 +86,8 @@ Number of rows with NaN value(s) in gemini_1.5_flash: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.553
 Model:                               OLS   Adj. R-squared:                  0.546
 Method:                    Least Squares   F-statistic:                     71.88
-Date:                   Mon, 03 Feb 2025   Prob (F-statistic):           9.73e-12
-Time:                           17:25:11   Log-Likelihood:                -103.03
+Date:                   Tue, 18 Mar 2025   Prob (F-statistic):           9.73e-12
+Time:                           14:48:32   Log-Likelihood:                -103.03
 No. Observations:                     60   AIC:                             210.1
 Df Residuals:                         58   BIC:                             214.2
 Df Model:                              1                                         
@@ -113,8 +113,8 @@ Number of rows with NaN value(s) in gemini_1.5_flash: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.677
 Model:                               OLS   Adj. R-squared:                  0.672
 Method:                    Least Squares   F-statistic:                     121.7
-Date:                   Mon, 03 Feb 2025   Prob (F-statistic):           7.25e-16
-Time:                           17:25:11   Log-Likelihood:                -99.824
+Date:                   Tue, 18 Mar 2025   Prob (F-statistic):           7.25e-16
+Time:                           14:48:32   Log-Likelihood:                -99.824
 No. Observations:                     60   AIC:                             203.6
 Df Residuals:                         58   BIC:                             207.8
 Df Model:                              1                                         
@@ -140,8 +140,8 @@ Number of rows with NaN value(s) in gemini_1.5_flash: 0
 Dep. Variable:     interpretation_answer   R-squared:                       0.605
 Model:                               OLS   Adj. R-squared:                  0.599
 Method:                    Least Squares   F-statistic:                     89.00
-Date:                   Mon, 03 Feb 2025   Prob (F-statistic):           2.57e-13
-Time:                           17:25:11   Log-Likelihood:                -79.447
+Date:                   Tue, 18 Mar 2025   Prob (F-statistic):           2.57e-13
+Time:                           14:48:32   Log-Likelihood:                -79.447
 No. Observations:                     60   AIC:                             162.9
 Df Residuals:                         58   BIC:                             167.1
 Df Model:                              1                                         
