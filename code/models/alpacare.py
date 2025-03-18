@@ -21,12 +21,10 @@ class AlpaCare(Model):
         set_seed(SEED)
         self.model_type = model_type
         if model_type == "7B":
-            # self.model_name = "xz97/AlpaCare-llama2-7b"
-            self.model_name = "/projects/frink/models/alpaca-7b"
+            self.model_name = "xz97/AlpaCare-llama2-7b"
         else:
             # 13B model does not seem to work / tokenizer seems to be messed up
-            # self.model_name = "xz97/AlpaCare-llama2-13b"
-            self.model_name = "/projects/frink/models/alpaca-13b"
+            self.model_name = "xz97/AlpaCare-llama2-13b"
         self.model = self.__load_model()
         self.tokenizer = self.__load_tokenizer()
 

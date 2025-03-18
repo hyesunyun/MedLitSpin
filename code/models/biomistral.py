@@ -18,8 +18,7 @@ class BioMistral(Model):
         return 2048
         
     def __load_model(self):
-        # model_name = "BioMistral/BioMistral-7B"
-        model_name = "/projects/frink/models/biomistral-7b"
+        model_name = "BioMistral/BioMistral-7B"
         model = AutoModelForCausalLM.from_pretrained(
             model_name, device_map="auto", torch_dtype=torch.bfloat16
         ) # bfloat16 based on config.json
@@ -33,8 +32,7 @@ class BioMistral(Model):
         return model
 
     def __load_tokenizer(self):
-        # model_name = "BioMistral/BioMistral-7B"
-        model_name = "/projects/frink/models/biomistral-7b"
+        model_name = "BioMistral/BioMistral-7B"
         tokenizer = AutoTokenizer.from_pretrained(model_name)
         tokenizer.pad_token = tokenizer.eos_token  # Most LLMs don't have a pad token by default
         return tokenizer

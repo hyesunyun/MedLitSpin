@@ -19,8 +19,7 @@ class BioMedGPT(Model):
         return 2048
         
     def __load_model(self):
-        # model_name = "PharMolix/BioMedGPT-LM-7B"
-        model_name = "/projects/frink/models/biomedgpt-7b"
+        model_name = "PharMolix/BioMedGPT-LM-7B"
         model = AutoModelForCausalLM.from_pretrained(
             model_name, device_map="auto", torch_dtype=torch.float16
         ) # float16 based on config.json
@@ -37,8 +36,7 @@ class BioMedGPT(Model):
         return model
 
     def __load_tokenizer(self):
-        # model_name = "PharMolix/BioMedGPT-LM-7B"
-        model_name = "/projects/frink/models/biomedgpt-7b"
+        model_name = "PharMolix/BioMedGPT-LM-7B"
         tokenizer = AutoTokenizer.from_pretrained(model_name)
         return tokenizer
 

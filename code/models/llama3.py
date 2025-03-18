@@ -11,13 +11,10 @@ class Llama3(Model):
     def __init__(self, model_type: str = "8B") -> None:
         super().__init__()
         set_seed(SEED)
-        # TODO: revert to model_name = "meta-llama/Llama-2-13b-chat-hf" after running the models
         if model_type == "8B":
-            # self.model_name = "meta-llama/Meta-Llama-3-8B-Instruct"
-            self.model_name = "/projects/frink/models/llama3-8B-Instruct-HF"
+            self.model_name = "meta-llama/Meta-Llama-3-8B-Instruct"
         else:
-            # self.model_name = "meta-llama/Meta-Llama-3-70B-Instruct"
-            self.model_name = "/projects/frink/models/models--meta-llama--Meta-Llama-3-70B-Instruct/snapshots/5fcb2901844dde3111159f24205b71c25900ffbd"
+            self.model_name = "meta-llama/Meta-Llama-3-70B-Instruct"
         self.model = self.__load_model()
         self.tokenizer = self.__load_tokenizer()
 

@@ -12,11 +12,9 @@ class Olmo(Model):
         super().__init__()
         set_seed(SEED)
         if model_type == "7B":
-            # self.model_name = "allenai/OLMo-2-1124-7B-Instruct"
-            self.model_name = "/projects/frink/models/olmo-2-1124-7b-instruct"
+            self.model_name = "allenai/OLMo-2-1124-7B-Instruct"
         else:
-            # self.model_name = "allenai/OLMo-2-1124-13B-Instruct"
-            self.model_name = "/projects/frink/models/olmo-2-1124-13b-instruct"
+            self.model_name = "allenai/OLMo-2-1124-13B-Instruct"
         self.model = self.__load_model()
         self.tokenizer = self.__load_tokenizer()
 

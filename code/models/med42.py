@@ -12,11 +12,9 @@ class Med42(Model): # version 2
         super().__init__()
         set_seed(SEED)
         if model_type == "8B":
-            # self.model_name = "m42-health/Llama3-Med42-8B"
-            self.model_name = "/projects/frink/models/med42-8b"
+            self.model_name = "m42-health/Llama3-Med42-8B"
         else:
-            # self.model_name = "m42-health/Llama3-Med42-70B"
-            self.model_name = "/projects/frink/models/med42-70b"
+            self.model_name = "m42-health/Llama3-Med42-70B"
         self.model = self.__load_model()
         self.tokenizer = self.__load_tokenizer()
 

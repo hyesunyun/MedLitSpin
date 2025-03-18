@@ -12,11 +12,9 @@ class OpenBioLLM(Model): # version 2
         super().__init__()
         set_seed(SEED)
         if model_type == "8B":
-            # self.model_name = "aaditya/Llama3-OpenBioLLM-8B"
-            self.model_name = "/projects/frink/models/openbiollm-8b"
+            self.model_name = "aaditya/Llama3-OpenBioLLM-8B"
         else:
-            # self.model_name = "aaditya/Llama3-OpenBioLLM-70B"
-            self.model_name = "/projects/frink/models/openbiollm-70b"
+            self.model_name = "aaditya/Llama3-OpenBioLLM-70B"
         self.model = self.__load_model()
         self.tokenizer = self.__load_tokenizer()
 
