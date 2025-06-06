@@ -195,3 +195,15 @@ Script to replicate the paper experiment running all mitigation strategies:
 ```bash
 scripts/run_evaluation_mitigation_strategies.sh
 ```
+
+## :star: CITATION
+
+```bibtex
+@inproceedings{yun2025caught,
+  title={Caught in the Web of Words: Do LLMs Fall for Spin in Medical Literature?},
+  author={Yun, Hye Sun and Zhang, Karen YC and Kouzy, Ramez and Marshall, Iain J and Li, Junyi Jessy and Wallace, Byron C},
+  booktitle={Conference on Health, Inference, and Learning (CHIL) 2025},
+  year={2025},
+  organization={PMLR}
+}
+```
