@@ -122,74 +122,6 @@ class Generator:
         """
         return 1000
     
-    # def __clean_text(self, text: str) -> str:
-    #     """
-    #     This method cleans the text by removing any leading/trailing whitespaces.
-    #     Removes any punctuations.
-
-    #     :param text: input text to clean
-    #     :return cleaned text
-    #     """
-    #     cleaned_text = text.replace("\n", " ").replace("\r", " ")
-    #     cleaned_text = cleaned_text.strip().lower()
-    #     # extract strings with int or float values
-    #     match = re.search(r"\d+\.\d+|\d+", cleaned_text)
-    #     if match:
-    #         cleaned_text = match.group()
-    #     else:
-    #         return ""
-
-    #     # if the cleaned text happens to have an invalid number (not 0-10), return empty string
-    #     if not (0.0 <= float(cleaned_text) <= 10.0):
-    #         return ""
-    #     return cleaned_text
-
-    # def __calculate_mean_differences(self, dataset: List[Dict]) -> Dict:
-    #     """
-    #     This method calculates the mean differences between spun and unspun abstracts for each question
-    #     and then calculates the average across all questions.
-
-    #     :param dataset: list of dictionaries containing the abstracts and the model outputs
-    #     :return dictionary containing the differences
-    #     """
-    #     print("Calculating means differences in scores between spun and unspun abstracts...")
-    #     df = pd.DataFrame(dataset)
-
-    #     # column names for the 5 questions
-    #     column_names = ["benefit_answer", "rigor_answer", "importance_answer", "full_text_answer", "another_trial_answer"]
-
-    #     diff_metrics = {}
-    #     for col in column_names:
-    #         df_copy = df.copy()
-    #         # check if column values have any Error or empty string values for model outputs
-    #         if df_copy[col].apply(lambda x: "Error" in x or x == "").any():
-    #             print(f"Column '{col}' has some 'Error' or empty string values. Removing these rows from the metrics...")
-    #             # remove pmids rows with 'Error' or empty string values
-    #             error_pmids = df_copy[df_copy[col].apply(lambda x: "Error" in x or x == "")]['PMID'].tolist()
-    #             # unique ids
-    #             error_pmids = list(set(error_pmids))
-    #             df_copy = df_copy[~df_copy['PMID'].isin(error_pmids)]
-    #             print(f"PMIDs with 'Error' or empty string values in column '{col}': {error_pmids}")
-    #             print(f"Number of rows after removing 'Error' or empty string values: {len(df_copy)}")
-
-    #         # for each column, get the average of spin and no_spin answers
-    #         spin_avg = df_copy[df_copy['abstract_type'] == 'spin'][col].astype(float).mean()
-    #         no_spin_avg = df_copy[df_copy['abstract_type'] == 'no_spin'][col].astype(float).mean()
-            
-    #         # print(f"Average for '{col}' (spin): {spin_avg}")
-    #         # print(f"Average for '{col}' (no_spin): {no_spin_avg}")
-
-    #         diff = spin_avg - no_spin_avg
-    #         diff_metrics[f"{col}_diff"] = diff
-    #         print(f"Mean difference for '{col}': {diff}")
-
-    #     # Average across all columns
-    #     overall_avg = mean(diff_metrics.values())
-    #     diff_metrics['overall_avg'] = overall_avg
-
-    #     print(f"\nOverall mean difference across all answers: {overall_avg}")
-
-    #     return diff_metrics
 
     def generate(self) -> None:
         """
@@ -234,12 +166,6 @@ class Generator:
 
         print(f"Model outputs saved to {json_file_path} and {csv_file_path}")
 
-        # # To calculate the mean differences between spun and unspun abstracts
-        # diff_metrics = self.__calculate_mean_differences(results)
-
-        # # save the differences to a file 
-        # diff_file_path = f"{self.output_path}/{self.model_name}_mean_differences_metrics.json"
-        # save_dataset_to_json(diff_metrics, diff_file_path)
         
 
 if __name__ == '__main__':
