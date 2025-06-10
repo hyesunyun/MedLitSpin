@@ -4,7 +4,8 @@ import os
 from models.gpt35 import GPT35
 from models.gpt4 import GPT4
 from models.gemini import Gemini
-from code.models.claude35 import Claude
+from models.claude35 import Claude35
+from models.claude4 import Claude4
 from models.olmo import Olmo
 from models.mistral import Mistral
 from models.llama2 import Llama2
@@ -83,8 +84,10 @@ class Generator:
                 "gpt4o-mini": GPT4,
                 "gemini_1.5_flash": Gemini,
                 "gemini_1.5_flash-8B": Gemini,
-                "claude_3.5-sonnet": Claude,
-                "claude_3.5-haiku": Claude,
+                "claude_3.5-sonnet": Claude35,
+                "claude_3.5-haiku": Claude35,
+                "claude_4.0-sonnet": Claude4,
+                "claude_4.0-opus": Claude4,
                 "olmo2_instruct-7B": Olmo,
                 "olmo2_instruct-13B": Olmo,
                 "mistral_instruct7B": Mistral,
