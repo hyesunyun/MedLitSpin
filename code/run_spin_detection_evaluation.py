@@ -5,7 +5,7 @@ from typing import Dict, List
 from models.gpt35 import GPT35
 from models.gpt4 import GPT4
 from models.gemini import Gemini
-from models.claude import Claude
+from code.models.claude35 import Claude
 from models.olmo import Olmo
 from models.mistral import Mistral
 from models.llama2 import Llama2
@@ -232,7 +232,7 @@ if __name__ == '__main__':
 
     parser.add_argument("--model", default="gpt4o", 
                         choices=["gpt35", "gpt4o", "gpt4o-mini", "gemini_1.5_flash", 
-                                 "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku", 
+                                 "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku", "claude_4.0-sonnet", "claude_4.0-opus",
                                  "olmo2_instruct-7B", "olmo2_instruct-13B", "mistral_instruct7B", "llama2_chat-7B",
                                  "llama2_chat-13B", "llama2_chat-70B", "llama3_instruct-8B", "llama3_instruct-70B",
                                  "med42-8B", "med42-70B", "openbiollm-8B", "openbiollm-70B", "biomistral7B", "biomedgpt7B",
