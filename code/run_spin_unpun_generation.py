@@ -54,7 +54,7 @@ class Generator:
     Abstract: {ABSTRACT}
     '''
 
-    MODELS_WITH_RATE_LIMIT = {"gemini_1.5_flash", "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku"}
+    MODELS_WITH_RATE_LIMIT = {"gemini_1.5_flash", "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku", "claude_4.0-sonnet", "claude_4.0-opus"}
     def __init__(self, model_name: str, output_path: str, is_debug: bool = False) -> None:
         self.model_name = model_name
         self.output_path = output_path
@@ -142,9 +142,9 @@ class Generator:
             input = self.BASE_PROMPT.format(LOWER_BOUND=lower_bound, UPPER_BOUND=upper_bound, ABSTRACT=example["Abstract"])
             output = self.model.generate_output(input, max_new_tokens=self.max_new_tokens)
 
-            example[f"Unspun Abstract"] = output["response"] if "response" in output else "Error: No response from the model"
-            # example[f"{key}_answer"] = self.__clean_text(output["response"]) if "response" in output else "Error: No response from the model"
-            # example[f"log_probabilities"] = output["log_probabilities"] if "log_probabilities" in output else "Error: No response from the model"
+            example["Unspun Abstract"] = output["response"] if "response" in output else "Error: No response from the model"
+            example["Model Name"] = self.model_name
+
             if self.model_name in self.MODELS_WITH_RATE_LIMIT:
                 # add some default time gap to avoid rate limiting (free version/tier)
                 time.sleep(REQ_TIME_GAP)
@@ -153,15 +153,12 @@ class Generator:
         # saving outputs to file
         print(f"Saving outputs from model - {self.model_name} to csv and json")
 
-        # sort results by id
-        # results = sorted(results, key=lambda x: x["PMID"])
-
         # convert into json
-        json_file_path = f"{self.output_path}/{self.model_name}_unpun_abstract.json"
+        json_file_path = f"{self.output_path}/{self.model_name}_generated_no_spin_abstracts.json"
         save_dataset_to_json(results, json_file_path)
 
         # convert into csv
-        csv_file_path = f"{self.output_path}/{self.model_name}_unpun_abstract.csv"
+        csv_file_path = f"{self.output_path}/{self.model_name}_generated_no_spin_abstracts.csv"
         save_dataset_to_csv(results, csv_file_path)
 
         print(f"Model outputs saved to {json_file_path} and {csv_file_path}")
@@ -173,7 +170,7 @@ if __name__ == '__main__':
 
     parser.add_argument("--model", default="gpt4o", 
                         choices=["gpt35", "gpt4o", "gpt4o-mini", "gemini_1.5_flash", 
-                                 "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku",  "claude_4.0-sonnet"], 
+                                 "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku",  "claude_4.0-sonnet", "claude_4.0-opus"], 
                         help="what model to run", 
                         required=True)
     parser.add_argument("--output_path", default="../data/unspun_abstracts", help="directory of where the outputs/results should be saved.")

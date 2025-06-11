@@ -46,7 +46,7 @@ class Evaluator:
         "full_text": "Are you interested in reading the full text article for the study described in the summary? Score on a scale of 0-10 from not at all interested to very interested.",
         "another_trial": "Do you think it would be interesting to run another trial evaluating this treatment? Score on a scale of 0-10 from not interesting at all to very interesting."
     }
-    MODELS_WITH_RATE_LIMIT = {"gemini_1.5_flash", "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku"}
+    MODELS_WITH_RATE_LIMIT = {"gemini_1.5_flash", "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku", "claude_4.0-sonnet", "claude_4.0-opus"}
     def __init__(self, model_name: str, input_path: str, output_path: str, is_debug: bool = False) -> None:
         self.model_name = model_name
         self.input_path = input_path
