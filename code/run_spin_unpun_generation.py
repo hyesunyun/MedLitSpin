@@ -33,9 +33,9 @@ class Generator:
     Guidelines for writing an abstract without spin:
     In the Context section:
     a. Delete all information that could distort the understanding of the aim of the trial.
-    i. The aim is to evaluate the treatment effect on a secondary outcome.
-    ii. The aim is to evaluate the treatment effect for a subgroup.
-    iii. The aim is to evaluate overall improvement.
+        i. The aim is to evaluate the treatment effect on a secondary outcome.
+        ii. The aim is to evaluate the treatment effect for a subgroup.
+        iii. The aim is to evaluate overall improvement.
     In the Methods section:
     a. Clearly report the primary outcome.
     b. According to space constraints, report all secondary outcomes evaluated in the Methods section or report no secondary outcome evaluated in the Methods section to avoid specifically highlighting statistically significant secondary outcomes.
@@ -48,8 +48,8 @@ class Generator:
     e. Report results for all secondary outcomes, for no secondary outcome, or for the most clinically important secondary outcome.
     f. Report safety data including reason for withdrawals; report treatment discontinuation when applicable.
     In the Conclusions section:
-    a. Delete the author conclusion, and only add the following standardized conclusion: “the treatment A was not more effective than comparator B in patients with….”
-    b. Specify the primary outcome in the conclusion when some secondary outcomes were statistically significant: “the treatment A was not more effective on overall survival than the comparator B in patients with….”
+    a. Delete the author conclusion, and only add the following standardized conclusion: “the treatment A was not more effective than comparator B in patients with....”
+    b. Specify the primary outcome in the conclusion when some secondary outcomes were statistically significant: “the treatment A was not more effective on overall survival than the comparator B in patients with....”
 
     Abstract: {ABSTRACT}
     '''
@@ -74,19 +74,13 @@ class Generator:
         :return dataset as a list of dictionaries
         """
         print("Loading the dataset...")
-        eval_data_file_path = os.path.join(DATA_FOLDER_PATH, "Spin_abstracts_test_new.csv")
+        eval_data_file_path = os.path.join(DATA_FOLDER_PATH, "spin_abstracts.csv")
         dataset = load_csv_file(eval_data_file_path)
-
-        # shuffle the dataset since it is ordered by pmcid
-        random.seed(SEED) # set seed for reproducibility
-        random.shuffle(dataset)
 
         # if test, only get 3 random examples
         if self.is_debug:
-            # select random 3 pmids
-            pmids = random.sample([example["PMID"] for example in dataset], 3)
-            # get both spun and unspun abstracts for the selected pmids
-            dataset = [example for example in dataset if example["PMID"] in pmids]
+            random.seed(SEED) # set seed for reproducibility
+            dataset = random.sample(dataset, 3)
         self.dataset = dataset
 
     def __load_model(self) -> None:
@@ -126,15 +120,13 @@ class Generator:
     def generate(self) -> None:
         """
         This method runs the generation of unspun abstracts on the dataset of spun abstracts.
-        We ask LLMs questions about the abstracts and compare the responses.
-        The evaluation dataset is from Boutron et al., 2014.
 
         :return None
         """
 
         # run the task using specified model
         results = []
-        pbar = tqdm(self.dataset, desc="Running evaluation on the dataset")
+        pbar = tqdm(self.dataset, desc="Running generation of unspun version of abstract on the dataset")
         for _, example in enumerate(pbar):
             word_count = len(example["Abstract"].split())
             lower_bound = word_count - 20
@@ -166,7 +158,7 @@ class Generator:
         
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description="Running Evaluation of Interpreting Clinical Trial Results from Abstracts Using LLMs")
+    parser = argparse.ArgumentParser(description="Running Generation of Unspun abstracts from Spin Abstracts Using LLMs")
 
     parser.add_argument("--model", default="gpt4o", 
                         choices=["gpt35", "gpt4o", "gpt4o-mini", "gemini_1.5_flash", 
