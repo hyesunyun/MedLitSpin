@@ -33,7 +33,7 @@ class Generator:
     My fifth grader asked me what this passage means: {ABSTRACT}
     Help me summarize it for him, in plain language a fifth grader can understand.
     '''
-    MODELS_WITH_RATE_LIMIT = ["gemini_1.5_flash", "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku"]
+    MODELS_WITH_RATE_LIMIT = ["gemini_1.5_flash", "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku", "claude_4.0-sonnet", "claude_4.0-opus"]
     def __init__(self, model_name: str, output_path: str, max_new_tokens: int, prompt_template_name: str, is_debug: bool = False) -> None:
         self.model_name = model_name
         self.output_path = output_path
