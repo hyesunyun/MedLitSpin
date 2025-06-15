@@ -5,7 +5,8 @@ from typing import Dict, List
 from models.gpt35 import GPT35
 from models.gpt4 import GPT4
 from models.gemini import Gemini
-from models.claude import Claude
+from models.claude35 import Claude35
+from models.claude4 import Claude4
 from models.olmo import Olmo
 from models.mistral import Mistral
 from models.llama2 import Llama2
@@ -38,7 +39,7 @@ class Evaluator:
     
     Abstract: {ABSTRACT}
     '''
-    MODELS_WITH_RATE_LIMIT = ["gemini_1.5_flash", "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku"]
+    MODELS_WITH_RATE_LIMIT = ["gemini_1.5_flash", "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku", "claude_4.0-sonnet", "claude_4.0-opus"]
     def __init__(self, model_name: str, output_path: str, is_debug: bool = False) -> None:
         self.model_name = model_name
         self.output_path = output_path
@@ -84,8 +85,10 @@ class Evaluator:
             "gpt4o-mini": GPT4,
             "gemini_1.5_flash": Gemini,
             "gemini_1.5_flash-8B": Gemini,
-            "claude_3.5-sonnet": Claude,
-            "claude_3.5-haiku": Claude,
+            "claude_3.5-sonnet": Claude35,
+            "claude_3.5-haiku": Claude35,
+            "claude_4.0-sonnet": Claude4,
+            "claude_4.0-opus": Claude4,
             "olmo2_instruct-7B": Olmo,
             "olmo2_instruct-13B": Olmo,
             "mistral_instruct7B": Mistral,
@@ -232,7 +235,7 @@ if __name__ == '__main__':
 
     parser.add_argument("--model", default="gpt4o", 
                         choices=["gpt35", "gpt4o", "gpt4o-mini", "gemini_1.5_flash", 
-                                 "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku", 
+                                 "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku", "claude_4.0-sonnet", "claude_4.0-opus",
                                  "olmo2_instruct-7B", "olmo2_instruct-13B", "mistral_instruct7B", "llama2_chat-7B",
                                  "llama2_chat-13B", "llama2_chat-70B", "llama3_instruct-8B", "llama3_instruct-70B",
                                  "med42-8B", "med42-70B", "openbiollm-8B", "openbiollm-70B", "biomistral7B", "biomedgpt7B",

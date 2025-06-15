@@ -5,7 +5,7 @@ import os
 import logging
 from dotenv import load_dotenv
 
-class Claude(Model):
+class Claude35(Model):
     def __init__(self, model_type: str = "sonnet") -> None:
         super().__init__()
         if model_type == "haiku":
