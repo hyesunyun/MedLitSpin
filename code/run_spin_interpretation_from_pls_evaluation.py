@@ -283,6 +283,7 @@ if __name__ == '__main__':
     print(f"Input Path:   {input_path}")
     print(f"Output Path:  {output_path}")
     print(f"Is Debug:     {is_debug}")
+    print(f"Input Path:   {input_path}")
     print()
 
     # check if the input path is for csv file

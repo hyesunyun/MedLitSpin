@@ -34,11 +34,12 @@ class Generator:
     Help me summarize it for him, in plain language a fifth grader can understand.
     '''
     MODELS_WITH_RATE_LIMIT = ["gemini_1.5_flash", "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku", "claude_4.0-sonnet", "claude_4.0-opus"]
-    def __init__(self, model_name: str, output_path: str, max_new_tokens: int, prompt_template_name: str, is_debug: bool = False) -> None:
+    def __init__(self, model_name: str, output_path: str, max_new_tokens: int, prompt_template_name: str, input_path: str, is_debug: bool = False) -> None:
         self.model_name = model_name
         self.output_path = output_path
         self.prompt_template_name = prompt_template_name
         self.is_debug = is_debug
+        self.input_path = input_path
 
         self.dataset = None
         self.model = None
@@ -56,8 +57,8 @@ class Generator:
         :return dataset as a list of dictionaries
         """
         print("Loading the dataset...")
-        eval_data_file_path = os.path.join(DATA_FOLDER_PATH, "spin_and_no_spin_abstracts.csv")
-        dataset = load_csv_file(eval_data_file_path)
+        # eval_data_file_path = os.path.join(DATA_FOLDER_PATH, "spin_and_no_spin_abstracts.csv")
+        dataset = load_csv_file(self.input_path)
 
         # shuffle the dataset since it is ordered by pmcid
         random.seed(SEED) # set seed for reproducibility
@@ -180,6 +181,8 @@ if __name__ == '__main__':
     parser.add_argument("--prompt_template_name", default="default", help="name of the template to use for the prompt")
     # do --no-debug for explicit False
     parser.add_argument("--debug", action=argparse.BooleanOptionalAction, help="used for debugging purposes. This option will only run random 3 instances from the dataset.")
+    eval_data_file_path = os.path.join(DATA_FOLDER_PATH, "spin_and_no_spin_abstracts.csv")
+    parser.add_argument("--input_path", default=eval_data_file_path, help="file path of the dataset to run on")
     
     args = parser.parse_args()
 
@@ -188,6 +191,7 @@ if __name__ == '__main__':
     max_new_tokens = args.max_new_tokens
     prompt_template_name = args.prompt_template_name
     is_debug = args.debug
+    input_path = args.input_path
 
     print("Arguments Provided for the Generator:")
     print(f"Model:        {model_name}")
@@ -195,11 +199,12 @@ if __name__ == '__main__':
     print(f"Max Output Tokens:   {max_new_tokens}")
     print(f"Prompt Template:     {prompt_template_name}")
     print(f"Is Debug:     {is_debug}")
+    print(f"Input Path:   {input_path}")
     print()
 
     if not os.path.exists(output_path):
         os.makedirs(output_path)
         print("Output path did not exist. Directory was created.")
     
-    generator = Generator(model_name, output_path, max_new_tokens, prompt_template_name, is_debug)
+    generator = Generator(model_name, output_path, max_new_tokens, prompt_template_name, input_path, is_debug)
     generator.generate_pls()
