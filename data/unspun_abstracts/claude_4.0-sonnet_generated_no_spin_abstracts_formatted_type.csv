@@ -1,4 +1,4 @@
-,Unnamed: 0,PMID,Title,Journal,Spin in Abstract Title/Results,Spin in Abstract Conclusion,Medical specialty,Model Name,Abstract,abstract_type
+,Unnamed: 0,PMID,Title,Journal,Spin in Abstract Title/Results,Spin in Abstract Conclusion,Medical specialty,Model Name,abstract,abstract_type
 0,0,26024532,Impact of a clinical decision model for febrile children at risk for serious bacterial infections at the emergency department: a randomized controlled trial.,PLOS ONE,,"Focus on another objective (e.g., trial is (-) but they say they accomplish some goal that they did not prespecify)",Emergency Medicine,claude_4.0-sonnet,"OBJECTIVES: To assess the impact of a clinical decision model for febrile 
 children at risk for serious bacterial infections (SBI) attending the emergency 
 department (ED).
