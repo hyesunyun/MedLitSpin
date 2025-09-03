@@ -24,14 +24,14 @@ The data is available in the data folder as csv file under the name "spin_abstra
 
 ## :computer: Unspun Generation
 
-Claude 4.0 sonnet was used to generate the unspun version of abstracts from abstracts with spin. 
+GPT-4o was used to generate the unspun version of abstracts from abstracts with spin. 
 
 `code/run_spin_unpun_generation.py`
 
-Example script for running this task on claude 4.0 sonnet:
+Example script for running this task on GPT-4o:
 ```bash
 python3 code/run_spin_unpun_generation.py \
-    --model claude_4.0-sonnet \
+    --model gpt4o \
     --input_path data/spin_abstracts.csv
 ```
 
