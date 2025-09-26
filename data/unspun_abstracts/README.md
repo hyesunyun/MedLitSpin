@@ -44,6 +44,6 @@ You can change the arguments to run different models and specify output paths.
 > - `--output_path`: path of directory where json and csv files of the outputs from model and eval metrics should be saved.
 > - `--debug`: adding this flag will only run 3 randomly sampled PubMed articles from dataset. This is for debugging purposes.
 
-## Post Processing
+## :floppy_disk: Post Processing
 
 Sometimes the unspun version has slightly different formatting as the original spin abstract like extra/missing extra lines, bolding of headers, or different/extra headers. Some of the unspun abstracts are edited slightly to keep the formatting uniform between the original spin and generated unspun version, making sure none of the content is changed.
