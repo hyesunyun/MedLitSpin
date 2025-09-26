@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}, "axis": {"labelFontSize": 16, "titleFontSize": 18}, "title": {"fontSize": 20}}, "layer": [{"data": {"name": "data-54041dabc92bbdd14e8606c1e3327a53"}, "mark": {"type": "rule", "strokeWidth": 2}, "encoding": {"size": {"value": 2}, "x": {"field": "ci_lower", "type": "quantitative"}, "x2": {"field": "ci_upper"}, "y": {"field": "model_name_custom", "sort": {"field": "coef", "order": "descending"}, "title": "LLM Name", "type": "nominal"}}}, {"data": {"name": "data-54041dabc92bbdd14e8606c1e3327a53"}, "mark": {"type": "point", "color": "red", "filled": true, "size": 50}, "encoding": {"x": {"field": "coef", "title": "Coefficient", "type": "quantitative"}, "y": {"field": "model_name_custom", "sort": {"field": "coef", "order": "descending"}, "title": "LLM Name", "type": "nominal"}}}, {"data": {"name": "data-bdc61820f409c7f258818bb730bbb398"}, "mark": {"type": "rule", "color": "blue", "strokeDash": [4, 4], "strokeWidth": 2}, "encoding": {"color": {"value": "#0868ac"}, "x": {"field": "x", "type": "quantitative"}}}, {"data": {"name": "data-51fb6d24c3ed6da2bd44f9791db8db04"}, "mark": {"type": "text", "align": "center", "dx": 5, "dy": -10, "fontSize": 14, "fontWeight": "bold", "text": "Human Experts"}, "encoding": {"color": {"value": "#0868ac"}, "x": {"field": "x", "type": "quantitative"}, "y": {"value": 0}}}, {"data": {"name": "data-2fa759e503c0e3c085cb0b0ff6ac20b5"}, "mark": {"type": "text", "align": "center", "baseline": "bottom", "dx": 24, "dy": 195, "fontSize": 14, "fontWeight": "bold"}, "encoding": {"color": {"value": "#0868ac"}, "text": {"field": "text", "type": "nominal"}, "x": {"field": "x", "type": "quantitative"}}}, {"data": {"name": "data-ef4d22094833ad2d68fdc3686d6eedf2"}, "mark": {"type": "text", "align": "center", "baseline": "bottom", "dx": 10, "dy": 195, "fontSize": 24, "fontWeight": "bold"}, "encoding": {"color": {"value": "#0868ac"}, "text": {"field": "text", "type": "nominal"}, "x": {"field": "x", "type": "quantitative"}}}, {"data": {"name": "data-261b0a886939e5cc2ad6af3301992a8c"}, "mark": {"type": "text", "align": "center", "baseline": "bottom", "dx": 0, "dy": 195, "fontSize": 24, "fontWeight": "bold"}, "encoding": {"color": {"value": "#0868ac"}, "text": {"field": "text", "type": "nominal"}, "x": {"field": "x", "type": "quantitative"}}}], "height": 300, "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-54041dabc92bbdd14e8606c1e3327a53": [{"model_name": "gpt4o", "coef": 1.2333, "ci_lower": 0.786, "ci_upper": 1.6800000000000002, "p_value": 0.0, "r_squared": null, "adjusted_r_squared": null, "model_name_custom": "GPT-4o"}, {"model_name": "gpt4o-mini", "coef": 2.7333, "ci_lower": 2.217, "ci_upper": 3.25, "p_value": 0.0, "r_squared": null, "adjusted_r_squared": null, "model_name_custom": "GPT-4o Mini"}, {"model_name": "gpt35", "coef": 2.0667, "ci_lower": 1.556, "ci_upper": 2.577, "p_value": 0.0, "r_squared": null, "adjusted_r_squared": null, "model_name_custom": "GPT-3.5"}, {"model_name": "gemini_1.5_flash", "coef": 2.1667, "ci_lower": 1.528, "ci_upper": 2.805, "p_value": 0.0, "r_squared": null, "adjusted_r_squared": null, "model_name_custom": "Gemini1.5 Flash"}, {"model_name": "gemini_1.5_flash-8B", "coef": 0.9667, "ci_lower": 0.555, "ci_upper": 1.379, "p_value": 0.0, "r_squared": null, "adjusted_r_squared": null, "model_name_custom": "Gemini1.5 Flash 8B"}, {"model_name": "claude_3.5-sonnet", "coef": -0.6333000000000001, "ci_lower": -0.972, "ci_upper": -0.294, "p_value": 0.0, "r_squared": null, "adjusted_r_squared": null, "model_name_custom": "Claude3.5 Sonnet"}, {"model_name": "claude_3.5-haiku", "coef": 0.4667, "ci_lower": 0.097, "ci_upper": 0.836, "p_value": 0.014, "r_squared": null, "adjusted_r_squared": null, "model_name_custom": "Claude3.5 Haiku"}, {"model_name": "biomistral7B", "coef": 1.1167, "ci_lower": 0.589, "ci_upper": 1.645, "p_value": 0.0, "r_squared": null, "adjusted_r_squared": null, "model_name_custom": "BioMistral 7B"}, {"model_name": "llama2_chat-13B", "coef": 2.0333, "ci_lower": 1.621, "ci_upper": 2.445, "p_value": 0.0, "r_squared": null, "adjusted_r_squared": null, "model_name_custom": "Llama2 Chat 13B"}, {"model_name": "llama2_chat-70B", "coef": 0.6667000000000001, "ci_lower": 0.364, "ci_upper": 0.97, "p_value": 0.0, "r_squared": null, "adjusted_r_squared": null, "model_name_custom": "Llama2 Chat 70B"}, {"model_name": "llama3_instruct-8B", "coef": 0.9, "ci_lower": 0.579, "ci_upper": 1.221, "p_value": 0.0, "r_squared": null, "adjusted_r_squared": null, "model_name_custom": "Llama3 Instruct 8B"}, {"model_name": "llama3_instruct-70B", "coef": 0.9667, "ci_lower": 0.41100000000000003, "ci_upper": 1.522, "p_value": 0.001, "r_squared": null, "adjusted_r_squared": null, "model_name_custom": "Llama3 Instruct 70B"}, {"model_name": "med42-8B", "coef": 1.6, "ci_lower": 1.149, "ci_upper": 2.051, "p_value": 0.0, "r_squared": null, "adjusted_r_squared": null, "model_name_custom": "Med42 8B"}, {"model_name": "med42-70B", "coef": 1.3667, "ci_lower": 0.784, "ci_upper": 1.949, "p_value": 0.0, "r_squared": null, "adjusted_r_squared": null, "model_name_custom": "Med42 70B"}, {"model_name": "olmo2_instruct-7B", "coef": 1.3667, "ci_lower": 0.896, "ci_upper": 1.838, "p_value": 0.0, "r_squared": null, "adjusted_r_squared": null, "model_name_custom": "Olmo2 Instruct 7B"}, {"model_name": "olmo2_instruct-13B", "coef": 2.2333, "ci_lower": 1.802, "ci_upper": 2.665, "p_value": 0.0, "r_squared": null, "adjusted_r_squared": null, "model_name_custom": "Olmo2 Instruct 13B"}, {"model_name": "mistral_instruct7B", "coef": 2.4667, "ci_lower": 1.85, "ci_upper": 3.083, "p_value": 0.0, "r_squared": null, "adjusted_r_squared": null, "model_name_custom": "Mistral Instruct 7B"}, {"model_name": "openbiollm-8B", "coef": 1.6564, "ci_lower": 0.705, "ci_upper": 2.608, "p_value": 0.001, "r_squared": 0.184, "adjusted_r_squared": 0.169, "model_name_custom": "OpenBioLLM 8B"}, {"model_name": "openbiollm-70B", "coef": 0.6333000000000001, "ci_lower": 0.311, "ci_upper": 0.9560000000000001, "p_value": 0.0, "r_squared": 0.21, "adjusted_r_squared": 0.197, "model_name_custom": "OpenBioLLM 70B"}, {"model_name": "alpacare-7B", "coef": 0.8, "ci_lower": 0.436, "ci_upper": 1.164, "p_value": 0.029, "r_squared": 0.0, "adjusted_r_squared": 0.23700000000000002, "model_name_custom": "AlpaCare 7B"}, {"model_name": "llama2_chat-7B", "coef": 1.0667, "ci_lower": 0.66, "ci_upper": 1.473, "p_value": 0.0, "r_squared": 0.322, "adjusted_r_squared": 0.311, "model_name_custom": "Llama2 Chat 7B"}, {"model_name": "biomedgpt7B", "coef": -3.0, "ci_lower": -9.921, "ci_upper": 3.9210000000000003, "p_value": 0.33, "r_squared": 0.158, "adjusted_r_squared": 0.018000000000000002, "model_name_custom": "BioMedGPT 7B"}], "data-bdc61820f409c7f258818bb730bbb398": [{"x": -0.38}], "data-51fb6d24c3ed6da2bd44f9791db8db04": [{"x": -0.38, "y": "GPT-4o"}], "data-2fa759e503c0e3c085cb0b0ff6ac20b5": [{"x": -7.5, "text": "Less susceptible to spin"}, {"x": 0.6, "text": "More susceptible to spin"}], "data-ef4d22094833ad2d68fdc3686d6eedf2": [{"x": -9.5, "text": "\u2190"}], "data-261b0a886939e5cc2ad6af3301992a8c": [{"x": 3.5, "text": "\u2192"}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
