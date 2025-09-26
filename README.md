@@ -196,6 +196,11 @@ Script to replicate the paper experiment running all mitigation strategies:
 scripts/run_evaluation_mitigation_strategies.sh
 ```
 
+## :computer: SYNTHETIC DATA
+Synthetic dataset was generated to expand the dataset from 30 to 150 pairs of abstracts. The new dataset contains abstracts from 3 different medical fields: [Orthopaedic](https://osf.io/89eky), [Emergency Medicine](https://osf.io/c8np7), and [Obesity](https://osf.io/gprzw). These datasets contains abstracts of Randomized Controlled Trials (RCTs) that illustrates cases of results reported with spin. The unspun version is generated with GPT-4o.
+
+Details about the dataset can be found [here](/data/unspun_abstracts/README.md).
+
 ## :star: CITATION
 
 ```bibtex
