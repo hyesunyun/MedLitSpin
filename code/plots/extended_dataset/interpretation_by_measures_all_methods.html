@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}, "axis": {"labelFontSize": 20, "titleFontSize": 22}, "header": {"labelFontSize": 20, "titleFontSize": 22}, "legend": {"labelFontSize": 18, "titleFontSize": 20}, "text": {"fontSize": 20}}, "data": {"name": "data-c08043c3f25e76f23c10755c9bddada4"}, "facet": {"column": {"field": "metric", "sort": ["Treatment Benefit", "Study Rigor", "Study Importance", "Interest to Read Full-Text", "Interest to Run Another Trial"], "title": null, "type": "nominal"}}, "spec": {"layer": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "method", "legend": null, "scale": {"domain": ["human experts", "baseline", "+ ref labels", "+ model labels", "detect + interpret"], "range": ["#0868ac", "#43a2ca", "#7bccc4", "#bae4bc", "#E3F4D4"]}, "title": "Method", "type": "nominal"}, "x": {"axis": {"labelAngle": -45}, "field": "method", "sort": ["human experts", "baseline", "+ ref labels", "+ model labels", "detect + interpret"], "title": null, "type": "nominal"}, "y": {"field": "mean_diff", "title": "Mean Difference", "type": "quantitative"}}}, {"mark": {"type": "errorbar"}, "encoding": {"color": {"value": "gray"}, "strokeWidth": {"value": 2}, "x": {"field": "method", "sort": ["human experts", "baseline", "+ ref labels", "+ model labels", "detect + interpret"], "type": "nominal"}, "y": {"field": "ci_lower", "title": "Mean Difference", "type": "quantitative"}, "y2": {"field": "ci_upper"}}}, {"mark": {"type": "text", "align": "center", "baseline": "bottom", "dy": {"expr": "if((datum.mean_diff >= 0),-1,22)"}, "fontWeight": "bold"}, "encoding": {"color": {"value": "black"}, "text": {"field": "mean_diff", "format": ".2f", "type": "quantitative"}, "x": {"axis": {"labelAngle": -45}, "field": "method", "sort": ["human experts", "baseline", "+ ref labels", "+ model labels", "detect + interpret"], "title": null, "type": "nominal"}, "y": {"field": "mean_diff", "title": "Mean Difference", "type": "quantitative"}}}], "height": 300, "width": 300}, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-c08043c3f25e76f23c10755c9bddada4": [{"mean_diff": 0.71, "ci_lower": 0.07, "ci_upper": 1.35, "metric": "Treatment Benefit", "method": "human experts"}, {"mean_diff": -0.59, "ci_lower": -1.13, "ci_upper": -0.05, "metric": "Study Rigor", "method": "human experts"}, {"mean_diff": -0.38, "ci_lower": -0.95, "ci_upper": 0.19, "metric": "Study Importance", "method": "human experts"}, {"mean_diff": 0.77, "ci_lower": 0.08, "ci_upper": 1.47, "metric": "Interest to Read Full-Text", "method": "human experts"}, {"mean_diff": 0.64, "ci_lower": -0.03, "ci_upper": 1.31, "metric": "Interest to Run Another Trial", "method": "human experts"}, {"mean_diff": 1.9913318430387634, "ci_lower": 1.5674878902130482, "ci_upper": 2.415175795864479, "metric": "Treatment Benefit", "method": "baseline"}, {"mean_diff": 0.134004820936639, "ci_lower": 0.03291903434959732, "ci_upper": 0.23509060752368072, "metric": "Study Rigor", "method": "baseline"}, {"mean_diff": 0.7820119701327751, "ci_lower": 0.3871929178764626, "ci_upper": 1.1768310223890877, "metric": "Study Importance", "method": "baseline"}, {"mean_diff": 1.4713350278235837, "ci_lower": 1.0266605155477078, "ci_upper": 1.9160095400994597, "metric": "Interest to Read Full-Text", "method": "baseline"}, {"mean_diff": 1.3457415905457717, "ci_lower": 1.0516122702363353, "ci_upper": 1.639870910855208, "metric": "Interest to Run Another Trial", "method": "baseline"}, {"mean_diff": 1.0463829873986477, "ci_lower": 0.6776222443433921, "ci_upper": 1.4151437304539032, "metric": "Treatment Benefit", "method": "+ ref labels"}, {"mean_diff": -1.0667534621560892, "ci_lower": -1.4191500295412594, "ci_upper": -0.7143568947709191, "metric": "Study Rigor", "method": "+ ref labels"}, {"mean_diff": -0.4475353520972849, "ci_lower": -0.7310923659458657, "ci_upper": -0.16397833824870417, "metric": "Study Importance", "method": "+ ref labels"}, {"mean_diff": -0.19285158136080444, "ci_lower": -0.6703365653821926, "ci_upper": 0.2846334026605837, "metric": "Interest to Read Full-Text", "method": "+ ref labels"}, {"mean_diff": 0.3412080657014652, "ci_lower": 0.019667503316327828, "ci_upper": 0.6627486280866026, "metric": "Interest to Run Another Trial", "method": "+ ref labels"}, {"mean_diff": 2.000797717035056, "ci_lower": 1.472238113524138, "ci_upper": 2.5293573205459743, "metric": "Treatment Benefit", "method": "+ model labels"}, {"mean_diff": 0.015168207354032586, "ci_lower": -0.12231848978084071, "ci_upper": 0.1526549044889059, "metric": "Study Rigor", "method": "+ model labels"}, {"mean_diff": 0.5488273145036702, "ci_lower": 0.32076644402936283, "ci_upper": 0.7768881849779775, "metric": "Study Importance", "method": "+ model labels"}, {"mean_diff": 0.8961872877659277, "ci_lower": 0.6112649226664169, "ci_upper": 1.1811096528654386, "metric": "Interest to Read Full-Text", "method": "+ model labels"}, {"mean_diff": 1.189831546217203, "ci_lower": 0.8259961494329913, "ci_upper": 1.553666943001415, "metric": "Interest to Run Another Trial", "method": "+ model labels"}, {"mean_diff": 1.0958516138269654, "ci_lower": 0.8225213625104065, "ci_upper": 1.3691818651435241, "metric": "Treatment Benefit", "method": "detect + interpret"}, {"mean_diff": -0.2419092539040533, "ci_lower": -0.49187809256278736, "ci_upper": 0.008059584754680799, "metric": "Study Rigor", "method": "detect + interpret"}, {"mean_diff": 0.3776180085283736, "ci_lower": -0.06506770599031347, "ci_upper": 0.8203037230470607, "metric": "Study Importance", "method": "detect + interpret"}, {"mean_diff": 0.2850995757895672, "ci_lower": 0.013419908894841515, "ci_upper": 0.5567792426842928, "metric": "Interest to Read Full-Text", "method": "detect + interpret"}, {"mean_diff": 0.7734236272610228, "ci_lower": 0.5257669276052477, "ci_upper": 1.0210803269167978, "metric": "Interest to Run Another Trial", "method": "detect + interpret"}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

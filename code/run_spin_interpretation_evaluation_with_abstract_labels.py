@@ -50,11 +50,12 @@ class Evaluator:
         "another_trial": "Do you think it would be interesting to run another trial evaluating this treatment? Score on a scale of 0-10 from not interesting at all to very interesting."
     }
     MODELS_WITH_RATE_LIMIT = {"gemini_1.5_flash", "gemini_1.5_flash-8B", "claude_3.5-sonnet", "claude_3.5-haiku", "claude_4.0-sonnet", "claude_4.0-opus"}
-    def __init__(self, model_name: str, label_mode: str, output_path: str, is_debug: bool = False) -> None:
+    def __init__(self, model_name: str, label_mode: str, output_path: str, input_path:str, is_debug: bool = False) -> None:
         self.model_name = model_name
         self.label_mode = label_mode
         self.output_path = output_path
         self.is_debug = is_debug
+        self.input_path = input_path
 
         self.dataset = None
         self.model = None
@@ -72,8 +73,8 @@ class Evaluator:
         :return dataset as a list of dictionaries
         """
         print("Loading the dataset...")
-        eval_data_file_path = os.path.join(DATA_FOLDER_PATH, "spin_and_no_spin_abstracts.csv")
-        dataset = load_csv_file(eval_data_file_path)
+        # eval_data_file_path = os.path.join(DATA_FOLDER_PATH, "spin_and_no_spin_abstracts.csv")
+        dataset = load_csv_file(self.input_path)
 
         # shuffle the dataset since it is ordered by pmcid
         random.seed(SEED) # set seed for reproducibility
@@ -288,6 +289,8 @@ if __name__ == '__main__':
     parser.add_argument("--output_path", default="./eval_outputs", help="directory of where the outputs/results should be saved.")
     # do --no-debug for explicit False
     parser.add_argument("--debug", action=argparse.BooleanOptionalAction, help="used for debugging purposes. This option will only run random 3 instances from the dataset.")
+    eval_data_file_path = os.path.join(DATA_FOLDER_PATH, "spin_and_no_spin_abstracts.csv")
+    parser.add_argument("--input_path", default=eval_data_file_path, help="file path of the dataset to run on")
     
     args = parser.parse_args()
 
@@ -295,19 +298,21 @@ if __name__ == '__main__':
     label_mode = args.label_mode
     output_path = args.output_path
     is_debug = args.debug
+    input_path = args.input_path
 
     print("Arguments Provided for the Evaluator:")
     print(f"Model:        {model_name}")
     print(f"Label Mode:   {label_mode}")
     print(f"Output Path:  {output_path}")
     print(f"Is Debug:     {is_debug}")
+    print(f"Input Path:   {input_path}")
     print()
 
     if not os.path.exists(output_path):
         os.makedirs(output_path)
         print("Output path did not exist. Directory was created.")
     
-    evaluator = Evaluator(model_name, label_mode, output_path, is_debug)
+    evaluator = Evaluator(model_name, label_mode, output_path, input_path, is_debug)
     evaluator.evaluate()
     gc.collect()
     torch.cuda.empty_cache()

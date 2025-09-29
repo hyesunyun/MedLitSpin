@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}, "axis": {"labelFontSize": 20, "titleFontSize": 22}, "header": {"labelFontSize": 20, "titleFontSize": 22}, "legend": {"labelFontSize": 18, "titleFontSize": 20}, "text": {"fontSize": 20}}, "data": {"name": "data-1afd81bbde3d3aa5a3b298d5aa14a451"}, "facet": {"column": {"field": "metric", "sort": ["Benefit", "Rigor", "Importance", "Full-Text", "Another Trial"], "title": null, "type": "nominal"}}, "spec": {"layer": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "method", "legend": null, "scale": {"domain": ["Claude 3.5 Sonnet", "GPT-4o Mini", "OpenBioLLM 70B"], "range": ["#0868ac", "#43a2ca", "#7bccc4"]}, "title": "Evaluator", "type": "nominal"}, "x": {"axis": {"labelAngle": -45}, "field": "method", "sort": ["Claude 3.5 Sonnet", "GPT-4o Mini", "OpenBioLLM 70B"], "title": null, "type": "nominal"}, "y": {"field": "mean_diff", "title": "Mean Difference", "type": "quantitative"}}}, {"mark": {"type": "text", "align": "center", "baseline": "bottom", "dy": {"expr": "if((datum.mean_diff >= 0),-1,20)"}, "fontWeight": "bold"}, "encoding": {"color": {"value": "black"}, "text": {"field": "mean_diff", "format": ".2f", "type": "quantitative"}, "x": {"axis": {"labelAngle": -45}, "field": "method", "sort": ["Claude 3.5 Sonnet", "GPT-4o Mini", "OpenBioLLM 70B"], "title": null, "type": "nominal"}, "y": {"field": "mean_diff", "title": "Mean Difference", "type": "quantitative"}}}, {"mark": {"type": "errorbar"}, "encoding": {"color": {"value": "gray"}, "strokeWidth": {"value": 2}, "x": {"field": "method", "sort": ["Claude 3.5 Sonnet", "GPT-4o Mini", "OpenBioLLM 70B"], "type": "nominal"}, "y": {"field": "ci_lower", "title": "Mean Difference", "type": "quantitative"}, "y2": {"field": "ci_upper"}}}], "height": 250, "width": 120}, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-1afd81bbde3d3aa5a3b298d5aa14a451": [{"mean_diff": 1.6921212121212121, "ci_lower": 1.574446957429182, "ci_upper": 1.8097954668132423, "metric": "Benefit", "method": "GPT-4o Mini"}, {"mean_diff": 0.6554545454545451, "ci_lower": 0.6056322019974127, "ci_upper": 0.7052768889116774, "metric": "Rigor", "method": "GPT-4o Mini"}, {"mean_diff": 1.1357575757575757, "ci_lower": 1.0664468709668151, "ci_upper": 1.2050682805483364, "metric": "Importance", "method": "GPT-4o Mini"}, {"mean_diff": 1.536363636363636, "ci_lower": 1.4335242858052872, "ci_upper": 1.6392029869219846, "metric": "Full-Text", "method": "GPT-4o Mini"}, {"mean_diff": 1.6815151515151514, "ci_lower": 1.5668945207409242, "ci_upper": 1.7961357822893786, "metric": "Another Trial", "method": "GPT-4o Mini"}, {"mean_diff": 0.8018019855312093, "ci_lower": 0.6899767051344139, "ci_upper": 0.9136272659280047, "metric": "Benefit", "method": "Claude 3.5 Sonnet"}, {"mean_diff": -0.1894109227824423, "ci_lower": -0.27035455107475004, "ci_upper": -0.10846729449013456, "metric": "Rigor", "method": "Claude 3.5 Sonnet"}, {"mean_diff": 0.22609709824956567, "ci_lower": 0.14521857025884127, "ci_upper": 0.30697562624029007, "metric": "Importance", "method": "Claude 3.5 Sonnet"}, {"mean_diff": 0.6634692695073349, "ci_lower": 0.5193081922064039, "ci_upper": 0.8076303468082658, "metric": "Full-Text", "method": "Claude 3.5 Sonnet"}, {"mean_diff": 1.1040292011987634, "ci_lower": 1.0088144631287892, "ci_upper": 1.1992439392687375, "metric": "Another Trial", "method": "Claude 3.5 Sonnet"}, {"mean_diff": 1.6999629598771242, "ci_lower": 1.559265763341184, "ci_upper": 1.8406601564130645, "metric": "Benefit", "method": "OpenBioLLM 70B"}, {"mean_diff": 0.10137205081669644, "ci_lower": 0.0674776302315928, "ci_upper": 0.1352664714018001, "metric": "Rigor", "method": "OpenBioLLM 70B"}, {"mean_diff": 0.8007918957731992, "ci_lower": 0.704386149991417, "ci_upper": 0.8971976415549814, "metric": "Importance", "method": "OpenBioLLM 70B"}, {"mean_diff": 0.1666710510895916, "ci_lower": 0.0592993311006727, "ci_upper": 0.2740427710785105, "metric": "Full-Text", "method": "OpenBioLLM 70B"}, {"mean_diff": 1.475031362726523, "ci_lower": 1.2875299726508067, "ci_upper": 1.6625327528022393, "metric": "Another Trial", "method": "OpenBioLLM 70B"}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

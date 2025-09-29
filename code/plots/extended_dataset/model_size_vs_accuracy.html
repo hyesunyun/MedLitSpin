@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "layer": [{"mark": {"type": "circle"}, "encoding": {"color": {"field": "model_type", "title": "Model Type", "type": "nominal"}, "x": {"field": "model_size_in_b", "title": "Model Size (in Billion Parameters)", "type": "quantitative"}, "y": {"field": "accuracy", "title": "Accuracy", "type": "quantitative"}}, "title": "Model Size vs Accuracy"}, {"mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 7, "dy": -5}, "encoding": {"color": {"field": "model_type", "title": "Model Type", "type": "nominal"}, "text": {"field": "model_name", "type": "nominal"}, "x": {"field": "model_size_in_b", "title": "Model Size (in Billion Parameters)", "type": "quantitative"}, "y": {"field": "accuracy", "title": "Accuracy", "type": "quantitative"}}, "title": "Model Size vs Accuracy"}], "data": {"name": "data-8c03d92a7f41138c8bf65b31e02264d2"}, "height": 400, "width": 800, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-8c03d92a7f41138c8bf65b31e02264d2": [{"accuracy": 0.5366666666666661, "precision": 0.537931034482758, "recall": 0.52, "f1": 0.528813559322033, "model_name": "olmo2_instruct-7B", "model_type": "generalist open", "model_size_in_b": 7.0, "model_name_custom": "Olmo2 Instruct 7B", "model_size_bucket": "0-10B"}, {"accuracy": 0.5366666666666661, "precision": 1.0, "recall": 0.073333333333333, "f1": 0.136645962732919, "model_name": "olmo2_instruct-13B", "model_type": "generalist open", "model_size_in_b": 13.0, "model_name_custom": "Olmo2 Instruct 13B", "model_size_bucket": "11-20B"}, {"accuracy": 0.5, "precision": 0.0, "recall": 0.0, "f1": 0.0, "model_name": "mistral_instruct7B", "model_type": "generalist open", "model_size_in_b": 7.0, "model_name_custom": "Mistral Instruct 7B", "model_size_bucket": "0-10B"}, {"accuracy": 0.53, "precision": 1.0, "recall": 0.06, "f1": 0.113207547169811, "model_name": "med42-8B", "model_type": "biomedical open", "model_size_in_b": 8.0, "model_name_custom": "Med42 8B", "model_size_bucket": "0-10B"}, {"accuracy": 0.51, "precision": 1.0, "recall": 0.02, "f1": 0.039215686274509005, "model_name": "biomistral7B", "model_type": "biomedical open", "model_size_in_b": 7.0, "model_name_custom": "BioMistral 7B", "model_size_bucket": "0-10B"}, {"accuracy": 0.678571428571428, "precision": 0.678571428571428, "recall": 1.0, "f1": 0.8085106382978721, "model_name": "openbiollm-8B", "model_type": "biomedical open", "model_size_in_b": 8.0, "model_name_custom": "OpenBioLLM 8B", "model_size_bucket": "0-10B"}, {"accuracy": 0.5, "precision": 0.5, "recall": 1.0, "f1": 0.6666666666666661, "model_name": "llama2_chat-7B", "model_type": "generalist open", "model_size_in_b": 7.0, "model_name_custom": "Llama2 Chat 7B", "model_size_bucket": "0-10B"}, {"accuracy": 0.68, "precision": 0.631067961165048, "recall": 0.866666666666666, "f1": 0.7303370786516851, "model_name": "llama2_chat-13B", "model_type": "generalist open", "model_size_in_b": 13.0, "model_name_custom": "Llama2 Chat 13B", "model_size_bucket": "11-20B"}, {"accuracy": 0.6433333333333331, "precision": 1.0, "recall": 0.286666666666666, "f1": 0.44559585492227904, "model_name": "llama3_instruct-8B", "model_type": "generalist open", "model_size_in_b": 8.0, "model_name_custom": "Llama3 Instruct 8B", "model_size_bucket": "0-10B"}, {"accuracy": 0.626666666666666, "precision": 0.59313725490196, "recall": 0.8066666666666661, "f1": 0.683615819209039, "model_name": "llama2_chat-70B", "model_type": "generalist open", "model_size_in_b": 70.0, "model_name_custom": "Llama2 Chat 70B", "model_size_bucket": "21-100B"}, {"accuracy": 0.61, "precision": 1.0, "recall": 0.22, "f1": 0.36065573770491804, "model_name": "llama3_instruct-70B", "model_type": "generalist open", "model_size_in_b": 70.0, "model_name_custom": "Llama3 Instruct 70B", "model_size_bucket": "21-100B"}, {"accuracy": 0.583333333333333, "precision": 0.9032258064516121, "recall": 0.186666666666666, "f1": 0.30939226519337004, "model_name": "med42-70B", "model_type": "biomedical open", "model_size_in_b": 70.0, "model_name_custom": "Med42 70B", "model_size_bucket": "21-100B"}, {"accuracy": 0.62, "precision": 0.7812500000000001, "recall": 0.33333333333333304, "f1": 0.46728971962616805, "model_name": "openbiollm-70B", "model_type": "biomedical open", "model_size_in_b": 70.0, "model_name_custom": "OpenBioLLM 70B", "model_size_bucket": "21-100B"}, {"accuracy": 0.46538461538461506, "precision": 0.468503937007874, "recall": 0.9674796747967481, "f1": 0.63129973474801, "model_name": "biomedgpt7B", "model_type": "biomedical open", "model_size_in_b": 7.0, "model_name_custom": "BioMedGPT 7B", "model_size_bucket": "0-10B"}, {"accuracy": 0.5, "precision": 0.5, "recall": 1.0, "f1": 0.6666666666666661, "model_name": "alpacare-7B", "model_type": "biomedical open", "model_size_in_b": 7.0, "model_name_custom": "AlpaCare 7B", "model_size_bucket": "0-10B"}, {"accuracy": 0.5133333333333331, "precision": 1.0, "recall": 0.026666666666666002, "f1": 0.051948051948051, "model_name": "gpt35", "model_type": "generalist closed", "model_size_in_b": 175.0, "model_name_custom": "GPT-3.5", "model_size_bucket": "100B+"}, {"accuracy": 0.71, "precision": 0.740458015267175, "recall": 0.6466666666666661, "f1": 0.6903914590747331, "model_name": "gpt4o", "model_type": "generalist closed", "model_size_in_b": null, "model_name_custom": "GPT-4o", "model_size_bucket": "Unknown"}, {"accuracy": 0.766666666666666, "precision": 0.75, "recall": 0.8, "f1": 0.7741935483870961, "model_name": "gpt4o-mini", "model_type": "generalist closed", "model_size_in_b": null, "model_name_custom": "GPT-4o Mini", "model_size_bucket": "Unknown"}, {"accuracy": 0.6766666666666661, "precision": 0.624413145539906, "recall": 0.886666666666666, "f1": 0.732782369146005, "model_name": "gemini_1.5_flash", "model_type": "generalist closed", "model_size_in_b": null, "model_name_custom": "Gemini1.5 Flash", "model_size_bucket": "Unknown"}, {"accuracy": 0.6900000000000001, "precision": 0.8518518518518511, "recall": 0.46, "f1": 0.597402597402597, "model_name": "gemini_1.5_flash-8B", "model_type": "generalist closed", "model_size_in_b": 8.0, "model_name_custom": "Gemini1.5 Flash 8B", "model_size_bucket": "0-10B"}, {"accuracy": 0.7000000000000001, "precision": 0.8, "recall": 0.533333333333333, "f1": 0.64, "model_name": "claude_3.5-sonnet", "model_type": "generalist closed", "model_size_in_b": null, "model_name_custom": "Claude3.5 Sonnet", "model_size_bucket": "Unknown"}, {"accuracy": 0.65, "precision": 0.6018099547511311, "recall": 0.886666666666666, "f1": 0.7169811320754711, "model_name": "claude_3.5-haiku", "model_type": "generalist closed", "model_size_in_b": null, "model_name_custom": "Claude3.5 Haiku", "model_size_bucket": "Unknown"}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
