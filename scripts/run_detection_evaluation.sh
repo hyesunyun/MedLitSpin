@@ -25,10 +25,23 @@ models=(
   "openbiollm-8B"
 )
 
+echo "Original Dataset (30 pairs)"
 echo "Running evaluation for detecting spin in abstracts of medical literature..."
 for model in "${models[@]}"; do
   # Run the script with the current model
-  python3 code/run_spin_detection_evaluation.py \
+  python3 ../code/run_spin_detection_evaluation.py \
     --model "$model" \
-    --output_path "code/eval_outputs/$model"
+    --output_path "../code/eval_outputs/$model"
+done
+
+echo "########################################################################"
+
+echo "Extended Dataset (150 pairs)"
+echo "Running evaluation for detecting spin in abstracts of medical literature..."
+for model in "${models[@]}"; do
+  # Run the script with the current model
+  python3 ../code/run_spin_detection_evaluation.py \
+    --model "$model" \
+    --output_path "../data/unspun_abstracts/analysis/$model" \
+    --input_file ../data/unspun_abstracts/gpt4o_generated_no_spin_abstracts_formatted.csv
 done

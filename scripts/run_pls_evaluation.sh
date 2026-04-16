@@ -30,13 +30,28 @@ models=(
   "openbiollm-8B"
 )
 
+echo "Original Dataset (30 pairs)"
 echo "Running evaluation for interpreting trial results from plan language summaries (PLS) using the evaluator models..."
 for evaluator in "${evaluators[@]}"; do
   # Run the script with the current evaluator
   for model in "${models[@]}"; do
-    python3 code/run_spin_interpretation_from_pls_evaluation.py \
+    python3 ../code/run_spin_interpretation_from_pls_evaluation.py \
       --model "$evaluator" \
-      --input_path "code/pls_outputs/$model/${model}_outputs.csv" \
-      --output_path "code/pls_outputs/_interpretation_eval_results/$evaluator/$model"
+      --input_path "../code/pls_outputs/original_dataset/$model/${model}_outputs.csv" \
+      --output_path "../code/pls_outputs/original_dataset/_interpretation_eval_results/$evaluator/$model"
+  done
+done
+
+echo "########################################################################"
+
+echo "Extended Dataset (150 pairs)"
+echo "Running evaluation for interpreting trial results from plan language summaries (PLS) using the evaluator models..."
+for evaluator in "${evaluators[@]}"; do
+  # Run the script with the current evaluator
+  for model in "${models[@]}"; do
+    python3 ../code/run_spin_interpretation_from_pls_evaluation.py \
+      --model "$evaluator" \
+      --input_path "../code/pls_outputs/extended_dataset/$model/${model}_outputs.csv" \
+      --output_path "../code/pls_outputs/extended_dataset/_interpretation_eval_results/$evaluator/$model"
   done
 done

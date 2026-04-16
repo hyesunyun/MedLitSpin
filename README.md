@@ -1,6 +1,8 @@
 # LLMs and Spin in Medical Literature
 
-*Code and Data for the paper "Caught in the Web of Words: Do LLMs Fall for Medical Spin?"* :page_facing_up:
+*Code and Data for the paper "Caught in the Web of Words: Do LLMs Fall for Medical Spin?"*
+
+Link to Paper: https://arxiv.org/abs/2502.07963
 
 **How susceptible are LLMs to spin in medical articles?**
 
@@ -52,6 +54,7 @@ You can change the arguments to run different models and specify output paths.
                                  "llama2_chat-13B", "llama2_chat-70B", "llama3_instruct-8B", "llama3_instruct-70B",
                                  "med42-8B", "med42-70B", "openbiollm-8B", "openbiollm-70B", "biomistral7B", "biomedgpt7B",
                                  "alpacare-7B")
+> - `--input_path`: file path of the dataset to run on. default is `data/spin_and_no_spin_abstracts.csv` but can pass in `data/unspun_abstracts/gpt4o_generated_no_spin_abstracts_formatted.csv` to run with the extended, semi-synthetic dataset.
 > - `--output_path`: path of directory where json and csv files of the outputs from model and eval metrics should be saved.
 > - `--debug`: adding this flag will only run 3 randomly sampled PubMed articles from dataset. This is for debugging purposes.
 
@@ -78,6 +81,7 @@ python3 code/run_spin_interpretation_evaluation.py \
                                  "llama2_chat-13B", "llama2_chat-70B", "llama3_instruct-8B", "llama3_instruct-70B",
                                  "med42-8B", "med42-70B", "openbiollm-8B", "openbiollm-70B", "biomistral7B", "biomedgpt7B",
                                  "alpacare-7B")
+> - `--input_path`: file path of the dataset to run on. default is `data/spin_and_no_spin_abstracts.csv` but can pass in `data/unspun_abstracts/gpt4o_generated_no_spin_abstracts_formatted.csv` to run with the extended, semi-synthetic dataset.
 > - `--output_path`: path of directory where json and csv files of the outputs from model and eval metrics should be saved.
 > - `--debug`: adding this flag will only run 3 randomly sampled PubMed articles from dataset. This is for debugging purposes.
 
@@ -108,6 +112,7 @@ python3 code/generate_plain_language_summaries.py \
                                  "llama2_chat-13B", "llama2_chat-70B", "llama3_instruct-8B", "llama3_instruct-70B",
                                  "med42-8B", "med42-70B", "openbiollm-8B", "openbiollm-70B", "biomistral7B", "biomedgpt7B",
                                  "alpacare-7B")
+> - `--input_path`: file path of the dataset to run on. default is `data/spin_and_no_spin_abstracts.csv` but can pass in `data/unspun_abstracts/gpt4o_generated_no_spin_abstracts_formatted.csv` to run with the extended, semi-synthetic dataset.
 > - `--output_path`: path of directory where json and csv files of the outputs from model and eval metrics should be saved.
 > - `--max_new_tokens`: maximum number of tokens to generate for the simplified abstract.
 > - `--prompt_template_name`: name of the template to use for the prompt. defaults to "default".
@@ -168,6 +173,7 @@ python3 code/run_spin_interpretation_evaluation_with_abstract_labels.py \
                                  "med42-8B", "med42-70B", "openbiollm-8B", "openbiollm-70B", "biomistral7B", "biomedgpt7B",
                                  "alpacare-7B")
 > - `--label_mode`: which abstract labels will be used for prompting. options are "gold_label" and "model_output_label".
+> - `--input_path`: file path of the dataset to run on. default is `data/spin_and_no_spin_abstracts.csv` but can pass in `data/unspun_abstracts/gpt4o_generated_no_spin_abstracts_formatted.csv` to run with the extended, semi-synthetic dataset.
 > - `--output_path`: path of directory where json and csv files of the outputs from model and eval metrics should be saved.
 > - `--debug`: adding this flag will only run 3 randomly sampled PubMed articles from dataset. This is for debugging purposes.
 
@@ -188,6 +194,7 @@ python3 code/run_spin_combined_detection_interpretion_evaluation.py \
                                  "llama2_chat-13B", "llama2_chat-70B", "llama3_instruct-8B", "llama3_instruct-70B",
                                  "med42-8B", "med42-70B", "openbiollm-8B", "openbiollm-70B", "biomistral7B", "biomedgpt7B",
                                  "alpacare-7B")
+> - `--input_path`: file path of the dataset to run on. default is `data/spin_and_no_spin_abstracts.csv` but can pass in `data/unspun_abstracts/gpt4o_generated_no_spin_abstracts_formatted.csv` to run with the extended, semi-synthetic dataset.
 > - `--output_path`: path of directory where json and csv files of the outputs from model and eval metrics should be saved.
 > - `--debug`: adding this flag will only run 3 randomly sampled PubMed articles from dataset. This is for debugging purposes.
 
@@ -196,10 +203,13 @@ Script to replicate the paper experiment running all mitigation strategies:
 scripts/run_evaluation_mitigation_strategies.sh
 ```
 
-## :computer: SYNTHETIC DATA
-Synthetic dataset was generated to expand the dataset from 30 to 150 pairs of abstracts. The new dataset contains abstracts from 3 different medical fields: [Orthopaedic](https://osf.io/89eky), [Emergency Medicine](https://osf.io/c8np7), and [Obesity](https://osf.io/gprzw). These datasets contains abstracts of Randomized Controlled Trials (RCTs) that illustrates cases of results reported with spin. The unspun version is generated with GPT-4o.
+## :computer: EXTENSION: EXPERIMENTS ON SEMI-SYNTHETIC DATA
 
-Details about the dataset can be found [here](/data/unspun_abstracts/README.md).
+Due to the original evaluation dataset being small, we created a semi-synthetic dataset to test this effect of spin with a larger sample outside of oncology.
+
+This semi-synthetic dataset was generated to expand our evaluation dataset from just 30 to 150 additional pairs of abstracts. The new dataset contains abstracts from 3 different medical fields: [Orthopaedic](https://osf.io/89eky), [Emergency Medicine](https://osf.io/c8np7), and [Obesity](https://osf.io/gprzw). These datasets contains abstracts of Randomized Controlled Trials (RCTs) that illustrates cases of results reported with spin. The unspun version is generated with GPT-4o.
+
+Further details about the dataset can be found [here](/data/unspun_abstracts/README.md).
 
 ## :star: CITATION
 
