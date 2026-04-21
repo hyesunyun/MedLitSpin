@@ -1,0 +1,178 @@
+{
+    "olmo2_instruct-7B": {
+        "accuracy": 0.536667,
+        "precision": 0.537931,
+        "recall": 0.52,
+        "f1": 0.528814,
+        "model_type": "generalist open",
+        "model_size_in_b": 7.0
+    },
+    "olmo2_instruct-13B": {
+        "accuracy": 0.536667,
+        "precision": 1.0,
+        "recall": 0.073333,
+        "f1": 0.136646,
+        "model_type": "generalist open",
+        "model_size_in_b": 13.0
+    },
+    "mistral_instruct7B": {
+        "accuracy": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "model_type": "generalist open",
+        "model_size_in_b": 7.0
+    },
+    "med42-8B": {
+        "accuracy": 0.53,
+        "precision": 1.0,
+        "recall": 0.06,
+        "f1": 0.113208,
+        "model_type": "biomedical open",
+        "model_size_in_b": 8.0
+    },
+    "biomistral7B": {
+        "accuracy": 0.51,
+        "precision": 1.0,
+        "recall": 0.02,
+        "f1": 0.039216,
+        "model_type": "biomedical open",
+        "model_size_in_b": 7.0
+    },
+    "openbiollm-8B": {
+        "accuracy": 0.678571,
+        "precision": 0.678571,
+        "recall": 1.0,
+        "f1": 0.808511,
+        "model_type": "biomedical open",
+        "model_size_in_b": 8.0
+    },
+    "llama2_chat-7B": {
+        "accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.666667,
+        "model_type": "generalist open",
+        "model_size_in_b": 7.0
+    },
+    "llama2_chat-13B": {
+        "accuracy": 0.68,
+        "precision": 0.631068,
+        "recall": 0.866667,
+        "f1": 0.730337,
+        "model_type": "generalist open",
+        "model_size_in_b": 13.0
+    },
+    "llama3_instruct-8B": {
+        "accuracy": 0.643333,
+        "precision": 1.0,
+        "recall": 0.286667,
+        "f1": 0.445596,
+        "model_type": "generalist open",
+        "model_size_in_b": 8.0
+    },
+    "llama2_chat-70B": {
+        "accuracy": 0.626667,
+        "precision": 0.593137,
+        "recall": 0.806667,
+        "f1": 0.683616,
+        "model_type": "generalist open",
+        "model_size_in_b": 70.0
+    },
+    "llama3_instruct-70B": {
+        "accuracy": 0.61,
+        "precision": 1.0,
+        "recall": 0.22,
+        "f1": 0.360656,
+        "model_type": "generalist open",
+        "model_size_in_b": 70.0
+    },
+    "med42-70B": {
+        "accuracy": 0.583333,
+        "precision": 0.903226,
+        "recall": 0.186667,
+        "f1": 0.309392,
+        "model_type": "biomedical open",
+        "model_size_in_b": 70.0
+    },
+    "openbiollm-70B": {
+        "accuracy": 0.62,
+        "precision": 0.78125,
+        "recall": 0.333333,
+        "f1": 0.46729,
+        "model_type": "biomedical open",
+        "model_size_in_b": 70.0
+    },
+    "biomedgpt7B": {
+        "accuracy": 0.465385,
+        "precision": 0.468504,
+        "recall": 0.96748,
+        "f1": 0.6313,
+        "model_type": "biomedical open",
+        "model_size_in_b": 7.0
+    },
+    "alpacare-7B": {
+        "accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.666667,
+        "model_type": "biomedical open",
+        "model_size_in_b": 7.0
+    },
+    "gpt35": {
+        "accuracy": 0.513333,
+        "precision": 1.0,
+        "recall": 0.026667,
+        "f1": 0.051948,
+        "model_type": "generalist closed",
+        "model_size_in_b": 175.0
+    },
+    "gpt4o": {
+        "accuracy": 0.71,
+        "precision": 0.740458,
+        "recall": 0.646667,
+        "f1": 0.690391,
+        "model_type": "generalist closed",
+        "model_size_in_b": null
+    },
+    "gpt4o-mini": {
+        "accuracy": 0.766667,
+        "precision": 0.75,
+        "recall": 0.8,
+        "f1": 0.774194,
+        "model_type": "generalist closed",
+        "model_size_in_b": null
+    },
+    "gemini_1.5_flash": {
+        "accuracy": 0.676667,
+        "precision": 0.624413,
+        "recall": 0.886667,
+        "f1": 0.732782,
+        "model_type": "generalist closed",
+        "model_size_in_b": null
+    },
+    "gemini_1.5_flash-8B": {
+        "accuracy": 0.69,
+        "precision": 0.851852,
+        "recall": 0.46,
+        "f1": 0.597403,
+        "model_type": "generalist closed",
+        "model_size_in_b": 8.0
+    },
+    "claude_3.5-sonnet": {
+        "accuracy": 0.7,
+        "precision": 0.8,
+        "recall": 0.533333,
+        "f1": 0.64,
+        "model_type": "generalist closed",
+        "model_size_in_b": null
+    },
+    "claude_3.5-haiku": {
+        "accuracy": 0.65,
+        "precision": 0.60181,
+        "recall": 0.886667,
+        "f1": 0.716981,
+        "model_type": "generalist closed",
+        "model_size_in_b": null
+    }
+}

@@ -1,0 +1,178 @@
+{
+  "olmo2_instruct-7B": {
+    "benefit_answer_mean_diff": 3.377778,
+    "rigor_answer_mean_diff": 0.42,
+    "importance_answer_mean_diff": 1.1,
+    "full_text_answer_mean_diff": 2.16,
+    "another_trial_answer_mean_diff": 1.573333,
+    "overall_mean_diff_avg": 1.726222
+  },
+  "olmo2_instruct-13B": {
+    "benefit_answer_mean_diff": 2.946667,
+    "rigor_answer_mean_diff": 0.766667,
+    "importance_answer_mean_diff": 1.753333,
+    "full_text_answer_mean_diff": 3.013333,
+    "another_trial_answer_mean_diff": 2.44,
+    "overall_mean_diff_avg": 2.184
+  },
+  "mistral_instruct7B": {
+    "benefit_answer_mean_diff": 1.766667,
+    "rigor_answer_mean_diff": 0.046667,
+    "importance_answer_mean_diff": 1.62,
+    "full_text_answer_mean_diff": 1.58,
+    "another_trial_answer_mean_diff": 1.253333,
+    "overall_mean_diff_avg": 1.253333
+  },
+  "med42-8B": {
+    "benefit_answer_mean_diff": 2.226667,
+    "rigor_answer_mean_diff": 0.24,
+    "importance_answer_mean_diff": 0.933333,
+    "full_text_answer_mean_diff": 1.12,
+    "another_trial_answer_mean_diff": 1.653333,
+    "overall_mean_diff_avg": 1.234667
+  },
+  "biomistral7B": {
+    "benefit_answer_mean_diff": 0.626667,
+    "rigor_answer_mean_diff": 0.026667,
+    "importance_answer_mean_diff": 0.786667,
+    "full_text_answer_mean_diff": 0.547619,
+    "another_trial_answer_mean_diff": 0.496667,
+    "overall_mean_diff_avg": 0.496857
+  },
+  "openbiollm-8B": {
+    "benefit_answer_mean_diff": 3.401575,
+    "rigor_answer_mean_diff": -0.0625,
+    "importance_answer_mean_diff": 2.9,
+    "full_text_answer_mean_diff": 4.420635,
+    "another_trial_answer_mean_diff": 0.909091,
+    "overall_mean_diff_avg": 2.31376
+  },
+  "llama2_chat-7B": {
+    "benefit_answer_mean_diff": 1.663194,
+    "rigor_answer_mean_diff": 0.16,
+    "importance_answer_mean_diff": 0.966667,
+    "full_text_answer_mean_diff": 0.26,
+    "another_trial_answer_mean_diff": -0.035398,
+    "overall_mean_diff_avg": 0.602893
+  },
+  "llama2_chat-13B": {
+    "benefit_answer_mean_diff": 2.402027,
+    "rigor_answer_mean_diff": 0.3,
+    "importance_answer_mean_diff": 1.193333,
+    "full_text_answer_mean_diff": 1.6,
+    "another_trial_answer_mean_diff": 1.506667,
+    "overall_mean_diff_avg": 1.400405
+  },
+  "llama3_instruct-8B": {
+    "benefit_answer_mean_diff": 1.686667,
+    "rigor_answer_mean_diff": 0.066667,
+    "importance_answer_mean_diff": 0.673333,
+    "full_text_answer_mean_diff": 0.88,
+    "another_trial_answer_mean_diff": 1.253333,
+    "overall_mean_diff_avg": 0.912
+  },
+  "llama2_chat-70B": {
+    "benefit_answer_mean_diff": 1.672932,
+    "rigor_answer_mean_diff": 0.126667,
+    "importance_answer_mean_diff": 0.586667,
+    "full_text_answer_mean_diff": 0.513333,
+    "another_trial_answer_mean_diff": 0.398551,
+    "overall_mean_diff_avg": 0.65963
+  },
+  "llama3_instruct-70B": {
+    "benefit_answer_mean_diff": 2.64,
+    "rigor_answer_mean_diff": 0.04,
+    "importance_answer_mean_diff": 0.76,
+    "full_text_answer_mean_diff": 1.646667,
+    "another_trial_answer_mean_diff": 2.053333,
+    "overall_mean_diff_avg": 1.428
+  },
+  "med42-70B": {
+    "benefit_answer_mean_diff": 3.180702,
+    "rigor_answer_mean_diff": 0.0,
+    "importance_answer_mean_diff": 0.6,
+    "full_text_answer_mean_diff": 2.328767,
+    "another_trial_answer_mean_diff": 2.610738,
+    "overall_mean_diff_avg": 1.744041
+  },
+  "openbiollm-70B": {
+    "benefit_answer_mean_diff": 3.428667,
+    "rigor_answer_mean_diff": -0.003333,
+    "importance_answer_mean_diff": 0.696644,
+    "full_text_answer_mean_diff": 0.804348,
+    "another_trial_answer_mean_diff": 1.566667,
+    "overall_mean_diff_avg": 1.298598
+  },
+  "biomedgpt7B": {
+    "benefit_answer_mean_diff": 0.257426,
+    "rigor_answer_mean_diff": -0.272727,
+    "importance_answer_mean_diff": 0.0,
+    "full_text_answer_mean_diff": null,
+    "another_trial_answer_mean_diff": 0.0,
+    "overall_mean_diff_avg": null
+  },
+  "alpacare-7B": {
+    "benefit_answer_mean_diff": -0.375,
+    "rigor_answer_mean_diff": -0.02,
+    "importance_answer_mean_diff": -2.285714,
+    "full_text_answer_mean_diff": 0.116667,
+    "another_trial_answer_mean_diff": 0.86,
+    "overall_mean_diff_avg": -0.34081
+  },
+  "gpt35": {
+    "benefit_answer_mean_diff": 2.646667,
+    "rigor_answer_mean_diff": 0.36,
+    "importance_answer_mean_diff": 1.0,
+    "full_text_answer_mean_diff": 1.233333,
+    "another_trial_answer_mean_diff": 1.446667,
+    "overall_mean_diff_avg": 1.337333
+  },
+  "gpt4o": {
+    "benefit_answer_mean_diff": 1.753333,
+    "rigor_answer_mean_diff": 0.146667,
+    "importance_answer_mean_diff": 0.52,
+    "full_text_answer_mean_diff": 1.526667,
+    "another_trial_answer_mean_diff": 1.486667,
+    "overall_mean_diff_avg": 1.086667
+  },
+  "gpt4o-mini": {
+    "benefit_answer_mean_diff": 2.306667,
+    "rigor_answer_mean_diff": 0.646667,
+    "importance_answer_mean_diff": 1.5,
+    "full_text_answer_mean_diff": 2.526667,
+    "another_trial_answer_mean_diff": 2.146667,
+    "overall_mean_diff_avg": 1.825333
+  },
+  "gemini_1.5_flash": {
+    "benefit_answer_mean_diff": 1.94,
+    "rigor_answer_mean_diff": 0.06,
+    "importance_answer_mean_diff": 1.093333,
+    "full_text_answer_mean_diff": 1.84,
+    "another_trial_answer_mean_diff": 1.74,
+    "overall_mean_diff_avg": 1.334667
+  },
+  "gemini_1.5_flash-8B": {
+    "benefit_answer_mean_diff": 1.593333,
+    "rigor_answer_mean_diff": -0.1,
+    "importance_answer_mean_diff": 0.806667,
+    "full_text_answer_mean_diff": 2.113333,
+    "another_trial_answer_mean_diff": 1.58,
+    "overall_mean_diff_avg": 1.198667
+  },
+  "claude_3.5-sonnet": {
+    "benefit_answer_mean_diff": 1.0,
+    "rigor_answer_mean_diff": 0.0,
+    "importance_answer_mean_diff": -0.333333,
+    "full_text_answer_mean_diff": 0.333333,
+    "another_trial_answer_mean_diff": 1.0,
+    "overall_mean_diff_avg": 0.4
+  },
+  "claude_3.5-haiku": {
+    "benefit_answer_mean_diff": 1.666667,
+    "rigor_answer_mean_diff": 0.0,
+    "importance_answer_mean_diff": 0.333333,
+    "full_text_answer_mean_diff": 0.333333,
+    "another_trial_answer_mean_diff": 1.666667,
+    "overall_mean_diff_avg": 0.8
+  }
+}

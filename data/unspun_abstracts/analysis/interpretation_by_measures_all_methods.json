@@ -1,0 +1,25 @@
+[
+  {"mean_diff": 1.991332, "ci_lower": 1.567488, "ci_upper": 2.415176, "metric": "benefit_answer", "method": "baseline"},
+  {"mean_diff": 0.134005, "ci_lower": 0.032919, "ci_upper": 0.235091, "metric": "rigor_answer", "method": "baseline"},
+  {"mean_diff": 0.782012, "ci_lower": 0.387193, "ci_upper": 1.176831, "metric": "importance_answer", "method": "baseline"},
+  {"mean_diff": 1.471335, "ci_lower": 1.026661, "ci_upper": 1.916010, "metric": "full_text_answer", "method": "baseline"},
+  {"mean_diff": 1.345742, "ci_lower": 1.051612, "ci_upper": 1.639871, "metric": "another_trial_answer", "method": "baseline"},
+
+  {"mean_diff": 1.046383, "ci_lower": 0.677622, "ci_upper": 1.415144, "metric": "benefit_answer", "method": "+ ref labels"},
+  {"mean_diff": -1.066753, "ci_lower": -1.419150, "ci_upper": -0.714357, "metric": "rigor_answer", "method": "+ ref labels"},
+  {"mean_diff": -0.447535, "ci_lower": -0.731092, "ci_upper": -0.163978, "metric": "importance_answer", "method": "+ ref labels"},
+  {"mean_diff": -0.192852, "ci_lower": -0.670337, "ci_upper": 0.284633, "metric": "full_text_answer", "method": "+ ref labels"},
+  {"mean_diff": 0.341208, "ci_lower": 0.019668, "ci_upper": 0.662749, "metric": "another_trial_answer", "method": "+ ref labels"},
+
+  {"mean_diff": 2.000798, "ci_lower": 1.472238, "ci_upper": 2.529357, "metric": "benefit_answer", "method": "+ model labels"},
+  {"mean_diff": 0.015168, "ci_lower": -0.122318, "ci_upper": 0.152655, "metric": "rigor_answer", "method": "+ model labels"},
+  {"mean_diff": 0.548827, "ci_lower": 0.320766, "ci_upper": 0.776888, "metric": "importance_answer", "method": "+ model labels"},
+  {"mean_diff": 0.896187, "ci_lower": 0.611265, "ci_upper": 1.181110, "metric": "full_text_answer", "method": "+ model labels"},
+  {"mean_diff": 1.189832, "ci_lower": 0.825996, "ci_upper": 1.553667, "metric": "another_trial_answer", "method": "+ model labels"},
+
+  {"mean_diff": 1.095852, "ci_lower": 0.822521, "ci_upper": 1.369182, "metric": "benefit_answer", "method": "detect + interpret"},
+  {"mean_diff": -0.241909, "ci_lower": -0.491878, "ci_upper": 0.008060, "metric": "rigor_answer", "method": "detect + interpret"},
+  {"mean_diff": 0.377618, "ci_lower": -0.065068, "ci_upper": 0.820304, "metric": "importance_answer", "method": "detect + interpret"},
+  {"mean_diff": 0.285100, "ci_lower": 0.013420, "ci_upper": 0.556779, "metric": "full_text_answer", "method": "detect + interpret"},
+  {"mean_diff": 0.773424, "ci_lower": 0.525767, "ci_upper": 1.021080, "metric": "another_trial_answer", "method": "detect + interpret"}
+]
